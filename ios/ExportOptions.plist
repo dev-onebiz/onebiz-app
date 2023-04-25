@@ -9,11 +9,11 @@
 	<key>manifest</key>
 	<dict>
 		<key>appURL</key>
-		<string>https://onebiz.bnksys.co.kr:446</string>
+		<string>https:onebiz.bnksys.co.kr:446</string>
 		<key>displayImageURL</key>
-		<string>https://onebiz.bnksys.co.kr:446</string>
+		<string>https:onebiz.bnksys.co.kr:446</string>
 		<key>fullSizeImageURL</key>
-		<string>https://onebiz.bnksys.co.kr:446</string>
+		<string>https:onebiz.bnksys.co.kr:446</string>
 	</dict>
 	<key>method</key>
 	<string>enterprise</string>
