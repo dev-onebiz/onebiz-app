@@ -17,15 +17,8 @@
 	</dict>
 	<key>method</key>
 	<string>enterprise</string>
-	<key>provisioningProfiles</key>
-	<dict>
-		<key>kr.co.bnksys</key>
-		<string>ONEBIZ_DIS_20221221</string>
-	</dict>
-	<key>signingCertificate</key>
-	<string>Apple Distribution</string>
 	<key>signingStyle</key>
-	<string>manual</string>
+	<string>automatic</string>
 	<key>stripSwiftSymbols</key>
 	<true/>
 	<key>teamID</key>
