@@ -9,18 +9,18 @@
 	<key>manifest</key>
 	<dict>
 		<key>appURL</key>
-		<string>https://onebiz.bnksys.co.kr:446</string>
+		<string>https://</string>
 		<key>displayImageURL</key>
-		<string>https://onebiz.bnksys.co.kr:446</string>
+		<string>https://</string>
 		<key>fullSizeImageURL</key>
-		<string>https://onebiz.bnksys.co.kr:446</string>
+		<string>https://</string>
 	</dict>
 	<key>method</key>
 	<string>enterprise</string>
 	<key>provisioningProfiles</key>
 	<dict>
 		<key>kr.co.bnksys</key>
-		<string>ONEBIZ_DIS_20221221</string>
+		<string>ONEBIZ_DIS_20231204</string>
 	</dict>
 	<key>signingCertificate</key>
 	<string>Apple Distribution</string>
