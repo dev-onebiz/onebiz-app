@@ -1,0 +1,454 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "ExpNteDoc71M"
+        ],
+        "designer|commentHeader": [
+            "모바일 시스템 경비노트 :: 법인카드 결재함 - 화면",
+            "",
+            "@author BNK시스템/계장/김정균",
+            "@since 2019.04.16",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일\t\t  수정자                수정내용",
+            "----------\t------------------   --------------------------",
+            "2019.04.16\tBNK시스템/계장/김정균   최초 생성"
+        ],
+        "designer|extend": "Ext.window.Window",
+        "designer|userAlias": "ExpNteDoc71M",
+        "designer|userClassName": "Budget.exp.ExpNteDoc71M",
+        "height": "98%",
+        "layout": "vbox",
+        "scrollable": "both",
+        "width": "98%"
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "title": "string",
+        "layout": "string",
+        "designer|extend": "string",
+        "height": "auto",
+        "width": "auto",
+        "scrollable": "auto",
+        "designer|commentHeader": "comment"
+    },
+    "name": "Budget.exp.ExpNteAply71M1",
+    "designerId": "d6e34592-114a-4a29-8b39-a860259dd5a1",
+    "viewControllerInstanceId": "98fe4199-483a-4331-8778-9cbd1d28cc9e",
+    "viewModelInstanceId": "a929c74e-a7c3-4b70-8428-3a51d60f943e",
+    "cn": [
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "Initialize",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    aprHistId = component.initialConfig.aprHistId,",
+                    "    record = component.initialConfig.record,",
+                    "    command = component.command,",
+                    "    docData = component.docData,",
+                    "    afterchange = docData.afterchange,",
+                    "    items = afterchange.items,",
+                    "    aplTct = afterchange.aplTct, // 건수",
+                    "    aplTotSmamt = afterchange.aplTotSmamt, // render 합계금액",
+                    "    str = String(aplTotSmamt),",
+                    "    aplTotSmamtRender = str.replace(/(\\d)(?=(?:\\d{3})+(?!\\d))/g, '$1,'),",
+                    "    fromDoc = component.initialConfig.fromDoc;",
+                    "",
+                    "if(fromDoc){",
+                    "    var dd = record.aplDt;",
+                    "    var aplDtRender = DateUtils.parseDate(dd); // 상신일 (기안한 날짜)",
+                    "    refs.item_container.getViewModel().set('aplDt', aplDtRender);",
+                    "} else {",
+                    "    refs.item_container.getViewModel().set('aplDt', record.rgdt);",
+                    "}",
+                    "",
+                    "items = me.recoveryFormRender(items);",
+                    "",
+                    "for(var i in items){",
+                    "    items[i].isAply = true; // 결재 화면으로 사용하는 Items에서는 readOnly 처리하기 위해 사용하는 플래그",
+                    "}",
+                    "",
+                    "var data = {",
+                    "    aplTct : aplTct,",
+                    "    aplTotSmamtRender : aplTotSmamtRender",
+                    "};",
+                    "",
+                    "vm.set('data', data);",
+                    "vm.set('records', items);",
+                    "vm.set('afterchange', afterchange);",
+                    "vm.set('docData', docData);",
+                    "vm.set('aplTct', aplTct); // 건수",
+                    "vm.set('aplTotSmamtRender', aplTotSmamtRender); // render 합계금액",
+                    "",
+                    "vm.set('aprHistId', aprHistId);",
+                    "vm.set('record', record);",
+                    "",
+                    "refs.item_container.getViewModel().set('records', items);",
+                    "refs.item_container.getViewModel().set('record', record);",
+                    "refs.item_container.getViewModel().set('command', command);",
+                    "refs.item_container.getViewModel().set('aprHistId', aprHistId);",
+                    "refs.item_container.getViewModel().set('stlmDvcd', '법인카드');",
+                    "refs.item_container.getViewModel().set('aply71', true);",
+                    "",
+                    "// 영수증 수 만큼 폼 반복 생성",
+                    "refs.item_container.controller.addForm();",
+                    "",
+                    "// 결재문서 초기화 설정",
+                    "ApprovalBoxSvc.setup({",
+                    "    command   : command,",
+                    "    viewModel : vm,",
+                    "    aprHistId : aprHistId,",
+                    "    edocCd    : 'ExpNteAply71',",
+                    "    scope     : me",
+                    "});"
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "Initialize",
+            "designerId": "a14f3b03-79fc-46f6-965d-b4ea7b9a6857"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout": "vbox",
+                "scrollable": "both"
+            },
+            "configAlternates": {
+                "layout": "string",
+                "scrollable": "auto"
+            },
+            "name": "MyContainer4",
+            "designerId": "fbbd9bd6-3f88-4634-b169-6a8111fb7a41",
+            "cn": [
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 1,
+                        "reference": "item_container"
+                    },
+                    "configAlternates": {
+                        "reference": "string",
+                        "height": "auto",
+                        "layout|flex": "number"
+                    },
+                    "name": "budget.exp.expnteaplycontainer",
+                    "designerId": "2e071f54-d903-46ef-934b-c7b78a9a43bc",
+                    "masterInstanceId": "ac1f7eff-c43d-40f7-b572-ee0b3f2d3c97"
+                },
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 450
+                    },
+                    "configAlternates": {
+                        "hidden": "boolean",
+                        "reference": "string",
+                        "height": "auto"
+                    },
+                    "name": "common.approvallinegrid6",
+                    "designerId": "edcc4358-9bd4-4554-862c-97846186464d",
+                    "masterInstanceId": "539a6522-9843-49e3-9ecb-51046086b29b"
+                },
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "common.edocbuttoncontainer2",
+                    "designerId": "63843609-e20a-4b15-b482-7191dd3ff683",
+                    "masterInstanceId": "864c1b4b-9f05-40c9-9015-61086ad52a8d"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "hidden": true,
+                        "label": "version",
+                        "name": "version",
+                        "value": [
+                            "{formValues.version}"
+                        ]
+                    },
+                    "configAlternates": {
+                        "value": "binding",
+                        "hidden": "boolean",
+                        "label": "string",
+                        "name": "string"
+                    },
+                    "name": "MyTextField",
+                    "designerId": "f298769a-055d-4101-8046-7e91427243fc"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "총 건 총 합계 원 Toolbar",
+                "docked": "bottom",
+                "flex": "1"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "docked": "string",
+                "flex": "string"
+            },
+            "name": "MyToolbar8",
+            "designerId": "04070ef1-a099-488d-ac3a-5ac420b36583",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "flex",
+                    "type": "string"
+                }
+            ],
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "alwaysOnTop": true,
+                        "designer|displayName": "총 건 총 합계 원",
+                        "displayed": false,
+                        "docked": null,
+                        "draggable": false,
+                        "layout": "hbox",
+                        "layout|flex": 1,
+                        "masked": false
+                    },
+                    "configAlternates": {
+                        "alwaysOnTop": "auto",
+                        "designer|displayName": "string",
+                        "displayed": "boolean",
+                        "docked": "string",
+                        "draggable": "boolean",
+                        "layout": "string",
+                        "masked": "boolean",
+                        "layout|flex": "number"
+                    },
+                    "name": "MyContainer30",
+                    "designerId": "427d9266-d6ee-47bd-bd82-e392e960e446",
+                    "cn": [
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer23",
+                            "designerId": "ae4ba07a-86aa-4eb0-91ab-4f56eeef77f4"
+                        },
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "총",
+                                "html": "총"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "html": "string"
+                            },
+                            "name": "MyLabel24",
+                            "designerId": "65c267d7-4277-479c-857e-5801b779af1b"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer24",
+                            "designerId": "f3b307f4-0ea3-4ee8-960a-fd50a69e5ec9"
+                        },
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "n(건)",
+                                "html": [
+                                    "{data.aplTct}"
+                                ]
+                            },
+                            "configAlternates": {
+                                "html": "binding",
+                                "designer|displayName": "string"
+                            },
+                            "name": "MyLabel26",
+                            "designerId": "79cbbbf6-3e36-461f-8b5d-bd4c38741182"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer20",
+                            "designerId": "1545cce8-1548-4526-96be-6b9ab336132b"
+                        },
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "건 총",
+                                "html": "건 &nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp 총 합계 "
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "html": "string"
+                            },
+                            "name": "MyLabel27",
+                            "designerId": "9331fc87-b064-4bd3-a0a0-17991ec9b3f4"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer21",
+                            "designerId": "0048332f-d7e3-4237-9250-1f0ea6c35009"
+                        },
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "n(합계)",
+                                "html": [
+                                    "{data.aplTotSmamtRender}"
+                                ]
+                            },
+                            "configAlternates": {
+                                "html": "binding",
+                                "designer|displayName": "string"
+                            },
+                            "name": "MyLabel25",
+                            "designerId": "64458ea1-043e-45cb-a92c-760b33249b08"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer22",
+                            "designerId": "e5f12ce9-d7a1-47fc-b9ea-45c3dd625770"
+                        },
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "원",
+                                "docked": null,
+                                "html": "원"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "html": "string",
+                                "docked": "string"
+                            },
+                            "name": "MyLabel28",
+                            "designerId": "4673dd92-08de-4141-9def-19b51af852b2"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "docked": null
+                            },
+                            "configAlternates": {
+                                "docked": "string"
+                            },
+                            "name": "MySpacer19",
+                            "designerId": "3c7d66c6-7283-40be-9d1d-8fa5eaef7081"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

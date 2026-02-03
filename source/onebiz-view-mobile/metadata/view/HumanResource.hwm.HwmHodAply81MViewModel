@@ -1,0 +1,43 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "{",
+            "    applyLine : null,",
+            "    doc : false, // ExpNteDoc02M 에서 넘어오는지 확인하는 플래그",
+            "    fromDoc : false",
+            "}"
+        ],
+        "designer|commentHeader": [
+            "휴일근로 결재함 - 뷰모델",
+            "",
+            "",
+            "@author BNK시스템/기타/이상근",
+            "@since 2019.06.17",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일\t\t  수정자                수정내용",
+            "----------\t------------------   --------------------------",
+            "2019.04.16\tBNK시스템/기타/이상근   최초 생성"
+        ],
+        "designer|userAlias": "humanresource.hwm.hwmhodaply81m",
+        "designer|userClassName": "HumanResource.hwm.HwmHodAply81MViewModel"
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "data": "object",
+        "designer|commentHeader": "comment"
+    },
+    "name": "HumanResource.hwm.HwmOutAply71MViewModel1",
+    "designerId": "e39101ee-7fcf-47ba-8682-db90aa5dc8a0"
+}

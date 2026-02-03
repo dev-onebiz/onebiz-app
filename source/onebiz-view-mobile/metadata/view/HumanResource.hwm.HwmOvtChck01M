@@ -1,0 +1,1279 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "HwmOvtChck01M"
+        ],
+        "designer|commentHeader": [
+            "모바일 시스템 근태관리 :: 근무확인 - 화면",
+            "",
+            "@author BNK시스템/파트너/서무성",
+            "@since 2021.07.14",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일\t\t  수정자                 수정내용",
+            "----------\t--------------------  --------------------------",
+            "2021.07.14\tBNK시스템/파트너/서무성  최초 생성"
+        ],
+        "designer|userAlias": "HwmOvtChck01M",
+        "designer|userClassName": "HumanResource.hwm.HwmOvtChck01M",
+        "scrollable": true
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "designer|commentHeader": "comment",
+        "scrollable": "auto",
+        "designer|extend": "string"
+    },
+    "name": "HumanResource.hwm.HwmDayAply01M1",
+    "designerId": "5773e8c2-20cc-4a49-b270-d7fe3ae4c800",
+    "viewControllerInstanceId": "2885baff-3c26-48a7-9fed-a89196c2c641",
+    "viewModelInstanceId": "92f9f9b4-e135-4f18-839b-6e15bdd07a4a",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "시간(신규)",
+                "layout": "vbox",
+                "margin": "20 0 0 0",
+                "style": "height : min(30vw, 90px)"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "height": "auto",
+                "layout": "string",
+                "hidden": "boolean",
+                "margin": "auto",
+                "style": "string"
+            },
+            "name": "MyContainer41",
+            "designerId": "35694440-7d9a-4943-adae-fb6576d965c2",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "flex",
+                    "type": "string"
+                }
+            ],
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "centered": true,
+                        "designer|displayName": "날짜/시간",
+                        "layout|flex": 1
+                    },
+                    "configAlternates": {
+                        "centered": "boolean",
+                        "designer|displayName": "string",
+                        "layout|flex": "number"
+                    },
+                    "name": "MyContainer132",
+                    "designerId": "0be57fd0-f671-4156-93f9-cf61c742130f",
+                    "cn": [
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "날짜 Label",
+                                "reference": "monitorDate",
+                                "style": "font-size:min(5vw, 20px); text-align : center;"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "reference": "string",
+                                "style": "string",
+                                "layout|flex": "number",
+                                "margin": "auto"
+                            },
+                            "name": "MyLabel41",
+                            "designerId": "cd16f810-a27a-4c57-aee1-71b63f59ffa7"
+                        },
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "현재시각 Label",
+                                "reference": "monitorTime",
+                                "style": "font-size:min(12vw, 50px); font-weight : bold; text-align : center;"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "reference": "string",
+                                "style": "string",
+                                "layout|flex": "number"
+                            },
+                            "name": "MyLabel29",
+                            "designerId": "aea220ee-6805-46cd-86a8-c0dcb3296aba"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "paddingBox",
+                "padding": "0 24px 24px 24px"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "padding": "auto"
+            },
+            "name": "MyContainer94",
+            "designerId": "96d80b12-9d8f-4bc6-a36d-ea928e13a5be",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "근무확인박스",
+                        "layout": "vbox",
+                        "margin": "10 0 0 0",
+                        "shadow": true,
+                        "style": "background-color:#ffffff;border-radius:10px"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout": "string",
+                        "margin": "auto",
+                        "shadow": "boolean",
+                        "style": "string"
+                    },
+                    "name": "MyContainer46",
+                    "designerId": "2d4b186e-019e-434d-a0b2-ed5202b90cb3",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "근무확인-헤더",
+                                "layout": "hbox",
+                                "padding": "16px",
+                                "width": "100%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "layout": "string",
+                                "padding": "auto",
+                                "width": "auto"
+                            },
+                            "name": "MyContainer48",
+                            "designerId": "1887c528-2918-4f6d-81dd-608d2bb9a8d1",
+                            "cn": [
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "근무확인",
+                                        "html": "근무확인",
+                                        "style": "font-size:min(5vw, 16px);color:#111111;font-weight:600;"
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "html": "string",
+                                        "style": "string"
+                                    },
+                                    "name": "MyLabel21",
+                                    "designerId": "3c3c64ad-97f7-4dbd-9c77-e20010c053f4"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "분리선",
+                                "height": 1,
+                                "style": "background-color:#DDDDDD",
+                                "width": "100%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "style": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyContainer57",
+                            "designerId": "06c67a9a-3f9f-464b-a0b1-7d16c5b7fcf0"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "근무확인-내용",
+                                "layout": "vbox"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "layout": "string"
+                            },
+                            "name": "MyContainer59",
+                            "designerId": "548252bd-144c-4a23-a031-bf41d04101d7",
+                            "cn": [
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "근무확인시간(ovtChkInfoNowTm)",
+                                        "hidden": false,
+                                        "html": "19:30~20:00",
+                                        "margin": "30px 0 0 0",
+                                        "reference": "ovtChkInfoNowTm",
+                                        "style": "text-align:center; font-size:x-large"
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "html": "string",
+                                        "margin": "auto",
+                                        "style": "string",
+                                        "hidden": "boolean",
+                                        "reference": "string"
+                                    },
+                                    "name": "MyLabel22",
+                                    "designerId": "2c1e4a46-d0b0-4031-94d7-ede4105a43de"
+                                },
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "근무확인유효시간(ovtChkInfoNowVldTm)",
+                                        "hidden": false,
+                                        "html": "(종료시간 ± 15분)",
+                                        "margin": "5px 0 0 0",
+                                        "reference": "ovtChkInfoNowVldTm",
+                                        "style": "text-align:center; font-size:medium;"
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "hidden": "boolean",
+                                        "html": "string",
+                                        "margin": "auto",
+                                        "reference": "string",
+                                        "style": "string"
+                                    },
+                                    "name": "MyLabel25",
+                                    "designerId": "ac8cabce-971c-41ef-8859-fc80c822a46b"
+                                },
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "근무확인안내메시지(ovtChkInfoMsg)",
+                                        "hidden": true,
+                                        "html": "※출근 미체크 시, 근무확인 불가",
+                                        "margin": "30px 0 0 0",
+                                        "reference": "ovtChkInfoMsg",
+                                        "style": "text-align : center; font-size: min(16px, 5vw); font-weight:bold;"
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "hidden": "boolean",
+                                        "html": "string",
+                                        "margin": "auto",
+                                        "reference": "string",
+                                        "style": "string"
+                                    },
+                                    "name": "MyLabel3",
+                                    "designerId": "3a2d33c7-b506-4f41-a50b-bb33dbb8f75b"
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "버튼박스",
+                                        "layout": "hbox",
+                                        "margin": "30px 0 16px 0"
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "layout": "string",
+                                        "margin": "auto"
+                                    },
+                                    "name": "MyContainer61",
+                                    "designerId": "8ecd63a9-c1d1-4943-83ca-30cf5ffd3c1a",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|flex": 1
+                                            },
+                                            "configAlternates": {
+                                                "layout|flex": "number"
+                                            },
+                                            "name": "MyContainer58",
+                                            "designerId": "23122316-85d9-4ca2-96f6-964c110a3f78"
+                                        },
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "width": 48
+                                            },
+                                            "configAlternates": {
+                                                "width": "auto"
+                                            },
+                                            "name": "MyContainer90",
+                                            "designerId": "713015f5-dff8-44c4-9e49-1282a107dc55"
+                                        },
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "근무확인 버튼",
+                                                "layout": "hbox",
+                                                "reference": "btnCnt",
+                                                "style": "height: 3rem; width: (48vw, 200px);"
+                                            },
+                                            "configAlternates": {
+                                                "designer|displayName": "string",
+                                                "height": "auto",
+                                                "layout": "string",
+                                                "reference": "string",
+                                                "layout|flex": "number",
+                                                "margin": "auto",
+                                                "width": "auto",
+                                                "style": "string"
+                                            },
+                                            "name": "MyContainer60",
+                                            "designerId": "94ac4eb4-55b9-4508-b283-cc0d9adc825d",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.Button",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "disabled": [
+                                                            "{officeIO}"
+                                                        ],
+                                                        "html": "<font style=\"font-weight:bold; color:white;\">근무확인</font>",
+                                                        "layout|flex": 4,
+                                                        "margin": "",
+                                                        "reference": "check",
+                                                        "style": [
+                                                            "{officeIO == false ? \"font-size:x-large;border-radius : 3rem; height : 3rem; color : #fff; font-size : 1.2em; font-weight : 600; width : 48vw; border : 0 none; background : linear-gradient(to right, #D7181F 0%, #FF9988 100%); -moz-linear-gradient(left, #D7181F 0%, #FF9988 100%); -webkit-linear-gradient(left, #D7181F 0%, #FF9988 100%);\" : \"font-size:x-large;border-radius : 3rem; height : 3rem; color : #fff; font-size : 1.2em; font-weight : 600; width : 48vw; border : 0 none; background : linear-gradient(to right, #C3C3C3 0%, #7F7F7F 100%); -moz-linear-gradient(right, #C3C3C3 0%, #7F7F7F 100%); -webkit-linear-gradient(right, #C3C3C3 0%, #7F7F7F 100%);\"}"
+                                                        ]
+                                                    },
+                                                    "configAlternates": {
+                                                        "disabled": "binding",
+                                                        "designer|uiInterfaceName": "string",
+                                                        "layout|flex": "number",
+                                                        "reference": "string",
+                                                        "style": "binding",
+                                                        "text": "string",
+                                                        "ui": "string",
+                                                        "height": "auto",
+                                                        "width": "auto",
+                                                        "hidden": "binding",
+                                                        "html": "string",
+                                                        "margin": "auto"
+                                                    },
+                                                    "name": "MyButton1",
+                                                    "designerId": "e4295b60-9b45-4d1d-91ae-d3d036f22330",
+                                                    "cn": [
+                                                        {
+                                                            "type": "viewcontrollereventbinding",
+                                                            "reference": {
+                                                                "name": "listeners",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "designer|commentHeader": [
+                                                                    "근무확인 버튼 Event"
+                                                                ],
+                                                                "fn": "onCheckTap",
+                                                                "implHandler": [
+                                                                    "var me = this,",
+                                                                    "    vm = me.getViewModel(),",
+                                                                    "    viewId = me.getViewId(),",
+                                                                    "    values = {",
+                                                                    "        hrHrpmEmpId: SecurityUtils.getPrincipal().hrHrpmEmpId,",
+                                                                    "        stcd : Constants.stcd.NORMAL,",
+                                                                    "        crtDt : DateUtils.getDate(new Date()),",
+                                                                    "        wrkDtStrdt : DateUtils.getDate(DateUtils.getFirstDateOfMonth(new Date())),",
+                                                                    "        wrkDtEdt : DateUtils.getDate(DateUtils.getLastDateOfMonth(new Date())),",
+                                                                    "        needWrkDtAfterToday : true,",
+                                                                    "    };",
+                                                                    "",
+                                                                    "me.setLockCheckBtn(true);",
+                                                                    "",
+                                                                    "//근무지 정보 확인",
+                                                                    "Ext.Ajax.request({",
+                                                                    "    headers: {",
+                                                                    "        serviceId: 'HwmWplSvc.findAllHwmWplInfo',",
+                                                                    "        viewId: viewId,",
+                                                                    "        scope: me,",
+                                                                    "    },",
+                                                                    "    jsonData: values,",
+                                                                    "    success: function(res) {",
+                                                                    "        var result = JSON.parse(res.responseText).page;",
+                                                                    "        var msg = \"\";",
+                                                                    "",
+                                                                    "        if(!Ext.isEmpty(result) && (result.length != 1 || result[0].hrWrkmWkplcId != Constants.wkplcId.EMPTY_WKPLC)){ //근무지있음",
+                                                                    "            vm.set('wkplcList', result);",
+                                                                    "",
+                                                                    "            // 근무일기준 근무지만 필터링",
+                                                                    "            var oldGpsVal = vm.get('workGpsVal'),",
+                                                                    "                newGpsVal = [];",
+                                                                    "",
+                                                                    "            for (var gpsVal in oldGpsVal) {",
+                                                                    "                for (var wkplc in result) {",
+                                                                    "                    if (result[wkplc].hrWrkmWkplcId == oldGpsVal[gpsVal].hrWrkmWkplcId) {",
+                                                                    "                        newGpsVal.push(oldGpsVal[gpsVal]);",
+                                                                    "                        break;",
+                                                                    "                    }",
+                                                                    "                }",
+                                                                    "            }",
+                                                                    "            vm.set('workGpsVal', newGpsVal);",
+                                                                    "",
+                                                                    "            Ext.Msg.show({",
+                                                                    "                message: '지금 근무확인 처리 하시겠습니까?<br>',",
+                                                                    "                title: '근무확인',",
+                                                                    "                buttons : {",
+                                                                    "                    yes : {itemId : Ext.MessageBox.YES, text : '확인'},",
+                                                                    "                    no : {itemId : Ext.MessageBox.NO, text : '취소'},",
+                                                                    "                },",
+                                                                    "                fn: function(btn){",
+                                                                    "                    if(btn === 'yes'){",
+                                                                    "                        me.getGPS('check');",
+                                                                    "                    }",
+                                                                    "                    else{",
+                                                                    "                        me.setLockCheckBtn(false);",
+                                                                    "                    }",
+                                                                    "                }",
+                                                                    "            });",
+                                                                    "",
+                                                                    "        }",
+                                                                    "",
+                                                                    "        else { //근무지없음 :: result값이 없거나, 조회된 근무지 정보가 근무지없음 밖에 없는 경우.",
+                                                                    "",
+                                                                    "            msg += \"<b>근무지 : 근무지 없음</b><br>\";",
+                                                                    "            msg += \"<b>기간 : -</b><br><br>\";",
+                                                                    "            msg += \"<b style='color:red'>근무지 정보가 다를 경우, </b><br>\";",
+                                                                    "            msg += \"<b style='color:red'>근무확인이 안될수가 있습니다.</b><br>\";",
+                                                                    "            msg += \"정확한 인력현황을 위하여 <br>\";",
+                                                                    "            msg += \"근무지 정보를 최신화 바랍니다.<br>\";",
+                                                                    "",
+                                                                    "            Ext.Msg.show({",
+                                                                    "                message: msg,",
+                                                                    "                title: \"근무지 정보 알림\",",
+                                                                    "                buttons : {",
+                                                                    "                    yes : {itemId : Ext.MessageBox.YES, text : '변경신청'},",
+                                                                    "                },",
+                                                                    "                fn: function(btn){",
+                                                                    "                    if(btn === 'yes'){",
+                                                                    "                        var naviView = me.getView().up('navigationview');",
+                                                                    "                        me.PUSH_VIEW(naviView, {",
+                                                                    "                            menuId  : 'HwmWplAply02M',",
+                                                                    "                            title   : '근무지변경 신청',",
+                                                                    "                            parentView : me.getView(),",
+                                                                    "                            isSubView : true,",
+                                                                    "                            records : []",
+                                                                    "                        });",
+                                                                    "                    }",
+                                                                    "                }",
+                                                                    "            });",
+                                                                    "",
+                                                                    "            me.setLockCheckBtn(false);",
+                                                                    "        }",
+                                                                    "",
+                                                                    "    }",
+                                                                    "});"
+                                                                ],
+                                                                "name": "tap",
+                                                                "scope": "me"
+                                                            },
+                                                            "configAlternates": {
+                                                                "designer|commentHeader": "comment",
+                                                                "fn": "string",
+                                                                "implHandler": "code",
+                                                                "name": "string",
+                                                                "scope": "string"
+                                                            },
+                                                            "name": "onCheckTap",
+                                                            "designerId": "defd1a44-5592-4305-be43-abd6e7d03321"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "근무위치 설정 이동 버튼",
+                                                "html": "<img style=\"width: 20px; height: auto;\" src=\"resources/images/HwmDay/icon_gps.png\" />",
+                                                "margin": "",
+                                                "width": 48
+                                            },
+                                            "configAlternates": {
+                                                "designer|displayName": "string",
+                                                "designer|uiInterfaceName": "string",
+                                                "iconCls": "string",
+                                                "ui": "string",
+                                                "docked": "string",
+                                                "layout|flex": "number",
+                                                "style": "string",
+                                                "html": "string",
+                                                "textAlign": "string",
+                                                "margin": "auto",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyButton16",
+                                            "designerId": "a942ee40-57ca-4a23-be64-5aa722bf192d",
+                                            "cn": [
+                                                {
+                                                    "type": "viewcontrollereventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|commentHeader": [
+                                                            "위치 설정 화면으로 이동하는 버튼 Event"
+                                                        ],
+                                                        "fn": "onLocationConfTap",
+                                                        "implHandler": [
+                                                            "// var me = this,",
+                                                            "//     vm = me.getViewModel(),",
+                                                            "//     refs = me.getReferences();",
+                                                            "",
+                                                            "// // 위치 설정 화면으로 전환",
+                                                            "// var naviView = me.getView().up('navigationview');",
+                                                            "// me.PUSH_VIEW(naviView, {",
+                                                            "//     menuId  : 'HwmDayAply02M',",
+                                                            "//     title   : '근무위치',",
+                                                            "//     workZoneGps : vm.get('workGpsVal')",
+                                                            "// });",
+                                                            "",
+                                                            "//////////////////////////////////////////////////////",
+                                                            "",
+                                                            "var me = this,",
+                                                            "    vm = me.getViewModel(),",
+                                                            "    refs = me.getReferences();",
+                                                            "",
+                                                            "var win = Ext.create('HwmDayAply52M',{",
+                                                            "    workZoneGps : vm.get('workGpsVal')",
+                                                            "});",
+                                                            "",
+                                                            "me.mon(win, 'select', function(gps){",
+                                                            "});",
+                                                            "",
+                                                            "win.show();"
+                                                        ],
+                                                        "name": "tap",
+                                                        "scope": "me"
+                                                    },
+                                                    "configAlternates": {
+                                                        "designer|commentHeader": "comment",
+                                                        "fn": "string",
+                                                        "implHandler": "code",
+                                                        "name": "string",
+                                                        "scope": "string"
+                                                    },
+                                                    "name": "onLocationConfTap",
+                                                    "designerId": "7cf5f93c-eb36-4774-a487-3bfdc933b584"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|flex": 1
+                                            },
+                                            "configAlternates": {
+                                                "layout|flex": "number"
+                                            },
+                                            "name": "MyContainer67",
+                                            "designerId": "32e1a473-7380-454b-a434-877f32cc9e23"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "근무정보박스(ovtInfoBox)",
+                        "margin": "20px 0 0 0",
+                        "reference": "ovtInfoBox",
+                        "shadow": true,
+                        "style": "font-size: min(16px, 5vw);background-color:#ffffff;border-radius:10px;"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "margin": "auto",
+                        "shadow": "boolean",
+                        "style": "string",
+                        "reference": "string"
+                    },
+                    "name": "MyContainer68",
+                    "designerId": "f42ac11b-a036-49d1-a18a-c96eb8a85e01",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "근무정보헤더",
+                                "layout": "hbox",
+                                "padding": "16px"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "html": "string",
+                                "layout": "string",
+                                "padding": "auto",
+                                "style": "string"
+                            },
+                            "name": "MyContainer71",
+                            "designerId": "8d4863b2-28a0-47e3-9b13-65837058f77b",
+                            "cn": [
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "근무정보-일자(ovtInfoDt)",
+                                        "html": "<b>2021.07.26 (월)</b>",
+                                        "reference": "ovtInfoDt",
+                                        "style": "font-weight:bold;"
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "html": "string",
+                                        "reference": "string",
+                                        "style": "string"
+                                    },
+                                    "name": "MyLabel23",
+                                    "designerId": "b96cdb05-2df6-40cd-890f-663e30e56102"
+                                },
+                                {
+                                    "type": "Ext.Spacer",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "name": "MySpacer8",
+                                    "designerId": "0677a096-c5af-4c23-9fc8-55ec2fe826a2"
+                                },
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "근무정보-횟수(ovtInfoCnt)",
+                                        "html": "1/4",
+                                        "reference": "ovtInfoCnt",
+                                        "style": "font-weight:bold;"
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "html": "string",
+                                        "reference": "string",
+                                        "style": "string"
+                                    },
+                                    "name": "MyLabel24",
+                                    "designerId": "0fc103d6-4871-4d23-957d-ec9ab8dd60ad"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "분리선",
+                                "height": 1,
+                                "padding": "17px",
+                                "style": "background-color:#DDDDDD",
+                                "width": "100%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "style": "string",
+                                "width": "auto",
+                                "padding": "auto"
+                            },
+                            "name": "MyContainer70",
+                            "designerId": "cc5b6413-39f4-44bb-8beb-d5ac59a42b4b"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "근무정보내용(ovtInfoContent)",
+                                "reference": "ovtInfoContent"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "reference": "string"
+                            },
+                            "name": "MyContainer",
+                            "designerId": "19f6062a-34bc-423a-8305-86e2c147c0e4",
+                            "cn": [
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "근무정보ROW1",
+                                        "html": "",
+                                        "layout": "hbox",
+                                        "margin": "16px",
+                                        "padding": "10px",
+                                        "style": ""
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "html": "string",
+                                        "layout": "string",
+                                        "padding": "auto",
+                                        "style": "string",
+                                        "margin": "auto"
+                                    },
+                                    "name": "MyContainer69",
+                                    "designerId": "e9e78731-11df-42a5-98eb-ebe52f807b4f",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "근무정보1-시간",
+                                                "html": "19:00~19:30"
+                                            },
+                                            "configAlternates": {
+                                                "designer|displayName": "string",
+                                                "html": "string"
+                                            },
+                                            "name": "MyLabel23",
+                                            "designerId": "2e115394-4ef9-4179-89a7-3b94c96aa7ee"
+                                        },
+                                        {
+                                            "type": "Ext.Spacer",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "name": "MySpacer8",
+                                            "designerId": "1a787c83-5873-4861-861d-58a6da5ea477"
+                                        },
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "근무정보1-확인정보",
+                                                "html": "확인 | 19:35"
+                                            },
+                                            "configAlternates": {
+                                                "designer|displayName": "string",
+                                                "html": "string"
+                                            },
+                                            "name": "MyLabel24",
+                                            "designerId": "d63ed7ab-0c86-4740-ae80-e5c11e261d5d"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "근무정보ROW2",
+                                        "html": "",
+                                        "layout": "hbox",
+                                        "margin": "16px",
+                                        "padding": "10px",
+                                        "style": ""
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "html": "string",
+                                        "layout": "string",
+                                        "padding": "auto",
+                                        "style": "string",
+                                        "margin": "auto"
+                                    },
+                                    "name": "MyContainer73",
+                                    "designerId": "86f20faf-777e-48c2-a9b6-af797c4cc9f3",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "근무정보2-시간",
+                                                "html": "19:30~20:00"
+                                            },
+                                            "configAlternates": {
+                                                "designer|displayName": "string",
+                                                "html": "string"
+                                            },
+                                            "name": "MyLabel23",
+                                            "designerId": "95abc903-88bc-415b-a5d7-0182dfc9a666"
+                                        },
+                                        {
+                                            "type": "Ext.Spacer",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "name": "MySpacer8",
+                                            "designerId": "8bbebef3-8c19-434d-b794-24b2d059026b"
+                                        },
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "근무정보2-확인정보",
+                                                "html": "<font style=\"color:red;\">미확인 | 00:00</font>"
+                                            },
+                                            "configAlternates": {
+                                                "designer|displayName": "string",
+                                                "html": "string"
+                                            },
+                                            "name": "MyLabel24",
+                                            "designerId": "1894d52e-33b4-47ca-a9a5-c4b05f4f8b03"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "근무정보ROW3",
+                                        "html": "",
+                                        "layout": "hbox",
+                                        "margin": "16px",
+                                        "padding": "10px",
+                                        "style": ""
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "html": "string",
+                                        "layout": "string",
+                                        "padding": "auto",
+                                        "style": "string",
+                                        "margin": "auto"
+                                    },
+                                    "name": "MyContainer75",
+                                    "designerId": "8c9154a6-0d50-42c5-b232-1aa6f2671aa2",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "근무정보3-시간",
+                                                "html": "20:00~20:30"
+                                            },
+                                            "configAlternates": {
+                                                "designer|displayName": "string",
+                                                "html": "string"
+                                            },
+                                            "name": "MyLabel23",
+                                            "designerId": "c2866982-90f2-4e1f-a31c-995fe4b6415e"
+                                        },
+                                        {
+                                            "type": "Ext.Spacer",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "name": "MySpacer8",
+                                            "designerId": "48617c33-7084-47e9-9fb6-d620cfcd5508"
+                                        },
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "근무정보3-확인정보",
+                                                "html": "확인 | 20:25"
+                                            },
+                                            "configAlternates": {
+                                                "designer|displayName": "string",
+                                                "html": "string"
+                                            },
+                                            "name": "MyLabel24",
+                                            "designerId": "3f223df9-60e6-47e7-81f3-4db5d6f3af7d"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "근무정보ROW4",
+                                        "html": "",
+                                        "layout": "hbox",
+                                        "margin": "16px",
+                                        "padding": "10px",
+                                        "style": ""
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "html": "string",
+                                        "layout": "string",
+                                        "padding": "auto",
+                                        "style": "string",
+                                        "margin": "auto"
+                                    },
+                                    "name": "MyContainer76",
+                                    "designerId": "703af3d2-38f2-4316-9de1-b7d74c7ce04f",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "근무정보4-시간",
+                                                "html": "20:30~21:00"
+                                            },
+                                            "configAlternates": {
+                                                "designer|displayName": "string",
+                                                "html": "string"
+                                            },
+                                            "name": "MyLabel23",
+                                            "designerId": "8e422e39-aeee-4852-afd5-de2bb6a13f71"
+                                        },
+                                        {
+                                            "type": "Ext.Spacer",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "name": "MySpacer8",
+                                            "designerId": "f6b585d1-3169-421b-8960-a601884c99c9"
+                                        },
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "근무정보4-확인정보",
+                                                "html": "확인 | 22:05"
+                                            },
+                                            "configAlternates": {
+                                                "designer|displayName": "string",
+                                                "html": "string"
+                                            },
+                                            "name": "MyLabel24",
+                                            "designerId": "536da782-9210-47e4-8cd3-98f250e0ac31"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "근무정보ROW4",
+                                        "html": "",
+                                        "layout": "hbox",
+                                        "margin": "16px",
+                                        "padding": "10px",
+                                        "style": ""
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "html": "string",
+                                        "layout": "string",
+                                        "padding": "auto",
+                                        "style": "string",
+                                        "margin": "auto"
+                                    },
+                                    "name": "MyContainer77",
+                                    "designerId": "c1884758-dff7-49e6-9c19-cffc112466d2",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "근무정보4-시간",
+                                                "html": "20:30~21:00"
+                                            },
+                                            "configAlternates": {
+                                                "designer|displayName": "string",
+                                                "html": "string"
+                                            },
+                                            "name": "MyLabel23",
+                                            "designerId": "fb90a3f4-a368-4404-8a8b-d75791afa6b1"
+                                        },
+                                        {
+                                            "type": "Ext.Spacer",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "name": "MySpacer8",
+                                            "designerId": "0136f7e0-e4ad-4bac-9674-b42cfb3e4d74"
+                                        },
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "근무정보4-확인정보",
+                                                "html": "확인 | 22:05"
+                                            },
+                                            "configAlternates": {
+                                                "designer|displayName": "string",
+                                                "html": "string"
+                                            },
+                                            "name": "MyLabel24",
+                                            "designerId": "f3feb6dc-5563-409f-836f-5395b012daa5"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "출퇴근 체크 초기화"
+                ],
+                "fn": "initialize",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences();",
+                    "",
+                    "me.setLockCheckBtn(false);",
+                    "refs.btnCnt.setHidden(true);",
+                    "",
+                    "this.onSelect();"
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "initialize",
+            "designerId": "d19892c5-55be-4773-855a-fe8cc5a5a305"
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "destroy",
+                "implHandler": [
+                    "var me = this;",
+                    "var refs = me.getReferences();",
+                    "var vm = me.getViewModel();",
+                    "",
+                    "var runner = vm.get('runner');",
+                    "if(!Ext.isEmpty(runner)){",
+                    "    runner.stopAll();",
+                    "}"
+                ],
+                "name": "destroy",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "destroy",
+            "designerId": "18675f03-c2d6-474b-b0bd-e7d3d61ccf91"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "js_a1m72ubr",
+        "includeInBundle": true,
+        "url": "ext-locale-ko.js"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "includeInBundle": "boolean",
+        "url": "uri"
+    },
+    "name": "js7",
+    "designerId": "8a4c03d6-59c8-4687-b201-d2a779a01f97"
+}

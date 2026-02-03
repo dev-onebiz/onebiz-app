@@ -1,0 +1,80 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "{",
+            "    applyLine : null,",
+            "    doc : false, // ExpNteDoc02M 에서 넘어오는지 확인하는 플래그",
+            "    fromDoc : false",
+            "}"
+        ],
+        "designer|commentHeader": [
+            "모바일 시스템 출장품의취소신청서 - 컨트롤러",
+            "",
+            "@author BNK시스템/파트너/박주혁",
+            "@since 2024.09.02",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일\t\t  수정자                수정내용",
+            "----------\t------------------   --------------------------",
+            "2024.09.02\tBNK시스템/파트너/박주혁   최초 생성"
+        ],
+        "designer|userAlias": "humanresource.hwm.hwmbtraply72m",
+        "designer|userClassName": "HumanResource.hwm.HwmBtrAply72MViewModel"
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "data": "object",
+        "designer|commentHeader": "comment"
+    },
+    "name": "HumanResource.hwm.HwmBtrAply71MViewModel1",
+    "designerId": "0663b5ae-6415-4b10-a646-c117d5c23d96",
+    "cn": [
+        {
+            "type": "Ext.data.Store",
+            "reference": {
+                "name": "stores",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "gridScheduleInfoStore",
+                "name": "gridScheduleInfoStore"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "name": "string"
+            },
+            "name": "MyStore2",
+            "designerId": "aba79c0c-3dc4-48e0-a738-f6e6d191b2f9",
+            "cn": [
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "id"
+                    },
+                    "configAlternates": {
+                        "name": "string"
+                    },
+                    "name": "field2",
+                    "designerId": "0d43ed62-5460-419f-8fe0-35725ff4f3a9"
+                }
+            ]
+        }
+    ]
+}

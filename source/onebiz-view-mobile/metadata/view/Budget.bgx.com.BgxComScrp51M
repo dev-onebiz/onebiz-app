@@ -1,0 +1,290 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "BgxComScrp51M"
+        ],
+        "autoSize": false,
+        "designer|commentHeader": [
+            "모바일 예산 : 결의서 작성 [스크래핑 팝업] - 화면",
+            "",
+            "@author BNK시스템/계장/지민영",
+            "@since 2020.05.14",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일       수정자                수정내용",
+            "----------  ------------------   --------------------------",
+            "2020.05.14  BNK시스템/계장/지민영   최초 생성"
+        ],
+        "designer|extend": "Ext.window.Window",
+        "designer|userAlias": "BgxComScrp51M",
+        "designer|userClassName": "Budget.bgx.com.BgxComScrp51M",
+        "height": "98%",
+        "showAnimation": "pop",
+        "style": "border-top: 1px solid #D1D1D1",
+        "width": "95%"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "extend": "string",
+        "alternateClassName": "typedarray",
+        "autoSize": "boolean",
+        "designer|commentHeader": "comment",
+        "designer|extend": "string",
+        "designer|userAlias": "string",
+        "height": "auto",
+        "showAnimation": "string",
+        "style": "string",
+        "width": "auto",
+        "alwaysOnTop": "auto"
+    },
+    "designerId": "dfb9d168-4bec-4979-8cb9-5040644d1935",
+    "viewControllerInstanceId": "ff1092f1-69ee-42d1-bd91-b6dbf3abd77d",
+    "viewModelInstanceId": "39a07bc2-2404-46af-a675-7f903f2a409b",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "타이틀바",
+                "docked": "top",
+                "margin": "10 0 0 0"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "docked": "string",
+                "margin": "auto"
+            },
+            "name": "MyContainer3",
+            "designerId": "f26d3182-df3d-42ff-9e43-2ff05220056b",
+            "cn": [
+                {
+                    "type": "Ext.Spacer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "docked": "right",
+                        "width": 10
+                    },
+                    "configAlternates": {
+                        "docked": "string",
+                        "width": "number"
+                    },
+                    "name": "MySpacer4",
+                    "designerId": "37801651-efdf-460a-bc93-cfaa2cd93953"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "btnClose",
+                        "designer|uiInterfaceName": "action",
+                        "docked": "right",
+                        "text": "닫기",
+                        "ui": "action"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "designer|uiInterfaceName": "string",
+                        "docked": "string",
+                        "text": "string",
+                        "ui": "string"
+                    },
+                    "name": "MyButton",
+                    "designerId": "314c4a6c-5f77-48e6-beb0-4182144cbeb2",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|commentHeader": [
+                                    "닫기"
+                                ],
+                                "fn": "onBtnClose",
+                                "implHandler": [
+                                    "this.getView().fireEvent('onClose');",
+                                    "this.getView().close();"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "designer|commentHeader": "comment",
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnClose",
+                            "designerId": "a15947d7-69ae-46e6-989f-da3caf435538"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Spacer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "docked": "right",
+                        "width": 10
+                    },
+                    "configAlternates": {
+                        "docked": "string",
+                        "width": "number"
+                    },
+                    "name": "MySpacer",
+                    "designerId": "4e95c14b-450b-4d04-8454-56219fac41ab"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "",
+                        "designer|uiInterfaceName": "action",
+                        "docked": "right",
+                        "reference": "btnSelect",
+                        "text": "조회",
+                        "ui": "action"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "docked": "string",
+                        "height": "auto",
+                        "text": "string",
+                        "designer|uiInterfaceName": "string",
+                        "reference": "string",
+                        "ui": "string"
+                    },
+                    "name": "MyButton2",
+                    "designerId": "e3da79f7-9efd-4c74-aa97-32e147c5b202",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|commentHeader": [
+                                    "조회"
+                                ],
+                                "fn": "onBtnSelect",
+                                "implHandler": [
+                                    "var scrpCntView = this.getReferences().scrp_container.items.items[0],",
+                                    "    scrpCntCtrl = scrpCntView.controller;",
+                                    "",
+                                    "scrpCntCtrl.onSelect();"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string",
+                                "designer|commentHeader": "comment"
+                            },
+                            "name": "onBtnSelect",
+                            "designerId": "e0047a0b-61f2-4388-8a79-d56319f8cf66"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": "100%",
+                "reference": "scrp_container"
+            },
+            "configAlternates": {
+                "height": "auto",
+                "reference": "string"
+            },
+            "name": "MyContainer5",
+            "designerId": "5583707a-fced-42f6-a322-2ad29fabfafb"
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "초기화"
+                ],
+                "fn": "onContainerInitialize",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    scrpCnt = refs.scrp_container,",
+                    "    data = component.config.data;",
+                    "",
+                    "if (!data) {",
+                    "    this.onBtnClose();",
+                    "}",
+                    "",
+                    "// 01 : 법인카드, 02 : 현금영수증",
+                    "var aplKndcd = data.aplKndcd,",
+                    "    cntId = (aplKndcd == Constants.aplKndcd.CARD) ? 'BgxComScrp01M' : (aplKndcd == Constants.aplKndcd.CSH_RCT) ? 'BgxComScrp02M' : '';",
+                    "if (!cntId) {",
+                    "    this.onBtnClose();",
+                    "}",
+                    "",
+                    "scrpCnt.add(Ext.create(cntId, {data : data}));"
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onContainerInitialize",
+            "designerId": "8c3b63af-2861-49d7-b687-24ef1516348b"
+        }
+    ]
+}

@@ -1,0 +1,160 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "BomTasPushDetailPopupM"
+        ],
+        "designer|commentHeader": [
+            "모바일 푸시 상세팝업 (디자인적용버전) - 화면",
+            "",
+            "@author BNK시스템/파트너/지민영",
+            "@since 2020.11.13",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일       수정자                  수정내용",
+            "----------  ------------------     --------------------------",
+            "2020.11.13  BNK시스템/파트너/지민영   최초 생성"
+        ],
+        "designer|extend": "Ext.window.Window",
+        "designer|userAlias": "BomTasPushDetailPopupM",
+        "designer|userClassName": "BackOffice.bom.BomTasPushDetailPopupM",
+        "layout": "vbox",
+        "left": "2.5%",
+        "maxHeight": "98%",
+        "scrollable": "both",
+        "top": 10,
+        "width": "95%"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "extend": "string",
+        "alternateClassName": "typedarray",
+        "designer|extend": "string",
+        "designer|userAlias": "string",
+        "width": "auto",
+        "designer|commentHeader": "comment",
+        "layout": "string",
+        "maxHeight": "auto",
+        "scrollable": "auto",
+        "top": "auto",
+        "left": "auto"
+    },
+    "designerId": "f1ab38ab-7a56-4070-b755-ddf70bf03b4b",
+    "viewControllerInstanceId": "fd1d3eae-c240-47cb-83bd-6e522f08f1f2",
+    "viewModelInstanceId": "bc4ca5e9-04b8-4dc8-a3dd-6659e55317b0",
+    "cn": [
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onContainerInitialize",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel();",
+                    "",
+                    "if (component.boTasmTrsId) {",
+                    "    me.onSelect(component.boTasmTrsId);",
+                    "}",
+                    "",
+                    "if (component.refresh) {",
+                    "    vm.set('refresh', component.refresh);",
+                    "}",
+                    ""
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "name": "string",
+                "scope": "string",
+                "implHandler": "code"
+            },
+            "name": "onContainerInitialize",
+            "designerId": "2b032c19-5310-4500-abf4-64ec83ec19f0"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom",
+                "height": 50,
+                "text": "닫기"
+            },
+            "configAlternates": {
+                "docked": "string",
+                "height": "auto",
+                "text": "string"
+            },
+            "name": "MyButton2",
+            "designerId": "4ee49d17-6ef7-484e-bc7f-cb68da35d2f8",
+            "cn": [
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onBtnClose",
+                        "implHandler": [
+                            "var me = this,",
+                            "    vm = me.getViewModel(),",
+                            "    v = me.getView();",
+                            "",
+                            "if (vm.get('refresh')) {",
+                            "    v.fireEvent('refresh');",
+                            "}",
+                            "v.close();"
+                        ],
+                        "name": "tap",
+                        "scope": "me"
+                    },
+                    "configAlternates": {
+                        "fn": "string",
+                        "implHandler": "code",
+                        "name": "string",
+                        "scope": "string"
+                    },
+                    "name": "onBtnClose",
+                    "designerId": "8c377598-c651-46da-ac24-915459b2012c"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "reference": "cpnt",
+                "scrollable": true
+            },
+            "configAlternates": {
+                "reference": "string",
+                "scrollable": "auto"
+            },
+            "name": "MyContainer40",
+            "designerId": "fcd657b0-e3a5-4a87-9122-8f56099f4ee0"
+        }
+    ]
+}

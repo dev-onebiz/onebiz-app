@@ -1,0 +1,20 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "js_m4zs4ov4",
+        "includeInBundle": true,
+        "url": "FieldUtils.js"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "includeInBundle": "boolean",
+        "url": "uri"
+    },
+    "name": "js13",
+    "designerId": "642665f3-094f-43d3-93fc-5fe8877d0770"
+}

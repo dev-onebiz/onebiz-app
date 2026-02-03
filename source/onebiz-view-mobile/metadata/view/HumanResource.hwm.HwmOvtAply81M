@@ -1,0 +1,1933 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "HwmOvtAply81M"
+        ],
+        "designer|commentHeader": [
+            "연장근무신청 결재함 - 화면",
+            "",
+            "@author BNK시스템/기타/이상근",
+            "@since 2019.06.17",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일\t\t  수정자                  수정내용",
+            "----------\t------------------     --------------------------",
+            "2019.04.16\tBNK시스템/기타/이상근     최초 생성",
+            "2020.08.05\tBNK시스템/파트너/지민영   보고화면에서 출/퇴근일시 안보이는 문제 및 결재함화면(7x) 통일"
+        ],
+        "designer|extend": "Ext.window.Window",
+        "designer|userAlias": "HwmOvtAply81M",
+        "designer|userClassName": "HumanResource.hwm.HwmOvtAply81M",
+        "height": "98%",
+        "layout": "vbox",
+        "scrollable": "both",
+        "width": "98%"
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "title": "string",
+        "layout": "string",
+        "designer|extend": "string",
+        "height": "auto",
+        "width": "auto",
+        "scrollable": "auto",
+        "designer|commentHeader": "comment"
+    },
+    "name": "Budget.exp.ExpNteAply71M1",
+    "designerId": "241a14d1-5c70-4d5c-a35d-2cdd18f1a335",
+    "viewControllerInstanceId": "55fc3a18-7a2e-43a7-b3c0-9cd81cd22369",
+    "viewModelInstanceId": "f4707707-e2a3-4f8e-b1bc-3e820a43bfa5",
+    "cn": [
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "Initialize",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    aprHistId = component.initialConfig.aprHistId,",
+                    "    record = component.initialConfig.record,",
+                    "    command = component.command,",
+                    "    docData = component.docData,",
+                    "    afterchange = docData.afterchange,",
+                    "    items = afterchange.items,",
+                    "    aplTct = afterchange.aplTct, // 건수",
+                    "    aplTotSmamt = afterchange.aplTotSmamt, // render 합계금액",
+                    "    str = String(aplTotSmamt),",
+                    "    aplTotSmamtRender = str.replace(/(\\d)(?=(?:\\d{3})+(?!\\d))/g, '$1,'),",
+                    "    fromDoc = component.initialConfig.fromDoc;",
+                    "",
+                    "",
+                    "items = me.recoveryFormRender(items);",
+                    "",
+                    "for(var i in items){",
+                    "    items[i].isAply = true; // 결재 화면으로 사용하는 Items에서는 readOnly 처리하기 위해 사용하는 플래그",
+                    "}",
+                    "",
+                    "var data = {",
+                    "    aplTct : aplTct,",
+                    "    aplTotSmamtRender : aplTotSmamtRender",
+                    "};",
+                    "",
+                    "vm.set('data', data);",
+                    "vm.set('records', items);",
+                    "vm.set('afterchange', afterchange);",
+                    "vm.set('docData', docData);",
+                    "vm.set('aplTct', aplTct); // 건수",
+                    "vm.set('aplTotSmamtRender', aplTotSmamtRender); // render 합계금액",
+                    "",
+                    "vm.set('aprHistId', aprHistId);",
+                    "vm.set('record', record);",
+                    "",
+                    "var dataAft = docData.afterchange;",
+                    "refs.rgdt.setHtml(record.rgdt);",
+                    "refs.rqpr.setValue(dataAft.rqpr);",
+                    "",
+                    "refs.aplDvcdNm.setValue(dataAft.aplDvcd == '01' ? '신청' : '취소신청');",
+                    "refs.aplDvcd.setValue(dataAft.aplDvcd);",
+                    "",
+                    "refs.aplOvtDt.setValue(me.dateFormat(dataAft.aplOvtDt,'date'));",
+                    "refs.aplOvtStrdt.setValue(me.dateFormat(dataAft.aplOvtStrdt,'date'));",
+                    "refs.aplOvtStrtm.setValue(me.dateFormat(dataAft.aplOvtStrtm,'time'));",
+                    "refs.aplOvtEdt.setValue(me.dateFormat(dataAft.aplOvtEdt,'date'));",
+                    "refs.aplOvtEdtm.setValue(me.dateFormat(dataAft.aplOvtEdtm,'time'));",
+                    "refs.aplCntn.setValue(dataAft.aplCntn);",
+                    "refs.aplTm.setValue(dataAft.aplTm);",
+                    "",
+                    "refs.totOvtHodMonthHr.setValue(dataAft.totOvtHodMonthHr);",
+                    "refs.totOvtHodWeekHr.setValue(dataAft.totOvtHodWeekHr);",
+                    "",
+                    "if(record.vwId === 'HwmOvtRept71'){",
+                    "    refs.headTitle.setHtml(\"연장근무보고신청\");",
+                    "    vm.set('docCd', 'HwmOvtRept71');",
+                    "    vm.set('docNm', '연장근무 보고서');",
+                    "",
+                    "    refs.wrkStrdtBox.setHidden(false);",
+                    "    refs.wrkEdtBox.setHidden(false);",
+                    "    refs.reptCntn.setHidden(false);",
+                    "    refs.reptCntn.setValue(dataAft.reptCntn);",
+                    "",
+                    "    refs.wrkStrdt.setValue(me.dateFormat(dataAft.wrkStrdt,'date'));",
+                    "    refs.wrkEdt.setValue(me.dateFormat(dataAft.wrkEdt,'date'));",
+                    "    refs.wrkStrtm.setValue(me.dateFormat(dataAft.wrkStrtm,'time'));",
+                    "    refs.wrkEdtm.setValue(me.dateFormat(dataAft.wrkEdtm,'time'));",
+                    "",
+                    "} else {",
+                    "    refs.headTitle.setHtml( \"연장근무\"+ (dataAft.aplDvcd == '01' ? '신청' : '취소신청' ));",
+                    "    if(dataAft.aplDvcd == '01'){",
+                    "        vm.set('docCd', 'HwmOvtAply71');",
+                    "        vm.set('docNm', '연장근무 신청서');",
+                    "    } else {",
+                    "        vm.set('docCd', 'HwmOvtAply72');",
+                    "        vm.set('docNm', '연장근무 취소신청서');",
+                    "    }",
+                    "}",
+                    "",
+                    "// 결재문서 초기화 설정",
+                    "ApprovalBoxSvc.setup({",
+                    "    command   : command,",
+                    "    viewModel : vm,",
+                    "    aprHistId : aprHistId,",
+                    "    edocCd    : vm.get('docCd'),",
+                    "    scope     : me",
+                    "});",
+                    "",
+                    "refs.aplOvtStrtm.el.select('.x-error-el').setStyle('margin','0px');",
+                    "refs.aplOvtEdtm.el.select('.x-error-el').setStyle('margin',\t'0px');"
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "Initialize",
+            "designerId": "a1b856d6-afc3-4544-b5fc-65b7f362afd6"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "",
+                "height": "100%",
+                "layout": "vbox",
+                "scrollable": "vertical"
+            },
+            "configAlternates": {
+                "container|align": "string",
+                "height": "auto",
+                "layout": "string",
+                "scrollable": "auto",
+                "designer|displayName": "string"
+            },
+            "name": "MyContainer12",
+            "designerId": "bc8a9cd3-7d94-435c-b2c6-37c2f53458eb",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "labelContainer",
+                        "docked": "top",
+                        "layout": "vbox",
+                        "layout|flex": 2,
+                        "margin": 15
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout": "string",
+                        "layout|flex": "number",
+                        "margin": "auto",
+                        "docked": "string"
+                    },
+                    "name": "MyContainer31",
+                    "designerId": "9bd625c8-c6dc-4732-8fba-c36589247280",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "구분 hbox",
+                                "layout": "hbox",
+                                "margin": "0 0 7 0"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "layout": "string",
+                                "margin": "auto"
+                            },
+                            "name": "MyContainer25",
+                            "designerId": "94312308-d0d7-4877-92df-5e609d915462",
+                            "cn": [
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "구분",
+                                        "docked": "left",
+                                        "html": "구분",
+                                        "style": "fontSize: 20px;"
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "html": "string",
+                                        "docked": "string",
+                                        "style": "string"
+                                    },
+                                    "name": "MyLabel21",
+                                    "designerId": "dc4d9bc7-75a7-4a8b-8237-3ee8b440b09b"
+                                },
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "구분",
+                                        "docked": "right",
+                                        "html": "연장근무신청",
+                                        "reference": "headTitle",
+                                        "style": "color:red; fontSize: 20px;"
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "docked": "string",
+                                        "html": "string",
+                                        "style": "string",
+                                        "reference": "string"
+                                    },
+                                    "name": "MyLabel34",
+                                    "designerId": "b046ef14-572e-4dc3-a807-a2c2c40e7b0e"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "상신일 hbox",
+                                "layout": "hbox"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "layout": "string"
+                            },
+                            "name": "MyContainer26",
+                            "designerId": "63408d8f-2a43-4c11-9bef-97fd11d745f3",
+                            "cn": [
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "상신일",
+                                        "docked": "left",
+                                        "html": "상신일",
+                                        "style": "fontSize: 20px;"
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "html": "string",
+                                        "docked": "string",
+                                        "style": "string"
+                                    },
+                                    "name": "MyLabel22",
+                                    "designerId": "3df5ff9c-6cf1-4d97-a17d-ab266d0e3447"
+                                },
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "상신일",
+                                        "docked": "right",
+                                        "reference": "rgdt",
+                                        "style": "fontSize: 20px;"
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "docked": "string",
+                                        "style": "string",
+                                        "reference": "string"
+                                    },
+                                    "name": "MyLabel23",
+                                    "designerId": "8e05332b-4e7a-4719-9c19-4293eacd2f21"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "신청자",
+                        "disabled": true,
+                        "editable": false,
+                        "label": "신청자",
+                        "margin": "0 5 0 5",
+                        "name": "rqpr",
+                        "readOnly": true,
+                        "reference": "rqpr",
+                        "width": "97%"
+                    },
+                    "configAlternates": {
+                        "label": "string",
+                        "designer|displayName": "string",
+                        "reference": "string",
+                        "width": "auto",
+                        "docked": "string",
+                        "editable": "boolean",
+                        "name": "string",
+                        "disabled": "boolean",
+                        "margin": "auto",
+                        "readOnly": "boolean"
+                    },
+                    "name": "MyTextField2",
+                    "designerId": "99b631b1-3453-4c15-99cd-22644afab9c6"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "신청구분",
+                        "disabled": true,
+                        "editable": false,
+                        "label": "신청구분",
+                        "margin": "0 5 0 5",
+                        "readOnly": true,
+                        "reference": "aplDvcdNm",
+                        "width": "97%"
+                    },
+                    "configAlternates": {
+                        "label": "string",
+                        "designer|displayName": "string",
+                        "reference": "string",
+                        "width": "auto",
+                        "docked": "string",
+                        "editable": "boolean",
+                        "name": "string",
+                        "disabled": "boolean",
+                        "margin": "auto",
+                        "readOnly": "boolean",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyTextField6",
+                    "designerId": "02621d2c-0271-46dd-bfef-6f798ca20a6a"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "신청구분코드",
+                        "disabled": true,
+                        "editable": false,
+                        "hidden": true,
+                        "label": "신청구분",
+                        "margin": "0 5 0 5",
+                        "readOnly": true,
+                        "reference": "aplDvcd",
+                        "width": "97%"
+                    },
+                    "configAlternates": {
+                        "label": "string",
+                        "designer|displayName": "string",
+                        "reference": "string",
+                        "width": "auto",
+                        "docked": "string",
+                        "editable": "boolean",
+                        "name": "string",
+                        "disabled": "boolean",
+                        "margin": "auto",
+                        "readOnly": "boolean",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyTextField7",
+                    "designerId": "8a3e43af-b796-43ca-8d07-79bc370e2d23"
+                },
+                {
+                    "type": "Ext.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dateFormat": "Y-m-d",
+                        "designer|displayName": "연장근무일자",
+                        "disabled": true,
+                        "editable": false,
+                        "label": "날짜",
+                        "margin": "0 5 0 5",
+                        "reference": "aplOvtDt",
+                        "width": "97%"
+                    },
+                    "configAlternates": {
+                        "dateFormat": "string",
+                        "docked": "string",
+                        "height": "auto",
+                        "label": "string",
+                        "reference": "string",
+                        "width": "auto",
+                        "margin": "auto",
+                        "maxWidth": "auto",
+                        "minWidth": "auto",
+                        "designer|displayName": "string",
+                        "disabled": "boolean",
+                        "editable": "boolean",
+                        "readOnly": "boolean",
+                        "validateDisabled": "boolean"
+                    },
+                    "name": "MyDate3",
+                    "designerId": "5632cca2-c0f6-413e-b7f7-7bb06eeae76c",
+                    "cn": [
+                        {
+                            "type": "Ext.picker.Date",
+                            "reference": {
+                                "name": "picker",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dayText": "일",
+                                "header": false,
+                                "hideOnMaskTap": true,
+                                "monthText": "월",
+                                "slotOrder": [
+                                    "[\"year\",\"month\",\"day\"]"
+                                ],
+                                "title": "",
+                                "yearText": "년"
+                            },
+                            "configAlternates": {
+                                "dayText": "string",
+                                "hideOnMaskTap": "boolean",
+                                "monthText": "string",
+                                "title": "string",
+                                "yearText": "string",
+                                "header": "boolean",
+                                "slotOrder": "array"
+                            },
+                            "name": "MyDatePicker",
+                            "designerId": "a5830706-3c02-435f-b207-bcc96d0e9961"
+                        },
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onDatefieldChange1",
+                                "implHandler": [
+                                    "var me = this,",
+                                    "    vm = me.getViewModel(),",
+                                    "    refs = me.getReferences();",
+                                    "",
+                                    "// 날자관련 데이터 변환",
+                                    "var dateCompoList = [",
+                                    "    'aplOvtStrdt',",
+                                    "    'aplOvtEdt',",
+                                    "    'wrkStrdt',",
+                                    "    'wrkEdt'",
+                                    "];",
+                                    "var dateData = new Object();",
+                                    "for(var key in dateCompoList ){",
+                                    "    var dateObj = refs[dateCompoList[key]];",
+                                    "    dateObj.setValue(datefield.getInputValue());",
+                                    "}",
+                                    "",
+                                    "if(vm.clicked =='new'){",
+                                    "    me.timeValidate();",
+                                    "",
+                                    "}",
+                                    "",
+                                    ""
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onDatefieldChange1",
+                            "designerId": "58b16767-bd52-487a-9d14-c331a1120491"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "신청시간",
+                        "editable": false,
+                        "hidden": true,
+                        "label": "신청시간",
+                        "margin": "0 5 0 5",
+                        "readOnly": true,
+                        "reference": "aplTm",
+                        "width": "97%"
+                    },
+                    "configAlternates": {
+                        "label": "string",
+                        "designer|displayName": "string",
+                        "reference": "string",
+                        "width": "auto",
+                        "docked": "string",
+                        "editable": "boolean",
+                        "name": "string",
+                        "disabled": "boolean",
+                        "margin": "auto",
+                        "readOnly": "boolean",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyTextField13",
+                    "designerId": "5eafd56e-f17a-4290-99b7-11d3f741be2e"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "start",
+                        "container|pack": "center",
+                        "designer|displayName": "시작일시",
+                        "height": 82,
+                        "layout": "vbox",
+                        "layout|flex": null,
+                        "margin": "0 5 0 5",
+                        "scrollable": false
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout": "string",
+                        "container|align": "string",
+                        "container|pack": "string",
+                        "docked": "string",
+                        "layout|flex": "number",
+                        "scrollable": "auto",
+                        "height": "auto",
+                        "margin": "auto"
+                    },
+                    "name": "MyContainer26",
+                    "designerId": "bec0e10f-8312-4212-9282-e323d5be0c81",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "-",
+                                "height": 15,
+                                "width": "100%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "width": "auto"
+                            },
+                            "name": "MyContainer5",
+                            "designerId": "1d57c4c4-fc78-43b9-9fef-4ce61887e1b2"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": "",
+                                "layout": "hbox",
+                                "width": "98%"
+                            },
+                            "configAlternates": {
+                                "height": "auto",
+                                "layout": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyContainer1",
+                            "designerId": "b48acce5-b5b2-466e-abf3-1873b437fdc1",
+                            "cn": [
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "html": "시작 일시",
+                                        "style": "font-size: 12px; color: rgba(17, 17, 17, 0.38)"
+                                    },
+                                    "configAlternates": {
+                                        "html": "string",
+                                        "width": "auto",
+                                        "style": "string"
+                                    },
+                                    "name": "MyLabel6",
+                                    "designerId": "59e04127-04b2-4599-9737-63f105ee212d"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "-",
+                                "height": 8,
+                                "width": "100%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "width": "auto"
+                            },
+                            "name": "MyContainer3",
+                            "designerId": "1d17db62-fbe0-4d08-8f16-c32910d47ea2"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout": "hbox",
+                                "margin": "0 5 0 5",
+                                "width": "97%"
+                            },
+                            "configAlternates": {
+                                "layout": "string",
+                                "margin": "auto",
+                                "width": "auto"
+                            },
+                            "name": "MyContainer33",
+                            "designerId": "cb4357cb-353a-4a41-8890-ff4e54c8a6e7",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Date",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dateFormat": "Y-m-d",
+                                        "disabled": true,
+                                        "docked": null,
+                                        "editable": false,
+                                        "height": "100%",
+                                        "reference": "aplOvtStrdt",
+                                        "width": "50%"
+                                    },
+                                    "configAlternates": {
+                                        "dateFormat": "string",
+                                        "docked": "string",
+                                        "height": "auto",
+                                        "label": "string",
+                                        "reference": "string",
+                                        "width": "auto",
+                                        "margin": "auto",
+                                        "maxWidth": "auto",
+                                        "minWidth": "auto",
+                                        "disabled": "boolean",
+                                        "editable": "boolean",
+                                        "readOnly": "boolean"
+                                    },
+                                    "name": "MyDate",
+                                    "designerId": "237ca22c-e15e-4798-923f-435e1ed5a236",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.picker.Date",
+                                            "reference": {
+                                                "name": "picker",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dayText": "일",
+                                                "header": false,
+                                                "hideOnMaskTap": true,
+                                                "monthText": "월",
+                                                "slotOrder": [
+                                                    "[\"year\",\"month\",\"day\"]"
+                                                ],
+                                                "title": "",
+                                                "yearText": "년"
+                                            },
+                                            "configAlternates": {
+                                                "dayText": "string",
+                                                "hideOnMaskTap": "boolean",
+                                                "monthText": "string",
+                                                "title": "string",
+                                                "yearText": "string",
+                                                "header": "boolean",
+                                                "slotOrder": "array"
+                                            },
+                                            "name": "MyDatePicker",
+                                            "designerId": "736bb274-ded2-4da4-a584-de846e1f3143"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Spacer",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "minWidth": "3%",
+                                        "width": null
+                                    },
+                                    "configAlternates": {
+                                        "minWidth": "auto",
+                                        "width": "number"
+                                    },
+                                    "name": "MySpacer4",
+                                    "designerId": "c9cb2525-ae43-4eeb-9d37-a65e6f3a4c5e"
+                                },
+                                {
+                                    "type": "Ext.field.Time",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "time",
+                                        "disabled": true,
+                                        "format": "H:i",
+                                        "height": "100%",
+                                        "reference": "aplOvtStrtm",
+                                        "width": "45%"
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "height": "auto",
+                                        "label": "string",
+                                        "reference": "string",
+                                        "width": "auto",
+                                        "disabled": "boolean",
+                                        "format": "string"
+                                    },
+                                    "name": "MyTime1",
+                                    "designerId": "c12cdc1c-b64c-4050-8e7d-d0f914264f20"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|pack": "end",
+                        "designer|displayName": "종료일시",
+                        "height": 76,
+                        "layout": "vbox",
+                        "layout|flex": null,
+                        "margin": "0 5 0 5",
+                        "scrollable": false
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout": "string",
+                        "container|align": "string",
+                        "container|pack": "string",
+                        "docked": "string",
+                        "layout|flex": "number",
+                        "scrollable": "auto",
+                        "height": "auto",
+                        "margin": "auto"
+                    },
+                    "name": "MyContainer30",
+                    "designerId": "3ca29451-61bc-43b4-a9cb-d24081fbdb02",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "-",
+                                "height": 10,
+                                "width": "100%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "width": "auto"
+                            },
+                            "name": "MyContainer11",
+                            "designerId": "d35be277-3760-4b49-afa7-88bd755149a8"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout": "hbox",
+                                "width": "98%"
+                            },
+                            "configAlternates": {
+                                "layout": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyContainer7",
+                            "designerId": "041f2c6a-9285-48db-977a-beff06a02ef1",
+                            "cn": [
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": "100%",
+                                        "html": "종료 일시",
+                                        "style": "font-size: 12px; color: rgba(17, 17, 17, 0.38)",
+                                        "width": "20%"
+                                    },
+                                    "configAlternates": {
+                                        "html": "string",
+                                        "width": "auto",
+                                        "height": "auto",
+                                        "style": "string"
+                                    },
+                                    "name": "MyLabel6",
+                                    "designerId": "502f70af-10b5-400d-be98-9efd33400661"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "-",
+                                "height": 8,
+                                "width": "100%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "width": "auto"
+                            },
+                            "name": "MyContainer9",
+                            "designerId": "435b19da-aae8-4ecf-80cf-462e829aeef0"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout": "hbox",
+                                "margin": "0 5 0 5",
+                                "width": "97%"
+                            },
+                            "configAlternates": {
+                                "layout": "string",
+                                "width": "auto",
+                                "margin": "auto"
+                            },
+                            "name": "MyContainer36",
+                            "designerId": "ba29c47f-f3c5-47f3-b770-c05848aa6520",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Date",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dateFormat": "Y-m-d",
+                                        "disabled": true,
+                                        "height": "100%",
+                                        "labelAlign": "right",
+                                        "name": "",
+                                        "reference": "aplOvtEdt",
+                                        "width": "50%"
+                                    },
+                                    "configAlternates": {
+                                        "dateFormat": "string",
+                                        "docked": "string",
+                                        "height": "auto",
+                                        "label": "string",
+                                        "reference": "string",
+                                        "width": "auto",
+                                        "margin": "auto",
+                                        "maxWidth": "auto",
+                                        "minWidth": "auto",
+                                        "labelAlign": "string",
+                                        "name": "string",
+                                        "disabled": "boolean"
+                                    },
+                                    "name": "MyDate",
+                                    "designerId": "916619e1-bf20-49b1-908c-f7265905a335",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.picker.Date",
+                                            "reference": {
+                                                "name": "picker",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dayText": "일",
+                                                "header": false,
+                                                "hideOnMaskTap": true,
+                                                "monthText": "월",
+                                                "slotOrder": [
+                                                    "[\"year\",\"month\",\"day\"]"
+                                                ],
+                                                "title": "",
+                                                "yearText": "년"
+                                            },
+                                            "configAlternates": {
+                                                "dayText": "string",
+                                                "hideOnMaskTap": "boolean",
+                                                "monthText": "string",
+                                                "title": "string",
+                                                "yearText": "string",
+                                                "header": "boolean",
+                                                "slotOrder": "array"
+                                            },
+                                            "name": "MyDatePicker",
+                                            "designerId": "ebcf5834-25bd-494d-97f9-a22ba412c584"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Spacer",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "minWidth": "3%",
+                                        "width": null
+                                    },
+                                    "configAlternates": {
+                                        "minWidth": "auto",
+                                        "width": "number"
+                                    },
+                                    "name": "MySpacer4",
+                                    "designerId": "17d98af3-ff61-47f6-8eb2-b2dc0d653bc4"
+                                },
+                                {
+                                    "type": "Ext.field.Time",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "time",
+                                        "disabled": true,
+                                        "format": "H:i",
+                                        "height": "100%",
+                                        "reference": "aplOvtEdtm",
+                                        "width": "45%"
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "height": "auto",
+                                        "label": "string",
+                                        "reference": "string",
+                                        "width": "auto",
+                                        "disabled": "boolean",
+                                        "format": "string"
+                                    },
+                                    "name": "MyTime1",
+                                    "designerId": "8a9a61e8-d52d-4771-bfe2-48f14dfa0229"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "start",
+                        "container|pack": "center",
+                        "designer|displayName": "",
+                        "height": 76,
+                        "layout": "hbox",
+                        "margin": "0 5 0 5",
+                        "reference": "ovtHodInfo",
+                        "scrollable": false,
+                        "width": "97%"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout": "string",
+                        "container|align": "string",
+                        "container|pack": "string",
+                        "docked": "string",
+                        "layout|flex": "number",
+                        "scrollable": "auto",
+                        "height": "auto",
+                        "margin": "auto",
+                        "width": "auto",
+                        "hidden": "boolean",
+                        "reference": "string"
+                    },
+                    "name": "MyContainer23",
+                    "designerId": "9373b781-d6af-4804-a5f6-e0d1ca21ffe7",
+                    "cn": [
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "hidden": true,
+                                "label": "금월 (일)",
+                                "layout|flex": 1,
+                                "readOnly": true,
+                                "reference": "totOvtHodMonthDds"
+                            },
+                            "configAlternates": {
+                                "label": "string",
+                                "layout|flex": "number",
+                                "readOnly": "boolean",
+                                "reference": "string",
+                                "hidden": "boolean"
+                            },
+                            "name": "MyTextField14",
+                            "designerId": "f5c4797e-a611-4a08-8cf8-435c92de5a5f"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "hidden": true,
+                                "width": 10
+                            },
+                            "configAlternates": {
+                                "minWidth": "auto",
+                                "width": "number",
+                                "hidden": "boolean"
+                            },
+                            "name": "MySpacer",
+                            "designerId": "9c83a701-47a3-4bf3-ab30-02eb07c4e121"
+                        },
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "label": "금월시간외근무 (시간)",
+                                "layout|flex": 1,
+                                "readOnly": true,
+                                "reference": "totOvtHodMonthHr"
+                            },
+                            "configAlternates": {
+                                "label": "string",
+                                "layout|flex": "number",
+                                "readOnly": "boolean",
+                                "reference": "string",
+                                "hidden": "boolean"
+                            },
+                            "name": "MyTextField15",
+                            "designerId": "6d5e94c1-b79b-4394-a248-af5002ff4ef6"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "width": 10
+                            },
+                            "configAlternates": {
+                                "minWidth": "auto",
+                                "width": "number"
+                            },
+                            "name": "MySpacer1",
+                            "designerId": "b39f3cf3-38e8-442b-95de-d24faeda05cc"
+                        },
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "hidden": true,
+                                "label": "금주 (일)",
+                                "layout|flex": 1,
+                                "readOnly": true,
+                                "reference": "totOvtHodWeekDds"
+                            },
+                            "configAlternates": {
+                                "label": "string",
+                                "layout|flex": "number",
+                                "readOnly": "boolean",
+                                "reference": "string",
+                                "hidden": "boolean"
+                            },
+                            "name": "MyTextField13",
+                            "designerId": "46f22d7f-32b2-4648-a922-ce954d236ce4"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "hidden": true,
+                                "width": 10
+                            },
+                            "configAlternates": {
+                                "minWidth": "auto",
+                                "width": "number",
+                                "hidden": "boolean"
+                            },
+                            "name": "MySpacer2",
+                            "designerId": "2c6096b8-ae6b-44d5-9483-b2a7f3db557b"
+                        },
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "label": "금주시간외근무 (시간)",
+                                "layout|flex": 1,
+                                "readOnly": true,
+                                "reference": "totOvtHodWeekHr"
+                            },
+                            "configAlternates": {
+                                "label": "string",
+                                "layout|flex": "number",
+                                "readOnly": "boolean",
+                                "reference": "string",
+                                "hidden": "boolean"
+                            },
+                            "name": "MyTextField17",
+                            "designerId": "c31eb0a0-140c-41bf-96fd-3feaae8914c6"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.field.TextArea",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "disabled": true,
+                        "label": "사유",
+                        "margin": "0 5 0 5",
+                        "minHeight": 100,
+                        "name": "",
+                        "reference": "aplCntn",
+                        "width": "97%"
+                    },
+                    "configAlternates": {
+                        "label": "string",
+                        "name": "string",
+                        "reference": "string",
+                        "width": "auto",
+                        "margin": "auto",
+                        "disabled": "boolean",
+                        "docked": "string",
+                        "minHeight": "auto"
+                    },
+                    "name": "MyTextArea1",
+                    "designerId": "f2a554be-6eb4-42f8-8cd1-6e41e25d30b9"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "출근일시",
+                        "height": 76,
+                        "hidden": true,
+                        "layout": "vbox",
+                        "margin": "5 5 0 5",
+                        "reference": "wrkStrdtBox",
+                        "scrollable": false,
+                        "width": "97%"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout": "string",
+                        "container|align": "string",
+                        "container|pack": "string",
+                        "docked": "string",
+                        "layout|flex": "number",
+                        "scrollable": "auto",
+                        "height": "auto",
+                        "margin": "auto",
+                        "width": "auto",
+                        "hidden": "boolean",
+                        "reference": "string"
+                    },
+                    "name": "MyContainer27",
+                    "designerId": "8c2f1c3d-efc4-4ec5-87dd-6efba9a0b9af",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "-",
+                                "height": 15,
+                                "width": "100%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "width": "auto"
+                            },
+                            "name": "MyContainer5",
+                            "designerId": "0a886d58-86f6-4a26-98cc-0bf6dda03cac"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": "",
+                                "layout": "hbox",
+                                "width": "98%"
+                            },
+                            "configAlternates": {
+                                "height": "auto",
+                                "layout": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyContainer1",
+                            "designerId": "e1bfb24a-c04a-4602-9279-08e0d043ff3e",
+                            "cn": [
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "html": "출근 일시",
+                                        "style": "font-size: 12px; color: rgba(17, 17, 17, 0.38)"
+                                    },
+                                    "configAlternates": {
+                                        "html": "string",
+                                        "width": "auto",
+                                        "style": "string"
+                                    },
+                                    "name": "MyLabel6",
+                                    "designerId": "c277ead3-dd7e-477c-a064-f65064437ae3"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "-",
+                                "height": 8,
+                                "width": "100%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "width": "auto"
+                            },
+                            "name": "MyContainer3",
+                            "designerId": "099b9bb9-4e94-41b9-992b-6fb8db04db09"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout": "hbox",
+                                "margin": "0 5 0 5",
+                                "width": "97%"
+                            },
+                            "configAlternates": {
+                                "layout": "string",
+                                "margin": "auto",
+                                "width": "auto"
+                            },
+                            "name": "MyContainer2",
+                            "designerId": "f530a146-f766-479b-9c24-75d8cfbe46f1",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Date",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dateFormat": "Y-m-d",
+                                        "disabled": true,
+                                        "docked": null,
+                                        "editable": false,
+                                        "height": "100%",
+                                        "readOnly": true,
+                                        "reference": "wrkStrdt",
+                                        "width": "50%"
+                                    },
+                                    "configAlternates": {
+                                        "dateFormat": "string",
+                                        "docked": "string",
+                                        "height": "auto",
+                                        "label": "string",
+                                        "reference": "string",
+                                        "width": "auto",
+                                        "margin": "auto",
+                                        "maxWidth": "auto",
+                                        "minWidth": "auto",
+                                        "disabled": "boolean",
+                                        "editable": "boolean",
+                                        "readOnly": "boolean"
+                                    },
+                                    "name": "MyDate",
+                                    "designerId": "63b06afb-2d12-4215-89a8-cad531d5c1ad",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.picker.Date",
+                                            "reference": {
+                                                "name": "picker",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dayText": "일",
+                                                "disabled": true,
+                                                "header": false,
+                                                "hideOnMaskTap": true,
+                                                "monthText": "월",
+                                                "slotOrder": [
+                                                    "[\"year\",\"month\",\"day\"]"
+                                                ],
+                                                "title": "",
+                                                "yearText": "년"
+                                            },
+                                            "configAlternates": {
+                                                "dayText": "string",
+                                                "hideOnMaskTap": "boolean",
+                                                "monthText": "string",
+                                                "title": "string",
+                                                "yearText": "string",
+                                                "header": "boolean",
+                                                "slotOrder": "array",
+                                                "disabled": "boolean"
+                                            },
+                                            "name": "MyDatePicker",
+                                            "designerId": "ac54bbda-280b-4c72-9ecc-8acf1522485b"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Spacer",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "minWidth": "3%",
+                                        "width": null
+                                    },
+                                    "configAlternates": {
+                                        "minWidth": "auto",
+                                        "width": "number"
+                                    },
+                                    "name": "MySpacer4",
+                                    "designerId": "b97f93e0-d05b-496d-b6f6-71f0c1574cf8"
+                                },
+                                {
+                                    "type": "Ext.field.Time",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "출근시각",
+                                        "disabled": true,
+                                        "format": "H:i",
+                                        "height": "100%",
+                                        "reference": "wrkStrtm",
+                                        "width": "45%"
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "height": "auto",
+                                        "label": "string",
+                                        "reference": "string",
+                                        "width": "auto",
+                                        "disabled": "boolean",
+                                        "format": "string"
+                                    },
+                                    "name": "MyTime1",
+                                    "designerId": "3d3fdf8c-1adf-4e3d-ba9c-10093cee0d18"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "퇴근일시",
+                        "height": 76,
+                        "hidden": true,
+                        "layout": "vbox",
+                        "margin": "0 5 0 5",
+                        "reference": "wrkEdtBox",
+                        "scrollable": false,
+                        "width": "97%"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout": "string",
+                        "container|align": "string",
+                        "container|pack": "string",
+                        "docked": "string",
+                        "layout|flex": "number",
+                        "scrollable": "auto",
+                        "height": "auto",
+                        "margin": "auto",
+                        "width": "auto",
+                        "hidden": "boolean",
+                        "reference": "string"
+                    },
+                    "name": "MyContainer32",
+                    "designerId": "32f882ce-7703-46b9-bbd9-60069f8347df",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "-",
+                                "height": 10,
+                                "width": "100%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "width": "auto"
+                            },
+                            "name": "MyContainer11",
+                            "designerId": "0567e4c2-f8d5-4745-a4b8-ddcafc0eef19"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout": "hbox",
+                                "width": "98%"
+                            },
+                            "configAlternates": {
+                                "layout": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyContainer7",
+                            "designerId": "826c4ebf-97f5-4a26-9a98-b41147d30b68",
+                            "cn": [
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": "100%",
+                                        "html": "퇴근 일시",
+                                        "style": "font-size: 12px; color: rgba(17, 17, 17, 0.38)",
+                                        "width": "20%"
+                                    },
+                                    "configAlternates": {
+                                        "html": "string",
+                                        "width": "auto",
+                                        "height": "auto",
+                                        "style": "string"
+                                    },
+                                    "name": "MyLabel6",
+                                    "designerId": "14aaa447-673f-43f2-9247-115b2dc02d5b"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "-",
+                                "height": 8,
+                                "width": "100%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "width": "auto"
+                            },
+                            "name": "MyContainer9",
+                            "designerId": "847db2d6-bae5-4ebb-8554-6549cb8c981b"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout": "hbox",
+                                "margin": "0 5 0 5",
+                                "width": "97%"
+                            },
+                            "configAlternates": {
+                                "layout": "string",
+                                "width": "auto",
+                                "margin": "auto"
+                            },
+                            "name": "MyContainer10",
+                            "designerId": "d2898e6a-f64d-48b2-b4a4-b07830c3d10f",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Date",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dateFormat": "Y-m-d",
+                                        "disabled": true,
+                                        "editable": false,
+                                        "height": "100%",
+                                        "labelAlign": "right",
+                                        "name": "",
+                                        "readOnly": true,
+                                        "reference": "wrkEdt",
+                                        "width": "50%"
+                                    },
+                                    "configAlternates": {
+                                        "dateFormat": "string",
+                                        "docked": "string",
+                                        "height": "auto",
+                                        "label": "string",
+                                        "reference": "string",
+                                        "width": "auto",
+                                        "margin": "auto",
+                                        "maxWidth": "auto",
+                                        "minWidth": "auto",
+                                        "labelAlign": "string",
+                                        "name": "string",
+                                        "disabled": "boolean",
+                                        "editable": "boolean",
+                                        "readOnly": "boolean"
+                                    },
+                                    "name": "MyDate",
+                                    "designerId": "a683ef87-0802-413b-a074-b01e355044c7",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.picker.Date",
+                                            "reference": {
+                                                "name": "picker",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dayText": "일",
+                                                "disabled": true,
+                                                "header": false,
+                                                "hideOnMaskTap": true,
+                                                "monthText": "월",
+                                                "slotOrder": [
+                                                    "[\"year\",\"month\",\"day\"]"
+                                                ],
+                                                "title": "",
+                                                "yearText": "년"
+                                            },
+                                            "configAlternates": {
+                                                "dayText": "string",
+                                                "hideOnMaskTap": "boolean",
+                                                "monthText": "string",
+                                                "title": "string",
+                                                "yearText": "string",
+                                                "header": "boolean",
+                                                "slotOrder": "array",
+                                                "disabled": "boolean"
+                                            },
+                                            "name": "MyDatePicker",
+                                            "designerId": "e2a50ff0-695e-48c3-9838-1e4d38babdd8"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Spacer",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "minWidth": "3%",
+                                        "width": null
+                                    },
+                                    "configAlternates": {
+                                        "minWidth": "auto",
+                                        "width": "number"
+                                    },
+                                    "name": "MySpacer4",
+                                    "designerId": "0e598c40-ee89-4bad-aeb4-dde3de6741a2"
+                                },
+                                {
+                                    "type": "Ext.field.Time",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "퇴근시각",
+                                        "disabled": true,
+                                        "format": "H:i",
+                                        "height": "100%",
+                                        "reference": "wrkEdtm",
+                                        "width": "45%"
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "height": "auto",
+                                        "label": "string",
+                                        "reference": "string",
+                                        "width": "auto",
+                                        "disabled": "boolean",
+                                        "format": "string"
+                                    },
+                                    "name": "MyTime1",
+                                    "designerId": "67b0df3f-743f-46bc-8fc9-9d2c056deadb"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.field.TextArea",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "disabled": true,
+                        "hidden": true,
+                        "label": "보고내용",
+                        "margin": "0 5 5 5",
+                        "maxLength": 200,
+                        "minHeight": 120,
+                        "name": "",
+                        "readOnly": true,
+                        "reference": "reptCntn",
+                        "width": "97%"
+                    },
+                    "configAlternates": {
+                        "label": "string",
+                        "name": "string",
+                        "reference": "string",
+                        "width": "auto",
+                        "margin": "auto",
+                        "maxLength": "number",
+                        "placeholder": "string",
+                        "value": "object",
+                        "disabled": "boolean",
+                        "hidden": "boolean",
+                        "minHeight": "auto",
+                        "readOnly": "boolean"
+                    },
+                    "name": "MyTextArea1",
+                    "designerId": "38eea48b-f504-45c5-9eba-20e5bcf64318"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "disabled": true,
+                        "layout": "vbox",
+                        "scrollable": "both"
+                    },
+                    "configAlternates": {
+                        "layout": "string",
+                        "scrollable": "auto",
+                        "disabled": "boolean"
+                    },
+                    "name": "MyContainer4",
+                    "designerId": "2f31108b-5e10-4fe7-aefe-290674fee219",
+                    "cn": [
+                        {
+                            "type": "linkedinstance",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "docked": null,
+                                "height": 450
+                            },
+                            "configAlternates": {
+                                "hidden": "boolean",
+                                "reference": "string",
+                                "height": "auto",
+                                "docked": "string"
+                            },
+                            "name": "common.approvallinegrid6",
+                            "designerId": "2fcdc006-ef05-436d-9c1d-2d3641b30a40",
+                            "masterInstanceId": "539a6522-9843-49e3-9ecb-51046086b29b"
+                        },
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "hidden": true,
+                                "label": "version",
+                                "name": "version",
+                                "value": [
+                                    "{formValues.version}"
+                                ]
+                            },
+                            "configAlternates": {
+                                "value": "binding",
+                                "hidden": "boolean",
+                                "label": "string",
+                                "name": "string"
+                            },
+                            "name": "MyTextField",
+                            "designerId": "0725c30a-9d0c-43bd-bcda-3013197e6ab6"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom"
+            },
+            "configAlternates": {
+                "docked": "string"
+            },
+            "name": "common.edocbuttoncontainer2",
+            "designerId": "df8ee2ed-f1ef-4246-9058-a2fe10ddb836",
+            "masterInstanceId": "864c1b4b-9f05-40c9-9015-61086ad52a8d"
+        }
+    ]
+}

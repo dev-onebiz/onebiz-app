@@ -1,0 +1,904 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "HwmVctAply71MItem_bak"
+        ],
+        "designer|userAlias": "HwmVctAply71MItem_bak",
+        "designer|userClassName": "HumanResource.hwm.HwmVctAply71MItem_bak",
+        "scrollable": true
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "layout": "string",
+        "style": "string",
+        "reference": "string",
+        "height": "auto",
+        "scrollable": "auto",
+        "designer|commentHeader": "comment",
+        "designer|displayName": "string"
+    },
+    "name": "Budget.exp.ExpNteAplyItems2",
+    "designerId": "f4a1cbde-1ea3-4c4b-ab3e-97adadbd515f",
+    "viewControllerInstanceId": "6ed45594-ff23-4ddf-bee5-e6d8a04ea12a",
+    "viewModelInstanceId": "1fad8780-4857-4a0d-809e-a7c83e8a6a77",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "분리선",
+                "height": 5,
+                "style": "background-color: grey;"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "height": "auto",
+                "style": "string"
+            },
+            "name": "MyContainer76",
+            "designerId": "afe09ea0-6544-446c-9382-b755aecdf297"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "동적생성 Form",
+                "layout": "vbox",
+                "padding": 10
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "layout": "string",
+                "padding": "auto"
+            },
+            "name": "MyContainer69",
+            "designerId": "c10153d0-db24-48a8-836f-fbfc80e80ae6",
+            "cn": [
+                {
+                    "type": "Ext.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "기준일자",
+                        "label": "기준일자",
+                        "value": [
+                            "{vct.parseAplVctDt}"
+                        ]
+                    },
+                    "configAlternates": {
+                        "value": "binding",
+                        "designer|displayName": "string",
+                        "label": "string"
+                    },
+                    "name": "MyDisplayField3",
+                    "designerId": "61b94c2c-a37a-4eca-8275-c8bdcb3782a5"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "휴가종류",
+                        "layout": "hbox",
+                        "minHeight": 30
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout": "string",
+                        "minHeight": "auto"
+                    },
+                    "name": "MyContainer70",
+                    "designerId": "dd234b5d-ee3b-4c40-a017-16017943a2a0",
+                    "cn": [
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "휴가종류",
+                                "html": "휴가종류",
+                                "layout|flex": 1,
+                                "padding": "45 0 0 0"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "html": "string",
+                                "layout|flex": "number",
+                                "padding": "auto"
+                            },
+                            "name": "MyLabel12",
+                            "designerId": "8ca94a02-5b35-423c-91af-c41e31a5a035"
+                        },
+                        {
+                            "type": "Ext.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "휴가구분",
+                                "label": "휴가구분",
+                                "layout|flex": 1,
+                                "value": [
+                                    "{vct.parseVctDvcd1}"
+                                ]
+                            },
+                            "configAlternates": {
+                                "value": "binding",
+                                "designer|displayName": "string",
+                                "label": "string",
+                                "layout|flex": "number"
+                            },
+                            "name": "MyDisplayField15",
+                            "designerId": "6667b951-d876-4c4c-85e8-c6548c019b14"
+                        },
+                        {
+                            "type": "Ext.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "상세구분",
+                                "label": "상세구분",
+                                "layout|flex": 1,
+                                "value": [
+                                    "{vct.parseVctDtlDvcd1}"
+                                ]
+                            },
+                            "configAlternates": {
+                                "value": "binding",
+                                "designer|displayName": "string",
+                                "label": "string",
+                                "layout|flex": "number"
+                            },
+                            "name": "MyDisplayField16",
+                            "designerId": "ff9e13b6-70bc-4147-bee7-1755c8bd18df"
+                        },
+                        {
+                            "type": "Ext.field.ComboBox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "code": "HWM010",
+                                "designer|displayName": "휴가구분코드 vctDvcd HWM010",
+                                "editable": false,
+                                "hidden": true,
+                                "label": "휴가구분",
+                                "layout|flex": 1,
+                                "required": true,
+                                "requiredMessage": "휴가구분 입력은 필수입니다.",
+                                "value": [
+                                    "{vct.vctDvcd1}"
+                                ]
+                            },
+                            "configAlternates": {
+                                "value": "binding",
+                                "code": "string",
+                                "designer|displayName": "string",
+                                "label": "string",
+                                "layout|flex": "number",
+                                "required": "boolean",
+                                "requiredMessage": "string",
+                                "editable": "boolean",
+                                "hidden": "boolean"
+                            },
+                            "name": "MyComboBox7",
+                            "designerId": "52d53a3a-b9cd-44dd-9e86-ec98916b499c",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "code",
+                                    "type": "string"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.field.ComboBox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "code": "HWM002",
+                                "designer|displayName": "상세구분코드 vctDtlDvcd HWM002",
+                                "disabled": true,
+                                "editable": false,
+                                "hidden": true,
+                                "label": "상세구분",
+                                "layout|flex": 1,
+                                "reference": "vctDtlDvcd1",
+                                "required": true,
+                                "requiredMessage": "상세구분 입력은 필수입니다.",
+                                "value": [
+                                    "{vct.vctDtlDvcd1}"
+                                ]
+                            },
+                            "configAlternates": {
+                                "value": "binding",
+                                "code": "string",
+                                "designer|displayName": "string",
+                                "label": "string",
+                                "layout|flex": "number",
+                                "reference": "string",
+                                "required": "boolean",
+                                "requiredMessage": "string",
+                                "disabled": "boolean",
+                                "editable": "boolean",
+                                "hidden": "boolean"
+                            },
+                            "name": "MyComboBox8",
+                            "designerId": "9e5d1e4d-01a4-4a4f-9748-f48341359762",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "code",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "시작일시",
+                        "layout": "hbox",
+                        "minHeight": 50
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout": "string",
+                        "minHeight": "auto"
+                    },
+                    "name": "MyContainer71",
+                    "designerId": "a6d51b8c-0edf-47a1-818c-ef901d54aa56",
+                    "cn": [
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "시작일시",
+                                "html": "시작일시",
+                                "layout|flex": 1,
+                                "padding": "15 0 0 0"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "html": "string",
+                                "layout|flex": "number",
+                                "padding": "auto"
+                            },
+                            "name": "MyLabel14",
+                            "designerId": "a0217bee-d05b-4b53-aa40-bc7d327eb0e7"
+                        },
+                        {
+                            "type": "Ext.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "날짜",
+                                "layout|flex": 1,
+                                "value": [
+                                    "{vct.parseAplVctStrdt1}"
+                                ]
+                            },
+                            "configAlternates": {
+                                "value": "binding",
+                                "designer|displayName": "string",
+                                "label": "string",
+                                "layout|flex": "number"
+                            },
+                            "name": "MyDisplayField6",
+                            "designerId": "124a3e8e-eb11-4ab6-9d74-df918136fe55"
+                        },
+                        {
+                            "type": "Ext.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "시간",
+                                "layout|flex": 1,
+                                "value": [
+                                    "{vct.parseAplVctStrtm1}"
+                                ]
+                            },
+                            "configAlternates": {
+                                "value": "binding",
+                                "designer|displayName": "string",
+                                "layout|flex": "number"
+                            },
+                            "name": "MyDisplayField8",
+                            "designerId": "6b736fa6-7886-499c-a4df-6f97c85d6bce"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "종료일시",
+                        "layout": "hbox",
+                        "minHeight": 50
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout": "string",
+                        "minHeight": "auto"
+                    },
+                    "name": "MyContainer73",
+                    "designerId": "1dda757f-09ce-4ce0-a123-ecc5ce9bb294",
+                    "cn": [
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "종료일시",
+                                "html": "종료일시",
+                                "layout|flex": 1,
+                                "padding": "15 0 0 0"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "html": "string",
+                                "layout|flex": "number",
+                                "padding": "auto"
+                            },
+                            "name": "MyLabel15",
+                            "designerId": "dc451d7b-4593-4237-89f1-4b165b85c1ae"
+                        },
+                        {
+                            "type": "Ext.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "날짜",
+                                "layout|flex": 1,
+                                "value": [
+                                    "{vct.parseAplVctEdt1}"
+                                ]
+                            },
+                            "configAlternates": {
+                                "value": "binding",
+                                "designer|displayName": "string",
+                                "label": "string",
+                                "layout|flex": "number"
+                            },
+                            "name": "MyDisplayField7",
+                            "designerId": "08e35267-dfb8-4901-8c95-e1255ee22e71"
+                        },
+                        {
+                            "type": "Ext.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "시간",
+                                "layout|flex": 1,
+                                "value": [
+                                    "{vct.parseAplVctEdtm1}"
+                                ]
+                            },
+                            "configAlternates": {
+                                "value": "binding",
+                                "designer|displayName": "string",
+                                "layout|flex": "number"
+                            },
+                            "name": "MyDisplayField9",
+                            "designerId": "0873dc6a-c5d3-49f0-bdb3-205d4190c251"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "hidden 분리선",
+                "height": 5,
+                "hidden": true,
+                "style": "background-color: grey;"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "height": "auto",
+                "style": "string",
+                "hidden": "boolean"
+            },
+            "name": "MyContainer79",
+            "designerId": "19177f7a-2888-4b59-8eaa-0439d4e4fbd2"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "hidden 오후반차 Form",
+                "hidden": true,
+                "layout": "vbox",
+                "padding": 10,
+                "reference": "form2"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "layout": "string",
+                "padding": "auto",
+                "hidden": "boolean",
+                "reference": "string"
+            },
+            "name": "MyContainer78",
+            "designerId": "34359b1e-4b12-4e3e-ac23-44a9d72efcf0",
+            "cn": [
+                {
+                    "type": "Ext.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "기준일자",
+                        "label": "기준일자",
+                        "value": [
+                            "{vct.parseAplVctDt}"
+                        ]
+                    },
+                    "configAlternates": {
+                        "value": "binding",
+                        "designer|displayName": "string",
+                        "label": "string"
+                    },
+                    "name": "MyDisplayField3",
+                    "designerId": "1c996e71-3656-4422-b57d-c1d1f6a21ad7"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "휴가종류",
+                        "layout": "hbox",
+                        "minHeight": 30
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout": "string",
+                        "minHeight": "auto"
+                    },
+                    "name": "MyContainer70",
+                    "designerId": "2a843ec8-2440-40b5-8ea6-a14b003a30d4",
+                    "cn": [
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "휴가종류",
+                                "html": "휴가종류",
+                                "layout|flex": 1,
+                                "padding": "30 0 0 0"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "html": "string",
+                                "layout|flex": "number",
+                                "padding": "auto"
+                            },
+                            "name": "MyLabel12",
+                            "designerId": "cf69c3cc-ac83-4052-82a0-c56c233986d6"
+                        },
+                        {
+                            "type": "Ext.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "휴가구분",
+                                "label": "휴가구분",
+                                "layout|flex": 1,
+                                "value": [
+                                    "{vct.parseVctDvcd2}"
+                                ]
+                            },
+                            "configAlternates": {
+                                "value": "binding",
+                                "designer|displayName": "string",
+                                "label": "string",
+                                "layout|flex": "number"
+                            },
+                            "name": "MyDisplayField13",
+                            "designerId": "3dbc1199-d535-4c83-b187-88478d6226b7"
+                        },
+                        {
+                            "type": "Ext.field.ComboBox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "code": "HWM010",
+                                "designer|displayName": "hidden 휴가구분코드 vctDvcd HWM010",
+                                "editable": false,
+                                "hidden": true,
+                                "label": "휴가구분",
+                                "layout|flex": 1,
+                                "reference": "vctDvcd2",
+                                "required": true,
+                                "requiredMessage": "휴가구분 입력은 필수입니다.",
+                                "value": [
+                                    "{vct.vctDvcd2}"
+                                ]
+                            },
+                            "configAlternates": {
+                                "value": "binding",
+                                "code": "string",
+                                "designer|displayName": "string",
+                                "label": "string",
+                                "layout|flex": "number",
+                                "required": "boolean",
+                                "requiredMessage": "string",
+                                "editable": "boolean",
+                                "reference": "string",
+                                "hidden": "boolean"
+                            },
+                            "name": "MyComboBox7",
+                            "designerId": "d1d0a729-060c-4a85-aa39-3ddb8ff1f944",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "code",
+                                    "type": "string"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "상세구분코드 vctDtlDvcd HWM002",
+                                "label": "상세구분",
+                                "layout|flex": 1,
+                                "reference": "vctDtlDvcd2",
+                                "value": [
+                                    "{vct.parseVctDtlDvcd2}"
+                                ]
+                            },
+                            "configAlternates": {
+                                "value": "binding",
+                                "designer|displayName": "string",
+                                "label": "string",
+                                "layout|flex": "number",
+                                "reference": "string"
+                            },
+                            "name": "MyDisplayField10",
+                            "designerId": "61a5e04a-4336-4073-bf51-e3008a451dc6"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "시작일시",
+                        "layout": "hbox",
+                        "minHeight": 50
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout": "string",
+                        "minHeight": "auto"
+                    },
+                    "name": "MyContainer71",
+                    "designerId": "cd49de0c-02e6-4aa9-a36e-17420db671f1",
+                    "cn": [
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "시작일시",
+                                "html": "시작일시",
+                                "layout|flex": 1,
+                                "padding": "15 0 0 0"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "html": "string",
+                                "layout|flex": "number",
+                                "padding": "auto"
+                            },
+                            "name": "MyLabel14",
+                            "designerId": "c3e7aba1-64e7-4c9c-8aa9-4b0254086554"
+                        },
+                        {
+                            "type": "Ext.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "날짜",
+                                "layout|flex": 1,
+                                "value": [
+                                    "{vct.parseAplVctStrdt2}"
+                                ]
+                            },
+                            "configAlternates": {
+                                "value": "binding",
+                                "designer|displayName": "string",
+                                "label": "string",
+                                "layout|flex": "number"
+                            },
+                            "name": "MyDisplayField6",
+                            "designerId": "e768d616-50ae-4d87-9ad9-7576a9f60310"
+                        },
+                        {
+                            "type": "Ext.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "시간",
+                                "layout|flex": 1,
+                                "value": [
+                                    "{vct.parseAplVctStrtm2}"
+                                ]
+                            },
+                            "configAlternates": {
+                                "value": "binding",
+                                "designer|displayName": "string",
+                                "layout|flex": "number"
+                            },
+                            "name": "MyDisplayField8",
+                            "designerId": "d3dec277-f407-4684-b08c-8f2fa1600111"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "종료일시",
+                        "layout": "hbox",
+                        "minHeight": 50
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout": "string",
+                        "minHeight": "auto"
+                    },
+                    "name": "MyContainer73",
+                    "designerId": "bf6dcdee-4e7c-4088-a332-96985f6ff3de",
+                    "cn": [
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "종료일시",
+                                "html": "종료일시",
+                                "layout|flex": 1,
+                                "padding": "15 0 0 0"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "html": "string",
+                                "layout|flex": "number",
+                                "padding": "auto"
+                            },
+                            "name": "MyLabel15",
+                            "designerId": "c61a2a21-fd31-4748-8590-a8e6fe1cd558"
+                        },
+                        {
+                            "type": "Ext.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "날짜",
+                                "layout|flex": 1,
+                                "value": [
+                                    "{vct.parseAplVctEdt2}"
+                                ]
+                            },
+                            "configAlternates": {
+                                "value": "binding",
+                                "designer|displayName": "string",
+                                "label": "string",
+                                "layout|flex": "number"
+                            },
+                            "name": "MyDisplayField7",
+                            "designerId": "9f62ae97-7eda-437c-8429-857accd84afa"
+                        },
+                        {
+                            "type": "Ext.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "시간",
+                                "layout|flex": 1,
+                                "value": [
+                                    "{vct.parseAplVctEdtm2}"
+                                ]
+                            },
+                            "configAlternates": {
+                                "value": "binding",
+                                "designer|displayName": "string",
+                                "layout|flex": "number"
+                            },
+                            "name": "MyDisplayField9",
+                            "designerId": "7aa3ed4a-7410-4034-996e-120e3f46c1cf"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "분리선",
+                "height": 5,
+                "reference": "finishLine",
+                "style": "background-color: grey;"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "height": "auto",
+                "style": "string",
+                "hidden": "boolean",
+                "reference": "string"
+            },
+            "name": "MyContainer75",
+            "designerId": "c1b137c6-b316-4dab-b3d8-1d53c3095af2"
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "initialize",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    detail = component.initialConfig.detail;",
+                    "",
+                    "// 오후 반차가 있으면 hidden false",
+                    "if(detail.vctDvcd2 && detail.vctDtlDvcd2 && detail.aplVctStrdt2 &&",
+                    "   detail.aplVctStrtm2 && detail.aplVctEdt2 && detail.aplVctEdtm2){",
+                    "    refs.form2.setHidden(false);",
+                    "    //refs.finishLine.setHidden(false);",
+                    "}",
+                    "else {",
+                    "    refs.form2.setHidden(true);",
+                    "    //refs.finishLine.setHidden(true);",
+                    "}",
+                    "",
+                    "this.fieldRender(detail);",
+                    "",
+                    ""
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "initialize",
+            "designerId": "d796505f-c0dc-4f4c-a739-789d7ceed2fb"
+        }
+    ]
+}

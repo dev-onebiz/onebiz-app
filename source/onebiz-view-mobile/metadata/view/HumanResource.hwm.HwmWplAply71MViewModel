@@ -1,0 +1,94 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "{",
+            "    applyLine : null,",
+            "    doc : false, // ExpNteDoc02M 에서 넘어오는지 확인하는 플래그",
+            "    fromDoc : false",
+            "}"
+        ],
+        "designer|commentHeader": [
+            "근무지변경 결재함 - 모델",
+            "",
+            "@author BNK시스템/계장/지민영",
+            "@since 2020.04.20",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일\t\t  수정자                수정내용",
+            "----------\t------------------   --------------------------",
+            "2020.04.20\tBNK시스템/계장/지민영   최초 생성"
+        ],
+        "designer|userAlias": "HwmWplAply71MViewModel",
+        "designer|userClassName": "HumanResource.hwm.HwmWplAply71MViewModel"
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "data": "object",
+        "designer|commentHeader": "comment"
+    },
+    "name": "HumanResource.hwm.HwmCrtAply71MViewModel1",
+    "designerId": "e9dae09e-6497-4304-af08-8510018cdebc",
+    "cn": [
+        {
+            "type": "Ext.data.Store",
+            "reference": {
+                "name": "stores",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "wkplcAplDvcd"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyStore3",
+            "designerId": "11466db7-38ad-411f-ae27-14bf114a60be",
+            "cn": [
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "text"
+                    },
+                    "configAlternates": {
+                        "name": "string"
+                    },
+                    "name": "field7",
+                    "designerId": "685ab4c1-adba-42ab-83be-e108901b03cf"
+                },
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "value"
+                    },
+                    "configAlternates": {
+                        "name": "string"
+                    },
+                    "name": "field8",
+                    "designerId": "c505cf17-c420-4ca5-88f2-ae87ed6ad6be"
+                }
+            ]
+        }
+    ]
+}

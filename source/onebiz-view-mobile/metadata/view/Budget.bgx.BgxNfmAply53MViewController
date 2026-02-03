@@ -1,0 +1,45 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            "모바일 예산 : 결의서 작성 [기타영수증 팝업] - 컨트롤러",
+            "",
+            "@author BNK시스템/계장/지민영",
+            "@since 2020.05.21",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일       수정자                수정내용",
+            "----------  ------------------   --------------------------",
+            "2020.05.21  BNK시스템/계장/지민영   최초 생성",
+            "2020.06.24  BNK시스템/계장/지민영   20.07.01 예산오픈으로 인한 분기처리 추가",
+            "2020.09.21  BNK시스템/계장/지민영   사업연도 추가"
+        ],
+        "designer|extend": "BaseViewController",
+        "designer|userAlias": "BgxNfmAply53MViewController",
+        "designer|userClassName": "Budget.bgx.BgxNfmAply53MViewController",
+        "viewId": "BgxNfmAply53M"
+    },
+    "configAlternates": {
+        "designer|commentHeader": "comment",
+        "designer|extend": "string",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "viewId": "string"
+    },
+    "designerId": "a4feaaae-f268-44da-aa0b-807ab28d7d0d",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "viewId",
+            "type": "string"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MessageStore",
+        "storeId": "MessageStore"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "storeId": "string"
+    },
+    "name": "MyJsonStore",
+    "designerId": "3f66654b-cdcc-4bad-a3ad-0b99a7c6696d",
+    "cn": [
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "code"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "field6",
+            "designerId": "03dc1001-d500-40f9-8a2f-0a5ac6771b0e"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "text"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "field7",
+            "designerId": "b99fac7e-2828-4cfb-96f2-ba8e116e8f79"
+        }
+    ]
+}

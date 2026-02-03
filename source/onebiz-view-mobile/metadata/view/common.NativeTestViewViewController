@@ -1,0 +1,68 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "common.nativetestview",
+        "designer|userClassName": "common.NativeTestViewViewController",
+        "viewId": "NativeTestView"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "viewId": "string"
+    },
+    "designerId": "0b45e7f1-365a-4926-a797-77fc7ee6ae1d",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "viewId",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "component"
+                ],
+                "fn": "init",
+                "implHandler": [
+                    "var me = this,",
+                    "    refs = me.getReferences(),",
+                    "    uuid = refs.uuid,",
+                    "    model = refs.model,",
+                    "    platform = refs.txtPlatform,",
+                    "    version = refs.txtVersion,",
+                    "    serial = refs.txtSerial;",
+                    "",
+                    "try {",
+                    "    uuid.setValue(device.uuid);",
+                    "    model.setValue(device.model);",
+                    "    platform.setValue(device.platform);",
+                    "    version.setValur(device.version);",
+                    "    serial.setValue(device.serial);",
+                    "} catch(error) {",
+                    "    console.log(error);",
+                    "}"
+                ]
+            },
+            "configAlternates": {
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "init",
+            "designerId": "1b3a316c-5e5d-47d6-ab2a-e6b64ac22b8a"
+        }
+    ]
+}

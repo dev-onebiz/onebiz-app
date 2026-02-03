@@ -1,0 +1,434 @@
+-- Merging decision tree log ---
+provider#org.apache.cordova.camera.FileProvider
+INJECTED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:12:9-14:20
+	android:grantUriPermissions
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:12:92-126
+	android:authorities
+		INJECTED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:12:19-66
+	android:exported
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:12:67-91
+	android:name
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:12:127-180
+activity#com.adobe.phonegap.push.PushHandlerActivity
+INJECTED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:15:9-173
+	android:exported
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:15:19-42
+	android:permission
+		INJECTED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:15:102-170
+	android:name
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:15:43-101
+manifest
+ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-40:12
+MERGED from [com.android.support:support-v13:27.1.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/9d25a2652776a439d265e6d67b41b1d6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-messaging:17.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/0a84681946e1f382343f11612ddc4602/AndroidManifest.xml:17:1-37:12
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:17:1-65:12
+MERGED from [com.google.firebase:firebase-common:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/1ca71a7d49bd07b8892d6a67b7db258c/AndroidManifest.xml:2:1-16:12
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/a979175d9b9c2da4a9d88860e181d581/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/6ce399bcf77e467b2f1e5530fdcbbec5/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/1492010b8fd03e7d2539ec89deba1a44/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/8f8ef305db9191a7d32bfe0224145e14/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/03fe7a354cafdb50e3ccb00a63877470/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/8e5ad0811503e977e37751dd2797cfe0/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:27.1.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/56d394e91929b6da4f03819515eafcae/AndroidManifest.xml:17:1-22:12
+MERGED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:2:1-52:12
+MERGED from [:CordovaLib] /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/CordovaLib/build/intermediates/merged_manifests/release/processReleaseManifest/merged/AndroidManifest.xml:20:1-27:12
+MERGED from [com.android.support:multidex:1.0.2] /Users/myji/.gradle/caches/transforms-2/files-2.1/f1935f6ef996cd6692bf9b806663bc04/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/1af0028102be4a430ea03a6dce9905d6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/f1dda933651c5a0bb8d0090ee669a40d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/46754dc7b6b6eb2444639362726fb6a4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/8111e690d9e6a4010d24e80b5884ba0b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/e10166eaf6ea50f404ed052124f3beb5/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/b2c81498ddfe05b67d4bf387f692a4c1/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/37d8d5e6917431fc931cc8ade235f7a6/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/ba1014cda9083bf9c508fb494278bf35/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/fe98d7d1e64f7ce7ce22f194469b823d/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-40:12
+	package
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:2:102-124
+		INJECTED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:2:74-101
+		INJECTED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml
+	android:hardwareAccelerated
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:2:11-45
+	xmlns:android
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:2:125-183
+	android:versionCode
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:2:46-73
+		INJECTED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml
+supports-screens
+ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:3:5-191
+	android:largeScreens
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:3:49-76
+	android:smallScreens
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:3:132-159
+	android:normalScreens
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:3:77-105
+	android:xlargeScreens
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:3:160-188
+	android:resizeable
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:3:106-131
+	android:anyDensity
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:3:23-48
+uses-permission#android.permission.INTERNET
+ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:4:5-67
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:4:22-64
+application
+ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:5:5-28:19
+MERGED from [com.google.firebase:firebase-messaging:17.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/0a84681946e1f382343f11612ddc4602/AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-messaging:17.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/0a84681946e1f382343f11612ddc4602/AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:34:5-63:19
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:34:5-63:19
+MERGED from [com.google.firebase:firebase-common:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/1ca71a7d49bd07b8892d6a67b7db258c/AndroidManifest.xml:8:5-14:19
+MERGED from [com.google.firebase:firebase-common:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/1ca71a7d49bd07b8892d6a67b7db258c/AndroidManifest.xml:8:5-14:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/a979175d9b9c2da4a9d88860e181d581/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/a979175d9b9c2da4a9d88860e181d581/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/6ce399bcf77e467b2f1e5530fdcbbec5/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/6ce399bcf77e467b2f1e5530fdcbbec5/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/1492010b8fd03e7d2539ec89deba1a44/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/1492010b8fd03e7d2539ec89deba1a44/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/8f8ef305db9191a7d32bfe0224145e14/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/8f8ef305db9191a7d32bfe0224145e14/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/03fe7a354cafdb50e3ccb00a63877470/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/03fe7a354cafdb50e3ccb00a63877470/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/8e5ad0811503e977e37751dd2797cfe0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/8e5ad0811503e977e37751dd2797cfe0/AndroidManifest.xml:22:5-26:19
+	android:supportsRtl
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:5:114-140
+	android:label
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:5:81-113
+	android:hardwareAccelerated
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:5:18-52
+	android:icon
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:5:53-80
+activity#kr.co.bnksys.MainActivity
+ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:6:9-11:20
+	android:label
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:6:97-134
+	android:launchMode
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:6:135-165
+	android:windowSoftInputMode
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:6:257-299
+	android:configChanges
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:6:19-96
+	android:theme
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:6:194-256
+	android:name
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:6:166-193
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:7:13-10:29
+	android:label
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:7:28-65
+action#android.intent.action.MAIN
+ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:8:17-69
+	android:name
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:8:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:9:17-77
+	android:name
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:9:27-74
+receiver#com.adobe.phonegap.push.BackgroundActionButtonHandler
+ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:16:9-90
+	android:name
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:16:19-87
+receiver#com.adobe.phonegap.push.PushDismissedHandler
+ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:17:9-81
+	android:name
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:17:19-78
+service#com.adobe.phonegap.push.FCMService
+ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:18:9-22:19
+	android:name
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:18:18-67
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:19:13-21:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:20:17-78
+	android:name
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:20:25-75
+service#com.adobe.phonegap.push.PushInstanceIDListenerService
+ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:23:9-27:19
+	android:name
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:23:18-86
+intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
+ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:24:13-26:29
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:25:17-80
+	android:name
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:25:25-77
+uses-sdk
+ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:29:5-74
+INJECTED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:29:5-74
+MERGED from [com.android.support:support-v13:27.1.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/9d25a2652776a439d265e6d67b41b1d6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v13:27.1.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/9d25a2652776a439d265e6d67b41b1d6/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:17.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/0a84681946e1f382343f11612ddc4602/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:17.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/0a84681946e1f382343f11612ddc4602/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/1ca71a7d49bd07b8892d6a67b7db258c/AndroidManifest.xml:5:5-6:37
+MERGED from [com.google.firebase:firebase-common:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/1ca71a7d49bd07b8892d6a67b7db258c/AndroidManifest.xml:5:5-6:37
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/a979175d9b9c2da4a9d88860e181d581/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/a979175d9b9c2da4a9d88860e181d581/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/6ce399bcf77e467b2f1e5530fdcbbec5/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/6ce399bcf77e467b2f1e5530fdcbbec5/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/1492010b8fd03e7d2539ec89deba1a44/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/1492010b8fd03e7d2539ec89deba1a44/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/8f8ef305db9191a7d32bfe0224145e14/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/8f8ef305db9191a7d32bfe0224145e14/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/03fe7a354cafdb50e3ccb00a63877470/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/03fe7a354cafdb50e3ccb00a63877470/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/8e5ad0811503e977e37751dd2797cfe0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/8e5ad0811503e977e37751dd2797cfe0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/56d394e91929b6da4f03819515eafcae/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/56d394e91929b6da4f03819515eafcae/AndroidManifest.xml:20:5-44
+MERGED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:7:5-9:41
+MERGED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:7:5-9:41
+MERGED from [:CordovaLib] /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/CordovaLib/build/intermediates/merged_manifests/release/processReleaseManifest/merged/AndroidManifest.xml:25:5-44
+MERGED from [:CordovaLib] /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/CordovaLib/build/intermediates/merged_manifests/release/processReleaseManifest/merged/AndroidManifest.xml:25:5-44
+MERGED from [com.android.support:multidex:1.0.2] /Users/myji/.gradle/caches/transforms-2/files-2.1/f1935f6ef996cd6692bf9b806663bc04/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.2] /Users/myji/.gradle/caches/transforms-2/files-2.1/f1935f6ef996cd6692bf9b806663bc04/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/1af0028102be4a430ea03a6dce9905d6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/1af0028102be4a430ea03a6dce9905d6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/f1dda933651c5a0bb8d0090ee669a40d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/f1dda933651c5a0bb8d0090ee669a40d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/46754dc7b6b6eb2444639362726fb6a4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/46754dc7b6b6eb2444639362726fb6a4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/8111e690d9e6a4010d24e80b5884ba0b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/8111e690d9e6a4010d24e80b5884ba0b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/e10166eaf6ea50f404ed052124f3beb5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/e10166eaf6ea50f404ed052124f3beb5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/b2c81498ddfe05b67d4bf387f692a4c1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/b2c81498ddfe05b67d4bf387f692a4c1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/37d8d5e6917431fc931cc8ade235f7a6/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/37d8d5e6917431fc931cc8ade235f7a6/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/ba1014cda9083bf9c508fb494278bf35/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/ba1014cda9083bf9c508fb494278bf35/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/fe98d7d1e64f7ce7ce22f194469b823d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/fe98d7d1e64f7ce7ce22f194469b823d/AndroidManifest.xml:20:5-44
+INJECTED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:29:5-74
+	android:targetSdkVersion
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:29:42-71
+	android:minSdkVersion
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:29:15-41
+		INJECTED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:30:5-81
+	android:name
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:30:22-78
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:31:5-81
+	android:name
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:31:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:32:5-79
+	android:name
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:32:22-76
+uses-feature#android.hardware.location.gps
+ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:33:5-66
+	android:name
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:33:19-63
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:34:5-71
+	android:name
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:34:22-68
+uses-permission#android.permission.RECORD_VIDEO
+ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:35:5-71
+	android:name
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:35:22-68
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:36:5-80
+	android:name
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:36:22-77
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:37:5-79
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:37:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:38:5-68
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:24:5-68
+	android:name
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:38:22-65
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:39:5-66
+	android:name
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:39:22-63
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:13:13-123
+	android:resource
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:13:75-120
+	android:name
+		ADDED from /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/src/main/AndroidManifest.xml:13:24-74
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:17.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/0a84681946e1f382343f11612ddc4602/AndroidManifest.xml:28:9-34:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:17.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/0a84681946e1f382343f11612ddc4602/AndroidManifest.xml:30:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:17.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/0a84681946e1f382343f11612ddc4602/AndroidManifest.xml:29:13-82
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:26:22-79
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:28:5-30:47
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:30:9-44
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:29:9-63
+permission#kr.co.bnksys.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:28:5-30:47
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:30:9-44
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:29:9-63
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:32:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:32:22-76
+uses-permission#kr.co.bnksys.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:32:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:32:22-76
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:35:9-39:19
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:35:18-89
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:36:13-38:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:38:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:37:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:41:9-50:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:43:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:44:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:42:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:${applicationId}
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:45:13-49:29
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:kr.co.bnksys
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:45:13-49:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:46:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:46:25-78
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:48:17-61
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:48:27-58
+category#kr.co.bnksys
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:48:17-61
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:48:27-58
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:56:9-62:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:58:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/27612d773a31bf20a3d70321f62cfe7f/AndroidManifest.xml:57:13-77
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/1ca71a7d49bd07b8892d6a67b7db258c/AndroidManifest.xml:9:9-13:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/1ca71a7d49bd07b8892d6a67b7db258c/AndroidManifest.xml:11:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/1ca71a7d49bd07b8892d6a67b7db258c/AndroidManifest.xml:12:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/1ca71a7d49bd07b8892d6a67b7db258c/AndroidManifest.xml:13:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:16.0.0] /Users/myji/.gradle/caches/transforms-2/files-2.1/1ca71a7d49bd07b8892d6a67b7db258c/AndroidManifest.xml:10:13-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/6ce399bcf77e467b2f1e5530fdcbbec5/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/6ce399bcf77e467b2f1e5530fdcbbec5/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/6ce399bcf77e467b2f1e5530fdcbbec5/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/6ce399bcf77e467b2f1e5530fdcbbec5/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/8e5ad0811503e977e37751dd2797cfe0/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/8e5ad0811503e977e37751dd2797cfe0/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/myji/.gradle/caches/transforms-2/files-2.1/8e5ad0811503e977e37751dd2797cfe0/AndroidManifest.xml:24:13-58
+uses-permission#com.sec.android.provider.badge.permission.READ
+ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:19:5-86
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:19:22-83
+uses-permission#com.sec.android.provider.badge.permission.WRITE
+ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:20:5-87
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:20:22-84
+uses-permission#com.htc.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:23:5-81
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:23:22-78
+uses-permission#com.htc.launcher.permission.UPDATE_SHORTCUT
+ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:24:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:24:22-80
+uses-permission#com.sonyericsson.home.permission.BROADCAST_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:27:5-88
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:27:22-85
+uses-permission#com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:28:5-92
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:28:22-89
+uses-permission#com.anddoes.launcher.permission.UPDATE_COUNT
+ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:31:5-84
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:31:22-81
+uses-permission#com.majeur.launcher.permission.UPDATE_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:34:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:34:22-80
+uses-permission#com.huawei.android.launcher.permission.CHANGE_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:37:5-91
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:37:22-88
+uses-permission#com.huawei.android.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:38:5-92
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:38:22-89
+uses-permission#com.huawei.android.launcher.permission.WRITE_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:39:5-93
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:39:22-90
+uses-permission#android.permission.READ_APP_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:42:5-73
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:42:22-70
+uses-permission#com.oppo.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:45:5-82
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:45:22-79
+uses-permission#com.oppo.launcher.permission.WRITE_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:46:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:46:22-80
+uses-permission#me.everything.badger.permission.BADGE_COUNT_READ
+ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:49:5-88
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:49:22-85
+uses-permission#me.everything.badger.permission.BADGE_COUNT_WRITE
+ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:50:5-89
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/myji/.gradle/caches/transforms-2/files-2.1/33c07b98f9b8bcf113db50df82d904ae/AndroidManifest.xml:50:22-86

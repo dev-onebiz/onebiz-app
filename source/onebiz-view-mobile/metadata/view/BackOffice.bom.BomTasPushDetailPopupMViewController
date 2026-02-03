@@ -1,0 +1,190 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            "모바일 푸시 상세팝업 (디자인적용버전) - 컨트롤러",
+            "",
+            "@author BNK시스템/파트너/지민영",
+            "@since 2020.11.13",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일       수정자                  수정내용",
+            "----------  ------------------     --------------------------",
+            "2020.11.13  BNK시스템/파트너/지민영   최초 생성"
+        ],
+        "designer|extend": "BaseViewController",
+        "designer|userAlias": "BomTasPushDetailPopupMViewController",
+        "designer|userClassName": "BackOffice.bom.BomTasPushDetailPopupMViewController",
+        "viewId": "BomTasPushDetailPopupM"
+    },
+    "configAlternates": {
+        "designer|commentHeader": "comment",
+        "designer|extend": "string",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "viewId": "string"
+    },
+    "designerId": "fd1d3eae-c240-47cb-83bd-6e522f08f1f2",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "viewId",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "상세조회"
+                ],
+                "designer|params": [
+                    "boTasmTrsId"
+                ],
+                "fn": "onSelect",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    param = {",
+                    "        id : boTasmTrsId",
+                    "    };",
+                    "",
+                    "Ext.Ajax.request({",
+                    "    headers: {",
+                    "        viewId : me.getViewId(),",
+                    "        serviceId : 'BomTasSvc.findOneBomTasdPush'",
+                    "    },",
+                    "    jsonData : param,",
+                    "    scope : me,",
+                    "    success : function(response) {",
+                    "        var res = Ext.JSON.decode(response.responseText);",
+                    "",
+                    "        if (res.result && res.result.msgDvcd) {",
+                    "            var code = 'TAS004',\t\t\t\t\t\t\t// 메시지구분 코드",
+                    "                codeStore = Ext.StoreMgr.get('CodeStore'),",
+                    "                items = codeStore.getData().items,",
+                    "                result = res.result,",
+                    "                msgDvcd = result.msgDvcd,",
+                    "                msgDvnm = '';",
+                    "",
+                    "            // msgDvcd",
+                    "            for (var i = 0, l = items.length; i < l; i++) {",
+                    "                if (code === items[i].data.code) {",
+                    "                    var children = items[i].data.children;",
+                    "                    for (var j = 0, l2 = children.length; j < l2; j++) {",
+                    "                        var text = children[j].text,",
+                    "                            value = children[j].value;",
+                    "                        if (value === msgDvcd) {",
+                    "                            msgDvnm = text;",
+                    "                        }",
+                    "                    }",
+                    "                }",
+                    "            }",
+                    "",
+                    "            var contentHtml = document.createElement('div');",
+                    "            contentHtml.innerHTML = result.content;",
+                    "",
+                    "            var imgList = contentHtml.getElementsByTagName('img'); //img태그 collection",
+                    "            for(var i = 0; i < imgList.length; i++) {",
+                    "                //서버주소 + 상대주소",
+                    "                imgList[i].setAttribute('src', Property.BASE_URL + imgList[i].getAttribute('src'));",
+                    "            }",
+                    "",
+                    "            result.content = contentHtml.innerHTML;",
+                    "",
+                    "            vm.set('detail', result);",
+                    "            var fmtDvcdClass = '';\t\t\t\t\t// 포맷구분",
+                    "            switch (result.fmtDvcd) {",
+                    "                case Constants.pushFmtDvcd.TXT :\t\t// text",
+                    "                case Constants.pushFmtDvcd.OUTER_URL : \t// outerUrl",
+                    "                case Constants.pushFmtDvcd.INNER_URL : \t//innerUrl",
+                    "                    fmtDvcdClass = 'BomTasPushDetailItem01M';",
+                    "                    break;",
+                    "                case Constants.pushFmtDvcd.IMG : \t\t// image",
+                    "                    fmtDvcdClass = 'BomTasPushDetailItem02M';",
+                    "                    break;",
+                    "            }",
+                    "",
+                    "            if (Ext.isEmpty(fmtDvcdClass)) {",
+                    "                return;",
+                    "            }",
+                    "            // 컴포넌트추가",
+                    "            refs.cpnt.add(Ext.create(fmtDvcdClass, {",
+                    "                record : result",
+                    "            }));",
+                    "",
+                    "",
+                    "            // 읽음처리 (수신상태, 일자, 시간)",
+                    "            Property.BO_TASM_TRS_ID = null;",
+                    "            Ext.Ajax.request({",
+                    "                headers: {",
+                    "                    viewId : me.getViewId(),",
+                    "                    serviceId : 'BomTasSvc.saveOnePushRvStcd'",
+                    "                },",
+                    "                jsonData : param,",
+                    "                scope : me,",
+                    "                success : function(response) {",
+                    "                    var res = Ext.JSON.decode(response.responseText);",
+                    "                }",
+                    "            });",
+                    "        }",
+                    "    }",
+                    "});"
+                ]
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "onSelect",
+            "designerId": "084ed459-9439-4740-a193-78e8b8cd7954"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "view"
+                ],
+                "fn": "onCallRedirectFn",
+                "implHandler": [
+                    "var me = this,",
+                    "    refs = me.getReferences(),",
+                    "    vm = me.getViewModel();",
+                    "",
+                    "me.getView().fireEvent('redirect', view);",
+                    "",
+                    "me.getView().close();"
+                ]
+            },
+            "configAlternates": {
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "onCallRedirectFn",
+            "designerId": "807e0189-6a47-465c-8006-4b379f3d9e86"
+        }
+    ]
+}

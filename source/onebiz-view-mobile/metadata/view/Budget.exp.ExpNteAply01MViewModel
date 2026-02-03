@@ -1,0 +1,503 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "{",
+            "    command : null,",
+            "    checkCnt : 0,",
+            "    formValues : {",
+            "        cdno : null,",
+            "        stDt : null,",
+            "        edDt : null,",
+            "    }",
+            "}"
+        ],
+        "designer|commentHeader": [
+            "모바일 시스템 경비노트 :: 법인카드 - 모델",
+            "",
+            "@author BNK시스템/계장/김정균",
+            "@since 2019.04.16",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일\t\t  수정자                수정내용",
+            "----------\t------------------   --------------------------",
+            "2019.04.16\tBNK시스템/계장/김정균   최초 생성"
+        ],
+        "designer|userAlias": "Budget.exp.ExpNteAply01MViewModel",
+        "designer|userClassName": "Budget.exp.ExpNteAply01MViewModel"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "data": "object",
+        "designer|commentHeader": "comment"
+    },
+    "name": "biz.PAGE001ViewModel1",
+    "designerId": "87c25707-6f52-472c-bc15-d50fe6a71f04",
+    "cn": [
+        {
+            "type": "jsonstore",
+            "reference": {
+                "name": "stores",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoLoad": false,
+                "designer|displayName": "ApvlStore",
+                "name": "ApvlStore",
+                "pageSize": 10
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "pageSize": "number",
+                "autoLoad": "boolean",
+                "name": "string",
+                "listeners": "object"
+            },
+            "name": "MyJsonStore",
+            "designerId": "62ee38d8-392e-45ad-a2b6-070d5c7a85eb",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "listeners",
+                    "type": "string"
+                }
+            ],
+            "cn": [
+                {
+                    "type": "Ext.data.proxy.Ajax",
+                    "reference": {
+                        "name": "proxy",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "headers": [
+                            "{",
+                            "    //serviceId: 'ExpNteSvc.findAllExpNteAply01',",
+                            "    serviceId: 'ExpNteSvc.findAllExpApvlListM',",
+                            "    viewId: 'ExpNteAply01M'",
+                            "}"
+                        ],
+                        "url": "api"
+                    },
+                    "configAlternates": {
+                        "headers": "object",
+                        "url": "string"
+                    },
+                    "name": "MyAjaxProxy2",
+                    "designerId": "150a6357-49bd-4e36-bb98-eb65f82b6a1f",
+                    "cn": [
+                        {
+                            "type": "Ext.data.reader.Json",
+                            "reference": {
+                                "name": "reader",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "rootProperty": "page.content",
+                                "totalProperty": "page.total"
+                            },
+                            "configAlternates": {
+                                "rootProperty": "string",
+                                "totalProperty": "string"
+                            },
+                            "name": "MyJsonReader2",
+                            "designerId": "a784820f-1780-47e6-9a2c-b5d3c198250f"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "cdno"
+                    },
+                    "configAlternates": {
+                        "name": "string"
+                    },
+                    "name": "field",
+                    "designerId": "43d425c0-42fd-4499-b353-bbb0f118383e"
+                },
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "aprno"
+                    },
+                    "configAlternates": {
+                        "name": "string"
+                    },
+                    "name": "field1",
+                    "designerId": "c96dfba1-91c5-4bd3-8d7b-c2383c25d8a5"
+                },
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "apvlAmtDom"
+                    },
+                    "configAlternates": {
+                        "name": "string"
+                    },
+                    "name": "field2",
+                    "designerId": "b672c3e2-7f7a-4b03-8291-cb6a74883e37"
+                },
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "apvlDt"
+                    },
+                    "configAlternates": {
+                        "name": "string"
+                    },
+                    "name": "field3",
+                    "designerId": "e57741ed-0b1b-4d40-8797-b76863da7f58"
+                },
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "apvlHr"
+                    },
+                    "configAlternates": {
+                        "name": "string"
+                    },
+                    "name": "field4",
+                    "designerId": "ff464dd8-775b-4843-9194-9f3c962b9aff"
+                },
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "mcNm"
+                    },
+                    "configAlternates": {
+                        "name": "string"
+                    },
+                    "name": "field5",
+                    "designerId": "2b549464-d713-4875-a5c9-a623b122e1de"
+                },
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "canYn"
+                    },
+                    "configAlternates": {
+                        "name": "string"
+                    },
+                    "name": "field8",
+                    "designerId": "c46ec6c4-fee8-4ded-b1fc-48520e223423"
+                },
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "mcBzno"
+                    },
+                    "configAlternates": {
+                        "name": "string"
+                    },
+                    "name": "field9",
+                    "designerId": "d0b23c67-9ea5-4881-b931-eb20705ea1a4"
+                },
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "mcAddr"
+                    },
+                    "configAlternates": {
+                        "name": "string"
+                    },
+                    "name": "field10",
+                    "designerId": "b8f34f9a-bc7b-4865-986c-f55be30424ce"
+                },
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "mcTaxtnTypeDvcd"
+                    },
+                    "configAlternates": {
+                        "name": "string"
+                    },
+                    "name": "field11",
+                    "designerId": "37349740-56a2-4704-aa06-670e35e8be44"
+                },
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "trnsAmtWc"
+                    },
+                    "configAlternates": {
+                        "name": "string"
+                    },
+                    "name": "field12",
+                    "designerId": "a445d785-1aa8-4c1a-b64b-f5e84a8491e4"
+                },
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "stxat"
+                    },
+                    "configAlternates": {
+                        "name": "string"
+                    },
+                    "name": "field13",
+                    "designerId": "f7755669-71b9-4937-b78a-796ffe1b6d53"
+                },
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "cardEnpc"
+                    },
+                    "configAlternates": {
+                        "name": "string"
+                    },
+                    "name": "field14",
+                    "designerId": "0216843a-5c58-41e1-885d-1299b24a9d1c"
+                },
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "bicApvlSeq"
+                    },
+                    "configAlternates": {
+                        "name": "string"
+                    },
+                    "name": "field15",
+                    "designerId": "83457cc1-0747-409d-b0ec-b7a260e90716"
+                },
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "epcoNm"
+                    },
+                    "configAlternates": {
+                        "name": "string"
+                    },
+                    "name": "field16",
+                    "designerId": "612a2075-22e5-4e97-ba89-4e558e619824"
+                },
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "cardEnpnm"
+                    },
+                    "configAlternates": {
+                        "name": "string"
+                    },
+                    "name": "field17",
+                    "designerId": "8a5ca004-3211-4f76-8922-2b6e274d41b8"
+                },
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "bzno"
+                    },
+                    "configAlternates": {
+                        "name": "string"
+                    },
+                    "name": "field18",
+                    "designerId": "065e2dc7-1f9d-4daa-bcf4-6d55c6fb81e1"
+                },
+                {
+                    "type": "Ext.data.field.Boolean",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "selected"
+                    },
+                    "configAlternates": {
+                        "name": "string"
+                    },
+                    "name": "MyBoolean",
+                    "designerId": "cadb1f05-5ad0-4246-8b50-e8524e796cbf"
+                },
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onJsonstoreLoad",
+                        "implHandler": [
+                            "var me = this,",
+                            "    vm = me.getViewModel(),",
+                            "    refs = me.getReferences(),",
+                            "    grid = refs.grid;",
+                            "",
+                            "// 지출결의서를 하나만 선택(체크)할 수 있도록 해주는 flag",
+                            "vm.set('checkCnt', 0);",
+                            "",
+                            "me.setGridTotal();",
+                            "",
+                            "//debugger //grid.el.setScrollTop(0);",
+                            "// grid.innerElement.getScrollTop() 어느 el에 scroll top 이 0 일까?",
+                            ""
+                        ],
+                        "name": "load",
+                        "scope": "me"
+                    },
+                    "configAlternates": {
+                        "fn": "string",
+                        "implHandler": "code",
+                        "name": "string",
+                        "scope": "string"
+                    },
+                    "name": "onJsonstoreLoad",
+                    "designerId": "e2b018af-a3a2-42fd-a820-8cb48e53099c"
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.Store",
+            "reference": {
+                "name": "stores",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoLoad": true,
+                "autoSync": true,
+                "designer|displayName": "CardStore",
+                "name": "CardStore"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "name": "string",
+                "autoLoad": "boolean",
+                "autoSync": "boolean"
+            },
+            "name": "MyStore",
+            "designerId": "09bd5940-bffa-41ec-a11b-3358fce8aac5",
+            "cn": [
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "value"
+                    },
+                    "configAlternates": {
+                        "name": "string"
+                    },
+                    "name": "field6",
+                    "designerId": "d2383883-0930-4bba-b0db-5b1cdf4a5243"
+                },
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "text"
+                    },
+                    "configAlternates": {
+                        "name": "string"
+                    },
+                    "name": "field7",
+                    "designerId": "9b167385-da00-4e77-8440-e9e44ab00e43"
+                }
+            ]
+        }
+    ]
+}

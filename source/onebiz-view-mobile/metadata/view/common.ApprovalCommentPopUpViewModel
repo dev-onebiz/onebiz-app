@@ -1,0 +1,38 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "{",
+            "    aprComment : null",
+            "}"
+        ],
+        "designer|commentHeader": [
+            "공통 / 결재선의견팝업 ViewModel",
+            "",
+            "@author BNK시스템/팀장/손승범",
+            "@since 2019.06.17.",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "  수정일         수정자                      수정내용",
+            " ------------   ---------                 --------------------------",
+            "  2019.06.17.   BNK시스템/팀장/손승범         최초 생성"
+        ],
+        "designer|userAlias": "common.approvalcommentpopup",
+        "designer|userClassName": "common.ApprovalCommentPopUpViewModel"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "data": "object",
+        "designer|commentHeader": "comment"
+    },
+    "designerId": "465dd3a4-f5b0-4799-9f01-62b6ad4dfc78"
+}

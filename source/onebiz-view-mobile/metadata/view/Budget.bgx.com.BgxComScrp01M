@@ -1,0 +1,533 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "BgxComScrp01M"
+        ],
+        "designer|commentHeader": [
+            "모바일 예산 : 결의서 작성 [스크래핑 팝업 / 법인카드] - 화면",
+            "",
+            "@author BNK시스템/계장/지민영",
+            "@since 2020.05.14",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일       수정자                수정내용",
+            "----------  ------------------   --------------------------",
+            "2020.05.14  BNK시스템/계장/지민영   최초 생성"
+        ],
+        "designer|userAlias": "BgxComScrp01M",
+        "designer|userClassName": "Budget.bgx.com.BgxComScrp01M",
+        "height": "100%"
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "extend": "string",
+        "designer|commentHeader": "comment",
+        "designer|extend": "string",
+        "height": "auto"
+    },
+    "designerId": "ec9802fa-882d-45e0-8453-c17d3463ff8e",
+    "viewControllerInstanceId": "faf96dfb-94e0-4a55-9071-e93de460bcb2",
+    "viewModelInstanceId": "d744bdd1-9cba-417d-80e6-e99a576aea90",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "margin": "0 0 5 5"
+            },
+            "configAlternates": {
+                "docked": "string",
+                "margin": "auto"
+            },
+            "name": "MyContainer9",
+            "designerId": "8cab1844-716b-47c5-857c-13701775187b",
+            "cn": [
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "docked": "top",
+                        "reference": "date_container"
+                    },
+                    "configAlternates": {
+                        "docked": "string",
+                        "reference": "string"
+                    },
+                    "name": "common.datestartendcontainer1",
+                    "designerId": "80d95b91-377e-4950-9784-1b6b1bbc181f",
+                    "masterInstanceId": "3552e543-d052-4824-b269-bb5ece767558"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "카드번호",
+                        "docked": "top",
+                        "height": 40,
+                        "layout": "hbox"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "docked": "string",
+                        "height": "auto",
+                        "layout": "string"
+                    },
+                    "name": "MyContainer7",
+                    "designerId": "1062895f-67a9-4c9a-ae86-2ad864438f68",
+                    "cn": [
+                        {
+                            "type": "Ext.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "html": "카드번호",
+                                "width": "25%"
+                            },
+                            "configAlternates": {
+                                "html": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyDisplayField",
+                            "designerId": "f47b6abe-b1ff-4ab5-af84-7b4e841fda02"
+                        },
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "reference": "txtCardNo",
+                                "width": "75%"
+                            },
+                            "configAlternates": {
+                                "reference": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyTextField2",
+                            "designerId": "aad7ff4d-ff8f-4b70-ae9a-7f8d7a436074"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "상호",
+                        "docked": "top",
+                        "height": 40,
+                        "layout": "hbox"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "docked": "string",
+                        "height": "auto",
+                        "layout": "string"
+                    },
+                    "name": "MyContainer8",
+                    "designerId": "2ad488c3-bbec-4463-b39b-79cae3b87154",
+                    "cn": [
+                        {
+                            "type": "Ext.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "html": "상호",
+                                "width": "25%"
+                            },
+                            "configAlternates": {
+                                "html": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyDisplayField",
+                            "designerId": "35865804-b535-49f6-9ffe-fd5c2e3667b7"
+                        },
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "reference": "txtMcNm",
+                                "width": "75%"
+                            },
+                            "configAlternates": {
+                                "reference": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyTextField1",
+                            "designerId": "2191c45a-3019-4b21-9211-b802d884f276"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.Grid",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "columnResize": false,
+                "height": "100%",
+                "hideHeaders": true,
+                "reference": "grid",
+                "scrollable": "vertical",
+                "store": [
+                    "{ApvlStore}"
+                ],
+                "width": "98%"
+            },
+            "configAlternates": {
+                "store": "binding",
+                "columnResize": "boolean",
+                "height": "auto",
+                "hideHeaders": "boolean",
+                "reference": "string",
+                "scrollable": "auto",
+                "width": "auto"
+            },
+            "name": "MyGrid",
+            "designerId": "4647d681-8013-49ae-a784-873235c2898c",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cell": [
+                            "{",
+                            "    xtype: 'gridcell',",
+                            "    encodeHtml: false",
+                            "}"
+                        ],
+                        "dataIndex": "mcNm",
+                        "designer|displayName": "상호 및 승인일시",
+                        "docked": null,
+                        "flex": "1"
+                    },
+                    "configAlternates": {
+                        "cell": "object",
+                        "dataIndex": "datafield",
+                        "designer|displayName": "string",
+                        "docked": "string",
+                        "flex": "string"
+                    },
+                    "name": "MyColumn6",
+                    "designerId": "bd76acf4-bf09-4562-a3a0-710ca226351d",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "flex",
+                            "type": "string"
+                        }
+                    ],
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "record",
+                                    "dataIndex",
+                                    "cell",
+                                    "column"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "var mcNm = record.data.mcNm;\t\t\t\t\t\t\t// 상호",
+                                    "var apvlDt = DateUtils.parseDate(record.data.apvlDt);\t// 승인일시",
+                                    "var hrResult = record.data.apvlHr.substring(0, 2) + ':';",
+                                    "hrResult += record.data.apvlHr.substring(2, 4);",
+                                    "apvlDt += ' ' + hrResult;",
+                                    "",
+                                    "var result = '<div><span style=\"font-size:15px;font-weight:bold;width:100%;overflow: hidden;white-space:nowrap;text-overflow:ellipsis;display:inline-block;\">'+mcNm+'</span></div>';",
+                                    "result += '<div>'+apvlDt+'</div>';",
+                                    "",
+                                    "cell.setStyle('padding:0px;');",
+                                    "return result;"
+                                ]
+                            },
+                            "configAlternates": {
+                                "designer|params": "typedarray",
+                                "fn": "string",
+                                "implHandler": "code"
+                            },
+                            "name": "renderer",
+                            "designerId": "eb36d059-5be3-403e-8171-470c04667517"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "right",
+                        "cell": [
+                            "{",
+                            "    xtype: 'gridcell',",
+                            "    encodeHtml: false",
+                            "}"
+                        ],
+                        "dataIndex": "apvlAmtDom",
+                        "designer|displayName": "금액 및 승인번호",
+                        "docked": null,
+                        "flex": "1"
+                    },
+                    "configAlternates": {
+                        "cell": "object",
+                        "align": "string",
+                        "dataIndex": "datafield",
+                        "designer|displayName": "string",
+                        "docked": "string",
+                        "flex": "string"
+                    },
+                    "name": "MyColumn5",
+                    "designerId": "9563719f-5b8d-4ffb-a390-b32bd840a4d7",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "flex",
+                            "type": "string"
+                        }
+                    ],
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "record",
+                                    "dataIndex",
+                                    "cell",
+                                    "column"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "// 승인금액",
+                                    "var apvlAmtDom = record.data.apvlAmtDom;",
+                                    "var str = String(apvlAmtDom);",
+                                    "var result = str.replace(/(\\d)(?=(?:\\d{3})+(?!\\d))/g, '$1,');",
+                                    "result += ' 원';",
+                                    "if(record.data.canYn == 'N')",
+                                    "{",
+                                    "    result = '<div style=\"font-size:15px;font-weight:bold;color:blue\">'+result+'</div>';",
+                                    "}",
+                                    "else",
+                                    "{",
+                                    "    result = '<div style=\"font-size:15px;font-weight:bold;color:red\">'+result+'</div>';",
+                                    "}",
+                                    "",
+                                    "// 거래상태, 승인번호",
+                                    "var aprno = record.data.aprno;",
+                                    "var result2 = '';",
+                                    "if(record.data.canYn == 'N')",
+                                    "{",
+                                    "    result2 = '<span>정상 | ' + aprno +'</span>';",
+                                    "",
+                                    "}",
+                                    "else",
+                                    "{",
+                                    "    result2 = '<span style=\"color:red\">취소 | ' + aprno + '</span>';",
+                                    "}",
+                                    "",
+                                    "result += '<div>'+result2+'</div>';",
+                                    "return result;"
+                                ]
+                            },
+                            "configAlternates": {
+                                "designer|params": "typedarray",
+                                "fn": "string",
+                                "implHandler": "code"
+                            },
+                            "name": "renderer",
+                            "designerId": "786835b8-b0bf-4a37-bef4-d957ed98e1da"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.plugin.PagingToolbar",
+                    "reference": {
+                        "name": "plugins",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "MyPagingToolbar1",
+                    "designerId": "5142a216-6b4e-49cc-861f-151dc4cf7c79"
+                },
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|commentHeader": [
+                            "승인내역선택 -> 작성화면 (단건)"
+                        ],
+                        "fn": "onGridSelect",
+                        "implHandler": [
+                            "var me = this,",
+                            "    vm = me.getViewModel(),",
+                            "    refs = me.getReferences(),",
+                            "    ctrl = me.view.parent.parent.controller,",
+                            "    fndcDt = vm.get('initData.fndcDt'),",
+                            "    record = selected[0].data;",
+                            "",
+                            "if (record.apvlDt <= fndcDt) {",
+                            "     // 마감일자 체크",
+                            "//     Ext.Msg.show({",
+                            "//         buttons :  {",
+                            "//             yes : {itemId : Ext.MessageBox.YES, text : '확인'}",
+                            "//         },",
+                            "//         title : '알림',",
+                            "//         message :  Messages.getMessage('E8029',[record.mcNm,DateUtils.parseDate(vm.get('initData.fndcDt'))]),",
+                            "//         alwaysOnTop : true,",
+                            "//         maxWidth : '95%',",
+                            "//         fn : function(btn) {",
+                            "//             return;",
+                            "//         }",
+                            "//     });",
+                            "    me.showAlert(Messages.getMessage('E8029',[record.mcNm,DateUtils.parseDate(vm.get('initData.fndcDt'))]));",
+                            "} else if (record.apvlDt < 20200701) {",
+                            "     /* 20.07.01 예산오픈으로 인한 분기처리 */",
+                            "//     Ext.Msg.show({",
+                            "//         buttons :  {",
+                            "//             yes : {itemId : Ext.MessageBox.YES, text : '확인'}",
+                            "//         },",
+                            "//         title : '알림',",
+                            "//         message :  '2020-07-01 이전은 [경비노트]-[법인카드] 메뉴를 이용바랍니다.',",
+                            "//         alwaysOnTop : true,",
+                            "//         maxWidth : '95%',",
+                            "//         fn : function(btn) {",
+                            "//             return;",
+                            "//         }",
+                            "//     });",
+                            "    me.showAlert('2020-07-01 이전은 [경비노트]-[법인카드] 메뉴를 이용바랍니다.');",
+                            "} else {",
+                            "    ctrl.getViewModel().set('record', record);",
+                            "    refs.grid.getStore().removeAll();",
+                            "    ctrl.fnConfirm();",
+                            "}"
+                        ],
+                        "name": "select",
+                        "scope": "me"
+                    },
+                    "configAlternates": {
+                        "designer|commentHeader": "comment",
+                        "fn": "string",
+                        "implHandler": "code",
+                        "name": "string",
+                        "scope": "string"
+                    },
+                    "name": "onGridSelect",
+                    "designerId": "ec95fb36-0c7e-48f8-9709-112c153a1f35"
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "초기화"
+                ],
+                "fn": "onContainerInitialize",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    dateCnt = refs.date_container,",
+                    "    strdt = dateCnt.refs.strdt,",
+                    "    edt = dateCnt.refs.edt,",
+                    "    date = new Date(),",
+                    "    grid = refs.grid;",
+                    "",
+                    "grid.el.select('.x-headercontainer').setStyle('height',\t'0px');",
+                    "",
+                    "vm.set('initData', component.config.data);\t// 초기데이터",
+                    "",
+                    "// 조회기간",
+                    "edt.setValue(DateUtils.parseDate(date));",
+                    "date.setMonth(date.getMonth() - 1);",
+                    "date.setDate(1);",
+                    "strdt.setValue(DateUtils.parseDate(date));",
+                    "",
+                    "me.onSelect();"
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onContainerInitialize",
+            "designerId": "a6f538c4-12ef-450e-a89f-89649107f054"
+        }
+    ]
+}

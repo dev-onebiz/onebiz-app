@@ -1,0 +1,471 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "BgxNfmAply31M"
+        ],
+        "designer|commentHeader": [
+            "모바일 예산 : 결의서 및 여비 목록 [그리드 (지출별)] - 화면",
+            "",
+            "@author BNK시스템/계장/지민영",
+            "@since 2020.05.12",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일       수정자                  수정내용",
+            "----------  ------------------     --------------------------",
+            "2020.05.12  BNK시스템/계장/지민영     최초 생성",
+            "2020.07.27  BNK시스템/파트너/지민영   이체일자 추가"
+        ],
+        "designer|userAlias": "BgxNfmAply31M",
+        "designer|userClassName": "Budget.bgx.BgxNfmAply31M"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "extend": "string",
+        "alternateClassName": "typedarray",
+        "designer|commentHeader": "comment",
+        "designer|extend": "string",
+        "designer|userAlias": "string"
+    },
+    "designerId": "42471b22-78cb-42f0-a79c-00ad2ac239db",
+    "viewControllerInstanceId": "d099dc53-9476-4a10-a46d-6e9944837c77",
+    "viewModelInstanceId": "222869d1-a4a6-43dc-90b6-5cb22c7a675e",
+    "cn": [
+        {
+            "type": "Ext.grid.Grid",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "columnResize": false,
+                "height": "100%",
+                "hideHeaders": true,
+                "infinite": false,
+                "reference": "grid",
+                "signTpl1": "<span style=\"font-weight:{text};\">{value}</span>",
+                "signTpl2": "<div style=\"font-weight:bold;width:100%;overflow: hidden;white-space:nowrap;text-overflow:ellipsis;display:inline-block;\">{value1}</div><div>{value2}</div>",
+                "signTpl3": "<div style=\"text-align:right;\">{value1}</div><div style=\"text-align:right;color:{color};font-weight:{text};\">{value2}</div>",
+                "signTpl4": "<div style=\"font-weight:bold;width:100%;overflow: hidden;white-space:nowrap;text-overflow:ellipsis;display:inline-block;\">{value1}</div><div>{value2}</div><div style=\"font-weight:bold;\">{value3}</div>",
+                "signTpl5": "<div style=\"text-align:right;\">{value1}</div><div style=\"text-align:right;color:{color};font-weight:{text};\">{value2}</div><div style=\"text-align:right;font-weight:{text};\">{value3}</div>",
+                "store": [
+                    "{ExpListStore}"
+                ],
+                "variableHeights": true,
+                "width": "100%"
+            },
+            "configAlternates": {
+                "store": "binding",
+                "columnResize": "boolean",
+                "height": "auto",
+                "hideHeaders": "boolean",
+                "reference": "string",
+                "signTpl1": "string",
+                "signTpl2": "string",
+                "signTpl3": "string",
+                "width": "auto",
+                "infinite": "boolean",
+                "variableHeights": "boolean",
+                "signTpl4": "string",
+                "signTpl5": "string"
+            },
+            "name": "MyGrid1",
+            "designerId": "adc260d6-2774-4c77-92bd-c37da75f77fe",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "signTpl1",
+                    "type": "string"
+                },
+                {
+                    "group": "(Custom Properties)",
+                    "name": "signTpl2",
+                    "type": "string"
+                },
+                {
+                    "group": "(Custom Properties)",
+                    "name": "signTpl3",
+                    "type": "string"
+                },
+                {
+                    "group": "(Custom Properties)",
+                    "name": "signTpl4",
+                    "type": "string"
+                },
+                {
+                    "group": "(Custom Properties)",
+                    "name": "signTpl5",
+                    "type": "string"
+                }
+            ],
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cell": [
+                            "{",
+                            "    xtype: 'gridcell',",
+                            "    encodeHtml: false",
+                            "}"
+                        ],
+                        "dataIndex": "aplKndcd",
+                        "designer|displayName": "신청종류",
+                        "docked": null,
+                        "width": "30%"
+                    },
+                    "configAlternates": {
+                        "cell": "object",
+                        "dataIndex": "datafield",
+                        "designer|displayName": "string",
+                        "docked": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyColumn",
+                    "designerId": "23b11c76-dcdb-4896-bb8f-64976c8ec00f",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "record",
+                                    "dataIndex",
+                                    "cell",
+                                    "column"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "var me = this,",
+                                    "    vm = me.getViewModel(),",
+                                    "    refs = me.getReferences(),",
+                                    "    value = CodeUtils.getText('NFC001', value),",
+                                    "    tpl = me.up('grid').lookupTpl('signTpl1'),",
+                                    "    result = tpl.apply({",
+                                    "        text : 'bold',",
+                                    "        value : value",
+                                    "    });",
+                                    "",
+                                    "return result;"
+                                ]
+                            },
+                            "configAlternates": {
+                                "designer|params": "typedarray",
+                                "fn": "string",
+                                "implHandler": "code"
+                            },
+                            "name": "renderer",
+                            "designerId": "285bdd68-7c33-4035-a928-5796aeba7d23"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cell": [
+                            "{",
+                            "    xtype: 'gridcell',",
+                            "    encodeHtml: false",
+                            "}"
+                        ],
+                        "dataIndex": "mcNm",
+                        "designer|displayName": "상호명 신청일자 이체일자",
+                        "docked": null,
+                        "width": "35%"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "designer|displayName": "string",
+                        "docked": "string",
+                        "width": "auto",
+                        "cell": "object"
+                    },
+                    "name": "MyColumn1",
+                    "designerId": "3a514c12-0cdf-436a-85d1-d16c5342e1f3",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "record",
+                                    "dataIndex",
+                                    "cell",
+                                    "column"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "var me = this,",
+                                    "    vm = me.getViewModel(),",
+                                    "    refs = me.getReferences(),",
+                                    "    mcNm = record.data.mcNm,\t\t\t\t\t\t// 상호",
+                                    "    aplDt = record.data.aplDt,\t\t\t\t\t\t// 신청일자",
+                                    "    trnsDt = record.data.matrnTrnsDt,\t\t\t\t// 이체일자",
+                                    "    trnsStsMsg = record.data.trnsStsMsg,\t\t\t/* 사용자에게는 정상만 출력되도록 함 .*/",
+                                    "    tpl = me.up('grid').lookupTpl('signTpl2'),",
+                                    "    result = tpl.apply({",
+                                    "        text : 'bold',",
+                                    "        value1 : mcNm,",
+                                    "        value2 : DateUtils.parseDate(aplDt)",
+                                    "    });",
+                                    "",
+                                    "if (trnsDt != null && trnsStsMsg == '정상') {",
+                                    "    tpl = me.up('grid').lookupTpl('signTpl4');",
+                                    "    result = tpl.apply({",
+                                    "        text : 'bold',",
+                                    "        value1 : mcNm,",
+                                    "        value2 : DateUtils.parseDate(aplDt),",
+                                    "        value3 : '이체일자'",
+                                    "    });",
+                                    "}",
+                                    "",
+                                    "return result;"
+                                ]
+                            },
+                            "configAlternates": {
+                                "designer|params": "typedarray",
+                                "fn": "string",
+                                "implHandler": "code"
+                            },
+                            "name": "renderer",
+                            "designerId": "6857c9af-2539-4e42-80d3-6d852cd39bb5"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "right",
+                        "cell": [
+                            "{",
+                            "    xtype: 'gridcell',",
+                            "    encodeHtml: false",
+                            "}"
+                        ],
+                        "dataIndex": "aplStcd",
+                        "designer|displayName": "금액 신청상태 이체결과",
+                        "docked": null,
+                        "width": "35%"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "designer|displayName": "string",
+                        "docked": "string",
+                        "width": "auto",
+                        "cell": "object",
+                        "align": "string"
+                    },
+                    "name": "MyColumn2",
+                    "designerId": "55ae190a-b656-4afe-963b-4040e2dbe485",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "record",
+                                    "dataIndex",
+                                    "cell",
+                                    "column"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "var me = this,",
+                                    "    vm = me.getViewModel(),",
+                                    "    refs = me.getReferences(),",
+                                    "    trnsAmt = record.data.trnsAmt,\t\t\t\t\t// 금액",
+                                    "    aplStcd = record.data.aplStcd,\t\t\t\t\t// 신청상태",
+                                    "    trnsDt = record.data.matrnTrnsDt,\t\t\t\t// 이체일자",
+                                    "    trnsStsMsg = record.data.trnsStsMsg,\t\t\t/* 사용자에게는 정상만 출력되도록 함 .*/",
+                                    "    tpl = me.up('grid').lookupTpl('signTpl3'),",
+                                    "    aplStcdNm = '',",
+                                    "    aplStcdStore = me.up('BgxNfmAply01M').getReferences().aplStcd.getStore().data.items,",
+                                    "    aplDvcd = record.data.aplDvcd,\t\t\t// 신청구분",
+                                    "    aplDvcdNm = (aplDvcd == Constants.aplDvcd.APPLY) ? '정상' : '취소';",
+                                    "",
+                                    "for (var item in aplStcdStore) {",
+                                    "    var data = aplStcdStore[item].data;",
+                                    "    if (data && data.value == aplStcd) {",
+                                    "        aplStcdNm = data.text;",
+                                    "    }",
+                                    "}",
+                                    "",
+                                    "var result = tpl.apply({",
+                                    "        text : 'bold',",
+                                    "//         color : (aplStcd == Constants.aplStcd.COMPLETED || aplStcd == Constants.aplStcd.COMPLETED_APPLY) ? 'blue' : ((aplStcd == Constants.aplStcd.SEND_BACK || aplStcd == Constants.aplStcd.SEND_BACK_CGP || aplStcd == Constants.aplStcd.SEND_BACK_DEPT) ? 'red' : 'black'),",
+                                    "        color : (aplDvcd == Constants.aplDvcd.APPLY && aplStcd == Constants.aplStcd.COMPLETED) ? 'blue' : (aplDvcd == Constants.aplDvcd.CANCLE && aplStcd == Constants.aplStcd.COMPLETED) ? 'red' : 'black',",
+                                    "        value1 : (trnsAmt) ? trnsAmt.toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g,\",\")+' 원' : trnsAmt ,",
+                                    "        value2 : '(' + aplDvcdNm + ') ' + aplStcdNm",
+                                    "    });",
+                                    "",
+                                    "if (trnsDt != null && trnsStsMsg == '정상') {",
+                                    "    tpl = me.up('grid').lookupTpl('signTpl5');",
+                                    "    result = tpl.apply({",
+                                    "        text : 'bold',",
+                                    "        color : (aplDvcd == Constants.aplDvcd.APPLY && aplStcd == Constants.aplStcd.COMPLETED) ? 'blue' : (aplDvcd == Constants.aplDvcd.CANCLE && aplStcd == Constants.aplStcd.COMPLETED) ? 'red' : 'black',",
+                                    "        value1 : (trnsAmt) ? trnsAmt.toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g,\",\")+' 원' : trnsAmt ,",
+                                    "        value2 : '(' + aplDvcdNm + ') ' + aplStcdNm,",
+                                    "        value3 : DateUtils.parseDate(trnsDt)",
+                                    "    });",
+                                    "}",
+                                    "",
+                                    "return result;"
+                                ]
+                            },
+                            "configAlternates": {
+                                "designer|params": "typedarray",
+                                "fn": "string",
+                                "implHandler": "code"
+                            },
+                            "name": "renderer",
+                            "designerId": "fbc613f8-6043-465c-a3ad-06e7a0d5dea6"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.plugin.PagingToolbar",
+                    "reference": {
+                        "name": "plugins",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "MyPagingToolbar",
+                    "designerId": "392121c7-c3ad-4106-8e9c-efcc0b6fa61b"
+                },
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|commentHeader": [
+                            "목록 상세화면"
+                        ],
+                        "fn": "onGridSelect",
+                        "implHandler": [
+                            "var me = this,",
+                            "    vm = me.getViewModel(),",
+                            "    refs = me.getReferences(),",
+                            "    grid = refs.grid,",
+                            "    selectRecords = [],",
+                            "    parentCrtl = me.view.parent.controller,",
+                            "    naviView = me.getView().up('navigationview');",
+                            "",
+                            "for(var i in selected){",
+                            "    selectRecords[i] = selected[i].data;",
+                            "}",
+                            "",
+                            "var values = {",
+                            "    /* 신청 정보가 여러개 일 순 없으므로 , 단건기준으로 작성함. */",
+                            "    selectBgmExpNfcRecord : selectRecords[0]",
+                            "};",
+                            "vm.set('selectRecord', selectRecords[0]); \t// 상세조회결과에서 단건필터링을 위해서 저장 (웹에서 다건 작성시 aplSno로 구분)",
+                            "",
+                            "/*상세항목 조회*/",
+                            "Ext.Ajax.request({",
+                            "    headers : {",
+                            "        serviceId : 'BgxNfmSvc.findAllBgmExpNfcDtl',",
+                            "        viewId : me.view.parent.id",
+                            "    },",
+                            "    jsonData : values,",
+                            "    success : function(response) {",
+                            "        var res = Ext.JSON.decode(response.responseText),",
+                            "            applyInfo = res.content.applyInfo,",
+                            "            expItemInfo = applyInfo.expItemInfo,",
+                            "            result = [];",
+                            "",
+                            "        for (var i in expItemInfo) {",
+                            "            if (expItemInfo[i].aplSno == selectRecords[0].aplSno) {",
+                            "                result.push(expItemInfo[i]);",
+                            "            }",
+                            "        }",
+                            "        res.content.applyInfo.expItemInfo = result;",
+                            "",
+                            "        parentCrtl.fnChangeApplyForm(res.content, true);",
+                            "    }",
+                            "});"
+                        ],
+                        "name": "select",
+                        "scope": "me"
+                    },
+                    "configAlternates": {
+                        "designer|commentHeader": "comment",
+                        "fn": "string",
+                        "implHandler": "code",
+                        "name": "string",
+                        "scope": "string"
+                    },
+                    "name": "onGridSelect",
+                    "designerId": "90129782-84ca-4b70-9587-eabc094151b6"
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "initialize",
+                "implHandler": [
+                    "var me = this;",
+                    "",
+                    "me.setParentViewId(component.initialConfig.parentViewId);",
+                    ""
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "initialize",
+            "designerId": "c6529ece-3127-4ffc-9aa8-24dbd885f0d7"
+        }
+    ]
+}

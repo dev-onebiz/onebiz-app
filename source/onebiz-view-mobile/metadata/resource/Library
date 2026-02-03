@@ -1,0 +1,30 @@
+{
+    "type": "libraryresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "basePath": "ext/",
+        "designer|userClassName": "Library",
+        "libraryRequires": [
+            "font-awesome",
+            "calendar",
+            "ux",
+            "sencha-charts",
+            "ext-locale",
+            "google",
+            "ext-ux"
+        ],
+        "theme": "MyMaterialTheme"
+    },
+    "configAlternates": {
+        "basePath": "uri",
+        "designer|userClassName": "string",
+        "libraryRequires": "typedarray",
+        "theme": "string"
+    },
+    "name": "Library",
+    "designerId": "35296d22-0325-4585-9a4b-304cb2912466"
+}

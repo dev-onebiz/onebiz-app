@@ -1,0 +1,148 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            "모바일 예산 : 결의서 작성 [스크래핑 팝업 / 현금영수증] - 컨트롤러",
+            "",
+            "@author BNK시스템/계장/지민영",
+            "@since 2020.05.14",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일       수정자                수정내용",
+            "----------  ------------------   --------------------------",
+            "2020.05.14  BNK시스템/계장/지민영   최초 생성",
+            "2020.06.24  BNK시스템/계장/지민영   20.07.01 예산오픈으로 인한 분기처리 추가",
+            "2020.09.21  BNK시스템/계장/지민영   사업연도 추가"
+        ],
+        "designer|extend": "BaseViewController",
+        "designer|userAlias": "BgxComScrp02MViewController",
+        "designer|userClassName": "Budget.bgx.com.BgxComScrp02MViewController",
+        "viewId": "BgxComScrp02M"
+    },
+    "configAlternates": {
+        "designer|commentHeader": "comment",
+        "designer|extend": "string",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "viewId": "string"
+    },
+    "designerId": "e9784bb8-3bec-4c2b-adf5-90d65f046182",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "viewId",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "조회"
+                ],
+                "fn": "onSelect",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    data = vm.get('initData'),",
+                    "    params = {",
+                    "        aplEmpId : data.aplEmpId,",
+                    "        dlngYn : data.dlngYn,",
+                    "        fudcYn : data.fudcYn,",
+                    "        onlyScrpTab : 'csh'",
+                    "    },",
+                    "    store = vm.storeInfo.CshRctStore,",
+                    "    dateCnt = refs.date_container,",
+                    "    dateCntCtrl = dateCnt.controller,",
+                    "    strdt = dateCnt.refs.strdt,",
+                    "    edt = dateCnt.refs.edt,",
+                    "    aprno = refs.txtAprNo;",
+                    "",
+                    "// 조회기간",
+                    "var result = dateCntCtrl.dateValid();",
+                    "if (result != '') {",
+                    "    Ext.Msg.alert('알림', result);",
+                    "    return;",
+                    "} else {",
+                    "    if (strdt.getValue() < data.strdt || edt.getValue() > data.edt) {",
+                    "        // [이가영] : bsnsYy년의 1월 1일 부터 12월 31일까지만 신청가능하도록 해야한다.",
+                    "        me.showAlert(DateUtils.parseDate(data.strdt) + ' ~ ' + DateUtils.parseDate(data.edt) + ' 사이만 조회가능합니다.');",
+                    "        strdt.setValue(data.strdt);",
+                    "        edt.setValue(data.edt);",
+                    "        me.onSelect();",
+                    "        return;",
+                    "    }",
+                    "",
+                    "    params.tStrdt = Ext.Date.format(strdt.getValue(), 'Ymd');",
+                    "    params.tEdt = Ext.Date.format(edt.getValue(), 'Ymd');",
+                    "}",
+                    "",
+                    "// 승인번호",
+                    "if (aprno && aprno.getValue()) {",
+                    "    params.aprno = aprno.getValue();",
+                    "}",
+                    "",
+                    "store.getProxy().extraParams = params;",
+                    "store.removeAll();",
+                    "store.loadPage(1);"
+                ]
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "onSelect",
+            "designerId": "9c8a32cc-c3f3-47b9-8c6f-6afe6dda3747"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "msg"
+                ],
+                "fn": "showAlert",
+                "implHandler": [
+                    "Ext.Msg.show({",
+                    "        buttons :  {",
+                    "            yes : {itemId : Ext.MessageBox.YES, text : '확인'}",
+                    "        },",
+                    "        title : '알림',",
+                    "        message : msg,",
+                    "        alwaysOnTop : true,",
+                    "        fn : function(btn) {",
+                    "            return;",
+                    "        }",
+                    "    });"
+                ]
+            },
+            "configAlternates": {
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "showAlert",
+            "designerId": "d1583aa8-91d1-47ab-a6c5-3baada3bbe4b"
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            "모바일 예산 : 결의서 [결재함 / 현금영수증] - 컨트롤러",
+            "",
+            "@author BNK시스템/계장/지민영",
+            "@since 2020.05.26",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일       수정자                수정내용",
+            "----------  ------------------   --------------------------",
+            "2020.05.26  BNK시스템/계장/지민영   최초 생성",
+            "2020.09.21  BNK시스템/계장/지민영   사업연도 추가"
+        ],
+        "designer|extend": "BaseViewController",
+        "designer|userAlias": "BgxNfmAply71MItem02ViewController",
+        "designer|userClassName": "Budget.bgx.BgxNfmAply71MItem02ViewController",
+        "viewId": "BgxNfmAply71MItem02"
+    },
+    "configAlternates": {
+        "designer|commentHeader": "comment",
+        "designer|extend": "string",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "viewId": "string"
+    },
+    "designerId": "19f9d1d6-cb14-4e61-8277-d076a0993cd1",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "viewId",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "집행대상라벨"
+                ],
+                "fn": "fnSetSummaryUserLabel",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    expItemData = Ext.clone(vm.get('expItemData')),",
+                    "    userRecords = expItemData.expItemUserInfo,",
+                    "    trnsAmt = expItemData.trnsAmt,  //공급가액",
+                    "    innerEmpeCnt = 0,",
+                    "    outerEmpeCnt = 0,",
+                    "    rtnStr = '',",
+                    "    defaultStr = '승인금액',",
+                    "    xpnitKeyCd = expItemData.xpnitKeyCd,",
+                    "    xpnitKeyNm = expItemData.xpnitKeyNm;",
+                    "",
+                    "if (userRecords) {",
+                    "    for (var i = 0; i < userRecords.length; i++) {",
+                    "        var record = userRecords[i];",
+                    "        if (record.stfDvcd == Constants.stfDvcd.IN) {",
+                    "            innerEmpeCnt++;",
+                    "        } else {",
+                    "            outerEmpeCnt++;",
+                    "        }",
+                    "    }",
+                    "    var amtByUser = (innerEmpeCnt == 0 ? 0 : Math.round(trnsAmt / innerEmpeCnt));",
+                    "",
+                    "    rtnStr = Ext.String.format('<span style = \"line-height : 20px;\">집행대상 ( 총 <span style =\"color : red;\">{0}</span>명 ) <br>'",
+                    "                               + '[ 내부직원 {1} 명 / 외부직원 {2} 명 ] <br>'",
+                    "                               + '<span style = \"color :gray;\" >[{3} 기준 1인당 {4}원]</span></span>',",
+                    "                               userRecords.length, innerEmpeCnt, outerEmpeCnt, defaultStr ,",
+                    "                               amtByUser.toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g,\",\"));",
+                    "",
+                    "}",
+                    "vm.set('expItemData.summaryUserLabel', rtnStr);"
+                ]
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "fnSetSummaryUserLabel",
+            "designerId": "f579d1cb-dfe7-45f3-9092-6fa702c8362b"
+        }
+    ]
+}

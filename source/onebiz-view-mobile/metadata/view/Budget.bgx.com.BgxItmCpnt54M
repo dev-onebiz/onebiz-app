@@ -1,0 +1,552 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "BgxItmCpnt54M"
+        ],
+        "alwaysOnTop": true,
+        "container|align": "center",
+        "designer|commentHeader": [
+            "모바일 예산 : 결의서 작성 [집행대상내역 팝업] - 화면",
+            "",
+            "@author BNK시스템/계장/지민영",
+            "@since 2020.05.25",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일       수정자                수정내용",
+            "----------  ------------------   --------------------------",
+            "2020.05.25  BNK시스템/계장/지민영   최초 생성"
+        ],
+        "designer|extend": "Ext.window.Window",
+        "designer|userAlias": "BgxItmCpnt54M",
+        "designer|userClassName": "Budget.bgx.com.BgxItmCpnt54M",
+        "height": "90%",
+        "layout": "vbox",
+        "maxWidth": "95%",
+        "scrollable": "vertical"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "extend": "string",
+        "alternateClassName": "typedarray",
+        "container|align": "string",
+        "designer|commentHeader": "comment",
+        "designer|extend": "string",
+        "designer|userAlias": "string",
+        "height": "auto",
+        "layout": "string",
+        "maxWidth": "auto",
+        "scrollable": "auto",
+        "alwaysOnTop": "auto"
+    },
+    "designerId": "f8f6cd40-4eed-4010-9456-86778a4b379e",
+    "viewControllerInstanceId": "1b352a8f-3424-4ddd-9dba-20a89a3abd8e",
+    "viewModelInstanceId": "10604a61-b0d0-4dd9-8314-93cda5b5f034",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "사업부문/계정과목",
+                "margin": "0 0 10 0",
+                "width": "95%"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "docked": "string",
+                "margin": "auto",
+                "width": "auto"
+            },
+            "name": "MyContainer36",
+            "designerId": "94d932dc-4a27-4453-8fa3-d55e0388c157",
+            "cn": [
+                {
+                    "type": "Ext.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "사업부문",
+                        "disabled": true,
+                        "editable": false,
+                        "hidden": true,
+                        "margin": "10 0 0 0",
+                        "placeholder": "사업부문",
+                        "reference": "bgBudcBsnsId",
+                        "required": true,
+                        "store": [
+                            "{codeList.bsnsCodeList}"
+                        ],
+                        "value": [
+                            "{expItemInputData.bgBudcBsnsId}"
+                        ]
+                    },
+                    "configAlternates": {
+                        "value": "binding",
+                        "store": "binding",
+                        "designer|displayName": "string",
+                        "editable": "boolean",
+                        "margin": "auto",
+                        "placeholder": "string",
+                        "reference": "string",
+                        "required": "boolean",
+                        "disabled": "boolean",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyComboBox2",
+                    "designerId": "b1638d40-9bd6-4744-b50a-7862060c6693"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout": "hbox",
+                        "margin": "10 0 0 0"
+                    },
+                    "configAlternates": {
+                        "layout": "string",
+                        "margin": "auto"
+                    },
+                    "name": "MyContainer40",
+                    "designerId": "8ac94745-ce3c-4298-a5e9-8af8bad9ae6d",
+                    "cn": [
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "hidden": true,
+                                "width": 10
+                            },
+                            "configAlternates": {
+                                "hidden": "boolean",
+                                "width": "number"
+                            },
+                            "name": "MySpacer5",
+                            "designerId": "fc2430d8-c0f2-4d3c-9c1b-e78a28eaaf4c"
+                        },
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "예산한도",
+                                "disabled": true,
+                                "editable": false,
+                                "hidden": true,
+                                "layout|flex": 1,
+                                "readOnly": true,
+                                "reference": "buddLmtAmt"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "disabled": "boolean",
+                                "editable": "boolean",
+                                "hidden": "boolean",
+                                "layout|flex": "number",
+                                "readOnly": "boolean",
+                                "reference": "string"
+                            },
+                            "name": "MyTextField6",
+                            "designerId": "85e765fb-31c2-4a21-b27b-13bd3d72a492"
+                        },
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "계정과목",
+                                "disabled": true,
+                                "editable": false,
+                                "layout|flex": 1,
+                                "readOnly": true,
+                                "reference": "xpnitKeyNm"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "disabled": "boolean",
+                                "editable": "boolean",
+                                "layout|flex": "number",
+                                "readOnly": "boolean",
+                                "reference": "string"
+                            },
+                            "name": "MyTextField18",
+                            "designerId": "e1bcff98-32b9-4ece-959c-3f27cb78b906"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "margin": "10 0 0 0",
+                "minHeight": 60,
+                "width": "95%"
+            },
+            "configAlternates": {
+                "layout|flex": "number",
+                "margin": "auto",
+                "minHeight": "auto",
+                "width": "auto"
+            },
+            "name": "MyContainer50",
+            "designerId": "46277102-34fc-493b-bd1f-c4f726e2b7c0",
+            "cn": [
+                {
+                    "type": "Ext.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "html": [
+                            "<span style = \"line-height : 20px;\">집행대상 ( 총 <span style =\"color : red;\">{tct}</span>명 ) <br> [ 내부직원 {innerEmpeCnt} 명 / 외부직원 {outerEmpeCnt} 명 ]"
+                        ],
+                        "reference": "summary"
+                    },
+                    "configAlternates": {
+                        "html": "binding",
+                        "reference": "string"
+                    },
+                    "name": "MyDisplayField6",
+                    "designerId": "535c7450-276e-49e8-922d-0f5df6e567b5"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "userCnt",
+                "layout|flex": 5,
+                "margin": "10 0 0 0",
+                "minHeight": 130,
+                "reference": "userCnt",
+                "scrollable": "vertical",
+                "style": "border:Solid 1px #999999",
+                "width": "95%"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "layout|flex": "number",
+                "margin": "auto",
+                "minHeight": "auto",
+                "reference": "string",
+                "scrollable": "auto",
+                "style": "string",
+                "width": "auto"
+            },
+            "name": "MyContainer52",
+            "designerId": "6c252797-21f8-4af0-93bf-7b860ae65476",
+            "cn": [
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|commentHeader": [
+                            "사용자 폼 추가"
+                        ],
+                        "fn": "onContainerAdd",
+                        "implHandler": [
+                            "var me = this,",
+                            "    vm = me.getViewModel(),",
+                            "    refs = me.getReferences();",
+                            "",
+                            "// 집계",
+                            "vm.set('tct', Number(vm.get('tct'))+1);",
+                            "switch (item.getViewModel().data.data.stfDvcd) {",
+                            "    case Constants.stfDvcd.IN :",
+                            "        vm.set('innerEmpeCnt', Number(vm.get('innerEmpeCnt'))+1);",
+                            "        break;",
+                            "    case Constants.stfDvcd.OUT :",
+                            "        vm.set('outerEmpeCnt', Number(vm.get('outerEmpeCnt'))+1);",
+                            "        break;",
+                            "}"
+                        ],
+                        "name": "add",
+                        "scope": "me"
+                    },
+                    "configAlternates": {
+                        "fn": "string",
+                        "implHandler": "code",
+                        "name": "string",
+                        "scope": "string",
+                        "designer|commentHeader": "comment"
+                    },
+                    "name": "onContainerAdd",
+                    "designerId": "454efddc-ec02-4189-ac3e-98454c39e688"
+                },
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|commentHeader": [
+                            "사용자 폼 삭제"
+                        ],
+                        "fn": "onContainerRemove",
+                        "implHandler": [
+                            "var me = this,",
+                            "    vm = me.getViewModel(),",
+                            "    refs = me.getReferences(),",
+                            "    userList = vm.get('userList');",
+                            "",
+                            "// del userData",
+                            "var userList = {},",
+                            "    data = item.getViewModel().data.data,",
+                            "    len = 0;",
+                            "for(var i in vm.get('userList')) {",
+                            "    var tmp = vm.get('userList')[i];",
+                            "    if (!(tmp.bgBudcBsnsId == data.bgBudcBsnsId && tmp.bsnsNm == data.bsnsNm && tmp.bsnsYy == data.bsnsYy && tmp.dpnm == data.dpnm && tmp.enpnm == data.enpnm && tmp.stfNm == data.stfNm && tmp.stfNo == data.stfNo)) {",
+                            "        userList[len] = tmp;",
+                            "        len++;",
+                            "    }",
+                            "}",
+                            "vm.set('userList', userList);",
+                            "",
+                            "// 집계",
+                            "vm.set('tct', Number(vm.get('tct'))-1);",
+                            "switch (data.stfDvcd) {",
+                            "    case Constants.stfDvcd.IN :",
+                            "        vm.set('innerEmpeCnt', Number(vm.get('innerEmpeCnt'))-1);",
+                            "        break;",
+                            "    case Constants.stfDvcd.OUT :",
+                            "        vm.set('outerEmpeCnt', Number(vm.get('outerEmpeCnt'))-1);",
+                            "        break;",
+                            "}"
+                        ],
+                        "name": "remove",
+                        "scope": "me"
+                    },
+                    "configAlternates": {
+                        "fn": "string",
+                        "implHandler": "code",
+                        "name": "string",
+                        "scope": "string",
+                        "designer|commentHeader": "comment"
+                    },
+                    "name": "onContainerRemove",
+                    "designerId": "67d89ea7-c317-400c-bb57-c9e34a829a60"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "bottomBtnCnt",
+                "docked": "bottom",
+                "layout": "hbox",
+                "margin": "10 0 10 0"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "docked": "string",
+                "layout": "string",
+                "margin": "auto"
+            },
+            "name": "MyContainer53",
+            "designerId": "86a87f0e-f96b-4994-82ec-94ab5892c90e",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 1,
+                        "text": "닫기"
+                    },
+                    "configAlternates": {
+                        "text": "string",
+                        "layout|flex": "number"
+                    },
+                    "name": "MyButton17",
+                    "designerId": "196cd139-84ae-4b20-af23-d1d41787c924",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|commentHeader": [
+                                    "닫기"
+                                ],
+                                "fn": "onBtnClose",
+                                "implHandler": [
+                                    "this.getView().close();"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string",
+                                "designer|commentHeader": "comment"
+                            },
+                            "name": "onBtnClose",
+                            "designerId": "5cf916ca-990b-40cd-aa36-6052d80e7a82"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "초기화"
+                ],
+                "fn": "onContainerInitialize",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    config = component.config;",
+                    "",
+                    "if (config && config.param) {",
+                    "    var pViewData = config.param,",
+                    "        expItemInputData = pViewData.expItemInputData;",
+                    "",
+                    "    if (!pViewData || !pViewData.expItemInputData) {",
+                    "        me.onBtnClose();",
+                    "    }",
+                    "",
+                    "    vm.set('expItemInputData', expItemInputData);",
+                    "    vm.set('readOnlyFlag', pViewData.readOnlyFlag);",
+                    "",
+                    "    // 사용자",
+                    "    if (pViewData.expItemInputData.expItemUserInfo) {",
+                    "        var userInfos = pViewData.expItemInputData.expItemUserInfo,",
+                    "            userList = [],",
+                    "            innerEmpeCnt = 0,",
+                    "            outerEmpeCnt = 0,",
+                    "            param = {",
+                    "                codeDvcdLists : ['BSNS_ASN'] //예산과목(배정받은 것)",
+                    "            };",
+                    "",
+                    "        me.fnSelectAssignedCodeList(param, true).then(function(codeList){",
+                    "            var bsnsCodeList = codeList.bsnsCodeAsnList;",
+                    "",
+                    "            for(var i in userInfos) {",
+                    "                var bsnsNm = '',",
+                    "                    bsnsId = userInfos[i].bgBudcBsnsId;",
+                    "",
+                    "                // 사업부문",
+                    "                for (var j in bsnsCodeList) {",
+                    "                    if (bsnsCodeList[j].bgBudcBsnsId == bsnsId) {",
+                    "                        bsnsNm = bsnsCodeList[j].bsnsNm;",
+                    "                    }",
+                    "                }",
+                    "                userInfos[i].bsnsNm = bsnsNm;",
+                    "",
+                    "                userList.push(userInfos[i]);",
+                    "                refs.userCnt.add(Ext.create('BgxNfmAply52MItems', {",
+                    "                    data : userInfos[i],",
+                    "                    readOnlyFlag : vm.get('readOnlyFlag')",
+                    "                }));",
+                    "                switch (userInfos[i].stfDvcd) {",
+                    "                    case Constants.stfDvcd.IN :",
+                    "                        innerEmpeCnt++;",
+                    "                        break;",
+                    "                    case Constants.stfDvcd.OUT :",
+                    "                        outerEmpeCnt++;",
+                    "                        break;",
+                    "                }",
+                    "            }",
+                    "",
+                    "            // 계정과목",
+                    "            if (expItemInputData.xpnitKeyNm) {",
+                    "                refs.xpnitKeyNm.setValue(expItemInputData.xpnitKeyNm);",
+                    "            }",
+                    "",
+                    "            vm.set('userList', userList);",
+                    "            vm.set('tct', userInfos.length);",
+                    "            vm.set('innerEmpeCnt', innerEmpeCnt);",
+                    "            vm.set('outerEmpeCnt', outerEmpeCnt);",
+                    "        });",
+                    "    } else {",
+                    "        vm.set('tct', 0);",
+                    "        vm.set('innerEmpeCnt', 0);",
+                    "        vm.set('outerEmpeCnt', 0);",
+                    "    }",
+                    "",
+                    "}"
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onContainerInitialize",
+            "designerId": "92adfacf-bc4a-49ef-ac74-6dc7ce03147f"
+        }
+    ]
+}

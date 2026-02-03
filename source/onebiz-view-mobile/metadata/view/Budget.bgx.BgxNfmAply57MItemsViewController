@@ -1,0 +1,44 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            "모바일 예산 : 결의서 작성 [집행대상선택 팝업 / 사용자 폼] - 컨트롤러",
+            "",
+            "@author BNK시스템/파트너/서무성",
+            "@since 2021.05.20",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일       수정자                  수정내용",
+            "----------  ------------------     --------------------------",
+            "2020.05.18  BNK시스템/파트너/서무성   최초 생성"
+        ],
+        "designer|extend": "BaseViewController",
+        "designer|userAlias": "budget.bgx.bgxnfmaply57mitems",
+        "designer|userClassName": "Budget.bgx.BgxNfmAply57MItemsViewController",
+        "viewId": "BgxNfmAply57MItems"
+    },
+    "configAlternates": {
+        "designer|commentHeader": "comment",
+        "designer|extend": "string",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "viewId": "string"
+    },
+    "name": "Budget.bgx.BgxNfmAply52MItemsViewController1",
+    "designerId": "f7056c53-45ac-4ba7-900d-0b33157d48ca",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "viewId",
+            "type": "string"
+        }
+    ]
+}

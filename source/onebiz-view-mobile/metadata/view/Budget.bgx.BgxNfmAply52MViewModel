@@ -1,0 +1,32 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            "모바일 예산 : 결의서 작성 [집행대상선택 팝업] - 모델",
+            "",
+            "@author BNK시스템/계장/지민영",
+            "@since 2020.05.19",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일       수정자                수정내용",
+            "----------  ------------------   --------------------------",
+            "2020.05.19  BNK시스템/계장/지민영   최초 생성"
+        ],
+        "designer|userAlias": "BgxNfmAply52MViewModel",
+        "designer|userClassName": "Budget.bgx.BgxNfmAply52MViewModel"
+    },
+    "configAlternates": {
+        "designer|commentHeader": "comment",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "designerId": "00a4768d-a2bb-493d-801b-c2ec2ca2ed11"
+}

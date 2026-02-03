@@ -1,0 +1,541 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "BomKlsDict"
+        ],
+        "designer|userAlias": "BomKlsDict",
+        "designer|userClassName": "test.BomKlsDict"
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "test.BomKlsIt1",
+    "designerId": "6a827bac-a3e9-465c-9605-443013167233",
+    "viewControllerInstanceId": "89d19eaf-7c03-45b9-9fe4-68f379efcf45",
+    "viewModelInstanceId": "01dd9898-fa72-4783-8108-08b600030279",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "center",
+                "designer|displayName": "mainCtn",
+                "height": "100%",
+                "layout": "vbox"
+            },
+            "configAlternates": {
+                "height": "auto",
+                "layout": "string",
+                "designer|displayName": "string",
+                "container|align": "string"
+            },
+            "name": "MyContainer11",
+            "designerId": "90db3dc5-cf64-4dd6-9a08-eadd124f758a",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "searchCtn",
+                        "height": 50,
+                        "layout": "hbox",
+                        "maxWidth": 600,
+                        "reference": "searchCtn",
+                        "style": "transition:0.3s;position: absolute;background-color: #F3F4F6;z-index: 3;",
+                        "width": "90%"
+                    },
+                    "configAlternates": {
+                        "layout": "string",
+                        "designer|displayName": "string",
+                        "height": "auto",
+                        "style": "string",
+                        "width": "auto",
+                        "reference": "string",
+                        "maxWidth": "auto"
+                    },
+                    "name": "MyContainer17",
+                    "designerId": "2b4734d6-8f9a-49f0-b937-e92b0fb5460d",
+                    "cn": [
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "clearable": false,
+                                "designer|displayName": "searchForm",
+                                "height": "100%",
+                                "layout|flex": 1,
+                                "placeholder": "검색어를 입력해주세요",
+                                "reference": "searchForm"
+                            },
+                            "configAlternates": {
+                                "label": "string",
+                                "layout|flex": "number",
+                                "designer|displayName": "string",
+                                "reference": "string",
+                                "height": "auto",
+                                "placeholder": "string",
+                                "clearable": "boolean"
+                            },
+                            "name": "MyTextField",
+                            "designerId": "49af2ee3-6edf-47f8-8b30-3b64da885669"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "돋보기",
+                                "height": "100%",
+                                "iconCls": "icon-search",
+                                "layout|flex": null,
+                                "style": "border-bottom: 1px solid #DDDDDD"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "iconCls": "string",
+                                "layout|flex": "number",
+                                "height": "auto",
+                                "style": "string"
+                            },
+                            "name": "MyButton4",
+                            "designerId": "017f9f5a-9806-4ec4-a125-6b21d535bcfa",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onSearchButtonTap",
+                                        "implHandler": [
+                                            "var me = this;",
+                                            "var refs = me.getReferences();",
+                                            "if(refs.searchForm.getValue()==null || refs.searchForm.getValue()==''){",
+                                            "    refs.searchTotal.setHidden(true);",
+                                            "    refs.recent.setHidden(false);",
+                                            "}",
+                                            "else{",
+                                            "    refs.searchTotal.setHidden(false);",
+                                            "    refs.recent.setHidden(true);",
+                                            "}",
+                                            "while (refs.termCtn.items.items[5] != undefined)",
+                                            "      refs.termCtn.items.items[5].destroy();",
+                                            "me.onSelect();"
+                                        ],
+                                        "name": "tap",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onSearchButtonTap",
+                                    "designerId": "0bdae428-b660-497f-9020-232e4143ad0e"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "termCtn",
+                        "height": "100%",
+                        "layout": "vbox",
+                        "reference": "termCtn",
+                        "scrollable": "vertical",
+                        "style": "background-color:#F3F4F6",
+                        "width": "100%"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout|flex": "number",
+                        "reference": "string",
+                        "scrollable": "auto",
+                        "style": "string",
+                        "height": "auto",
+                        "layout": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyContainer7",
+                    "designerId": "74576f12-f589-4548-a354-e3f7990b124c",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "여백 컨테이너",
+                                "height": 50,
+                                "width": "1024px"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "width": "auto"
+                            },
+                            "name": "MyContainer8",
+                            "designerId": "b80aac3a-2b64-483f-9df9-300bda92d159"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "hbox",
+                                "layout": "hbox",
+                                "padding": 0,
+                                "reference": "recent",
+                                "width": "90%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "layout": "string",
+                                "width": "auto",
+                                "reference": "string",
+                                "padding": "auto"
+                            },
+                            "name": "MyContainer3",
+                            "designerId": "d06fb53e-0b08-40f7-990d-736ccad6e74a",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Display",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "displayField",
+                                        "margin": 0,
+                                        "padding": 0,
+                                        "reference": "intro",
+                                        "style": "font:normal normal bold 14px/27px SF Compact Display; color:#333333;",
+                                        "width": "70%"
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "height": "auto",
+                                        "reference": "string",
+                                        "width": "auto",
+                                        "margin": "auto",
+                                        "padding": "auto",
+                                        "maxWidth": "auto",
+                                        "html": "string",
+                                        "layout|flex": "number",
+                                        "style": "string"
+                                    },
+                                    "name": "MyDisplayField9",
+                                    "designerId": "e6356d42-c92a-4558-ba1a-cb353978e9fd"
+                                },
+                                {
+                                    "type": "Ext.field.Display",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "bodyAlign": "end",
+                                        "designer|displayName": "total",
+                                        "html": "",
+                                        "margin": 0,
+                                        "padding": 0,
+                                        "reference": "total",
+                                        "style": "text-align:right;font:normal normal normal 13px/18px SF Compact Display; color:#666666;",
+                                        "width": "30%"
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "height": "auto",
+                                        "reference": "string",
+                                        "width": "auto",
+                                        "margin": "auto",
+                                        "padding": "auto",
+                                        "maxWidth": "auto",
+                                        "html": "string",
+                                        "bodyAlign": "string",
+                                        "layout|flex": "number",
+                                        "style": "string"
+                                    },
+                                    "name": "MyDisplayField8",
+                                    "designerId": "70318c73-adb1-4963-a6a0-39910f5f253a"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "searchTotal",
+                                "hidden": true,
+                                "html": "",
+                                "margin": "4 0 0 0",
+                                "maxWidth": 600,
+                                "reference": "searchTotal",
+                                "width": "85%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "reference": "string",
+                                "width": "auto",
+                                "margin": "auto",
+                                "maxWidth": "auto",
+                                "html": "string",
+                                "hidden": "boolean"
+                            },
+                            "name": "MyDisplayField7",
+                            "designerId": "bc109ef9-2749-4c6b-8b34-5ea9d4782cd0"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "center",
+                                "designer|displayName": "금융용어출처",
+                                "height": 64,
+                                "hidden": true,
+                                "html": "<div style=\"display:flex; align-items:center; margin-left:16px; font:normal normal normal 13px/18px SF Compact Display; color:#666666;\">저자/출처 <img src=\"/resources/images/kls/icon_24_fine@2x.png\" style=\"width:24px;height:24px;margin:0px 4px 0px 8px;\"> <span style=\"color:#333333; font-weight:600;\">금융감독원 파인 금융용어사전 </span></div> ",
+                                "layout": "hbox",
+                                "margin": "12 0 18 0",
+                                "reference": "fincSource",
+                                "style": "background:#E7E8EA 0% 0% no-repeat padding-box; border-radius:8px;",
+                                "width": "90%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "width": "auto",
+                                "container|align": "string",
+                                "hidden": "boolean",
+                                "html": "string",
+                                "layout": "string",
+                                "margin": "auto",
+                                "reference": "string",
+                                "style": "string"
+                            },
+                            "name": "MyContainer14",
+                            "designerId": "341a4542-18db-4bbf-8d3a-cfa3c3593128"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "center",
+                                "designer|displayName": "IT용어출처",
+                                "height": 64,
+                                "hidden": true,
+                                "html": "<div style=\"display:flex; align-items:center; margin-left:16px; font:normal normal normal 13px/18px SF Compact Display; color:#666666;\">저자/출처 <img src=\"/resources/images/kls/icon_24_TTA@2x.png\" style=\"width:24px;height:24px;margin:0px 4px 0px 8px;\"> <span style=\"color:#333333; font-weight:600;\">한국정보통신기술협회<br/> 정보통신용어사전</span></div> ",
+                                "layout": "hbox",
+                                "margin": "12 0 18 0",
+                                "reference": "itSource",
+                                "style": "background:#E7E8EA 0% 0% no-repeat padding-box; border-radius:8px;",
+                                "width": "90%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "width": "auto",
+                                "container|align": "string",
+                                "html": "string",
+                                "layout": "string",
+                                "margin": "auto",
+                                "style": "string",
+                                "hidden": "boolean",
+                                "reference": "string"
+                            },
+                            "name": "MyContainer18",
+                            "designerId": "d84cb561-4924-4d14-b248-734341d1ad14"
+                        },
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onTermCtnPainted",
+                                "implHandler": [
+                                    "        element.getFirstChild().setStyle('align-items','center');"
+                                ],
+                                "name": "painted",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onTermCtnPainted",
+                            "designerId": "c6940102-a25a-4258-8f56-d031a1f88f2a"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "bottom": 10,
+                        "docked": null,
+                        "height": 55,
+                        "hidden": true,
+                        "iconCls": "icon-top",
+                        "name": "topBtn",
+                        "reference": "topBtn",
+                        "right": 10,
+                        "style": "position:absolute;z-index:3;",
+                        "width": 55
+                    },
+                    "configAlternates": {
+                        "docked": "string",
+                        "height": "auto",
+                        "left": "auto",
+                        "name": "string",
+                        "reference": "string",
+                        "style": "string",
+                        "text": "string",
+                        "top": "auto",
+                        "width": "auto",
+                        "hidden": "boolean",
+                        "iconCls": "string",
+                        "bottom": "auto",
+                        "right": "auto"
+                    },
+                    "name": "MyButton9",
+                    "designerId": "dff2e451-c395-43b0-919e-69114c8938b0",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onTopButtonTap",
+                                "implHandler": [
+                                    "var me = this;",
+                                    "var vm = me.getViewModel();",
+                                    "var refs = me.getReferences();",
+                                    "var mainCtn = refs.termCtn.el.dom.firstElementChild;",
+                                    "mainCtn.scrollTop = 0;"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onTopButtonTap",
+                            "designerId": "c59b4679-9304-419c-805c-d0d86d452813"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onBomKlsDictPainted",
+                "implHandler": [
+                    "var me = this;",
+                    "var vm = me.getViewModel();",
+                    "var refs = me.getReferences();",
+                    "var ctn = refs.termCtn;",
+                    "",
+                    "var termDvcd = vm.initialConfig.view.config.termDvcd;",
+                    "if(termDvcd=='01'){",
+                    "  refs.itSource.setHidden(false);",
+                    "  refs.intro.setHtml('<div style=\"display:flex;align-items:center;\"><img src=\"/resources/images/kls/icon_25_study@2x.png\" style=\"width:25px;height:25px;margin-right:7px;\">하루에 하나씩 익혀볼까요?</div>');",
+                    "} ",
+                    "else{",
+                    "    refs.fincSource.setHidden(false);",
+                    "    refs.intro.setHtml('<div style=\"display:flex; align-items:center;\"><img src=\"/resources/images/kls/icon_25_study@2x.png\" style=\"width:25px;height:25px;margin-right:7px;\">금융 기초 지식을 탄탄하게!</div>');",
+                    "}",
+                    "ctn.bodyElement.on('scroll',function(){",
+                    "    me.onScrollEvent();",
+                    "});",
+                    "if(vm.initialConfig.view.config.searchText!=undefined){\t\t// BomKlsSearch 화면에서 더보기를 통해 올 경우 검색창에 setValue",
+                    "    refs.searchForm.setValue(vm.initialConfig.view.config.searchText);",
+                    "}",
+                    "me.onSelect();"
+                ],
+                "name": "painted",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onBomKlsDictPainted",
+            "designerId": "9ad66a99-bfc7-4b98-8fbc-a97aa91ef1de"
+        }
+    ]
+}

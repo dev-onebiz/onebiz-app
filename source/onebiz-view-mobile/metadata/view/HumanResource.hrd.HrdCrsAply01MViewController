@@ -1,0 +1,147 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            "모바일 :: 연수과정/연수과정신청 (조회) - 컨트롤러",
+            "",
+            "@author BNK시스템/파트너/지민영",
+            "@since 2020.10.19",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일\t\t  수정자                  수정내용",
+            "----------\t--------------------   --------------------------",
+            "2020.10.19\tBNK시스템/파트너/지민영   최초 생성"
+        ],
+        "designer|extend": "BaseViewController",
+        "designer|userAlias": "HrdCrsAply01MViewController",
+        "designer|userClassName": "HumanResource.hrd.HrdCrsAply01MViewController",
+        "viewId": "HrdCrsAply01M"
+    },
+    "configAlternates": {
+        "designer|extend": "string",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "designer|commentHeader": "comment",
+        "viewId": "string"
+    },
+    "designerId": "340c1b68-3e89-49f3-9c44-f24fad4a1cdf",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "viewId",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "페이지 초기화"
+                ],
+                "fn": "defaut",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    store = vm.storeInfo.Store;",
+                    "",
+                    "// 페이지 초기화",
+                    "store.getProxy().extraParams.page = 1;",
+                    "// var toolbar = refs.grid.getPlugins()[0];",
+                    "// toolbar.setCurrentPage(1);"
+                ]
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "defaut",
+            "designerId": "7982e8f0-3fc3-4b4b-9c23-88cd3b5c6b51"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "조회"
+                ],
+                "fn": "onSelect",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    grid = refs.grid,",
+                    "    store = vm.storeInfo.Store;",
+                    "",
+                    "/** 2020-10-27 연수기간이 검색조건으로 필요가 없으므로 제거 */",
+                    "// // VALIDATION AERA",
+                    "// var dateCompont = ['startDate',",
+                    "//                    'endDate'",
+                    "//                   ];",
+                    "",
+                    "// if(refs[dateCompont[0]].getValue() > refs[dateCompont[1]].getValue()){",
+                    "//     Ext.Msg.alert('확인','시작일이 종료일보다 클 수 없습니다.');",
+                    "//     return;",
+                    "// }",
+                    "",
+                    "",
+                    "//PARAM SET",
+                    "var params = {",
+                    "    cmgrpCd : CodeUtils.getSelectionValue(Property.CMGRP_CD),",
+                    "    sysCd : Property.SYS_CD,",
+                    "    //     dateBefore : DateUtils.parseDate(refs.startDate.getValue()),\t// 연수시작일자",
+                    "    //     dateAfter : DateUtils.parseDate(refs.endDate.getValue()),\t\t// 연수종료일자",
+                    "    stnOrgtCd : '',\t\t\t\t\t// 연수기관코드",
+                    "    stcd : Constants.stcd.NORMAL,",
+                    "    sttnEduDvcd : '',\t\t\t\t// 연수교육구분",
+                    "    sttnCrsCd : '',\t\t\t\t\t// 연수과정코드",
+                    "    sttnCrsNm : '',\t\t\t\t\t// 연수과정명",
+                    "    hrHrpmEmpId : SecurityUtils.getPrincipal().hrHrpmEmpId,",
+                    "    myNdcrsYn : '',\t\t\t\t\t// 필수과정여부",
+                    "    sttnCrsAplyCd : Constants.sttnAplStcd.APPLY,\t\t\t\t\t// 신청정보 ('신청가능'인것만 조회)",
+                    "    noPaging : true",
+                    "",
+                    "};",
+                    "",
+                    "if(vm.get('activeTab') == 'tabCrs2'){",
+                    "    params.sttnDvcd = '02'; // 01 : 정규과정, 02 :상시과정",
+                    "}",
+                    "else{",
+                    "    params.sttnDvcd = '01'; // 01 : 정규과정, 02 :상시과정",
+                    "}",
+                    "",
+                    "store.getProxy().extraParams = params;",
+                    "store.removeAll();",
+                    "store.loadPage(1);",
+                    ""
+                ]
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "designer|commentHeader": "comment"
+            },
+            "name": "onSelect",
+            "designerId": "27ddaef0-5b8f-458b-b5a7-068804657873"
+        }
+    ]
+}

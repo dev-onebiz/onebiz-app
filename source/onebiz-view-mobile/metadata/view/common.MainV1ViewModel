@@ -1,0 +1,32 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            "메인 / 메인화면VIEW MODEL",
+            "",
+            "@author BNK시스템/파트너/지민영",
+            "@since 2020.07.15.",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "  수정일          수정자                      수정내용",
+            " ------------   ---------------------      --------------------------",
+            "  2020.07.15.    BNK시스템/파트너/지민영       최초 생성"
+        ],
+        "designer|userAlias": "MainV1ViewModel",
+        "designer|userClassName": "common.MainV1ViewModel"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "designer|commentHeader": "comment"
+    },
+    "designerId": "4682a9d0-1519-4974-8494-abfc7dfb2f5f"
+}

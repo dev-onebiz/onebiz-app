@@ -1,0 +1,370 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "ExpNteAplyItemsViewController"
+        ],
+        "designer|commentHeader": [
+            "모바일 시스템 경비노트 :: 법인카드 depth 3 - 컨트롤러",
+            "",
+            "@author BNK시스템/계장/김정균",
+            "@since 2019.04.16",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일\t\t  수정자                수정내용",
+            "----------\t------------------   --------------------------",
+            "2019.04.16\tBNK시스템/계장/김정균   최초 생성",
+            "2019.07.15  BNK시스템/계장/김정균   formRenderer에 과세유형이 간이인 경우 추가"
+        ],
+        "designer|extend": "BaseViewController",
+        "designer|userAlias": "ExpNteAplyItemsViewController",
+        "designer|userClassName": "Budget.exp.ExpNteAplyItemsViewController",
+        "viewId": "ExpNteAplyItems"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "designer|extend": "string",
+        "alternateClassName": "typedarray",
+        "designer|commentHeader": "comment",
+        "viewId": "string"
+    },
+    "name": "biz.PAGE001ViewController1",
+    "designerId": "2ed67edd-d489-4331-b62d-06db3a2334aa",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "viewId",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "Card화면전환"
+                ],
+                "designer|params": [
+                    "itemId"
+                ],
+                "fn": "showView",
+                "implHandler": [
+                    "var me = this;",
+                    "me.getView().setActiveItem(itemId);"
+                ]
+            },
+            "configAlternates": {
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code",
+                "designer|commentHeader": "comment"
+            },
+            "name": "showView",
+            "designerId": "4c3e2e8a-ccbd-486d-b3a9-259c36337627"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "search",
+                "implHandler": [
+                    "//Ext.toast('사원조회 (search함수구현필요)', 1000);"
+                ]
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "search",
+            "designerId": "29956184-2993-40a7-805e-76202b7191bc"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "원화 표시"
+                ],
+                "designer|params": [
+                    "value"
+                ],
+                "fn": "curr",
+                "implHandler": [
+                    "if (value) {",
+                    "    var str = String(value);",
+                    "    var result = str.replace(/(\\d)(?=(?:\\d{3})+(?!\\d))/g, '$1,');",
+                    "    result += ' 원';",
+                    "",
+                    "    return result",
+                    "} else {",
+                    "    return '0';",
+                    "}",
+                    ""
+                ]
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "curr",
+            "designerId": "12bc8848-9f0a-48be-ac89-3e8f9b39cd4e"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "폼 renderer"
+                ],
+                "designer|params": [
+                    "data"
+                ],
+                "fn": "formRenderer",
+                "implHandler": [
+                    "if(data){",
+                    "    data.apvlDtText = DateUtils.parseDate(data.apvlDt);",
+                    "",
+                    "    if(data.apvlHr && data.stlmDvcd === '01'){ // 법인카드는 승인시간까지 붙이고, 기타영수증은 승인일자만 사용",
+                    "        data.apvlHrText = data.apvlHr.substring(0, 2) + ':' + data.apvlHr.substring(2, 4) + ':' + data.apvlHr.substring(4, 6);",
+                    "        data.apvlDtText = data.apvlDtText + ' ' + data.apvlHrText;",
+                    "    }",
+                    "",
+                    "    if(data.cdno){",
+                    "        data.cdnoText = data.cdno.substring(0, 4)+'-'+data.cdno.substring(4, 8)+'-'+data.cdno.substring(8, 12)+'-'+data.cdno.substring(12, 16); // 카드번호",
+                    "    }",
+                    "",
+                    "    if(data.trnsAmtWc) data.trnsAmtWcText = this.curr(data.trnsAmtWc);",
+                    "    if(data.stxat) data.stxatText = this.curr(data.stxat);",
+                    "    else if(typeof data.stxat === 'number' && data.stxat === 0){",
+                    "        data.stxatText = '0 원';",
+                    "    }",
+                    "",
+                    "    if(data.apvlAmtDom) data.apvlAmtDomText = this.curr(data.apvlAmtDom);",
+                    "",
+                    "    // 과세유형이 간이인 경우",
+                    "    if(data.mcTaxtnTypeDvcd === '12'){ // 과세유형 === 간이",
+                    "        data.stxatText = '0 원'; // 부가세 = 0 원",
+                    "        data.stxat = 0;",
+                    "        data.trnsAmtWcText = data.apvlAmtDomText; // 공급가액 = 승인금액",
+                    "        data.trnsAmtWc = data.apvlAmtDom;",
+                    "    }",
+                    "",
+                    "    if(data.mcBzno){",
+                    "        if(String(data.mcBzno).length === 10){",
+                    "            data.mcBznoText = data.mcBzno.substring(0,3) + \"-\" + data.mcBzno.substring(3, 5) + \"-\" + data.mcBzno.substring(5, 10);",
+                    "        }else if(String(data.mcBzno).length === 13){",
+                    "            data.mcBznoText = data.mcBzno.substring(0,6) + \"-\" + data.mcBzno.substring(6, 13);",
+                    "        }else{",
+                    "            data.mcBznoText = data.mcBzno;",
+                    "        }",
+                    "    }",
+                    "",
+                    "    if(data.canYn) data.canYnText = CodeUtils.getText('NTE008', data.canYn);",
+                    "",
+                    "    // 사용분류 text 로 변환",
+                    "    if(data.accItemCd) data.accItemCdText = CodeUtils.getText('NTE011', data.accItemCd);",
+                    "    // 결제방법",
+                    "    if(data.stlmDvcd) data.stlmDvcdText = CodeUtils.getText('NTE014', data.stlmDvcd);",
+                    "",
+                    "}",
+                    "",
+                    ""
+                ]
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "formRenderer",
+            "designerId": "cea5338b-cad1-4dbc-9c8d-3b9087dad222"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "btn, text"
+                ],
+                "fn": "onDelPic",
+                "implHandler": [
+                    "if(btn === 'no') return false;",
+                    "",
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    imgPhoto = refs.imgPhoto;",
+                    "",
+                    "imgPhoto.setSrc(null);",
+                    "vm.set('cardItem.imgPhoto', null);",
+                    "",
+                    "imgPhoto.setSize(0, 0); // 사진 출력 영역 0",
+                    "refs.btnDeletePicture.setHidden(true); // 사진이 없으면 삭제버튼도 hidden",
+                    ""
+                ]
+            },
+            "configAlternates": {
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "onDelPic",
+            "designerId": "23aa6b6d-955f-4264-b46b-1d1d42be0f07"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "value",
+                    "record",
+                    "dataIndex",
+                    "cell",
+                    "column"
+                ],
+                "fn": "gridRenderer",
+                "implHandler": [
+                    "switch(dataIndex) {",
+                    "    case 'jasPrj': // 사용부문",
+                    "        var me = this,",
+                    "            vm = me.getViewModel(),",
+                    "            prjStoreItems = vm.get('prjStore').data.items,",
+                    "            userInfoList = vm.get('cardItem.userInfoList'),",
+                    "            result = '',",
+                    "            i = 0,",
+                    "            item = null;",
+                    "",
+                    "         // 결재처리중인 경우 수정 못하도록",
+                    "        if (vm.get('cardItem.isAply')) {",
+                    "            column.setEditor(false);",
+                    "        }",
+                    "",
+                    "        if (!value) {",
+                    "            if ('02' !== record.data.stfDvcd) {",
+                    "                record.data.jasPrj = null;",
+                    "                return ' - 선 택 - ';",
+                    "            }",
+                    "            return '';",
+                    "        }",
+                    "",
+                    "        // 사용부문이 존재하지 않는 경우를 결재처리로 판단하여 렌더링 처리진행함",
+                    "        if (prjStoreItems && prjStoreItems.length > 0) {",
+                    "            for (i in prjStoreItems) {",
+                    "                item = prjStoreItems[i].data;",
+                    "                if (value === item.value) {",
+                    "                    result = item.text;",
+                    "                    record.hrHromJasPrjText = item.text;",
+                    "                    break;",
+                    "                }",
+                    "            }",
+                    "            // 결재처리시 사용부문이력값을 사용하기 위해 jasPrjText 값으로 저장함",
+                    "            for (i in userInfoList) {",
+                    "                item = userInfoList[i];",
+                    "                if (record.data.hrHrpmEmpId === item.hrHrpmEmpId) {",
+                    "                    item.jasPrjText = result;",
+                    "                    item.jasActgCd = value;",
+                    "                    break;",
+                    "                }",
+                    "            }",
+                    "        }",
+                    "        else {",
+                    "            // 사용부문이력값을 렌더링값으로 사용",
+                    "            result = record.data.jasPrjText;",
+                    "        }",
+                    "",
+                    "        // 외부직원일 경우, 선택불가 메시지 표시한다. 그리드의 boforeedit 와 같은 이벤트가 없어 이와 같은 코드 작성함",
+                    "        if ('02' === record.data.stfDvcd) {",
+                    "            Ext.Msg.alert('안내', '내부직원만 사용부문 설정이 가능합니다.');",
+                    "            return null;",
+                    "        }",
+                    "",
+                    "        return result;",
+                    "}"
+                ]
+            },
+            "configAlternates": {
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "gridRenderer",
+            "designerId": "df022ba6-c379-4286-b0c5-5f772976165b"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "obj",
+                    "newVal",
+                    "oldVal"
+                ],
+                "fn": "onChangeComboBox",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel();",
+                    "",
+                    "// 결재처리중인경우, beforeedit 이벤트 처리가 불가하여 아래와 같은 방어코드를 추가함",
+                    "",
+                    "if (vm.get('cardItem.isAply')) {",
+                    "    obj.suspendEvents();",
+                    "    obj.setValue(oldVal);",
+                    "    obj.resumeEvents();",
+                    "} else {",
+                    "    obj.suspendEvents();",
+                    "    obj.setValue(newVal);",
+                    "    obj.resumeEvents();",
+                    "}"
+                ]
+            },
+            "configAlternates": {
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "onChangeComboBox",
+            "designerId": "65140469-1a59-4b82-9d33-6cac3315cf67"
+        }
+    ]
+}

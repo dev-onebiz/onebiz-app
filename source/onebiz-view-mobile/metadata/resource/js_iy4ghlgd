@@ -1,0 +1,20 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "js_iy4ghlgd",
+        "includeInBundle": true,
+        "url": "WebUtils.js"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "includeInBundle": "boolean",
+        "url": "uri"
+    },
+    "name": "js8",
+    "designerId": "a1f03ae9-7ffb-40ab-8297-776ccc5eed8d"
+}

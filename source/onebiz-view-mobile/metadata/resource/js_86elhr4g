@@ -1,0 +1,20 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "js_86elhr4g",
+        "includeInBundle": true,
+        "url": "DateUtils.js"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "includeInBundle": "boolean",
+        "url": "uri"
+    },
+    "name": "js4",
+    "designerId": "a8c73a83-21c9-4c81-a524-fbbe2d9cef5e"
+}

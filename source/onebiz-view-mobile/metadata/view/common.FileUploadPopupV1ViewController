@@ -1,0 +1,149 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            "모바일 공통 :: 파일업로드 팝업 - 컨트롤러",
+            "",
+            "@author BNK시스템/계장/지민영",
+            "@since 2020.11.09",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일\t\t  수정자                  수정내용",
+            "----------\t--------------------   --------------------------",
+            "2020.11.09\tBNK시스템/파트너/지민영   최초 생성",
+            "2021.08.18\tBNK시스템/파트너/서무성\t 파일업로드 시, exception이 발생하였음에도 HTTP상태코드가 200으로 전달되어",
+            "                                   success시에 errMsg를 확인하도록 로직 수정"
+        ],
+        "designer|extend": "BaseViewController",
+        "designer|userAlias": "FileUploadPopupV1ViewController",
+        "designer|userClassName": "common.FileUploadPopupV1ViewController",
+        "viewId": "FileUploadPopupV1"
+    },
+    "configAlternates": {
+        "designer|extend": "string",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "designer|commentHeader": "comment",
+        "viewId": "string"
+    },
+    "designerId": "588d84e3-b95c-4892-aeb6-5e7f340be994",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "viewId",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "field",
+                    "newValue",
+                    "oldValue",
+                    "eOpts"
+                ],
+                "fn": "changeFile",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    file = field.getFiles()[0],",
+                    "    form = refs.form.el.dom,",
+                    "    mb = 5 * 1024 * 1024;\t// 1MB",
+                    "",
+                    "    refs.infoField.setHtml(\"업로드 중...\");",
+                    "    refs.form.setHidden(true);",
+                    "    debugger;",
+                    "    Ext.Ajax.request({",
+                    "        method : 'POST',",
+                    "        headers : {",
+                    "            serviceId : 'COMFIL0010C01.singleFileUploadToTempDir',",
+                    "            viewId : me.getViewId(),",
+                    "            scope : me,",
+                    "        },",
+                    "        isUpload : true,",
+                    "        jsonData : {",
+                    "            fileId      : null,",
+                    "            encrypt     : null, // 암복호화 여부",
+                    "            maxFileSize : null, // 파일용량제한",
+                    "        },",
+                    "        form : form,",
+                    "        success : function(response, scope) {",
+                    "            var res = Ext.JSON.decode(response.responseText);",
+                    "            if (res && res.result && res.result.details) {",
+                    "                var result = res.result,",
+                    "                    details = result.details;",
+                    "                vm.set('dtlFileId', details.id);",
+                    "                vm.set('fileExt', details.fileExt);",
+                    "                vm.set('orgnFileNm', details.orgnFileNm);",
+                    "                vm.set('fileNm', details.orgnFileNm + '.' + details.fileExt);",
+                    "                vm.set('fileSize', details.fileSize);",
+                    "                vm.set('fileId', result.id);",
+                    "",
+                    "                me.onBtnSave();",
+                    "            }",
+                    "            else if(!Ext.isEmpty(res.errMsg)){",
+                    "                refs.infoField.setHtml(res.errMsg);",
+                    "            }",
+                    "        },",
+                    "        failure : function(response){",
+                    "            var res = Ext.JSON.decode(response.responseText);",
+                    "",
+                    "            console.log(res);",
+                    "",
+                    "            Ext.Msg.show({",
+                    "                title : res.errTitle,",
+                    "                message : res.errMsg,",
+                    "                buttons : {",
+                    "                    yes : {itemId : Ext.MessageBox.YES, text : '확인'}",
+                    "                },",
+                    "                alwaysOnTop : true",
+                    "            });",
+                    "",
+                    "            refs.infoField.setHtml('※파일 크기는 5MB이하 로 업로드 바랍니다.');",
+                    "            refs.form.setHidden(false);",
+                    "        }",
+                    "    });",
+                    "",
+                    "// if (file.size > mb) {",
+                    "//     Ext.Msg.show({",
+                    "//         title : '알림',",
+                    "//         message : '해당 파일은 첨부할 수 없습니다.',",
+                    "//         buttons : {",
+                    "//             yes : {itemId : Ext.MessageBox.YES, text : '확인'}",
+                    "//         },",
+                    "//         alwaysOnTop : true,",
+                    "//         fn : function() {",
+                    "//             field.reset();",
+                    "//         }",
+                    "//     });",
+                    "// } else {",
+                    "",
+                    "// }"
+                ]
+            },
+            "configAlternates": {
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "changeFile",
+            "designerId": "9c830196-239f-45dd-8d28-73174e21fa58"
+        }
+    ]
+}

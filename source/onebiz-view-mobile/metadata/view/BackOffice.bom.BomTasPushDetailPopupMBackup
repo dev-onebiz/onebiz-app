@@ -1,0 +1,293 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "BomTasPushDetailPopupMBackup"
+        ],
+        "designer|commentHeader": [
+            "모바일 푸시 상세팝업 - 화면",
+            "",
+            "@author BNK시스템/파트너/지민영",
+            "@since 2020.08.14",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일       수정자                  수정내용",
+            "----------  ------------------     --------------------------",
+            "2020.08.14  BNK시스템/파트너/지민영   최초 생성",
+            "2020.10.27  BNK시스템/파트너/지민영   title 높이 조절"
+        ],
+        "designer|extend": "Ext.window.Window",
+        "designer|userAlias": "BomTasPushDetailPopupMBackup",
+        "designer|userClassName": "BackOffice.bom.BomTasPushDetailPopupMBackup",
+        "height": "95%",
+        "layout": "vbox",
+        "scrollable": "both",
+        "top": "10px",
+        "width": "98%"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "extend": "string",
+        "alternateClassName": "typedarray",
+        "designer|commentHeader": "comment",
+        "designer|extend": "string",
+        "designer|userAlias": "string",
+        "height": "auto",
+        "layout": "string",
+        "scrollable": "auto",
+        "width": "auto",
+        "top": "auto"
+    },
+    "designerId": "63c44d31-13cf-4e2d-9281-78d20991bd75",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "title",
+            "type": "string"
+        }
+    ],
+    "viewControllerInstanceId": "9070d157-05c2-4b90-9e8b-3eef1daa529d",
+    "viewModelInstanceId": "d8bead6e-b491-4a42-bfc4-492750baf4fc",
+    "cn": [
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onContainerInitialize",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel();",
+                    "",
+                    "if (component.boTasmTrsId) {",
+                    "    me.onSelect(component.boTasmTrsId);",
+                    "}",
+                    "",
+                    "if (component.refresh) {",
+                    "    vm.set('refresh', component.refresh);",
+                    "}"
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onContainerInitialize",
+            "designerId": "37b7318f-d843-43f3-bba3-69cf9a523537"
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "layout": "vbox",
+                "style": "background-color:#fff;"
+            },
+            "configAlternates": {
+                "docked": "string",
+                "layout": "string",
+                "style": "string"
+            },
+            "name": "MyToolbar",
+            "designerId": "229e7df2-4903-4b46-bd31-9450b7543908",
+            "cn": [
+                {
+                    "type": "Ext.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "html": "알림",
+                        "reference": "msgDvnm"
+                    },
+                    "configAlternates": {
+                        "html": "string",
+                        "reference": "string"
+                    },
+                    "name": "MyDisplayField6",
+                    "designerId": "109163c6-fdc2-4f83-901f-20150c6dc63f"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "layout": "vbox",
+                "padding": "5 16 5 16"
+            },
+            "configAlternates": {
+                "docked": "string",
+                "layout": "string",
+                "padding": "auto"
+            },
+            "name": "MyToolbar4",
+            "designerId": "5f4973c3-711c-4d6f-bdc2-b393541686ff",
+            "cn": [
+                {
+                    "type": "Ext.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "html": "제목",
+                        "reference": "title",
+                        "style": "word-break:break-all;"
+                    },
+                    "configAlternates": {
+                        "html": "string",
+                        "reference": "string",
+                        "style": "string"
+                    },
+                    "name": "MyDisplayField7",
+                    "designerId": "5f95d19a-10f9-4fc5-9c12-063fae3b04b2"
+                },
+                {
+                    "type": "Ext.Spacer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 5,
+                        "hidden": true
+                    },
+                    "configAlternates": {
+                        "layout|flex": "number",
+                        "height": "auto",
+                        "hidden": "boolean"
+                    },
+                    "name": "MySpacer9",
+                    "designerId": "897107d6-9665-4665-9d77-4ff213829a6f"
+                },
+                {
+                    "type": "Ext.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "html": "발송일시",
+                        "reference": "fwDtm"
+                    },
+                    "configAlternates": {
+                        "html": "string",
+                        "reference": "string",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyDisplayField8",
+                    "designerId": "714c1f8f-9e6d-4a42-b7b5-3593f888a32b"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": "100%",
+                "padding": "30 10 10 10",
+                "reference": "content",
+                "scrollable": true,
+                "style": "word-break: break-all;"
+            },
+            "configAlternates": {
+                "height": "auto",
+                "padding": "auto",
+                "reference": "string",
+                "scrollable": "auto",
+                "style": "string",
+                "readOnly": "boolean",
+                "editable": "boolean"
+            },
+            "name": "MyContainer48",
+            "designerId": "affcb069-5220-486d-8f21-8f00e1227a9a"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom",
+                "height": 50,
+                "text": "닫기"
+            },
+            "configAlternates": {
+                "docked": "string",
+                "height": "auto",
+                "text": "string"
+            },
+            "name": "MyButton16",
+            "designerId": "f3191ca4-c4ca-48e2-bd84-8ca51e46fe56",
+            "cn": [
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onBtnClose",
+                        "implHandler": [
+                            "var me = this,",
+                            "    vm = me.getViewModel(),",
+                            "    v = me.getView();",
+                            "",
+                            "if (vm.get('refresh')) {",
+                            "    v.fireEvent('refresh');",
+                            "}",
+                            "v.close();"
+                        ],
+                        "name": "tap",
+                        "scope": "me"
+                    },
+                    "configAlternates": {
+                        "fn": "string",
+                        "implHandler": "code",
+                        "name": "string",
+                        "scope": "string"
+                    },
+                    "name": "onBtnClose",
+                    "designerId": "3018ee26-cc21-4cb4-8001-ab393ef0dd70"
+                }
+            ]
+        }
+    ]
+}

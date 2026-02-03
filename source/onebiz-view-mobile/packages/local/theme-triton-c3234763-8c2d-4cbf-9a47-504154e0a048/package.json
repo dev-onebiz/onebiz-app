@@ -1,0 +1,64 @@
+{
+    "name": "theme-triton-c3234763-8c2d-4cbf-9a47-504154e0a048",
+    "sencha": {
+        "namespace": "Ext",
+        "type": "theme",
+        "extend": "theme-triton",
+        "toolkit": "classic",
+        "creator": "Architect",
+        "summary": "Architect created theme. Edit through Architect. Manual edits here will likely be discarded.",
+        "detailedDescription": "Architect created theme. Edit through Architect. Manual edits here will likely be discarded.",
+        "version": "1.0.0",
+        "compatVersion": "1.0.0",
+        "format": "1",
+        "slicer": {
+            "js": [
+                {
+                    "path": "${package.dir}/sass/example/custom.js",
+                    "isWidgetManifest": true
+                }
+            ]
+        },
+        "output": "${package.dir}/build",
+        "local": true,
+        "sass": {
+            "namespace": "Ext",
+            "etc": [
+                "${package.dir}/sass/etc/all.scss",
+                "${package.dir}/sass/etc/sencha-themer-defaults.scss"
+            ],
+            "var": [
+                "${package.dir}/sass/var",
+                "${package.dir}/sass/var/_architect_vars.scss",
+                "${package.dir}/sass/var/sencha-themer-defaults.scss",
+                "${package.dir}/sass/var/themer-ui-variables.scss"
+            ],
+            "src": [
+                "${package.dir}/sass/src",
+                "${package.dir}/sass/src/_architect_src.scss",
+                "${package.dir}/sass/src/sencha-themer-defaults.scss"
+            ],
+            "generated": {
+                "var": "sass/save.scss",
+                "src": "sass/save"
+            }
+        },
+        "classpath": [
+            "${package.dir}/src"
+        ],
+        "overrides": [
+            "${package.dir}/overrides"
+        ],
+        "example": {
+            "path": [
+                "${package.dir}/examples"
+            ]
+        },
+        "framework": "ext",
+        "requires": [],
+        // WARNING! Sencha Themer relies on these settings, modifying them may break functionality in Themer.
+        "themer": {
+            "version": "1.3.4.96"
+        }
+    }
+}

@@ -1,0 +1,116 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            "모바일 :: 알림전송 - 컨트롤러",
+            "",
+            "@author BNK시스템/파트너/박주혁",
+            "@since 2025.05.30",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일\t\t  수정자                  수정내용",
+            "----------\t------------------     --------------------------",
+            "2025.05.30\tBNK시스템/파트너/박주혁     최초 생성"
+        ],
+        "designer|extend": "BaseViewController",
+        "designer|userAlias": "BomTasSend01MViewController",
+        "designer|userClassName": "BackOffice.bom.BomTasSend01MViewController",
+        "viewId": "BomTasSend01M"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "designer|extend": "string",
+        "designer|commentHeader": "comment",
+        "viewId": "string"
+    },
+    "name": "HumanResource.hwm.HwmVctAply01MViewController1",
+    "designerId": "fb59d90e-7750-4c4f-a2dd-c2188b76d2c7",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "viewId",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onSelect",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    store = vm.storeInfo.VctStore,",
+                    "    startDate = DateUtils.getDate(refs.startDate.getValue()),",
+                    "    endDate = DateUtils.getDate(refs.endDate.getValue()),",
+                    "    params = {",
+                    "        startDate : startDate,",
+                    "        endDate : endDate",
+                    "    };",
+                    "",
+                    "if(startDate > endDate){",
+                    "    Ext.Msg.alert('확인','시작일이 종료일보다 클 수 없습니다.');",
+                    "    return false;",
+                    "}",
+                    "",
+                    "store.getProxy().extraParams = params;",
+                    "store.removeAll();",
+                    "store.loadPage(1);",
+                    ""
+                ]
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "onSelect",
+            "designerId": "13924ae7-29aa-4882-bebd-cb9abb409b86"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "defaut",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    store = vm.storeInfo.Store;",
+                    "",
+                    "store.getProxy().extraParams.page = 1;",
+                    "var toolbar = refs.grid.getPlugins()[0];",
+                    "toolbar.setCurrentPage(1);",
+                    "",
+                    ""
+                ]
+            },
+            "configAlternates": {
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code",
+                "designer|commentHeader": "comment"
+            },
+            "name": "defaut",
+            "designerId": "a2fcdd69-cfdb-4437-8b46-0185262a5fa9"
+        }
+    ]
+}

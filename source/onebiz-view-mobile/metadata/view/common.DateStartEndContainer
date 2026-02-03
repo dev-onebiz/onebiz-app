@@ -1,0 +1,161 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "DateStartEndContainer"
+        ],
+        "designer|userAlias": "DateStartEndContainer",
+        "designer|userClassName": "common.DateStartEndContainer",
+        "height": 40,
+        "layout": "hbox",
+        "width": "100%"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "extend": "string",
+        "alternateClassName": "typedarray",
+        "designer|userAlias": "string",
+        "height": "auto",
+        "layout": "string",
+        "width": "auto"
+    },
+    "designerId": "3552e543-d052-4824-b269-bb5ece767558",
+    "viewControllerInstanceId": "aa305f46-a876-4769-bf08-2ff89ee0905b",
+    "viewModelInstanceId": "982df5f2-bd0a-4c2f-a697-130740e0b659",
+    "cn": [
+        {
+            "type": "Ext.field.Date",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dateFormat": "Y-m-d",
+                "editable": false,
+                "layout|flex": 1,
+                "reference": "strdt"
+            },
+            "configAlternates": {
+                "dateFormat": "string",
+                "layout|flex": "number",
+                "reference": "string",
+                "minDate": "string",
+                "editable": "boolean"
+            },
+            "name": "MyDate1",
+            "designerId": "92af8ce1-e569-4958-a611-4d605b8ed22b",
+            "cn": [
+                {
+                    "type": "Ext.picker.Date",
+                    "reference": {
+                        "name": "picker",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dayText": "일",
+                        "header": false,
+                        "hideOnMaskTap": true,
+                        "monthText": "월",
+                        "slotOrder": [
+                            "[",
+                            "    'year',",
+                            "    'month',",
+                            "    'day'",
+                            "]"
+                        ],
+                        "yearText": "년"
+                    },
+                    "configAlternates": {
+                        "dayText": "string",
+                        "header": "boolean",
+                        "hideOnMaskTap": "boolean",
+                        "monthText": "string",
+                        "slotOrder": "array",
+                        "yearText": "string"
+                    },
+                    "name": "MyDatePicker1",
+                    "designerId": "36063237-f412-481f-84d1-a15c56548778"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Spacer",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "width": 20
+            },
+            "configAlternates": {
+                "width": "number"
+            },
+            "name": "MySpacer3",
+            "designerId": "831c85e2-3507-4a5f-a294-7fd036695832"
+        },
+        {
+            "type": "Ext.field.Date",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dateFormat": "Y-m-d",
+                "editable": false,
+                "layout|flex": 1,
+                "reference": "edt"
+            },
+            "configAlternates": {
+                "dateFormat": "string",
+                "layout|flex": "number",
+                "reference": "string",
+                "editable": "boolean"
+            },
+            "name": "MyDate4",
+            "designerId": "34aac2e2-7149-4586-8d91-ea98fc72d391",
+            "cn": [
+                {
+                    "type": "Ext.picker.Date",
+                    "reference": {
+                        "name": "picker",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dayText": "일",
+                        "header": false,
+                        "hideOnMaskTap": true,
+                        "monthText": "월",
+                        "slotOrder": [
+                            "[",
+                            "    'year',",
+                            "    'month',",
+                            "    'day'",
+                            "]"
+                        ],
+                        "yearText": "년"
+                    },
+                    "configAlternates": {
+                        "dayText": "string",
+                        "header": "boolean",
+                        "hideOnMaskTap": "boolean",
+                        "monthText": "string",
+                        "slotOrder": "array",
+                        "yearText": "string"
+                    },
+                    "name": "MyDatePicker1",
+                    "designerId": "cc23b281-9748-4aa5-b726-3d0839e9f1f2"
+                }
+            ]
+        }
+    ]
+}

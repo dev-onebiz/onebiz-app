@@ -1,0 +1,1270 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "Knowledge",
+            "knowledge"
+        ],
+        "designer|userAlias": "Knowledge",
+        "designer|userClassName": "test.Knowledge",
+        "height": "100%",
+        "layout": "vbox",
+        "scrollable": "vertical",
+        "style": "background-color:#F3F4F6;"
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "layout": "string",
+        "scrollable": "auto",
+        "style": "string"
+    },
+    "name": "MyContainer36",
+    "designerId": "a773539c-b4b9-418b-acd0-aedabfb72e52",
+    "viewControllerInstanceId": "74467323-e194-4a2e-850c-f50c0ccafc16",
+    "viewModelInstanceId": "5773132b-a365-4587-8254-1bc4451bddfe",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "center",
+                "designer|displayName": "메인",
+                "layout": "vbox",
+                "style": "background-color:#F3F4F6;",
+                "width": "100%"
+            },
+            "configAlternates": {
+                "container|align": "string",
+                "designer|displayName": "string",
+                "layout": "string",
+                "style": "string",
+                "width": "auto"
+            },
+            "name": "MyContainer9",
+            "designerId": "a160ab55-916f-4796-abfb-b14044a3bbcb",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "designer|displayName": "통합검색",
+                        "height": 147,
+                        "layout": "vbox",
+                        "style": "background: #FFFFFF 0% 0% no-repeat padding-box; box-shadow: 0px 4px 10px #0000001A; border-radius:8px; opacity:1;",
+                        "width": "100%"
+                    },
+                    "configAlternates": {
+                        "container|align": "string",
+                        "designer|displayName": "string",
+                        "height": "auto",
+                        "layout": "string",
+                        "margin": "auto",
+                        "style": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyContainer27",
+                    "designerId": "648d09ba-d683-4126-a461-e7dfb301561f",
+                    "cn": [
+                        {
+                            "type": "Ext.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "검색텍스트",
+                                "html": "<div style=\"font:normal normal normal 18px/18px SF Compact Display; color:#333333;\">찾고싶은 정보를 한 번에</div><div style=\"margin-top:10px;font:normal normal bold 30px/36px SF Compact Display;color:#111111;\">통합검색</div>",
+                                "margin": "14 0 0 0",
+                                "width": "85%"
+                            },
+                            "configAlternates": {
+                                "html": "string",
+                                "margin": "auto",
+                                "designer|displayName": "string",
+                                "style": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyDisplayField1",
+                            "designerId": "0e676886-3af0-4543-a995-be69f08dae65"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "designer|displayName": "통합검색창",
+                        "height": 58,
+                        "layout": "hbox",
+                        "margin": "-29 0 0 0",
+                        "style": "background:#FFFFFF 0% 0% no-repeat padding-box; border:1px solid #EF716D; border-radius:29px;",
+                        "top": "",
+                        "width": "85%"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "height": "auto",
+                        "layout": "string",
+                        "style": "string",
+                        "width": "auto",
+                        "container|align": "string",
+                        "margin": "auto",
+                        "top": "auto"
+                    },
+                    "name": "MyContainer28",
+                    "designerId": "c4478f44-da26-4746-a49e-483d7c40b2df",
+                    "cn": [
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "animateUnderline": true,
+                                "clearable": false,
+                                "height": "100%",
+                                "layout|flex": 1,
+                                "margin": "",
+                                "padding": "0 0 0 24",
+                                "placeholder": "검색어를 입력해주세요",
+                                "reference": "searchForm",
+                                "style": "background-color:#FFFFFF; font:normal normal normal 16px/27px SF Compact Display; ",
+                                "width": "90%"
+                            },
+                            "configAlternates": {
+                                "layout|flex": "number",
+                                "style": "string",
+                                "width": "auto",
+                                "reference": "string",
+                                "animateUnderline": "boolean",
+                                "height": "auto",
+                                "margin": "auto",
+                                "padding": "auto",
+                                "clearable": "boolean",
+                                "placeholder": "string"
+                            },
+                            "name": "MyTextField2",
+                            "designerId": "07ded456-20ab-4b35-8217-99ad51b65c16"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "searchBtn",
+                                "height": 58,
+                                "iconCls": "icon-search-red",
+                                "margin": "11 17 11 0",
+                                "text": "",
+                                "width": 36
+                            },
+                            "configAlternates": {
+                                "iconCls": "string",
+                                "text": "string",
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "margin": "auto",
+                                "width": "auto"
+                            },
+                            "name": "MyButton6",
+                            "designerId": "d28bf486-7dd2-4419-b895-b1ed7f3f54e4",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onSearchButtonTap",
+                                        "implHandler": [
+                                            "        var me = this;",
+                                            "        var refs = me.getReferences();",
+                                            "        var naviView = me.getView().up('navigationview');",
+                                            "        me.PUSH_VIEW(naviView, {",
+                                            "            menuId  : 'BomKlsSearch',",
+                                            "            title   : '통합검색',",
+                                            "            searchText : refs.searchForm.getValue(),",
+                                            "            parentView : me.getView(),",
+                                            "            isSubView : true,",
+                                            "            //     records : records",
+                                            "        });"
+                                        ],
+                                        "name": "tap",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onSearchButtonTap",
+                                    "designerId": "f791bd7e-5e0a-43aa-8ed6-57a0c5832c6f"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "start",
+                        "designer|displayName": "동향",
+                        "height": 90,
+                        "layout": "hbox",
+                        "margin": "18 0 0 0",
+                        "style": "background: #DB5550 0% 0% no-repeat padding-box; box-shadow: 0px 4px 10px #0000001A; border-radius:8px; opacity:1;",
+                        "width": "85%"
+                    },
+                    "configAlternates": {
+                        "container|align": "string",
+                        "designer|displayName": "string",
+                        "height": "auto",
+                        "layout": "string",
+                        "margin": "auto",
+                        "style": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyContainer15",
+                    "designerId": "25054a17-c1ad-4c81-98d0-0e68d8cdde2f",
+                    "cn": [
+                        {
+                            "type": "Ext.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 94,
+                                "html": "<span style=\"font:normal normal normal 14px/18px SF Compact Display; color:#FFE9E8;\">요즘 업계 트렌드가 궁금하다면</span><br> <span style=\"font:normal normal bold 18px/27px SF Compact Display;color:#FFFFFF;\">동향</span>",
+                                "padding": "5 0 0 26",
+                                "style": "display:block;",
+                                "width": "70%"
+                            },
+                            "configAlternates": {
+                                "html": "string",
+                                "margin": "auto",
+                                "width": "auto",
+                                "height": "auto",
+                                "padding": "auto",
+                                "style": "string"
+                            },
+                            "name": "MyDisplayField1",
+                            "designerId": "5e1dce6e-bedc-4127-be57-cda5cfeb2f69"
+                        },
+                        {
+                            "type": "Ext.Img",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 90,
+                                "right": 0,
+                                "src": "/resources/images/kls/img_90_trend@2x.png",
+                                "width": 90,
+                                "zIndex": 0
+                            },
+                            "configAlternates": {
+                                "height": "auto",
+                                "width": "auto",
+                                "src": "uri",
+                                "right": "auto",
+                                "zIndex": "number"
+                            },
+                            "name": "MyImg",
+                            "designerId": "4dcc968b-894c-43f7-908c-3af34deb6004"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "동향버튼",
+                                "height": "100%",
+                                "left": 0,
+                                "style": "opacity:0",
+                                "width": "100%"
+                            },
+                            "configAlternates": {
+                                "height": "auto",
+                                "left": "auto",
+                                "style": "string",
+                                "width": "auto",
+                                "designer|displayName": "string"
+                            },
+                            "name": "MyButton",
+                            "designerId": "2db1f60b-eaf1-44f6-8f6a-76ddfc153b2f",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onTrndButtonTap",
+                                        "implHandler": [
+                                            "        var me = this;",
+                                            "        var refs = me.getReferences();",
+                                            "        var naviView = me.getView().up('navigationview');",
+                                            "        me.PUSH_VIEW(naviView, {",
+                                            "            menuId  : 'BomKlsMgz',",
+                                            "            cttDvcd : '002',",
+                                            "            title   : '동향',",
+                                            "            parentView : me.getView(),",
+                                            "            isSubView : true,",
+                                            "            //     records : records",
+                                            "         });"
+                                        ],
+                                        "name": "tap",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onTrndButtonTap",
+                                    "designerId": "98241430-5b74-4aaa-9cd4-f8e767db3b83"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "연구보고서 | 뉴스",
+                        "height": 156,
+                        "layout": "hbox",
+                        "margin": "22 0 0 0",
+                        "reference": "hbox1",
+                        "style": "overflow:visible;",
+                        "width": "85%"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "height": "auto",
+                        "layout": "string",
+                        "margin": "auto",
+                        "width": "auto",
+                        "reference": "string",
+                        "style": "string"
+                    },
+                    "name": "MyContainer19",
+                    "designerId": "58f9eae9-0b63-4744-9f26-598a62313d20",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "연구보고서",
+                                "height": 156,
+                                "layout": "hbox",
+                                "layout|flex": 1,
+                                "style": "background: #FFFFFF 0% 0% no-repeat padding-box; box-shadow: 0px 4px 10px #0000001A; border-radius:8px; opacity:1; overflow:visible;",
+                                "width": "45%"
+                            },
+                            "configAlternates": {
+                                "container|align": "string",
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "layout": "string",
+                                "margin": "auto",
+                                "style": "string",
+                                "width": "auto",
+                                "layout|flex": "number"
+                            },
+                            "name": "MyContainer16",
+                            "designerId": "c1f969b6-f370-4d21-b920-441305adeaeb",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Display",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 94,
+                                        "html": "<span style=\"font:normal normal normal 14px/18px SF Compact Display; color:#666666;\">검증된 분석 자료</span><br> <span style=\"font:normal normal bold 18px/27px SF Compact Display;color:#333333;\">연구보고서</span>",
+                                        "padding": "5 0 0 17",
+                                        "style": "display:block;",
+                                        "width": "100%"
+                                    },
+                                    "configAlternates": {
+                                        "html": "string",
+                                        "margin": "auto",
+                                        "width": "auto",
+                                        "height": "auto",
+                                        "padding": "auto",
+                                        "style": "string"
+                                    },
+                                    "name": "MyDisplayField1",
+                                    "designerId": "ae40c51a-02cc-4fc5-afae-96ce7553546d"
+                                },
+                                {
+                                    "type": "Ext.Img",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "bottom": 0,
+                                        "height": 90,
+                                        "right": 0,
+                                        "src": "/resources/images/kls/img_90_report@2x.png",
+                                        "width": 90,
+                                        "zIndex": 0
+                                    },
+                                    "configAlternates": {
+                                        "height": "auto",
+                                        "width": "auto",
+                                        "src": "uri",
+                                        "right": "auto",
+                                        "bottom": "auto",
+                                        "zIndex": "number"
+                                    },
+                                    "name": "MyImg",
+                                    "designerId": "662962c7-b063-42b6-97f0-50997d77a65a"
+                                },
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "연구보고서 버튼",
+                                        "height": 156,
+                                        "left": 0,
+                                        "style": "opacity:0",
+                                        "width": "100%"
+                                    },
+                                    "configAlternates": {
+                                        "height": "auto",
+                                        "left": "auto",
+                                        "style": "string",
+                                        "width": "auto",
+                                        "designer|displayName": "string"
+                                    },
+                                    "name": "MyButton5",
+                                    "designerId": "b2217449-2f41-48f3-9fa2-41c2f4503866",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onReptButtonTap",
+                                                "implHandler": [
+                                                    "        var me = this;",
+                                                    "        var refs = me.getReferences();",
+                                                    "        var naviView = me.getView().up('navigationview');",
+                                                    "        me.PUSH_VIEW(naviView, {",
+                                                    "            menuId  : 'BomKlsMgz',",
+                                                    "            title   : '연구보고서',",
+                                                    "            cttDvcd : '001',",
+                                                    "            parentView : me.getView(),",
+                                                    "            isSubView : true,",
+                                                    "            //     records : records",
+                                                    "         });"
+                                                ],
+                                                "name": "tap",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onReptButtonTap",
+                                            "designerId": "d76fc03a-4fcb-4fb1-9aed-623cdadc1f90"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "start",
+                                "designer|displayName": "뉴스",
+                                "height": 156,
+                                "layout": "hbox",
+                                "layout|flex": 1,
+                                "margin": "0 0 0 17",
+                                "style": "background: #FFFFFF 0% 0% no-repeat padding-box; box-shadow: 0px 4px 10px #0000001A; border-radius:8px; opacity:1;",
+                                "width": "45%"
+                            },
+                            "configAlternates": {
+                                "container|align": "string",
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "layout": "string",
+                                "margin": "auto",
+                                "style": "string",
+                                "width": "auto",
+                                "layout|flex": "number"
+                            },
+                            "name": "MyContainer24",
+                            "designerId": "5fd85a75-6d0b-44b2-9721-3f50308f5e55",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Display",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 94,
+                                        "html": "<span style=\"font:normal normal normal 14px/18px SF Compact Display; color:#666666;\">전세계 최신 소식</span><br> <span style=\"font:normal normal bold 18px/27px SF Compact Display;color:#333333;\">뉴스</span>",
+                                        "padding": "5 0 0 17",
+                                        "style": "display:block;",
+                                        "width": "100%"
+                                    },
+                                    "configAlternates": {
+                                        "html": "string",
+                                        "margin": "auto",
+                                        "width": "auto",
+                                        "height": "auto",
+                                        "padding": "auto",
+                                        "style": "string"
+                                    },
+                                    "name": "MyDisplayField1",
+                                    "designerId": "eed01751-e94d-4760-ad40-a0a40b8f51e6"
+                                },
+                                {
+                                    "type": "Ext.Img",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "bottom": 0,
+                                        "height": 90,
+                                        "right": 0,
+                                        "src": "/resources/images/kls/img_90_news@2x.png",
+                                        "width": 90,
+                                        "zIndex": 0
+                                    },
+                                    "configAlternates": {
+                                        "height": "auto",
+                                        "width": "auto",
+                                        "src": "uri",
+                                        "right": "auto",
+                                        "bottom": "auto",
+                                        "zIndex": "number"
+                                    },
+                                    "name": "MyImg",
+                                    "designerId": "62da3cda-f2e8-4b5b-9450-c7d65531d12f"
+                                },
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "뉴스 버튼",
+                                        "height": "100%",
+                                        "left": 0,
+                                        "style": "opacity:0",
+                                        "width": "100%"
+                                    },
+                                    "configAlternates": {
+                                        "height": "auto",
+                                        "left": "auto",
+                                        "style": "string",
+                                        "width": "auto",
+                                        "designer|displayName": "string"
+                                    },
+                                    "name": "MyButton",
+                                    "designerId": "495fd4a4-dbf1-4d61-81cd-236006bae089",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onNewsButtonTap",
+                                                "implHandler": [
+                                                    "        var me = this;",
+                                                    "        var refs = me.getReferences();",
+                                                    "        var naviView = me.getView().up('navigationview');",
+                                                    "        me.PUSH_VIEW(naviView, {",
+                                                    "            menuId  : 'BomKlsNews01',",
+                                                    "            cttDvcd : '003',",
+                                                    "            title   : '뉴스',",
+                                                    "            parentView : me.getView(),",
+                                                    "            isSubView : true,",
+                                                    "            //     records : records",
+                                                    "         });"
+                                                ],
+                                                "name": "tap",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onNewsButtonTap",
+                                            "designerId": "0a385cee-b84a-4737-9b26-5a1ffb56c51c"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "용어사전hbox",
+                        "height": 156,
+                        "layout": "hbox",
+                        "margin": "18 0 0 0",
+                        "reference": "hbox2",
+                        "style": "overflow:visible;",
+                        "width": "85%"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "height": "auto",
+                        "layout": "string",
+                        "margin": "auto",
+                        "width": "auto",
+                        "reference": "string",
+                        "style": "string"
+                    },
+                    "name": "MyContainer20",
+                    "designerId": "784cb5c4-d646-4f1f-b364-f2769b9ecc18",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "IT용어사전",
+                                "height": 156,
+                                "layout": "hbox",
+                                "layout|flex": 1,
+                                "style": "background: #FFFFFF 0% 0% no-repeat padding-box; box-shadow: 0px 4px 10px #0000001A; border-radius:8px; opacity:1;",
+                                "width": "45%"
+                            },
+                            "configAlternates": {
+                                "container|align": "string",
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "layout": "string",
+                                "margin": "auto",
+                                "style": "string",
+                                "width": "auto",
+                                "layout|flex": "number"
+                            },
+                            "name": "MyContainer25",
+                            "designerId": "5ba4a8d1-c88d-4e4b-9354-fb589fae79cb",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Display",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 94,
+                                        "html": "<span style=\"font:normal normal normal 14px/18px SF Compact Display; color:#666666;\">알아두면 유용한</span><br> <span style=\"font:normal normal bold 18px/27px SF Compact Display;color:#333333;\">IT 용어 사전</span>",
+                                        "padding": "5 0 0 17",
+                                        "style": "display:block;",
+                                        "width": "100%"
+                                    },
+                                    "configAlternates": {
+                                        "html": "string",
+                                        "margin": "auto",
+                                        "width": "auto",
+                                        "height": "auto",
+                                        "padding": "auto",
+                                        "style": "string"
+                                    },
+                                    "name": "MyDisplayField1",
+                                    "designerId": "49a9eb72-85e4-41f6-ae71-40671fb98af6"
+                                },
+                                {
+                                    "type": "Ext.Img",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "bottom": 0,
+                                        "height": 90,
+                                        "right": 0,
+                                        "src": "/resources/images/kls/img_90_ITterm@2x.png",
+                                        "width": 90,
+                                        "zIndex": 0
+                                    },
+                                    "configAlternates": {
+                                        "height": "auto",
+                                        "width": "auto",
+                                        "src": "uri",
+                                        "right": "auto",
+                                        "bottom": "auto",
+                                        "zIndex": "number"
+                                    },
+                                    "name": "MyImg",
+                                    "designerId": "73da5e0c-7c3f-497c-9658-6ff0b846750f"
+                                },
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "IT용어사전 버튼",
+                                        "height": "100%",
+                                        "left": 0,
+                                        "style": "opacity:0",
+                                        "width": "100%"
+                                    },
+                                    "configAlternates": {
+                                        "height": "auto",
+                                        "left": "auto",
+                                        "style": "string",
+                                        "width": "auto",
+                                        "designer|displayName": "string"
+                                    },
+                                    "name": "MyButton5",
+                                    "designerId": "c8aff462-9bec-4c90-bcb2-256179005069",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onItButtonTap",
+                                                "implHandler": [
+                                                    "        var me = this;",
+                                                    "        refs = me.getReferences();",
+                                                    "        var naviView = me.getView().up('navigationview');",
+                                                    "        me.PUSH_VIEW(naviView, {",
+                                                    "            menuId  : 'BomKlsDict',",
+                                                    "            termDvcd : '01',",
+                                                    "            title   : 'IT용어사전',",
+                                                    "            parentView : me.getView(),",
+                                                    "            isSubView : true,",
+                                                    "            //     records : records",
+                                                    "         });"
+                                                ],
+                                                "name": "tap",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onItButtonTap",
+                                            "designerId": "c1ad8f41-395e-4d9b-a0dd-9fe953511421"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "금융용어사전",
+                                "height": 156,
+                                "layout": "hbox",
+                                "layout|flex": 1,
+                                "margin": "0 0 0 17",
+                                "style": "background: #FFFFFF 0% 0% no-repeat padding-box; box-shadow: 0px 4px 10px #0000001A; border-radius:8px; opacity:1;",
+                                "width": "45%"
+                            },
+                            "configAlternates": {
+                                "container|align": "string",
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "layout": "string",
+                                "margin": "auto",
+                                "style": "string",
+                                "width": "auto",
+                                "layout|flex": "number"
+                            },
+                            "name": "MyContainer26",
+                            "designerId": "828ef70c-4def-4d34-997d-1763d5aa5403",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Display",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 94,
+                                        "html": "<span style=\"font:normal normal normal 14px/18px SF Compact Display; color:#666666;\">금융문맹 탈출</span><br> <span style=\"font:normal normal bold 18px/27px SF Compact Display;color:#333333;\">금융용어 사전</span>",
+                                        "padding": "5 0 0 17",
+                                        "style": "display:block;",
+                                        "width": "100%"
+                                    },
+                                    "configAlternates": {
+                                        "html": "string",
+                                        "margin": "auto",
+                                        "width": "auto",
+                                        "height": "auto",
+                                        "padding": "auto",
+                                        "style": "string"
+                                    },
+                                    "name": "MyDisplayField1",
+                                    "designerId": "37a7b18c-ef23-4483-b56d-ffeffcfdc388"
+                                },
+                                {
+                                    "type": "Ext.Img",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "bottom": 0,
+                                        "height": 90,
+                                        "right": 0,
+                                        "src": "/resources/images/kls/img_90_financeterm@2x.png",
+                                        "width": 90,
+                                        "zIndex": 0
+                                    },
+                                    "configAlternates": {
+                                        "height": "auto",
+                                        "width": "auto",
+                                        "src": "uri",
+                                        "right": "auto",
+                                        "bottom": "auto",
+                                        "zIndex": "number"
+                                    },
+                                    "name": "MyImg",
+                                    "designerId": "b50248ae-5612-464c-93b8-f40a2fde9de3"
+                                },
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "금융용어사전 버튼",
+                                        "height": "100%",
+                                        "left": 0,
+                                        "style": "opacity:0",
+                                        "width": "100%"
+                                    },
+                                    "configAlternates": {
+                                        "height": "auto",
+                                        "left": "auto",
+                                        "style": "string",
+                                        "width": "auto",
+                                        "designer|displayName": "string"
+                                    },
+                                    "name": "MyButton7",
+                                    "designerId": "8c6edeb3-0be7-4042-8337-b90b32a08339",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onFincButtonTap",
+                                                "implHandler": [
+                                                    "        var me = this;",
+                                                    "        refs = me.getReferences();",
+                                                    "        var naviView = me.getView().up('navigationview');",
+                                                    "        me.PUSH_VIEW(naviView, {",
+                                                    "            menuId  : 'BomKlsDict',",
+                                                    "            title   : '금융용어사전',",
+                                                    "            termDvcd : '02',",
+                                                    "            parentView : me.getView(),",
+                                                    "            isSubView : true,",
+                                                    "            //     records : records",
+                                                    "         });"
+                                                ],
+                                                "name": "tap",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onFincButtonTap",
+                                            "designerId": "bedf9ac0-5248-43b6-9808-b08f42ca6447"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "tbspacer",
+                        "height": "10px",
+                        "margin": "40 0 30 0",
+                        "style": "background:#00000010 0% 0% no-repeat padding-box;",
+                        "width": "100%"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "height": "auto",
+                        "margin": "auto",
+                        "style": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyContainer3",
+                    "designerId": "469a7341-9d9a-48bc-bbf6-54e8e9d384b8"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "grid-cell"
+                        ],
+                        "designer|displayName": "주요소식 컨테이너",
+                        "height": 360,
+                        "layout": "vbox",
+                        "style": "background-color:#F3F4F6",
+                        "width": "90%"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout|flex": "number",
+                        "margin": "auto",
+                        "height": "auto",
+                        "cls": "typedarray",
+                        "layout": "string",
+                        "style": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyContainer13",
+                    "designerId": "92da2796-2a7d-4e47-9a22-da2fddbf240e",
+                    "cn": [
+                        {
+                            "type": "Ext.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "text1",
+                                "html": "<div style=\"width:100%; height:25px; display:flex;\"> <img src=\"/resources/images/kls/icon_25_mail@2x.png\" style=\"width:25px;height:25px;margin-right:7px;\"><span style=\"font:normal normal bold 14px/27px SF Compact Display;color:#333333;\">주요소식</span> </div>",
+                                "padding": "0 0 2 0",
+                                "style": "font-weight:bold; "
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "html": "string",
+                                "style": "string",
+                                "weight": "number",
+                                "height": "auto",
+                                "padding": "auto"
+                            },
+                            "name": "MyDisplayField",
+                            "designerId": "fc7882a6-4203-47d2-afd5-406f75083a19"
+                        },
+                        {
+                            "type": "Ext.grid.Grid",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "kls-grid"
+                                ],
+                                "designer|displayName": "주요소식그리드",
+                                "height": "100%",
+                                "hideHeaders": true,
+                                "layout|flex": 1,
+                                "margin": "0 0 60 0",
+                                "pinHeaders": false,
+                                "store": [
+                                    "{mainStore}"
+                                ],
+                                "style": "background-color:#F3F4F6",
+                                "variableHeights": true,
+                                "width": "100%"
+                            },
+                            "configAlternates": {
+                                "height": "auto",
+                                "hideHeaders": "boolean",
+                                "width": "auto",
+                                "store": "binding",
+                                "scrollable": "auto",
+                                "designer|displayName": "string",
+                                "variableHeights": "boolean",
+                                "style": "string",
+                                "margin": "auto",
+                                "layout|flex": "number",
+                                "pinHeaders": "boolean",
+                                "cls": "typedarray"
+                            },
+                            "name": "MyGrid1",
+                            "designerId": "a6a0c3c4-c9a3-41db-889f-70fc9f9ca623",
+                            "cn": [
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cell": [
+                                            "{\"xtype\":\"gridcell\",\"encodeHtml\":false, \"padding\" : \"0px\"}"
+                                        ],
+                                        "dataIndex": "title",
+                                        "docked": null,
+                                        "flex": "1",
+                                        "text": "주요소식정보"
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "docked": "string",
+                                        "text": "string",
+                                        "width": "auto",
+                                        "cell": "object",
+                                        "flex": "string"
+                                    },
+                                    "name": "MyColumn7",
+                                    "designerId": "aabfabce-f4f0-466f-9d1f-e2ba834bdc68",
+                                    "customConfigs": [
+                                        {
+                                            "group": "(Custom Properties)",
+                                            "name": "flex",
+                                            "type": "string"
+                                        }
+                                    ],
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "value",
+                                                    "record",
+                                                    "dataIndex",
+                                                    "cell",
+                                                    "column"
+                                                ],
+                                                "fn": "renderer",
+                                                "implHandler": [
+                                                    "var mainCtt = '<div style=\"width:100%; font:normal normal normal 16px/27px SF Compact Display; color:#333333;  overflow:hidden; display:inline-block; text-overflow:ellipsis; -webkit-line-clamp:1; -webkit-box-orient:vertical;\">'",
+                                                    "                        + record.data.title + '</div>';",
+                                                    "",
+                                                    "var date = record.data.cttDate;",
+                                                    "date = date.substr(0, 4) + '. ' + date.substr(4, 2) + '. ' + date.substr(6, 2);",
+                                                    "mainCtt += '<div style=\"font:normal normal normal 13px/18px SF Compact Display; color:#666666;\">' + record.data.src + '<span style=\"margin:0px 8px; color:#DDDDDD\">|</span>' + date + '</div>';",
+                                                    "cell.setStyle('padding:0px;background-color:#F3F4F6;');",
+                                                    "cell.el.dom.firstElementChild.style.padding = \"8px 0px\";",
+                                                    "return mainCtt;"
+                                                ]
+                                            },
+                                            "configAlternates": {
+                                                "designer|params": "typedarray",
+                                                "fn": "string",
+                                                "implHandler": "code"
+                                            },
+                                            "name": "renderer",
+                                            "designerId": "a16a1741-cf7f-45f3-8176-87dae14af5cd"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onGridSelect",
+                                        "implHandler": [
+                                            "var me = this;",
+                                            "refs = me.getReferences();",
+                                            "var naviView = me.getView().up('navigationview');",
+                                            "",
+                                            "var values = {",
+                                            "    boKlsmContentsId : selected[0].data.boKlsmContentsId,",
+                                            "};",
+                                            "",
+                                            "Ext.Ajax.request({",
+                                            "    headers : {",
+                                            "        serviceId : 'BomKlsSvc.increaseView',",
+                                            "    },",
+                                            "    jsonData : values,",
+                                            "    success : function(response) {",
+                                            "    }",
+                                            "});",
+                                            "location.href = selected[0].data.link;"
+                                        ],
+                                        "name": "select",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onGridSelect",
+                                    "designerId": "8e85fffd-e365-4a39-8098-e18e727f76c3"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onContainerInitialize",
+                "implHandler": [
+                    "var me = this;",
+                    "var refs = me.getReferences();",
+                    "refs.hbox1.el.dom.firstElementChild.style.overflow = 'visible';",
+                    "refs.hbox2.el.dom.firstElementChild.style.overflow = 'visible';",
+                    "this.onSelect();"
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onContainerInitialize",
+            "designerId": "033c6873-6013-41d9-a288-eb6db5d31ce3"
+        }
+    ]
+}

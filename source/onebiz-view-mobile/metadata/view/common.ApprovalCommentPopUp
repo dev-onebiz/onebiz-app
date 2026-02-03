@@ -1,0 +1,211 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alwaysOnTop": true,
+        "autoSize": false,
+        "designer|commentHeader": [
+            "공통 / 결재선의견팝업 View",
+            "",
+            "@author BNK시스템/팀장/손승범",
+            "@since 2019.06.17.",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "  수정일         수정자                      수정내용",
+            " ------------   ---------                 --------------------------",
+            "  2019.06.17.   BNK시스템/팀장/손승범         최초 생성"
+        ],
+        "designer|extend": "Ext.window.Window",
+        "designer|userAlias": "common.approvalcommentpopup",
+        "designer|userClassName": "common.ApprovalCommentPopUp",
+        "height": 250,
+        "layout": "vbox",
+        "modal": true,
+        "title": "의견",
+        "width": "80%"
+    },
+    "configAlternates": {
+        "designer|extend": "string",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "width": "auto",
+        "modal": "boolean",
+        "alwaysOnTop": "auto",
+        "autoSize": "boolean",
+        "layout": "string",
+        "designer|commentHeader": "comment",
+        "title": "string"
+    },
+    "name": "MyFormPanel3",
+    "designerId": "fd0cfef0-db25-41f4-ae99-3c200e646536",
+    "viewControllerInstanceId": "a6416a1f-7ffb-42ef-b015-a6f419461d16",
+    "viewModelInstanceId": "465dd3a4-f5b0-4799-9f01-62b6ad4dfc78",
+    "cn": [
+        {
+            "type": "Ext.field.TextArea",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": "100%",
+                "padding": 10,
+                "value": [
+                    "{aprComment}"
+                ]
+            },
+            "configAlternates": {
+                "height": "auto",
+                "padding": "auto",
+                "value": "binding"
+            },
+            "name": "MyTextArea",
+            "designerId": "9138b3ac-4716-497d-9433-add285cf9be7"
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom"
+            },
+            "configAlternates": {
+                "docked": "string"
+            },
+            "name": "MyToolbar",
+            "designerId": "3b4e4244-2716-4d7e-804c-7ce635421086",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 1,
+                        "text": "확인"
+                    },
+                    "configAlternates": {
+                        "layout|flex": "number",
+                        "text": "string"
+                    },
+                    "name": "MyButton12",
+                    "designerId": "40f34664-a9fa-400d-9a00-1fddd286fc8a",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBtnOkTap",
+                                "implHandler": [
+                                    "var me = this,",
+                                    "    vm = me.getViewModel(),",
+                                    "    aprComment = vm.get('aprComment');",
+                                    "",
+                                    "me.getView().fireEvent('ok', aprComment, me.getView());"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnOkTap",
+                            "designerId": "27edf136-8016-4d98-be1a-6b4ec66186e1"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 1,
+                        "text": "취소"
+                    },
+                    "configAlternates": {
+                        "layout|flex": "number",
+                        "text": "string"
+                    },
+                    "name": "MyButton13",
+                    "designerId": "5107c724-342f-4a5d-b983-dc75f068ce3f",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBtnCancelTap",
+                                "implHandler": [
+                                    "this.getView().close(); "
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnCancelTap",
+                            "designerId": "08e59756-2cb7-4c7f-b92e-eb253cb940ff"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "init",
+                "implHandler": [
+                    "if (component.config.title) {",
+                    "    this.getView().setTitle(component.config.title);",
+                    "}"
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "init",
+            "designerId": "5c607a25-64c0-404f-a69c-2da235a320da"
+        }
+    ]
+}

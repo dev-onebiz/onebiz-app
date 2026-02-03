@@ -1,0 +1,299 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "NoticeBoardManagementDetailM"
+        ],
+        "designer|commentHeader": [
+            "모바일 시스템 공통 :: 환경설정 상세보기 - 화면",
+            "",
+            "@author BNK시스템/계장/김정균",
+            "@since 2019.06.13",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일\t\t  수정자                수정내용",
+            "----------\t------------------   --------------------------",
+            "2019.06.13\tBNK시스템/계장/김정균   최초 생성"
+        ],
+        "designer|userAlias": "NoticeBoardManagementDetailM",
+        "designer|userClassName": "common.NoticeBoardManagementDetailM"
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|commentHeader": "comment",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "MyContainer60",
+    "designerId": "7345d028-bcf5-479e-bb49-c7524250086a",
+    "viewControllerInstanceId": "858ad7f2-17b0-4297-9589-12688af4817d",
+    "viewModelInstanceId": "41f9d267-7597-4999-bcde-e0b31783e4c3",
+    "cn": [
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "tbar",
+                "docked": "top",
+                "layout": "vbox",
+                "maxHeight": 100,
+                "minHeight": 60
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "docked": "string",
+                "layout": "string",
+                "maxHeight": "auto",
+                "minHeight": "auto"
+            },
+            "name": "MyToolbar10",
+            "designerId": "10ab9e69-8e48-4f62-b9bd-c103cde11221",
+            "cn": [
+                {
+                    "type": "Ext.Spacer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "flex1",
+                        "layout|flex": 1
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout|flex": "number"
+                    },
+                    "name": "MySpacer32",
+                    "designerId": "6ab4cdeb-bfbf-4e09-ace2-d00fcce40240"
+                },
+                {
+                    "type": "Ext.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "title",
+                        "reference": "title"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "reference": "string"
+                    },
+                    "name": "MyLabel72",
+                    "designerId": "96adf69d-e690-445c-b3db-5e5d8d58e736"
+                },
+                {
+                    "type": "Ext.Spacer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "flex1",
+                        "layout|flex": 0.5
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout|flex": "number"
+                    },
+                    "name": "MySpacer44",
+                    "designerId": "6982c1c1-afc0-49e3-8336-3fa8b0a67f0e"
+                },
+                {
+                    "type": "Ext.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "reference": "regDt"
+                    },
+                    "configAlternates": {
+                        "reference": "string"
+                    },
+                    "name": "MyLabel73",
+                    "designerId": "bd395159-eda4-414b-af55-4c47542457a9"
+                },
+                {
+                    "type": "Ext.Spacer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "flex1",
+                        "layout|flex": 1
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout|flex": "number"
+                    },
+                    "name": "MySpacer45",
+                    "designerId": "ea5e9710-0fb0-4f6f-9f98-065610614ee9"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "공지 내용",
+                "height": "100%",
+                "padding": "30 10 10 10",
+                "reference": "content",
+                "scrollable": true,
+                "style": "word-break: break-all;",
+                "width": "100%"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "height": "auto",
+                "padding": "auto",
+                "reference": "string",
+                "style": "string",
+                "width": "auto",
+                "scrollable": "auto"
+            },
+            "name": "MyContainer60",
+            "designerId": "f0d7c9e7-cbc7-403a-8deb-7fc93e00860c"
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "bbar",
+                "docked": "bottom"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "docked": "string"
+            },
+            "name": "MyToolbar11",
+            "designerId": "966fb354-53a7-44a0-bd5c-3c757e0cdef0",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 1,
+                        "text": "목록"
+                    },
+                    "configAlternates": {
+                        "layout|flex": "number",
+                        "text": "string"
+                    },
+                    "name": "MyButton47",
+                    "designerId": "44ce2f18-eb2f-4fd8-9ba5-101cf54babaf",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onPreviousTap",
+                                "implHandler": [
+                                    "var me = this,",
+                                    "    //home = Ext.getCmp(Property.ROUTE_HOME),",
+                                    "    home = this.getView().up(Property.ROUTE_HOME),",
+                                    "    naviView = home.lookup('NaviView'),",
+                                    "    backButton = naviView.getNavigationBar().getBackButton();",
+                                    "",
+                                    "backButton.onTap();\t// 뒤로가기",
+                                    ""
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onPreviousTap",
+                            "designerId": "528ecd50-8ad8-445d-b740-be4c468d38de"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "initialize",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences();",
+                    "",
+                    "var noticeData = component.initialConfig.records;",
+                    "",
+                    "//<이미지 태그 관련 로직>",
+                    "//서버에서 전달해주는 상대주소를 사용 시, 현재 웹 주소에서 경로를 찾는 문제가 있어",
+                    "//Property에 저장된 서버 주소를 결합하여 이미지를 찾도록 수정",
+                    "var contentHtml = document.createElement('div');",
+                    "contentHtml.innerHTML = noticeData.content;",
+                    "",
+                    "var imgList = contentHtml.getElementsByTagName('img'); //img태그 collection",
+                    "for(var i = 0; i < imgList.length; i++) {",
+                    "    //서버주소 + 상대주소",
+                    "    imgList[i].setAttribute('src', Property.BASE_URL + imgList[i].getAttribute('src'));",
+                    "}",
+                    "",
+                    "refs.title.setHtml(noticeData.title);",
+                    "refs.regDt.setHtml(noticeData.regDt);",
+                    "refs.content.setHtml(contentHtml);",
+                    ""
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "initialize",
+            "designerId": "e83a5d33-56ca-484f-a559-0ef88747cc9d"
+        }
+    ]
+}

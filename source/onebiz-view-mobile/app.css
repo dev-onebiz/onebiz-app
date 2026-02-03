@@ -1,0 +1,11 @@
+/**
+ * NewMain 스타일
+ */
+.x-navigationview .x-titlebar {
+    background-color : #FFFFFF;
+}
+/* 네비게이션뷰 타이틀 색상 */
+.x-navigationview .x-titlebar .x-title {
+    color : #3B4650;
+}
+

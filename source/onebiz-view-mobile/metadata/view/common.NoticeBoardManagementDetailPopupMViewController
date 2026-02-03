@@ -1,0 +1,45 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            "모바일 시스템 공통 :: 공지사항 상세보기 (팝업) - 컨트롤러",
+            "",
+            "@author BNK시스템/파트너/지민영",
+            "@since 2020.07.24",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일\t\t  수정자                  수정내용",
+            "----------\t------------------     --------------------------",
+            "2020.07.24\tBNK시스템/파트너/지민영   최초 생성",
+            "2021.03.12\tBNK시스템/파트너/서무성   img태그가 상대경로가 아닌 절대경로로 세팅 되도록 수정(with 강명수 파트너님)"
+        ],
+        "designer|extend": "BaseViewController",
+        "designer|userAlias": "NoticeBoardManagementDetailPopupMViewController",
+        "designer|userClassName": "common.NoticeBoardManagementDetailPopupMViewController",
+        "viewId": "NoticeBoardManagementDetailPopupM"
+    },
+    "configAlternates": {
+        "designer|commentHeader": "comment",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "designer|extend": "string",
+        "viewId": "string"
+    },
+    "name": "common.NoticeBoardManagementDetailMViewController1",
+    "designerId": "0bdc4067-31b3-4c40-b657-f7f8502bce04",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "viewId",
+            "type": "string"
+        }
+    ]
+}

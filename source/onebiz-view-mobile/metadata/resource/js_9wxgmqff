@@ -1,0 +1,20 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "js_9wxgmqff",
+        "includeInBundle": true,
+        "url": "Properties.js"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "includeInBundle": "boolean",
+        "url": "uri"
+    },
+    "name": "js15",
+    "designerId": "009d43b9-7798-4f43-bde9-294f6bdff3ff"
+}

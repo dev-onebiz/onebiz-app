@@ -1,0 +1,17 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "HwmOvtAply51MViewModel",
+        "designer|userClassName": "HumanResource.hwm.HwmOvtAply51MViewModel"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "designerId": "87d3f8b8-07d5-4952-a785-8a6ecaa5050a"
+}

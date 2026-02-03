@@ -1,0 +1,382 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "FastLoginManagementM",
+        "designer|userClassName": "common.FastLoginManagementM",
+        "layout": "vbox"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "layout": "string"
+    },
+    "name": "MyContainer",
+    "designerId": "3f0e0923-1123-4e0b-82a9-3fa69e7b1861",
+    "viewControllerInstanceId": "773eb7c0-a6d1-4a0c-958a-e0a3a114e9cf",
+    "viewModelInstanceId": "2c80246a-07b2-43fb-88b6-521d58485f32",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "reference": "form"
+            },
+            "configAlternates": {
+                "layout|flex": "number",
+                "reference": "string"
+            },
+            "name": "MyFormPanel1",
+            "designerId": "db00e73b-d276-4d3b-ab36-4b3f2baa6918",
+            "cn": [
+                {
+                    "type": "Ext.field.Password",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "현재비밀번호",
+                        "name": "currPassword",
+                        "reference": "currPassword"
+                    },
+                    "configAlternates": {
+                        "label": "string",
+                        "name": "string",
+                        "reference": "string"
+                    },
+                    "name": "MyPasswordField2",
+                    "designerId": "7438cf27-f538-4ab4-a0b2-91246a7918ce",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onCurrPasswordKeyup",
+                                "implHandler": [
+                                    "this.validateForm();"
+                                ],
+                                "name": "keyup",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onCurrPasswordKeyup",
+                            "designerId": "2c55f832-eec9-48dc-86ed-ae8d9b513f38"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.field.Password",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "빠른로그인 비밀번호 입력",
+                        "maxLength": 6,
+                        "name": "fastPassword",
+                        "placeholder": "숫자6자리를 입력해주세요",
+                        "reference": "fastPassword"
+                    },
+                    "configAlternates": {
+                        "label": "string",
+                        "maxLength": "number",
+                        "name": "string",
+                        "placeholder": "string",
+                        "reference": "string"
+                    },
+                    "name": "MyPasswordField3",
+                    "designerId": "bbd9a0d8-8beb-407f-b433-afca0a92309f",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onFastPasswordKeyup",
+                                "implHandler": [
+                                    "this.validateForm();"
+                                ],
+                                "name": "keyup",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onFastPasswordKeyup",
+                            "designerId": "dc279908-6cf1-435d-a0c8-eada69532a3e"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.field.Password",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "빠른로그인 비밀번호 확인",
+                        "maxLength": 6,
+                        "name": "fastPasswordCheck",
+                        "placeholder": "숫자6자리를 입력해주세요",
+                        "reference": "fastPasswordCheck"
+                    },
+                    "configAlternates": {
+                        "label": "string",
+                        "maxLength": "number",
+                        "name": "string",
+                        "placeholder": "string",
+                        "reference": "string"
+                    },
+                    "name": "MyPasswordField4",
+                    "designerId": "73a233b2-340c-4f89-ac62-16547cad23b4",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onFastPasswordCheckKeyup",
+                                "implHandler": [
+                                    "this.validateForm();"
+                                ],
+                                "name": "keyup",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onFastPasswordCheckKeyup",
+                            "designerId": "8eb09367-abeb-48a9-9e62-5cad460c11c7"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Toolbar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "docked": "bottom"
+                    },
+                    "configAlternates": {
+                        "docked": "string"
+                    },
+                    "name": "MyToolbar",
+                    "designerId": "cc0a3592-b76b-4423-a91c-2f7e51f692fc",
+                    "cn": [
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1,
+                                "text": "초기화"
+                            },
+                            "configAlternates": {
+                                "layout|flex": "number",
+                                "text": "string"
+                            },
+                            "name": "MyButton4",
+                            "designerId": "077fdadc-9ca9-42ad-b4b3-f83d6ebf7839",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onReset",
+                                        "implHandler": [
+                                            "var me = this,",
+                                            "    refs = me.getReferences(),",
+                                            "    form = refs.form;",
+                                            "",
+                                            "form.reset();"
+                                        ],
+                                        "name": "tap",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onReset",
+                                    "designerId": "177925a3-c3d9-480f-82d4-aac5b270630d"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "disabled": true,
+                                "layout|flex": 1,
+                                "reference": "btnSave",
+                                "text": "저장"
+                            },
+                            "configAlternates": {
+                                "disabled": "boolean",
+                                "layout|flex": "number",
+                                "reference": "string",
+                                "text": "string"
+                            },
+                            "name": "MyButton6",
+                            "designerId": "0cffc350-56aa-48dd-8d04-dd1aebb6fc63",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onSave",
+                                        "implHandler": [
+                                            "var me = this,",
+                                            "    refs = me.getReferences(),",
+                                            "    btnSave = refs.btnSave,",
+                                            "    form = refs.form,",
+                                            "    values = form.getValues(),",
+                                            "    currPassword = values.currPassword,",
+                                            "    fastPassword = values.fastPassword,",
+                                            "    fastPasswordCheck = values.fastPasswordCheck;",
+                                            "",
+                                            "SecurityUtils.encrypt(me, {",
+                                            "    currPassword\t  : currPassword,",
+                                            "    fastPassword\t  : fastPassword,",
+                                            "    fastPasswordCheck : fastPasswordCheck",
+                                            "}).then(function(result){",
+                                            "",
+                                            "    Ext.Ajax.request({",
+                                            "        headers: {",
+                                            "            viewId: 'FastLoginManagementM',",
+                                            "            serviceId: 'ComEnvSvc.saveFastLoginM'",
+                                            "        },",
+                                            "        jsonData: result,",
+                                            "        scope : me,",
+                                            "        success: function(response) {",
+                                            "            var me = this,",
+                                            "                responseJson = Ext.JSON.decode(response.responseText);",
+                                            "",
+                                            "            // 로그아웃",
+                                            "            Ext.Msg.confirm('안내', '<p>빠른 로그인 비밀번호가 변경되었습니다.<br/>재로그인하시겠습니까?</p>', function(buttonId) {",
+                                            "                var me = this;",
+                                            "",
+                                            "                if ('yes' === buttonId) {",
+                                            "                    // 토큰삭제",
+                                            "                    sessionStorage.removeItem(Property.JWT_TOKEN_NAME);",
+                                            "                    WebUtils.setCookie(Property.JWT_TOKEN_NAME, null, -1);",
+                                            "",
+                                            "                    // 서버로그아웃",
+                                            "                    Ext.Ajax.request({",
+                                            "                        headers: {",
+                                            "                            viewId: 'FastLoginManagementM',",
+                                            "                            serviceId: 'COMAPP0002R02M'",
+                                            "                        },",
+                                            "                        scope : me,",
+                                            "                        success : function(res) {",
+                                            "                            if (Property.IS_DEBUG) console.log('로그아웃 성공');",
+                                            "                        },",
+                                            "                        failure: function(response, opts) {",
+                                            "                            if (Property.IS_DEBUG) console.log('로그아웃 실패');",
+                                            "                        }",
+                                            "                    });",
+                                            "",
+                                            "                    // 메인화면제거 및 로그인화면 표시",
+                                            "                    // 메인화면 표시",
+                                            "                    Ext.create(Property.ROUTE_LOGIN, {fullscreen: true});",
+                                            "                }",
+                                            "            }, me);",
+                                            "",
+                                            "        },",
+                                            "        failure: function(response) {",
+                                            "            var me = this,",
+                                            "                refs = me.getReferences(),",
+                                            "                currPassword = refs.currPassword,",
+                                            "                fastPassword = refs.fastPassword,",
+                                            "                fastPasswordCheck = refs.fastPasswordCheck;",
+                                            "",
+                                            "            if (response.status === 500) {",
+                                            "                var responseJson = Ext.JSON.decode(response.responseText);",
+                                            "                currPassword.setValue(null);",
+                                            "                fastPassword.setValue(null);",
+                                            "                fastPasswordCheck.setValue(null);",
+                                            "",
+                                            "                Ext.Msg.alert('빠른로그인 저장오류', Ext.String.format('<p>{0}</p>', responseJson.errMsg));",
+                                            "            }",
+                                            "        }",
+                                            "    });",
+                                            "})",
+                                            ".catch(function(response){",
+                                            "    me.HANDLE_RESPONSE_FAILURE(response);",
+                                            "});",
+                                            ""
+                                        ],
+                                        "name": "tap",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onSave",
+                                    "designerId": "2175d240-a869-4708-8942-11f0ada855af"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

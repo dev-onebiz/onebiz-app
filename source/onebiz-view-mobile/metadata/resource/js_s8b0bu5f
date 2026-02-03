@@ -1,0 +1,20 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "js_s8b0bu5f",
+        "includeInBundle": true,
+        "url": "StoreUtils.js"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "includeInBundle": "boolean",
+        "url": "uri"
+    },
+    "name": "js13",
+    "designerId": "a63a73c0-6034-4f11-9901-66297dd147d6"
+}

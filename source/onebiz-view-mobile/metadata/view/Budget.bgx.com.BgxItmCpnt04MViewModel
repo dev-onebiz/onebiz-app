@@ -1,0 +1,32 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            "모바일 예산 : 결의서 작성 [기타영수증 아이템] - 모델",
+            "",
+            "@author BNK시스템/계장/지민영",
+            "@since 2020.05.18",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일       수정자                수정내용",
+            "----------  ------------------   --------------------------",
+            "2020.05.18  BNK시스템/계장/지민영   최초 생성"
+        ],
+        "designer|userAlias": "BgxItmCpnt04MViewModel",
+        "designer|userClassName": "Budget.bgx.com.BgxItmCpnt04MViewModel"
+    },
+    "configAlternates": {
+        "designer|commentHeader": "comment",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "designerId": "e0c063f5-90f7-4293-9a79-f1143296ddc9"
+}

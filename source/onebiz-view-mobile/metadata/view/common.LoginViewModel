@@ -1,0 +1,39 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "{",
+            "    loginUserId : null, // 아이디",
+            "    isProcessLogin: false // 로그인진행여부",
+            "}"
+        ],
+        "designer|commentHeader": [
+            "메인 / 로그인 ViewModel",
+            "",
+            "@author BNK시스템/팀장/손승범",
+            "@since 2019.06.17.",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "  수정일         수정자                      수정내용",
+            " ------------   ---------                 --------------------------",
+            "  2019.06.17.   BNK시스템/팀장/손승범         최초 생성"
+        ],
+        "designer|userAlias": "login",
+        "designer|userClassName": "common.LoginViewModel"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "designer|commentHeader": "comment",
+        "data": "object"
+    },
+    "designerId": "a32508fe-e4b4-473b-91b9-da9bc5c96d59"
+}

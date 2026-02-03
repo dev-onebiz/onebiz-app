@@ -1,0 +1,20 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "js_6tm02tap",
+        "includeInBundle": true,
+        "url": "Messages.js"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "includeInBundle": "boolean",
+        "url": "uri"
+    },
+    "name": "js1",
+    "designerId": "b1cda2f5-9898-4cdf-923a-533982dfce4f"
+}

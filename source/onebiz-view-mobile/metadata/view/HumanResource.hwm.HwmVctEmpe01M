@@ -1,0 +1,237 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "HwmVctEmpe01M"
+        ],
+        "designer|commentHeader": [
+            "모바일 :: 휴가통계 - 항목",
+            "",
+            "@author BNK시스템/대리/하동훈",
+            "@since 2019.07.04",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일\t\t  수정자                수정내용",
+            "----------\t------------------   --------------------------",
+            "2019.07.04\tBNK시스템/대리/하동훈   최초 생성"
+        ],
+        "designer|userAlias": "HwmVctEmpe01M",
+        "designer|userClassName": "HumanResource.hwm.HwmVctEmpe01M",
+        "itemId": "budget.exp.expnteaply01m1",
+        "layout": "vbox",
+        "scrollable": true
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "layout": "string",
+        "itemId": "string",
+        "scrollable": "auto",
+        "designer|commentHeader": "comment",
+        "designer|extend": "string"
+    },
+    "name": "HumanResource.hwm.HwmMthEmpe01M1",
+    "designerId": "00051cf1-8074-446c-acb1-6f476fd86f0e",
+    "viewControllerInstanceId": "37b37950-a145-469f-a6ee-443aa8488699",
+    "viewModelInstanceId": "d12dd74f-3640-454c-b517-cf04fcb3c01b",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "center",
+                "container|pack": "center",
+                "docked": "top",
+                "height": 60,
+                "layout": "vbox",
+                "scrollable": true
+            },
+            "configAlternates": {
+                "container|align": "string",
+                "height": "auto",
+                "layout": "string",
+                "scrollable": "auto",
+                "layout|flex": "number",
+                "docked": "string",
+                "container|pack": "string"
+            },
+            "name": "MyContainer",
+            "designerId": "90fd0de6-5237-4dfb-a4ed-9019b3bfc3be",
+            "cn": [
+                {
+                    "type": "Ext.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dateFormat": "Y년",
+                        "reference": "dtpStDt",
+                        "textAlign": "center",
+                        "width": 200
+                    },
+                    "configAlternates": {
+                        "dateFormat": "string",
+                        "docked": "string",
+                        "height": "auto",
+                        "label": "string",
+                        "reference": "string",
+                        "width": "auto",
+                        "margin": "auto",
+                        "maxWidth": "auto",
+                        "minWidth": "auto",
+                        "textAlign": "string",
+                        "style": "string"
+                    },
+                    "name": "MyDate4",
+                    "designerId": "1b1e63ec-cfdc-4d98-acc9-c3987e602854",
+                    "cn": [
+                        {
+                            "type": "Ext.picker.Date",
+                            "reference": {
+                                "name": "picker",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dayText": "일",
+                                "header": false,
+                                "hideOnMaskTap": true,
+                                "monthText": "월",
+                                "slotOrder": [
+                                    "[\"year\"]"
+                                ],
+                                "title": "",
+                                "yearText": "년"
+                            },
+                            "configAlternates": {
+                                "dayText": "string",
+                                "hideOnMaskTap": "boolean",
+                                "monthText": "string",
+                                "title": "string",
+                                "yearText": "string",
+                                "header": "boolean",
+                                "slotOrder": "array"
+                            },
+                            "name": "MyDatePicker",
+                            "designerId": "42b21d55-95e7-4349-b7ec-ae7928426581"
+                        },
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onDatefieldChange1",
+                                "implHandler": [
+                                    "        var me = this,",
+                                    "            refs = me.getReferences(),",
+                                    "            grid = refs.grid,",
+                                    "            stDt = refs.dtpStDt,",
+                                    "            edDt = refs.dtpEdDt;",
+                                    "",
+                                    "        var params = {};",
+                                    "",
+                                    "        me.search(params);"
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onDatefieldChange1",
+                            "designerId": "7314e554-c084-407c-aeb5-b600f44ff286"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "height": 500,
+                "hidden": false,
+                "layout": "vbox",
+                "margin": "0 0 5px 10px",
+                "reference": "allCntCheckScreen",
+                "scrollable": true
+            },
+            "configAlternates": {
+                "container|align": "string",
+                "height": "auto",
+                "layout": "string",
+                "scrollable": "auto",
+                "layout|flex": "number",
+                "docked": "string",
+                "container|pack": "string",
+                "store": "binding",
+                "reference": "string",
+                "hidden": "boolean",
+                "margin": "auto"
+            },
+            "name": "MyContainer15",
+            "designerId": "c8e7a132-9741-493e-bd20-98d30fec0579"
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "화면초기화"
+                ],
+                "fn": "initialize",
+                "implHandler": [
+                    "var me = this,",
+                    "    refs = me.getReferences(),",
+                    "    grid = refs.grid;",
+                    "",
+                    "var date = new Date();",
+                    "refs.dtpStDt.setValue(date.getFullYear()+'년');",
+                    "",
+                    "this.search();"
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string",
+                "designer|commentHeader": "comment"
+            },
+            "name": "initialize",
+            "designerId": "0293e854-da6d-4ed3-ae72-b0591367f822"
+        }
+    ]
+}

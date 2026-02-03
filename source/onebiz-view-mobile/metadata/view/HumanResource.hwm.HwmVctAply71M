@@ -1,0 +1,376 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "HwmVctAply71M"
+        ],
+        "designer|commentHeader": [
+            "모바일 시스템 근태관리 :: 휴가신청 결재함 상세 - 화면",
+            "",
+            "@author BNK시스템/파트너/서무성",
+            "@since 2022.02.03",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일\t\t  수정자                  수정내용",
+            "----------\t------------------     --------------------------",
+            "2022.02.03\tBNK시스템/파트너/서무성   최초 생성"
+        ],
+        "designer|extend": "Ext.window.Window",
+        "designer|userAlias": "HwmVctAply71M",
+        "designer|userClassName": "HumanResource.hwm.HwmVctAply71M",
+        "height": "98%",
+        "layout": "vbox",
+        "width": "98%"
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "title": "string",
+        "layout": "string",
+        "designer|extend": "string",
+        "height": "auto",
+        "width": "auto",
+        "scrollable": "auto",
+        "designer|commentHeader": "comment"
+    },
+    "name": "HumanResource.hwm.HwmVctAply71M1",
+    "designerId": "e2ffbb7b-d775-48a4-9a6b-d625a233a12f",
+    "viewControllerInstanceId": "669203cc-aeb5-42fe-8e02-aa3998ae8d55",
+    "viewModelInstanceId": "57e6db13-393f-4f2c-9396-8d45cc41780f",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout": "vbox",
+                "layout|flex": 1,
+                "margin": 15
+            },
+            "configAlternates": {
+                "layout": "string",
+                "margin": "auto",
+                "layout|flex": "number"
+            },
+            "name": "MyContainer120",
+            "designerId": "ef4bae55-6fcb-426f-ac26-971492f66d4f",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout": "hbox",
+                        "margin": "0 0 7 0"
+                    },
+                    "configAlternates": {
+                        "layout": "string",
+                        "margin": "auto"
+                    },
+                    "name": "MyContainer110",
+                    "designerId": "a3f5f90c-cbd3-4864-bffd-fd3ba65d22e1",
+                    "cn": [
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "html": "구분",
+                                "style": "font-size : 20px"
+                            },
+                            "configAlternates": {
+                                "html": "string",
+                                "style": "string"
+                            },
+                            "name": "MyLabel40",
+                            "designerId": "4a67ab06-5401-4d08-8df0-8a7e742b15cf"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1
+                            },
+                            "configAlternates": {
+                                "layout|flex": "number"
+                            },
+                            "name": "MySpacer9",
+                            "designerId": "960c8687-545f-40a6-92db-50f97865308f"
+                        },
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "html": "휴가 신청서",
+                                "reference": "headTitle",
+                                "style": "font-size : 20px; color : red;"
+                            },
+                            "configAlternates": {
+                                "style": "string",
+                                "html": "string",
+                                "reference": "string"
+                            },
+                            "name": "MyLabel42",
+                            "designerId": "7db87364-562b-4309-a21a-c55c814f222b"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout": "hbox",
+                        "margin": "0 0 7 0"
+                    },
+                    "configAlternates": {
+                        "layout": "string",
+                        "margin": "auto"
+                    },
+                    "name": "MyContainer121",
+                    "designerId": "11cb716a-20cf-4f28-8b58-c5ff3f46f5ec",
+                    "cn": [
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "html": "상신일",
+                                "style": "font-size : 20px"
+                            },
+                            "configAlternates": {
+                                "html": "string",
+                                "style": "string"
+                            },
+                            "name": "MyLabel40",
+                            "designerId": "f0c5704b-e6fa-4698-915c-77bfaee80615"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1
+                            },
+                            "configAlternates": {
+                                "layout|flex": "number"
+                            },
+                            "name": "MySpacer11",
+                            "designerId": "5877d3d1-8740-4b31-a886-ea2a60b47c7d"
+                        },
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "reference": "rgdt",
+                                "style": "font-size : 20px; color : red;"
+                            },
+                            "configAlternates": {
+                                "style": "string",
+                                "html": "string",
+                                "reference": "string"
+                            },
+                            "name": "MyLabel42",
+                            "designerId": "64b4266d-314c-4b87-afac-85ef63922694"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout": "vbox",
+                        "layout|flex": 1,
+                        "scrollable": "vertical"
+                    },
+                    "configAlternates": {
+                        "layout": "string",
+                        "layout|flex": "number",
+                        "scrollable": "auto"
+                    },
+                    "name": "MyContainer122",
+                    "designerId": "2d1a6763-3e6d-461d-b214-e31466d89b99",
+                    "cn": [
+                        {
+                            "type": "linkedinstance",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "reference": "applyInfo"
+                            },
+                            "configAlternates": {
+                                "layout|flex": "number",
+                                "reference": "string"
+                            },
+                            "name": "humanresource.hwm.hwmvctaply71mcontainer",
+                            "designerId": "936029b7-504d-470d-9fcd-54d03b3adcce",
+                            "masterInstanceId": "369f07d9-d75f-4def-91f3-5dd7e74943bf"
+                        },
+                        {
+                            "type": "linkedinstance",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 450
+                            },
+                            "configAlternates": {
+                                "height": "auto"
+                            },
+                            "name": "common.approvallinegrid",
+                            "designerId": "3ec0a7de-c592-48d0-8d9f-265978fecf05",
+                            "masterInstanceId": "539a6522-9843-49e3-9ecb-51046086b29b"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "Initialize",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    vctRecord = component.initialConfig.vctRecord, // HwmVctAply01M 화면에서 넘긴 데이터",
+                    "    title = component.initialConfig.title;",
+                    "",
+                    "var aprHistId = null,",
+                    "    command = null,",
+                    "    docData = null,",
+                    "    afterchange = null,",
+                    "    hrWrkmVctApfId = null,",
+                    "    record = null;",
+                    "",
+                    "// 휴가신청서 목록에서 상세보기",
+                    "if(vctRecord && vctRecord.beforePage === 'HwmVctAply01M'){",
+                    "    aprHistId = vctRecord.comAprHistId;",
+                    "    command = Constants.sanction.COMPLETED_BOX; // 단순 조회이므로 완료함 처럼 보이도록",
+                    "    //docData",
+                    "    afterchange = vctRecord;",
+                    "    hrWrkmVctApfId = afterchange.hrWrkmVctApfId;",
+                    "}",
+                    "else { // 결재함",
+                    "    aprHistId = component.initialConfig.aprHistId;",
+                    "    command = component.initialConfig.command;",
+                    "    docData = component.initialConfig.docData;",
+                    "    afterchange = docData.afterchange;",
+                    "    hrWrkmVctApfId = afterchange.hrWrkmVctApfId;",
+                    "    record = component.initialConfig.record;",
+                    "}",
+                    "",
+                    "/* 화면에서 필요한 데이터 */",
+                    "vm.set('vct', afterchange);",
+                    "vm.set('hrWrkmVctApfId', hrWrkmVctApfId);",
+                    "/* 화면에서 필요한 데이터 */",
+                    "",
+                    "",
+                    "/* 결재에 필요한 데이터 */",
+                    "vm.set('afterchange', afterchange);",
+                    "vm.set('aprHistId', aprHistId);",
+                    "vm.set('record', record);",
+                    "vm.set('command', command);",
+                    "/* 결재에 필요한 데이터 */",
+                    "",
+                    "refs.rgdt.setHtml(record.rgdt);",
+                    "refs.headTitle.setHtml(record.docNm);",
+                    "",
+                    "",
+                    "// 결재문서 초기화 설정",
+                    "ApprovalBoxSvc.setup({",
+                    "    command   : command,",
+                    "    viewModel : vm,",
+                    "    aprHistId : aprHistId,",
+                    "    edocCd    : 'HwmVctAply71',",
+                    "    scope     : me",
+                    "});",
+                    "",
+                    "this.onSelect();",
+                    "",
+                    ""
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "Initialize",
+            "designerId": "78e56bc0-6930-4811-a9bf-7d9f4c1b10cd"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom"
+            },
+            "configAlternates": {
+                "docked": "string"
+            },
+            "name": "common.edocbuttoncontainer2",
+            "designerId": "f1d45911-948b-4779-8329-4eb1db69720f",
+            "masterInstanceId": "864c1b4b-9f05-40c9-9015-61086ad52a8d"
+        }
+    ]
+}

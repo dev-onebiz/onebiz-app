@@ -1,0 +1,41 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            "메인 / 404 Controller",
+            "",
+            "@author BNK시스템/팀장/손승범",
+            "@since 2019.06.17.",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "  수정일         수정자                      수정내용",
+            " ------------   ---------                 --------------------------",
+            "  2019.06.17.   BNK시스템/팀장/손승범         최초 생성"
+        ],
+        "designer|userAlias": "common.error404",
+        "designer|userClassName": "common.Error404ViewController",
+        "viewId": "Error404"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "designer|commentHeader": "comment",
+        "viewId": "string"
+    },
+    "designerId": "07f12ded-f45d-4e78-9314-a56db17c9f7e",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "viewId",
+            "type": "string"
+        }
+    ]
+}

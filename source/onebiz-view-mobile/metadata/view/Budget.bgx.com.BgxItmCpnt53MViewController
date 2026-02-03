@@ -1,0 +1,84 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            "모바일 예산 : 결의서 작성 [회의록 팝업] - 컨트롤러",
+            "",
+            "@author BNK시스템/계장/지민영",
+            "@since 2020.05.22",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일       수정자                수정내용",
+            "----------  ------------------   --------------------------",
+            "2020.05.22  BNK시스템/계장/지민영   최초 생성"
+        ],
+        "designer|extend": "BaseViewController",
+        "designer|userAlias": "BgxItmCpnt53MViewController",
+        "designer|userClassName": "Budget.bgx.com.BgxItmCpnt53MViewController",
+        "viewId": "BgxItmCpnt53M"
+    },
+    "configAlternates": {
+        "designer|commentHeader": "comment",
+        "designer|extend": "string",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "viewId": "string"
+    },
+    "designerId": "84c19ddc-7a0f-49e5-93f4-9930baab39f6",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "viewId",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "mtgInfo"
+                ],
+                "fn": "setOrigData",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences();",
+                    "",
+                    "// 일시",
+                    "if (mtgInfo.mtgDt && mtgInfo.mtgHr) {",
+                    "    var dt = mtgInfo.mtgDt,",
+                    "        hr = mtgInfo.mtgHr,",
+                    "        date = new Date(dt.substr(0,4), Number(dt.substr(4,2))-1, dt.substr(6,2), hr.substr(0,2), hr.substr(2,2), hr.substr(4,2));",
+                    "    refs.mtgDt.setValue(date);",
+                    "    refs.mtgHr.setValue(date);",
+                    "} ",
+                    "refs.mtgPlcCntn.setValue(mtgInfo.mtgPlcCntn);\t\t// 장소",
+                    "refs.mtgPtcpPrsn.setValue(mtgInfo.mtgPtcpPrsn);\t\t// 참석자",
+                    "refs.mtgTitCntn.setValue(mtgInfo.mtgTitCntn);\t\t// 회의명",
+                    "refs.mtgCntn.setValue(mtgInfo.mtgCntn);\t\t\t\t// 내용"
+                ]
+            },
+            "configAlternates": {
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "setOrigData",
+            "designerId": "31048844-e84c-4ccc-b147-c2ded9168897"
+        }
+    ]
+}

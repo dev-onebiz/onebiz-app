@@ -1,0 +1,177 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            "모바일 :: 외근신청 - 컨트롤러",
+            "",
+            "@author BNK시스템/기타/이상근",
+            "@since 2019.06.14",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일\t\t  수정자                수정내용",
+            "----------\t------------------   --------------------------",
+            "2019.06.14\tBNK시스템/기타/이상근   최초 생성"
+        ],
+        "designer|extend": "BaseViewController",
+        "designer|userAlias": "humanresource.hwm.hwmoutaply01m",
+        "designer|userClassName": "HumanResource.hwm.HwmOutAply01MViewController",
+        "viewId": "HwmOutAply01M"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "designer|extend": "string",
+        "designer|commentHeader": "comment",
+        "viewId": "string"
+    },
+    "name": "HumanResource.hwm.HwmHodAply01MViewController1",
+    "designerId": "1194d637-e373-4376-a4e9-497a4eca6e38",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "viewId",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "params"
+                ],
+                "fn": "search",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    params = params || {},",
+                    "    store = vm.storeInfo.Store;",
+                    "",
+                    "    params.hrHrpmEmpId = SecurityUtils.getPrincipal().hrHrpmEmpId;",
+                    "",
+                    "",
+                    "",
+                    "var dateCompont = ['startDate',",
+                    "                   'endDate'",
+                    "                  ];",
+                    "",
+                    "if(refs[dateCompont[0]].getValue() > refs[dateCompont[1]].getValue()){",
+                    "    Ext.Msg.alert('확인','시작일이 종료일보다 클 수 없습니다.');",
+                    "    return;",
+                    "",
+                    "}",
+                    "",
+                    "for(var key in dateCompont ){",
+                    "    var dateObj = refs[dateCompont[key]];",
+                    "    var date = dateObj.getValue();",
+                    "    var tempMonth = date.getMonth()+1 ;",
+                    "    tempMonth += \"\";",
+                    "    tempMonth = (tempMonth.length == 1 ? \"0\" :\"\") + tempMonth;",
+                    "",
+                    "",
+                    "    var tempDate = date.getDate();",
+                    "    tempDate += \"\";",
+                    "    tempDate = (tempDate.length == 1 ? \"0\" :\"\") + tempDate;",
+                    "",
+                    "    params[dateCompont[key]] = date.getFullYear() +\"\" + tempMonth + \"\"+tempDate;",
+                    "",
+                    "}",
+                    "",
+                    "",
+                    "if(params =={}){",
+                    "    store.getProxy().extraParams.page = 1;",
+                    "    var toolbar = refs.grid.getPlugins()[0];",
+                    "    toolbar.setCurrentPage(1);",
+                    "",
+                    "}else{",
+                    "store.getProxy().extraParams = params;",
+                    "",
+                    "}",
+                    "",
+                    "store.removeAll();",
+                    "store.loadPage(1);",
+                    "",
+                    ""
+                ]
+            },
+            "configAlternates": {
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code",
+                "designer|commentHeader": "comment"
+            },
+            "name": "search",
+            "designerId": "e646fda6-6d97-4657-9245-d9f79a34c2b6"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "defaut",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    store = vm.storeInfo.Store;",
+                    "",
+                    "store.getProxy().extraParams.page = 1;",
+                    "var toolbar = refs.grid.getPlugins()[0];",
+                    "toolbar.setCurrentPage(1);",
+                    "",
+                    ""
+                ]
+            },
+            "configAlternates": {
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code",
+                "designer|commentHeader": "comment"
+            },
+            "name": "defaut",
+            "designerId": "6c00f99a-ffbf-41d1-be8b-6d0fd479b404"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "itemId"
+                ],
+                "fn": "showView",
+                "implHandler": [
+                    "        var me = this;",
+                    "        me.getView().setActiveItem(itemId);"
+                ]
+            },
+            "configAlternates": {
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "showView",
+            "designerId": "0c5ec2d1-92d2-4940-a7ea-1229cc282907"
+        }
+    ]
+}

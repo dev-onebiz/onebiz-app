@@ -1,0 +1,23 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "{",
+            "vct : {}",
+            "}"
+        ],
+        "designer|userAlias": "HwmVctAply71MItem_bakViewModel",
+        "designer|userClassName": "HumanResource.hwm.HwmVctAply71MItem_bakViewModel"
+    },
+    "configAlternates": {
+        "data": "object",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "designerId": "1fad8780-4857-4a0d-809e-a7c83e8a6a77"
+}

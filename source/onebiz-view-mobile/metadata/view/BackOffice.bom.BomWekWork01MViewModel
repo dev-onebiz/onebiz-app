@@ -1,0 +1,22 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            ""
+        ],
+        "designer|userAlias": "backoffice.bom.bomwekwork01m",
+        "designer|userClassName": "BackOffice.bom.BomWekWork01MViewModel"
+    },
+    "configAlternates": {
+        "designer|commentHeader": "comment",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "Budget.bgx.com.BgxComScrp01MViewModel1",
+    "designerId": "cec097c2-a86d-4604-990d-54441e8e0c5e"
+}

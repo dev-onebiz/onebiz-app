@@ -1,0 +1,1382 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "FindUserPopupM"
+        ],
+        "autoSize": false,
+        "bodyPadding": 0,
+        "designer|extend": "Ext.window.Window",
+        "designer|userAlias": "FindUserPopupM",
+        "designer|userClassName": "common.FindUserPopupM",
+        "height": "98%",
+        "showAnimation": "pop",
+        "style": [
+            "{",
+            "'border-top': '1px solid #D1D1D1'",
+            "",
+            "}"
+        ],
+        "width": "95%"
+    },
+    "configAlternates": {
+        "viewModel": "object",
+        "alternateClassName": "typedarray",
+        "bodyPadding": "auto",
+        "designer|extend": "string",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "id": "string",
+        "width": "auto",
+        "height": "auto",
+        "showAnimation": "string",
+        "autoSize": "boolean",
+        "style": "object"
+    },
+    "name": "MyFormPanel4",
+    "designerId": "9cb63d63-80a1-4e3c-a401-bfa907da2bc9",
+    "viewControllerInstanceId": "dd6064d7-1638-4290-a1d7-5f7c07dd8f22",
+    "viewModelInstanceId": "023a2352-fef0-4f8f-9638-f323e1e1552f",
+    "cn": [
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "initialize",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    gridDown = refs.gridDown;",
+                    "",
+                    "me.GET_CODELIST({stcd : \"01\" , codeDvcd : 'DEPTLV'})",
+                    "    .then(function(records) {",
+                    "    var store = me.getViewModel().get('DeptStore');",
+                    "    store.add({text : \"- 전  체 -\", value : 999});",
+                    "    store.add(records.data);",
+                    "    refs.searchDept.setValue(SecurityUtils.getPrincipal().hrHrpmDeptId);",
+                    "    me.onSelect(false);",
+                    "",
+                    "});",
+                    "if(component.extenalEmpHidden){",
+                    "    refs.tab.remove(refs.extenalEmp);",
+                    "}",
+                    "// 업무추진비 아닐 때, 외부직원 탭 막기 NTE011",
+                    "var accItemCd = component.initialConfig.accItemCd;",
+                    "if(accItemCd === '09'){ // 업무추진비",
+                    "    refs.extenalEmp.setDisabled(false);",
+                    "    refs.addBtn.setDisabled(false);",
+                    "    refs.modifyBtn.setDisabled(false);",
+                    "    refs.delBtn.setDisabled(false);",
+                    "    refs.resetBtn.setDisabled(false);",
+                    "",
+                    "    refs.dpnm.setDisabled(false);",
+                    "    refs.empePsitNm.setDisabled(false);",
+                    "    refs.empeNo.setDisabled(false);",
+                    "    refs.empeNm.setDisabled(false);",
+                    "",
+                    "} else {",
+                    "    refs.extenalEmp.setDisabled(true);",
+                    "    refs.addBtn.setDisabled(true);",
+                    "    refs.modifyBtn.setDisabled(true);",
+                    "    refs.delBtn.setDisabled(false);",
+                    "    refs.resetBtn.setDisabled(true);",
+                    "",
+                    "    refs.dpnm.setDisabled(true);",
+                    "    refs.empePsitNm.setDisabled(true);",
+                    "    refs.empeNo.setDisabled(true);",
+                    "    refs.empeNm.setDisabled(true);",
+                    "}",
+                    "",
+                    "var gridData = component.initialConfig.gridData;",
+                    "for(var i in gridData){",
+                    "    this.getStore('SelectEmpStore').add(gridData[i]);",
+                    "}",
+                    ""
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "initialize",
+            "designerId": "0db888eb-04d5-4f94-9936-22a80303e590"
+        },
+        {
+            "type": "Ext.tab.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoSize": false,
+                "height": "63%",
+                "minHeight": "",
+                "reference": "tab"
+            },
+            "configAlternates": {
+                "autoSize": "boolean",
+                "height": "auto",
+                "minHeight": "auto",
+                "reference": "string"
+            },
+            "name": "MyTabPanel",
+            "designerId": "78aeb153-aabd-45bc-8f36-02c2b5394302",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "autoSize": false,
+                        "container|align": "center",
+                        "designer|displayName": "내부 사용자 선택",
+                        "docked": null,
+                        "layout": "vbox",
+                        "reference": "internalEmp",
+                        "scrollable": true,
+                        "title": "내부 사용자 선택"
+                    },
+                    "configAlternates": {
+                        "autoSize": "boolean",
+                        "container|align": "string",
+                        "height": "auto",
+                        "layout": "string",
+                        "title": "string",
+                        "docked": "string",
+                        "scrollable": "auto",
+                        "designer|displayName": "string",
+                        "reference": "string"
+                    },
+                    "name": "MyContainer4",
+                    "designerId": "27cc66b4-df44-4705-bf40-c7c78a1feabc",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "docked": "top",
+                                "height": "15%"
+                            },
+                            "configAlternates": {
+                                "docked": "string",
+                                "height": "auto"
+                            },
+                            "name": "MyContainer",
+                            "designerId": "5b37c3c5-3622-467c-94ba-bcdb42a7029b",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.ComboBox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "docked": "top",
+                                        "editable": false,
+                                        "height": "100%",
+                                        "itemId": "mycombobox1",
+                                        "label": "",
+                                        "labelAlign": "right",
+                                        "margin": "0 0 10 10",
+                                        "queryMode": "local",
+                                        "reference": "searchDept",
+                                        "store": [
+                                            "{DeptStore}"
+                                        ],
+                                        "width": "95%"
+                                    },
+                                    "configAlternates": {
+                                        "store": "binding",
+                                        "label": "string",
+                                        "queryMode": "string",
+                                        "reference": "string",
+                                        "docked": "string",
+                                        "height": "auto",
+                                        "itemId": "string",
+                                        "labelAlign": "string",
+                                        "margin": "auto",
+                                        "width": "auto",
+                                        "editable": "boolean"
+                                    },
+                                    "name": "MyComboBox1",
+                                    "designerId": "3bb17826-1ce1-488f-a352-2435d11ce074",
+                                    "customConfigs": [
+                                        {
+                                            "group": "(Custom Properties)",
+                                            "name": "emptyText",
+                                            "type": "string"
+                                        }
+                                    ],
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onMycombobox1Select",
+                                                "implHandler": [
+                                                    "        this.onSelect();"
+                                                ],
+                                                "name": "select",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onMycombobox1Select",
+                                            "designerId": "75adf464-cc31-49f0-8d4f-f1c8d3bb5b24"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "start",
+                                "container|pack": "center",
+                                "docked": "top",
+                                "height": "84%",
+                                "layout": "hbox",
+                                "scrollable": true
+                            },
+                            "configAlternates": {
+                                "container|align": "string",
+                                "docked": "string",
+                                "height": "auto",
+                                "layout": "string",
+                                "container|pack": "string",
+                                "scrollable": "auto"
+                            },
+                            "name": "MyContainer3",
+                            "designerId": "d03dba53-5ac0-4265-a9d4-49059ca79e63",
+                            "cn": [
+                                {
+                                    "type": "Ext.grid.Grid",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "autoSize": false,
+                                        "bufferSize": 100,
+                                        "deselectOnContainerClick": false,
+                                        "designer|displayName": "deptEmpInfo",
+                                        "docked": "top",
+                                        "groupHeader": [
+                                            "{\"xtype\":\"itemheader\",",
+                                            "   \"tpl\":\"{html} ({count})\"",
+                                            "   ",
+                                            " ",
+                                            "   }"
+                                        ],
+                                        "height": "100%",
+                                        "hideHeaders": true,
+                                        "minHeight": "",
+                                        "reference": "gridUp",
+                                        "store": [
+                                            "{EMPINFOStore}"
+                                        ],
+                                        "width": "100%"
+                                    },
+                                    "configAlternates": {
+                                        "store": "binding",
+                                        "autoSize": "boolean",
+                                        "bufferSize": "number",
+                                        "deselectOnContainerClick": "boolean",
+                                        "designer|displayName": "string",
+                                        "groupHeader": "object",
+                                        "grouped": "boolean",
+                                        "height": "auto",
+                                        "hideHeaders": "boolean",
+                                        "minHeight": "auto",
+                                        "reference": "string",
+                                        "docked": "string",
+                                        "width": "auto"
+                                    },
+                                    "name": "MyGrid3",
+                                    "designerId": "eee222f8-e711-4dde-9fde-c2a9c7909ce1",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.grid.column.Text",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dataIndex": "dpnm",
+                                                "docked": null,
+                                                "flex": "1",
+                                                "hidden": true,
+                                                "sortable": false,
+                                                "text": "부서명",
+                                                "width": 89
+                                            },
+                                            "configAlternates": {
+                                                "dataIndex": "datafield",
+                                                "docked": "string",
+                                                "text": "string",
+                                                "width": "auto",
+                                                "flex": "string",
+                                                "sortable": "boolean",
+                                                "hidden": "boolean"
+                                            },
+                                            "name": "MyTextColumn2",
+                                            "designerId": "6ed29f81-64ea-4217-b307-755e5e0ee146",
+                                            "customConfigs": [
+                                                {
+                                                    "group": "(Custom Properties)",
+                                                    "name": "flex",
+                                                    "type": "string"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Text",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dataIndex": "empeNm",
+                                                "defaultWidth": null,
+                                                "docked": null,
+                                                "hidden": false,
+                                                "sortable": false,
+                                                "text": "이름",
+                                                "width": "40%"
+                                            },
+                                            "configAlternates": {
+                                                "dataIndex": "datafield",
+                                                "docked": "string",
+                                                "text": "string",
+                                                "width": "auto",
+                                                "flex": "string",
+                                                "sortable": "boolean",
+                                                "hidden": "boolean",
+                                                "defaultWidth": "number"
+                                            },
+                                            "name": "MyTextColumn1",
+                                            "designerId": "b0c8e92b-02fb-4c30-a097-ad7e0a7374a5",
+                                            "customConfigs": [
+                                                {
+                                                    "group": "(Custom Properties)",
+                                                    "name": "flex",
+                                                    "type": "string"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dataIndex": "empeNo",
+                                                "docked": null,
+                                                "hidden": false,
+                                                "text": "사번",
+                                                "width": "30%"
+                                            },
+                                            "configAlternates": {
+                                                "dataIndex": "datafield",
+                                                "docked": "string",
+                                                "text": "string",
+                                                "width": "auto",
+                                                "hidden": "boolean"
+                                            },
+                                            "name": "MyColumn",
+                                            "designerId": "fba3fc68-ac72-4994-8388-7e938a779f59"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dataIndex": "empePsitNm",
+                                                "docked": null,
+                                                "text": "직급",
+                                                "width": "30%"
+                                            },
+                                            "configAlternates": {
+                                                "dataIndex": "datafield",
+                                                "docked": "string",
+                                                "text": "string",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyColumn3",
+                                            "designerId": "a845d303-6cd5-43cb-a59c-f05e25f2f987"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dataIndex": "empePsitCd",
+                                                "docked": null,
+                                                "hidden": true,
+                                                "text": "직급코드",
+                                                "width": 80
+                                            },
+                                            "configAlternates": {
+                                                "dataIndex": "datafield",
+                                                "docked": "string",
+                                                "hidden": "boolean",
+                                                "text": "string",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyColumn5",
+                                            "designerId": "015ff136-36b5-4f35-97ee-f4bdaadf1578"
+                                        },
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|commentHeader": [
+                                                    "Grid1 -> Grid2"
+                                                ],
+                                                "fn": "onGridEmpInfoClick",
+                                                "implHandler": [
+                                                    "var me = this,",
+                                                    "    vm = me.getViewModel(),",
+                                                    "    refs = me.getReferences(),",
+                                                    "    grid = refs.gridUp,",
+                                                    "    grid2 = refs.gridDown,",
+                                                    "    gridUp = refs.gridUp,",
+                                                    "    gridDown = refs.gridDown,",
+                                                    "    grid2_len = gridDown.innerItems.length,",
+                                                    "    selectedEmp = selected[0];",
+                                                    "",
+                                                    "var grid2Store = this.getStore('SelectEmpStore').data.items;",
+                                                    "for(var i in grid2Store){",
+                                                    "    if(grid2Store[i].data.hrHrpmEmpId === selectedEmp.data.hrHrpmEmpId){",
+                                                    "        return false;",
+                                                    "    }",
+                                                    "}",
+                                                    "",
+                                                    "selectedEmp.set(\"stfDvcd\",'01'); // 내부직원 01, 외부직원 02 구분 // TODO : 하드코딩 수정할 수 있으면 수정해 주세요.",
+                                                    "selectedEmp.set(\"stfDvcdNm\",'내부직원'); // 내부직원 01, 외부직원 02 구분 // TODO : 하드코딩 수정할 수 있으면 수정해 주세요.",
+                                                    "gridDown.getStore().add(selectedEmp);",
+                                                    ""
+                                                ],
+                                                "name": "select",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string",
+                                                "designer|commentHeader": "comment"
+                                            },
+                                            "name": "onGridEmpInfoClick",
+                                            "designerId": "721d612f-0000-4ac1-af84-f429815cd44e"
+                                        },
+                                        {
+                                            "type": "Ext.grid.plugin.PagingToolbar",
+                                            "reference": {
+                                                "name": "plugins",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "reference": "pagingToolbar"
+                                            },
+                                            "configAlternates": {
+                                                "reference": "string"
+                                            },
+                                            "name": "MyPagingToolbar2",
+                                            "designerId": "7a21b953-e580-47b6-b0ed-53ff2aefaae3"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "stretchmax",
+                        "designer|displayName": "외부 사용자 선택",
+                        "height": "100%",
+                        "layout": "vbox",
+                        "reference": "extenalEmp",
+                        "scrollable": false,
+                        "title": "외부 사용자 입력"
+                    },
+                    "configAlternates": {
+                        "title": "string",
+                        "scrollable": "auto",
+                        "container|align": "string",
+                        "height": "auto",
+                        "layout": "string",
+                        "designer|displayName": "string",
+                        "reference": "string"
+                    },
+                    "name": "MyContainer7",
+                    "designerId": "0de5bb80-df2b-4522-8f49-aeeea88eb7c6",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "inputInfo",
+                                "docked": "top",
+                                "height": "90%",
+                                "layout": "vbox",
+                                "scrollable": true
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "docked": "string",
+                                "height": "auto",
+                                "layout": "string",
+                                "scrollable": "auto"
+                            },
+                            "name": "MyContainer8",
+                            "designerId": "44ebf907-cf53-4098-8ab8-9fd4166dee29",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "autoComplete": false,
+                                        "label": "회사명",
+                                        "reference": "dpnm"
+                                    },
+                                    "configAlternates": {
+                                        "label": "string",
+                                        "reference": "string",
+                                        "autoComplete": "boolean"
+                                    },
+                                    "name": "MyTextField11",
+                                    "designerId": "23ada161-d9c4-4448-8edf-31afd4cbc250"
+                                },
+                                {
+                                    "type": "Ext.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "autoComplete": false,
+                                        "label": "부서",
+                                        "reference": "empePsitNm"
+                                    },
+                                    "configAlternates": {
+                                        "label": "string",
+                                        "reference": "string",
+                                        "autoComplete": "boolean"
+                                    },
+                                    "name": "MyTextField10",
+                                    "designerId": "3ad448c1-e4e7-43d4-9978-905cf91dcf5b"
+                                },
+                                {
+                                    "type": "Ext.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "autoComplete": false,
+                                        "label": "성명",
+                                        "reference": "empeNm"
+                                    },
+                                    "configAlternates": {
+                                        "label": "string",
+                                        "reference": "string",
+                                        "autoComplete": "boolean"
+                                    },
+                                    "name": "MyTextField13",
+                                    "designerId": "bb361390-7af2-482b-b863-ba1d76c04bdc"
+                                },
+                                {
+                                    "type": "Ext.field.Number",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "autoComplete": false,
+                                        "label": "연락처",
+                                        "maxLength": 13,
+                                        "reference": "empeNo"
+                                    },
+                                    "configAlternates": {
+                                        "label": "string",
+                                        "reference": "string",
+                                        "autoComplete": "boolean",
+                                        "maxLength": "number"
+                                    },
+                                    "name": "MyNumberField",
+                                    "designerId": "b96ba863-f9da-4a4f-a110-1084ec60fd20"
+                                },
+                                {
+                                    "type": "Ext.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "hidden": true,
+                                        "label": "Field",
+                                        "reference": "id"
+                                    },
+                                    "configAlternates": {
+                                        "label": "string",
+                                        "reference": "string",
+                                        "hidden": "boolean"
+                                    },
+                                    "name": "MyTextField5",
+                                    "designerId": "bc8cd907-a0b8-4ca8-a976-31105659f8e3"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "docked": "bottom",
+                                "height": "10%",
+                                "layout": "hbox"
+                            },
+                            "configAlternates": {
+                                "docked": "string",
+                                "height": "auto",
+                                "layout": "string"
+                            },
+                            "name": "MyContainer12",
+                            "designerId": "2e73bb4b-2513-48fe-8603-57075740f6b3",
+                            "cn": [
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "html": "추가",
+                                        "itemId": "mybutton8",
+                                        "reference": "addBtn",
+                                        "text": "MyButton8",
+                                        "width": "100%"
+                                    },
+                                    "configAlternates": {
+                                        "html": "string",
+                                        "reference": "string",
+                                        "text": "string",
+                                        "itemId": "string",
+                                        "width": "auto"
+                                    },
+                                    "name": "MyButton8",
+                                    "designerId": "f4ad7af8-e54f-4e90-90d0-0ccc4c0b56c6",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onAddBtnTap",
+                                                "implHandler": [
+                                                    "var me = this;",
+                                                    "var refs = me.getReferences();",
+                                                    "var gridDown = refs.gridDown;",
+                                                    "",
+                                                    "var empePsitNm = refs.empePsitNm.getValue();",
+                                                    "var dpnm = refs.dpnm.getValue();",
+                                                    "var empeNo = refs.empeNo.getValue();",
+                                                    "var empeNm = refs.empeNm.getValue();",
+                                                    "",
+                                                    "if(empePsitNm == \"\" || dpnm == \"\" || empeNo == \"\" || empeNm == \"\"){",
+                                                    "    Ext.Msg.alert('확인', '모든 항목의 값을 입력 하여 주세요');",
+                                                    "    return;",
+                                                    "}",
+                                                    "var checkDp = me.checkDuplicate(empeNo + empeNm);",
+                                                    "if(me.checkDuplicate(empeNo + empeNm)){",
+                                                    "    return;",
+                                                    "};",
+                                                    "",
+                                                    "var obj = new Object();",
+                                                    "obj.empePsitNm = empePsitNm;",
+                                                    "obj.dpnm = dpnm;",
+                                                    "obj.empeNo = empeNo;",
+                                                    "obj.empeNm = empeNm;",
+                                                    "obj.stfDvcd = \"02\";",
+                                                    "obj.stfDvcdNm = \"외부직원\";",
+                                                    "",
+                                                    "var temp =gridDown.getStore().insert(0, obj);",
+                                                    "refs.id.setValue(temp[0].id);",
+                                                    "",
+                                                    "me.tab2ButtonSetter(false);",
+                                                    "//Ext.toast(\"입력 하였습니다\");"
+                                                ],
+                                                "name": "tap",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onAddBtnTap",
+                                            "designerId": "c0986fd1-3f13-4068-97cf-f054c69efec6"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "html": "수정",
+                                        "reference": "modifyBtn",
+                                        "text": "MyButton9",
+                                        "width": "33%"
+                                    },
+                                    "configAlternates": {
+                                        "html": "string",
+                                        "text": "string",
+                                        "reference": "string",
+                                        "width": "auto"
+                                    },
+                                    "name": "MyButton9",
+                                    "designerId": "cad7c588-4e4f-45a1-9028-69f0770b7865",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onAlterBtnTap",
+                                                "implHandler": [
+                                                    "var me = this;",
+                                                    "var refs = me.getReferences();",
+                                                    "",
+                                                    "var empePsitNm = refs.empePsitNm.getValue();",
+                                                    "var dpnm = refs.dpnm.getValue();",
+                                                    "var empeNo = refs.empeNo.getValue();",
+                                                    "var empeNm = refs.empeNm.getValue();",
+                                                    "",
+                                                    "var obj = new Object();",
+                                                    "obj.empePsitNm = empePsitNm;",
+                                                    "obj.dpnm = dpnm;",
+                                                    "obj.empeNo = empeNo;",
+                                                    "obj.empeNm = empeNm;",
+                                                    "obj.id = refs.id.getValue();",
+                                                    "",
+                                                    "if(empePsitNm == \"\" || dpnm == \"\" || empeNo == \"\" || empeNm == \"\"){",
+                                                    "    Ext.Msg.alert('확인', '모든 항목의 값을 입력 하여 주세요');",
+                                                    "    return;",
+                                                    "}",
+                                                    "",
+                                                    "if(this.checkDuplicate(empeNo + empeNm))return;",
+                                                    "",
+                                                    "",
+                                                    "var gridInfo = refs.gridDown.getStore().getById(obj.id);",
+                                                    "gridInfo.set(\"empePsitNm\", obj.empePsitNm);",
+                                                    "gridInfo.set(\"dpnm\", obj.dpnm);",
+                                                    "gridInfo.set(\"empeNo\", obj.empeNo);",
+                                                    "gridInfo.set(\"empeNm\", obj.empeNm);",
+                                                    "gridInfo.set(\"id\", obj.id);",
+                                                    "//Ext.toast(\"수정 하였습니다\");"
+                                                ],
+                                                "name": "tap",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onAlterBtnTap",
+                                            "designerId": "c4bc1645-d502-44e3-b2ab-7f451902b6e3"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "html": "삭제",
+                                        "reference": "delBtn",
+                                        "text": "MyButton10",
+                                        "width": "33%"
+                                    },
+                                    "configAlternates": {
+                                        "html": "string",
+                                        "text": "string",
+                                        "reference": "string",
+                                        "width": "auto"
+                                    },
+                                    "name": "MyButton10",
+                                    "designerId": "47289630-843e-4c45-9bd3-a7e523ac4fd4",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|commentHeader": [
+                                                    "외부사용자 삭제"
+                                                ],
+                                                "fn": "onExtEmpDel",
+                                                "implHandler": [
+                                                    "var me = this;",
+                                                    "var refs = me.getReferences();",
+                                                    "var store = refs.gridDown.getStore();",
+                                                    "var items = store.getData().items;",
+                                                    "var deleteId = refs.id.getValue();",
+                                                    "",
+                                                    "",
+                                                    "for(var i in items){",
+                                                    "    if(deleteId == items[i].id){",
+                                                    "        store.removeAt(i);",
+                                                    "        me.tab2ButtonSetter(true);",
+                                                    "        break;",
+                                                    "    }",
+                                                    "}",
+                                                    "//Ext.toast(\"삭제 하였습니다\");"
+                                                ],
+                                                "name": "tap",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string",
+                                                "designer|commentHeader": "comment"
+                                            },
+                                            "name": "onExtEmpDel",
+                                            "designerId": "98f87995-21b6-4ff9-bff8-36b70aebeb5b"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "html": "신규",
+                                        "reference": "resetBtn",
+                                        "text": "resetBtn",
+                                        "width": "33%"
+                                    },
+                                    "configAlternates": {
+                                        "html": "string",
+                                        "text": "string",
+                                        "width": "auto",
+                                        "reference": "string"
+                                    },
+                                    "name": "MyButton13",
+                                    "designerId": "7189dbdc-d834-43b4-9e6b-3e32c6d7957e",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onButtonResetTap",
+                                                "implHandler": [
+                                                    "this.tab2ButtonSetter(true);"
+                                                ],
+                                                "name": "tap",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onButtonResetTap",
+                                            "designerId": "924e96d7-1982-4547-99f2-1e91fb29ad5f"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onTabpanelActiveItemChange",
+                        "implHandler": [
+                            "var me = this;",
+                            "var refs = me.getReferences();",
+                            "var index = sender.getActiveItemIndex();",
+                            "me.tab2ButtonSetter(true);"
+                        ],
+                        "name": "activeItemchange",
+                        "scope": "me"
+                    },
+                    "configAlternates": {
+                        "fn": "string",
+                        "implHandler": "code",
+                        "name": "string",
+                        "scope": "string"
+                    },
+                    "name": "onTabpanelActiveItemChange",
+                    "designerId": "cee23ea6-7073-44c0-a554-a72f7b6f0f55"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.Grid",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "border": true,
+                "designer|createAlias": "",
+                "designer|displayName": "selectedGrid",
+                "height": "30%",
+                "hideHeaders": true,
+                "reference": "gridDown",
+                "store": [
+                    "{SelectEmpStore}"
+                ],
+                "style": [
+                    "{",
+                    "'border-top': '1px solid #D1D1D1'",
+                    "",
+                    "}"
+                ]
+            },
+            "configAlternates": {
+                "store": "binding",
+                "designer|createAlias": "string",
+                "designer|displayName": "string",
+                "height": "auto",
+                "reference": "string",
+                "width": "auto",
+                "hideHeaders": "boolean",
+                "style": "object",
+                "border": "boolean"
+            },
+            "name": "MyGrid4",
+            "designerId": "efc28335-c2ad-4908-ad75-4acb64420bb5",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Text",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "stfDvcd",
+                        "docked": null,
+                        "flex": "1",
+                        "hidden": true,
+                        "sortable": false
+                    },
+                    "configAlternates": {
+                        "docked": "string",
+                        "text": "string",
+                        "width": "auto",
+                        "flex": "string",
+                        "sortable": "boolean",
+                        "hidden": "boolean",
+                        "dataIndex": "datafield"
+                    },
+                    "name": "MyTextColumn",
+                    "designerId": "3c922b50-f642-4e2b-b283-4cb3cef39909",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "flex",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Text",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "empeNm",
+                        "docked": null,
+                        "flex": "1",
+                        "hidden": false,
+                        "sortable": false,
+                        "text": "이름",
+                        "width": 89
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "docked": "string",
+                        "text": "string",
+                        "width": "auto",
+                        "flex": "string",
+                        "sortable": "boolean",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyTextColumn4",
+                    "designerId": "17192f8e-0b68-4778-b91f-fa79be4ddf9e",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "flex",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "empeNo",
+                        "docked": null,
+                        "hidden": true,
+                        "text": "사번",
+                        "width": 66
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "docked": "string",
+                        "text": "string",
+                        "width": "auto",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyColumn21",
+                    "designerId": "970f86ce-0856-46d7-a831-be68461a534a"
+                },
+                {
+                    "type": "Ext.grid.column.Text",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "dpnm",
+                        "docked": null,
+                        "flex": "1",
+                        "hidden": false,
+                        "sortable": false,
+                        "text": "부서명",
+                        "width": 89
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "docked": "string",
+                        "text": "string",
+                        "width": "auto",
+                        "flex": "string",
+                        "sortable": "boolean",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyTextColumn5",
+                    "designerId": "baf75e57-2fe2-4102-be4a-227d2eb34862",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "flex",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "empePsitNm",
+                        "docked": null,
+                        "text": "직급",
+                        "width": 80
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "docked": "string",
+                        "text": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyColumn4",
+                    "designerId": "66c82bfd-52bd-4f0a-a07d-67752effaf16"
+                },
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|commentHeader": [
+                            "아래 그리드 Cell 클릭 이벤트"
+                        ],
+                        "fn": "onGridSelectSelected",
+                        "implHandler": [
+                            "var me = this;",
+                            "var refs = me.getReferences();",
+                            "var grid = refs.gridDown;",
+                            "",
+                            "var stfDvcd = selected[0].get(\"stfDvcd\");",
+                            "if(stfDvcd == '01'){",
+                            "    grid.getStore().remove(selected[0]);",
+                            "    //Ext.toast(\"삭제 하였습니다\");",
+                            "}else{",
+                            "    refs.tab.setActiveItemIndex(1);",
+                            "    refs.id.setValue(selected[0].data.id);",
+                            "    refs.empePsitNm.setValue(selected[0].data.empePsitNm);",
+                            "    refs.dpnm.setValue(selected[0].data.dpnm);",
+                            "    refs.empeNo.setValue(selected[0].data.empeNo);",
+                            "    refs.empeNm.setValue(selected[0].data.empeNm);",
+                            "    me.tab2ButtonSetter(false);",
+                            "}",
+                            ""
+                        ],
+                        "name": "select",
+                        "scope": "me"
+                    },
+                    "configAlternates": {
+                        "fn": "string",
+                        "implHandler": "code",
+                        "name": "string",
+                        "scope": "string",
+                        "designer|commentHeader": "comment"
+                    },
+                    "name": "onGridSelectSelected",
+                    "designerId": "5ffd9be8-45fb-4082-9d7f-b866c65ecf19"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "containerDownButton",
+                "layout": "hbox",
+                "style": [
+                    "{",
+                    "'border-top': '1px solid #D1D1D1'",
+                    "",
+                    "}"
+                ]
+            },
+            "configAlternates": {
+                "layout": "string",
+                "designer|displayName": "string",
+                "style": "object"
+            },
+            "name": "MyContainer6",
+            "designerId": "3a137588-e2f3-489d-b766-ecb1a0533bb7",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 1,
+                        "text": "닫기"
+                    },
+                    "configAlternates": {
+                        "layout|flex": "number",
+                        "text": "string"
+                    },
+                    "name": "MyButton12",
+                    "designerId": "0c42dae7-0b1f-4cf2-b26a-224bc740c841",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBtnCloseTap",
+                                "implHandler": [
+                                    "this.getView().close();"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnCloseTap",
+                            "designerId": "35a6b745-2a7f-40b2-a905-ee40a94ff193"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 1,
+                        "text": "선택"
+                    },
+                    "configAlternates": {
+                        "text": "string",
+                        "width": "auto",
+                        "layout|flex": "number"
+                    },
+                    "name": "MyButton7",
+                    "designerId": "9c24cdcf-349e-4d9f-8678-148751fa5fb9",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBtnSearchTap",
+                                "implHandler": [
+                                    "var me = this;",
+                                    "var refs  = me.getReferences();",
+                                    "var storeDown = refs.gridDown.getStore();",
+                                    "",
+                                    "me.getView().fireEvent('selected', storeDown.data);",
+                                    "me.getView().close();"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnSearchTap",
+                            "designerId": "bb4c4dfa-61e5-48fd-bb06-44714abec026"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

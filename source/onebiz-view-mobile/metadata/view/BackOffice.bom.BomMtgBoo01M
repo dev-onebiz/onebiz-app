@@ -1,0 +1,698 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "BomMtgBoo01M"
+        ],
+        "designer|userAlias": "BomMtgBoo01M",
+        "designer|userClassName": "BackOffice.bom.BomMtgBoo01M",
+        "layout": "vbox"
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "layout": "string"
+    },
+    "name": "BackOffice.bom.BomMtgBoo04M1",
+    "designerId": "0185e567-9630-4bd0-a3d0-17039f9ccb57",
+    "viewControllerInstanceId": "7ddec346-2dd2-4c94-8b90-0be9e1974932",
+    "viewModelInstanceId": "49a03c8a-1359-4340-8223-e690836903ee",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": "100%",
+                "layout": "vbox"
+            },
+            "configAlternates": {
+                "height": "auto",
+                "layout": "string"
+            },
+            "name": "MyContainer55",
+            "designerId": "ea03cf39-487e-4136-922e-2f448e71526d",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "designer|displayName": "날짜 선택 컨테이너",
+                        "docked": null,
+                        "layout": "hbox",
+                        "scrollable": true
+                    },
+                    "configAlternates": {
+                        "container|align": "string",
+                        "height": "auto",
+                        "layout": "string",
+                        "scrollable": "auto",
+                        "layout|flex": "number",
+                        "docked": "string",
+                        "container|pack": "string",
+                        "designer|displayName": "string"
+                    },
+                    "name": "MyContainer54",
+                    "designerId": "1b18ccf5-9177-46e6-b84f-e2802dd06bc6",
+                    "cn": [
+                        {
+                            "type": "Ext.field.Date",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dateFormat": "Y년 m월",
+                                "editable": false,
+                                "layout|flex": 1,
+                                "margin": "10px",
+                                "reference": "dtpStDt",
+                                "textAlign": "center",
+                                "width": 200
+                            },
+                            "configAlternates": {
+                                "dateFormat": "string",
+                                "docked": "string",
+                                "height": "auto",
+                                "label": "string",
+                                "reference": "string",
+                                "width": "auto",
+                                "margin": "auto",
+                                "maxWidth": "auto",
+                                "minWidth": "auto",
+                                "textAlign": "string",
+                                "style": "string",
+                                "editable": "boolean",
+                                "layout|flex": "number"
+                            },
+                            "name": "MyDate4",
+                            "designerId": "d937d828-7df2-44af-87c7-1838aaf6bf60",
+                            "cn": [
+                                {
+                                    "type": "Ext.picker.Date",
+                                    "reference": {
+                                        "name": "picker",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dayText": "일",
+                                        "header": false,
+                                        "hideOnMaskTap": true,
+                                        "monthText": "월",
+                                        "slotOrder": [
+                                            "[\"year\",\"month\"]"
+                                        ],
+                                        "title": "",
+                                        "yearText": "년"
+                                    },
+                                    "configAlternates": {
+                                        "dayText": "string",
+                                        "hideOnMaskTap": "boolean",
+                                        "monthText": "string",
+                                        "title": "string",
+                                        "yearText": "string",
+                                        "header": "boolean",
+                                        "slotOrder": "array"
+                                    },
+                                    "name": "MyDatePicker",
+                                    "designerId": "e238a96c-fbeb-41ef-b1d3-454db3d568c2"
+                                },
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onDatefieldChange",
+                                        "implHandler": [
+                                            "this.getReferences().cal.getReferences().month.setValue(newDate);",
+                                            "this.onSelect();"
+                                        ],
+                                        "name": "change",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onDatefieldChange",
+                                    "designerId": "7b0812e3-bae1-4cd1-9c48-41ea5e2f50cb"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.field.ComboBox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "장소",
+                                "displayField": "text",
+                                "editable": false,
+                                "layout|flex": 1,
+                                "margin": "10px",
+                                "noNeedDefault": true,
+                                "reference": "selectedMtgRoomDvcd",
+                                "valueField": "value"
+                            },
+                            "configAlternates": {
+                                "code": "string",
+                                "designer|displayName": "string",
+                                "editable": "boolean",
+                                "name": "string",
+                                "reference": "string",
+                                "width": "auto",
+                                "label": "string",
+                                "layout|flex": "number",
+                                "margin": "auto",
+                                "displayField": "datafield",
+                                "valueField": "datafield",
+                                "noNeedDefault": "boolean"
+                            },
+                            "name": "MyComboBox1",
+                            "designerId": "4aa7a45a-7baf-46f8-99bf-d326fb015165",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "code",
+                                    "type": "string"
+                                },
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "noNeedDefault",
+                                    "type": "string"
+                                }
+                            ],
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onComboboxChange",
+                                        "implHandler": [
+                                            "var me = this;",
+                                            "var refs = me.getReferences();",
+                                            "",
+                                            "if(!Ext.isEmpty(oldValue) && !Ext.isEmpty(newValue)){",
+                                            "    me.onSelect();",
+                                            "}"
+                                        ],
+                                        "name": "change",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onComboboxChange",
+                                    "designerId": "fffa4318-6318-4fef-b752-3697b6c77735"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "designer|displayName": "날짜 선택 컨테이너",
+                        "docked": null,
+                        "layout": "hbox",
+                        "scrollable": true
+                    },
+                    "configAlternates": {
+                        "container|align": "string",
+                        "height": "auto",
+                        "layout": "string",
+                        "scrollable": "auto",
+                        "layout|flex": "number",
+                        "docked": "string",
+                        "container|pack": "string",
+                        "designer|displayName": "string"
+                    },
+                    "name": "MyContainer114",
+                    "designerId": "b0285b86-dc6c-4841-a060-6dcaa31dbed3",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "색상 확인",
+                                "layout": "hbox",
+                                "layout|flex": 1,
+                                "padding": "0 0 0 10px"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "layout|flex": "number",
+                                "layout": "string",
+                                "padding": "auto"
+                            },
+                            "name": "MyContainer115",
+                            "designerId": "5cec7fb2-178f-4cb2-bde6-626b664d0998",
+                            "cn": [
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout": "hbox",
+                                        "padding": "5px"
+                                    },
+                                    "configAlternates": {
+                                        "layout": "string",
+                                        "padding": "auto"
+                                    },
+                                    "name": "MyContainer64",
+                                    "designerId": "e7ce8267-9da8-423e-94f8-613f1eb4f807",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "height": "20px",
+                                                "margin": "0 5 0 0",
+                                                "style": "background-color:#f4feeb; border:1px solid #e3e3e3; border-radius:3px",
+                                                "width": "20px"
+                                            },
+                                            "configAlternates": {
+                                                "height": "auto",
+                                                "margin": "auto",
+                                                "style": "string",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyContainer69",
+                                            "designerId": "aa05a915-3f4d-4aee-be2f-898cc223c588"
+                                        },
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "html": "나의 일정",
+                                                "layout": "center",
+                                                "layout|flex": 1,
+                                                "style": "color : #738539; font-size:12px;"
+                                            },
+                                            "configAlternates": {
+                                                "html": "string",
+                                                "layout": "string",
+                                                "layout|flex": "number",
+                                                "style": "string"
+                                            },
+                                            "name": "MyContainer75",
+                                            "designerId": "62343923-c41a-41c4-ac5a-cd7259eb55f7"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout": "hbox",
+                                        "padding": "5px"
+                                    },
+                                    "configAlternates": {
+                                        "layout": "string",
+                                        "padding": "auto"
+                                    },
+                                    "name": "MyContainer90",
+                                    "designerId": "8d522c30-c93b-47c8-903a-d13b741245ae",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "height": "20px",
+                                                "margin": "0 5 0 0",
+                                                "style": "background-color:#fff0e9; border:1px solid #e3e3e3; border-radius:3px",
+                                                "width": "20px"
+                                            },
+                                            "configAlternates": {
+                                                "height": "auto",
+                                                "margin": "auto",
+                                                "style": "string",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyContainer69",
+                                            "designerId": "5857a395-d18a-4699-a1eb-cea6d90e6ba2"
+                                        },
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "html": "기타 일정",
+                                                "layout": "center",
+                                                "layout|flex": 1,
+                                                "style": "color : #bf3f00; font-size:12px;"
+                                            },
+                                            "configAlternates": {
+                                                "html": "string",
+                                                "layout": "string",
+                                                "layout|flex": "number",
+                                                "style": "string"
+                                            },
+                                            "name": "MyContainer75",
+                                            "designerId": "add0da68-2bb9-4732-8e9c-d10409c0dc83"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "end",
+                                "container|pack": "end",
+                                "designer|displayName": "나의 일저만 보기",
+                                "layout": "vbox",
+                                "layout|flex": 1,
+                                "padding": "0 10px"
+                            },
+                            "configAlternates": {
+                                "container|align": "string",
+                                "container|pack": "string",
+                                "designer|displayName": "string",
+                                "layout": "string",
+                                "layout|flex": "number",
+                                "padding": "auto"
+                            },
+                            "name": "MyContainer116",
+                            "designerId": "a66dfc8c-81fc-4ed0-8218-b27d284a35ed",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Checkbox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "boxLabel": "나의 일정만 보기",
+                                        "reference": "myBook"
+                                    },
+                                    "configAlternates": {
+                                        "boxLabel": "string",
+                                        "reference": "string"
+                                    },
+                                    "name": "MyCheckbox3",
+                                    "designerId": "c1fc69b8-def9-4ea5-9ff8-586b3c4e3024",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onCheckboxChange",
+                                                "implHandler": [
+                                                    "this.onSelect();"
+                                                ],
+                                                "name": "change",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onCheckboxChange",
+                                            "designerId": "f30c5aa5-ada7-4a6b-be00-e09447a3df6d"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "캘린더 컨테이너",
+                        "layout|flex": 1
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout|flex": "number"
+                    },
+                    "name": "MyContainer100",
+                    "designerId": "12c2a614-b18f-4fb6-8dc1-0cf4d09f6048",
+                    "cn": [
+                        {
+                            "type": "Ext.calendar.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "calendarList": [
+                                    "false"
+                                ],
+                                "disabled": false,
+                                "height": "100%",
+                                "minButtonWidth": 100,
+                                "reference": "cal",
+                                "scrollable": true,
+                                "sideBar": [
+                                    "false"
+                                ],
+                                "width": "100%"
+                            },
+                            "configAlternates": {
+                                "height": "auto",
+                                "minButtonWidth": "number",
+                                "width": "auto",
+                                "store": "binding",
+                                "reference": "string",
+                                "scrollable": "auto",
+                                "sidebar": "boolean",
+                                "calendarList": "binding",
+                                "allowSelection": "boolean",
+                                "disabled": "boolean",
+                                "editForm": "boolean",
+                                "sideBar": "binding"
+                            },
+                            "name": "MyCalendar3",
+                            "designerId": "60b50e61-b18a-4c2b-8452-18099d794728",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "allowSelection",
+                                    "type": "string"
+                                }
+                            ],
+                            "cn": [
+                                {
+                                    "type": "Ext.calendar.panel.Month",
+                                    "reference": {
+                                        "name": "views",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "disabled": false,
+                                        "editForm": false,
+                                        "label": "Month",
+                                        "reference": "month"
+                                    },
+                                    "configAlternates": {
+                                        "editForm": "boolean",
+                                        "label": "string",
+                                        "disabled": "boolean",
+                                        "reference": "string"
+                                    },
+                                    "name": "MyMonth1",
+                                    "designerId": "cc456f53-83c0-43f3-a946-9acec88b0c05",
+                                    "customConfigs": [
+                                        {
+                                            "group": "(Custom Properties)",
+                                            "name": "editForm",
+                                            "type": "string"
+                                        }
+                                    ],
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onMymonthValueChange",
+                                                "implHandler": [
+                                                    "this.getReferences().dtpStDt.setValue(context.value);"
+                                                ],
+                                                "name": "valuechange",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onMymonthValueChange",
+                                            "designerId": "0e29a75f-c85f-4296-bc06-200e76aa55b3"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "세부사항 컨테이너",
+                        "hidden": true,
+                        "layout|flex": 1
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout|flex": "number",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyContainer72",
+                    "designerId": "8bea21d1-9ea3-4a0d-ad40-f0b7ea663d57"
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "화면초기화"
+                ],
+                "fn": "initialize",
+                "implHandler": [
+                    "var me = this;",
+                    "var refs = me.getReferences();",
+                    "var vm = me.getViewModel();",
+                    "",
+                    "// 회의실 콤보박스 설정",
+                    "me.onSelectCodeList(refs.selectedMtgRoomDvcd,'MTG');",
+                    "",
+                    "// 달력 클릭 이벤트 부여",
+                    "me.addEventListener();",
+                    "",
+                    "// 달력 조회",
+                    "// 날짜 선택 <-> 캘린더 -> 월 동기화",
+                    "var date =new Date();",
+                    "var mm = date.getMonth() +1;",
+                    "if(mm < 10){",
+                    "    mm =  \"0\"+ mm;",
+                    "} else {",
+                    "    mm = mm.toString();",
+                    "}",
+                    "refs.dtpStDt.setValue(date.getFullYear()+'년 ' + mm +\"월\");",
+                    "",
+                    "",
+                    "",
+                    "// 달력 사이드바 제거",
+                    "var calRefs = refs.cal.getReferences();",
+                    "calRefs.titleBar.setVisibility(false);",
+                    "if(!Ext.isEmpty(calRefs.sideBar)){",
+                    "    calRefs.sideBar.setVisibility(false);",
+                    "}"
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string",
+                "designer|commentHeader": "comment"
+            },
+            "name": "initialize",
+            "designerId": "bdabe7a5-ffa7-4933-b71e-4db954097e72"
+        }
+    ]
+}

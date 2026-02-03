@@ -1,0 +1,20 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|extend": "BaseViewController",
+        "designer|userAlias": "HroSalSpec02MViewController",
+        "designer|userClassName": "BackOffice.bom.HroSalSpec02MViewController"
+    },
+    "configAlternates": {
+        "designer|extend": "string",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "BackOffice.bom.HroSalSpec01MViewController1",
+    "designerId": "b3b71e82-17a9-42b6-abf5-04ff5eb02169"
+}

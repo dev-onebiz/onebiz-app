@@ -1,0 +1,2542 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "HwmHodAply02M"
+        ],
+        "designer|commentHeader": [
+            "모바일 :: 휴일근무신청 - 화면",
+            "",
+            "@author BNK시스템/파트너/지민영",
+            "@since 2020.10.08",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일\t\t  수정자                    수정내용",
+            "----------\t--------------------     --------------------------",
+            "2020.10.08\tBNK시스템/파트너/지민영     최초 생성"
+        ],
+        "designer|userAlias": "HwmHodAply02M",
+        "designer|userClassName": "HumanResource.hwm.HwmHodAply02M",
+        "listeners": [
+            "{",
+            "    complete : function() {",
+            "        this.getController().onComplete(arguments);",
+            "    }",
+            "}"
+        ],
+        "scrollable": true
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "extend": "string",
+        "listeners": "object",
+        "designer|commentHeader": "comment",
+        "scrollable": "auto"
+    },
+    "designerId": "ce7c774a-d9a1-4eeb-8ea7-9d8f5c8a1c04",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "listeners",
+            "type": "string"
+        }
+    ],
+    "viewControllerInstanceId": "6c0eccef-72b0-4428-b014-a3ef301e43fc",
+    "viewModelInstanceId": "c1795ba0-6675-4d80-a2bf-2810319fd48f",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "휴일근무자",
+                "padding": 0,
+                "reference": "frmDetail",
+                "width": "100%"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "padding": "auto",
+                "reference": "string",
+                "width": "auto"
+            },
+            "name": "MyFormPanel2",
+            "designerId": "be761c0c-9241-4a93-ab2f-d0f98650d207",
+            "cn": [
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "신청자",
+                        "editable": false,
+                        "label": "신청자",
+                        "margin": "0 5 0 5",
+                        "name": "rqpr",
+                        "readOnly": true,
+                        "reference": "rqpr",
+                        "value": [
+                            "{detail.empeNo} / {detail.dpnm} / {detail.empeNm} / {detail.empePsitNm}"
+                        ],
+                        "width": "97%"
+                    },
+                    "configAlternates": {
+                        "label": "string",
+                        "designer|displayName": "string",
+                        "reference": "string",
+                        "width": "auto",
+                        "docked": "string",
+                        "editable": "boolean",
+                        "name": "string",
+                        "disabled": "boolean",
+                        "margin": "auto",
+                        "readOnly": "boolean",
+                        "value": "binding"
+                    },
+                    "name": "MyTextField2",
+                    "designerId": "1aba50ce-f9b4-4bf6-8517-35394933682a"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "start",
+                        "container|pack": "center",
+                        "hidden": true,
+                        "layout": "hbox",
+                        "margin": "0 5 0 5",
+                        "reference": "times",
+                        "scrollable": false,
+                        "width": "97%"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout": "string",
+                        "container|align": "string",
+                        "container|pack": "string",
+                        "docked": "string",
+                        "layout|flex": "number",
+                        "scrollable": "auto",
+                        "height": "auto",
+                        "margin": "auto",
+                        "reference": "string",
+                        "width": "auto",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyContainer14",
+                    "designerId": "88b7ec67-a94d-4b7e-9b98-0b663c8713e5",
+                    "cn": [
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "월 신청가능시간",
+                                "docked": null,
+                                "editable": false,
+                                "hidden": true,
+                                "label": "월 신청가능시간",
+                                "margin": "0 5 0 5",
+                                "name": "mnth",
+                                "readOnly": true,
+                                "reference": "mnth",
+                                "width": "49%"
+                            },
+                            "configAlternates": {
+                                "label": "string",
+                                "designer|displayName": "string",
+                                "reference": "string",
+                                "width": "auto",
+                                "docked": "string",
+                                "editable": "boolean",
+                                "name": "string",
+                                "disabled": "boolean",
+                                "margin": "auto",
+                                "readOnly": "boolean",
+                                "hidden": "boolean"
+                            },
+                            "name": "MyTextField1",
+                            "designerId": "a5fa20a1-2a85-4185-ac3a-9d832c429e7b"
+                        },
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "월 최대 야근시간",
+                                "docked": null,
+                                "editable": false,
+                                "hidden": true,
+                                "label": "월 최대야근시간",
+                                "margin": "0 5 0 5",
+                                "name": "maxHodtmMnth",
+                                "readOnly": true,
+                                "reference": "maxHodtmMnth",
+                                "width": "48%"
+                            },
+                            "configAlternates": {
+                                "label": "string",
+                                "designer|displayName": "string",
+                                "reference": "string",
+                                "width": "auto",
+                                "docked": "string",
+                                "editable": "boolean",
+                                "name": "string",
+                                "disabled": "boolean",
+                                "margin": "auto",
+                                "readOnly": "boolean",
+                                "hidden": "boolean"
+                            },
+                            "name": "MyTextField3",
+                            "designerId": "4526dcba-6623-46bc-96a0-a9b7265c145b"
+                        },
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "월연장근무시간",
+                                "docked": null,
+                                "editable": false,
+                                "hidden": true,
+                                "label": "월연장근무시간",
+                                "margin": "0 5 0 5",
+                                "name": "hodtmMnth",
+                                "readOnly": true,
+                                "reference": "hodtmMnth",
+                                "width": "48%"
+                            },
+                            "configAlternates": {
+                                "label": "string",
+                                "designer|displayName": "string",
+                                "reference": "string",
+                                "width": "auto",
+                                "docked": "string",
+                                "editable": "boolean",
+                                "name": "string",
+                                "disabled": "boolean",
+                                "margin": "auto",
+                                "readOnly": "boolean",
+                                "hidden": "boolean"
+                            },
+                            "name": "MyTextField5",
+                            "designerId": "1ca93ee8-fdac-423b-8820-eb1b2b9fb247"
+                        },
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "일 신청가능시간",
+                                "docked": null,
+                                "editable": false,
+                                "hidden": true,
+                                "label": "일 신청가능시간",
+                                "margin": "0 5 0 5",
+                                "name": "maxHodtmDay",
+                                "readOnly": true,
+                                "reference": "maxHodtmDay",
+                                "width": "48%"
+                            },
+                            "configAlternates": {
+                                "label": "string",
+                                "designer|displayName": "string",
+                                "reference": "string",
+                                "width": "auto",
+                                "docked": "string",
+                                "editable": "boolean",
+                                "name": "string",
+                                "disabled": "boolean",
+                                "margin": "auto",
+                                "readOnly": "boolean",
+                                "hidden": "boolean"
+                            },
+                            "name": "MyTextField4",
+                            "designerId": "6fa52a7d-da11-4a59-88d5-813be5ab99b6"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "소속명",
+                        "editable": false,
+                        "hidden": true,
+                        "label": "소속명",
+                        "name": "dpnm",
+                        "readOnly": true,
+                        "reference": "dpnm",
+                        "value": [
+                            "{detail.dpnm}"
+                        ]
+                    },
+                    "configAlternates": {
+                        "value": "binding",
+                        "designer|displayName": "string",
+                        "editable": "boolean",
+                        "hidden": "boolean",
+                        "label": "string",
+                        "name": "string",
+                        "readOnly": "boolean",
+                        "reference": "string"
+                    },
+                    "name": "MyTextField16",
+                    "designerId": "c470e31f-1850-41a3-bbbb-1e5eaedf1f35"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "신청일자",
+                        "editable": false,
+                        "hidden": true,
+                        "label": "신청일자",
+                        "margin": "0 5 0 5",
+                        "name": "aplDt",
+                        "readOnly": true,
+                        "reference": "aplDt",
+                        "width": "97%"
+                    },
+                    "configAlternates": {
+                        "label": "string",
+                        "designer|displayName": "string",
+                        "reference": "string",
+                        "width": "auto",
+                        "docked": "string",
+                        "editable": "boolean",
+                        "name": "string",
+                        "disabled": "boolean",
+                        "margin": "auto",
+                        "readOnly": "boolean",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyTextField8",
+                    "designerId": "f6b5b921-01ed-4e5b-99cb-283bc35054a9"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "신청시간",
+                        "editable": false,
+                        "hidden": true,
+                        "label": "신청시간",
+                        "margin": "0 5 0 5",
+                        "name": "aplTm",
+                        "readOnly": true,
+                        "reference": "aplTm",
+                        "width": "97%"
+                    },
+                    "configAlternates": {
+                        "label": "string",
+                        "designer|displayName": "string",
+                        "reference": "string",
+                        "width": "auto",
+                        "docked": "string",
+                        "editable": "boolean",
+                        "name": "string",
+                        "disabled": "boolean",
+                        "margin": "auto",
+                        "readOnly": "boolean",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyTextField11",
+                    "designerId": "171fdf23-de2a-430c-adf9-49207c4fd4b6"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "사번",
+                        "editable": false,
+                        "hidden": true,
+                        "label": "사번",
+                        "name": "empeNo",
+                        "readOnly": true,
+                        "reference": "empeNo",
+                        "value": [
+                            "{detail.empeNo}"
+                        ]
+                    },
+                    "configAlternates": {
+                        "value": "binding",
+                        "designer|displayName": "string",
+                        "editable": "boolean",
+                        "hidden": "boolean",
+                        "label": "string",
+                        "name": "string",
+                        "readOnly": "boolean",
+                        "reference": "string"
+                    },
+                    "name": "MyTextField24",
+                    "designerId": "5adfda0a-9beb-48fb-88ae-de5eb133760a"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "성명",
+                        "editable": false,
+                        "hidden": true,
+                        "label": "성명",
+                        "name": "empeNm",
+                        "readOnly": true,
+                        "reference": "empeNm",
+                        "value": [
+                            "{detail.empeNm}"
+                        ]
+                    },
+                    "configAlternates": {
+                        "value": "binding",
+                        "designer|displayName": "string",
+                        "editable": "boolean",
+                        "hidden": "boolean",
+                        "label": "string",
+                        "name": "string",
+                        "readOnly": "boolean",
+                        "reference": "string"
+                    },
+                    "name": "MyTextField25",
+                    "designerId": "065e01fa-424a-4cb8-b729-f8265c5ccdf9"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "직위",
+                        "editable": false,
+                        "hidden": true,
+                        "label": "직위",
+                        "name": "empePsitNm",
+                        "readOnly": true,
+                        "reference": "empePsitNm",
+                        "value": [
+                            "{detail.empePsitNm}"
+                        ]
+                    },
+                    "configAlternates": {
+                        "value": "binding",
+                        "designer|displayName": "string",
+                        "editable": "boolean",
+                        "hidden": "boolean",
+                        "label": "string",
+                        "name": "string",
+                        "readOnly": "boolean",
+                        "reference": "string"
+                    },
+                    "name": "MyTextField26",
+                    "designerId": "c45a7c25-840a-4f18-b70a-40cdda5d8355"
+                },
+                {
+                    "type": "Ext.form.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "휴일근무 상세",
+                        "padding": 0,
+                        "reference": "empeInfoForm",
+                        "width": "100%"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "hideAnimation": "string",
+                        "id": "string",
+                        "showAnimation": "string",
+                        "reference": "string",
+                        "height": "auto",
+                        "listeners": "object",
+                        "docked": "string",
+                        "width": "auto",
+                        "padding": "auto"
+                    },
+                    "name": "MyFormPanel1",
+                    "designerId": "c7193cb4-ac94-4e1d-ae15-ec5319719afb",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "listeners",
+                            "type": "string"
+                        }
+                    ],
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "hidden",
+                                "hidden": true
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "hidden": "boolean"
+                            },
+                            "name": "MyContainer12",
+                            "designerId": "b25d8671-3779-4b12-b5fd-1b1fb7808355",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "disabled": true,
+                                        "editable": false,
+                                        "label": "id",
+                                        "name": "id",
+                                        "readOnly": true,
+                                        "required": true,
+                                        "value": [
+                                            "{detail.id}"
+                                        ]
+                                    },
+                                    "configAlternates": {
+                                        "value": "binding",
+                                        "designer|displayName": "string",
+                                        "editable": "boolean",
+                                        "hidden": "boolean",
+                                        "label": "string",
+                                        "name": "string",
+                                        "readOnly": "boolean",
+                                        "reference": "string",
+                                        "disabled": "boolean",
+                                        "required": "boolean"
+                                    },
+                                    "name": "MyTextField27",
+                                    "designerId": "83f6c6c6-3e0a-4403-afcf-a4ee93ee0968"
+                                },
+                                {
+                                    "type": "Ext.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "disabled": true,
+                                        "editable": false,
+                                        "label": "crud",
+                                        "name": "crud",
+                                        "readOnly": true,
+                                        "value": [
+                                            "{detail.crud}"
+                                        ]
+                                    },
+                                    "configAlternates": {
+                                        "value": "binding",
+                                        "designer|displayName": "string",
+                                        "editable": "boolean",
+                                        "hidden": "boolean",
+                                        "label": "string",
+                                        "name": "string",
+                                        "readOnly": "boolean",
+                                        "reference": "string",
+                                        "disabled": "boolean",
+                                        "required": "boolean"
+                                    },
+                                    "name": "MyTextField28",
+                                    "designerId": "b14c83c0-1926-476a-aee8-52e97e8a59b3"
+                                },
+                                {
+                                    "type": "Ext.field.ComboBox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "code": "INB014",
+                                        "disabled": true,
+                                        "editable": false,
+                                        "label": "상태코드",
+                                        "name": "stcd",
+                                        "readOnly": true,
+                                        "reference": "cbxStcd",
+                                        "required": true,
+                                        "value": [
+                                            "{detail.stcd}"
+                                        ]
+                                    },
+                                    "configAlternates": {
+                                        "value": "binding",
+                                        "code": "string",
+                                        "disabled": "boolean",
+                                        "editable": "boolean",
+                                        "name": "string",
+                                        "readOnly": "boolean",
+                                        "reference": "string",
+                                        "required": "boolean",
+                                        "label": "string"
+                                    },
+                                    "name": "MyComboBox2",
+                                    "designerId": "478256c0-1ac6-49d2-be78-acf8c40b0295",
+                                    "customConfigs": [
+                                        {
+                                            "group": "(Custom Properties)",
+                                            "name": "code",
+                                            "type": "string"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "disabled": true,
+                                        "editable": false,
+                                        "label": "회사",
+                                        "name": "hrHrpmCompId",
+                                        "readOnly": true,
+                                        "required": true,
+                                        "value": [
+                                            "{detail.hrHrpmCompId}"
+                                        ]
+                                    },
+                                    "configAlternates": {
+                                        "value": "binding",
+                                        "designer|displayName": "string",
+                                        "editable": "boolean",
+                                        "hidden": "boolean",
+                                        "label": "string",
+                                        "name": "string",
+                                        "readOnly": "boolean",
+                                        "reference": "string",
+                                        "disabled": "boolean",
+                                        "required": "boolean"
+                                    },
+                                    "name": "MyTextField29",
+                                    "designerId": "27c3a8d9-3da7-464a-8802-8e0f5b09f485"
+                                },
+                                {
+                                    "type": "Ext.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "disabled": true,
+                                        "editable": false,
+                                        "label": "사번",
+                                        "name": "hrHrpmEmpId",
+                                        "readOnly": true,
+                                        "required": true,
+                                        "value": [
+                                            "{detail.hrHrpmEmpId}"
+                                        ]
+                                    },
+                                    "configAlternates": {
+                                        "value": "binding",
+                                        "designer|displayName": "string",
+                                        "editable": "boolean",
+                                        "hidden": "boolean",
+                                        "label": "string",
+                                        "name": "string",
+                                        "readOnly": "boolean",
+                                        "reference": "string",
+                                        "disabled": "boolean",
+                                        "required": "boolean"
+                                    },
+                                    "name": "MyTextField30",
+                                    "designerId": "1d95a8fa-6089-467c-91c9-8cde17efa196"
+                                },
+                                {
+                                    "type": "Ext.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "disabled": true,
+                                        "editable": false,
+                                        "name": "bdMgtSn",
+                                        "readOnly": true,
+                                        "value": [
+                                            "{detail.bdMgtSn}"
+                                        ]
+                                    },
+                                    "configAlternates": {
+                                        "value": "binding",
+                                        "designer|displayName": "string",
+                                        "editable": "boolean",
+                                        "hidden": "boolean",
+                                        "label": "string",
+                                        "name": "string",
+                                        "readOnly": "boolean",
+                                        "reference": "string",
+                                        "disabled": "boolean",
+                                        "required": "boolean"
+                                    },
+                                    "name": "MyTextField31",
+                                    "designerId": "499bb39e-cb01-49f1-a689-c11cc1d11225"
+                                },
+                                {
+                                    "type": "Ext.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "disabled": true,
+                                        "editable": false,
+                                        "name": "emdNo",
+                                        "readOnly": true,
+                                        "scrollable": false,
+                                        "value": [
+                                            "{detail.emdNo}"
+                                        ]
+                                    },
+                                    "configAlternates": {
+                                        "value": "binding",
+                                        "designer|displayName": "string",
+                                        "editable": "boolean",
+                                        "hidden": "boolean",
+                                        "label": "string",
+                                        "name": "string",
+                                        "readOnly": "boolean",
+                                        "reference": "string",
+                                        "disabled": "boolean",
+                                        "required": "boolean",
+                                        "scrollable": "auto"
+                                    },
+                                    "name": "MyTextField32",
+                                    "designerId": "865e342e-a13b-4e03-9bbf-346c8cd766d3"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.field.ComboBox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "code": "INB025",
+                                "editable": false,
+                                "hidden": true,
+                                "label": "결재상태",
+                                "name": "aplStcd",
+                                "readOnly": true,
+                                "reference": "aplStcd",
+                                "required": true,
+                                "value": [
+                                    "{detail.aplStcd}"
+                                ]
+                            },
+                            "configAlternates": {
+                                "value": "binding",
+                                "code": "string",
+                                "editable": "boolean",
+                                "hidden": "boolean",
+                                "label": "string",
+                                "name": "string",
+                                "readOnly": "boolean",
+                                "reference": "string",
+                                "required": "boolean"
+                            },
+                            "name": "MyComboBox3",
+                            "designerId": "77039cbf-a256-4f00-910d-88f1e9e5160c",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "code",
+                                    "type": "string"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.field.ComboBox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "code": "HWM005",
+                                "editable": false,
+                                "hidden": true,
+                                "label": "보정구분코드",
+                                "name": "crrDvcd",
+                                "readOnly": true,
+                                "reference": "crrDvcd",
+                                "required": true,
+                                "value": [
+                                    "{detail.crrDvcd}"
+                                ]
+                            },
+                            "configAlternates": {
+                                "value": "binding",
+                                "code": "string",
+                                "editable": "boolean",
+                                "hidden": "boolean",
+                                "label": "string",
+                                "name": "string",
+                                "readOnly": "boolean",
+                                "reference": "string",
+                                "required": "boolean"
+                            },
+                            "name": "MyComboBox5",
+                            "designerId": "4c6c3ea4-c335-452c-b8d9-8ddd695e7fc4",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "code",
+                                    "type": "string"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.field.Date",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dateFormat": "Y-m-d",
+                                "designer|displayName": "일자",
+                                "editable": false,
+                                "label": "일자",
+                                "margin": "0 5 0 5",
+                                "name": "aplHodDt",
+                                "reference": "aplHodDt",
+                                "required": true,
+                                "submitFormat": "Ymd",
+                                "width": "97%"
+                            },
+                            "configAlternates": {
+                                "dateFormat": "string",
+                                "docked": "string",
+                                "height": "auto",
+                                "label": "string",
+                                "reference": "string",
+                                "width": "auto",
+                                "margin": "auto",
+                                "maxWidth": "auto",
+                                "minWidth": "auto",
+                                "designer|displayName": "string",
+                                "disabled": "boolean",
+                                "editable": "boolean",
+                                "readOnly": "boolean",
+                                "validateDisabled": "boolean",
+                                "name": "string",
+                                "required": "boolean",
+                                "submitFormat": "string"
+                            },
+                            "name": "MyDate3",
+                            "designerId": "44593254-380e-4feb-85b5-e5ebaf02b6e6",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "submitFormat",
+                                    "type": "string"
+                                }
+                            ],
+                            "cn": [
+                                {
+                                    "type": "Ext.picker.Date",
+                                    "reference": {
+                                        "name": "picker",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dayText": "일",
+                                        "header": false,
+                                        "hideOnMaskTap": true,
+                                        "monthText": "월",
+                                        "slotOrder": [
+                                            "[\"year\",\"month\",\"day\"]"
+                                        ],
+                                        "title": "",
+                                        "yearText": "년"
+                                    },
+                                    "configAlternates": {
+                                        "dayText": "string",
+                                        "hideOnMaskTap": "boolean",
+                                        "monthText": "string",
+                                        "title": "string",
+                                        "yearText": "string",
+                                        "header": "boolean",
+                                        "slotOrder": "array"
+                                    },
+                                    "name": "MyDatePicker",
+                                    "designerId": "ee660bed-10a6-494a-83f9-ca77d1e3148e"
+                                },
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|commentHeader": [
+                                            "날짜 선택"
+                                        ],
+                                        "fn": "onDatefieldChange",
+                                        "implHandler": [
+                                            "var me = this,",
+                                            "    vm = me.getViewModel(),",
+                                            "    refs = me.getReferences();",
+                                            "",
+                                            "switch (datefield.name) {",
+                                            "    case 'hodStrdt':",
+                                            "        var date = refs.hodStrdt.getValue();",
+                                            "        if (date) {",
+                                            "            refs.hodEdt.setMinDate(date);",
+                                            "            refs.hodEdt.setMaxDate(DateUtils.addDate(date, 1)); //다음날까지가 최대.",
+                                            "        }",
+                                            "        break;",
+                                            "    case 'aplHodDt':",
+                                            "        if(refs.aplHodDt.getValue()==null)",
+                                            "            return;",
+                                            "",
+                                            "        var values = {",
+                                            "            wrkDt : DateUtils.getDate(datefield.getValue()),",
+                                            "            hrHrpmEmpId : vm.get('detail.hrHrpmEmpId'),",
+                                            "            wrkStdt : DateUtils.getDate(DateUtils.getFirstDateOfMonth(datefield.getValue())),",
+                                            "            wrkEddt : DateUtils.getDate(DateUtils.getLastDateOfMonth(datefield.getValue()))",
+                                            "        };",
+                                            "",
+                                            "        Ext.Ajax.request({",
+                                            "            headers : {",
+                                            "                serviceId : 'HwmHodSvc.findAllHwmHodHist',",
+                                            "                viewId : me.getViewId(),",
+                                            "                scope : me,",
+                                            "            },",
+                                            "            jsonData : values,",
+                                            "            success : function(response) {",
+                                            "                var res = Ext.JSON.decode(response.responseText),",
+                                            "                    hodtmMnth = 0;",
+                                            "                for(var i=0; i<res.initData.length;i++){",
+                                            "                    var value = res.initData[i];",
+                                            "                    value.rplHodEdtm = ''+(value.rplHodEdtm/1 + (value.rplHodEdt-value.rplHodStrdt)*240000);",
+                                            "                    var hodLength = value.rplHodEdtm.length;",
+                                            "                    for(var j=0;j<6-hodLength;j++)",
+                                            "                      value.rplHodEdtm = 0 + value.rplHodEdtm;",
+                                            "        //            if(this.data.wrkDt != value.hodDt) // 해당일 시간 빼기",
+                                            "                    hodtmMnth += me.timeDiff(value.rplHodStrtm, value.rplHodEdtm);",
+                                            "                    hodtmMnth = Math.floor(hodtmMnth*2)*0.5;",
+                                            "                }",
+                                            "                refs.hodtmMnth.setValue(hodtmMnth);",
+                                            "                refs.hodStrdt.setValue(datefield.getValue());",
+                                            "                refs.hodEdt.setValue(datefield.getValue());",
+                                            "",
+                                            "                refs.maxHodtmMnth.setValue((res.maxHodtm[0]==null || res.maxHodtm[0].maxHodtmMnth==null)? 0:res.maxHodtm[0].maxHodtmMnth);",
+                                            "                refs.maxHodtmDay.setValue((res.maxHodtm[0]==null || res.maxHodtm[0].maxHodtmDay==null)? 0:res.maxHodtm[0].maxHodtmDay);",
+                                            "                refs.mnth.setValue(hodtmMnth +\" / \"+refs.maxHodtmMnth.getValue());",
+                                            "",
+                                            "                if(vm.get('btnCancel') !=null){ //취소신청일 때",
+                                            "                    refs.aplHodDt.setReadOnly(true);",
+                                            "        //            refs.hodStrdt.setReadOnly(true);",
+                                            "                    refs.hodStrtm.setReadOnly(true);",
+                                            "        //            refs.hodEdt.setReadOnly(true);",
+                                            "                    refs.hodEdtm.setReadOnly(true);",
+                                            "                    refs.aplCntn.setValue('취소 신청하겠습니다.');",
+                                            "                    refs.aplDvcd.setValue(Constants.wrkAplDvcd.CANCEL);",
+                                            "                    refs.aplDvcdNm.setValue(CodeUtils.getText('HWM009', Constants.wrkAplDvcd.CANCEL));",
+                                            "                    refs.hodStrtm.setValue(DateUtils.encodeDate(DateUtils.getTimeToDate(refs.hodStrtm.getValue()),\"H:i\"));",
+                                            "                    refs.hodEdtm.setValue(DateUtils.encodeDate(DateUtils.getTimeToDate(refs.hodEdtm.getValue()),\"H:i\"));",
+                                            "                    return;",
+                                            "                } else{",
+                                            "                    refs.aplHodDt.setReadOnly(false);",
+                                            "        //            refs.hodStrdt.setReadOnly(false);",
+                                            "                    refs.hodStrtm.setReadOnly(false);",
+                                            "        //            refs.hodEdt.setReadOnly(false);",
+                                            "                    refs.hodEdtm.setReadOnly(false);",
+                                            "                }",
+                                            "",
+                                            "                if(res.maxHodtm[0] != null && res.maxHodtm[0].wrkDt != null){",
+                                            "        //            Ext.Msg.alert(\"안내\", \"휴일근무일자와 근무일자가 겹칩니다. <br/> 관리자에게 문의해주십시오.\");",
+                                            "                    if(refs.btnReApply == null){",
+                                            "                      refs.hodStrtm.setValue(DateUtils.parseTime('0900'));",
+                                            "                      refs.hodEdtm.setValue(DateUtils.parseTime('1100'));",
+                                            "                    }",
+                                            "                }",
+                                            "                else if(vm.get('btnReApply') == null){ //재기안이 아닐 때",
+                                            "                    refs.hodStrtm.setValue(DateUtils.getTimeToDate('090000'));",
+                                            "                    refs.hodEdtm.setValue(DateUtils.getTimeToDate('110000'));",
+                                            "                } else {//근무기준이 존재하지만 재기안일 때",
+                                            "                    refs.hodStrtm.setValue(DateUtils.encodeDate(DateUtils.getTimeToDate(refs.hodStrtm.getValue()),\"H:i\"));",
+                                            "                    refs.hodEdtm.setValue(DateUtils.encodeDate(DateUtils.getTimeToDate(refs.hodEdtm.getValue()),\"H:i\"));",
+                                            "                }",
+                                            "                //총 시간외근무시간 표시 (금월/금주)",
+                                            "                refs.totOvtHodMonthHr.setValue(res.totAdmtOvtHod.totOvtHodMonthHr);",
+                                            "                refs.totOvtHodWeekHr.setValue(res.totAdmtOvtHod.totOvtHodWeekHr);",
+                                            "",
+                                            "                //결재진행중인 시간 표시",
+                                            "                vm.set('criTime' , res.criTime); //기준시간",
+                                            "                vm.set('totAdmtOvthodHr' , res.totAdmtOvtHod.totOvtHodMonthHr); //인정시간",
+                                            "                vm.set('totIngOvthodHr' , res.totIngOvthodHr); //현재 보고 결재 진행중이거나, 보고 전인 시간외근무 시간",
+                                            "            }",
+                                            "        });",
+                                            "}",
+                                            ""
+                                        ],
+                                        "name": "change",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string",
+                                        "designer|commentHeader": "comment"
+                                    },
+                                    "name": "onDatefieldChange",
+                                    "designerId": "79a1d6bd-3222-4477-a1cc-51a4f4c7aa42"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.field.ComboBox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "code": "HWM009",
+                                "designer|displayName": "신청구분(cbx)",
+                                "disabled": true,
+                                "editable": false,
+                                "hidden": true,
+                                "label": "신청구분",
+                                "margin": "0 5 0 5",
+                                "name": "aplDvcd",
+                                "readOnly": true,
+                                "reference": "aplDvcd",
+                                "required": true,
+                                "value": [
+                                    "{detail.aplDvcd}"
+                                ]
+                            },
+                            "configAlternates": {
+                                "value": "binding",
+                                "code": "string",
+                                "designer|displayName": "string",
+                                "disabled": "boolean",
+                                "editable": "boolean",
+                                "hidden": "boolean",
+                                "label": "string",
+                                "margin": "auto",
+                                "name": "string",
+                                "readOnly": "boolean",
+                                "reference": "string",
+                                "required": "boolean"
+                            },
+                            "name": "MyComboBox1",
+                            "designerId": "5c708dbb-c8d4-4fca-ac14-aebc19d2f00c",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "code",
+                                    "type": "string"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "신청구분 (txt)",
+                                "disabled": true,
+                                "editable": false,
+                                "label": "신청구분",
+                                "margin": "0 5 0 5",
+                                "name": "aplDvcdNm",
+                                "readOnly": true,
+                                "reference": "aplDvcdNm",
+                                "required": true,
+                                "value": [
+                                    "{detail.aplDvcdNm}"
+                                ]
+                            },
+                            "configAlternates": {
+                                "value": "binding",
+                                "designer|displayName": "string",
+                                "disabled": "boolean",
+                                "editable": "boolean",
+                                "label": "string",
+                                "margin": "auto",
+                                "name": "string",
+                                "readOnly": "boolean",
+                                "reference": "string",
+                                "required": "boolean"
+                            },
+                            "name": "MyTextField33",
+                            "designerId": "b4744222-68c0-407d-9d37-597f41ca6b50"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "start",
+                                "container|pack": "center",
+                                "designer|displayName": "시작일시",
+                                "height": 82,
+                                "layout": "vbox",
+                                "margin": "0 5 0 5",
+                                "scrollable": false,
+                                "width": "97%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "layout": "string",
+                                "container|align": "string",
+                                "container|pack": "string",
+                                "docked": "string",
+                                "layout|flex": "number",
+                                "scrollable": "auto",
+                                "height": "auto",
+                                "margin": "auto",
+                                "width": "auto"
+                            },
+                            "name": "MyContainer26",
+                            "designerId": "632da038-edf9-4e43-8c72-07a490317b19",
+                            "cn": [
+                                {
+                                    "type": "Ext.Spacer",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 15
+                                    },
+                                    "configAlternates": {
+                                        "height": "auto"
+                                    },
+                                    "name": "MySpacer3",
+                                    "designerId": "10192dfb-2ea5-4a01-9214-88e001456070"
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": "",
+                                        "layout": "hbox",
+                                        "width": "98%"
+                                    },
+                                    "configAlternates": {
+                                        "height": "auto",
+                                        "layout": "string",
+                                        "width": "auto"
+                                    },
+                                    "name": "MyContainer1",
+                                    "designerId": "392cda27-82b4-4eff-9977-4a1f4fe90c26",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "html": "시작 일시",
+                                                "style": "font-size: 12px; color: rgba(17, 17, 17, 0.38)"
+                                            },
+                                            "configAlternates": {
+                                                "html": "string",
+                                                "width": "auto",
+                                                "style": "string"
+                                            },
+                                            "name": "MyLabel6",
+                                            "designerId": "5843a534-6fdb-42b3-9518-871afae5ea64"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Spacer",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 8
+                                    },
+                                    "configAlternates": {
+                                        "height": "auto"
+                                    },
+                                    "name": "MySpacer5",
+                                    "designerId": "9bff0ab1-2b81-4ba2-ba5f-1ef3d8398d76"
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "hidden": false,
+                                        "layout": "hbox",
+                                        "margin": "0 5 0 5",
+                                        "width": "97%"
+                                    },
+                                    "configAlternates": {
+                                        "layout": "string",
+                                        "margin": "auto",
+                                        "width": "auto",
+                                        "hidden": "boolean"
+                                    },
+                                    "name": "MyContainer2",
+                                    "designerId": "55c74009-ad1f-4035-805b-805c6dfdc1c9",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.field.Date",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dateFormat": "Y-m-d",
+                                                "disabled": true,
+                                                "docked": null,
+                                                "editable": false,
+                                                "height": "100%",
+                                                "itemId": "mydate",
+                                                "name": "hodStrdt",
+                                                "readOnly": true,
+                                                "reference": "hodStrdt",
+                                                "required": true,
+                                                "submitFormat": "Ymd",
+                                                "width": "50%"
+                                            },
+                                            "configAlternates": {
+                                                "dateFormat": "string",
+                                                "docked": "string",
+                                                "height": "auto",
+                                                "label": "string",
+                                                "reference": "string",
+                                                "width": "auto",
+                                                "margin": "auto",
+                                                "maxWidth": "auto",
+                                                "minWidth": "auto",
+                                                "disabled": "boolean",
+                                                "editable": "boolean",
+                                                "readOnly": "boolean",
+                                                "name": "string",
+                                                "required": "boolean",
+                                                "itemId": "string",
+                                                "submitFormat": "string"
+                                            },
+                                            "name": "MyDate",
+                                            "designerId": "a075c32b-8f90-4400-9cae-9fefacfc6f0a",
+                                            "customConfigs": [
+                                                {
+                                                    "group": "(Custom Properties)",
+                                                    "name": "submitFormat",
+                                                    "type": "string"
+                                                }
+                                            ],
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.picker.Date",
+                                                    "reference": {
+                                                        "name": "picker",
+                                                        "type": "object"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "dayText": "일",
+                                                        "disabled": true,
+                                                        "header": false,
+                                                        "hideOnMaskTap": true,
+                                                        "monthText": "월",
+                                                        "slotOrder": [
+                                                            "[\"year\",\"month\",\"day\"]"
+                                                        ],
+                                                        "title": "",
+                                                        "yearText": "년"
+                                                    },
+                                                    "configAlternates": {
+                                                        "dayText": "string",
+                                                        "hideOnMaskTap": "boolean",
+                                                        "monthText": "string",
+                                                        "title": "string",
+                                                        "yearText": "string",
+                                                        "header": "boolean",
+                                                        "slotOrder": "array",
+                                                        "disabled": "boolean"
+                                                    },
+                                                    "name": "MyDatePicker",
+                                                    "designerId": "24c25f8a-bceb-4fbb-9543-4e363cdaaff2"
+                                                },
+                                                {
+                                                    "type": "viewcontrollereventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onMydateChange",
+                                                        "implHandler": [
+                                                            "this.onDatefieldChange(datefield, newDate, oldDate, eOpts);"
+                                                        ],
+                                                        "name": "change",
+                                                        "scope": "me"
+                                                    },
+                                                    "configAlternates": {
+                                                        "fn": "string",
+                                                        "implHandler": "code",
+                                                        "name": "string",
+                                                        "scope": "string"
+                                                    },
+                                                    "name": "onMydateChange",
+                                                    "designerId": "879ba93c-978b-4a01-b8e0-ffd4ae6bbf4a"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.Spacer",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "minWidth": "3%",
+                                                "width": null
+                                            },
+                                            "configAlternates": {
+                                                "minWidth": "auto",
+                                                "width": "number"
+                                            },
+                                            "name": "MySpacer4",
+                                            "designerId": "b1f4ed10-368c-4a19-8d8e-e38c146cd928"
+                                        },
+                                        {
+                                            "type": "Ext.field.Time",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "editable": false,
+                                                "format": "H:i",
+                                                "height": "100%",
+                                                "name": "hodStrtm",
+                                                "reference": "hodStrtm",
+                                                "required": true,
+                                                "submitFormat": "His",
+                                                "width": "45%"
+                                            },
+                                            "configAlternates": {
+                                                "designer|displayName": "string",
+                                                "height": "auto",
+                                                "label": "string",
+                                                "reference": "string",
+                                                "width": "auto",
+                                                "disabled": "boolean",
+                                                "format": "string",
+                                                "value": "binding",
+                                                "increment": "number",
+                                                "editable": "boolean",
+                                                "name": "string",
+                                                "required": "boolean",
+                                                "submitFormat": "string"
+                                            },
+                                            "name": "MyTime1",
+                                            "designerId": "aa8a7b1e-57dd-4b9d-9741-72519dc9db0e",
+                                            "customConfigs": [
+                                                {
+                                                    "group": "(Custom Properties)",
+                                                    "name": "submitFormat",
+                                                    "type": "string"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|pack": "end",
+                                "designer|displayName": "종료일시",
+                                "height": 82,
+                                "layout": "vbox",
+                                "margin": "0 5 0 5",
+                                "scrollable": false,
+                                "width": "97%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "layout": "string",
+                                "container|align": "string",
+                                "container|pack": "string",
+                                "docked": "string",
+                                "layout|flex": "number",
+                                "scrollable": "auto",
+                                "height": "auto",
+                                "margin": "auto",
+                                "width": "auto"
+                            },
+                            "name": "MyContainer30",
+                            "designerId": "4fc76cc9-96c5-4040-8454-c390df8b69d8",
+                            "cn": [
+                                {
+                                    "type": "Ext.Spacer",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 10
+                                    },
+                                    "configAlternates": {
+                                        "height": "auto"
+                                    },
+                                    "name": "MySpacer6",
+                                    "designerId": "bf52f5fa-48e9-4a2c-8588-49a9d3546e2c"
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout": "hbox",
+                                        "width": "98%"
+                                    },
+                                    "configAlternates": {
+                                        "layout": "string",
+                                        "width": "auto"
+                                    },
+                                    "name": "MyContainer7",
+                                    "designerId": "07b44e8e-70fb-41bf-b736-eb726b496a71",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "height": "100%",
+                                                "html": "종료 일시",
+                                                "style": "font-size: 12px; color: rgba(17, 17, 17, 0.38)",
+                                                "width": "20%"
+                                            },
+                                            "configAlternates": {
+                                                "html": "string",
+                                                "width": "auto",
+                                                "height": "auto",
+                                                "style": "string"
+                                            },
+                                            "name": "MyLabel6",
+                                            "designerId": "3cf919d8-b6e3-492d-a1b9-7a543aecdb4a"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Spacer",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 8
+                                    },
+                                    "configAlternates": {
+                                        "height": "auto"
+                                    },
+                                    "name": "MySpacer7",
+                                    "designerId": "365ae6bf-9367-476b-8f40-4d1589792907"
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout": "hbox",
+                                        "margin": "0 5 0 5",
+                                        "width": "97%"
+                                    },
+                                    "configAlternates": {
+                                        "layout": "string",
+                                        "width": "auto",
+                                        "margin": "auto"
+                                    },
+                                    "name": "MyContainer10",
+                                    "designerId": "ff91b40d-ddd0-4bba-96dc-df4774926b1f",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.field.Date",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dateFormat": "Y-m-d",
+                                                "editable": false,
+                                                "height": "100%",
+                                                "name": "hodEdt",
+                                                "reference": "hodEdt",
+                                                "required": true,
+                                                "submitFormat": "Ymd",
+                                                "width": "50%"
+                                            },
+                                            "configAlternates": {
+                                                "dateFormat": "string",
+                                                "docked": "string",
+                                                "height": "auto",
+                                                "label": "string",
+                                                "reference": "string",
+                                                "width": "auto",
+                                                "margin": "auto",
+                                                "maxWidth": "auto",
+                                                "minWidth": "auto",
+                                                "labelAlign": "string",
+                                                "name": "string",
+                                                "disabled": "boolean",
+                                                "editable": "boolean",
+                                                "readOnly": "boolean",
+                                                "required": "boolean",
+                                                "submitFormat": "string"
+                                            },
+                                            "name": "MyDate",
+                                            "designerId": "50db00eb-d4b5-449b-97c8-0d9ce3ea5f51",
+                                            "customConfigs": [
+                                                {
+                                                    "group": "(Custom Properties)",
+                                                    "name": "submitFormat",
+                                                    "type": "string"
+                                                }
+                                            ],
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.picker.Date",
+                                                    "reference": {
+                                                        "name": "picker",
+                                                        "type": "object"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "dayText": "일",
+                                                        "header": false,
+                                                        "hideOnMaskTap": true,
+                                                        "monthText": "월",
+                                                        "slotOrder": [
+                                                            "[\"year\",\"month\",\"day\"]"
+                                                        ],
+                                                        "title": "",
+                                                        "yearText": "년"
+                                                    },
+                                                    "configAlternates": {
+                                                        "dayText": "string",
+                                                        "hideOnMaskTap": "boolean",
+                                                        "monthText": "string",
+                                                        "title": "string",
+                                                        "yearText": "string",
+                                                        "header": "boolean",
+                                                        "slotOrder": "array",
+                                                        "disabled": "boolean"
+                                                    },
+                                                    "name": "MyDatePicker",
+                                                    "designerId": "b5f7106a-0926-45ab-b28c-6eedbda4810d"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.Spacer",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "minWidth": "3%",
+                                                "width": null
+                                            },
+                                            "configAlternates": {
+                                                "minWidth": "auto",
+                                                "width": "number"
+                                            },
+                                            "name": "MySpacer4",
+                                            "designerId": "cf03e81b-6ce7-4e91-b872-692217d72db5"
+                                        },
+                                        {
+                                            "type": "Ext.field.Time",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "editable": false,
+                                                "format": "H:i",
+                                                "height": "100%",
+                                                "name": "hodEdtm",
+                                                "reference": "hodEdtm",
+                                                "required": true,
+                                                "submitFormat": "His",
+                                                "width": "45%"
+                                            },
+                                            "configAlternates": {
+                                                "designer|displayName": "string",
+                                                "height": "auto",
+                                                "label": "string",
+                                                "reference": "string",
+                                                "width": "auto",
+                                                "disabled": "boolean",
+                                                "format": "string",
+                                                "increment": "number",
+                                                "editable": "boolean",
+                                                "name": "string",
+                                                "required": "boolean",
+                                                "submitFormat": "string"
+                                            },
+                                            "name": "MyTime1",
+                                            "designerId": "d6895765-6257-4d19-9c2e-1612f2f70a4f",
+                                            "customConfigs": [
+                                                {
+                                                    "group": "(Custom Properties)",
+                                                    "name": "submitFormat",
+                                                    "type": "string"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "start",
+                                "container|pack": "center",
+                                "designer|displayName": "",
+                                "height": 76,
+                                "layout": "hbox",
+                                "margin": "0 5 0 5",
+                                "reference": "ovtHodInfo",
+                                "scrollable": false,
+                                "width": "97%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "layout": "string",
+                                "container|align": "string",
+                                "container|pack": "string",
+                                "docked": "string",
+                                "layout|flex": "number",
+                                "scrollable": "auto",
+                                "height": "auto",
+                                "margin": "auto",
+                                "width": "auto",
+                                "hidden": "boolean",
+                                "reference": "string"
+                            },
+                            "name": "MyContainer19",
+                            "designerId": "60e5967c-1d94-4069-a2e7-e2302f9e4cac",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "hidden": true,
+                                        "label": "금월 (일)",
+                                        "layout|flex": 1,
+                                        "readOnly": true,
+                                        "reference": "totOvtHodMonthDds"
+                                    },
+                                    "configAlternates": {
+                                        "label": "string",
+                                        "layout|flex": "number",
+                                        "readOnly": "boolean",
+                                        "reference": "string",
+                                        "hidden": "boolean"
+                                    },
+                                    "name": "MyTextField14",
+                                    "designerId": "c3d56438-7c32-4eeb-86c2-222a13c40bc3"
+                                },
+                                {
+                                    "type": "Ext.Spacer",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "hidden": true,
+                                        "width": 10
+                                    },
+                                    "configAlternates": {
+                                        "minWidth": "auto",
+                                        "width": "number",
+                                        "hidden": "boolean"
+                                    },
+                                    "name": "MySpacer",
+                                    "designerId": "6729e122-464a-4e7c-93f5-44fd006602b9"
+                                },
+                                {
+                                    "type": "Ext.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "editable": false,
+                                        "label": "금월시간외근무 (시간)",
+                                        "layout|flex": 1,
+                                        "name": "totOvtHodMonthHr",
+                                        "readOnly": true,
+                                        "reference": "totOvtHodMonthHr"
+                                    },
+                                    "configAlternates": {
+                                        "label": "string",
+                                        "layout|flex": "number",
+                                        "readOnly": "boolean",
+                                        "reference": "string",
+                                        "hidden": "boolean",
+                                        "editable": "boolean",
+                                        "name": "string"
+                                    },
+                                    "name": "MyTextField15",
+                                    "designerId": "b27b9854-e028-496e-a309-af709318598f"
+                                },
+                                {
+                                    "type": "Ext.Spacer",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "width": 10
+                                    },
+                                    "configAlternates": {
+                                        "minWidth": "auto",
+                                        "width": "number"
+                                    },
+                                    "name": "MySpacer1",
+                                    "designerId": "641d64f4-c732-4331-8854-95ace8fa31e5"
+                                },
+                                {
+                                    "type": "Ext.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "hidden": true,
+                                        "label": "금주 (일)",
+                                        "layout|flex": 1,
+                                        "readOnly": true,
+                                        "reference": "totOvtHodWeekDds"
+                                    },
+                                    "configAlternates": {
+                                        "label": "string",
+                                        "layout|flex": "number",
+                                        "readOnly": "boolean",
+                                        "reference": "string",
+                                        "hidden": "boolean"
+                                    },
+                                    "name": "MyTextField13",
+                                    "designerId": "8d97e4cd-41ea-4880-ab67-a771759b4ee7"
+                                },
+                                {
+                                    "type": "Ext.Spacer",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "hidden": true,
+                                        "width": 10
+                                    },
+                                    "configAlternates": {
+                                        "minWidth": "auto",
+                                        "width": "number",
+                                        "hidden": "boolean"
+                                    },
+                                    "name": "MySpacer2",
+                                    "designerId": "68d9d27b-b6b4-4abd-92c0-fb5b7f406cb6"
+                                },
+                                {
+                                    "type": "Ext.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "editable": false,
+                                        "label": "금주시간외근무 (시간)",
+                                        "layout|flex": 1,
+                                        "name": "totOvtHodWeekHr",
+                                        "readOnly": true,
+                                        "reference": "totOvtHodWeekHr"
+                                    },
+                                    "configAlternates": {
+                                        "label": "string",
+                                        "layout|flex": "number",
+                                        "readOnly": "boolean",
+                                        "reference": "string",
+                                        "hidden": "boolean",
+                                        "editable": "boolean",
+                                        "name": "string"
+                                    },
+                                    "name": "MyTextField17",
+                                    "designerId": "3c4229b9-ef3c-4867-b88f-a94d309e77e9"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "사유",
+                                "height": 150,
+                                "margin": "0 5 0 5",
+                                "scrollable": false,
+                                "width": "97%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "layout": "string",
+                                "container|align": "string",
+                                "container|pack": "string",
+                                "docked": "string",
+                                "layout|flex": "number",
+                                "scrollable": "auto",
+                                "height": "auto",
+                                "margin": "auto",
+                                "width": "auto"
+                            },
+                            "name": "MyContainer15",
+                            "designerId": "cec15617-959b-4f99-9c3c-aeb2414a8465",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.TextArea",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "label": "사유",
+                                        "margin": "0 5 0 5",
+                                        "maxLength": 200,
+                                        "name": "aplCntn",
+                                        "reference": "aplCntn",
+                                        "required": true,
+                                        "value": [
+                                            "프로젝트명 : \\r\\n일과 중 미처리 사유 :"
+                                        ],
+                                        "width": "97%"
+                                    },
+                                    "configAlternates": {
+                                        "label": "string",
+                                        "name": "string",
+                                        "reference": "string",
+                                        "width": "auto",
+                                        "margin": "auto",
+                                        "value": "object",
+                                        "maxLength": "number",
+                                        "required": "boolean"
+                                    },
+                                    "name": "MyTextArea1",
+                                    "designerId": "189d73bf-4d03-4ebe-b9ac-30183169f9c7"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 0,
+                "hidden": true,
+                "maxHeight": 0
+            },
+            "configAlternates": {
+                "height": "auto",
+                "hidden": "boolean",
+                "maxHeight": "auto"
+            },
+            "name": "common.approvallinegrid",
+            "designerId": "0fa76a17-478a-4f36-9d47-d7f0c57d59d1",
+            "masterInstanceId": "539a6522-9843-49e3-9ecb-51046086b29b"
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "결재선 결재 버튼",
+                "docked": "bottom",
+                "reference": "button",
+                "width": "100%"
+            },
+            "configAlternates": {
+                "docked": "string",
+                "designer|displayName": "string",
+                "reference": "string",
+                "width": "auto"
+            },
+            "name": "MyToolbar",
+            "designerId": "1d375694-46f1-4802-8ba8-75544f9b9eea",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "결재선",
+                        "layout|flex": 1,
+                        "reference": "apLn",
+                        "text": "결재선"
+                    },
+                    "configAlternates": {
+                        "layout|flex": "number",
+                        "text": "string",
+                        "designer|displayName": "string",
+                        "reference": "string"
+                    },
+                    "name": "MyButton27",
+                    "designerId": "f86b7001-cfb7-4347-9c20-b6084d1048cc",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|commentHeader": [
+                                    "결재선 버튼 클릭 이벤트"
+                                ],
+                                "fn": "onBtnAplyLineTap",
+                                "implHandler": [
+                                    "var me = this,",
+                                    "    vm = me.getViewModel(),",
+                                    "    refs = me.getReferences(),",
+                                    "    win = Ext.create('BNK.view.common.ApprovalLinePopup', {});",
+                                    "",
+                                    "me.mon(win, 'selected', function(data, popup) {",
+                                    "    popup.close();",
+                                    "",
+                                    "    vm.set('applyLine', data);",
+                                    "    var me = this,",
+                                    "        refs = me.getReferences(),",
+                                    "        approvalLineGrid = refs.approvalLineGrid;",
+                                    "",
+                                    "    ApprovalBoxSvc.setApprovalLine({",
+                                    "        scope               : me,",
+                                    "        command             : Constants.sanction.DRAFT, // 결재선구분자 : 기안(01)",
+                                    "        approvalLineGrid    : approvalLineGrid,   // 결재선 그리드 객체",
+                                    "        approvalLineRecords : data        // 결재선선택 데이터",
+                                    "    });",
+                                    "",
+                                    "}, me);",
+                                    "",
+                                    "",
+                                    "win.show();"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string",
+                                "designer|commentHeader": "comment"
+                            },
+                            "name": "onBtnAplyLineTap",
+                            "designerId": "56fb835b-f6e3-4af6-bcd7-f75ff938db44"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "결재",
+                        "layout|flex": 1,
+                        "reference": "ap",
+                        "text": "결재"
+                    },
+                    "configAlternates": {
+                        "layout|flex": "number",
+                        "text": "string",
+                        "designer|displayName": "string",
+                        "reference": "string"
+                    },
+                    "name": "MyButton28",
+                    "designerId": "53b078da-4627-4624-bf6c-1b77c1a86743",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|commentHeader": [
+                                    "결재 버튼 클릭 이벤트"
+                                ],
+                                "fn": "onBtnAplyTap",
+                                "implHandler": [
+                                    "var me = this,",
+                                    "    vm = me.getViewModel(),",
+                                    "    refs = me.getReferences(),",
+                                    "    frmDetail = refs.frmDetail,",
+                                    "    approvalLineGrid = refs.approvalLineGrid,",
+                                    "    aprHistId = null;",
+                                    "",
+                                    "// formData",
+                                    "var afterchange = {} ;",
+                                    "for(var field in frmDetail.getFields()) {",
+                                    "    var item = frmDetail.getFields()[field];",
+                                    "    if (Ext.isArray(item) || item.name == 'null') {",
+                                    "        continue;",
+                                    "    }",
+                                    "    if ( Ext.isDate(item.getValue()) ) {",
+                                    "        afterchange[item.name] =  DateUtils.encodeDate(item.getValue(), item.submitFormat);",
+                                    "    } else {",
+                                    "        afterchange[item.name] = item.getValue();",
+                                    "    }",
+                                    "}",
+                                    "afterchange.applyLine = vm.get('applyLine');\t// 결재선",
+                                    "",
+                                    "",
+                                    "// FORM 내에 있는 값이 제대로 입력이되어있는지 확인 후 처리",
+                                    "var errMsg = me.formValid(afterchange);",
+                                    "if(errMsg.length > 0){",
+                                    "    Ext.Msg.alert('유효성 검증', errMsg);",
+                                    "    refs.frmDetail.clearErrors();",
+                                    "    return false;",
+                                    "}",
+                                    "",
+                                    "var hodStrdt = DateUtils.getDate(refs.hodStrdt.getValue());",
+                                    "var hodEdt = DateUtils.getDate(refs.hodEdt.getValue());",
+                                    "var hodStrtm= DateUtils.encodeDate(refs.hodStrtm.getValue(),'His');",
+                                    "var hodEdtm= DateUtils.encodeDate(refs.hodEdtm.getValue(),'His');",
+                                    "",
+                                    "/* [2020.04.03] 급하게 임시 코드 추가함. add by HJ */",
+                                    "afterchange.aplHodStrtm = hodStrtm;",
+                                    "",
+                                    "hodEdtm = ''+(hodEdtm/1 + (hodEdt-hodStrdt)*240000);",
+                                    "var hodLength = hodEdtm.length;",
+                                    "",
+                                    "for(var i=0;i<6-hodLength;i++)",
+                                    "      hodEdtm = 0 + hodEdtm;",
+                                    "",
+                                    "var timediff = me.timeDiff(hodStrtm,hodEdtm);",
+                                    "",
+                                    "if(refs.aplDvcd.getValue() == Constants.wrkAplDvcd.APPLY){",
+                                    "      if(hodEdtm.length>6){",
+                                    "        msg = \"휴일근무일자를 정확히 입력해주십시오.\";",
+                                    "        Ext.Msg.alert(\"유효성 검증\", msg);",
+                                    "        return;",
+                                    "      }",
+                                    "",
+                                    "      //2019.08.02. [ha.cheon] 근무시간 초과 관련 로직 수정. 결재 시에 체크하게 됨",
+                                    "//      if(Number(refs.maxHodtmMnth.getValue())<Number(refs.hodtmMnth.getValue())+timediff){",
+                                    "//        msg = \"월 최대 휴일근무신청시간을 초과하였습니다.\";",
+                                    "//        Ext.Msg.alert(\"유효성 검증\", msg);",
+                                    "//        return;",
+                                    "//      }",
+                                    "//      if(timediff>refs.maxHodtmDay.getValue()){",
+                                    "//        msg = \"일 신청 가능시간을 초과하였습니다.\";",
+                                    "//        Ext.Msg.alert(\"유효성 검증\", msg);",
+                                    "//        return;",
+                                    "//      }",
+                                    "",
+                                    "      if(timediff < 0.5){",
+                                    "        msg = \"휴일근무는 30분 이상 신청 가능합니다.\";",
+                                    "        Ext.Msg.alert(\"유효성 검증\", msg);",
+                                    "        return;",
+                                    "      }",
+                                    "",
+                                    "      //인정시간에 따른 로직",
+                                    "      var criTime = vm.get('criTime'); //기준시간",
+                                    "      var admtTime = vm.get('totAdmtOvthodHr'); //인정시간",
+                                    "      var ingTime = vm.get('totIngOvthodHr'); //현재 보고 결재 진행중이거나, 보고 전인 시간외근무 시간",
+                                    "",
+                                    "      //기준이 없을 경우",
+                                    "      // 2020.07.23. 천현아 / TODO: 0시간으로 넘어오는 건 기준이 있어도 값이 0으로 설정돼 있으면 아래경우에 해당함. null에 대한 오류처리로 고쳐야 하는데, 서비스단에서부터 고쳐야 함.",
+                                    "      if(!criTime){",
+                                    "        Ext.Msg.alert('안내','신청일자에 대한 근무기준이 없거나, 중복되는 기간이 있습니다.<br />관리자에게 문의하시길 바랍니다.');",
+                                    "        return false;",
+                                    "      }",
+                                    "",
+                                    "      //인정시간이 월 최대 인정시간 이상인경우",
+                                    "      if(admtTime >= criTime){",
+                                    "        Ext.Msg.alert('안내' , '월 최대 인정가능 시간이 초과됩니다.<br>신청시간을 확인하시길 바랍니다.');",
+                                    "        return false;",
+                                    "      }",
+                                    "",
+                                    "    if(admtTime + ingTime >= criTime){",
+                                    "        Ext.Msg.confirm('알림', '<b> [시간외근무] </b><br><br> 기인정시간(보고완료) : ' + admtTime",
+                                    "            +'<br> 미인정시간(사전승인 또는 사후보고 미완료 및 진행중) : ' + ingTime",
+                                    "            +'<br> 현재 신청시간 : ' + timediff",
+                                    "            +'<br><br> 미인정시간 중 진행중인(인정가능한) 결재건이 있을 경우'",
+                                    "            +'<br>월 최대 인정가능 시간이 초과되어 인정 받지 못할 수도 있습니다.'",
+                                    "            +'<br><br> <b><font style=\"color:red\">※ 진행중인 결재건이 있을 시 검토 후 신청 바랍니다.</font>'",
+                                    "            +'<br><br> 그래도 계속 진행하시겠습니까?</b>',function(btn) {",
+                                    "          if (btn == 'yes') {",
+                                    "                Ext.Ajax.request({",
+                                    "                    headers : {",
+                                    "                        serviceId : 'HwmHodSvc.findAllHwmHodAply',",
+                                    "                        viewId : me.getViewId(),",
+                                    "                        scope : me",
+                                    "                    },",
+                                    "                    jsonData : afterchange,",
+                                    "                    success : function(response) {",
+                                    "                        var res = Ext.JSON.decode(response.responseText);",
+                                    "                        if(res.errMsg!=null){",
+                                    "                            Ext.Msg.alert(\"안내\", res.errMsg);",
+                                    "                            return;",
+                                    "                        }",
+                                    "",
+                                    "                        if(refs.aplDvcd.getValue() == Constants.wrkAplDvcd.CANCEL){",
+                                    "                            //GO SANCTION POPUP\t(취소)",
+                                    "                            afterchange.comAprHistApfId = vm.get('comAprHistApfId');",
+                                    "                            afterchange.hrWrkmHodApfId = vm.get('hrWrkmHodApfId');",
+                                    "",
+                                    "                            var params = {},",
+                                    "                                docData = {",
+                                    "                                    afterchange : afterchange",
+                                    "                                };",
+                                    "                            params.aprStcd = '09'; // 완료처리",
+                                    "                            params.aplDvcd = '02';",
+                                    "                            params.docData = docData;",
+                                    "",
+                                    "                            // Service 호출",
+                                    "                            Ext.Ajax.request({",
+                                    "                                headers : {",
+                                    "                                    viewId : me.getViewId(), \t// userAlias",
+                                    "                                    serviceId : 'HwmHodSvc.saveHwmHodAply' \t\t// 조건 검사 후 출.퇴근 처리",
+                                    "                                },",
+                                    "                                jsonData : params,",
+                                    "                                scope : me,",
+                                    "                                success : function(response) {",
+                                    "                                    me.onComplete();",
+                                    "                                },",
+                                    "                             });",
+                                    "                        }else{",
+                                    "                            //GO SANCTION POPUP\t (신청)",
+                                    "                            ApprovalBoxSvc.draft({",
+                                    "                                scope                 : me,",
+                                    "                                edocCd                : 'HwmHodAply71',\t\t\t\t \t \t\t// 전자문서관리에서 설정된 문서코드: 화면ID를 사용함",
+                                    "                                docNm                 : '휴일근무 신청서', \t\t\t\t\t\t\t \t\t// 문서명",
+                                    "                                bizDvcd               : 'HWM', \t\t\t\t\t\t\t \t\t// 업무구분코드",
+                                    "                                bizServiceId          : 'HwmHodSvc.saveHwmHodAply',   \t\t\t// 연관 업무서비스ID",
+                                    "                                aprHistId             : null,\t\t\t\t\t\t \t \t\t// 결재이력ID",
+                                    "                                approvalLineRecords   : approvalLineGrid.getJsonAllRecords(), \t// 결재선 그리드 데이터",
+                                    "                                docData               : {\t\t\t\t\t\t\t\t \t\t// 결재문서 데이터",
+                                    "                                    fieldValues       : vm.get('fieldValues'),",
+                                    "                                    beforechange      : null,",
+                                    "                                    afterchange       : afterchange \t\t\t \t\t\t\t// 결재문서 필드값",
+                                    "                                }",
+                                    "                            });",
+                                    "                        }",
+                                    "",
+                                    "                    }",
+                                    "",
+                                    "                });",
+                                    "            }else {",
+                                    "                return;",
+                                    "            }",
+                                    "        });",
+                                    "    }else{",
+                                    "        Ext.Ajax.request({",
+                                    "            headers : {",
+                                    "                serviceId : 'HwmHodSvc.findAllHwmHodAply',",
+                                    "                viewId : me.getViewId(),",
+                                    "                scope : me",
+                                    "            },",
+                                    "            jsonData : afterchange,",
+                                    "            success : function(response) {",
+                                    "                var res = Ext.JSON.decode(response.responseText);",
+                                    "                if(res.errMsg!=null){",
+                                    "                    Ext.Msg.alert(\"안내\", res.errMsg);",
+                                    "                    return;",
+                                    "                }",
+                                    "",
+                                    "                if(refs.aplDvcd.getValue() == Constants.wrkAplDvcd.CANCEL){",
+                                    "                    //GO SANCTION POPUP\t(취소)",
+                                    "                    afterchange.comAprHistApfId = vm.get('comAprHistApfId');",
+                                    "                    afterchange.hrWrkmHodApfId = vm.get('hrWrkmHodApfId');",
+                                    "",
+                                    "                    var params = {},",
+                                    "                        docData = {",
+                                    "                            afterchange : afterchange",
+                                    "                        };",
+                                    "                    params.aprStcd = '09'; // 완료처리",
+                                    "                    params.aplDvcd = '02';",
+                                    "                    params.docData = docData;",
+                                    "",
+                                    "                    // Service 호출",
+                                    "                    Ext.Ajax.request({",
+                                    "                        headers : {",
+                                    "                            viewId : me.getViewId(), \t// userAlias",
+                                    "                            serviceId : 'HwmHodSvc.saveHwmHodAply' \t\t// 조건 검사 후 출.퇴근 처리",
+                                    "                        },",
+                                    "                        jsonData : params,",
+                                    "                        scope : me,",
+                                    "                        success : function(response) {",
+                                    "                            me.onComplete();",
+                                    "                        },",
+                                    "                    });",
+                                    "                }else{",
+                                    "                    //GO SANCTION POPUP\t (신청)",
+                                    "                    ApprovalBoxSvc.draft({",
+                                    "                        scope                 : me,",
+                                    "                        edocCd                : 'HwmHodAply71',\t\t\t\t \t \t\t// 전자문서관리에서 설정된 문서코드: 화면ID를 사용함",
+                                    "                        docNm                 : '휴일근무 신청서', \t\t\t\t\t\t\t \t\t// 문서명",
+                                    "                        bizDvcd               : 'HWM', \t\t\t\t\t\t\t \t\t// 업무구분코드",
+                                    "                        bizServiceId          : 'HwmHodSvc.saveHwmHodAply',   \t\t\t// 연관 업무서비스ID",
+                                    "                        aprHistId             : null,\t\t\t\t\t\t \t \t\t// 결재이력ID",
+                                    "                        approvalLineRecords   : approvalLineGrid.getJsonAllRecords(), \t// 결재선 그리드 데이터",
+                                    "                        docData               : {\t\t\t\t\t\t\t\t \t\t// 결재문서 데이터",
+                                    "                            fieldValues       : vm.get('fieldValues'),",
+                                    "                            beforechange      : null,",
+                                    "                            afterchange       : afterchange \t\t\t \t\t\t\t// 결재문서 필드값",
+                                    "                        }",
+                                    "                    });",
+                                    "                }",
+                                    "",
+                                    "            }",
+                                    "",
+                                    "        });",
+                                    "    }",
+                                    "}else{",
+                                    "    Ext.Ajax.request({",
+                                    "        headers : {",
+                                    "            serviceId : 'HwmHodSvc.findAllHwmHodAply',",
+                                    "            viewId : me.getViewId(),",
+                                    "            scope : me",
+                                    "        },",
+                                    "        jsonData : afterchange,",
+                                    "        success : function(response) {",
+                                    "            var res = Ext.JSON.decode(response.responseText);",
+                                    "            if(res.errMsg!=null){",
+                                    "                Ext.Msg.alert(\"안내\", res.errMsg);",
+                                    "                return;",
+                                    "            }",
+                                    "",
+                                    "            if(refs.aplDvcd.getValue() == Constants.wrkAplDvcd.CANCEL){",
+                                    "                //GO SANCTION POPUP\t(취소)",
+                                    "                afterchange.comAprHistApfId = vm.get('comAprHistApfId');",
+                                    "                afterchange.hrWrkmHodApfId = vm.get('hrWrkmHodApfId');",
+                                    "",
+                                    "                var params = {},",
+                                    "                    docData = {",
+                                    "                        afterchange : afterchange",
+                                    "                    };",
+                                    "                params.aprStcd = '09'; // 완료처리",
+                                    "                params.aplDvcd = '02';",
+                                    "                params.docData = docData;",
+                                    "",
+                                    "                // Service 호출",
+                                    "                Ext.Ajax.request({",
+                                    "                    headers : {",
+                                    "                        viewId : me.getViewId(), \t// userAlias",
+                                    "                        serviceId : 'HwmHodSvc.saveHwmHodAply' \t\t// 조건 검사 후 출.퇴근 처리",
+                                    "                    },",
+                                    "                    jsonData : params,",
+                                    "                    scope : me,",
+                                    "                    success : function(response) {",
+                                    "                        me.onComplete();",
+                                    "                    },",
+                                    "                });",
+                                    "            }else{",
+                                    "                //GO SANCTION POPUP\t (신청)",
+                                    "                ApprovalBoxSvc.draft({",
+                                    "                    scope                 : me,",
+                                    "                    edocCd                : 'HwmHodAply71',\t\t\t\t \t \t\t// 전자문서관리에서 설정된 문서코드: 화면ID를 사용함",
+                                    "                    docNm                 : '휴일근무 신청서', \t\t\t\t\t\t\t \t\t// 문서명",
+                                    "                    bizDvcd               : 'HWM', \t\t\t\t\t\t\t \t\t// 업무구분코드",
+                                    "                    bizServiceId          : 'HwmHodSvc.saveHwmHodAply',   \t\t\t// 연관 업무서비스ID",
+                                    "                    aprHistId             : null,\t\t\t\t\t\t \t \t\t// 결재이력ID",
+                                    "                    approvalLineRecords   : approvalLineGrid.getJsonAllRecords(), \t// 결재선 그리드 데이터",
+                                    "                    docData               : {\t\t\t\t\t\t\t\t \t\t// 결재문서 데이터",
+                                    "                        fieldValues       : vm.get('fieldValues'),",
+                                    "                        beforechange      : null,",
+                                    "                        afterchange       : afterchange \t\t\t \t\t\t\t// 결재문서 필드값",
+                                    "                    }",
+                                    "                });",
+                                    "            }",
+                                    "",
+                                    "        }",
+                                    "",
+                                    "    });",
+                                    "}"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string",
+                                "designer|commentHeader": "comment"
+                            },
+                            "name": "onBtnAplyTap",
+                            "designerId": "cf3467ca-bac0-4039-ae7e-15c4ed718aa2"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "초기화"
+                ],
+                "fn": "onContainerInitialize",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences();",
+                    "",
+                    "me.setParentView(component.parentView);\t\t// 부모 창",
+                    "",
+                    "vm.set('detail.id', Ext.id());",
+                    "vm.set('detail.crud', 'C');",
+                    "vm.set('detail.stcd', Constants.stcd.OUTSTANDING);",
+                    "vm.set('detail.aplStcd', Constants.aplStcd.PROGRESS_APPLY);",
+                    "",
+                    "vm.set('detail.hrHrpmCompId', SecurityUtils.getPrincipal().hrHrpmCompId); \t// 회사",
+                    "vm.set('detail.hrHrpmEmpId', SecurityUtils.getPrincipal().hrHrpmEmpId);\t\t// 사번",
+                    "vm.set('detail.dpnm',SecurityUtils.getPrincipal().dpnm);\t\t\t\t\t// 소속명",
+                    "vm.set('detail.empeNm',SecurityUtils.getPrincipal().empeNm);\t\t\t\t// 성명",
+                    "vm.set('detail.empePsitNm',SecurityUtils.getPrincipal().empePsitNm);\t\t// 직위",
+                    "vm.set('detail.crrDvcd', Constants.crrDvcd.USER_CRR);\t\t\t\t\t\t// 보정구분코드",
+                    "vm.set('detail.aplDvcd',Constants.wrkAplDvcd.APPLY);\t\t\t\t\t\t// 신청구분(cbx)",
+                    "vm.set('detail.aplDvcdNm', CodeUtils.getText('HWM009', Constants.wrkAplDvcd.APPLY));\t\t// 신청구분(txt)",
+                    "vm.set('detail.aplDt',DateUtils.encodeDate(new Date(),'Ymd'));",
+                    "vm.set('detail.aplTm',DateUtils.encodeDate(new Date(),'His'));    ",
+                    "vm.set('detail.rqpr',SecurityUtils.getPrincipal().hrHrpmEmpId+\" / \"+\t\t// 신청자",
+                    "       SecurityUtils.getPrincipal().dpnm + \" / \" +",
+                    "       SecurityUtils.getPrincipal().empeNm +\" / \" +",
+                    "       SecurityUtils.getPrincipal().empePsitNm);",
+                    "",
+                    "refs.frmDetail.setValues(vm.get('detail'));",
+                    "",
+                    "if(component.records && (component.btnReApply== Constants.exYesNo.YES.LETTER || component.btnCancel==Constants.exYesNo.YES.LETTER)){ //재기안인지, 취소신청인지",
+                    "    var data = component.records;",
+                    "    refs.aplHodDt.setValue(DateUtils.parseDate(data.aplHodDt));\t\t\t\t\t// 일자",
+                    "    refs.hodStrdt.setValue(DateUtils.parseDate(data.aplHodStrdt));\t\t\t// 시작일자",
+                    "    refs.hodStrtm.setValue(DateUtils.parseTime(data.aplHodStrtm.substr(0,4)));\t// 시작시간",
+                    "    refs.hodEdt.setValue(DateUtils.parseDate(data.aplHodEdt));\t\t\t\t// 종료일자",
+                    "    refs.hodEdtm.setValue(DateUtils.parseTime(data.aplHodEdtm.substr(0,4)));\t\t// 종료시간",
+                    "    //재기안시 사유에 대한 값 들고오기",
+                    "    if(component.btnReApply == Constants.exYesNo.YES.LETTER){",
+                    "        vm.set('btnReApply', component.btnReApply);\t\t\t// 재기안 flag",
+                    "        refs.aplCntn.setValue(data.aplCntn);",
+                    "    } else if(component.btnCancel == Constants.exYesNo.YES.LETTER){",
+                    "        vm.set('btnCancel', component.btnCancel);\t\t\t// 취소신청 flag",
+                    "        vm.set('comAprHistApfId', component.comAprHistApfId);",
+                    "        vm.set('hrWrkmHodApfId', component.hrWrkmHodApfId);",
+                    "    }",
+                    "} else{",
+                    "    refs.aplHodDt.setValue(new Date());",
+                    "}",
+                    "",
+                    "refs.hodStrtm.el.select('.x-error-el').setStyle('margin','0px');",
+                    "refs.hodEdtm.el.select('.x-error-el').setStyle('margin',\t'0px');",
+                    "refs.hodStrtm.el.select('.x-error-el').setStyle('height','0px');",
+                    "refs.hodEdtm.el.select('.x-error-el').setStyle('height',\t'0px');",
+                    "",
+                    "ApprovalBoxSvc.setup({",
+                    "    command   : Constants.sanction.DRAFT,",
+                    "    viewModel : vm,",
+                    "    edocCd    : 'HwmHodAply71',",
+                    "    scope     : me",
+                    "});"
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onContainerInitialize",
+            "designerId": "c18ffa8c-dbce-4924-8b4b-f0387d46043d"
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onContainerDestroy",
+                "implHandler": [
+                    "// this.getViewModel().set('btnReApply', null);\t\t// 재기안 flag 초기화",
+                    "// this.getViewModel().set('btnCancel', null);\t\t\t// 취소신청 flag 초기화"
+                ],
+                "name": "destroy",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "name": "string",
+                "scope": "string",
+                "implHandler": "code"
+            },
+            "name": "onContainerDestroy",
+            "designerId": "9ac22c2b-96c5-403c-bf7c-68a13db70fed"
+        }
+    ]
+}

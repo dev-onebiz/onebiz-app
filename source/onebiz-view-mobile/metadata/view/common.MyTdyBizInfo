@@ -1,0 +1,995 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "MyTdyBizInfo"
+        ],
+        "designer|extend": "Ext.window.Window",
+        "designer|userAlias": "MyTdyBizInfo",
+        "designer|userClassName": "common.MyTdyBizInfo",
+        "height": "80%",
+        "layout": "vbox",
+        "modal": true,
+        "padding": 0,
+        "width": "90%"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "extend": "string",
+        "alternateClassName": "typedarray",
+        "designer|extend": "string",
+        "designer|userAlias": "string",
+        "height": "auto",
+        "layout": "string",
+        "modal": "boolean",
+        "padding": "auto",
+        "width": "auto"
+    },
+    "designerId": "a16d8b8d-c3c0-4678-bc6b-a27dd34ee4b3",
+    "viewControllerInstanceId": "4a225c1e-e8f8-48c8-a45a-e08d89ff416b",
+    "viewModelInstanceId": "6a6eb79f-b984-404f-80bc-fab371d62db0",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "header",
+                "layout": "vbox",
+                "padding": "15 10 15 10",
+                "reference": "header",
+                "shadow": true
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "layout": "string",
+                "padding": "auto",
+                "reference": "string",
+                "shadow": "boolean"
+            },
+            "name": "MyContainer101",
+            "designerId": "2328aeca-6bbc-4e1f-b257-1eeff9ff03e0",
+            "cn": [
+                {
+                    "type": "Ext.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "hidden": false,
+                        "html": "업무 정보",
+                        "layout|flex": 1,
+                        "reference": "title",
+                        "style": "display:flex; align-items:center; justify-content : center; font-size : 20px; font-weight : 600;"
+                    },
+                    "configAlternates": {
+                        "html": "string",
+                        "layout|flex": "number",
+                        "reference": "string",
+                        "style": "string",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyLabel35",
+                    "designerId": "ab93b505-a173-428f-8eb6-31a093221887"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "body",
+                "height": "",
+                "layout|flex": 1,
+                "reference": "body",
+                "scrollable": "vertical"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "height": "auto",
+                "layout|flex": "number",
+                "reference": "string",
+                "scrollable": "auto"
+            },
+            "name": "MyContainer102",
+            "designerId": "5510ae8a-0b3e-4bec-b952-aa42e2413ec5",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "회의정보",
+                        "hidden": true
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyContainer105",
+                    "designerId": "6df34a74-aa13-4f6b-8f44-3c452e4674c0",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "회의정보-title",
+                                "html": "회의",
+                                "padding": "5 10 5 10",
+                                "style": "background-color:#F0F0F0; font-size : 18px; font-weight:500;"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "html": "string",
+                                "padding": "auto",
+                                "style": "string"
+                            },
+                            "name": "MyContainer104",
+                            "designerId": "abeeca52-7dd2-4305-82f7-fc61a600d2a1"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout": "vbox"
+                            },
+                            "configAlternates": {
+                                "layout": "string"
+                            },
+                            "name": "MyContainer116",
+                            "designerId": "171f4021-1a02-4629-a428-7b922cb65063",
+                            "cn": [
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "회의정보1-content",
+                                        "height": 60,
+                                        "layout": "hbox",
+                                        "padding": "0 10 0 10"
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "height": "auto",
+                                        "layout": "string",
+                                        "padding": "auto"
+                                    },
+                                    "name": "MyContainer106",
+                                    "designerId": "ac042f43-7d47-4c7e-a6a5-53a113cf4dd0",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "회의명",
+                                                "layout": "vbox",
+                                                "layout|flex": 1,
+                                                "width": ""
+                                            },
+                                            "configAlternates": {
+                                                "designer|displayName": "string",
+                                                "layout": "string",
+                                                "layout|flex": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyContainer107",
+                                            "designerId": "02173c78-47f9-4fd3-9f59-e8ab0ea299a5",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.Label",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|displayName": "회의명",
+                                                        "height": "",
+                                                        "html": "<div style=\"max-width:100%;overflow:hidden; text-overflow:ellipsis; white-space:nowrap;\">1월 5주차 주간 업무 보고1월 5주차 주간 업무 보고</div>",
+                                                        "layout|flex": 1,
+                                                        "style": "display:flex;align-items:center;justify-content:center;font-size:16px;"
+                                                    },
+                                                    "configAlternates": {
+                                                        "designer|displayName": "string",
+                                                        "height": "auto",
+                                                        "html": "string",
+                                                        "layout|flex": "number",
+                                                        "style": "string"
+                                                    },
+                                                    "name": "MyLabel36",
+                                                    "designerId": "3283fdb0-b4d1-45e1-890f-e65a910d1c23"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "회의일시",
+                                                "layout": "vbox",
+                                                "layout|flex": 1
+                                            },
+                                            "configAlternates": {
+                                                "designer|displayName": "string",
+                                                "layout": "string",
+                                                "layout|flex": "number"
+                                            },
+                                            "name": "MyContainer108",
+                                            "designerId": "7afd4cdd-4e0f-4ea3-8a40-87621242b568",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.Label",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|displayName": "날짜",
+                                                        "html": "01.26",
+                                                        "layout|flex": 1,
+                                                        "style": "display:flex;align-items:flex-end;justify-content:center;font-size:14px"
+                                                    },
+                                                    "configAlternates": {
+                                                        "designer|displayName": "string",
+                                                        "html": "string",
+                                                        "layout|flex": "number",
+                                                        "style": "string"
+                                                    },
+                                                    "name": "MyLabel37",
+                                                    "designerId": "8f24e24a-9a51-4bb0-8d38-58c034a55b4d"
+                                                },
+                                                {
+                                                    "type": "Ext.Spacer",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "maxHeight": 5
+                                                    },
+                                                    "configAlternates": {
+                                                        "maxHeight": "auto"
+                                                    },
+                                                    "name": "MySpacer3",
+                                                    "designerId": "4fe611dd-601d-4e70-85fa-bdb7193b923f"
+                                                },
+                                                {
+                                                    "type": "Ext.Label",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|displayName": "시간",
+                                                        "html": "10:00 ~ 11:30",
+                                                        "layout|flex": 1,
+                                                        "style": "display:flex;align-items:flex-start;justify-content:center;font-size:16px; font-weight:600;"
+                                                    },
+                                                    "configAlternates": {
+                                                        "designer|displayName": "string",
+                                                        "html": "string",
+                                                        "layout|flex": "number",
+                                                        "style": "string"
+                                                    },
+                                                    "name": "MyLabel38",
+                                                    "designerId": "c5fb7a0d-ebc9-41a5-95e5-5ba198ed855b"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "회의정보-hr",
+                                        "height": 1,
+                                        "margin": "0 20 0 20",
+                                        "style": "border : 0.5px solid #5B9BD5;"
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "height": "auto",
+                                        "margin": "auto",
+                                        "style": "string"
+                                    },
+                                    "name": "MyContainer109",
+                                    "designerId": "1e3668b5-62b0-41ce-8575-3b499bc7420f"
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "회의정보1-content",
+                                        "height": 60,
+                                        "layout": "hbox",
+                                        "padding": "0 10 0 10"
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "height": "auto",
+                                        "layout": "string",
+                                        "padding": "auto"
+                                    },
+                                    "name": "MyContainer114",
+                                    "designerId": "084aa14f-7e87-4460-a6b8-370c3d3f5915",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "회의명",
+                                                "layout": "vbox",
+                                                "layout|flex": 1
+                                            },
+                                            "configAlternates": {
+                                                "designer|displayName": "string",
+                                                "layout": "string",
+                                                "layout|flex": "number"
+                                            },
+                                            "name": "MyContainer107",
+                                            "designerId": "22bbee95-4461-4272-96f9-83fa7e4a69ba",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.Label",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|displayName": "회의명",
+                                                        "html": "원비즈 근태관리 업무협의",
+                                                        "layout|flex": 1,
+                                                        "style": "display:flex;align-items:center;justify-content:center;font-size:16px; overflow:hidden; text-overflow:ellipsis; white-sapce:nowrap;"
+                                                    },
+                                                    "configAlternates": {
+                                                        "designer|displayName": "string",
+                                                        "html": "string",
+                                                        "layout|flex": "number",
+                                                        "style": "string"
+                                                    },
+                                                    "name": "MyLabel36",
+                                                    "designerId": "f5383c08-6c9d-4a0d-9099-088e627b11d4"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "회의일시",
+                                                "layout": "vbox",
+                                                "layout|flex": 1
+                                            },
+                                            "configAlternates": {
+                                                "designer|displayName": "string",
+                                                "layout": "string",
+                                                "layout|flex": "number"
+                                            },
+                                            "name": "MyContainer108",
+                                            "designerId": "127d7448-1afb-4620-ad57-081f5fe99471",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.Label",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|displayName": "날짜",
+                                                        "html": "01.26",
+                                                        "layout|flex": 1,
+                                                        "style": "display:flex;align-items:flex-end;justify-content:center;font-size:14px"
+                                                    },
+                                                    "configAlternates": {
+                                                        "designer|displayName": "string",
+                                                        "html": "string",
+                                                        "layout|flex": "number",
+                                                        "style": "string"
+                                                    },
+                                                    "name": "MyLabel37",
+                                                    "designerId": "5c37e427-5d48-48d7-b5c3-68b615ceb36b"
+                                                },
+                                                {
+                                                    "type": "Ext.Spacer",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "maxHeight": 5
+                                                    },
+                                                    "configAlternates": {
+                                                        "maxHeight": "auto"
+                                                    },
+                                                    "name": "MySpacer3",
+                                                    "designerId": "a9f3cc90-8188-4dd0-9550-aa7f07336975"
+                                                },
+                                                {
+                                                    "type": "Ext.Label",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|displayName": "시간",
+                                                        "html": "15:00 ~ 16:00",
+                                                        "layout|flex": 1,
+                                                        "style": "display:flex;align-items:flex-start;justify-content:center;font-size:16px; font-weight:600;"
+                                                    },
+                                                    "configAlternates": {
+                                                        "designer|displayName": "string",
+                                                        "html": "string",
+                                                        "layout|flex": "number",
+                                                        "style": "string"
+                                                    },
+                                                    "name": "MyLabel38",
+                                                    "designerId": "91f3abc2-8e3a-44fc-b58d-da5099b32e1a"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "회의정보",
+                        "hidden": true
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyContainer115",
+                    "designerId": "06621c36-ef25-4105-9168-0dbc1b4ebba7",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "회의정보-title",
+                                "html": "휴가자",
+                                "padding": "5 10 5 10",
+                                "style": "background-color:#F0F0F0; font-size : 18px; font-weight:500;"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "html": "string",
+                                "padding": "auto",
+                                "style": "string"
+                            },
+                            "name": "MyContainer104",
+                            "designerId": "123a3d4f-2f71-4d02-99f6-285a9aae71d6"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "회의정보1-content",
+                                "height": 60,
+                                "layout": "hbox",
+                                "padding": "0 10 0 10"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "layout": "string",
+                                "padding": "auto"
+                            },
+                            "name": "MyContainer106",
+                            "designerId": "79853876-e6e6-4fc9-9203-4c28d123bcb3",
+                            "cn": [
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "회의명",
+                                        "layout": "vbox",
+                                        "layout|flex": 1
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "layout": "string",
+                                        "layout|flex": "number"
+                                    },
+                                    "name": "MyContainer107",
+                                    "designerId": "b5d15c96-0d4d-4f58-83c7-0198d6adac3b",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "회의명",
+                                                "html": "홍길동 매니저",
+                                                "layout|flex": 1,
+                                                "style": "display:flex;align-items:center;justify-content:center;font-size:16px; overflow:hidden; text-overflow:ellipsis; white-sapce:nowrap;"
+                                            },
+                                            "configAlternates": {
+                                                "designer|displayName": "string",
+                                                "html": "string",
+                                                "layout|flex": "number",
+                                                "style": "string"
+                                            },
+                                            "name": "MyLabel36",
+                                            "designerId": "ddb14573-d825-4b6e-81dc-ed76c114e4f2"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "회의일시",
+                                        "layout": "vbox",
+                                        "layout|flex": 1
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "layout": "string",
+                                        "layout|flex": "number"
+                                    },
+                                    "name": "MyContainer108",
+                                    "designerId": "1c783c5a-3afc-459d-a7a6-460cdc2d126a",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "날짜",
+                                                "html": "01.26",
+                                                "layout|flex": 1,
+                                                "style": "display:flex;align-items:flex-end;justify-content:center;font-size:14px"
+                                            },
+                                            "configAlternates": {
+                                                "designer|displayName": "string",
+                                                "html": "string",
+                                                "layout|flex": "number",
+                                                "style": "string"
+                                            },
+                                            "name": "MyLabel37",
+                                            "designerId": "6c8a137e-4a07-43b0-9bc5-6c5dbd2b0442"
+                                        },
+                                        {
+                                            "type": "Ext.Spacer",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "maxHeight": 5
+                                            },
+                                            "configAlternates": {
+                                                "maxHeight": "auto"
+                                            },
+                                            "name": "MySpacer3",
+                                            "designerId": "b9036ce9-37fe-407a-ae2b-4f41d2e9fb0f"
+                                        },
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "시간",
+                                                "html": "금일 하루",
+                                                "layout|flex": 1,
+                                                "style": "display:flex;align-items:flex-start;justify-content:center;font-size:16px; font-weight:600;"
+                                            },
+                                            "configAlternates": {
+                                                "designer|displayName": "string",
+                                                "html": "string",
+                                                "layout|flex": "number",
+                                                "style": "string"
+                                            },
+                                            "name": "MyLabel38",
+                                            "designerId": "df4df2ed-a0d5-4be2-a6f3-4b08ad596556"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "회의정보-hr",
+                                "height": 1,
+                                "margin": "0 20 0 20",
+                                "style": "border : 0.5px solid #5B9BD5;"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "margin": "auto",
+                                "style": "string"
+                            },
+                            "name": "MyContainer109",
+                            "designerId": "45eaa9fd-ae48-44c2-a58b-49363614be12"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "회의정보1-content",
+                                "height": 60,
+                                "layout": "hbox",
+                                "padding": "0 10 0 10"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "layout": "string",
+                                "padding": "auto"
+                            },
+                            "name": "MyContainer114",
+                            "designerId": "d3d296cf-2c32-4337-a3a2-8cd6c4392c1e",
+                            "cn": [
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "회의명",
+                                        "layout": "vbox",
+                                        "layout|flex": 1
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "layout": "string",
+                                        "layout|flex": "number"
+                                    },
+                                    "name": "MyContainer107",
+                                    "designerId": "d2e082f2-7b3c-4c5b-a87c-84e57b44fdc6",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "회의명",
+                                                "html": "임꺽정 매니저",
+                                                "layout|flex": 1,
+                                                "style": "display:flex;align-items:center;justify-content:center;font-size:16px; overflow:hidden; text-overflow:ellipsis; white-sapce:nowrap;"
+                                            },
+                                            "configAlternates": {
+                                                "designer|displayName": "string",
+                                                "html": "string",
+                                                "layout|flex": "number",
+                                                "style": "string"
+                                            },
+                                            "name": "MyLabel36",
+                                            "designerId": "f1a11d11-cae1-40f5-b58d-39401b61a083"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "회의일시",
+                                        "layout": "vbox",
+                                        "layout|flex": 1
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "layout": "string",
+                                        "layout|flex": "number"
+                                    },
+                                    "name": "MyContainer108",
+                                    "designerId": "13091870-8b66-4305-9af9-0373d4621aa9",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "날짜",
+                                                "html": "01.26 ~ 02.02",
+                                                "layout|flex": 1,
+                                                "style": "display:flex;align-items:flex-end;justify-content:center;font-size:14px"
+                                            },
+                                            "configAlternates": {
+                                                "designer|displayName": "string",
+                                                "html": "string",
+                                                "layout|flex": "number",
+                                                "style": "string"
+                                            },
+                                            "name": "MyLabel37",
+                                            "designerId": "a26ae313-3f7f-4c1a-854c-5eddbd328247"
+                                        },
+                                        {
+                                            "type": "Ext.Spacer",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "maxHeight": 5
+                                            },
+                                            "configAlternates": {
+                                                "maxHeight": "auto"
+                                            },
+                                            "name": "MySpacer3",
+                                            "designerId": "18a736f4-88f4-4d6f-a742-dd75976f2b93"
+                                        },
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "시간",
+                                                "html": "금일 오전",
+                                                "layout|flex": 1,
+                                                "style": "display:flex;align-items:flex-start;justify-content:center;font-size:16px; font-weight:600;"
+                                            },
+                                            "configAlternates": {
+                                                "designer|displayName": "string",
+                                                "html": "string",
+                                                "layout|flex": "number",
+                                                "style": "string"
+                                            },
+                                            "name": "MyLabel38",
+                                            "designerId": "0b5ff645-b5fe-419b-a7d1-a359aa2a5ebe"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "footer",
+                "height": "35px",
+                "layout": "hbox",
+                "reference": "footer"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "height": "auto",
+                "layout": "string",
+                "reference": "string"
+            },
+            "name": "MyContainer103",
+            "designerId": "709dbd34-2696-41b8-8470-57ef90ec4828",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 1,
+                        "style": "background-color:black; color : white",
+                        "text": "닫기"
+                    },
+                    "configAlternates": {
+                        "layout|flex": "number",
+                        "style": "string",
+                        "text": "string"
+                    },
+                    "name": "MyButton2",
+                    "designerId": "cb0f79da-7911-4bdc-bc3c-25b947e65978",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onCloseBtnTap",
+                                "implHandler": [
+                                    "var me = this;",
+                                    "me.getView().close();"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onCloseBtnTap",
+                            "designerId": "766b64ea-1cf4-4111-ac24-d5bc42bdc55a"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onContainerInitialize",
+                "implHandler": [
+                    "var me = this;",
+                    "var refs = me.getReferences();",
+                    "var vm = me.getViewModel();",
+                    "",
+                    "var myTdyBizInfo = component.initialConfig.myTdyBizInfo; //금일업무정보",
+                    "",
+                    "me.onSelect();"
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onContainerInitialize",
+            "designerId": "848249ab-52c5-4e7e-abf0-f648e15bf002"
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "resize",
+                "implHandler": [
+                    "var me = this;",
+                    "var refs = me.getReferences();",
+                    "var vm = me.getViewModel();",
+                    "",
+                    "var myTdyBizInfo = element.initialConfig.myTdyBizInfo; //금일업무정보",
+                    "",
+                    "me.onSelect();"
+                ],
+                "name": "resize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "resize",
+            "designerId": "2a2b27f7-82f3-4181-980f-930579cf0ba6"
+        }
+    ]
+}

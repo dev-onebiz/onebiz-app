@@ -1,0 +1,656 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "ExpNteAply02M"
+        ],
+        "designer|commentHeader": [
+            "모바일 시스템 경비노트 :: 법인카드 지출결의서 작성 - 화면",
+            "",
+            "@author BNK시스템/계장/김정균",
+            "@since 2019.04.16",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일\t\t  수정자                수정내용",
+            "----------\t------------------   --------------------------",
+            "2019.04.16\tBNK시스템/계장/김정균   최초 생성"
+        ],
+        "designer|userAlias": "ExpNteAply02M",
+        "designer|userClassName": "Budget.exp.ExpNteAply02M",
+        "listeners": [
+            "{",
+            "    complete : function() {",
+            "        this.getController().onComplete(arguments);",
+            "    }",
+            "}"
+        ]
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "title": "string",
+        "listeners": "object",
+        "designer|commentHeader": "comment"
+    },
+    "designerId": "f26104e7-5bd5-4d00-a8c1-83dc867f6e97",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "listeners",
+            "type": "string"
+        }
+    ],
+    "viewControllerInstanceId": "dcc8f971-5d20-4cf6-9944-d45d17bf3003",
+    "viewModelInstanceId": "0dd379d8-b33a-4114-87df-5f237983a9da",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "입력폼",
+                "height": "100%",
+                "reference": "form"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "hideAnimation": "string",
+                "id": "string",
+                "showAnimation": "string",
+                "reference": "string",
+                "height": "auto",
+                "listeners": "object"
+            },
+            "name": "MyFormPanel",
+            "designerId": "b25594dc-4e94-42e9-98d5-52c173ce9a07",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "listeners",
+                    "type": "string"
+                }
+            ],
+            "cn": [
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "reference": "item_container"
+                    },
+                    "configAlternates": {
+                        "reference": "string"
+                    },
+                    "name": "budget.exp.expnteaplycontainer",
+                    "designerId": "6e88f3b1-f28e-4a3d-bcf4-93d815ecf0a1",
+                    "masterInstanceId": "ac1f7eff-c43d-40f7-b572-ee0b3f2d3c97"
+                },
+                {
+                    "type": "Ext.Toolbar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "결재선 결재 버튼",
+                        "docked": "bottom"
+                    },
+                    "configAlternates": {
+                        "docked": "string",
+                        "designer|displayName": "string"
+                    },
+                    "name": "MyToolbar2",
+                    "designerId": "847495c2-67e3-4094-8128-34f85fc72d7a",
+                    "cn": [
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "결재선",
+                                "layout|flex": 1,
+                                "text": "결재선"
+                            },
+                            "configAlternates": {
+                                "layout|flex": "number",
+                                "text": "string",
+                                "designer|displayName": "string"
+                            },
+                            "name": "MyButton27",
+                            "designerId": "ebabc9ee-7598-4469-b844-bd137a70cdbf",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|commentHeader": [
+                                            "결재선 버튼 클릭 이벤트"
+                                        ],
+                                        "fn": "onBtnAplyLineTap",
+                                        "implHandler": [
+                                            "var me = this,",
+                                            "    vm = me.getViewModel(),",
+                                            "    refs = me.getReferences(),",
+                                            "    win = Ext.create('BNK.view.common.ApprovalLinePopup', {});",
+                                            "",
+                                            "me.mon(win, 'selected', function(data, popup) {",
+                                            "    popup.close();",
+                                            "",
+                                            "    // 부장일때 validation 통과해버리는 문제",
+                                            "    if(data.length > 0){",
+                                            "        vm.set('applyLine', data);",
+                                            "    } else {",
+                                            "        return false;",
+                                            "    }",
+                                            "",
+                                            "    var me = this,",
+                                            "        refs = me.getReferences(),",
+                                            "        approvalLineGrid = refs.approvalLineGrid;",
+                                            "",
+                                            "    ApprovalBoxSvc.setApprovalLine({",
+                                            "        scope               : me,",
+                                            "        command             : '01',",
+                                            "        approvalLineGrid    : approvalLineGrid,   // 결재선 그리드 객체",
+                                            "        approvalLineRecords : data        // 결재선선택 데이터",
+                                            "    });",
+                                            "",
+                                            "}, me);",
+                                            "",
+                                            "",
+                                            "win.show();"
+                                        ],
+                                        "name": "tap",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string",
+                                        "designer|commentHeader": "comment"
+                                    },
+                                    "name": "onBtnAplyLineTap",
+                                    "designerId": "eb4608e4-6fca-41d1-8cf0-842c592f5cde"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "결재",
+                                "layout|flex": 1,
+                                "text": "결재"
+                            },
+                            "configAlternates": {
+                                "layout|flex": "number",
+                                "text": "string",
+                                "designer|displayName": "string"
+                            },
+                            "name": "MyButton28",
+                            "designerId": "4f97270d-6abf-4411-ad12-e2a60ae04051",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|commentHeader": [
+                                            "결재 버튼 클릭 이벤트"
+                                        ],
+                                        "fn": "onBtnAplyTap",
+                                        "implHandler": [
+                                            "var me = this,",
+                                            "    vm = me.getViewModel(),",
+                                            "    refs = me.getReferences(),",
+                                            "    items = [],",
+                                            "    k = 0,",
+                                            "    innerItems = this.getView().getReferences().item_container.getReferences().items.innerItems;",
+                                            "",
+                                            "for(var i in innerItems){",
+                                            "    var formData = innerItems[i].getViewModel().get('cardItem');",
+                                            "    var errMsg = this.formValid(formData);",
+                                            "    if(errMsg.length > 0){",
+                                            "        Ext.Msg.alert('입력값을 확인해주세요.', errMsg);",
+                                            "        return false;",
+                                            "    }",
+                                            "",
+                                            "    items[k] = formData;",
+                                            "    items[k].applyLine = vm.get('applyLine');",
+                                            "    items[k].division = '법인카드';",
+                                            "    items[k].stlmDvcd = '01';",
+                                            "    k++;",
+                                            "}",
+                                            "",
+                                            "// 기안 완료시 사용되는 데이터",
+                                            "var successPopupData = {",
+                                            "    paymentTitle   : '법인카드 결재',",
+                                            "    aplTct : vm.get('aplTct'), // 총 건수",
+                                            "    aplTotSmamt : vm.get('aplTotSmamt'), // 합계금액",
+                                            "    aplTotSmamtRender : vm.get('aplTotSmamtRender') // render 한 합계금액",
+                                            "};",
+                                            "// 기안처리 후, 완료팝업에서 데이터 사용을 위해 저장함",
+                                            "vm.set('successPopupData', successPopupData);",
+                                            "",
+                                            "// [START] 결재에서 사용하는 데이터",
+                                            "items = me.recoveryFormRender(items); // 포맷팅 제거",
+                                            "var afterchange = {",
+                                            "    items : items,",
+                                            "    stlmDvcd : '01',",
+                                            "    aplStcd : '10',",
+                                            "    aplTct : vm.get('aplTct'), // 총 건수",
+                                            "    aplTotSmamt : vm.get('aplTotSmamt'), // 합계금액",
+                                            "};",
+                                            "vm.set('afterchange', afterchange);",
+                                            "// [END] 결재에서 사용하는 데이터",
+                                            "",
+                                            "this.onClickDraft(); // 결재(기안)",
+                                            "",
+                                            ""
+                                        ],
+                                        "name": "tap",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string",
+                                        "designer|commentHeader": "comment"
+                                    },
+                                    "name": "onBtnAplyTap",
+                                    "designerId": "bf280a57-7141-4c21-87d2-f77872a88a1a"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Toolbar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "총 건 총 합계 원 Toolbar",
+                        "docked": "bottom",
+                        "flex": "1"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "docked": "string",
+                        "flex": "string"
+                    },
+                    "name": "MyToolbar8",
+                    "designerId": "9827fe71-e0d0-4458-830d-61ebddbe0b87",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "flex",
+                            "type": "string"
+                        }
+                    ],
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "alwaysOnTop": true,
+                                "designer|displayName": "총 건 총 합계 원",
+                                "displayed": false,
+                                "docked": null,
+                                "draggable": false,
+                                "layout": "hbox",
+                                "layout|flex": 1,
+                                "masked": false
+                            },
+                            "configAlternates": {
+                                "alwaysOnTop": "auto",
+                                "designer|displayName": "string",
+                                "displayed": "boolean",
+                                "docked": "string",
+                                "draggable": "boolean",
+                                "layout": "string",
+                                "masked": "boolean",
+                                "layout|flex": "number"
+                            },
+                            "name": "MyContainer30",
+                            "designerId": "4c447406-a82e-458d-984a-4d4a470e2834",
+                            "cn": [
+                                {
+                                    "type": "Ext.Spacer",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "name": "MySpacer23",
+                                    "designerId": "6c4b6cd5-ddb8-47c0-a9e8-77778aed53a5"
+                                },
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "총",
+                                        "html": "총"
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "html": "string"
+                                    },
+                                    "name": "MyLabel24",
+                                    "designerId": "5a2d186a-8ff1-48a2-9042-c6c5544f3060"
+                                },
+                                {
+                                    "type": "Ext.Spacer",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "name": "MySpacer24",
+                                    "designerId": "3ab792ef-803d-41d3-9373-0fa65877f413"
+                                },
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "n(건)",
+                                        "html": [
+                                            "{aplTct}"
+                                        ]
+                                    },
+                                    "configAlternates": {
+                                        "html": "binding",
+                                        "designer|displayName": "string"
+                                    },
+                                    "name": "MyLabel26",
+                                    "designerId": "1ef9812f-67df-4351-ae15-74f8c97f616f"
+                                },
+                                {
+                                    "type": "Ext.Spacer",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "DDD"
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string"
+                                    },
+                                    "name": "MySpacer20",
+                                    "designerId": "d54ca33a-a716-4fe8-9489-dc7dbb3ce37a"
+                                },
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "건 총",
+                                        "html": "건 &nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp 총 합계 "
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "html": "string"
+                                    },
+                                    "name": "MyLabel27",
+                                    "designerId": "2a439258-646c-4a77-885e-29b84db8116f"
+                                },
+                                {
+                                    "type": "Ext.Spacer",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "name": "MySpacer21",
+                                    "designerId": "db573ea6-f988-48ca-9759-e09eabe3dde4"
+                                },
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "n(합계)",
+                                        "html": [
+                                            "{aplTotSmamtRender}"
+                                        ]
+                                    },
+                                    "configAlternates": {
+                                        "html": "binding",
+                                        "designer|displayName": "string"
+                                    },
+                                    "name": "MyLabel25",
+                                    "designerId": "e6c05685-66ae-4bc8-b527-9882e955d594"
+                                },
+                                {
+                                    "type": "Ext.Spacer",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "name": "MySpacer22",
+                                    "designerId": "d167d921-a66f-479d-b1d8-6ef7926cc280"
+                                },
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "원",
+                                        "docked": null,
+                                        "html": "원"
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "html": "string",
+                                        "docked": "string"
+                                    },
+                                    "name": "MyLabel28",
+                                    "designerId": "cefd2c1d-a63b-464a-9117-105a13bb1495"
+                                },
+                                {
+                                    "type": "Ext.Spacer",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "docked": null
+                                    },
+                                    "configAlternates": {
+                                        "docked": "string"
+                                    },
+                                    "name": "MySpacer19",
+                                    "designerId": "6d82a554-4a8c-457a-aa42-74cb1cded711"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "hidden": true,
+                        "label": "version",
+                        "name": "version",
+                        "value": [
+                            "{formValues.version}"
+                        ]
+                    },
+                    "configAlternates": {
+                        "value": "binding",
+                        "hidden": "boolean",
+                        "label": "string",
+                        "name": "string"
+                    },
+                    "name": "MyTextField",
+                    "designerId": "410de88c-bae3-465f-a61e-26a31019095c"
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "Initialize",
+                "implHandler": [
+                    "var me = this;",
+                    "var vm = me.getViewModel();",
+                    "var refs = me.getReferences();",
+                    "var items = component.records;",
+                    "var aplTotSmamt = 0;",
+                    "",
+                    "// 포맷팅 제거",
+                    "items = this.recoveryFormRender(items);",
+                    "",
+                    "// 결재문서 초기화 설정",
+                    "ApprovalBoxSvc.setup({",
+                    "    command   : '01',",
+                    "    viewModel : vm,",
+                    "    edocCd    : 'ExpNteAply71',",
+                    "    scope     : me",
+                    "});",
+                    "",
+                    "for(var i in items){",
+                    "    items[i].isAply = false; // 결재 화면으로 사용하는 Items에서는 readOnly 처리하기 위해 사용하는 플래그",
+                    "",
+                    "    // 뒤로 갔다가 다시 들어올 경우를 대비",
+                    "    items[i].hrHromJasPrjId   = null;",
+                    "    items[i].hrHromJasPrjText = null;",
+                    "    items[i].accItemCd        = null;",
+                    "    items[i].accItemCdText    = null;",
+                    "    items[i].aplRscn          = null;",
+                    "    items[i].hrHrpmDeptId     = null;",
+                    "    items[i].dpnm             = null;",
+                    "    items[i].userOrUseDept    = null;",
+                    "    items[i].imgPhoto         = null;",
+                    "}",
+                    "",
+                    "refs.item_container.getViewModel().set('records', items);",
+                    "refs.item_container.getViewModel().set('stlmDvcd', '법인카드');",
+                    "refs.item_container.getViewModel().set('aply02', true);",
+                    "",
+                    "for(var i in items){",
+                    "    aplTotSmamt += Number(items[i].apvlAmtDom);",
+                    "}",
+                    "",
+                    "vm.set('aplTct', items ? items.length : 0); // 총 건수",
+                    "vm.set('aplTotSmamt', aplTotSmamt); // 합계금액",
+                    "",
+                    "var str = String(aplTotSmamt);",
+                    "aplTotSmamt = str.replace(/(\\d)(?=(?:\\d{3})+(?!\\d))/g, '$1,');",
+                    "vm.set('aplTotSmamtRender', aplTotSmamt); // render 합계금액",
+                    "",
+                    "refs.item_container.controller.addForm();",
+                    ""
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "Initialize",
+            "designerId": "3e1ea34c-6ade-42aa-87ac-74ee2358c463"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 0,
+                "hidden": true,
+                "maxHeight": 0,
+                "reference": "approvalLineGrid"
+            },
+            "configAlternates": {
+                "reference": "string",
+                "height": "auto",
+                "hidden": "boolean",
+                "maxHeight": "auto"
+            },
+            "name": "common.approvallinegrid3",
+            "designerId": "629764fb-74cc-48ae-b106-d2aacf725e75",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "flex",
+                    "type": "string"
+                }
+            ],
+            "masterInstanceId": "539a6522-9843-49e3-9ecb-51046086b29b"
+        }
+    ]
+}

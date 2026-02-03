@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1c24fde6-c1b9-457e-adca-74ab0589a5b3" name="Changes" comment="cordova 이미지 COMMIT">
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/bnk-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/bnk-logo@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/bnk-logo@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/compliance-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/compliance-img@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/compliance-img@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon-circle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon-circle@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon-circle@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon-cross.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon-cross@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon-cross@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon-home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon-home@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon-home@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon-info.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon-info@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon-info@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon-minus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon-minus@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon-minus@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon-submit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon-submit@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon-submit@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon1@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon1@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon2@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon2@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon3@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon3@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon4@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon4@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon7@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon7@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon8@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/icon8@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/모바일화면-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/BomCmpl/모바일화면-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/HroEdit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/HroOutput.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/arrow-down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/arrow-up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/background2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/background3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/banner-main-imgA.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/btn_next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/btn_prev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icn-password.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-cmpl-check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-cmpl-circle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-cmpl-ckl-cmpl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-cmpl-cross.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-cmpl-home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-cmpl-info.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-cmpl-main-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-cmpl-minus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-cmpl-sic-bzcs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-cmpl-sic-cmpl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-cmpl-sic-pcsc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-cmpl-sic-psip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-cmpl-submit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-com-menu-badge.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-com-menu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-com-notice.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-com-notice@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-com-notice@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-empty-content.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-frame-back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-main-03-new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-main-03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-main-04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-main-05-new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-main-05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-main-06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-main-07-new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-main-07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-main-08-new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-main-08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-main-09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-main-10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-main-11-new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-main-11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-main-notice.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-mainmenu-01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-mainmenu-02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-mainmenu-03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-mainmenu-04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-mainmenu-05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-maintop-01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-maintop-02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-maintop-03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-maintop-04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-maintop-05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-menu-02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-menu-02.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-popup-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-readAll.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-sidemenu-01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-sidemenu-02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-sidemenu-03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-sidemenu-04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-sidemenu-04.png_bk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-sidemenu-05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-sidemenu-06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-sidemenu-07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-sidemenu-08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-sidemenu-09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-sidemenu-10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-sidemenu-10.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-sidemenu-11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-sidemenu-12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-sidemenu-13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-sidemenu-14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-sidemenu-15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-topmenu-01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-topmenu-02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-topmenu-03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon-topmenu-04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon_fold_down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon_fold_down@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon_fold_up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon_fold_up@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon_minus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon_plus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/icon_work_write.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/intro.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/fsc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/fsc2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/fss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/fss2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/hana.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/hana2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/ico_36_search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/ico_36_search@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/ico_36_search_R.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/ico_36_search_R@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/icon-main-10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/icon_24_TTA@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/icon_24_fine@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/icon_25_eyes@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/icon_25_fire@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/icon_25_mail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/icon_25_mail@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/icon_25_study@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/icon_48_top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/icon_48_top@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/icon_64_onebiz@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/icon_mainmenu_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/img_180_ITtrend.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/img_180_ITtrend@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/img_180_news.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/img_180_news@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/img_42_chart01@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/img_42_chart02@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/img_42_chart03@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/img_42_chart04@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/img_42_chart05@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/img_90_ITterm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/img_90_ITterm@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/img_90_financeterm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/img_90_financeterm@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/img_90_news.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/img_90_news@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/img_90_report.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/img_90_report@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/img_90_trend.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/img_90_trend@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/img_94_ITterm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/img_94_ITterm@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/img_94_financeterm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/img_94_financeterm@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/img_94_report.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/img_94_report@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/img_94_trend.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/img_banner_non@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/international.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/international2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/kb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/kb2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/kdata.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/kdata2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/nars.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/nars2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/spri.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/spri2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/woori.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/kls/woori2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/main-title-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/ogdefault.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/rpa" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/rpa/mgzThumb" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/rpa/mgzThumb/fsc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/rpa/mgzThumb/fss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/rpa/mgzThumb/hana.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/rpa/mgzThumb/international.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/rpa/mgzThumb/kb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/rpa/mgzThumb/kdata.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/rpa/mgzThumb/nars.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/rpa/mgzThumb/spri.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/rpa/mgzThumb/woori.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/rpa/newsThumb" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/rpa/newsThumb/thumb_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/rpa/newsThumb/thumb_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/rpa/newsThumb/thumb_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/rpa/newsThumb/thumb_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/rpa/newsThumb/thumb_05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/rpa/newsThumb/thumb_06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/rpa/newsThumb/thumb_07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/rpa/newsThumb/thumb_08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/rpa/newsThumb/thumb_09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/rpa/newsThumb/thumb_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/images/rpa/newsThumb/thumb_11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/lib/jsencrypt" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/cordova/www/resources/lib/jsencrypt/3.0.0.rc-1" afterDir="true" />
+      <change beforePath="$PROJECT_DIR$" beforeDir="true" afterPath="$PROJECT_DIR$" afterDir="true" />
+      <change beforePath="$PROJECT_DIR$/.architect" beforeDir="false" afterPath="$PROJECT_DIR$/.architect" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/Budget/exp/ExpNteRcpt01MViewController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/Budget/exp/ExpNteRcpt01MViewController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/HumanResource/hwm/HwmHodAply03MViewController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/HumanResource/hwm/HwmHodAply03MViewController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/HumanResource/hwm/HwmOvtChck01MViewController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/HumanResource/hwm/HwmOvtChck01MViewController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/HumanResource/hwm/HwmVctAply04MViewController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/HumanResource/hwm/HwmVctAply04MViewController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/common/LoginV1ViewController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/common/LoginV1ViewController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/common/LoginViewController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/common/LoginViewController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/common/MainV1ViewController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/common/MainV1ViewController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/common/NewMainViewController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/common/NewMainViewController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/common/ReloadCashViewController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/common/ReloadCashViewController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap.json" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap.jsonp" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap.jsonp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/node_modules/cordova-plugin-inappbrowser/tests/resources/local.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/node_modules/cordova-plugin-inappbrowser/tests/resources/local.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/platforms/android/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/platforms/android/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/plugins/cordova-plugin-inappbrowser/tests/resources/local.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/plugins/cordova-plugin-inappbrowser/tests/resources/local.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/www/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/www/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/www/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/www/native.json" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/www/native.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/www/native.jsonp" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/www/native.jsonp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/www/resources/BNK-all_1.css" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/www/resources/BNK-all_1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/www/resources/BNK-all_2.css" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/www/resources/BNK-all_2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metadata/Application" beforeDir="false" afterPath="$PROJECT_DIR$/metadata/Application" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metadata/view/HumanResource.hwm.HwmOvtChck01MViewController" beforeDir="false" afterPath="$PROJECT_DIR$/metadata/view/HumanResource.hwm.HwmOvtChck01MViewController" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metadata/view/common.LoginV1" beforeDir="false" afterPath="$PROJECT_DIR$/metadata/view/common.LoginV1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metadata/view/common.LoginV1ViewController" beforeDir="false" afterPath="$PROJECT_DIR$/metadata/view/common.LoginV1ViewController" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onebiz_mobile.xds" beforeDir="false" afterPath="$PROJECT_DIR$/onebiz_mobile.xds" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2vXAGQXIHdSeRckQl5wuFSXG5vw" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/BNKSYS64/workspace/onebiz-view-mobile&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Subversion.SSH&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="StructureViewState">
+    <option name="selectedTab" value="Logical" />
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\2311120\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="C:\BNKSYS64\workspace\onebiz-view-mobile" />
+          <option name="myCopyRoot" value="C:\BNKSYS64\workspace\onebiz-view-mobile" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="C:\BNKSYS64\workspace\onebiz-view-mobile" />
+          <option name="myCopyRoot" value="C:\BNKSYS64\workspace\onebiz-view-mobile" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1c24fde6-c1b9-457e-adca-74ab0589a5b3" name="Changes" comment="" />
+      <created>1744280949252</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744280949252</updated>
+      <workItem from="1744280950718" duration="2690000" />
+      <workItem from="1744330155274" duration="1317000" />
+      <workItem from="1751367316021" duration="712000" />
+      <workItem from="1751368285879" duration="5000" />
+      <workItem from="1752114980570" duration="1120000" />
+      <workItem from="1752132683356" duration="927000" />
+      <workItem from="1753748399204" duration="1905000" />
+      <workItem from="1753856691626" duration="11529000" />
+      <workItem from="1758603102446" duration="2249000" />
+      <workItem from="1760330255313" duration="222000" />
+      <workItem from="1760330918977" duration="6674000" />
+      <workItem from="1760677965719" duration="1560000" />
+      <workItem from="1760680090440" duration="6086000" />
+      <workItem from="1763355396050" duration="1367000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="cordova 이미지 COMMIT" />
+    <option name="LAST_COMMIT_MESSAGE" value="cordova 이미지 COMMIT" />
+  </component>
+</project>

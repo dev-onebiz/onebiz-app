@@ -1,0 +1,196 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "ApprovalEmptyPopupM"
+        ],
+        "designer|commentHeader": [
+            "공통 / 모바일 결재불가 팝업 [결재함] - 화면",
+            "",
+            "@author BNK시스템/계장/지민영",
+            "@since 2020.07.06",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일       수정자                수정내용",
+            "----------  ------------------   --------------------------",
+            "2020.07.06  BNK시스템/계장/지민영   최초 생성"
+        ],
+        "designer|extend": "Ext.window.Window",
+        "designer|userAlias": "ApprovalEmptyPopupM",
+        "designer|userClassName": "common.ApprovalEmptyPopupM",
+        "height": "90%",
+        "layout": "vbox",
+        "padding": 10,
+        "scrollable": "vertical",
+        "title": "123",
+        "width": "95%"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "extend": "string",
+        "alternateClassName": "typedarray",
+        "designer|commentHeader": "comment",
+        "designer|extend": "string",
+        "designer|userAlias": "string",
+        "height": "auto",
+        "layout": "string",
+        "padding": "auto",
+        "scrollable": "auto",
+        "width": "auto",
+        "title": "string"
+    },
+    "designerId": "cf46e3fe-db13-4a17-ac31-c9ce9d244b89",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "title",
+            "type": "string"
+        }
+    ],
+    "viewControllerInstanceId": "8d84b6ea-5d62-4439-a057-470f00faff40",
+    "viewModelInstanceId": "e49876d6-95d0-4ec9-9551-5738a712c05b",
+    "cn": [
+        {
+            "type": "Ext.TitleBar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "html": "알림",
+                "reference": "title"
+            },
+            "configAlternates": {
+                "docked": "string",
+                "html": "string",
+                "reference": "string"
+            },
+            "name": "MyTitleBar",
+            "designerId": "fb3d51ef-5efb-4f13-b842-8a659f5aa783"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout": "vbox",
+                "layout|flex": 1
+            },
+            "configAlternates": {
+                "hidden": "boolean",
+                "layout": "string",
+                "layout|flex": "number",
+                "reference": "string"
+            },
+            "name": "MyContainer2",
+            "designerId": "22c7e79c-2bb0-458a-969c-0cfe82ccfcc7",
+            "cn": [
+                {
+                    "type": "Ext.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "html": "",
+                        "reference": "edocNm"
+                    },
+                    "configAlternates": {
+                        "html": "string",
+                        "layout|flex": "number",
+                        "width": "auto",
+                        "reference": "string"
+                    },
+                    "name": "MyDisplayField23",
+                    "designerId": "db26ed2f-d696-436e-bc9a-119fe90119b4"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom",
+                "text": "닫기"
+            },
+            "configAlternates": {
+                "docked": "string",
+                "text": "string"
+            },
+            "name": "MyButton4",
+            "designerId": "479bc064-8601-439d-92a7-7eafc026454e",
+            "cn": [
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onBtnClose",
+                        "implHandler": [
+                            "this.getView().close();"
+                        ],
+                        "name": "tap",
+                        "scope": "me"
+                    },
+                    "configAlternates": {
+                        "fn": "string",
+                        "implHandler": "code",
+                        "name": "string",
+                        "scope": "string"
+                    },
+                    "name": "onBtnClose",
+                    "designerId": "2d585db2-d970-48af-8078-79ccf4ce6376"
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onContainerInitialize",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences();",
+                    "",
+                    "refs.edocNm.setHtml('<div style=font-weight:bold;>' + component.config.record.vwNm + ' 는 PC에서만 조회가능합니다.</div>');"
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onContainerInitialize",
+            "designerId": "5aba9717-9a1e-44ff-b47a-de78897f40ca"
+        }
+    ]
+}

@@ -1,0 +1,136 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            "모바일 푸시 상세팝업 - 컨트롤러",
+            "",
+            "@author BNK시스템/파트너/지민영",
+            "@since 2020.08.14",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일       수정자                  수정내용",
+            "----------  ------------------     --------------------------",
+            "2020.08.14  BNK시스템/파트너/지민영   최초 생성"
+        ],
+        "designer|extend": "BaseViewController",
+        "designer|userAlias": "BomTasPushDetailPopupMBackupViewController",
+        "designer|userClassName": "BackOffice.bom.BomTasPushDetailPopupMBackupViewController",
+        "viewId": "BomTasPushDetailPopupMBackup"
+    },
+    "configAlternates": {
+        "designer|commentHeader": "comment",
+        "designer|extend": "string",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "viewId": "string"
+    },
+    "designerId": "9070d157-05c2-4b90-9e8b-3eef1daa529d",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "viewId",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "상세조회"
+                ],
+                "designer|params": [
+                    "boTasmTrsId"
+                ],
+                "fn": "onSelect",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    param = {",
+                    "        id : boTasmTrsId",
+                    "    };",
+                    "",
+                    "Ext.Ajax.request({",
+                    "    headers: {",
+                    "        viewId : me.getViewId(),",
+                    "        serviceId : 'BomTasSvc.findOneBomTasdPush'",
+                    "    },",
+                    "    jsonData : param,",
+                    "    scope : me,",
+                    "    success : function(response) {",
+                    "        var res = Ext.JSON.decode(response.responseText);",
+                    "",
+                    "        if (res.result && res.result.msgDvcd) {",
+                    "            var code = 'TAS004',",
+                    "                codeStore = Ext.StoreMgr.get('CodeStore'),",
+                    "                items = codeStore.getData().items,",
+                    "                result = res.result,",
+                    "                msgDvcd = result.msgDvcd, \t\t// 메시지구분 코드",
+                    "                msgDvnm = '';",
+                    "",
+                    "            for (var i = 0, l = items.length; i < l; i++) {",
+                    "                if (code === items[i].data.code) {",
+                    "                    var children = items[i].data.children;",
+                    "                    for (var j = 0, l2 = children.length; j < l2; j++) {",
+                    "                        var text = children[j].text,",
+                    "                            value = children[j].value;",
+                    "                        if (value === msgDvcd) {",
+                    "                            msgDvnm = text;",
+                    "                        }",
+                    "                    }",
+                    "                }",
+                    "            }",
+                    "",
+                    "            refs.msgDvnm.setHtml(msgDvnm);\t\t\t// 메시지구분 명",
+                    "            refs.title.setHtml(result.title);\t\t// 제목",
+                    "            var dt = result.fwDt,\t\t\t\t\t// 발송일자",
+                    "                fwDt = dt.substr(0,4) + '-' + dt.substr(4,2) + '-' + dt.substr(6,2),",
+                    "                tm = result.fwTm,\t\t\t\t\t// 발송시간",
+                    "                fwTm = tm.substr(0,2) + ':' + tm.substr(2,2) + ':' + tm.substr(4,2);",
+                    "            refs.fwDtm.setHtml(fwDt + ' ' + fwTm);",
+                    "            refs.content.setHtml(result.content);\t// 내용",
+                    "",
+                    "",
+                    "            // 읽음처리 (수신상태, 일자, 시간)",
+                    "            Property.BO_TASM_TRS_ID = null;",
+                    "            Ext.Ajax.request({",
+                    "                headers: {",
+                    "                    viewId : me.getViewId(),",
+                    "                    serviceId : 'BomTasSvc.saveOnePushRvStcd'",
+                    "                },",
+                    "                jsonData : param,",
+                    "                scope : me,",
+                    "                success : function(response) {",
+                    "                    var res = Ext.JSON.decode(response.responseText);",
+                    "                }",
+                    "            });",
+                    "        }",
+                    "    }",
+                    "});"
+                ]
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "onSelect",
+            "designerId": "112d5186-7e21-4049-bfc9-44eb3446cd36"
+        }
+    ]
+}

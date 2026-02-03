@@ -1,0 +1,1530 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "HwmBtrAply71M"
+        ],
+        "designer|commentHeader": [
+            "모바일 시스템 출장 :: 출장품의서 결재함 상세 - 화면",
+            "",
+            "@author BNK시스템/파트너/김면길",
+            "@since 2024.03.18",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일\t\t  수정자                  수정내용",
+            "----------\t------------------     --------------------------",
+            "2024.03.18\tBNK시스템/파트너/김면길   최초 생성"
+        ],
+        "designer|extend": "Ext.window.Window",
+        "designer|userAlias": "HwmBtrAply71M",
+        "designer|userClassName": "HumanResource.hwm.HwmBtrAply71M",
+        "height": "98%",
+        "layout": "vbox",
+        "width": "98%"
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "title": "string",
+        "layout": "string",
+        "designer|extend": "string",
+        "height": "auto",
+        "width": "auto",
+        "scrollable": "auto",
+        "designer|commentHeader": "comment",
+        "style": "string"
+    },
+    "name": "HumanResource.hwm.HwmVctAply71M1",
+    "designerId": "514d2c3e-7acb-4c7c-afec-0e894744fa57",
+    "viewControllerInstanceId": "b1409795-a979-4940-ad3b-3dab4d97bb33",
+    "viewModelInstanceId": "672bffc6-d3bd-4380-b0cb-a91496b502ee",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout": "vbox",
+                "layout|flex": 1
+            },
+            "configAlternates": {
+                "layout": "string",
+                "margin": "auto",
+                "layout|flex": "number"
+            },
+            "name": "MyContainer120",
+            "designerId": "1fa6fc8e-3d9b-47d9-adc9-1a656dbe4883",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "문서 구분/상신일",
+                        "layout": "vbox",
+                        "margin": "15 15 10 15"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout": "string",
+                        "margin": "auto"
+                    },
+                    "name": "MyContainer22",
+                    "designerId": "d87e0bfb-c807-4346-b023-461881db24f6",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "구분",
+                                "layout": "hbox",
+                                "margin": "0 0 7 0"
+                            },
+                            "configAlternates": {
+                                "layout": "string",
+                                "margin": "auto",
+                                "designer|displayName": "string"
+                            },
+                            "name": "MyContainer110",
+                            "designerId": "0f7a0ddc-eb87-4b5e-bb9e-ad7eb194d787",
+                            "cn": [
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "html": "구분",
+                                        "style": "font-size : 20px"
+                                    },
+                                    "configAlternates": {
+                                        "html": "string",
+                                        "style": "string"
+                                    },
+                                    "name": "MyLabel40",
+                                    "designerId": "d058e758-93a4-4360-a56b-f6b796e68bd7"
+                                },
+                                {
+                                    "type": "Ext.Spacer",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1
+                                    },
+                                    "configAlternates": {
+                                        "layout|flex": "number"
+                                    },
+                                    "name": "MySpacer9",
+                                    "designerId": "472471ef-39a6-4bd8-b468-2dc37dbf5587"
+                                },
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "html": "출장품의서",
+                                        "reference": "headTitle",
+                                        "style": "font-size : 20px; color : red;"
+                                    },
+                                    "configAlternates": {
+                                        "style": "string",
+                                        "html": "string",
+                                        "reference": "string"
+                                    },
+                                    "name": "MyLabel42",
+                                    "designerId": "60be9c81-e02f-4ab2-a5da-90b8f8929cee"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "상신일",
+                                "layout": "hbox",
+                                "margin": "0 0 7 0"
+                            },
+                            "configAlternates": {
+                                "layout": "string",
+                                "margin": "auto",
+                                "designer|displayName": "string"
+                            },
+                            "name": "MyContainer121",
+                            "designerId": "10a68d9d-a835-4b60-b597-273409ede84f",
+                            "cn": [
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "html": "상신일",
+                                        "style": "font-size : 20px"
+                                    },
+                                    "configAlternates": {
+                                        "html": "string",
+                                        "style": "string"
+                                    },
+                                    "name": "MyLabel40",
+                                    "designerId": "2ff3db3f-6c15-40ae-8c5b-b38f5e60f222"
+                                },
+                                {
+                                    "type": "Ext.Spacer",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1
+                                    },
+                                    "configAlternates": {
+                                        "layout|flex": "number"
+                                    },
+                                    "name": "MySpacer11",
+                                    "designerId": "2fe4f0d4-8ac2-4178-9a02-1f6c0b440a9a"
+                                },
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "reference": "rgdt",
+                                        "style": "font-size : 20px; color : red;"
+                                    },
+                                    "configAlternates": {
+                                        "style": "string",
+                                        "html": "string",
+                                        "reference": "string"
+                                    },
+                                    "name": "MyLabel42",
+                                    "designerId": "8329bc5d-9fb3-417f-bee8-fa8812001c9b"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "출장품의서 내용",
+                        "layout": "vbox",
+                        "layout|flex": 1,
+                        "margin": "16 0 0 0",
+                        "padding": "0 0 0 0",
+                        "scrollable": "vertical"
+                    },
+                    "configAlternates": {
+                        "layout": "string",
+                        "layout|flex": "number",
+                        "scrollable": "auto",
+                        "height": "auto",
+                        "width": "auto",
+                        "margin": "auto",
+                        "padding": "auto",
+                        "designer|displayName": "string"
+                    },
+                    "name": "MyContainer122",
+                    "designerId": "4c839efc-66c4-4b4d-845a-5027f14af613",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "line_btr_aply"
+                                ],
+                                "designer|displayName": "sectionBtrAplyer",
+                                "html": "신청자",
+                                "margin": "0 0 16 0",
+                                "padding": 8,
+                                "style": "background-color: #999999;font-size:16px;color:white;font-familty:Roboto, sans-serif;"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "html": "string",
+                                "margin": "auto",
+                                "style": "string",
+                                "cls": "typedarray",
+                                "padding": "auto"
+                            },
+                            "name": "MyContainer8",
+                            "designerId": "ab26e7b4-e9dd-4a99-baa5-e1d725595da8"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "신청자 정보",
+                                "layout": "vbox",
+                                "padding": "0 15 0 15"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "layout": "string",
+                                "padding": "auto"
+                            },
+                            "name": "MyContainer23",
+                            "designerId": "9bcf123d-9d84-4155-99c2-b99bfe28c33b",
+                            "cn": [
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "신청자",
+                                        "layout": "vbox",
+                                        "margin": "0 0 0 0"
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "layout": "string",
+                                        "margin": "auto"
+                                    },
+                                    "name": "MyContainer",
+                                    "designerId": "12d7dc40-caa7-4f6a-a9cf-90989417ff79",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "html": "신청자",
+                                                "layout|flex": 1,
+                                                "margin": "0 10 0 0"
+                                            },
+                                            "configAlternates": {
+                                                "docked": "string",
+                                                "html": "string",
+                                                "layout|flex": "number",
+                                                "margin": "auto",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyLabel1",
+                                            "designerId": "2131480c-3190-4e0e-af69-d3177e7a8706"
+                                        },
+                                        {
+                                            "type": "Ext.field.Text",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "docked": null,
+                                                "editable": false,
+                                                "readOnly": true,
+                                                "reference": "rqpr",
+                                                "style": "color:#000000;",
+                                                "value": [
+                                                    "{afterchange.rqpr}"
+                                                ]
+                                            },
+                                            "configAlternates": {
+                                                "layout|flex": "number",
+                                                "value": "binding",
+                                                "readOnly": "boolean",
+                                                "reference": "string",
+                                                "docked": "string",
+                                                "editable": "boolean",
+                                                "style": "string"
+                                            },
+                                            "name": "MyTextField",
+                                            "designerId": "e781935a-7ebe-487d-800c-891372fa9c11"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "신청구분",
+                                        "layout": "vbox",
+                                        "margin": "16 0 0 0"
+                                    },
+                                    "configAlternates": {
+                                        "layout": "string",
+                                        "designer|displayName": "string",
+                                        "margin": "auto"
+                                    },
+                                    "name": "MyContainer1",
+                                    "designerId": "3b10f7c2-15cd-4c39-99e1-fabb645ff395",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "html": "신청구분",
+                                                "layout|flex": 1,
+                                                "margin": "0 10 0 0"
+                                            },
+                                            "configAlternates": {
+                                                "docked": "string",
+                                                "html": "string",
+                                                "layout|flex": "number",
+                                                "margin": "auto",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyLabel1",
+                                            "designerId": "18a57b78-81db-4d1b-87b2-560a5119b2a2"
+                                        },
+                                        {
+                                            "type": "Ext.field.Text",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "readOnly": true,
+                                                "reference": "aplDvcdLbl",
+                                                "width": "100%"
+                                            },
+                                            "configAlternates": {
+                                                "layout|flex": "number",
+                                                "readOnly": "boolean",
+                                                "reference": "string",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyTextField",
+                                            "designerId": "48c49615-1c68-45f7-b01e-76ab52eea03b"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "sectionBtrCont",
+                                "html": "출장내용",
+                                "margin": "32 0 16 0",
+                                "padding": 8,
+                                "style": "background-color: #999999;font-size:16px;color:white;font-familty:Roboto, sans-serif;"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "html": "string",
+                                "margin": "auto",
+                                "style": "string",
+                                "padding": "auto"
+                            },
+                            "name": "MyContainer3",
+                            "designerId": "b4ac7fb2-f24f-4916-9e8c-0eb6528b21e8"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "출장내용",
+                                "padding": "0 15 0 15"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "padding": "auto"
+                            },
+                            "name": "MyContainer24",
+                            "designerId": "146a0f19-acf1-4de2-b68f-1ce223c01b05",
+                            "cn": [
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "출장구분",
+                                        "layout": "vbox"
+                                    },
+                                    "configAlternates": {
+                                        "layout": "string",
+                                        "designer|displayName": "string",
+                                        "margin": "auto"
+                                    },
+                                    "name": "MyContainer2",
+                                    "designerId": "38e69edf-cb81-4d2b-beff-c61051e6614f",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "html": "출장구분",
+                                                "layout|flex": 1,
+                                                "margin": "0 10 0 0",
+                                                "width": "25%"
+                                            },
+                                            "configAlternates": {
+                                                "docked": "string",
+                                                "html": "string",
+                                                "layout|flex": "number",
+                                                "margin": "auto",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyLabel1",
+                                            "designerId": "6b3ab155-7fb3-40dd-97ba-8ae2ab0b318b"
+                                        },
+                                        {
+                                            "type": "Ext.field.Text",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "readOnly": true,
+                                                "reference": "btrDvcdLbl"
+                                            },
+                                            "configAlternates": {
+                                                "layout|flex": "number",
+                                                "readOnly": "boolean",
+                                                "reference": "string"
+                                            },
+                                            "name": "MyTextField",
+                                            "designerId": "7a553e6d-897c-4f83-9564-104ab6348e8c"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "연수과정명",
+                                        "layout": "vbox",
+                                        "margin": "16 0 0 0"
+                                    },
+                                    "configAlternates": {
+                                        "layout": "string",
+                                        "designer|displayName": "string",
+                                        "margin": "auto"
+                                    },
+                                    "name": "MyContainer10",
+                                    "designerId": "2a0c821c-9a37-49d8-8edc-e7ffdf34d2c1",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "html": "연수과정명",
+                                                "layout|flex": 1,
+                                                "margin": "0 10 0 0"
+                                            },
+                                            "configAlternates": {
+                                                "docked": "string",
+                                                "html": "string",
+                                                "layout|flex": "number",
+                                                "margin": "auto",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyLabel1",
+                                            "designerId": "20347254-8da2-467f-9cf8-3003e4dd76a8"
+                                        },
+                                        {
+                                            "type": "Ext.field.Text",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "readOnly": true,
+                                                "reference": "sttnCrsNm",
+                                                "value": [
+                                                    "{afterchange.sttnCrsNm}"
+                                                ]
+                                            },
+                                            "configAlternates": {
+                                                "layout|flex": "number",
+                                                "value": "binding",
+                                                "readOnly": "boolean",
+                                                "reference": "string"
+                                            },
+                                            "name": "MyTextField",
+                                            "designerId": "6555bef0-3c43-4cce-bb54-75e0897c0598"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "출장목적",
+                                        "layout": "vbox",
+                                        "margin": "16 0 0 0"
+                                    },
+                                    "configAlternates": {
+                                        "layout": "string",
+                                        "designer|displayName": "string",
+                                        "margin": "auto",
+                                        "layout|flex": "number"
+                                    },
+                                    "name": "MyContainer15",
+                                    "designerId": "43e65fda-3e2f-4593-86ca-bb32944ff03b",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "html": "출장목적(연수목적)",
+                                                "margin": "0 10 0 0"
+                                            },
+                                            "configAlternates": {
+                                                "docked": "string",
+                                                "html": "string",
+                                                "layout|flex": "number",
+                                                "margin": "auto",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyLabel1",
+                                            "designerId": "70a5ca72-2b8a-4b08-904b-668252993691"
+                                        },
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "hidden": false,
+                                                "html": [
+                                                    "{afterchange.aplCntn}"
+                                                ],
+                                                "margin": "8 0 0 0",
+                                                "reference": "aplCntn",
+                                                "style": "font-size:16px;color:#000000;"
+                                            },
+                                            "configAlternates": {
+                                                "html": "binding",
+                                                "hidden": "boolean",
+                                                "margin": "auto",
+                                                "reference": "string",
+                                                "style": "string"
+                                            },
+                                            "name": "MyLabel2",
+                                            "designerId": "ebc0afea-a50d-4745-88e6-79b8f10dbc5d"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "aplCntnLine",
+                                        "height": 1,
+                                        "margin": "8 0 6 0",
+                                        "style": "background-color: #dddddd;"
+                                    },
+                                    "configAlternates": {
+                                        "height": "auto",
+                                        "margin": "auto",
+                                        "style": "string",
+                                        "designer|displayName": "string",
+                                        "html": "string"
+                                    },
+                                    "name": "MyContainer13",
+                                    "designerId": "965bf74c-1a06-4d00-b5c2-670dd0161f38"
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "첨부파일",
+                                        "layout": "vbox",
+                                        "margin": "16 0 0 0",
+                                        "reference": "atchFile"
+                                    },
+                                    "configAlternates": {
+                                        "layout": "string",
+                                        "designer|displayName": "string",
+                                        "margin": "auto",
+                                        "id": "string",
+                                        "reference": "string"
+                                    },
+                                    "name": "MyContainer17",
+                                    "designerId": "66fb3d5f-c38a-4024-b50f-1c9e65cba44b",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "html": "첨부파일",
+                                                "layout|flex": 1,
+                                                "margin": "0 10 0 0"
+                                            },
+                                            "configAlternates": {
+                                                "docked": "string",
+                                                "html": "string",
+                                                "layout|flex": "number",
+                                                "margin": "auto",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyLabel1",
+                                            "designerId": "5d497c01-bf89-44bf-925c-91c5a8205065"
+                                        },
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout": "hbox",
+                                                "layout|flex": 1
+                                            },
+                                            "configAlternates": {
+                                                "layout": "string",
+                                                "layout|flex": "number"
+                                            },
+                                            "name": "MyContainer12",
+                                            "designerId": "7976a9b9-d3d0-4085-9fc0-ce56bd1226ba",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.field.Text",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "editable": false,
+                                                        "layout|flex": 1,
+                                                        "margin": "0 8 0 0",
+                                                        "readOnly": true,
+                                                        "reference": "atchFileNm"
+                                                    },
+                                                    "configAlternates": {
+                                                        "layout|flex": "number",
+                                                        "readOnly": "boolean",
+                                                        "reference": "string",
+                                                        "editable": "boolean",
+                                                        "margin": "auto"
+                                                    },
+                                                    "name": "MyTextField4",
+                                                    "designerId": "ad343f53-c25c-4e58-9fb9-9214d456130b"
+                                                },
+                                                {
+                                                    "type": "Ext.Button",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "docked": null,
+                                                        "iconCls": "x-fa fa-download",
+                                                        "reference": "btnDown",
+                                                        "style": "width:32px;height:32px",
+                                                        "ui": ""
+                                                    },
+                                                    "configAlternates": {
+                                                        "docked": "string",
+                                                        "iconCls": "string",
+                                                        "ui": "string",
+                                                        "reference": "string",
+                                                        "style": "string"
+                                                    },
+                                                    "name": "MyButton1",
+                                                    "designerId": "aea110f7-2eba-4157-a66e-5cdbca7039a4",
+                                                    "cn": [
+                                                        {
+                                                            "type": "viewcontrollereventbinding",
+                                                            "reference": {
+                                                                "name": "listeners",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "designer|commentHeader": [
+                                                                    "첨부파일 다운로드 버튼 이벤트"
+                                                                ],
+                                                                "fn": "onBtnDownTap",
+                                                                "implHandler": [
+                                                                    "var me = this,",
+                                                                    "    refs = me.getReferences(),",
+                                                                    "    atchFileId = refs.atchFileId.getValue();",
+                                                                    "//button.up('#atchFileCon').down('#atchFileIdCon').getValue();",
+                                                                    "",
+                                                                    "if (atchFileId) {",
+                                                                    "    var _url = Property.BASE_URL + Property.DOWN_URL + atchFileId;",
+                                                                    "    var form = document.createElement(\"form\");",
+                                                                    "    form.setAttribute(\"method\", \"get\");",
+                                                                    "    form.setAttribute(\"action\", _url);",
+                                                                    "    form.setAttribute(\"target\", \"_blank\");",
+                                                                    "",
+                                                                    "    if(!Ext.os.is.Android) {",
+                                                                    "        // iOS일 경우 safari로 다운로드 처리",
+                                                                    "        window.open(_url, '_system');",
+                                                                    "    } else {",
+                                                                    "        document.body.appendChild(form);",
+                                                                    "        form.submit();",
+                                                                    "        document.body.removeChild(form);",
+                                                                    "    }",
+                                                                    "}else{",
+                                                                    "    Ext.Msg.alert('첨부파일이 없습니다.');",
+                                                                    "}"
+                                                                ],
+                                                                "name": "tap",
+                                                                "scope": "me"
+                                                            },
+                                                            "configAlternates": {
+                                                                "designer|commentHeader": "comment",
+                                                                "fn": "string",
+                                                                "implHandler": "code",
+                                                                "name": "string",
+                                                                "scope": "string"
+                                                            },
+                                                            "name": "onBtnDownTap",
+                                                            "designerId": "c8d3a8d6-97ca-4fc1-9770-8ff91d576c4c"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Ext.field.Text",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "hidden": true,
+                                                        "label": "Field",
+                                                        "reference": "atchFileId"
+                                                    },
+                                                    "configAlternates": {
+                                                        "hidden": "boolean",
+                                                        "id": "string",
+                                                        "label": "string",
+                                                        "name": "string",
+                                                        "reference": "string",
+                                                        "width": "auto"
+                                                    },
+                                                    "name": "MyTextField2",
+                                                    "designerId": "dfe747a4-5072-4f19-9ddc-55881da4e9a1"
+                                                },
+                                                {
+                                                    "type": "Ext.field.Text",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "hidden": true,
+                                                        "label": "Field",
+                                                        "reference": "atchFileParentId"
+                                                    },
+                                                    "configAlternates": {
+                                                        "hidden": "boolean",
+                                                        "id": "string",
+                                                        "label": "string",
+                                                        "name": "string",
+                                                        "reference": "string",
+                                                        "width": "auto"
+                                                    },
+                                                    "name": "MyTextField1",
+                                                    "designerId": "b1774480-953d-4c66-ac2d-e09dee9cf262"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "sectionBtrDays",
+                                "html": "출장기간/장소",
+                                "margin": "32 0 16 0",
+                                "padding": 8,
+                                "style": "background-color: #999999;font-size:16px;color:white;font-familty:Roboto, sans-serif;"
+                            },
+                            "configAlternates": {
+                                "height": "auto",
+                                "margin": "auto",
+                                "style": "string",
+                                "designer|displayName": "string",
+                                "html": "string",
+                                "padding": "auto"
+                            },
+                            "name": "MyContainer4",
+                            "designerId": "99a313b2-91da-43e8-ae95-98a82c8ed496"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "출장기간/장소 정보",
+                                "padding": "0 15 0 15"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "padding": "auto"
+                            },
+                            "name": "MyContainer25",
+                            "designerId": "9ba2670b-87f0-4648-82b7-d2d75e16d0e8",
+                            "cn": [
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "출장일수",
+                                        "height": "auto",
+                                        "layout": "vbox",
+                                        "margin": "0 0 16 0"
+                                    },
+                                    "configAlternates": {
+                                        "layout": "string",
+                                        "designer|displayName": "string",
+                                        "margin": "auto",
+                                        "layout|flex": "number",
+                                        "height": "auto"
+                                    },
+                                    "name": "MyContainer7",
+                                    "designerId": "9f9f10d0-faf1-481d-aef5-bc1587c8d746",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "html": "출장일수",
+                                                "width": "25%"
+                                            },
+                                            "configAlternates": {
+                                                "docked": "string",
+                                                "html": "string",
+                                                "layout|flex": "number",
+                                                "margin": "auto",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyLabel1",
+                                            "designerId": "f42aab5a-a92f-4f55-9134-6886bd7bf0f2"
+                                        },
+                                        {
+                                            "type": "Ext.field.Text",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "height": "36px",
+                                                "readOnly": true,
+                                                "reference": "btrPeriod"
+                                            },
+                                            "configAlternates": {
+                                                "layout|flex": "number",
+                                                "readOnly": "boolean",
+                                                "reference": "string",
+                                                "height": "auto"
+                                            },
+                                            "name": "MyTextField",
+                                            "designerId": "bf44b3b6-b579-4f03-8b8a-073247d03dcd"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.grid.Grid",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "columnLines": true,
+                                        "disableSelection": true,
+                                        "height": "auto",
+                                        "hideHeaders": true,
+                                        "maxHeight": 20000,
+                                        "pinHeaders": false,
+                                        "reference": "gridScheduleInfo",
+                                        "scrollable": false,
+                                        "signTpl1": "<div style=\"font-size:15px;font-weight:bold;width:100%;overflow: hidden;white-space:pre-wrap !important;text-overflow:ellipsis;display:inline-block;\">{value}</div>",
+                                        "store": [
+                                            "{gridScheduleInfoStore}"
+                                        ]
+                                    },
+                                    "configAlternates": {
+                                        "height": "auto",
+                                        "width": "auto",
+                                        "store": "binding",
+                                        "columnLines": "boolean",
+                                        "hideHeaders": "boolean",
+                                        "layout": "string",
+                                        "layout|flex": "number",
+                                        "reference": "string",
+                                        "signTpl1": "string",
+                                        "variableHeights": "boolean",
+                                        "maxHeight": "auto",
+                                        "minHeight": "auto",
+                                        "disableSelection": "boolean",
+                                        "pinHeaders": "boolean",
+                                        "scrollable": "auto",
+                                        "style": "string"
+                                    },
+                                    "name": "MyGrid",
+                                    "designerId": "39602f4a-b973-4213-8625-defa95eba8f5",
+                                    "customConfigs": [
+                                        {
+                                            "group": "(Custom Properties)",
+                                            "name": "signTpl1",
+                                            "type": "string"
+                                        }
+                                    ],
+                                    "cn": [
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "cell": [
+                                                    "{",
+                                                    "    xtype: 'gridcell',",
+                                                    "    encodeHtml: false",
+                                                    "}"
+                                                ],
+                                                "dataIndex": "id",
+                                                "designer|displayName": "출장기간/장소",
+                                                "docked": null,
+                                                "width": "100%"
+                                            },
+                                            "configAlternates": {
+                                                "dataIndex": "datafield",
+                                                "docked": "string",
+                                                "text": "string",
+                                                "width": "auto",
+                                                "cell": "object",
+                                                "designer|displayName": "string",
+                                                "style": "string",
+                                                "layout|flex": "number"
+                                            },
+                                            "name": "MyColumn5",
+                                            "designerId": "be5cd9c3-f5fd-4d93-94db-b94d6f128535",
+                                            "cn": [
+                                                {
+                                                    "type": "fixedfunction",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|params": [
+                                                            "value",
+                                                            "record",
+                                                            "dataIndex",
+                                                            "cell",
+                                                            "column"
+                                                        ],
+                                                        "fn": "renderer",
+                                                        "implHandler": [
+                                                            "var data = record.data;",
+                                                            "",
+                                                            "var btrDt = data.btrDt;\t\t\t\t\t\t\t  \t\t\t\t\t\t\t// 출장일자",
+                                                            "var dptPlcNm = data.dptPlcNm?data.dptPlcNm:'';\t\t\t\t\t\t\t\t// 출발지",
+                                                            "var arvlPlcNm = data.arvlPlcNm?data.arvlPlcNm:'';\t\t\t\t\t\t\t// 도착지",
+                                                            "var psthPlcNm = data.psthPlcNm?data.psthPlcNm:'';\t\t\t\t\t\t\t// 경유지",
+                                                            "var dptArvlPlcNm = '';\t\t\t\t\t\t\t\t\t\t\t\t\t\t// 출발지 -> (경유지) -> 도착지",
+                                                            "var dstnCnt = data.dstnCnt.toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g, \",\");// 거리",
+                                                            "var trfMes = data.trfMes?data.trfMes:'';\t\t\t\t\t\t  \t\t\t// 교통편",
+                                                            "var btrStrtm = data.btrStrtm;",
+                                                            "var btrEdtm = data.btrEdtm;",
+                                                            "var btrStrtmFmt = DateUtils.parseTime(btrStrtm.substring(0, btrStrtm.length-2));// 출장출발시간",
+                                                            "var btrEdtmFmt = DateUtils.parseTime(btrEdtm.substring(0,btrEdtm.length-2));\t\t// 출장도착시간",
+                                                            "",
+                                                            "if(psthPlcNm == ''){",
+                                                            "    dptArvlPlcNm = dptPlcNm + \" -> \" + arvlPlcNm;",
+                                                            "}else{",
+                                                            "    dptArvlPlcNm = dptPlcNm + \" -> \" + psthPlcNm + \" -> \" + arvlPlcNm;",
+                                                            "}",
+                                                            "",
+                                                            "var topInfo = '<div style=\"display:inline\"><div style=\"float:left;height:20px;\">' + btrDt + '</div><div style=\"float:right\">' + dptArvlPlcNm + '</div></div>'; // 리스트 아이템 상위 정보",
+                                                            "",
+                                                            "",
+                                                            "var tpl = this.up('grid').lookupTpl('signTpl1'),",
+                                                            "    result = tpl.apply({",
+                                                            "        value : topInfo,",
+                                                            "    });",
+                                                            "result += '<div><div style=width:50%;float:left;>거리  : '+dstnCnt+'km</div><div style=width:50%;float:right;>교통편 : '+trfMes+'</div></div>';",
+                                                            "result += '<div><div style=width:50%;float:left;>출발시간 : '+btrStrtmFmt+'</div><div style=width:50%;float:right;>도착시간 : '+btrEdtmFmt+'</div></div>';",
+                                                            "",
+                                                            "return result;"
+                                                        ]
+                                                    },
+                                                    "configAlternates": {
+                                                        "designer|params": "typedarray",
+                                                        "fn": "string",
+                                                        "implHandler": "code"
+                                                    },
+                                                    "name": "renderer",
+                                                    "designerId": "5e5155b6-f51f-4e22-89d5-0088539ff326"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "sectionBtrEmps",
+                                "html": "출장자",
+                                "margin": "20 0 10 0",
+                                "padding": 8,
+                                "reference": "sectionBtrEmps",
+                                "style": "background-color: #999999;font-size:16px;color:white;font-familty:Roboto, sans-serif;"
+                            },
+                            "configAlternates": {
+                                "height": "auto",
+                                "margin": "auto",
+                                "style": "string",
+                                "designer|displayName": "string",
+                                "html": "string",
+                                "padding": "auto",
+                                "reference": "string"
+                            },
+                            "name": "MyContainer11",
+                            "designerId": "096a5a06-4db5-4469-864b-d57ad780b18c"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "출장자 정보",
+                                "padding": "0 15 0 15"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "padding": "auto"
+                            },
+                            "name": "MyContainer26",
+                            "designerId": "29f66c38-2546-4b44-9cbb-32d82510fd40",
+                            "cn": [
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "margin": "0 0 20 0",
+                                        "reference": "btrItems",
+                                        "scrollable": "vertical"
+                                    },
+                                    "configAlternates": {
+                                        "layout|flex": "number",
+                                        "reference": "string",
+                                        "margin": "auto",
+                                        "scrollable": "auto"
+                                    },
+                                    "name": "MyContainer5",
+                                    "designerId": "5583ac1d-31ee-4d6c-9ec4-0bc522385381"
+                                },
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "html": "총 합계 : ",
+                                        "margin": "0 0 20 0",
+                                        "reference": "totalAmt",
+                                        "style": "text-align:right;font-weight:bold;font-size:15px;color:red;"
+                                    },
+                                    "configAlternates": {
+                                        "html": "string",
+                                        "margin": "auto",
+                                        "reference": "string",
+                                        "style": "string"
+                                    },
+                                    "name": "MyLabel",
+                                    "designerId": "41a7a81d-3bb5-406d-b445-3b01dfe3fd8c"
+                                },
+                                {
+                                    "type": "linkedinstance",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 450
+                                    },
+                                    "configAlternates": {
+                                        "layout|flex": "number",
+                                        "height": "auto"
+                                    },
+                                    "name": "common.approvallinegrid1",
+                                    "designerId": "effa1701-024e-4cd1-8a1d-579806c3653f",
+                                    "masterInstanceId": "539a6522-9843-49e3-9ecb-51046086b29b"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "초기화"
+                ],
+                "fn": "Initialize",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    approvalLineGrid = refs.approvalLineGrid; \t\t// 결재선 그리드",
+                    "",
+                    "var initialConfig = component.initialConfig,",
+                    "    record = initialConfig.record, \t\t\t\t\t\t// 결재함 목록에서 선택한 레코드",
+                    "    title = initialConfig.title,",
+                    "    docData = initialConfig.docData,",
+                    "    aprHistId = initialConfig.aprHistId, \t\t// 결재내역 ID",
+                    "    command = initialConfig.command,",
+                    "    afterchange = docData.afterchange,",
+                    "    gridScheduleInfoItems = initialConfig.gridScheduleInfo ? initialConfig.gridScheduleInfo.getStore().getData().items : docData.gridScheduleInfo,",
+                    "    applyItemList = initialConfig.applyItemList ? initialConfig.applyItemList : docData.applyItemList,",
+                    "    hrWrkmBtrApfId = afterchange.hrWrkmBtrApfId,",
+                    "    atchFileId = afterchange.atchFileId,",
+                    "    atchFileNm = afterchange.atchFileNm,",
+                    "    atchFileParentId = afterchange.atchFileParentId,",
+                    "    viewOption = record.viewOption;",
+                    "",
+                    "",
+                    "/* 화면에서 필요한 데이터 */",
+                    "vm.set('docData', docData);",
+                    "vm.set('gridScheduleInfoItems', gridScheduleInfoItems);",
+                    "vm.set('applyItemList', applyItemList);",
+                    "vm.set('hrWrkmBtrApfId', hrWrkmBtrApfId);",
+                    "vm.set('afterchange', afterchange);",
+                    "vm.set('atchFileId', atchFileId);",
+                    "vm.set('atchFileNm', atchFileNm);",
+                    "vm.set('atchFileParentId', atchFileParentId);",
+                    "/* 화면에서 필요한 데이터 */",
+                    "",
+                    "",
+                    "/* 결재에 필요한 데이터 */",
+                    "vm.set('aprHistId', aprHistId);",
+                    "vm.set('record', record);",
+                    "vm.set('command', command);",
+                    "/* 결재에 필요한 데이터 */",
+                    "",
+                    "",
+                    "// 결재문서 초기화 설정",
+                    "ApprovalBoxSvc.setup({",
+                    "    command   : command,",
+                    "    viewModel : vm,",
+                    "    aprHistId : aprHistId,",
+                    "    edocCd    : 'HwmBtrAply71',",
+                    "    scope     : me",
+                    "});",
+                    "",
+                    "",
+                    "// 출장보고서에서 넘어온 경우 컨테이너뷰 크기 및 z-index 변경",
+                    "if(viewOption == 'search'){",
+                    "  this.getView().setStyle('z-index:0');",
+                    "  this.getView().setHeight('80%');",
+                    "}",
+                    "",
+                    "this.initView();"
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string",
+                "designer|commentHeader": "comment"
+            },
+            "name": "Initialize",
+            "designerId": "a7fff959-8992-4dca-81b8-b3966a6c02bf"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "reference": "viewBtns"
+            },
+            "configAlternates": {
+                "reference": "string"
+            },
+            "name": "common.edocbuttoncontainer",
+            "designerId": "1838be82-07ef-44c9-b925-99952ab638e6",
+            "masterInstanceId": "864c1b4b-9f05-40c9-9015-61086ad52a8d"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "hidden": true,
+                "layout": "hbox",
+                "layout|flex": null,
+                "reference": "viewClose"
+            },
+            "configAlternates": {
+                "hidden": "boolean",
+                "layout": "string",
+                "layout|flex": "number",
+                "reference": "string"
+            },
+            "name": "MyContainer6",
+            "designerId": "a792a0d2-2d95-4e90-b973-819ef1a533ed",
+            "cn": [
+                {
+                    "type": "Ext.Spacer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "MySpacer1",
+                    "designerId": "da111fdf-a84c-41b6-8010-17fc55213bca"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "닫기"
+                    },
+                    "configAlternates": {
+                        "text": "string"
+                    },
+                    "name": "MyButton3",
+                    "designerId": "88c72f30-ef97-4825-ae2a-14fb5279a9ce",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|commentHeader": [
+                                    "출장품의서 닫기 버튼"
+                                ],
+                                "fn": "onCloseBtnTap",
+                                "implHandler": [
+                                    "var me = this,",
+                                    "    view = me.getView();",
+                                    "view.close();"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "designer|commentHeader": "comment",
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onCloseBtnTap",
+                            "designerId": "22bce7aa-ff1d-41ef-8630-96e6782b295c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "컨테이너 뷰가 그려졌을 때 이벤트"
+                ],
+                "fn": "onContainerPainted",
+                "implHandler": [
+                    "var me = this,",
+                    "    refs = me.getReferences(),",
+                    "    aplCntn = refs.aplCntn;",
+                    "",
+                    "// 출장목적 개행 br 처리",
+                    "var aplCntn = refs.aplCntn;",
+                    "var text = aplCntn.getHtml();",
+                    "if(text != null && text != \"\"){",
+                    "    text = text.replace(/\\n/g,'<br/>');",
+                    "    aplCntn.setHtml(text);",
+                    "}",
+                    "",
+                    ""
+                ],
+                "name": "painted",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onContainerPainted",
+            "designerId": "b0f46bbd-bd36-4530-acc4-844a4d7bc721"
+        }
+    ]
+}

@@ -1,0 +1,99 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            "모바일 푸시 알림설정 - 컨트롤러",
+            "",
+            "@author BNK시스템/파트너/지민영",
+            "@since 2020.08.14",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일       수정자                  수정내용",
+            "----------  ------------------     --------------------------",
+            "2020.08.14  BNK시스템/파트너/지민영   최초 생성"
+        ],
+        "designer|extend": "BaseViewController",
+        "designer|userAlias": "BomTasPushSettingMViewController",
+        "designer|userClassName": "BackOffice.bom.BomTasPushSettingMViewController",
+        "viewId": "BomTasPushSettingM"
+    },
+    "configAlternates": {
+        "designer|commentHeader": "comment",
+        "designer|extend": "string",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "viewId": "string"
+    },
+    "designerId": "b76fcf1f-f215-47b9-bbb3-fb428164b73a",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "viewId",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "푸시 수신여부 조회"
+                ],
+                "designer|params": [
+                    "msgDvcd",
+                    "msgDvnm"
+                ],
+                "fn": "getRecvYn",
+                "implHandler": [
+                    "// Deferred 성공시 resolve 처리, 실패시 reject 처리",
+                    "var me = this,",
+                    "    D = new Ext.Deferred();",
+                    "",
+                    "Ext.Ajax.request({",
+                    "\theaders: {",
+                    "\t\tviewId: me.getViewId(),",
+                    "\t\tserviceId: 'BomTasSvc.findOnePushSetting'",
+                    "\t},",
+                    "\tjsonData : {",
+                    "        msgDvcd : msgDvcd,",
+                    "        msgDvnm : msgDvnm",
+                    "    },",
+                    "\tscope : me,",
+                    "    async : false,",
+                    "\tsuccess : function(res) {",
+                    "\t\tvar responseText = Ext.JSON.decode(res.responseText);",
+                    "        D.resolve(responseText.result);",
+                    "    }",
+                    "// \t},",
+                    "// \tfailure: function(response, opts) {",
+                    "// \t\tD.reject(me);",
+                    "// \t}",
+                    "});",
+                    "",
+                    "return D.promise;"
+                ]
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "getRecvYn",
+            "designerId": "aade5919-5d92-434a-b003-97c4e9d3518f"
+        }
+    ]
+}

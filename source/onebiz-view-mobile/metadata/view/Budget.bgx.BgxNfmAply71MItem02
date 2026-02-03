@@ -1,0 +1,1197 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "BgxNfmAply71MItem02"
+        ],
+        "designer|commentHeader": [
+            "모바일 예산 : 결의서 [결재함 / 현금영수증] - 화면",
+            "",
+            "@author BNK시스템/계장/지민영",
+            "@since 2020.05.26",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일       수정자                수정내용",
+            "----------  ------------------   --------------------------",
+            "2020.05.26  BNK시스템/계장/지민영   최초 생성",
+            "2020.09.21  BNK시스템/계장/지민영   사업연도 추가"
+        ],
+        "designer|userAlias": "BgxNfmAply71MItem02",
+        "designer|userClassName": "Budget.bgx.BgxNfmAply71MItem02",
+        "height": "100%",
+        "scrollable": "vertical"
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "extend": "string",
+        "designer|commentHeader": "comment",
+        "height": "auto",
+        "scrollable": "auto"
+    },
+    "designerId": "603d7bd8-9be5-439d-be2d-b30b68b297da",
+    "viewControllerInstanceId": "19f9d1d6-cb14-4e61-8277-d076a0993cd1",
+    "viewModelInstanceId": "4d305bdb-5232-4053-bb4a-438578df2b2f",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "구분_상신일_상단",
+                "docked": "top",
+                "layout": "hbox"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "layout": "string",
+                "hidden": "boolean",
+                "docked": "string"
+            },
+            "name": "MyContainer71",
+            "designerId": "28ef6b33-cde4-44ef-88d1-25494ecac2ad",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "labelContainer",
+                        "layout": "vbox",
+                        "layout|flex": 2,
+                        "margin": 15
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout": "string",
+                        "layout|flex": "number",
+                        "margin": "auto"
+                    },
+                    "name": "MyContainer24",
+                    "designerId": "1dbb7635-3833-443f-9fa4-cc52c6d357ba",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "구분 hbox",
+                                "layout": "hbox",
+                                "margin": "0 0 7 0"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "layout": "string",
+                                "margin": "auto"
+                            },
+                            "name": "MyContainer25",
+                            "designerId": "9f81310b-ca51-4abe-b119-e04ba3c643d4",
+                            "cn": [
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "구분",
+                                        "docked": "left",
+                                        "html": "구분",
+                                        "style": "fontSize: 20px;"
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "html": "string",
+                                        "docked": "string",
+                                        "style": "string"
+                                    },
+                                    "name": "MyLabel21",
+                                    "designerId": "446bfc12-c227-410e-ac62-a1a3198b0279"
+                                },
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "구분",
+                                        "docked": "right",
+                                        "html": [
+                                            "<div style=text-align:right>결의서 및 정산서 신청<br>({applyInfo.aplKndcdNm})</div>"
+                                        ],
+                                        "style": "color:red; fontSize: 20px;"
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "docked": "string",
+                                        "html": "binding",
+                                        "style": "string"
+                                    },
+                                    "name": "MyLabel34",
+                                    "designerId": "fbf5fd57-1b19-4c1a-8b6f-9c699fc87441"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "상신일 hbox",
+                                "layout": "hbox"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "layout": "string"
+                            },
+                            "name": "MyContainer26",
+                            "designerId": "60fcc0bc-7e3c-41d0-9222-dc729acf66ec",
+                            "cn": [
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "상신일",
+                                        "docked": "left",
+                                        "html": "상신일",
+                                        "style": "fontSize: 20px;"
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "html": "string",
+                                        "docked": "string",
+                                        "style": "string"
+                                    },
+                                    "name": "MyLabel22",
+                                    "designerId": "ce3e8560-eb7e-41b9-a75b-64a1d4c14960"
+                                },
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "상신일",
+                                        "docked": "right",
+                                        "html": [
+                                            "{applyInfo.aplDt}"
+                                        ],
+                                        "style": "fontSize: 20px;"
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "docked": "string",
+                                        "html": "binding",
+                                        "style": "string"
+                                    },
+                                    "name": "MyLabel23",
+                                    "designerId": "202786e4-9d19-486b-a709-0ca17667d861"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "버튼콘테이너",
+                "layout": "hbox",
+                "margin": "10 0 10 0",
+                "reference": "btnCnt"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "layout": "string",
+                "margin": "auto",
+                "reference": "string"
+            },
+            "name": "MyContainer72",
+            "designerId": "42008993-c2e8-4953-8154-76bc931ff4d5",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "영수증",
+                        "designer|uiInterfaceName": "action",
+                        "docked": "right",
+                        "hidden": true,
+                        "margin": "0 0 0 10",
+                        "reference": "cardEvidImg",
+                        "text": "영수증",
+                        "ui": "action"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "designer|uiInterfaceName": "string",
+                        "disabled": "boolean",
+                        "docked": "string",
+                        "margin": "auto",
+                        "reference": "string",
+                        "text": "string",
+                        "ui": "string",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyButton6",
+                    "designerId": "1a437885-7502-43d9-8416-b3cdfd4c5603",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|commentHeader": [
+                                    "영수증 팝업"
+                                ],
+                                "fn": "openEvidImgFilePopUp",
+                                "implHandler": [
+                                    "var me = this;",
+                                    "var vm = me.getViewModel();",
+                                    "",
+                                    "Ext.create('BgxItmCpnt52M', {",
+                                    "    param : vm.get('expItemData.evidImgFileId')",
+                                    "}).show();"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "name": "string",
+                                "scope": "string",
+                                "implHandler": "code",
+                                "designer|commentHeader": "comment"
+                            },
+                            "name": "openEvidImgFilePopUp",
+                            "designerId": "453f8a26-952d-4e9a-bb96-107b2d9fa1b9"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "margin": "0 0 10 0",
+                "padding": 0,
+                "reference": "inputForm"
+            },
+            "configAlternates": {
+                "margin": "auto",
+                "padding": "auto",
+                "reference": "string"
+            },
+            "name": "MyFormPanel10",
+            "designerId": "72cebe20-f225-4075-b981-7ecc0b0cd826",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "사업연도",
+                        "hidden": true,
+                        "layout": "hbox",
+                        "margin": "0 0 10 0"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout": "string",
+                        "margin": "auto",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyContainer42",
+                    "designerId": "d473a199-54aa-47d2-9d6f-6f4ff9ffa0fc",
+                    "cn": [
+                        {
+                            "type": "Ext.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "사업연도",
+                                "html": "사업연도",
+                                "width": "25%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "html": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyDisplayField5",
+                            "designerId": "5bd6dc9e-15f0-4178-8c8e-d24f786e9e4a"
+                        },
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "사업연도",
+                                "disabled": true,
+                                "editable": false,
+                                "placeholder": "YYYY",
+                                "readOnly": true,
+                                "reference": "bsnsYy",
+                                "required": true,
+                                "scrollable": "vertical",
+                                "value": [
+                                    "{expItemData.bsnsYy}년"
+                                ],
+                                "width": "75%"
+                            },
+                            "configAlternates": {
+                                "value": "binding",
+                                "designer|displayName": "string",
+                                "inputType": "string",
+                                "maxLength": "number",
+                                "placeholder": "string",
+                                "reference": "string",
+                                "required": "boolean",
+                                "width": "auto",
+                                "disabled": "boolean",
+                                "editable": "boolean",
+                                "readOnly": "boolean",
+                                "scrollable": "auto"
+                            },
+                            "name": "MyTextField5",
+                            "designerId": "a5bcf442-35d8-4992-b9b4-4b7841847424"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "거래일시",
+                        "layout": "hbox",
+                        "margin": "0 0 10 0"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout": "string",
+                        "margin": "auto"
+                    },
+                    "name": "MyContainer17",
+                    "designerId": "b903bc3e-5cf7-4859-83ff-cb05dfc2fb4a",
+                    "cn": [
+                        {
+                            "type": "Ext.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "거래일시",
+                                "html": "거래일시",
+                                "width": "25%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "html": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyDisplayField5",
+                            "designerId": "8953343e-a1f4-4d7b-9f4a-f5f8af7dbe54"
+                        },
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "거래일시",
+                                "disabled": true,
+                                "editable": false,
+                                "placeholder": "YYYYMMDD",
+                                "readOnly": true,
+                                "reference": "trnsDtm",
+                                "required": true,
+                                "value": [
+                                    "{expItemData.trnsDtmFormat}"
+                                ],
+                                "width": "75%"
+                            },
+                            "configAlternates": {
+                                "value": "binding",
+                                "designer|displayName": "string",
+                                "inputType": "string",
+                                "maxLength": "number",
+                                "placeholder": "string",
+                                "reference": "string",
+                                "required": "boolean",
+                                "width": "auto",
+                                "disabled": "boolean",
+                                "editable": "boolean",
+                                "readOnly": "boolean"
+                            },
+                            "name": "MyTextField5",
+                            "designerId": "9e1c5800-22f5-448d-9775-5ddc4a8ce17c"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "승인번호",
+                        "layout": "hbox",
+                        "margin": "0 0 10 0"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout": "string",
+                        "margin": "auto"
+                    },
+                    "name": "MyContainer33",
+                    "designerId": "d60e86d1-aecf-43ad-82bd-8368e44ffdf3",
+                    "cn": [
+                        {
+                            "type": "Ext.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "승인번호",
+                                "html": "승인번호",
+                                "width": "25%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "docked": "string",
+                                "html": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyDisplayField5",
+                            "designerId": "b7d89b05-b60c-4783-8d16-aedad707b8be"
+                        },
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "승인번호",
+                                "disabled": true,
+                                "editable": false,
+                                "readOnly": true,
+                                "reference": "aprno",
+                                "required": true,
+                                "value": [
+                                    "{expItemData.aprno}"
+                                ],
+                                "width": "75%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "inputType": "string",
+                                "margin": "auto",
+                                "maxLength": "number",
+                                "placeholder": "string",
+                                "reference": "string",
+                                "required": "boolean",
+                                "width": "auto",
+                                "value": "binding",
+                                "disabled": "boolean",
+                                "editable": "boolean",
+                                "readOnly": "boolean"
+                            },
+                            "name": "MyTextField5",
+                            "designerId": "37b63649-3538-4df1-adc7-ddcbe20a938c"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "거래상태",
+                        "layout": "hbox",
+                        "margin": "0 0 10 0"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout": "string",
+                        "margin": "auto"
+                    },
+                    "name": "MyContainer32",
+                    "designerId": "b653925f-fe9d-4cb7-a0ec-95811150632a",
+                    "cn": [
+                        {
+                            "type": "Ext.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "거래상태",
+                                "html": "거래상태",
+                                "width": "25%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "docked": "string",
+                                "html": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyDisplayField5",
+                            "designerId": "020b720d-1448-4331-902a-137cf878fa44"
+                        },
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "거래상태",
+                                "disabled": true,
+                                "editable": false,
+                                "readOnly": true,
+                                "reference": "trdv",
+                                "required": true,
+                                "value": [
+                                    "{expItemData.trdv}"
+                                ],
+                                "width": "75%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "inputType": "string",
+                                "margin": "auto",
+                                "maxLength": "number",
+                                "placeholder": "string",
+                                "reference": "string",
+                                "required": "boolean",
+                                "width": "auto",
+                                "value": "binding",
+                                "disabled": "boolean",
+                                "editable": "boolean",
+                                "readOnly": "boolean"
+                            },
+                            "name": "MyTextField5",
+                            "designerId": "6d543eaf-7230-4f0f-ac39-464ba0cbc0fd"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "상호",
+                        "layout": "hbox",
+                        "margin": "0 0 10 0"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout": "string",
+                        "margin": "auto"
+                    },
+                    "name": "MyContainer20",
+                    "designerId": "c2b05a10-f1bc-4dc6-a0a0-94502b7b697f",
+                    "cn": [
+                        {
+                            "type": "Ext.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "상호",
+                                "html": "상호",
+                                "width": "25%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "docked": "string",
+                                "html": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyDisplayField5",
+                            "designerId": "1a9804de-f207-4d9c-9371-0b1145c26a55"
+                        },
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "상호",
+                                "disabled": true,
+                                "editable": false,
+                                "readOnly": true,
+                                "reference": "mcNm",
+                                "required": true,
+                                "value": [
+                                    "{expItemData.mcNm}"
+                                ],
+                                "width": "75%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "inputType": "string",
+                                "margin": "auto",
+                                "maxLength": "number",
+                                "placeholder": "string",
+                                "reference": "string",
+                                "required": "boolean",
+                                "width": "auto",
+                                "docked": "string",
+                                "value": "binding",
+                                "disabled": "boolean",
+                                "editable": "boolean",
+                                "readOnly": "boolean"
+                            },
+                            "name": "MyTextField5",
+                            "designerId": "ce977d44-8471-4cde-a1f3-d120c577f7df"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "주소",
+                        "layout": "hbox",
+                        "margin": "0 0 10 0"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout": "string",
+                        "margin": "auto"
+                    },
+                    "name": "MyContainer47",
+                    "designerId": "4023f5cc-370d-458e-99ae-b46fa63cb891",
+                    "cn": [
+                        {
+                            "type": "Ext.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "주소",
+                                "html": "주소",
+                                "width": "25%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "docked": "string",
+                                "html": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyDisplayField5",
+                            "designerId": "d5c90190-10a6-4653-a4f3-ffa8431fc719"
+                        },
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "주소",
+                                "disabled": true,
+                                "editable": false,
+                                "readOnly": true,
+                                "reference": "addr",
+                                "required": true,
+                                "value": [
+                                    "{expItemData.addr}"
+                                ],
+                                "width": "75%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "inputType": "string",
+                                "margin": "auto",
+                                "maxLength": "number",
+                                "placeholder": "string",
+                                "reference": "string",
+                                "required": "boolean",
+                                "width": "auto",
+                                "docked": "string",
+                                "value": "binding",
+                                "disabled": "boolean",
+                                "editable": "boolean",
+                                "readOnly": "boolean",
+                                "textAlign": "string"
+                            },
+                            "name": "MyTextField5",
+                            "designerId": "ed3610bd-08bc-429c-b18e-08b6727aecd3"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "공급가액",
+                        "layout": "hbox",
+                        "margin": "0 0 10 0"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout": "string",
+                        "margin": "auto"
+                    },
+                    "name": "MyContainer51",
+                    "designerId": "a1fb351f-391b-4ff0-af95-796315d0bfbe",
+                    "cn": [
+                        {
+                            "type": "Ext.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "공급가액",
+                                "html": "공급가액",
+                                "width": "25%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "docked": "string",
+                                "html": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyDisplayField5",
+                            "designerId": "cf03d8fb-a051-45a0-94db-c58b34ad662f"
+                        },
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "공급가액",
+                                "disabled": true,
+                                "editable": false,
+                                "readOnly": true,
+                                "reference": "splyAmt",
+                                "required": true,
+                                "textAlign": "right",
+                                "value": [
+                                    "{expItemData.splyAmtFormat} 원"
+                                ],
+                                "width": "75%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "inputType": "string",
+                                "margin": "auto",
+                                "maxLength": "number",
+                                "placeholder": "string",
+                                "reference": "string",
+                                "required": "boolean",
+                                "width": "auto",
+                                "docked": "string",
+                                "value": "binding",
+                                "disabled": "boolean",
+                                "editable": "boolean",
+                                "readOnly": "boolean",
+                                "textAlign": "string"
+                            },
+                            "name": "MyTextField5",
+                            "designerId": "e07e2ed2-2035-46f4-9d6a-4edc6c40f66e"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "부가세",
+                        "layout": "hbox",
+                        "margin": "0 0 10 0"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout": "string",
+                        "margin": "auto"
+                    },
+                    "name": "MyContainer54",
+                    "designerId": "27cc3685-3058-4e36-861d-71b6e2b59202",
+                    "cn": [
+                        {
+                            "type": "Ext.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "부가세",
+                                "html": "부가세",
+                                "width": "25%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "docked": "string",
+                                "html": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyDisplayField5",
+                            "designerId": "0860c9b9-fc87-421b-9b8f-4d7a41fbce7b"
+                        },
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "부가세",
+                                "disabled": true,
+                                "editable": false,
+                                "readOnly": true,
+                                "reference": "stxat",
+                                "required": true,
+                                "textAlign": "right",
+                                "value": [
+                                    "{expItemData.stxatFormat} 원"
+                                ],
+                                "width": "75%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "inputType": "string",
+                                "margin": "auto",
+                                "maxLength": "number",
+                                "placeholder": "string",
+                                "reference": "string",
+                                "required": "boolean",
+                                "width": "auto",
+                                "docked": "string",
+                                "value": "binding",
+                                "disabled": "boolean",
+                                "editable": "boolean",
+                                "readOnly": "boolean",
+                                "textAlign": "string"
+                            },
+                            "name": "MyTextField5",
+                            "designerId": "7163dcd1-f194-4de7-892c-d47246f87963"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "승인금액",
+                        "layout": "hbox",
+                        "margin": "0 0 10 0"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout": "string",
+                        "margin": "auto"
+                    },
+                    "name": "MyContainer55",
+                    "designerId": "7267197f-096b-4870-ab70-7030cd5c9a78",
+                    "cn": [
+                        {
+                            "type": "Ext.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "승인금액",
+                                "html": "승인금액",
+                                "width": "25%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "docked": "string",
+                                "html": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyDisplayField5",
+                            "designerId": "7971f267-b85a-4daa-8417-e30b5ff50b7a"
+                        },
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "승인금액",
+                                "disabled": true,
+                                "editable": false,
+                                "readOnly": true,
+                                "reference": "trnsAmt",
+                                "required": true,
+                                "textAlign": "right",
+                                "value": [
+                                    "{expItemData.trnsAmtFormat} 원"
+                                ],
+                                "width": "75%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "inputType": "string",
+                                "margin": "auto",
+                                "maxLength": "number",
+                                "placeholder": "string",
+                                "reference": "string",
+                                "required": "boolean",
+                                "width": "auto",
+                                "docked": "string",
+                                "value": "binding",
+                                "disabled": "boolean",
+                                "editable": "boolean",
+                                "readOnly": "boolean",
+                                "textAlign": "string"
+                            },
+                            "name": "MyTextField5",
+                            "designerId": "7bed217c-7b47-457a-977d-eb8a323e93bc"
+                        }
+                    ]
+                },
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "reference": "common_input_container"
+                    },
+                    "configAlternates": {
+                        "reference": "string"
+                    },
+                    "name": "budget.bgx.com.bgxitmcpnt33m",
+                    "designerId": "ecc6115a-4114-460f-8ef9-6b7971469d3f",
+                    "masterInstanceId": "dc9ced9d-0048-42d8-a9f5-77a721b3126a"
+                }
+            ]
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "common.approvallinegrid2",
+            "designerId": "13493f06-d0ef-4ec8-aba4-fb8cdda15c4f",
+            "masterInstanceId": "539a6522-9843-49e3-9ecb-51046086b29b"
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onContainerInitialize",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    config = component.config;",
+                    "",
+                    "if (config) {",
+                    "    vm.set('codeList', config.codeList);",
+                    "    vm.set('applyInfo', config.applyInfo);",
+                    "    vm.set('readOnlyFlag', config.readOnlyFlag);",
+                    "    var expItemData = config.expItemData;",
+                    "    vm.set('expItemData', expItemData);",
+                    "    vm.set('expItemData.bsnsYy', config.applyInfo.bsnsYy);\t\t// 2020.09.21 사업연도 추가",
+                    "    vm.set('expItemInputData', expItemData);",
+                    "    vm.set('expItemData.trnsYy', expItemData.trnsDt.substr(0,4));",
+                    "    vm.set('infoText', config.infoText);\t\t\t// 안내문구",
+                    "    var command = config.command,",
+                    "        aprHistId = config.aprHistId,",
+                    "        edocCd = config.edocCd;",
+                    "",
+                    "    // 결재문서 초기화 설정",
+                    "    ApprovalBoxSvc.setup({",
+                    "        command   : command,",
+                    "        viewModel : vm,",
+                    "        aprHistId : aprHistId,",
+                    "        edocCd    : 'BgxNfmAply71',",
+                    "        scope     : me",
+                    "    });",
+                    "",
+                    "    // 포매팅",
+                    "    if(expItemData) {",
+                    "        refs.trnsDtm.setValue(DateUtils.parseDate(expItemData.tdt) + ' ' + expItemData.trnsHr.substr(0,2) + ':' + expItemData.trnsHr.substr(2,2) + ':' + expItemData.trnsHr.substr(4,2));",
+                    "        refs.splyAmt.setValue(FormatUtils.moneyFormat(expItemData.splyAmt)+' 원');",
+                    "        refs.stxat.setValue(FormatUtils.moneyFormat(expItemData.stxat)+' 원');",
+                    "        refs.trnsAmt.setValue(FormatUtils.moneyFormat(expItemData.trnsAmt)+' 원');",
+                    "    }",
+                    "}",
+                    "",
+                    "// BgxItmCpnt31M",
+                    "var cmm = refs.common_input_container,",
+                    "    cmmRefs = cmm.getReferences();",
+                    "",
+                    "me.fnSetSummaryUserLabel();\t\t\t\t// 집행대상라벨",
+                    "// 계정과목",
+                    "cmmRefs.xpnitKeyNm.setValue(vm.get('expItemData.xpnitKeyNm'));",
+                    "cmmRefs.xpnitKeyNm.setHidden(false);",
+                    "cmmRefs.xpnitKeyCd.setHidden(true);",
+                    "",
+                    "// 지급정보",
+                    "var dgDsbInfo = vm.get('applyInfo.dgDsbInfo');",
+                    "if (dgDsbInfo) {",
+                    "    var bcncSeq = dgDsbInfo.bcncSeq,\t\t// 사번",
+                    "        bcncDpwnm = dgDsbInfo.bcncDpwnm;\t// 이름",
+                    "    cmmRefs.dgDsbInfoGrid.setHidden(true);",
+                    "    cmmRefs.dgDsbInfoCont.setHidden(false);",
+                    "    cmmRefs.dgDsbInfoLabel.setHtml(bcncSeq + ' / ' + bcncDpwnm);",
+                    "}",
+                    "",
+                    "cmmRefs.imgPanel.setHidden(true);\t\t// 사진"
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onContainerInitialize",
+            "designerId": "0c18283f-96a6-438e-8895-10e5f4a935c8"
+        },
+        {
+            "type": "Ext.field.Display",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom",
+                "html": [
+                    "<div style=color:red;font-size:12px>{infoText}</div>"
+                ],
+                "margin": "10 10 10 10",
+                "reference": "infoText"
+            },
+            "configAlternates": {
+                "html": "binding",
+                "docked": "string",
+                "margin": "auto",
+                "reference": "string"
+            },
+            "name": "MyDisplayField4",
+            "designerId": "4892fac2-94fd-4253-a867-c7e674f82663"
+        }
+    ]
+}

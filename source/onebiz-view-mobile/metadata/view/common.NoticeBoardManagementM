@@ -1,0 +1,426 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "NoticeBoardManagementM"
+        ],
+        "designer|commentHeader": [
+            "모바일 시스템 공통 :: 환경설정 - 화면",
+            "",
+            "@author BNK시스템/계장/김정균",
+            "@since 2019.06.13",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일\t\t  수정자                수정내용",
+            "----------\t------------------   --------------------------",
+            "2019.06.13\tBNK시스템/계장/김정균   최초 생성"
+        ],
+        "designer|userAlias": "NoticeBoardManagementM",
+        "designer|userClassName": "common.NoticeBoardManagementM"
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "designer|commentHeader": "comment"
+    },
+    "name": "MyContainer",
+    "designerId": "9e5acde0-8632-40a7-ab71-419953478671",
+    "viewControllerInstanceId": "9ee49da2-8eac-4dc3-b984-9aa0625dbd1b",
+    "viewModelInstanceId": "2770e7c8-3cfb-49e8-962c-ac98d3c38c76",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "searchForm",
+                "docked": "top",
+                "layout": "hbox",
+                "reference": "searchForm",
+                "width": "100%"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "docked": "string",
+                "layout": "string",
+                "width": "auto",
+                "reference": "string"
+            },
+            "name": "MyContainer57",
+            "designerId": "42d221a4-3e68-4300-895d-291a0d7e4ded",
+            "cn": [
+                {
+                    "type": "Ext.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "기준연도",
+                        "layout|flex": 0.5,
+                        "maxLength": 4,
+                        "maxValue": 9999,
+                        "minValue": 1000,
+                        "minValueText": "올바른 날짜형식이 아닙니다. <br>(다음과 같은 형식이어야 합니다. yyyy년)",
+                        "padding": "0 0 0 5",
+                        "placeholder": "기준연도",
+                        "reference": "criYy"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout|flex": "number",
+                        "maxLength": "number",
+                        "maxValue": "number",
+                        "minValue": "number",
+                        "minValueText": "string",
+                        "padding": "auto",
+                        "placeholder": "string",
+                        "reference": "string"
+                    },
+                    "name": "MyNumberField",
+                    "designerId": "d00c0cf0-1a17-4fb5-a9f7-8500e122a5ca"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "제목",
+                        "height": 70,
+                        "iconCls": "x-fa fa-search",
+                        "layout|flex": 1,
+                        "maxLength": 20,
+                        "padding": "0 0 0 20",
+                        "placeholder": "제목",
+                        "reference": "searchField"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "height": "auto",
+                        "layout|flex": "number",
+                        "iconCls": "string",
+                        "placeholder": "string",
+                        "maxLength": "number",
+                        "padding": "auto",
+                        "reference": "string"
+                    },
+                    "name": "MyTextField1",
+                    "designerId": "48d19efa-358d-4f1a-a788-9e7e4453665e",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "iconCls",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "돋보기",
+                        "height": 70,
+                        "iconCls": "x-fa fa-search",
+                        "width": 70
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "height": "auto",
+                        "iconCls": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyButton46",
+                    "designerId": "cce7517d-c24e-4363-b760-46ed93fd643a",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onSearchTap",
+                                "implHandler": [
+                                    "var me = this,",
+                                    "    vm = me.getViewModel(),",
+                                    "    refs = me.getReferences(),",
+                                    "    searchValue = refs.searchField.getValue();",
+                                    "",
+                                    "var items = refs.searchForm.getItems().items;",
+                                    "var msg = ''; //validation message",
+                                    "var fieldName = '';",
+                                    "for(var i in items){",
+                                    "    if(!Ext.isEmpty(items[i].validate) && !items[i].validate()){",
+                                    "",
+                                    "        fieldName = !Ext.isEmpty(items[i].getPlaceholder()) ? items[i].getPlaceholder() : '';",
+                                    "        if(Ext.isEmpty(fieldName)){",
+                                    "            continue;",
+                                    "        }",
+                                    "        else{",
+                                    "            msg += ('<br> - ' +fieldName + ' : ' + items[i].getErrorMessage());",
+                                    "        }",
+                                    "    }",
+                                    "}",
+                                    "",
+                                    "if(!Ext.isEmpty(msg)){",
+                                    "    msg = '입력값을 확인해주세요.' + Ext.String.htmlDecode(msg);",
+                                    "    Ext.Msg.alert('유효성 검증', msg);",
+                                    "",
+                                    "    return;",
+                                    "}",
+                                    "",
+                                    "",
+                                    "var params = {",
+                                    "    title : searchValue,",
+                                    "    criYy : refs.criYy.getValue()",
+                                    "};",
+                                    "",
+                                    "// 공지사항 조건 검색",
+                                    "var grid = refs.grid;",
+                                    "grid.getStore().getProxy().extraParams = params;",
+                                    "grid.getStore().removeAll();",
+                                    "grid.getStore().loadPage(1);",
+                                    ""
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onSearchTap",
+                            "designerId": "d6cd37a1-40ed-45ac-be8b-70201b185519"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.Grid",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": [
+                    "hidden-header-on-grid"
+                ],
+                "designer|displayName": "공지사항목록 Grid",
+                "height": "100%",
+                "hideHeaders": true,
+                "reference": "grid",
+                "store": [
+                    "{noticeStore}"
+                ],
+                "width": "100%"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "height": "auto",
+                "width": "auto",
+                "store": "binding",
+                "preventHeaders": "boolean",
+                "cls": "typedarray",
+                "hideHeaders": "boolean",
+                "reference": "string"
+            },
+            "name": "MyGrid5",
+            "designerId": "7a3f7094-6e0b-497a-ba0c-5cc6f698f543",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "signTpl1",
+                    "type": "string"
+                },
+                {
+                    "group": "(Custom Properties)",
+                    "name": "flex",
+                    "type": "string"
+                },
+                {
+                    "group": "(Custom Properties)",
+                    "name": "preventHeaders",
+                    "type": "string"
+                }
+            ],
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cell": [
+                            "{\"xtype\":\"gridcell\", encodeHtml:false}"
+                        ],
+                        "dataIndex": "title",
+                        "docked": null,
+                        "flex": "1"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "docked": "string",
+                        "text": "string",
+                        "cell": "object",
+                        "flex": "string"
+                    },
+                    "name": "MyColumn32",
+                    "designerId": "bc3d5d52-3788-4ece-b36d-99f797cbd66c",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "flex",
+                            "type": "string"
+                        }
+                    ],
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "record",
+                                    "dataIndex",
+                                    "cell",
+                                    "column"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "var title = record.data.title; // 공지 제목",
+                                    "var regDt = record.data.regDt; // 공지 등록일",
+                                    "var result = '';",
+                                    "",
+                                    "result += '<div><span style=\"font-size:15px;font-weight:bold;width:100%;overflow: hidden;white-space:nowrap;text-overflow:ellipsis;display:inline-block;\">'+title+'</span></div>';",
+                                    "result += '<div>'+regDt+'</div>';",
+                                    "",
+                                    "cell.setStyle('padding:0px;');",
+                                    "",
+                                    "return result;",
+                                    ""
+                                ]
+                            },
+                            "configAlternates": {
+                                "designer|params": "typedarray",
+                                "fn": "string",
+                                "implHandler": "code"
+                            },
+                            "name": "renderer",
+                            "designerId": "fb1a59fc-e4a7-4637-bd83-2e433a2bfc19"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.plugin.PagingToolbar",
+                    "reference": {
+                        "name": "plugins",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "MyPagingToolbar3",
+                    "designerId": "34bc1412-a892-4794-8afd-40ebae566c0f"
+                },
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onGridSelect",
+                        "implHandler": [
+                            "var me = this,",
+                            "    vm = me.getViewModel(),",
+                            "    refs = me.getReferences(),",
+                            "    selectedData = selected[0].data;",
+                            "",
+                            "var naviView = me.getView().up('navigationview');",
+                            "me.PUSH_VIEW(naviView, {",
+                            "    menuId  : 'NoticeBoardManagementDetailM',",
+                            "    title   : '공지사항 상세보기',",
+                            "    isSubView : true,",
+                            "    parentView : me.getView(),",
+                            "    records : selectedData",
+                            "});",
+                            ""
+                        ],
+                        "name": "select",
+                        "scope": "me"
+                    },
+                    "configAlternates": {
+                        "fn": "string",
+                        "implHandler": "code",
+                        "name": "string",
+                        "scope": "string"
+                    },
+                    "name": "onGridSelect",
+                    "designerId": "c6694ad3-5f26-481b-af61-c5321d28247f"
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "initialize",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    grid = refs.grid;",
+                    "",
+                    "// Hidden Grid Header",
+                    "grid.el.select('.x-headercontainer').setStyle('height',\t'0px');",
+                    "",
+                    "refs.criYy.setValue(new Date().getFullYear());"
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "initialize",
+            "designerId": "1e7ae4e2-391e-4f59-99d6-1749fc960f7b"
+        }
+    ]
+}

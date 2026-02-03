@@ -1,0 +1,18 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "HroCtrInfo02MViewModel",
+        "designer|userClassName": "BackOffice.bom.HroCtrInfo02MViewModel"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "BackOffice.bom.HroCtrInfo01MViewModel1",
+    "designerId": "44214ca6-e5ab-4465-8bda-84b80dcbcb90"
+}

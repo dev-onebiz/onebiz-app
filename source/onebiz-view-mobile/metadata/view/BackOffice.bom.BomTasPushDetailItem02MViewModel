@@ -1,0 +1,32 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            "모바일 푸시 상세팝업 아이템 : 이미지 - 모델",
+            "",
+            "@author BNK시스템/파트너/지민영",
+            "@since 2020.11.13",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일       수정자                  수정내용",
+            "----------  ------------------     --------------------------",
+            "2020.11.13  BNK시스템/파트너/지민영   최초 생성"
+        ],
+        "designer|userAlias": "BomTasPushDetailItem02MViewModel",
+        "designer|userClassName": "BackOffice.bom.BomTasPushDetailItem02MViewModel"
+    },
+    "configAlternates": {
+        "designer|commentHeader": "comment",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "designerId": "15ca509e-daf7-4cb4-8b05-e109851b236a"
+}

@@ -1,0 +1,140 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "BgxNfmAply72M"
+        ],
+        "designer|commentHeader": [
+            "모바일 예산 :  취소결의서 [결재함] - 화면",
+            "",
+            "@author BNK시스템/계장/지민영",
+            "@since 2020.06.05",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일       수정자                수정내용",
+            "----------  ------------------   --------------------------",
+            "2020.06.05  BNK시스템/계장/지민영   최초 생성"
+        ],
+        "designer|extend": "Ext.window.Window",
+        "designer|userAlias": "BgxNfmAply72M",
+        "designer|userClassName": "Budget.bgx.BgxNfmAply72M",
+        "height": "98%",
+        "layout": "vbox",
+        "padding": 10,
+        "scrollable": "vertical",
+        "width": "98%"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "extend": "string",
+        "alternateClassName": "typedarray",
+        "designer|commentHeader": "comment",
+        "designer|extend": "string",
+        "designer|userAlias": "string",
+        "height": "auto",
+        "layout": "string",
+        "padding": "auto",
+        "scrollable": "auto",
+        "width": "auto"
+    },
+    "designerId": "9b19d9d8-a584-4c59-a77c-3bf8876121e9",
+    "viewControllerInstanceId": "bf1bd493-68a8-4a8a-98e0-4e9cb787b489",
+    "viewModelInstanceId": "662ec1ff-9f28-4b09-8941-4a94a2b7061d",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout": "vbox",
+                "layout|flex": 1,
+                "reference": "aplKndcd"
+            },
+            "configAlternates": {
+                "hidden": "boolean",
+                "layout": "string",
+                "layout|flex": "number",
+                "reference": "string"
+            },
+            "name": "MyContainer49",
+            "designerId": "aed5f544-35a1-4c5e-95ce-39ffb41ba1dd",
+            "cn": [
+                {
+                    "type": "Ext.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "html": "<div style=font-weight:bold;>알림 <div> <br> <br>  <div>취소결의서는 PC에서만 조회가능합니다.</div>",
+                        "layout|flex": 1,
+                        "width": "98%"
+                    },
+                    "configAlternates": {
+                        "html": "string",
+                        "layout|flex": "number",
+                        "width": "auto"
+                    },
+                    "name": "MyDisplayField",
+                    "designerId": "d34f3f29-07bd-4e72-ba20-b5a3c8218009"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "docked": "bottom",
+                        "text": "닫기"
+                    },
+                    "configAlternates": {
+                        "docked": "string",
+                        "text": "string"
+                    },
+                    "name": "MyButton4",
+                    "designerId": "f0a9e68d-a409-42ba-9f9e-02af20f0914c",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBtnClose1",
+                                "implHandler": [
+                                    "this.getView().close();"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnClose1",
+                            "designerId": "88f3f7ad-844b-4efa-83b9-85c3900853eb"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

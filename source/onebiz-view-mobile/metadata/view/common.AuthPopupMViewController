@@ -1,0 +1,42 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            "공통 / 인증 팝업 ViewController",
+            "",
+            "@author BNK시스템/파트너/박주혁",
+            "@since 2025.11.03.",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "  수정일         수정자                      수정내용",
+            " ------------   ---------                 --------------------------",
+            " 2025.11.03.   BNK시스템/파트너/박주혁         최초 생성"
+        ],
+        "designer|userAlias": "common.authpopupm",
+        "designer|userClassName": "common.AuthPopupMViewController",
+        "viewId": "InfoPopupM"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "designer|commentHeader": "comment",
+        "viewId": "string"
+    },
+    "name": "common.InfoPopupMViewController1",
+    "designerId": "818766ae-d8f5-4e35-bb40-10051af7362f",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "viewId",
+            "type": "string"
+        }
+    ]
+}

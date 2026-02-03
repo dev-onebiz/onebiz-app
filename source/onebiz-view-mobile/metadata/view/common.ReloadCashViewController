@@ -1,0 +1,62 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "common.reloadcash",
+        "designer|userClassName": "common.ReloadCashViewController",
+        "viewId": "ReloadCash"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "viewId": "string"
+    },
+    "designerId": "cc176fda-5a7b-4bdc-8232-c0bec6a9c584",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "viewId",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "resetMessage",
+                "implHandler": [
+                    "var me = this,",
+                    "    refs = me.getReferences(),",
+                    "    msgService = refs.msgService,",
+                    "    msgCode = refs.msgCode,",
+                    "    msgMessage = refs.msgMessage,",
+                    "    msgProperty = refs.msgProperty,",
+                    "    msgServicePolicy = refs.msgServicePolicy,",
+                    "    msgError = refs.msgError;",
+                    "",
+                    "msgService.setValue('');",
+                    "msgCode.setValue('');",
+                    "msgMessage.setValue('');",
+                    "msgProperty.setValue('');",
+                    "msgServicePolicy.setValue('');",
+                    "msgError.setHtml('');"
+                ]
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "resetMessage",
+            "designerId": "ba43b1aa-8c19-4d49-a06d-43fa9185549d"
+        }
+    ]
+}

@@ -1,0 +1,157 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            "모바일 :: 휴일근무신청(조회) - 모델",
+            "",
+            "@author BNK시스템/파트너/지민영",
+            "@since 2020.09.24",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일\t\t  수정자                    수정내용",
+            "----------\t--------------------     --------------------------",
+            "2020.09.24\tBNK시스템/파트너/지민영     최초 생성"
+        ],
+        "designer|userAlias": "humanresource.hwm.hwmhodrept01m",
+        "designer|userClassName": "HumanResource.hwm.HwmHodRept01MViewModel"
+    },
+    "configAlternates": {
+        "designer|commentHeader": "comment",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "designerId": "e2d3d264-f26a-4250-bdf1-8ac74600181e",
+    "cn": [
+        {
+            "type": "Ext.data.Store",
+            "reference": {
+                "name": "stores",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoLoad": false,
+                "name": "Store"
+            },
+            "configAlternates": {
+                "listeners": "object",
+                "autoLoad": "boolean",
+                "name": "string"
+            },
+            "name": "MyStore",
+            "designerId": "965e131f-5131-4070-a6d1-7543e0f6be9e",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "listeners",
+                    "type": "string"
+                }
+            ],
+            "cn": [
+                {
+                    "type": "Ext.data.proxy.Ajax",
+                    "reference": {
+                        "name": "proxy",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "headers": [
+                            "{",
+                            "    serviceId: 'HwmHodSvc.findAllHwmHodRept',",
+                            "    viewId: 'HwmHodRept01M'",
+                            "}"
+                        ],
+                        "url": "api"
+                    },
+                    "configAlternates": {
+                        "headers": "object",
+                        "url": "string"
+                    },
+                    "name": "MyAjaxProxy",
+                    "designerId": "bec4b13c-8da2-47fc-a17b-55fe710b087a",
+                    "cn": [
+                        {
+                            "type": "Ext.data.reader.Json",
+                            "reference": {
+                                "name": "reader",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "rootProperty": "page.content",
+                                "totalProperty": "page.total"
+                            },
+                            "configAlternates": {
+                                "rootProperty": "string",
+                                "totalProperty": "string"
+                            },
+                            "name": "MyJsonReader",
+                            "designerId": "18acee3d-b94b-48f2-8187-df2df0da0497"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "id"
+                    },
+                    "configAlternates": {
+                        "name": "string"
+                    },
+                    "name": "field1",
+                    "designerId": "2f809acb-f0b9-469b-9291-2251c5615fa7"
+                },
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onJsonstoreLoad",
+                        "implHandler": [
+                            "var me = this,",
+                            "    refs = me.getReferences(),",
+                            "    response = operation.getResponse();",
+                            "",
+                            "if(response){",
+                            "    var result = response.responseJson,",
+                            "        totAdmtOvtHod = result.totAdmtOvtHod;",
+                            "",
+                            "    refs.totOvtHodMonthDds.setValue(totAdmtOvtHod.totOvtHodMonthDds);\t// 금월(일)",
+                            "    refs.totOvtHodMonthHr.setValue(totAdmtOvtHod.totOvtHodMonthHr);\t\t// 금월(시)",
+                            "    refs.totOvtHodWeekDds.setValue(totAdmtOvtHod.totOvtHodWeekDds);\t\t// 금주(일)",
+                            "    refs.totOvtHodWeekHr.setValue(totAdmtOvtHod.totOvtHodWeekHr);\t\t// 금주(시)",
+                            "}"
+                        ],
+                        "name": "load",
+                        "scope": "me"
+                    },
+                    "configAlternates": {
+                        "fn": "string",
+                        "implHandler": "code",
+                        "name": "string",
+                        "scope": "string"
+                    },
+                    "name": "onJsonstoreLoad",
+                    "designerId": "c4f2c59a-2e4d-434e-88e1-823e95e9b5e7"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,102 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "BomTasPushDetailItem02M"
+        ],
+        "designer|commentHeader": [
+            "모바일 푸시 상세팝업 아이템 : 이미지 - 화면",
+            "",
+            "@author BNK시스템/파트너/지민영",
+            "@since 2020.11.13",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일       수정자                  수정내용",
+            "----------  ------------------     --------------------------",
+            "2020.11.13  BNK시스템/파트너/지민영   최초 생성"
+        ],
+        "designer|userAlias": "BomTasPushDetailItem02M",
+        "designer|userClassName": "BackOffice.bom.BomTasPushDetailItem02M",
+        "scrollable": true
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "extend": "string",
+        "designer|commentHeader": "comment",
+        "scrollable": "auto"
+    },
+    "designerId": "ee84c553-de08-4448-ba1f-7a0679b62a0a",
+    "viewControllerInstanceId": "f6095c67-827e-4269-9ca2-b9ae9deb3df2",
+    "viewModelInstanceId": "15ca509e-daf7-4cb4-8b05-e109851b236a",
+    "cn": [
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onContainerInitialize",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    initConfig = component.config,",
+                    "    record = initConfig.record;",
+                    "",
+                    "vm.set('detail', record);",
+                    "",
+                    "refs.content.setHtml(record.content);\t\t// 이미지"
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onContainerInitialize",
+            "designerId": "db9acbe7-f81a-4d60-8bfe-7f9358fbf8d5"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "reference": "content",
+                "scrollable": true,
+                "style": "word-break: break-all;",
+                "width": "100%"
+            },
+            "configAlternates": {
+                "height": "auto",
+                "padding": "auto",
+                "reference": "string",
+                "scrollable": "auto",
+                "style": "string",
+                "readOnly": "boolean",
+                "editable": "boolean",
+                "margin": "auto",
+                "width": "auto"
+            },
+            "name": "MyContainer70",
+            "designerId": "adeb0849-53b6-4fe5-ba54-ebb60366f4e7"
+        }
+    ]
+}

@@ -1,0 +1,102 @@
+{
+    "profiles": [
+        {
+            "name": "Galaxy Fold",
+            "width": 280,
+            "height": 653,
+            "builtIn": false,
+            "fw": "touch"
+        },
+        {
+            "name": "Galaxy Fold",
+            "width": 280,
+            "height": 653,
+            "builtIn": false,
+            "fw": "touch"
+        },
+        {
+            "name": "Galaxy Fold",
+            "width": 280,
+            "height": 653,
+            "builtIn": false,
+            "fw": "touch"
+        },
+        {
+            "name": "New Size",
+            "width": 280,
+            "height": 500,
+            "builtIn": false,
+            "fw": "touch"
+        },
+        {
+            "name": "New Size",
+            "width": 280,
+            "height": 500,
+            "builtIn": false,
+            "fw": "touch"
+        },
+        {
+            "name": "New Size",
+            "width": 280,
+            "height": 500,
+            "builtIn": false,
+            "fw": "touch"
+        },
+        {
+            "name": "New Size",
+            "width": 280,
+            "height": 500,
+            "builtIn": false,
+            "fw": "touch"
+        },
+        {
+            "name": "New Size",
+            "width": 320,
+            "height": 4800,
+            "builtIn": false,
+            "fw": "touch"
+        },
+        {
+            "name": "New Size",
+            "width": 150,
+            "height": 4800,
+            "builtIn": false,
+            "fw": "touch"
+        },
+        {
+            "name": "New Size",
+            "width": 150,
+            "height": 4800,
+            "builtIn": false,
+            "fw": "touch"
+        },
+        {
+            "name": "New Size",
+            "width": 150,
+            "height": 4800,
+            "builtIn": false,
+            "fw": "touch"
+        },
+        {
+            "name": "Samsung Galaxy Fold",
+            "width": 280,
+            "height": 653,
+            "builtIn": false,
+            "fw": "touch"
+        },
+        {
+            "name": "Samsung Galaxy Fold",
+            "width": 280,
+            "height": 653,
+            "builtIn": false,
+            "fw": "touch"
+        },
+        {
+            "name": "Samsung Galaxy Fold",
+            "width": 280,
+            "height": 653,
+            "builtIn": false,
+            "fw": "touch"
+        }
+    ]
+}

@@ -1,0 +1,1093 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "HrpOgiDept51M"
+        ],
+        "designer|extend": "Ext.window.Window",
+        "designer|userAlias": "HrpOgiDept51M",
+        "designer|userClassName": "HumanResource.hrp.HrpOgiDept51M",
+        "maxHeight": "95%",
+        "showAnimation": "pop",
+        "width": "95%"
+    },
+    "configAlternates": {
+        "viewModel": "object",
+        "alternateClassName": "typedarray",
+        "bodyPadding": "auto",
+        "designer|extend": "string",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "id": "string",
+        "width": "auto",
+        "height": "auto",
+        "showAnimation": "string",
+        "autoSize": "boolean",
+        "maxHeight": "auto"
+    },
+    "name": "common.FindUserPopup002M3",
+    "designerId": "de7a0914-1a95-432f-8481-9c1fce9adccd",
+    "viewControllerInstanceId": "468420d2-b86b-48a7-99f7-b5881899195a",
+    "viewModelInstanceId": "371b0a70-87a9-4dc5-9fe0-9ea4589eae6e",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "사원정보 출력",
+                "layout": "vbox",
+                "margin": "10 10 10 10",
+                "style": "line-height:1.2"
+            },
+            "configAlternates": {
+                "layout|flex": "number",
+                "height": "auto",
+                "designer|displayName": "string",
+                "layout": "string",
+                "margin": "auto",
+                "style": "string"
+            },
+            "name": "MyContainer5",
+            "designerId": "66e97380-db84-463e-8cc1-af69b6218488",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "이름",
+                        "layout": "hbox",
+                        "margin": 10
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "height": "auto",
+                        "layout": "string",
+                        "html": "binding",
+                        "margin": "auto"
+                    },
+                    "name": "MyContainer86",
+                    "designerId": "5fdc2cca-4671-4454-926c-47cd728fec3a",
+                    "cn": [
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "이름",
+                                "html": [
+                                    "{emp.empeNm}"
+                                ],
+                                "layout|flex": 1,
+                                "style": "font-weight: bold; text-align: center; font-size: 25px;"
+                            },
+                            "configAlternates": {
+                                "html": "binding",
+                                "designer|displayName": "string",
+                                "centered": "boolean",
+                                "layout|flex": "number",
+                                "style": "string"
+                            },
+                            "name": "MyLabel10",
+                            "designerId": "58134c04-9b34-47fa-a7bc-18aae252c6f9"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "사원정보",
+                        "layout": "hbox"
+                    },
+                    "configAlternates": {
+                        "layout": "string",
+                        "designer|displayName": "string"
+                    },
+                    "name": "MyContainer83",
+                    "designerId": "f63aafe2-62c4-4338-b00a-675cf7736bfd",
+                    "cn": [
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "사원정보",
+                                "html": [
+                                    "{emp.dpnm} / {emp.empePsitNm} / {emp.empeRsbNm}"
+                                ],
+                                "layout|flex": 1,
+                                "style": "font-size :18px; text-align:center; letter-spacing:-1px; white-space:normal; word-wrap:break-word; word-break:break-all;"
+                            },
+                            "configAlternates": {
+                                "height": "auto",
+                                "style": "string",
+                                "width": "auto",
+                                "margin": "auto",
+                                "reference": "string",
+                                "designer|displayName": "string",
+                                "html": "binding",
+                                "layout|flex": "number"
+                            },
+                            "name": "MyLabel3",
+                            "designerId": "6a160bc1-8fae-4c10-8c6a-2a602bd194ab"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "직렬",
+                        "layout": "hbox",
+                        "margin": "20 0 0 0",
+                        "style": "font-size:20px;"
+                    },
+                    "configAlternates": {
+                        "layout": "string",
+                        "designer|displayName": "string",
+                        "hidden": "boolean",
+                        "margin": "auto",
+                        "style": "string"
+                    },
+                    "name": "MyContainer61",
+                    "designerId": "ac3442e4-a106-4085-8f89-87ccd33620ec",
+                    "cn": [
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "label",
+                                "html": "직렬",
+                                "layout|flex": 1,
+                                "margin": "0 10 0 0"
+                            },
+                            "configAlternates": {
+                                "height": "auto",
+                                "html": "string",
+                                "style": "string",
+                                "width": "auto",
+                                "margin": "auto",
+                                "designer|displayName": "string",
+                                "layout|flex": "number"
+                            },
+                            "name": "MyLabel",
+                            "designerId": "b7531b6d-3ae6-428b-8134-44fd41286746"
+                        },
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "직렬",
+                                "html": [
+                                    "{emp.jobSrNm}"
+                                ],
+                                "layout|flex": 3,
+                                "reference": "jobSrNm",
+                                "style": "white-space:normal; word-wrap:break-word; word-break:break-all;"
+                            },
+                            "configAlternates": {
+                                "height": "auto",
+                                "html": "binding",
+                                "style": "string",
+                                "width": "auto",
+                                "margin": "auto",
+                                "reference": "string",
+                                "designer|displayName": "string",
+                                "layout|flex": "number"
+                            },
+                            "name": "MyLabel3",
+                            "designerId": "56490a62-4ef6-497d-a030-07c64a22509a"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "사무분담",
+                        "layout": "hbox",
+                        "margin": "10 0 0 0",
+                        "style": "font-size:20px;"
+                    },
+                    "configAlternates": {
+                        "layout": "string",
+                        "designer|displayName": "string",
+                        "hidden": "boolean",
+                        "margin": "auto",
+                        "style": "string"
+                    },
+                    "name": "MyContainer66",
+                    "designerId": "3bf0deba-0f76-4fea-899c-0d9c50b56dbf",
+                    "cn": [
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "label",
+                                "html": "사무분담",
+                                "layout|flex": 1,
+                                "margin": "0 10 0 0",
+                                "style": "letter-spacing:-2px;"
+                            },
+                            "configAlternates": {
+                                "height": "auto",
+                                "html": "string",
+                                "style": "string",
+                                "width": "auto",
+                                "margin": "auto",
+                                "designer|displayName": "string",
+                                "layout|flex": "number"
+                            },
+                            "name": "MyLabel",
+                            "designerId": "4fb6b130-ddb3-4934-a99d-7929f413204c"
+                        },
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "사무분담",
+                                "html": [
+                                    "{emp.rolNm}"
+                                ],
+                                "layout|flex": 3,
+                                "reference": "rolNm",
+                                "style": "white-space:normal; word-wrap:break-word; word-break:break-all;"
+                            },
+                            "configAlternates": {
+                                "height": "auto",
+                                "style": "string",
+                                "width": "auto",
+                                "margin": "auto",
+                                "reference": "string",
+                                "designer|displayName": "string",
+                                "layout|flex": "number",
+                                "html": "binding"
+                            },
+                            "name": "MyLabel3",
+                            "designerId": "5f83efb4-df06-4a0d-8c19-3cfd0349cf57"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "근무지",
+                        "layout": "hbox",
+                        "margin": "10 0 0 0",
+                        "style": "font-size:20px;"
+                    },
+                    "configAlternates": {
+                        "layout": "string",
+                        "designer|displayName": "string",
+                        "hidden": "boolean",
+                        "margin": "auto",
+                        "style": "string"
+                    },
+                    "name": "MyContainer73",
+                    "designerId": "146dd0b3-6bdb-487e-a544-4b06a8472662",
+                    "cn": [
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "label",
+                                "html": "근무지",
+                                "layout|flex": 1,
+                                "margin": "0 10 0 0"
+                            },
+                            "configAlternates": {
+                                "height": "auto",
+                                "html": "string",
+                                "style": "string",
+                                "width": "auto",
+                                "margin": "auto",
+                                "designer|displayName": "string",
+                                "layout|flex": "number"
+                            },
+                            "name": "MyLabel",
+                            "designerId": "4632023b-909b-46c9-8f5d-cfb30b033a88"
+                        },
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "근무지",
+                                "html": [
+                                    "{emp.wkplcNm}"
+                                ],
+                                "layout|flex": 3,
+                                "reference": "wkplcNm",
+                                "style": "white-space:normal; word-wrap:break-word; word-break:break-all;"
+                            },
+                            "configAlternates": {
+                                "height": "auto",
+                                "html": "binding",
+                                "style": "string",
+                                "width": "auto",
+                                "margin": "auto",
+                                "reference": "string",
+                                "designer|displayName": "string",
+                                "layout|flex": "number"
+                            },
+                            "name": "MyLabel3",
+                            "designerId": "9b667347-85fa-4da5-96e2-daaee8e872a8"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "E-Mail",
+                        "layout": "hbox",
+                        "margin": "10 0 0 0",
+                        "style": "font-size:20px;"
+                    },
+                    "configAlternates": {
+                        "layout": "string",
+                        "designer|displayName": "string",
+                        "margin": "auto",
+                        "style": "string"
+                    },
+                    "name": "MyContainer14",
+                    "designerId": "dad0b226-198b-452c-a6ec-91ad6d8e5666",
+                    "cn": [
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "label",
+                                "html": "E-Mail ",
+                                "layout|flex": 1,
+                                "margin": "0 10 0 0"
+                            },
+                            "configAlternates": {
+                                "height": "auto",
+                                "html": "string",
+                                "style": "string",
+                                "width": "auto",
+                                "margin": "auto",
+                                "designer|displayName": "string",
+                                "layout|flex": "number"
+                            },
+                            "name": "MyLabel",
+                            "designerId": "b1fc8e49-6f65-401d-a9e5-67bcf8125545"
+                        },
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "메일",
+                                "html": [
+                                    "{emp.compEmladr}"
+                                ],
+                                "layout|flex": 3,
+                                "reference": "mailAddress",
+                                "style": "white-space:normal; word-wrap:break-word; word-break:break-all;"
+                            },
+                            "configAlternates": {
+                                "height": "auto",
+                                "style": "string",
+                                "width": "auto",
+                                "margin": "auto",
+                                "reference": "string",
+                                "designer|displayName": "string",
+                                "layout|flex": "number",
+                                "html": "binding"
+                            },
+                            "name": "MyLabel3",
+                            "designerId": "d0a5154f-7d86-44b0-95a3-4ab65289cb45"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "근무지 전화",
+                        "hidden": true,
+                        "layout": "hbox",
+                        "margin": "10 0 0 0",
+                        "style": "font-size:20px;"
+                    },
+                    "configAlternates": {
+                        "layout": "string",
+                        "designer|displayName": "string",
+                        "hidden": "boolean",
+                        "margin": "auto",
+                        "style": "string"
+                    },
+                    "name": "MyContainer16",
+                    "designerId": "7a49c3d9-f9fe-4e81-a28f-886c71e26116",
+                    "cn": [
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "label",
+                                "html": "전화 ",
+                                "layout|flex": 1,
+                                "margin": "0 10 0 0"
+                            },
+                            "configAlternates": {
+                                "height": "auto",
+                                "html": "string",
+                                "style": "string",
+                                "width": "auto",
+                                "margin": "auto",
+                                "designer|displayName": "string",
+                                "layout|flex": "number"
+                            },
+                            "name": "MyLabel",
+                            "designerId": "c682f202-2005-4aa8-b0ae-3041f10dc4be"
+                        },
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "전화",
+                                "html": [
+                                    "{emp.neson}"
+                                ],
+                                "layout|flex": 3,
+                                "reference": "tel",
+                                "style": "white-space:normal; word-wrap:break-word; word-break:break-all;"
+                            },
+                            "configAlternates": {
+                                "height": "auto",
+                                "html": "binding",
+                                "style": "string",
+                                "width": "auto",
+                                "margin": "auto",
+                                "reference": "string",
+                                "designer|displayName": "string",
+                                "layout|flex": "number"
+                            },
+                            "name": "MyLabel3",
+                            "designerId": "9690f05c-de7a-42ba-9696-cab8f7568184"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "휴대폰",
+                        "layout": "hbox",
+                        "margin": "10 0 10 0",
+                        "style": "font-size:20px;"
+                    },
+                    "configAlternates": {
+                        "layout": "string",
+                        "designer|displayName": "string",
+                        "margin": "auto",
+                        "style": "string"
+                    },
+                    "name": "MyContainer18",
+                    "designerId": "ac7496d5-ceef-4e43-befb-a876b17c58c7",
+                    "cn": [
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "label",
+                                "html": "휴대폰",
+                                "layout|flex": 1,
+                                "margin": "0 10 0 0"
+                            },
+                            "configAlternates": {
+                                "height": "auto",
+                                "html": "string",
+                                "style": "string",
+                                "width": "auto",
+                                "margin": "auto",
+                                "designer|displayName": "string",
+                                "layout|flex": "number"
+                            },
+                            "name": "MyLabel",
+                            "designerId": "0ae34260-7e2c-43cf-91f5-83a44429160a"
+                        },
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "휴대폰",
+                                "html": [
+                                    "{emp.phone}"
+                                ],
+                                "layout|flex": 3,
+                                "reference": "phone",
+                                "style": "white-space:normal; word-wrap:break-word; word-break:break-all;"
+                            },
+                            "configAlternates": {
+                                "height": "auto",
+                                "style": "string",
+                                "width": "auto",
+                                "margin": "auto",
+                                "reference": "string",
+                                "designer|displayName": "string",
+                                "layout|flex": "number",
+                                "html": "binding"
+                            },
+                            "name": "MyLabel3",
+                            "designerId": "59cb9553-3a6f-4c0f-a754-dad46094b0ef"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "아이콘 버튼들",
+                "height": 50,
+                "layout": "hbox",
+                "style": "background-color: #DCDCDC;",
+                "width": "100%"
+            },
+            "configAlternates": {
+                "layout": "string",
+                "width": "auto",
+                "designer|displayName": "string",
+                "height": "auto",
+                "style": "string"
+            },
+            "name": "MyContainer9",
+            "designerId": "d94cb12c-d317-40d8-8357-66570905c580",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "전화",
+                        "iconCls": "icon-tel",
+                        "layout|flex": 1
+                    },
+                    "configAlternates": {
+                        "text": "string",
+                        "width": "auto",
+                        "layout|flex": "number",
+                        "designer|displayName": "string",
+                        "icon": "string",
+                        "iconCls": "string"
+                    },
+                    "name": "MyButton4",
+                    "designerId": "cf147cd5-9bc8-41aa-a0ef-ef5705a925bb",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBtnShowPopupTap21",
+                                "implHandler": [
+                                    "var me = this;",
+                                    "var value =me.getParams();",
+                                    "",
+                                    "if (!value.phone) {",
+                                    "    Ext.Msg.alert('안내', '전화번호는 필수입력값입니다.');",
+                                    "    return;",
+                                    "}",
+                                    "",
+                                    "location.href = 'tel:' + value.phone;"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnShowPopupTap21",
+                            "designerId": "7bd41470-52c1-4ac4-8e5f-df930a2c918a"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "문자",
+                        "iconCls": "icon-sms",
+                        "layout|flex": 1
+                    },
+                    "configAlternates": {
+                        "text": "string",
+                        "width": "auto",
+                        "iconCls": "string",
+                        "layout|flex": "number",
+                        "designer|displayName": "string"
+                    },
+                    "name": "MyButton8",
+                    "designerId": "46249caf-f0d0-4549-b563-d0011bfb7ada",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBtnShowPopupTap1",
+                                "implHandler": [
+                                    "",
+                                    "var me = this;",
+                                    "var value =me.getParams();",
+                                    "",
+                                    "if (!value.phone) {",
+                                    "    Ext.Msg.alert('안내', '핸드폰 번호는 필수입력값입니다.');",
+                                    "    return;",
+                                    "}",
+                                    "",
+                                    "location.href = 'sms:' + value.phone;"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnShowPopupTap1",
+                            "designerId": "1413a183-2728-4923-8ec3-52a51dd29741"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "메일",
+                        "iconCls": "icon-mail",
+                        "layout|flex": 1
+                    },
+                    "configAlternates": {
+                        "text": "string",
+                        "width": "auto",
+                        "iconCls": "string",
+                        "layout|flex": "number",
+                        "designer|displayName": "string"
+                    },
+                    "name": "MyButton14",
+                    "designerId": "d8f5a76e-50e1-45af-8145-f158d458a156",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBtnShowPopupTap4",
+                                "implHandler": [
+                                    "",
+                                    "var me = this;",
+                                    "var value =me.getParams();",
+                                    "",
+                                    "if (!value.compEmladr) {",
+                                    "    Ext.Msg.alert('안내', '이메일은 필수입력값입니다.');",
+                                    "    return;",
+                                    "}",
+                                    "",
+                                    "        location.href = 'mailto:' + value.compEmladr;"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnShowPopupTap4",
+                            "designerId": "349b45e6-9144-4028-9753-4abcb117bdff"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "카톡",
+                        "hidden": true,
+                        "iconCls": "icon_kakao",
+                        "layout|flex": 1
+                    },
+                    "configAlternates": {
+                        "text": "string",
+                        "width": "auto",
+                        "layout|flex": "number",
+                        "iconCls": "string",
+                        "designer|displayName": "string",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyButton3",
+                    "designerId": "54fcae86-6c79-4e25-89b3-642a9b59934c",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBtnShowPopupTap11",
+                                "implHandler": [
+                                    ""
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnShowPopupTap11",
+                            "designerId": "d7a92e47-ba2b-43c4-8010-9b06a31d4593"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "연락처 저장",
+                        "hidden": true,
+                        "iconCls": "icon-nsave",
+                        "layout|flex": 1
+                    },
+                    "configAlternates": {
+                        "text": "string",
+                        "width": "auto",
+                        "layout|flex": "number",
+                        "hidden": "boolean",
+                        "designer|displayName": "string",
+                        "iconCls": "string"
+                    },
+                    "name": "MyButton11",
+                    "designerId": "bcb7fce7-6b3b-4fdb-89e8-eb055e6dd8de",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBtnShowPopupTap3",
+                                "implHandler": [
+                                    "//         var me = this,",
+                                    "//             form = me.lookup('form'),",
+                                    "//             values = form.getValues();",
+                                    "",
+                                    "//         if (!values.phone) {",
+                                    "//             Ext.Msg.alert('안내', '전화번호는 필수입력값입니다.');",
+                                    "//             return;",
+                                    "//         }",
+                                    "",
+                                    "//         location.href = 'sms:' + values.phone;"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnShowPopupTap3",
+                            "designerId": "753225c1-2772-4ca3-a364-cc49436da9e1"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "확인버튼",
+                "height": 50,
+                "layout": "hbox",
+                "margin": "10 0 0 0"
+            },
+            "configAlternates": {
+                "layout": "string",
+                "designer|displayName": "string",
+                "height": "auto",
+                "margin": "auto"
+            },
+            "name": "MyContainer6",
+            "designerId": "acf56477-d6c2-4c66-8a98-b5fc7e69bdfc",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "확인버튼",
+                        "html": "<font style=\"color: #C60000;\">확인</font>",
+                        "layout|flex": 1
+                    },
+                    "configAlternates": {
+                        "layout|flex": "number",
+                        "text": "string",
+                        "designer|displayName": "string",
+                        "html": "string"
+                    },
+                    "name": "MyButton12",
+                    "designerId": "8588e752-229c-4880-aeb7-44ec1bd66eac",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBtnCloseTap",
+                                "implHandler": [
+                                    "this.getView().close();"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnCloseTap",
+                            "designerId": "bd3d60c0-9521-4b66-9623-f6cbb2cc6702"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "initialize",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    emp = component.initialConfig;",
+                    "",
+                    "var phone = emp.phone; // 휴대전화번호",
+                    "if(phone && phone.length === 11){",
+                    "    phone = phone.substr(0, 3) + '-' + phone.substr(3, 4) + '-' + phone.substr(7, 4);",
+                    "}",
+                    "if(phone && phone.length === 10){",
+                    "    phone = phone.substr(0, 3) + '-' + phone.substr(3, 3) + '-' + phone.substr(6, 4);",
+                    "}",
+                    "",
+                    "if(!phone){",
+                    "    phone = '-';",
+                    "}",
+                    "",
+                    "var neson = emp.neson; // 근무지전화번호",
+                    "if(neson && neson.length === 11){",
+                    "    neson = neson.substr(0, 3) + '-' + neson.substr(3, 4) + '-' + neson.substr(7, 4);",
+                    "}",
+                    "if(neson && neson.length === 10){",
+                    "    neson = neson.substr(0, 3) + '-' + neson.substr(3, 3) + '-' + neson.substr(6, 4);",
+                    "}",
+                    "if(!neson){",
+                    "    neson = '-';",
+                    "}",
+                    "",
+                    "var fieldList = [ ",
+                    "                  'dpnm' \t  \t//부서",
+                    "                , 'empePsitNm'\t//직위",
+                    "                , 'empeRsbNm' \t//직책",
+                    "                , 'jobSrNm'\t\t//직렬",
+                    "                , 'rolNm'\t\t//사무분담",
+                    "                , 'wkplcNm'\t\t//근무지",
+                    "                , 'compEmladr'\t//이메일",
+                    "                ];",
+                    "",
+                    "for(var i in fieldList){",
+                    "    if(Ext.isEmpty(emp[fieldList[i]])){",
+                    "        emp[fieldList[i]] = '-';",
+                    "    }",
+                    "}",
+                    "",
+                    "vm.set('emp', emp);",
+                    "vm.set('emp.phone', phone);",
+                    "vm.set('emp.neson', neson);",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "// before code",
+                    "vm.params = component.initialConfig;",
+                    "vm.set('empInfo', component.initialConfig);",
+                    ""
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "initialize",
+            "designerId": "41008657-56ef-4aa3-95f9-83c119f510a2"
+        }
+    ]
+}

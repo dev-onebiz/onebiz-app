@@ -1,0 +1,264 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            "모바일 :: 연수과정/연수과정신청 (신청) - 컨트롤러",
+            "",
+            "@author BNK시스템/파트너/지민영",
+            "@since 2020.10.27",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일\t\t  수정자                  수정내용",
+            "----------\t--------------------   --------------------------",
+            "2020.10.27\tBNK시스템/파트너/지민영   최초 생성"
+        ],
+        "designer|extend": "BaseViewController",
+        "designer|userAlias": "HrdCrsAply02MViewController",
+        "designer|userClassName": "HumanResource.hrd.HrdCrsAply02MViewController",
+        "parentView": "`null`",
+        "viewId": "HrdCrsAply02M"
+    },
+    "configAlternates": {
+        "designer|extend": "string",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "parentView": "string",
+        "designer|commentHeader": "comment",
+        "viewId": "string"
+    },
+    "designerId": "d2c5b9b8-907f-4bbf-8369-a431ed694f06",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "parentView",
+            "type": "string"
+        },
+        {
+            "group": "(Custom Properties)",
+            "name": "viewId",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "조회 (신청자)"
+                ],
+                "fn": "onSelect",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    grid = refs.detailGrid,",
+                    "    store = vm.storeInfo.Store,",
+                    "    data = vm.get('detail');",
+                    "",
+                    "// // 페이지 초기화",
+                    "// store.getProxy().extraParams.page = 1;",
+                    "// var toolbar = refs.grid.getPlugins()[0];",
+                    "// toolbar.setCurrentPage(1);",
+                    "",
+                    "var sttnAplStcds = [];",
+                    "sttnAplStcds.push(Constants.sttnAplStcd.APPLY);",
+                    "sttnAplStcds.push(Constants.sttnAplStcd.PROCEEDING);",
+                    "sttnAplStcds.push(Constants.sttnAplStcd.COMPLETED);",
+                    "//PARAM SET",
+                    "var params = {",
+                    "    hrHrdmStnCrsId : data.hrHrdmStnCrsId,",
+                    "    stcd : Constants.stcd.NORMAL,",
+                    "    sttnAplStcds : sttnAplStcds,",
+                    "//     noPaging : 'noPaging'",
+                    "};",
+                    "",
+                    "store.getProxy().extraParams = params;",
+                    "store.removeAll();",
+                    "store.loadPage(1);"
+                ]
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "onSelect",
+            "designerId": "545afacb-f38b-4e23-bccd-878a80990945"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "신청 전 유효성 검사"
+                ],
+                "fn": "validateOnApply",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    D = new Ext.Deferred(),",
+                    "    record = vm.get('detail');\t\t//연수과정신청 데이터",
+                    "",
+                    "var param = {",
+                    "    hrHrpmCompId : SecurityUtils.getPrincipal().hrHrpmCompId,",
+                    "    hrHrpmEmpId : SecurityUtils.getPrincipal().hrHrpmEmpId,",
+                    "    hrHrdcStnCrsId : record.hrHrdcStnCrsId,",
+                    "};",
+                    "",
+                    "//동일과목신청한 적이 있는지 확인한다.",
+                    "Ext.Ajax.request({",
+                    "    headers : {",
+                    "        serviceId : 'HrdCrsSvc.findDupHrdCrsWithAply',",
+                    "        viewId : me.getViewId(),",
+                    "        scope : me",
+                    "    },",
+                    "    jsonData : param,",
+                    "    success : function(response) {",
+                    "        var res = Ext.JSON.decode(response.responseText);",
+                    "        if (res.dupHrdCrsCmp.length < 1) { //중복신청된 게 없다면 다음 로직으로",
+                    "            D.resolve(true);",
+                    "            return;",
+                    "        }",
+                    "",
+                    "        var dts = '';",
+                    "        for ( var i in res.dupHrdCrsCmp) {",
+                    "            var dupHrdCrsCmp = res.dupHrdCrsCmp[i];",
+                    "            var strdtFmt = DateUtils.parseDate(dupHrdCrsCmp.sttnStrdt);",
+                    "            var edtFmt = DateUtils.parseDate(dupHrdCrsCmp.sttnEdt);",
+                    "",
+                    "            if (dts.length == 0) {",
+                    "                dts = Ext.String.format('{0}~{1}', strdtFmt, edtFmt);",
+                    "                continue;",
+                    "            }",
+                    "",
+                    "            dts += ', ' + Ext.String.format('{0}~{1}', strdtFmt, edtFmt);",
+                    "        }",
+                    "        var errMsg = Ext.String.format('동일한 과정을 이수한 적이 있어,<br />재수강 시 점수 반영이 되지 않을 수 있습니다.<br />계속 하시겠습니까?<br /><br />(수료한 연수기간: {0})', dts);",
+                    "",
+                    "        Ext.Msg.confirm('확인', errMsg, function(btn) {",
+                    "            switch (btn) {",
+                    "                case 'yes':",
+                    "                    D.resolve(true);",
+                    "                    break;",
+                    "                default:",
+                    "                    D.reject();",
+                    "                    break;",
+                    "            }",
+                    "        });",
+                    "",
+                    "    },",
+                    "    failure : function(res, scope) {",
+                    "        D.reject();",
+                    "    }",
+                    "});",
+                    "",
+                    "return D.promise;"
+                ]
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "validateOnApply",
+            "designerId": "d6f80625-3c49-404b-912f-eb3cb8413546"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "targetData"
+                ],
+                "fn": "fnSetDetailInfo",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    data = vm.get('detail'),",
+                    "    keyArr = Object.keys(data),",
+                    "    skipKeys = [ 'rn', 'id', 'hrHrpmCompId' ];",
+                    "",
+                    "for ( var j in keyArr) {",
+                    "    var key = keyArr[j];",
+                    "    if (skipKeys.indexOf(key) > -1) {",
+                    "        continue;",
+                    "    }",
+                    "    targetData[key] = data[key];",
+                    "}",
+                    "",
+                    "return targetData;"
+                ]
+            },
+            "configAlternates": {
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "fnSetDetailInfo",
+            "designerId": "9d2d25f4-ee30-4039-906f-0098d2d547db"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onComplete",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences();",
+                    "",
+                    "var win = Ext.create('ExpNteAply51M'); // 결과 완료 팝업",
+                    "",
+                    "var sumScreen = win.getReferences().sumScreen;",
+                    "var message = win.getReferences().message;",
+                    "sumScreen.setVisibility(false);",
+                    "message.setHtml(\"연수 신청을 완료 하였습니다\");",
+                    "me.mon(win, 'destroy', function() {",
+                    "    var me = this,",
+                    "        //home = Ext.getCmp(Property.ROUTE_HOME),",
+                    "        home = this.getView().up(Property.ROUTE_HOME),",
+                    "        naviView = home.lookup('NaviView'),",
+                    "        backButton = naviView.getNavigationBar().getBackButton();",
+                    "    me.getParentView().controller.onBtnSearchTap();",
+                    "    backButton.onTap();\t// 뒤로가기",
+                    "}, me);",
+                    "",
+                    "win.show();"
+                ]
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "onComplete",
+            "designerId": "cc311929-70ce-4cca-a44d-8e48bc60e521"
+        }
+    ]
+}

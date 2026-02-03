@@ -1,0 +1,43 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            "공통 / 모바일 결재불가 팝업 [결재함] - 컨트롤러",
+            "",
+            "@author BNK시스템/계장/지민영",
+            "@since 2020.07.06",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일       수정자                수정내용",
+            "----------  ------------------   --------------------------",
+            "2020.07.06  BNK시스템/계장/지민영   최초 생성"
+        ],
+        "designer|extend": "BaseViewController",
+        "designer|userAlias": "ApprovalEmptyPopupMViewController",
+        "designer|userClassName": "common.ApprovalEmptyPopupMViewController",
+        "viewId": "ApprovalEmptyPopupM"
+    },
+    "configAlternates": {
+        "designer|commentHeader": "comment",
+        "designer|extend": "string",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "viewId": "string"
+    },
+    "designerId": "8d84b6ea-5d62-4439-a057-470f00faff40",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "viewId",
+            "type": "string"
+        }
+    ]
+}

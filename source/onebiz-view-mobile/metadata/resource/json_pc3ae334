@@ -1,0 +1,18 @@
+{
+    "type": "jsonresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "json_pc3ae334",
+        "url": "events.json"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "url": "uri"
+    },
+    "name": "json2",
+    "designerId": "bc62f769-0169-4653-aeee-b5865a34440d"
+}

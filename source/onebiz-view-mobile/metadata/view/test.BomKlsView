@@ -1,0 +1,226 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "BomKlsView"
+        ],
+        "designer|userAlias": "BomKlsView",
+        "designer|userClassName": "test.BomKlsView"
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "test.BomKlsMean1",
+    "designerId": "9c4f8c8d-ca0d-48a6-a98a-c2bd3f625a00",
+    "viewControllerInstanceId": "87166355-cb88-4e2e-acc9-df24b4d8fc21",
+    "viewModelInstanceId": "738ad107-3365-4a7d-b19e-1fbab35ec5bc",
+    "cn": [
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onContainerInitialize",
+                "implHandler": [
+                    "        var me = this;",
+                    "        var vm = me.getViewModel();",
+                    "        var refs = me.getReferences();",
+                    "",
+                    "        refs.mainCtn.bodyElement.on('scroll',function(){",
+                    "            me.onScrollEvent();",
+                    "        });",
+                    "",
+                    "        var cat = vm.initialConfig.view.config.cat;",
+                    "        if(cat == 'News'){",
+                    "            this.onSelectNews();",
+                    "        }",
+                    "",
+                    "        else if(cat == 'Rept'){",
+                    "            this.onSelectRept();",
+                    "        }",
+                    "",
+                    "        else if(cat == 'Trnd'){",
+                    "            this.onSelectTrnd();",
+                    "        }",
+                    ""
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onContainerInitialize",
+            "designerId": "860ba346-54c2-46e9-bfd8-a5991cf6f675"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "MainCtn",
+                "height": "100%",
+                "layout": "vbox",
+                "reference": "mainCtn",
+                "scrollable": true
+            },
+            "configAlternates": {
+                "height": "auto",
+                "layout": "string",
+                "scrollable": "auto",
+                "designer|displayName": "string",
+                "reference": "string"
+            },
+            "name": "MyContainer14",
+            "designerId": "ae8033c1-707d-4e2e-a42b-94aa6322e155",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|reverse": true,
+                        "designer|displayName": "TitleCtn",
+                        "height": "8%",
+                        "layout": "hbox"
+                    },
+                    "configAlternates": {
+                        "layout": "string",
+                        "container|reverse": "boolean",
+                        "height": "auto",
+                        "designer|displayName": "string"
+                    },
+                    "name": "MyContainer15",
+                    "designerId": "60f8b883-c354-4707-971d-0a13f81ae9f6",
+                    "cn": [
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": "100%",
+                                "style": "background-image:url(\"/resources/images/arrow-up.png\")",
+                                "width": "33%"
+                            },
+                            "configAlternates": {
+                                "height": "auto",
+                                "iconCls": "string",
+                                "text": "string",
+                                "width": "auto",
+                                "style": "string"
+                            },
+                            "name": "MyButton2",
+                            "designerId": "50f5425e-4b49-4ef7-bb28-76a8372a3137"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "reference": "imgCtn",
+                        "width": "100%"
+                    },
+                    "configAlternates": {
+                        "html": "string",
+                        "reference": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyContainer4",
+                    "designerId": "b1387d75-5051-4d95-839c-e529110172e0"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": null,
+                "height": "15%",
+                "hidden": false,
+                "iconCls": "x-fa fa-arrow-up",
+                "left": "85%",
+                "name": "topBtn",
+                "reference": "topBtn",
+                "style": "position:absolute;z-index:3;",
+                "top": "85%",
+                "width": "20%"
+            },
+            "configAlternates": {
+                "docked": "string",
+                "height": "auto",
+                "left": "auto",
+                "name": "string",
+                "reference": "string",
+                "style": "string",
+                "text": "string",
+                "top": "auto",
+                "width": "auto",
+                "hidden": "boolean",
+                "iconCls": "string"
+            },
+            "name": "MyButton1",
+            "designerId": "ddde9583-ac10-4e32-8b3d-386ac955b722",
+            "cn": [
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onButtonTap",
+                        "implHandler": [
+                            "               var me = this;",
+                            "               var vm = me.getViewModel();",
+                            "               var refs = me.getReferences();",
+                            "               var mainCtn = refs.mainCtn.el.dom.firstElementChild;",
+                            "               mainCtn.scrollTop = 0;"
+                        ],
+                        "name": "tap",
+                        "scope": "me"
+                    },
+                    "configAlternates": {
+                        "fn": "string",
+                        "implHandler": "code",
+                        "name": "string",
+                        "scope": "string"
+                    },
+                    "name": "onButtonTap",
+                    "designerId": "6b614f8c-40a0-4d08-8314-1820720a4920"
+                }
+            ]
+        }
+    ]
+}

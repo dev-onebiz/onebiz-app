@@ -1,0 +1,20 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "js_20f2s02i",
+        "includeInBundle": true,
+        "url": "ComboboxUtils.js"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "includeInBundle": "boolean",
+        "url": "uri"
+    },
+    "name": "js12",
+    "designerId": "00a9e9cb-5353-4fbf-9d62-054155cdc9c2"
+}

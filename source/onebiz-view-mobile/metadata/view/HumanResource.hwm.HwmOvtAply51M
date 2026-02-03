@@ -1,0 +1,333 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "HwmOvtAply51M"
+        ],
+        "designer|extend": "Ext.window.Window",
+        "designer|userAlias": "HwmOvtAply51M",
+        "designer|userClassName": "HumanResource.hwm.HwmOvtAply51M",
+        "height": "300px",
+        "layout": "vbox",
+        "modal": true,
+        "scrollable": true,
+        "width": "80%"
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "extend": "string",
+        "designer|extend": "string",
+        "height": "auto",
+        "layout": "string",
+        "modal": "boolean",
+        "scrollable": "auto",
+        "width": "auto"
+    },
+    "designerId": "03283e74-bc4d-45f2-b0ef-0560dedfa3d4",
+    "viewControllerInstanceId": "19799d33-4ef6-49bc-a491-a4e9df2e4de4",
+    "viewModelInstanceId": "87d3f8b8-07d5-4952-a785-8a6ecaa5050a",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|pack": "center",
+                "designer|displayName": "contentArea",
+                "docked": null,
+                "layout": "vbox",
+                "layout|flex": 1,
+                "padding": "10 10 0 10",
+                "reference": "contentArea",
+                "style": "backgroud-color:blue;"
+            },
+            "configAlternates": {
+                "container|pack": "string",
+                "designer|displayName": "string",
+                "docked": "string",
+                "layout": "string",
+                "layout|flex": "number",
+                "padding": "auto",
+                "reference": "string",
+                "style": "string"
+            },
+            "name": "MyContainer38",
+            "designerId": "d6b9ad41-4669-44c9-b043-2971a39e9211"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "infoArea",
+                "height": 15,
+                "hidden": true,
+                "reference": "infoArea"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "height": "auto",
+                "hidden": "boolean",
+                "reference": "string"
+            },
+            "name": "MyContainer48",
+            "designerId": "ffd0a7ff-b999-4471-b5c0-123ebc0c2104",
+            "cn": [
+                {
+                    "type": "Ext.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "info",
+                        "html": "전체동의 후, 연장근무 신청 가능",
+                        "style": "color : red; text-align : center;"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "html": "string",
+                        "style": "string"
+                    },
+                    "name": "MyLabel24",
+                    "designerId": "9438c550-5434-4886-be51-038045530528"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "buttonArea",
+                "docked": "bottom",
+                "height": "50px",
+                "layout": "hbox",
+                "margin": "0 10 10 10",
+                "style": "backgroud-color:red;"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "docked": "string",
+                "height": "auto",
+                "layout": "string",
+                "margin": "auto",
+                "style": "string"
+            },
+            "name": "MyContainer41",
+            "designerId": "306773b0-0c51-4f8b-85c7-b751f4e366da",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "emptyCnt",
+                        "layout|flex": 1
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout|flex": "number"
+                    },
+                    "name": "MyContainer46",
+                    "designerId": "1c554bcb-a7a3-4140-842b-ea52113a479e"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "동의"
+                    },
+                    "configAlternates": {
+                        "style": "string",
+                        "text": "string"
+                    },
+                    "name": "MyButton14",
+                    "designerId": "c64f4bdd-83ba-4b40-8e90-63378832982a",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onTapAgree",
+                                "implHandler": [
+                                    "var me = this;",
+                                    "var refs = me.getReferences();",
+                                    "",
+                                    "var checkBoxes = refs.contentArea.query('checkbox');",
+                                    "for(var i in checkBoxes){",
+                                    "    if(checkBoxes[i].getChecked() === false){",
+                                    "        Ext.Msg.show({",
+                                    "            buttons :  {",
+                                    "                yes : {itemId : Ext.MessageBox.YES, text : '확인'}",
+                                    "            },",
+                                    "            title : '안내',",
+                                    "            message : '동의하지 않을 경우 시간외 근무 신청이 불가합니다.',",
+                                    "            alwaysOnTop : true,",
+                                    "            fn : function(btn) {",
+                                    "                return;",
+                                    "            }",
+                                    "        });",
+                                    "        return;",
+                                    "    }",
+                                    "}",
+                                    "",
+                                    "me.getView().fireEvent('agree'); //fireEvent 전달",
+                                    "me.getView().close();"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onTapAgree",
+                            "designerId": "e6a68a51-1b3d-4605-b335-e0e04ce231fd"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "border": true,
+                        "margin": "0 0 0 5",
+                        "text": "비동의"
+                    },
+                    "configAlternates": {
+                        "border": "boolean",
+                        "margin": "auto",
+                        "text": "string"
+                    },
+                    "name": "MyButton18",
+                    "designerId": "1664fd2c-d229-4387-8d4c-e5964c9f8cf4",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onTapCancle",
+                                "implHandler": [
+                                    "var me = this;",
+                                    "me.getView().close();"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onTapCancle",
+                            "designerId": "f1a41925-bd6c-40e3-8b7d-b3025a3c6ec3"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "init",
+                "implHandler": [
+                    "var me = this;",
+                    "var refs = me.getReferences();",
+                    "",
+                    "var msgList = Ext.StoreMgr.get('MessageStore').data.filterBy('code','M_HwmOvtAply51').items;",
+                    "msgList.sort(function(data1, data2) {",
+                    "    data1.data.code = data1.data.code.toLowerCase();",
+                    "    data2.data.code = data2.data.code.toLowerCase();",
+                    "    if (data1.data.code < data2.data.code) return -1;",
+                    "    if (data1.data.code > data2.data.code) return 1;",
+                    "    return 0;",
+                    "});",
+                    "",
+                    "refs.contentArea.removeAll();",
+                    "for( var i in msgList){",
+                    "    refs.contentArea.add({",
+                    "        xtype : 'container',",
+                    "        layout : 'hbox',",
+                    "        flex : 1,",
+                    "        items : [",
+                    "            {",
+                    "                xtype : 'checkbox',",
+                    "//                 checked : true,",
+                    "                listeners : {",
+                    "                    change : 'onChangeChkBox'",
+                    "                }",
+                    "            },",
+                    "            {",
+                    "                xtype : 'container',",
+                    "                width : 10,",
+                    "            },",
+                    "            {",
+                    "                xtype : 'label',",
+                    "                flex : 1,",
+                    "                margin : '8 0 0 0',",
+                    "                html : msgList[i].get('text')",
+                    "            }",
+                    "        ]",
+                    "    });",
+                    "}",
+                    ""
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "init",
+            "designerId": "f85d5e68-2c42-4e93-9384-5fa104278742"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            "공통 / 모바일 결재불가 팝업 [결재함] - 모델",
+            "",
+            "@author BNK시스템/계장/지민영",
+            "@since 2020.07.06",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일       수정자                수정내용",
+            "----------  ------------------   --------------------------",
+            "2020.07.06  BNK시스템/계장/지민영   최초 생성"
+        ],
+        "designer|userAlias": "ApprovalEmptyPopupMViewModel",
+        "designer|userClassName": "common.ApprovalEmptyPopupMViewModel"
+    },
+    "configAlternates": {
+        "designer|commentHeader": "comment",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "designerId": "e49876d6-95d0-4ec9-9551-5738a712c05b"
+}

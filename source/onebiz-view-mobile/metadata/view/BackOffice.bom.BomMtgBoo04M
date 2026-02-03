@@ -1,0 +1,1708 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "BomMtgBoo04M"
+        ],
+        "designer|userAlias": "BomMtgBoo04M",
+        "designer|userClassName": "BackOffice.bom.BomMtgBoo04M",
+        "layout": "vbox"
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "layout": "string"
+    },
+    "name": "MyContainer30",
+    "designerId": "a1ed27e1-a1e3-449d-9201-5ac06f9e53d3",
+    "viewControllerInstanceId": "f12cd8a1-cc61-493d-966c-5679e04cb4cb",
+    "viewModelInstanceId": "23af817d-9d08-4a55-927e-27c98a800e3c",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "reference": "frmDetail"
+            },
+            "configAlternates": {
+                "layout|flex": "number",
+                "reference": "string"
+            },
+            "name": "MyFormPanel",
+            "designerId": "8a3b241c-166f-401d-a288-4535dd4e6976",
+            "cn": [
+                {
+                    "type": "Ext.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dateFormat": "Y년 m월 d일",
+                        "designer|displayName": "일자 영역",
+                        "editable": false,
+                        "label": "회의일자",
+                        "reference": "mtgBooStrdt"
+                    },
+                    "configAlternates": {
+                        "dateFormat": "string",
+                        "docked": "string",
+                        "height": "auto",
+                        "label": "string",
+                        "reference": "string",
+                        "width": "auto",
+                        "margin": "auto",
+                        "maxWidth": "auto",
+                        "minWidth": "auto",
+                        "textAlign": "string",
+                        "style": "string",
+                        "editable": "boolean",
+                        "designer|displayName": "string"
+                    },
+                    "name": "MyDate3",
+                    "designerId": "83c293a0-c5a9-464e-af3b-b1544a0ef7b3",
+                    "cn": [
+                        {
+                            "type": "Ext.picker.Date",
+                            "reference": {
+                                "name": "picker",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dayText": "일",
+                                "header": false,
+                                "hideOnMaskTap": true,
+                                "monthText": "월",
+                                "slotOrder": [
+                                    "[\"year\",\"month\",\"day\"]"
+                                ],
+                                "title": "",
+                                "yearText": "년"
+                            },
+                            "configAlternates": {
+                                "dayText": "string",
+                                "hideOnMaskTap": "boolean",
+                                "monthText": "string",
+                                "title": "string",
+                                "yearText": "string",
+                                "header": "boolean",
+                                "slotOrder": "array"
+                            },
+                            "name": "MyDatePicker",
+                            "designerId": "718c6661-5697-4662-8a9a-867083a50992"
+                        },
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onDatefieldChange",
+                                "implHandler": [
+                                    "this.onChange();"
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onDatefieldChange",
+                            "designerId": "caf4f0cd-a412-4434-afd1-2080192a3fb2"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "시간영역",
+                        "layout": "hbox"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout": "string"
+                    },
+                    "name": "MyContainer62",
+                    "designerId": "1002b270-4a5b-42e5-8c64-29c31f0f6d4d",
+                    "cn": [
+                        {
+                            "type": "Ext.field.Time",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "시작시간",
+                                "editable": false,
+                                "format": "H:i",
+                                "label": "회의 시작 시간",
+                                "layout|flex": 1,
+                                "reference": "mtgBooStrtm"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "layout|flex": "number",
+                                "label": "string",
+                                "reference": "string",
+                                "editable": "boolean",
+                                "format": "string"
+                            },
+                            "name": "MyTime3",
+                            "designerId": "a4201a51-8009-4c78-9441-bc28be71ec4f",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onTimefieldChangeStime",
+                                        "implHandler": [
+                                            "console.log(\"onTimefieldChangeStime\");",
+                                            "",
+                                            "if(DateUtils.getTimeFormat(newValue,'i') <= 15){",
+                                            "    newValue.setMinutes(0);",
+                                            "    console.log(\"onTimefieldChangeStime11111\");",
+                                            "}",
+                                            "else if(DateUtils.getTimeFormat(newValue,'i') < 45){",
+                                            "    newValue.setMinutes(30);",
+                                            "    console.log(\"onTimefieldChangeStime22222\");",
+                                            "}",
+                                            "else{",
+                                            "    newValue.setMinutes(0);",
+                                            "    newValue.setHours(newValue.getHours() + 1);",
+                                            "    console.log(\"onTimefieldChangeStime3333333\");",
+                                            "}",
+                                            "",
+                                            "timefield.setInputValue(newValue);",
+                                            "console.log(\"onTimefieldChangeStime@@@last\");",
+                                            "this.onChange();"
+                                        ],
+                                        "name": "change",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onTimefieldChangeStime",
+                                    "designerId": "27c70683-a944-456c-a916-6cad50e43d1f"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "width": 30
+                            },
+                            "configAlternates": {
+                                "width": "number"
+                            },
+                            "name": "MySpacer5",
+                            "designerId": "c2d466b2-d394-4a49-bb3d-24f007f84e26"
+                        },
+                        {
+                            "type": "Ext.field.Time",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "종료시간",
+                                "editable": false,
+                                "format": "H:i",
+                                "label": "회의 종료 시간",
+                                "layout|flex": 1,
+                                "reference": "mtgBooEdtm",
+                                "ripple": true
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "layout|flex": "number",
+                                "label": "string",
+                                "reference": "string",
+                                "designer|userAlias": "string",
+                                "designer|userClassName": "string",
+                                "editable": "boolean",
+                                "format": "string",
+                                "ripple": "boolean"
+                            },
+                            "name": "MyTime1",
+                            "designerId": "fb62d394-2d0d-45ac-bfa2-f3a32859a0ac",
+                            "viewControllerInstanceId": "6b9b451f-20bb-493c-89b9-50fb7806658d",
+                            "viewModelInstanceId": "4320310a-5050-4f15-bf29-6ed04da113b3",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onTimefieldChangeEtime",
+                                        "implHandler": [
+                                            "if(DateUtils.getTimeFormat(newValue,'i') <= 15){",
+                                            "    newValue.setMinutes(0);",
+                                            "}",
+                                            "else if(DateUtils.getTimeFormat(newValue,'i') < 45){",
+                                            "    newValue.setMinutes(30);",
+                                            "}",
+                                            "else{",
+                                            "    newValue.setMinutes(0);",
+                                            "    newValue.setHours(newValue.getHours() + 1);",
+                                            "}",
+                                            "",
+                                            "timefield.setInputValue(newValue);",
+                                            "",
+                                            "this.onChange();"
+                                        ],
+                                        "name": "change",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onTimefieldChangeEtime",
+                                    "designerId": "99bb1fe0-3fc5-442b-9542-1f82e8082bfc"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "장소",
+                        "editable": false,
+                        "label": "장소",
+                        "name": "",
+                        "reference": "mtgRoomDvcd"
+                    },
+                    "configAlternates": {
+                        "code": "string",
+                        "designer|displayName": "string",
+                        "editable": "boolean",
+                        "name": "string",
+                        "reference": "string",
+                        "width": "auto",
+                        "label": "string"
+                    },
+                    "name": "MyComboBox",
+                    "designerId": "ad8d1ed2-2d95-4b6f-b5bb-85f4a358b61e",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "code",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "회의명",
+                        "label": "회의명",
+                        "maxLength": 100,
+                        "reference": "mtgNm"
+                    },
+                    "configAlternates": {
+                        "height": "auto",
+                        "label": "string",
+                        "designer|displayName": "string",
+                        "reference": "string",
+                        "maxLength": "number"
+                    },
+                    "name": "MyTextField",
+                    "designerId": "06b28097-01df-4235-8f97-54511c5f6a85"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "담당자",
+                        "layout": "hbox",
+                        "shadow": false,
+                        "style": "font-size:16px;font-weight:600;"
+                    },
+                    "configAlternates": {
+                        "layout|flex": "number",
+                        "designer|displayName": "string",
+                        "html": "string",
+                        "padding": "auto",
+                        "shadow": "boolean",
+                        "style": "string",
+                        "layout": "string"
+                    },
+                    "name": "MyContainer63",
+                    "designerId": "6b4ef935-5314-4789-b068-0cecddb30b33",
+                    "cn": [
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "담당자 정보",
+                                "label": "예약자",
+                                "layout|flex": 1,
+                                "readOnly": true,
+                                "reference": "rqpr",
+                                "width": "100%"
+                            },
+                            "configAlternates": {
+                                "label": "string",
+                                "designer|displayName": "string",
+                                "reference": "string",
+                                "width": "auto",
+                                "docked": "string",
+                                "editable": "boolean",
+                                "name": "string",
+                                "disabled": "boolean",
+                                "margin": "auto",
+                                "readOnly": "boolean",
+                                "layout|flex": "number"
+                            },
+                            "name": "MyTextField12",
+                            "designerId": "ce8795f0-f09b-4d18-891c-5f97932d707d"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "disabled": true,
+                                "hidden": false,
+                                "iconCls": "x-fa fa-search",
+                                "reference": "btnFindUser"
+                            },
+                            "configAlternates": {
+                                "docked": "string",
+                                "hidden": "boolean",
+                                "iconCls": "string",
+                                "reference": "string",
+                                "layout|flex": "number",
+                                "disabled": "boolean"
+                            },
+                            "name": "MyButton35",
+                            "designerId": "5b68e5f4-9aca-46fa-a3e4-b38a8d6143f6",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|commentHeader": [
+                                            "사원 조회"
+                                        ],
+                                        "fn": "onBtnFindUser",
+                                        "implHandler": [
+                                            "var me = this;",
+                                            "var vm = me.getViewModel();",
+                                            "var refs = me.getReferences();",
+                                            "",
+                                            "// 팝업창 생성 및 데이터전달",
+                                            "var win = Ext.create('FindUserPopup01M');",
+                                            "",
+                                            "// 팝업창에서 이벤트 호출시 실행되는 함수",
+                                            "me.mon(win, 'selected', function(data) {",
+                                            "    // 사용자 팝업에서 선택한 사용자들 기억하여 다시 사용자 팝업으로 돌려주기",
+                                            "     if(data !== null){",
+                                            "         var result = '';",
+                                            "         result = data.hrHrpmEmpId + \" / \"+ data.dpnm + \" / \" + data.empeNm +\" / \" + data.empePsitNm;",
+                                            "         refs.rqpr.setValue(result);",
+                                            "",
+                                            "         vm.set('hrHrpmEmpId',data.hrHrpmEmpId);",
+                                            "         vm.set('dpnm',data.dpnm);",
+                                            "         vm.set('empeNm',data.empeNm);",
+                                            "         vm.set('empePsitNm',data.empePsitNm);",
+                                            "",
+                                            "//          me.onSelect();",
+                                            "     }",
+                                            "}, me);",
+                                            "",
+                                            "win.show(); // 팝업창표시"
+                                        ],
+                                        "name": "tap",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string",
+                                        "designer|commentHeader": "comment"
+                                    },
+                                    "name": "onBtnFindUser",
+                                    "designerId": "cbcb2ef5-7e2b-4545-9ef5-59e20e47ffd9"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.Grid",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "columnLines": true,
+                        "designer|displayName": "사용자 및 사용부문",
+                        "grouped": true,
+                        "hideHeaders": true,
+                        "margin": "5 0 0 0",
+                        "minHeight": 215,
+                        "pinHeaders": false,
+                        "reference": "hrHromJasPrjGrid",
+                        "scrollable": "vertical",
+                        "sortable": false,
+                        "store": [
+                            "{hrHromJasPrjStore}"
+                        ],
+                        "width": "100%"
+                    },
+                    "configAlternates": {
+                        "store": "binding",
+                        "designer|displayName": "string",
+                        "height": "auto",
+                        "minHeight": "auto",
+                        "reference": "string",
+                        "sortable": "boolean",
+                        "width": "auto",
+                        "listeners": "object",
+                        "columnLines": "boolean",
+                        "grouped": "boolean",
+                        "hideHeaders": "boolean",
+                        "scrollable": "auto",
+                        "margin": "auto",
+                        "pinHeaders": "boolean"
+                    },
+                    "name": "MyGrid6",
+                    "designerId": "cf0e10be-83fa-46de-ab32-fb3ad425441a",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "listeners",
+                            "type": "string"
+                        }
+                    ],
+                    "cn": [
+                        {
+                            "type": "Ext.Toolbar",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "docked": "top"
+                            },
+                            "configAlternates": {
+                                "docked": "string"
+                            },
+                            "name": "MyToolbar",
+                            "designerId": "4e8162c6-4640-41b5-8de2-ccc6417fd2c9",
+                            "cn": [
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "html": "참석자"
+                                    },
+                                    "configAlternates": {
+                                        "html": "string"
+                                    },
+                                    "name": "MyLabel",
+                                    "designerId": "c5c8079b-5dda-43d4-978f-d595db6b2f96"
+                                },
+                                {
+                                    "type": "Ext.Spacer",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "name": "MySpacer",
+                                    "designerId": "62bb821b-5421-4242-b916-aff00798bb5e"
+                                },
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "hidden": [
+                                            "{cardItem.isAply}"
+                                        ],
+                                        "iconCls": "x-fa fa-search",
+                                        "reference": "btnFindUserAtnd",
+                                        "text": "조회"
+                                    },
+                                    "configAlternates": {
+                                        "iconCls": "string",
+                                        "text": "string",
+                                        "hidden": "binding",
+                                        "reference": "string"
+                                    },
+                                    "name": "MyButton",
+                                    "designerId": "055c61b6-b88c-415b-97c2-55827a3cdd3a",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onFindUsers",
+                                                "implHandler": [
+                                                    "var me = this;",
+                                                    "var vm = me.getViewModel();",
+                                                    "",
+                                                    "// 팝업창 생성 및 데이터전달",
+                                                    "var win = Ext.create('FindUserPopupM', {",
+                                                    "    accItemCd : vm.get('cardItem.accItemCd'),",
+                                                    "    gridData : vm.get('cardItem.hrHromJasPrjList'),",
+                                                    "});",
+                                                    "",
+                                                    "// 팝업창에서 이벤트 호출시 실행되는 함수",
+                                                    "me.mon(win, 'selected', function(data) {",
+                                                    "    var me = this;",
+                                                    "",
+                                                    "    // 사용자 팝업에서 선택한 사용자들 기억하여 다시 사용자 팝업으로 돌려주기",
+                                                    "    var gridData = data.items;",
+                                                    "    if(gridData && gridData.length > 0){",
+                                                    "        vm.set('cardItem.gridData', []);",
+                                                    "        for(var row in gridData){",
+                                                    "            vm.get('cardItem.gridData').push(gridData[row]);",
+                                                    "        }",
+                                                    "    }",
+                                                    "",
+                                                    "    var result = '';",
+                                                    "    var userInfoList = [];",
+                                                    "    var hrHromJasPrjId = null;",
+                                                    "",
+                                                    "    if(vm.get('cardItem.hrHromJasPrjId')){ // 사용부문",
+                                                    "        hrHromJasPrjId = vm.get('cardItem.hrHromJasPrjId');",
+                                                    "    }",
+                                                    "",
+                                                    "    for(var i in data.items){",
+                                                    "        userInfoList[i] = data.items[i].data;",
+                                                    "        userInfoList[i].hrHromJasPrjId = hrHromJasPrjId;",
+                                                    "",
+                                                    "        result += data.items[i].data.empeNm + '(' + data.items[i].data.dpnm + ')';",
+                                                    "        if(i != data.items.length - 1){",
+                                                    "            result += ', ';",
+                                                    "        }",
+                                                    "    }",
+                                                    "",
+                                                    "    vm.set('cardItem.userInfoList', userInfoList);",
+                                                    "    vm.set('cardItem.userOrUseDept', result);",
+                                                    "",
+                                                    "//     var jasPrjRefs = this.getView().getReferences().jasPrj;",
+                                                    "//     var userNotEmpty = vm.get('cardItem.userOrUseDept');",
+                                                    "//     if(userNotEmpty && userNotEmpty.length > 0){",
+                                                    "//         jasPrjRefs.setDisabled(false);",
+                                                    "//     } else if(!userNotEmpty || userNotEmpty === '' || userNotEmpty.length === 0){",
+                                                    "//         jasPrjRefs.setDisabled(true);",
+                                                    "//         vm.set('cardItem.hrHromJasPrjId', null);",
+                                                    "//         vm.set('cardItem.hrHromJasPrjText', null);",
+                                                    "//         jasPrjRefs.setValue(null);",
+                                                    "//     }",
+                                                    "",
+                                                    "     // 2019-07-30 손승범 사용자별 사용부문처리를 위해 추가",
+                                                    "     var records = [];",
+                                                    "     for (i in gridData) {",
+                                                    "         data = gridData[i].data;",
+                                                    "         // 사용자명 포매팅 추가설정",
+                                                    "         data.formattedEmpeNm = Ext.String.format('{0}({1})', data.empeNm, data.dpnm);",
+                                                    "         records.push(data);",
+                                                    "     }",
+                                                    "",
+                                                    "//      vm.get('hrHromJasPrjStore').add(records);",
+                                                    "     vm.set('hrHromJasPrjStore', records); // 중요",
+                                                    "     vm.set('cardItem.hrHromJasPrjList', records);",
+                                                    "",
+                                                    "}, me);",
+                                                    "",
+                                                    "win.show(); // 팝업창표시"
+                                                ],
+                                                "name": "tap",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onFindUsers",
+                                            "designerId": "bb11da43-13f8-4c29-ae42-d599500cfc3f"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "formattedEmpeNm",
+                                "docked": null,
+                                "flex": "1",
+                                "menuDisabled": true,
+                                "text": "사용자"
+                            },
+                            "configAlternates": {
+                                "renderer": "string",
+                                "dataIndex": "datafield",
+                                "docked": "string",
+                                "flex": "string",
+                                "menuDisabled": "boolean",
+                                "text": "string"
+                            },
+                            "name": "MyColumn2",
+                            "designerId": "cc72e5be-e4fc-40e0-a94d-15e135bbfd39",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "flex",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.field.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "푸시 예약전송",
+                        "label": "푸시 예약전송"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "style": "string",
+                        "height": "auto",
+                        "label": "string"
+                    },
+                    "name": "MyFieldContainer",
+                    "designerId": "431e6017-a861-47d1-9a91-d66bbdd16166",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|pack": "center",
+                                "layout": "hbox",
+                                "width": "100%"
+                            },
+                            "configAlternates": {
+                                "container|pack": "string",
+                                "layout": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyContainer26",
+                            "designerId": "df6393b9-fe14-4744-a29f-46e83651e689",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Checkbox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "boxLabel": "<font style='color:black'>예약 후</font>",
+                                        "reference": "booAftLemeYn"
+                                    },
+                                    "configAlternates": {
+                                        "boxLabel": "string",
+                                        "reference": "string"
+                                    },
+                                    "name": "MyCheckbox2",
+                                    "designerId": "a876a7be-0bd4-4481-aa91-72e24e046826"
+                                },
+                                {
+                                    "type": "Ext.Spacer",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1
+                                    },
+                                    "configAlternates": {
+                                        "layout|flex": "number"
+                                    },
+                                    "name": "MySpacer11",
+                                    "designerId": "c604adb9-9a6d-48ec-90df-39a1c4f765d0"
+                                },
+                                {
+                                    "type": "Ext.field.Checkbox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "boxLabel": "<font style='color:black'>1일 전</font>",
+                                        "reference": "dd1BefLemeYn"
+                                    },
+                                    "configAlternates": {
+                                        "boxLabel": "string",
+                                        "reference": "string"
+                                    },
+                                    "name": "MyCheckbox",
+                                    "designerId": "0d79a175-66a5-4955-b560-ca4160508bca"
+                                },
+                                {
+                                    "type": "Ext.Spacer",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1
+                                    },
+                                    "configAlternates": {
+                                        "layout|flex": "number"
+                                    },
+                                    "name": "MySpacer2",
+                                    "designerId": "071be2ee-06aa-41da-a600-621b7b60d081"
+                                },
+                                {
+                                    "type": "Ext.field.Checkbox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "boxLabel": "<font style='color:black'>30분 전</font>",
+                                        "reference": "min30BefLemeYn"
+                                    },
+                                    "configAlternates": {
+                                        "boxLabel": "string",
+                                        "reference": "string"
+                                    },
+                                    "name": "MyCheckbox1",
+                                    "designerId": "2b428f46-8b36-4a87-a1ab-be4856bcb381"
+                                },
+                                {
+                                    "type": "Ext.Spacer",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1
+                                    },
+                                    "configAlternates": {
+                                        "layout|flex": "number"
+                                    },
+                                    "name": "MySpacer4",
+                                    "designerId": "de5e5244-b507-46a1-8273-bbfd523681b1"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.field.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "사용안내 문구",
+                        "label": "회의실 안내문구"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "style": "string",
+                        "height": "auto",
+                        "label": "string"
+                    },
+                    "name": "MyFieldContainer1",
+                    "designerId": "e274f0ba-da95-4798-be97-1b447e882fa9",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "안내문구",
+                                "reference": "mtgRoomInfo",
+                                "style": "font-size:14px;color:#111111;font-weight:600;",
+                                "width": "100%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "html": "string",
+                                "layout|flex": "number",
+                                "style": "string",
+                                "width": "auto",
+                                "reference": "string"
+                            },
+                            "name": "MyContainer65",
+                            "designerId": "e0d5b45a-4c45-4188-b53f-cbe78400eb9d"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "버튼 영역",
+                "docked": "bottom",
+                "layout": "hbox",
+                "shadow": false
+            },
+            "configAlternates": {
+                "layout|flex": "number",
+                "designer|displayName": "string",
+                "shadow": "boolean",
+                "layout": "string",
+                "margin": "auto",
+                "docked": "string"
+            },
+            "name": "MyContainer76",
+            "designerId": "75180abf-bf1f-499c-a09a-4127d3a17afb",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|pack": "center",
+                        "designer|displayName": "수정 시 표시 버튼",
+                        "layout": "hbox",
+                        "layout|flex": 1,
+                        "shadow": false
+                    },
+                    "configAlternates": {
+                        "layout|flex": "number",
+                        "designer|displayName": "string",
+                        "shadow": "boolean",
+                        "layout": "string",
+                        "container|pack": "string"
+                    },
+                    "name": "MyContainer59",
+                    "designerId": "344be8f8-4442-4c3f-9123-29613acd7a3f",
+                    "cn": [
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "닫기",
+                                "hidden": false,
+                                "layout|flex": 1,
+                                "padding": "5px",
+                                "reference": "btnClose",
+                                "text": "닫기"
+                            },
+                            "configAlternates": {
+                                "text": "string",
+                                "designer|displayName": "string",
+                                "layout|flex": "number",
+                                "hidden": "boolean",
+                                "reference": "string",
+                                "padding": "auto"
+                            },
+                            "name": "MyButton16",
+                            "designerId": "72b5b854-aa12-4ac2-85e1-f8a863c619a1",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|commentHeader": [
+                                            "취소"
+                                        ],
+                                        "fn": "onButtonTapClose",
+                                        "implHandler": [
+                                            "var me = this;",
+                                            "var refs = me.getReferences();",
+                                            "var vm = me.getViewModel();",
+                                            "",
+                                            "me.getView().up().down('BomMtgBoo01M').controller.onSelect();",
+                                            "vm.getView().up().pop();"
+                                        ],
+                                        "name": "tap",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "designer|commentHeader": "comment",
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onButtonTapClose",
+                                    "designerId": "3217ce7c-ede2-49b0-9e63-014c690e4c5e"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "예약 취소",
+                                "hidden": true,
+                                "layout|flex": 1,
+                                "padding": "5px",
+                                "reference": "btnCancel",
+                                "text": "예약 취소"
+                            },
+                            "configAlternates": {
+                                "text": "string",
+                                "designer|displayName": "string",
+                                "layout|flex": "number",
+                                "hidden": "boolean",
+                                "reference": "string",
+                                "padding": "auto"
+                            },
+                            "name": "MyButton16",
+                            "designerId": "8804894e-0a9d-4c6f-b4ff-98f3b992f95c",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|commentHeader": [
+                                            "예약 취소"
+                                        ],
+                                        "fn": "onButtonTapCancel",
+                                        "implHandler": [
+                                            "var me = this;",
+                                            "var refs = me.getReferences();",
+                                            "var vm = me.getViewModel();",
+                                            "",
+                                            "var info = vm.data.info;",
+                                            "",
+                                            "Ext.Msg.show({",
+                                            "    title:'회의 취소',",
+                                            "    message:'회의를 취소하시겠습니까?',",
+                                            "    closable:true,",
+                                            "    buttons:Ext.MessageBox.YESNO,",
+                                            "    fn:function(btn){",
+                                            "        if (btn == 'yes') {",
+                                            "            // 취소 시작",
+                                            "",
+                                            "            var param={};",
+                                            "",
+                                            "            param.crud = vm.data.crud;",
+                                            "            param.stcd = Constants.stcd.DELETE;",
+                                            "            param.booStcd = Constants.booStcd.BOO_CANCLE;",
+                                            "            //param.mtgNm = info.mtgNm;",
+                                            "            //param.booAftLemeYn = info.booAftLemeYn;",
+                                            "            //param.booAftLemeYn = null;",
+                                            "            //param.dd1BefLemeYn = info.dd1BefLemeYn;",
+                                            "            //param.min30BefLemeYn = info.min30BefLemeYn;",
+                                            "            //param.mtgBooStrdt = info.mtgBooStrdt;",
+                                            "            //param.mtgBooStrtm = info.mtgBooStrtm;",
+                                            "            //param.mtgBooEdtm = info.mtgBooEdtm;",
+                                            "            //param.mtgCgpEmpeNo = info.mtgCgpEmpeNo;",
+                                            "            param.extYn = Constants.yesNo.NO; //연장여부",
+                                            "            param.cancelYn = Constants.yesNo.YES; //취소여부",
+                                            "            param.cancelPushYn = '';  //푸쉬 발송여부",
+                                            "            param.mtgRoomNm = vm.data.mtgRoomDvcd.selection.data.text;",
+                                            "            param.mtgCgpDpnm = vm.data.rqpr.value.split('/')[1];",
+                                            "            param.mtgCgpEmpeNm = vm.data.rqpr.value.split('/')[2];",
+                                            "            param.info = vm.data.info;",
+                                            "",
+                                            "            param.boMtgmRoomId = info.boMtgmRoomId;",
+                                            "",
+                                            "            if(!Ext.isEmpty(vm.data.originalJasPrjStore)){",
+                                            "                param.gridRecords = vm.data.originalJasPrjStore;",
+                                            "            }",
+                                            "            else{",
+                                            "                param.gridRecords = [];",
+                                            "            }",
+                                            "",
+                                            "            // 복사된 회의에 대해 취소를 진행하는 경우",
+                                            "            if (!Ext.isEmpty(vm.data.copyMtgmRoomId)) {",
+                                            "                // 복사된 회의ID로 변경",
+                                            "                param.boMtgmRoomId = vm.data.copyMtgmRoomId;",
+                                            "            }",
+                                            "",
+                                            "",
+                                            "",
+                                            "            Ext.Msg.show({",
+                                            "                title:'회의 취소',",
+                                            "                message:'취소에 대한 푸쉬 알림을 발송하시겠습니까?',",
+                                            "                closable:true,",
+                                            "                buttons:Ext.MessageBox.YESNO,",
+                                            "                fn:function(btn){",
+                                            "                    if (btn == 'yes') {",
+                                            "                        // 취소 푸쉬 발송여부 설정",
+                                            "                        param.cancelPushYn = Constants.yesNo.YES;",
+                                            "                    }",
+                                            "                    else if(btn == 'no'){",
+                                            "                        // 취소 푸쉬 발송여부 설정",
+                                            "                        param.cancelPushYn = Constants.yesNo.NO;",
+                                            "                    }else {",
+                                            "                        return;",
+                                            "                    }",
+                                            "",
+                                            "                    Ext.Ajax.request({",
+                                            "                        headers: {",
+                                            "                            viewId : me.getViewId(),",
+                                            "                            serviceId : 'BomMtgSvc.saveMtgBoo'",
+                                            "                        },",
+                                            "                        jsonData : param,",
+                                            "                        scope : me,",
+                                            "                        success : function(response) {",
+                                            "                            var res = Ext.JSON.decode(response.responseText);",
+                                            "",
+                                            "                            // 복사된 회의ID로 취소 처리하여 현재 복사된 회의ID를 가지고 있을 경우",
+                                            "                            if (!Ext.isEmpty(vm.data.copyMtgmRoomId)) {",
+                                            "                                // 빈 값으로 초기화",
+                                            "                                vm.set('copyMtgmRoomId', null);",
+                                            "                            }",
+                                            "",
+                                            "                            //                 var toast = Ext.toast(Messages.getMessage('I0000'),1500);",
+                                            "                            //                 toast.setBottom('50px');",
+                                            "                            //                 toast.show();",
+                                            "                            Ext.Msg.alert('안내', Messages.getMessage('I0000'));",
+                                            "                            me.getView().up().down('BomMtgBoo01M').controller.onSelect();",
+                                            "                            vm.getView().up().pop();",
+                                            "",
+                                            "                        }",
+                                            "                    });",
+                                            "                }",
+                                            "            });",
+                                            "",
+                                            "        }",
+                                            "    }",
+                                            "});"
+                                        ],
+                                        "name": "tap",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "designer|commentHeader": "comment",
+                                        "fn": "string",
+                                        "name": "string",
+                                        "scope": "string",
+                                        "implHandler": "code"
+                                    },
+                                    "name": "onButtonTapCancel",
+                                    "designerId": "38cd0655-8895-4f86-b534-4229ca2a632c"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "예약 복사",
+                                "hidden": true,
+                                "layout|flex": 1,
+                                "padding": "5px",
+                                "reference": "btnCopy",
+                                "text": "예약 복사"
+                            },
+                            "configAlternates": {
+                                "text": "string",
+                                "designer|displayName": "string",
+                                "layout|flex": "number",
+                                "hidden": "boolean",
+                                "reference": "string",
+                                "padding": "auto"
+                            },
+                            "name": "MyButton20",
+                            "designerId": "930e9568-e8a4-48e5-bd34-d64a2b95b832",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|commentHeader": [
+                                            "복사"
+                                        ],
+                                        "fn": "onButtonTapCopy",
+                                        "implHandler": [
+                                            "var me = this;",
+                                            "var refs = me.getReferences();",
+                                            "var vm = me.getViewModel();",
+                                            "",
+                                            "/***************",
+                                            "* 유효성검증 시작 *",
+                                            "****************/",
+                                            "var validationMsg = '';",
+                                            "var tmpMsg = '';",
+                                            "",
+                                            "/********** 날짜 **********/",
+                                            "tmpMsg = '';",
+                                            "if(Ext.isEmpty(refs.mtgBooStrdt.getValue())){",
+                                            "    tmpMsg += '- 회의 일자<br>';",
+                                            "}",
+                                            "validationMsg += tmpMsg;",
+                                            "",
+                                            "/********** 시작 종료 시간 **********/",
+                                            "tmpMsg = '';",
+                                            "if(Ext.isEmpty(refs.mtgBooStrtm.getValue())){",
+                                            "    tmpMsg += '- 회의 시작 시간<br>';",
+                                            "}",
+                                            "if(Ext.isEmpty(refs.mtgBooEdtm.getValue())){",
+                                            "    tmpMsg += '- 회의 종료 시간<br>';",
+                                            "}",
+                                            "validationMsg += tmpMsg;",
+                                            "",
+                                            "/********** 장소 **********/",
+                                            "tmpMsg = '';",
+                                            "if(Ext.isEmpty(refs.mtgRoomDvcd.getValue()) || refs.mtgRoomDvcd.getValue() == '99'){",
+                                            "    tmpMsg += '- 장소<br>';",
+                                            "}",
+                                            "validationMsg += tmpMsg;",
+                                            "",
+                                            "/********** 회의명 **********/",
+                                            "tmpMsg = '';",
+                                            "if(!Ext.isEmpty(refs.mtgNm.getValue())){",
+                                            "    if(refs.mtgNm.getValue().trim().length === 0){",
+                                            "        tmpMsg += '- 회의명<br>';",
+                                            "    }",
+                                            "}",
+                                            "else{",
+                                            "    tmpMsg += '- 회의명<br>';",
+                                            "}",
+                                            "",
+                                            "validationMsg += tmpMsg;",
+                                            "",
+                                            "/********** 시작보다 빠른 종료 시간 **********/",
+                                            "if(Ext.isEmpty(validationMsg)){",
+                                            "    var startTm = DateUtils.getTimeFormat(refs.mtgBooStrtm.getValue(),'His');",
+                                            "    var endTm = DateUtils.getTimeFormat(refs.mtgBooEdtm.getValue(),'His');",
+                                            "    if(startTm - endTm >= 0){",
+                                            "        validationMsg += '시작시간에 종료시간보다 작은 값을 입력해주십시오.';",
+                                            "    }",
+                                            "}",
+                                            "",
+                                            "/********** 이미 지난 시간 **********/",
+                                            "if(Ext.isEmpty(validationMsg)){",
+                                            "    var startDt = DateUtils.getDate(refs.mtgBooStrdt.getValue());",
+                                            "    var startTm = DateUtils.getTimeFormat(refs.mtgBooStrtm.getValue(),'His');",
+                                            "    // 예약 날짜가 오늘 및 이전 날짜일 경우",
+                                            "    if (startDt <= Ext.Date.format(new Date(), 'Ymd')) {",
+                                            "        // 예약 시간이 현재 시간 이전일 경우",
+                                            "        if (startTm < Ext.Date.format(new Date(), 'His')) {",
+                                            "            // 예약 불가 메시지",
+                                            "            validationMsg += '이미 지난 일시에는 예약이 불가능합니다.';",
+                                            "        }",
+                                            "    }",
+                                            "}",
+                                            "",
+                                            "if(validationMsg !== ''){",
+                                            "    Ext.Msg.alert('안내',validationMsg);",
+                                            "    return;",
+                                            "}",
+                                            "",
+                                            "/***************",
+                                            "* 유효성검증 종료 *",
+                                            "****************/",
+                                            "else{",
+                                            "    // 복사(저장)",
+                                            "    var param={};",
+                                            "    param.crud = Constants.crudState.CREATE;",
+                                            "    param.boMtgcRoomId = vm.data.info.boMtgcRoomId;",
+                                            "    param.boMtgmRoomId = null;  // 현재 회의와 중복검사가 가능하도록 초기화",
+                                            "    param.booStcd = Constants.booStcd.BOO;",
+                                            "    param.mtgCgpEmpeNo = vm.data.rqpr.value.split('/')[0]; //담당자사번",
+                                            "    //param.booAftLemeYn = me.lRef.booAftLemeYn.value; //알림옵션1",
+                                            "    param.booAftLemeYn = null;",
+                                            "    param.pstlyMtgExtTms = 0; //연장횟수",
+                                            "    param.extYn = Constants.yesNo.NO; //연장여부",
+                                            "    param.mtgRoomNm = vm.data.mtgRoomDvcd.selection.data.text;",
+                                            "    param.mtgRoomDvcd = vm.data.mtgRoomDvcd.value;",
+                                            "    param.mtgCgpDpnm = vm.data.rqpr.value.split('/')[1];",
+                                            "    param.mtgCgpEmpeNm = vm.data.rqpr.value.split('/')[2];",
+                                            "    param.mtgBooStrdt = DateUtils.getDate(vm.data.mtgBooStrdt.value);",
+                                            "    param.mtgBooStrtm = DateUtils.getTimeFormat(vm.data.mtgBooStrtm.value,'His');",
+                                            "    param.mtgBooEdt = DateUtils.getDate(vm.data.mtgBooStrdt.value);",
+                                            "    param.mtgBooEdtm = DateUtils.getTimeFormat(vm.data.mtgBooEdtm.value,'His');",
+                                            "    param.mtgNm = vm.data.mtgNm.value;",
+                                            "",
+                                            "    if(!Ext.isEmpty(vm.data.hrHromJasPrjStore)){",
+                                            "        param.gridRecords = vm.data.hrHromJasPrjStore;",
+                                            "    }",
+                                            "    else{",
+                                            "        param.gridRecords = [];",
+                                            "    }",
+                                            "",
+                                            "    // 알림옵션1",
+                                            "    if(refs.booAftLemeYn.isChecked()){",
+                                            "        param.booAftLemeYn = '1';",
+                                            "    }",
+                                            "    else{",
+                                            "        param.booAftLemeYn = '0';",
+                                            "    }",
+                                            "    // 알림옵션2",
+                                            "    if(refs.dd1BefLemeYn.isChecked()){",
+                                            "        param.dd1BefLemeYn = '1';",
+                                            "    }",
+                                            "    else{",
+                                            "        param.dd1BefLemeYn = '0';",
+                                            "    }",
+                                            "    // 알림옵션3",
+                                            "    if(refs.min30BefLemeYn.isChecked()){",
+                                            "        param.min30BefLemeYn = '1';",
+                                            "    }",
+                                            "    else{",
+                                            "        param.min30BefLemeYn = '0';",
+                                            "    }",
+                                            "",
+                                            "",
+                                            "",
+                                            "    Ext.Ajax.request({",
+                                            "        headers: {",
+                                            "            viewId : me.getViewId(),",
+                                            "            serviceId : 'BomMtgSvc.saveMtgBoo'",
+                                            "        },",
+                                            "        jsonData : param,",
+                                            "        scope : me,",
+                                            "        success : function(response) {",
+                                            "            var res = Ext.JSON.decode(response.responseText);",
+                                            "",
+                                            "            if(!Ext.isEmpty(res.result)){",
+                                            "                var msg = '';",
+                                            "                msg += res.result + '<br>';",
+                                            "",
+                                            "                var strTm = res.dupCheck[res.dupCheck.length - 1].strTm;",
+                                            "                strTm = strTm.substr(0,2) + ':' + strTm.substr(2,2);",
+                                            "                var endTm = res.dupCheck[res.dupCheck.length - 1].endTm;",
+                                            "                endTm = endTm.substr(0,2) + ':' + endTm.substr(2,2);",
+                                            "                msg += ' - ' + strTm + ' ~ ' + endTm;",
+                                            "",
+                                            "                Ext.Msg.alert('안내',msg);",
+                                            "            }",
+                                            "            else{",
+                                            "                // 복사된 회의ID 저장",
+                                            "                vm.set('copyMtgmRoomId', res.request.id);",
+                                            "",
+                                            "                var startDt = DateUtils.getDate(refs.mtgBooStrdt.getValue());",
+                                            "                startDt = startDt.substr(0,4) + '/' + startDt.substr(4,2) + '/' + startDt.substr(6,2);",
+                                            "                var startTm = DateUtils.getTimeFormat(refs.mtgBooStrtm.getValue(),'Hi');",
+                                            "                startTm = startTm.substr(0,2) + ':'+startTm.substr(2,2);",
+                                            "                var startDtTm = new Date(startDt+' '+startTm);",
+                                            "                var startDtTmBefore10 = new Date(startDtTm.setMinutes(startDtTm.getMinutes() - 10));",
+                                            "                if(new Date() >= startDtTmBefore10){",
+                                            "                    refs.btnCancel.setHidden(true);",
+                                            "                }",
+                                            "                else{",
+                                            "                    refs.btnCancel.setHidden(false);",
+                                            "                }",
+                                            "",
+                                            "                // 복사 처리 후 메시지",
+                                            "                var msg = '';",
+                                            "                var before = vm.data.info.mtgBooStrdt;",
+                                            "                before = '<b>' + before.substr(0,4) + '년 ' + before.substr(4,2) + '월 ' + before.substr(6,2) + '일</b>';",
+                                            "                msg += before + ' 회의가<br>';",
+                                            "",
+                                            "                var after = DateUtils.getDate(refs.mtgBooStrdt.getValue());",
+                                            "                after = '<b>' + after.substr(0,4) + '년 ' + after.substr(4,2) + '월 ' + after.substr(6,2) + '일</b>';",
+                                            "                msg += after + ' 로 복사되었습니다.<br>';",
+                                            "",
+                                            "                Ext.Msg.alert('안내',msg);",
+                                            "",
+                                            "                //             Ext.toast(Messages.getMessage('I0000'),1500);",
+                                            "            }",
+                                            "        }",
+                                            "    });",
+                                            "}"
+                                        ],
+                                        "name": "tap",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "designer|commentHeader": "comment",
+                                        "fn": "string",
+                                        "name": "string",
+                                        "scope": "string",
+                                        "implHandler": "code"
+                                    },
+                                    "name": "onButtonTapCopy",
+                                    "designerId": "2a254627-f3ad-4284-990d-fc56754d99c8"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "예약",
+                                "hidden": true,
+                                "layout|flex": 1,
+                                "padding": "5px",
+                                "reference": "btnBook",
+                                "text": "예약"
+                            },
+                            "configAlternates": {
+                                "text": "string",
+                                "designer|displayName": "string",
+                                "layout|flex": "number",
+                                "hidden": "boolean",
+                                "reference": "string",
+                                "padding": "auto"
+                            },
+                            "name": "MyButton20",
+                            "designerId": "3559ee2e-1880-4fda-b0ea-06c7a4f7f7f6",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|commentHeader": [
+                                            "확인"
+                                        ],
+                                        "fn": "onButtonTapBook",
+                                        "implHandler": [
+                                            "var me = this;",
+                                            "var refs = me.getReferences();",
+                                            "var vm = me.getViewModel();",
+                                            "",
+                                            "/***************",
+                                            "* 유효성검증 시작 *",
+                                            "****************/",
+                                            "var validationMsg = '';",
+                                            "var tmpMsg = '';",
+                                            "",
+                                            "/********** 날짜 **********/",
+                                            "tmpMsg = '';",
+                                            "if(Ext.isEmpty(refs.mtgBooStrdt.getValue())){",
+                                            "    tmpMsg += '- 회의 일자<br>';",
+                                            "}",
+                                            "validationMsg += tmpMsg;",
+                                            "",
+                                            "/********** 시작 종료 시간 **********/",
+                                            "tmpMsg = '';",
+                                            "if(Ext.isEmpty(refs.mtgBooStrtm.getValue())){",
+                                            "    tmpMsg += '- 회의 시작 시간<br>';",
+                                            "}",
+                                            "if(Ext.isEmpty(refs.mtgBooEdtm.getValue())){",
+                                            "    tmpMsg += '- 회의 종료 시간<br>';",
+                                            "}",
+                                            "validationMsg += tmpMsg;",
+                                            "",
+                                            "/********** 장소 **********/",
+                                            "tmpMsg = '';",
+                                            "if(Ext.isEmpty(refs.mtgRoomDvcd.getValue()) || refs.mtgRoomDvcd.getValue() == '99'){",
+                                            "    tmpMsg += '- 장소<br>';",
+                                            "}",
+                                            "validationMsg += tmpMsg;",
+                                            "",
+                                            "/********** 회의명 **********/",
+                                            "tmpMsg = '';",
+                                            "if(!Ext.isEmpty(refs.mtgNm.getValue())){",
+                                            "    if(refs.mtgNm.getValue().trim().length === 0){",
+                                            "        tmpMsg += '- 회의명<br>';",
+                                            "    }",
+                                            "}",
+                                            "else{",
+                                            "    tmpMsg += '- 회의명<br>';",
+                                            "}",
+                                            "",
+                                            "validationMsg += tmpMsg;",
+                                            "",
+                                            "",
+                                            "/********** 시작보다 빠른 종료 시간 **********/",
+                                            "if(Ext.isEmpty(validationMsg)){",
+                                            "    var startTm = DateUtils.getTimeFormat(refs.mtgBooStrtm.getValue(),'His');",
+                                            "    var endTm = DateUtils.getTimeFormat(refs.mtgBooEdtm.getValue(),'His');",
+                                            "    if(startTm - endTm >= 0){",
+                                            "        validationMsg += '시작시간에 종료시간보다 작은 값을 입력해주십시오.';",
+                                            "    }",
+                                            "}",
+                                            "",
+                                            "/********** 이미 지난 시간 **********/",
+                                            "if(Ext.isEmpty(validationMsg)){",
+                                            "    var startDt = DateUtils.getDate(refs.mtgBooStrdt.getValue());",
+                                            "    var startTm = DateUtils.getTimeFormat(refs.mtgBooStrtm.getValue(),'His');",
+                                            "    // 예약 날짜가 오늘 및 이전 날짜일 경우",
+                                            "    if (startDt <= Ext.Date.format(new Date(), 'Ymd')) {",
+                                            "        // 예약 시간이 현재 시간 이전일 경우",
+                                            "        if (startTm < Ext.Date.format(new Date(), 'His')) {",
+                                            "            // 예약 불가 메시지",
+                                            "            validationMsg += '이미 지난 일시에는 예약이 불가능합니다.';",
+                                            "        }",
+                                            "    }",
+                                            "}",
+                                            "",
+                                            "if(validationMsg !== ''){",
+                                            "    Ext.Msg.alert('안내',validationMsg);",
+                                            "    return;",
+                                            "}",
+                                            "",
+                                            "/***************",
+                                            "* 유효성검증 종료 *",
+                                            "****************/",
+                                            "else{",
+                                            "    // 복사(저장)",
+                                            "    var param={};",
+                                            "",
+                                            "    param.crud = vm.get('crud');",
+                                            "    param.mtgRoomDvcd = vm.data.mtgRoomDvcd.value;",
+                                            "    param.booStcd = Constants.booStcd.BOO;",
+                                            "    param.mtgCgpEmpeNo = vm.data.rqpr.value.split('/')[0]; //담당자사번",
+                                            "    param.booAftLemeYn = null;",
+                                            "    param.pstlyMtgExtTms = 0; //연장횟수",
+                                            "    param.extYn = Constants.yesNo.NO; //연장여부",
+                                            "    param.mtgRoomNm = vm.data.mtgRoomDvcd.selection.data.text;",
+                                            "    param.mtgCgpDpnm = vm.data.rqpr.value.split('/')[1];",
+                                            "    param.mtgCgpEmpeNm = vm.data.rqpr.value.split('/')[2];",
+                                            "    param.mtgBooStrdt = DateUtils.getDate(vm.data.mtgBooStrdt.value);",
+                                            "    param.mtgBooStrtm = DateUtils.getTimeFormat(vm.data.mtgBooStrtm.value,'His');",
+                                            "    param.mtgBooEdt = DateUtils.getDate(vm.data.mtgBooStrdt.value);",
+                                            "    param.mtgBooEdtm = DateUtils.getTimeFormat(vm.data.mtgBooEdtm.value,'His');",
+                                            "    param.mtgNm = vm.data.mtgNm.value;",
+                                            "",
+                                            "",
+                                            "    if(!Ext.isEmpty(vm.data.hrHromJasPrjStore)){",
+                                            "        param.gridRecords = vm.data.hrHromJasPrjStore;",
+                                            "    }",
+                                            "    else{",
+                                            "        param.gridRecords = [];",
+                                            "    }",
+                                            "",
+                                            "    // 알림옵션1",
+                                            "    if(refs.booAftLemeYn.isChecked()){",
+                                            "        param.booAftLemeYn = '1';",
+                                            "    }",
+                                            "    else{",
+                                            "        param.booAftLemeYn = '0';",
+                                            "    }",
+                                            "    // 알림옵션2",
+                                            "    if(refs.dd1BefLemeYn.isChecked()){",
+                                            "        param.dd1BefLemeYn = '1';",
+                                            "    }",
+                                            "    else{",
+                                            "        param.dd1BefLemeYn = '0';",
+                                            "    }",
+                                            "    // 알림옵션3",
+                                            "    if(refs.min30BefLemeYn.isChecked()){",
+                                            "        param.min30BefLemeYn = '1';",
+                                            "    }",
+                                            "    else{",
+                                            "        param.min30BefLemeYn = '0';",
+                                            "    }",
+                                            "",
+                                            "    Ext.Ajax.request({",
+                                            "        headers: {",
+                                            "            viewId : me.getViewId(),",
+                                            "            serviceId : 'BomMtgSvc.saveMtgBoo'",
+                                            "        },",
+                                            "        jsonData : param,",
+                                            "        scope : me,",
+                                            "        success : function(response) {",
+                                            "            var res = Ext.JSON.decode(response.responseText);",
+                                            "",
+                                            "            if(!Ext.isEmpty(res.result)){",
+                                            "                var msg = '';",
+                                            "                msg += res.result + '<br>';",
+                                            "",
+                                            "                var strTm = res.dupCheck[res.dupCheck.length - 1].strTm;",
+                                            "                strTm = strTm.substr(0,2) + ':' + strTm.substr(2,2);",
+                                            "                var endTm = res.dupCheck[res.dupCheck.length - 1].endTm;",
+                                            "                endTm = endTm.substr(0,2) + ':' + endTm.substr(2,2);",
+                                            "                msg += ' - ' + strTm + ' ~ ' + endTm;",
+                                            "",
+                                            "                Ext.Msg.alert('안내',msg);",
+                                            "            }",
+                                            "            else{",
+                                            "                // 메시지 출력",
+                                            "                //                 var toast = Ext.toast(Messages.getMessage('I0000'),1500);",
+                                            "                //                 toast.setBottom('50px');",
+                                            "                //                 toast.show();",
+                                            "                Ext.Msg.alert('안내', Messages.getMessage('I0000'));",
+                                            "                me.getView().up().down('BomMtgBoo01M').controller.onSelect();",
+                                            "                vm.getView().up().pop();",
+                                            "            }",
+                                            "        }",
+                                            "    });",
+                                            "}"
+                                        ],
+                                        "name": "tap",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "designer|commentHeader": "comment",
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onButtonTapBook",
+                                    "designerId": "d7010dbe-1f48-4e2a-8481-293bddf54114"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "Initialize",
+                "implHandler": [
+                    "var me = this;",
+                    "var refs = me.getReferences();",
+                    "var vm = me.getViewModel();",
+                    "var principal = SecurityUtils.getPrincipal();",
+                    "",
+                    "// 장소 콤보박스 설정",
+                    "me.onSelectCodeList(refs.mtgRoomDvcd,'MTG', component.info.mtgRoomDvcd);",
+                    "",
+                    "// 안내문구 초기화",
+                    "refs.mtgRoomInfo.setHtml(Messages.getMessage('BOM00001'));",
+                    "",
+                    "me.fnCardInit(component.crud, component.info);"
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "Initialize",
+            "designerId": "d0862f7f-0786-4f91-b4a2-efe071c00204"
+        }
+    ]
+}

@@ -1,0 +1,804 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "BomMtgBoo51M"
+        ],
+        "designer|commentHeader": [
+            "모바일 :: 월별근태 - 항목",
+            "",
+            "@author BNK시스템/기타/이상근",
+            "@since 2019.06.14",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일\t\t  수정자                수정내용",
+            "----------\t------------------   --------------------------",
+            "2019.06.14\tBNK시스템/기타/이상근   최초 생성"
+        ],
+        "designer|extend": "Ext.window.Window",
+        "designer|userAlias": "BomMtgBoo51M",
+        "designer|userClassName": "BackOffice.bom.BomMtgBoo51M",
+        "height": "90%",
+        "itemId": "budget.exp.expnteaply01m1",
+        "layout": "vbox",
+        "scrollable": true,
+        "width": "95%"
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "layout": "string",
+        "itemId": "string",
+        "scrollable": "auto",
+        "designer|commentHeader": "comment",
+        "padding": "auto",
+        "designer|extend": "string",
+        "height": "auto",
+        "width": "auto"
+    },
+    "name": "BackOffice.bom.BomMtgBoo04M1",
+    "designerId": "f60d369b-de76-4b17-a27c-ea905bbf6a02",
+    "viewControllerInstanceId": "3eb6b49a-92f6-4b87-b3b5-618db245b351",
+    "viewModelInstanceId": "9d93dbcf-a930-462e-b0ee-41e715278a14",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "center",
+                "designer|displayName": "제목",
+                "docked": "top",
+                "hidden": false,
+                "layout": "vbox",
+                "padding": "20px",
+                "shadow": false,
+                "style": "font-size:16px;font-weight:600;text-align:center;"
+            },
+            "configAlternates": {
+                "layout|flex": "number",
+                "designer|displayName": "string",
+                "html": "string",
+                "padding": "auto",
+                "shadow": "boolean",
+                "style": "string",
+                "docked": "string",
+                "hidden": "boolean",
+                "reference": "string",
+                "container|align": "string",
+                "layout": "string"
+            },
+            "name": "MyContainer68",
+            "designerId": "bf124816-1bb8-4598-a713-4bd1c5d8f5d1",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "html": "00월 00일 (금) 회의일정",
+                        "reference": "title",
+                        "style": "font-weight:600px; font-size:24px"
+                    },
+                    "configAlternates": {
+                        "html": "string",
+                        "padding": "auto",
+                        "reference": "string",
+                        "style": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyContainer17",
+                    "designerId": "296caf0a-4f14-4a4c-913e-f402255a6644"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "hidden": true,
+                        "html": "[ERROR] 휴일 표시",
+                        "margin": "10px 0 0 0 ",
+                        "reference": "hld",
+                        "style": "color:red"
+                    },
+                    "configAlternates": {
+                        "html": "string",
+                        "margin": "auto",
+                        "style": "string",
+                        "hidden": "boolean",
+                        "reference": "string"
+                    },
+                    "name": "MyContainer18",
+                    "designerId": "2e4f5cb6-6973-4816-af8a-8fc739c0f3f4"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "center",
+                "designer|displayName": "예약 내역 컨테이너",
+                "layout": "vbox",
+                "layout|flex": 1,
+                "padding": "10px",
+                "reference": "mtgBooContainer",
+                "scrollable": true
+            },
+            "configAlternates": {
+                "height": "auto",
+                "layout": "string",
+                "layout|flex": "number",
+                "scrollable": "auto",
+                "title": "string",
+                "padding": "auto",
+                "designer|displayName": "string",
+                "reference": "string",
+                "container|align": "string"
+            },
+            "name": "MyContainer48",
+            "designerId": "370a8e3c-93a0-4945-ae2b-538949679759",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "예약된 회의 없음",
+                        "hidden": true,
+                        "layout": "vbox",
+                        "margin": "0 0 15% 0",
+                        "minHeight": "100px",
+                        "style": "background-color : #FFFFFF; border : solid 1px #aaa; border-left : solid 30px #aaa;",
+                        "width": "100%"
+                    },
+                    "configAlternates": {
+                        "padding": "auto",
+                        "style": "string",
+                        "designer|displayName": "string",
+                        "margin": "auto",
+                        "height": "auto",
+                        "layout": "string",
+                        "hidden": "boolean",
+                        "width": "auto",
+                        "minHeight": "auto"
+                    },
+                    "name": "MyContainer117",
+                    "designerId": "bb76436d-f2f3-4977-8a0d-0bc75ff0a19d",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "center",
+                                "designer|displayName": "회의명 + 인원수",
+                                "height": "100%",
+                                "hidden": false,
+                                "layout": "hbox",
+                                "layout|flex": 1,
+                                "width": "100%"
+                            },
+                            "configAlternates": {
+                                "container|align": "string",
+                                "container|pack": "string",
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "layout": "string",
+                                "width": "auto",
+                                "hidden": "boolean",
+                                "layout|flex": "number"
+                            },
+                            "name": "MyContainer99",
+                            "designerId": "e95f8aef-b031-4686-91d0-5fe9dd6ac06e",
+                            "cn": [
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "disabled": true,
+                                        "height": "100%",
+                                        "style": "font-weight : bold;color:#000; font-size:min(10vw,20px)",
+                                        "text": "회의실 예약이 없습니다.",
+                                        "width": "100%"
+                                    },
+                                    "configAlternates": {
+                                        "disabled": "boolean",
+                                        "height": "auto",
+                                        "style": "string",
+                                        "text": "string",
+                                        "textAlign": "string",
+                                        "width": "auto"
+                                    },
+                                    "name": "MyButton22",
+                                    "designerId": "b11acd4e-1e7d-4690-a59d-cb99d7fc176f"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "20220119 new 예약 컨테이너",
+                        "hidden": true,
+                        "layout": "vbox",
+                        "margin": "0 0 15% 0",
+                        "minHeight": "100px",
+                        "padding": "10% 0 0 0",
+                        "style": "background-color : #FFFFFF; border : solid 1px #1972D7; border-left : solid 30px #1972D7;",
+                        "width": "100%"
+                    },
+                    "configAlternates": {
+                        "padding": "auto",
+                        "style": "string",
+                        "designer|displayName": "string",
+                        "margin": "auto",
+                        "height": "auto",
+                        "layout": "string",
+                        "hidden": "boolean",
+                        "width": "auto",
+                        "minHeight": "auto"
+                    },
+                    "name": "MyContainer109",
+                    "designerId": "3f518c1e-4c4f-4ceb-8f19-54e6c666e7cc",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "center",
+                                "container|pack": "center",
+                                "designer|displayName": "시작종료시간 및 회의중",
+                                "layout": "hbox",
+                                "padding": "0 15%",
+                                "width": "100%"
+                            },
+                            "configAlternates": {
+                                "container|align": "string",
+                                "container|pack": "string",
+                                "designer|displayName": "string",
+                                "layout": "string",
+                                "padding": "auto",
+                                "width": "auto"
+                            },
+                            "name": "MyContainer91",
+                            "designerId": "4265d512-273b-48e0-985e-5b052697000e",
+                            "cn": [
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "html": "14:00 ~ 15:00",
+                                        "layout|flex": 1,
+                                        "style": "textAlign : Left; padding-top:5px; color:#000; font-size:min(9vw,18px)"
+                                    },
+                                    "configAlternates": {
+                                        "html": "string",
+                                        "layout|flex": "number",
+                                        "style": "string"
+                                    },
+                                    "name": "MyContainer92",
+                                    "designerId": "acdbda81-625e-4e34-8673-34e3b30a09bc"
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "hidden": false,
+                                        "html": "<button style=\"width:60px;height:20px;border:0px;background-color:#D7181F;border-radius:10px;color:white;\"><b>회의중</b></button>",
+                                        "style": "textAlign : Right; fontWeight : bold; fontSize : 22px;"
+                                    },
+                                    "configAlternates": {
+                                        "height": "auto",
+                                        "html": "string",
+                                        "layout|flex": "number",
+                                        "style": "string",
+                                        "hidden": "boolean"
+                                    },
+                                    "name": "MyContainer93",
+                                    "designerId": "484211e0-36b6-4910-81ef-17a32775986e"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "center",
+                                "designer|displayName": "회의명 + 인원수",
+                                "height": "40%",
+                                "hidden": false,
+                                "layout": "hbox",
+                                "layout|flex": 1,
+                                "width": "100%"
+                            },
+                            "configAlternates": {
+                                "container|align": "string",
+                                "container|pack": "string",
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "layout": "string",
+                                "width": "auto",
+                                "hidden": "boolean",
+                                "layout|flex": "number"
+                            },
+                            "name": "MyContainer99",
+                            "designerId": "6fe1b101-afd7-4263-b15b-d8a40cddcf08",
+                            "cn": [
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "disabled": true,
+                                        "height": "100%",
+                                        "style": "font-weight : bold;color:#000; font-size:min(10vw,20px)",
+                                        "text": "비예금상품 내부통제 관리시스템 주간보고 회의",
+                                        "textAlign": "left",
+                                        "width": "100%"
+                                    },
+                                    "configAlternates": {
+                                        "disabled": "boolean",
+                                        "height": "auto",
+                                        "style": "string",
+                                        "text": "string",
+                                        "textAlign": "string",
+                                        "width": "auto"
+                                    },
+                                    "name": "MyButton22",
+                                    "designerId": "8e6b67d9-29ee-4521-b9b4-8cafde631e59"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "부서명 사원명",
+                                "layout": "hbox",
+                                "width": "100%"
+                            },
+                            "configAlternates": {
+                                "container|align": "string",
+                                "container|pack": "string",
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "layout": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyContainer108",
+                            "designerId": "32619b7c-7630-4011-a9ad-16ef114e94cb",
+                            "cn": [
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "html": "신사업추진부 표*동 매니저",
+                                        "padding": "0 15% 10% 15%",
+                                        "style": " text-align : left;  color:#000; font-size:min(8vw,15px)"
+                                    },
+                                    "configAlternates": {
+                                        "height": "auto",
+                                        "html": "string",
+                                        "layout|flex": "number",
+                                        "style": "string",
+                                        "width": "auto",
+                                        "padding": "auto"
+                                    },
+                                    "name": "MyContainer92",
+                                    "designerId": "d4d84443-13a2-4ade-adad-3c4bafaf5300"
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "docked": "right",
+                                        "hidden": false,
+                                        "layout|flex": 1
+                                    },
+                                    "configAlternates": {
+                                        "docked": "string",
+                                        "hidden": "boolean",
+                                        "layout|flex": "number"
+                                    },
+                                    "name": "MyContainer111",
+                                    "designerId": "d2f6cd7c-eb66-49ce-974e-3b1a8e4e592e",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "docked": "right",
+                                                "text": ">"
+                                            },
+                                            "configAlternates": {
+                                                "text": "string",
+                                                "docked": "string"
+                                            },
+                                            "name": "MyButton21",
+                                            "designerId": "a936d1d2-81d8-4c68-bd54-73974d47fda7"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "docked": "bottom",
+                                "hidden": true,
+                                "layout": "hbox"
+                            },
+                            "configAlternates": {
+                                "docked": "string",
+                                "layout": "string",
+                                "hidden": "boolean"
+                            },
+                            "name": "MyContainer110",
+                            "designerId": "3787cde7-3079-4621-b1bb-976202307ffe",
+                            "cn": [
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1,
+                                        "style": "border-top : solid 1px #1972D7;border-left : solid 1px #1972D7;"
+                                    },
+                                    "configAlternates": {
+                                        "layout|flex": "number",
+                                        "style": "string"
+                                    },
+                                    "name": "MyContainer113",
+                                    "designerId": "bf6ef223-0169-414a-8d38-a760fc3e735d",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "style": "font-size : min(5vw,12px);",
+                                                "text": "회의종료",
+                                                "width": "100%"
+                                            },
+                                            "configAlternates": {
+                                                "text": "string",
+                                                "width": "auto",
+                                                "style": "string"
+                                            },
+                                            "name": "MyButton25",
+                                            "designerId": "3e8d3849-723f-46ad-be00-d062da97914e"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1,
+                                        "style": "border-top : solid 1px #1972D7;border-left : solid 1px #1972D7;"
+                                    },
+                                    "configAlternates": {
+                                        "layout|flex": "number",
+                                        "style": "string"
+                                    },
+                                    "name": "MyContainer112",
+                                    "designerId": "1732b289-c4e7-4a89-b21e-13eca6155c8d",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "style": "font-size : min(5vw,12px);",
+                                                "text": "회의연장",
+                                                "width": "100%"
+                                            },
+                                            "configAlternates": {
+                                                "style": "string",
+                                                "text": "string",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyButton23",
+                                            "designerId": "10e51856-a03a-4565-b7e1-8eb9ff9e9fe0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|pack": "center",
+                "designer|displayName": "하단 버튼 컨테이너",
+                "docked": "bottom",
+                "layout": "hbox",
+                "width": "100%"
+            },
+            "configAlternates": {
+                "docked": "string",
+                "height": "auto",
+                "layout": "string",
+                "width": "auto",
+                "designer|displayName": "string",
+                "container|pack": "string"
+            },
+            "name": "MyContainer74",
+            "designerId": "1ad27318-6151-4b3b-9da3-bf6974f6b41a",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "회의실 예약",
+                        "disabled": false,
+                        "layout|flex": 1,
+                        "margin": "10px 5px 10px 10px",
+                        "reference": "btnPrev",
+                        "style": "background-color : #ddd; border:1px solid #aaa;",
+                        "text": "회의실 예약"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "icon": "string",
+                        "layout|flex": "number",
+                        "style": "string",
+                        "text": "string",
+                        "reference": "string",
+                        "margin": "auto",
+                        "disabled": "boolean"
+                    },
+                    "name": "MyButton15",
+                    "designerId": "5d56f850-a3ff-4835-ab92-fe24c8dbb0b7",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onButtonTapReserve",
+                                "implHandler": [
+                                    "var me = this;",
+                                    "var refs = me.getReferences();",
+                                    "var vm = me.getViewModel();",
+                                    "var view = me.getView();",
+                                    "",
+                                    "view.fireEvent('reserve',true, false,null,view);"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onButtonTapReserve",
+                            "designerId": "370aeb45-96ef-4be1-9716-5e97e83021a6"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "확인",
+                        "layout|flex": 1,
+                        "margin": "10px 10px 10px 5px",
+                        "reference": "btnSubmit",
+                        "style": "background-color : #ddd; color : black; border:1px solid #aaa",
+                        "text": "확인"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "icon": "string",
+                        "layout|flex": "number",
+                        "style": "string",
+                        "text": "string",
+                        "reference": "string",
+                        "margin": "auto"
+                    },
+                    "name": "MyButton4",
+                    "designerId": "0d0b8b06-1e84-4add-a2a5-0efeeadaa54b",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onButtonTapClose",
+                                "implHandler": [
+                                    "var me = this;",
+                                    "var view = me.getView();",
+                                    "",
+                                    "view.fireEvent('reserve',false,false,null,view);"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onButtonTapClose",
+                            "designerId": "31b72988-561c-4470-90d9-9d119cc403c4"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "Initialize",
+                "implHandler": [
+                    "var me = this;",
+                    "var refs = me.getReferences();",
+                    "var vm = me.getViewModel();",
+                    "",
+                    "me.search(component);"
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "Initialize",
+            "designerId": "c6c937c7-0435-46d4-8a2a-117eb85a0baf"
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "resize",
+                "implHandler": [
+                    "var me = this;",
+                    "var refs = me.getReferences();",
+                    "var vm = me.getViewModel();",
+                    "",
+                    "me.search(element);"
+                ],
+                "name": "resize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "resize",
+            "designerId": "f7d89692-9b46-460b-bf34-101c7220fe05"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            "모바일 예산 : 결의서 작성 [매출전표 팝업] - 모델",
+            "",
+            "@author BNK시스템/계장/지민영",
+            "@since 2020.05.22",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일       수정자                수정내용",
+            "----------  ------------------   --------------------------",
+            "2020.05.22  BNK시스템/계장/지민영   최초 생성"
+        ],
+        "designer|userAlias": "BgxItmCpnt51MViewModel",
+        "designer|userClassName": "Budget.bgx.com.BgxItmCpnt51MViewModel"
+    },
+    "configAlternates": {
+        "designer|commentHeader": "comment",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "designerId": "6d6446d5-0524-47b2-a5b1-a66662df1a56"
+}

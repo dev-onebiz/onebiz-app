@@ -1,0 +1,556 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "BgxNfmAply01M"
+        ],
+        "designer|commentHeader": [
+            "모바일 예산 : 결의서 및 여비 목록 - 화면",
+            "",
+            "@author BNK시스템/계장/지민영",
+            "@since 2020.05.11",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일       수정자                수정내용",
+            "----------  ------------------   --------------------------",
+            "2020.05.11  BNK시스템/계장/지민영   최초 생성"
+        ],
+        "designer|userAlias": "BgxNfmAply01M",
+        "designer|userClassName": "Budget.bgx.BgxNfmAply01M",
+        "layout": "card"
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|userClassName": "string",
+        "extend": "string",
+        "designer|commentHeader": "comment",
+        "designer|extend": "string",
+        "designer|userAlias": "string",
+        "layout": "string",
+        "scrollable": "auto",
+        "activeItem": "number"
+    },
+    "designerId": "b07e7066-01c2-45eb-959d-e80c5970c7ad",
+    "viewControllerInstanceId": "d680debc-f8c3-4075-939a-c235bd916fee",
+    "viewModelInstanceId": "ab4bc656-477c-473e-b580-3a8069b6ccaa",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 0,
+                "docked": "top",
+                "reference": "searchForm"
+            },
+            "configAlternates": {
+                "docked": "string",
+                "reference": "string",
+                "bodyPadding": "auto"
+            },
+            "name": "MyFormPanel1",
+            "designerId": "902035c8-f672-457b-b78f-f305cac7ca7b",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "조회기간",
+                        "docked": "top",
+                        "layout": "hbox",
+                        "margin": "0 0 0 5",
+                        "padding": 5
+                    },
+                    "configAlternates": {
+                        "docked": "string",
+                        "layout": "string",
+                        "margin": "auto",
+                        "padding": "auto",
+                        "designer|displayName": "string"
+                    },
+                    "name": "MyContainer",
+                    "designerId": "0fa71eec-9b90-498b-b50a-d1582f8b91c3",
+                    "cn": [
+                        {
+                            "type": "linkedinstance",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "docked": "left",
+                                "reference": "dateStartEndContainer",
+                                "width": "80%"
+                            },
+                            "configAlternates": {
+                                "reference": "string",
+                                "margin": "auto",
+                                "width": "auto",
+                                "docked": "string"
+                            },
+                            "name": "common.datestartendcontainer",
+                            "designerId": "f11f2591-8b83-4ef6-938b-b0fe8a700d6a",
+                            "masterInstanceId": "3552e543-d052-4824-b269-bb5ece767558"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "action",
+                                "docked": "right",
+                                "text": "조회",
+                                "ui": "action"
+                            },
+                            "configAlternates": {
+                                "designer|uiInterfaceName": "string",
+                                "docked": "string",
+                                "text": "string",
+                                "ui": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyButton3",
+                            "designerId": "c9e41910-c3f6-44e3-b39a-df90b37c6177",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onBtnSelect",
+                                        "implHandler": [
+                                            "this.onSelect();"
+                                        ],
+                                        "name": "tap",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onBtnSelect",
+                                    "designerId": "24178962-96a5-476d-999c-d867331860dc"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "신청상태",
+                        "docked": "top",
+                        "layout": "hbox",
+                        "margin": "5 0 0 5",
+                        "padding": 5
+                    },
+                    "configAlternates": {
+                        "docked": "string",
+                        "layout": "string",
+                        "margin": "auto",
+                        "padding": "auto",
+                        "designer|displayName": "string"
+                    },
+                    "name": "MyContainer29",
+                    "designerId": "735216c3-1126-4cf1-a54a-3671c46846c1",
+                    "cn": [
+                        {
+                            "type": "Ext.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "신청상태",
+                                "html": "신청상태",
+                                "width": "25%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "html": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyDisplayField1",
+                            "designerId": "c84a90e3-03e8-43e3-983e-175f825c0769"
+                        },
+                        {
+                            "type": "Ext.field.ComboBox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "code": "INB030",
+                                "designer|displayName": "신청상태",
+                                "editable": false,
+                                "name": "aplStcd",
+                                "reference": "aplStcd",
+                                "width": "75%"
+                            },
+                            "configAlternates": {
+                                "code": "string",
+                                "designer|displayName": "string",
+                                "editable": "boolean",
+                                "name": "string",
+                                "reference": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyComboBox3",
+                            "designerId": "6ed64a6c-d7ae-4d47-85d3-06bd44211a51",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "code",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "신청분류",
+                        "docked": "top",
+                        "layout": "hbox",
+                        "margin": "5 0 0 5",
+                        "padding": 5
+                    },
+                    "configAlternates": {
+                        "layout": "string",
+                        "padding": "auto",
+                        "docked": "string",
+                        "margin": "auto",
+                        "designer|displayName": "string"
+                    },
+                    "name": "MyContainer43",
+                    "designerId": "b8425a1d-92ef-4bcc-a753-dd4cd8eda5da",
+                    "cn": [
+                        {
+                            "type": "Ext.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "신청분류",
+                                "html": "신청분류",
+                                "width": "25%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "html": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyDisplayField2",
+                            "designerId": "01232989-b815-4e90-bc45-0dc4c8fe8eae"
+                        },
+                        {
+                            "type": "Ext.field.ComboBox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "code": "NFC001",
+                                "designer|displayName": "신청분류",
+                                "editable": false,
+                                "reference": "aplKndcd",
+                                "width": "75%"
+                            },
+                            "configAlternates": {
+                                "code": "string",
+                                "designer|displayName": "string",
+                                "editable": "boolean",
+                                "margin": "auto",
+                                "name": "string",
+                                "reference": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyComboBox3",
+                            "designerId": "24373799-3b2d-4e7e-8ceb-2a33856803b5",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "code",
+                                    "type": "string"
+                                }
+                            ],
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onComboboxCollapse",
+                                        "implHandler": [
+                                            "var me = this,",
+                                            "    vm = me.getViewModel(),",
+                                            "    refs = me.getReferences(),",
+                                            "    newValue = field.getValue();",
+                                            "",
+                                            "if (!newValue) {",
+                                            "    return;",
+                                            "}",
+                                            "",
+                                            "switch(newValue) {",
+                                            "    case Constants.aplKndcd.TXINV : \t// 세금계산서",
+                                            "    case Constants.aplKndcd.XPNS : \t\t// 여비정산서",
+                                            "        Ext.Msg.alert('알림', '세금계산서와 여비정산서 상세내역은 PC에서만 조회가능하오니 참고바랍니다.');",
+                                            "        break;",
+                                            "}"
+                                        ],
+                                        "name": "collapse",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onComboboxCollapse",
+                                    "designerId": "3102ce78-7677-4b67-85c3-26a81b03b608"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "여비정산서 안내문구",
+                "docked": "top",
+                "hidden": true,
+                "html": "<div style=\"color:red;\">* 여비정산서 상세내역은 PC에서 확인바랍니다. </div>",
+                "margin": "5 0 0 5"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "docked": "string",
+                "hidden": "boolean",
+                "html": "string",
+                "margin": "auto"
+            },
+            "name": "MyLabel3",
+            "designerId": "2319ddaf-65f0-4137-a180-20fece84ce44"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "parentViewId": "BgxNfmAply01M",
+                "reference": "grid_container"
+            },
+            "configAlternates": {
+                "reference": "string",
+                "parentViewId": "string"
+            },
+            "name": "budget.bgx.bgxnfmaply31m",
+            "designerId": "cd57156e-c20a-4c29-ac3a-488d4eec6dde",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "parentViewId",
+                    "type": "string"
+                }
+            ],
+            "masterInstanceId": "42471b22-78cb-42f0-a79c-00ad2ac239db"
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom"
+            },
+            "configAlternates": {
+                "docked": "string",
+                "height": "auto"
+            },
+            "name": "MyToolbar1",
+            "designerId": "b0b96c38-622a-4fc8-abdb-77778e3620c9",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|uiInterfaceName": "action",
+                        "docked": null,
+                        "layout|flex": 1,
+                        "margin": "0 0 10 0",
+                        "minHeight": 50,
+                        "reference": "onBtnWrite",
+                        "text": "결의서 작성",
+                        "ui": "action"
+                    },
+                    "configAlternates": {
+                        "designer|uiInterfaceName": "string",
+                        "layout|flex": "number",
+                        "reference": "string",
+                        "text": "string",
+                        "ui": "string",
+                        "docked": "string",
+                        "minHeight": "auto",
+                        "margin": "auto"
+                    },
+                    "name": "MyButton1",
+                    "designerId": "e50b3a90-c2db-46dc-b8ff-79d3414f5e9f",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|commentHeader": [
+                                    "결의서 작성"
+                                ],
+                                "fn": "onBtnWrite",
+                                "implHandler": [
+                                    " var me = this,",
+                                    "     naviView = me.getView().up('navigationview');",
+                                    "",
+                                    "me.PUSH_VIEW(naviView, {",
+                                    "    menuId  : 'BgxNfmAply02M',",
+                                    "    title   : '결의서 작성',",
+                                    "    isSubView : true,",
+                                    "});"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string",
+                                "designer|commentHeader": "comment"
+                            },
+                            "name": "onBtnWrite",
+                            "designerId": "0b1aeb1a-a118-4647-b266-0496822fc203"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "초기화"
+                ],
+                "fn": "onContainerInitialize",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    cbxAplStcd = refs.aplStcd,",
+                    "    cbxAplKndcd = refs.aplKndcd,",
+                    "    store = cbxAplStcd.getStore(),",
+                    "    date = new Date(),",
+                    "    dateContainer = refs.dateStartEndContainer,",
+                    "    dateRefs = dateContainer.getReferences(),",
+                    "    strdt = dateRefs.strdt,",
+                    "    edt = dateRefs.edt;",
+                    "",
+                    "// 신청상태 초기화",
+                    "store.getAt(0).set('text', '전 체');",
+                    "store.getAt(0).set('value', '99');",
+                    "cbxAplStcd.setValue('99');",
+                    "",
+                    "store = cbxAplKndcd.getStore();",
+                    "// 신청분류 초기화",
+                    "store.getAt(0).set('text', '전 체');",
+                    "store.getAt(0).set('value', '99');",
+                    "cbxAplKndcd.setValue('99');",
+                    "",
+                    "// 조회기간 초기화",
+                    "edt.setValue(DateUtils.parseDate(date));",
+                    "date.setMonth(date.getMonth() - 1);",
+                    "strdt.setValue(DateUtils.parseDate(date));",
+                    "",
+                    "refs.grid_container.refs.grid.el.select('.x-headercontainer').setStyle('height',\t'0px');",
+                    "me.onSelect();"
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string",
+                "designer|commentHeader": "comment"
+            },
+            "name": "onContainerInitialize",
+            "designerId": "12906009-1285-413a-8751-ce240d7343a4"
+        }
+    ]
+}

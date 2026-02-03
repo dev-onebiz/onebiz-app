@@ -1,0 +1,32 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            "모바일 :: 연수과정/연수과정신청 (취소신청) - 모델",
+            "",
+            "@author BNK시스템/파트너/지민영",
+            "@since 2020.11.04",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일\t\t  수정자                  수정내용",
+            "----------\t--------------------   --------------------------",
+            "2020.11.04\tBNK시스템/파트너/지민영   최초 생성"
+        ],
+        "designer|userAlias": "HrdCrsInfo02MViewModel",
+        "designer|userClassName": "HumanResource.hrd.HrdCrsInfo02MViewModel"
+    },
+    "configAlternates": {
+        "designer|commentHeader": "comment",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "designerId": "bb88d9c7-8ae8-463a-837a-05e9f7fd89a3"
+}

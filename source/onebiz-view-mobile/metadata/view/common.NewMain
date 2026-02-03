@@ -1,0 +1,1195 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "NewMain"
+        ],
+        "designer|commentHeader": [
+            "메인 / 메인화면VIEW",
+            "",
+            "@author BNK시스템/팀장/손승범",
+            "@since 2019.06.17.",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "  수정일         수정자                      수정내용",
+            " ------------   ---------                 --------------------------",
+            "  2019.06.17.   BNK시스템/팀장/손승범         최초 생성"
+        ],
+        "designer|userAlias": "NewMain",
+        "designer|userClassName": "common.NewMain",
+        "layout": "card"
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "layout": "string",
+        "id": "string",
+        "designer|commentHeader": "comment",
+        "viewId": "binding"
+    },
+    "name": "MyContainer4",
+    "designerId": "0b527fbe-d100-42b3-b67e-2d29a06229f3",
+    "viewControllerInstanceId": "b900d6db-f0e9-4218-9aee-3c229d855014",
+    "viewModelInstanceId": "202d1d64-de5e-4192-8367-26494f1a0c61",
+    "cn": [
+        {
+            "type": "Ext.navigation.View",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "defaultBackButtonText": "",
+                "designer|displayName": "네비게이션뷰",
+                "reference": "NaviView",
+                "style": "background-color: #fff;"
+            },
+            "configAlternates": {
+                "defaultBackButtonText": "string",
+                "designer|displayName": "string",
+                "reference": "string",
+                "style": "string"
+            },
+            "name": "MyNavigationView2",
+            "designerId": "7543bdb1-d622-4f19-a4d2-1c4662870716",
+            "cn": [
+                {
+                    "type": "Ext.navigation.Bar",
+                    "reference": {
+                        "name": "navigationBar",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "androidAnimation": true,
+                        "docked": "top",
+                        "reference": "naviToolbar",
+                        "title": "BIC경비노트"
+                    },
+                    "configAlternates": {
+                        "docked": "string",
+                        "androidAnimation": "boolean",
+                        "title": "string",
+                        "reference": "string"
+                    },
+                    "name": "MyNavigationBar2",
+                    "designerId": "4d34bf85-86e6-4386-9d0a-58bdad9249ea",
+                    "cn": [
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "align": "right",
+                                "designer|displayName": "메뉴버튼",
+                                "iconCls": "icon-menu12"
+                            },
+                            "configAlternates": {
+                                "align": "string",
+                                "designer|displayName": "string",
+                                "iconCls": "string",
+                                "style": "string"
+                            },
+                            "name": "MyButton17",
+                            "designerId": "dcc9d59d-2389-49be-996e-542b14efa716",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onBtnShowMenuTap",
+                                        "implHandler": [
+                                            "this.toggleMenu(1); // 메뉴화면표시"
+                                        ],
+                                        "name": "tap",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onBtnShowMenuTap",
+                                    "designerId": "f8a01a79-ca8a-48f6-b917-4ccc52b92e00"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "HOME",
+                        "designer|uiInterfaceName": ".this{background-color:#F3F4F6;position:relative;} .this:before{positon:absolute;top:0;left:0;width:100%;height:20px;background:linear-gradient(to bottom, #cb2b11, #eb3d20;} ",
+                        "padding": 10,
+                        "style": "background-image: url(\"resources/images/background.png\"); background-size: 100%; background-repeat: no-repeat; background-color: #fff;"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "padding": "auto",
+                        "style": "string",
+                        "designer|uiInterfaceName": "string"
+                    },
+                    "name": "MyContainer4",
+                    "designerId": "283aaa49-a101-4fa8-9142-c9f6f56608e5",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "menuId",
+                            "type": "string"
+                        }
+                    ],
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": "40%"
+                            },
+                            "configAlternates": {
+                                "height": "auto"
+                            },
+                            "name": "MyContainer81",
+                            "designerId": "3343dc1f-43dc-46b5-ab56-74588fd42240"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "버튼 영역",
+                                "height": "98vw",
+                                "layout": "vbox",
+                                "padding": 30,
+                                "width": "100%"
+                            },
+                            "configAlternates": {
+                                "height": "auto",
+                                "layout": "string",
+                                "width": "auto",
+                                "designer|displayName": "string",
+                                "padding": "auto"
+                            },
+                            "name": "MyContainer18",
+                            "designerId": "4b64b7a1-ac74-4992-90f0-e3d5b9a4056b",
+                            "cn": [
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "1행",
+                                        "layout": "hbox",
+                                        "layout|flex": 1
+                                    },
+                                    "configAlternates": {
+                                        "flex": "string",
+                                        "layout": "string",
+                                        "designer|displayName": "string",
+                                        "layout|flex": "number"
+                                    },
+                                    "name": "MyContainer19",
+                                    "designerId": "2892d018-7007-4f84-a7d6-3542fe7a3423",
+                                    "customConfigs": [
+                                        {
+                                            "group": "(Custom Properties)",
+                                            "name": "flex",
+                                            "type": "string"
+                                        }
+                                    ],
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "출퇴근체크",
+                                                "height": "37vw",
+                                                "iconAlign": "top",
+                                                "style": "background: no-repeat center/100% url(resources/images/HwmDay/btn_taCheck.png); background-size : 100% 100%;",
+                                                "width": "48%"
+                                            },
+                                            "configAlternates": {
+                                                "text": "string",
+                                                "width": "auto",
+                                                "designer|uiInterfaceName": "string",
+                                                "style": "string",
+                                                "ui": "string",
+                                                "iconAlign": "string",
+                                                "iconCls": "string",
+                                                "designer|displayName": "string",
+                                                "height": "auto"
+                                            },
+                                            "name": "MyButton18",
+                                            "designerId": "b4389670-d093-4ccf-8a11-75195064a35f",
+                                            "cn": [
+                                                {
+                                                    "type": "viewcontrollereventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|commentHeader": [
+                                                            "출퇴근체크 버튼 탭 이벤트"
+                                                        ],
+                                                        "fn": "onHwmDayAply01MTap",
+                                                        "implHandler": [
+                                                            "var me = this,",
+                                                            "    refs = me.getReferences(),",
+                                                            "    naviView = refs.NaviView;",
+                                                            "",
+                                                            "me.PUSH_VIEW(naviView, {",
+                                                            "    menuId : 'HwmDayAply01M',",
+                                                            "    title  : '출퇴근체크'",
+                                                            "});"
+                                                        ],
+                                                        "name": "tap",
+                                                        "scope": "me"
+                                                    },
+                                                    "configAlternates": {
+                                                        "designer|commentHeader": "comment",
+                                                        "fn": "string",
+                                                        "implHandler": "code",
+                                                        "name": "string",
+                                                        "scope": "string"
+                                                    },
+                                                    "name": "onHwmDayAply01MTap",
+                                                    "designerId": "e3beadde-83d0-44af-bc27-a1b4260d37e4"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.Spacer",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "minWidth": "4%"
+                                            },
+                                            "configAlternates": {
+                                                "minWidth": "auto"
+                                            },
+                                            "name": "MySpacer8",
+                                            "designerId": "31427085-60e5-40c7-902c-cc2e755a975a"
+                                        },
+                                        {
+                                            "type": "Ext.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "근태신청",
+                                                "height": "37vw",
+                                                "iconAlign": "top",
+                                                "style": "background: no-repeat center/100% url(resources/images/HwmDay/btn_taRequest.png); background-size : 100% 100%;",
+                                                "width": "48%"
+                                            },
+                                            "configAlternates": {
+                                                "text": "string",
+                                                "width": "auto",
+                                                "designer|uiInterfaceName": "string",
+                                                "style": "string",
+                                                "ui": "string",
+                                                "iconAlign": "string",
+                                                "iconCls": "string",
+                                                "designer|displayName": "string",
+                                                "height": "auto"
+                                            },
+                                            "name": "MyButton20",
+                                            "designerId": "1891379c-f37d-485f-a877-a7f572ba5d1b",
+                                            "cn": [
+                                                {
+                                                    "type": "viewcontrollereventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|commentHeader": [
+                                                            "근태신청 버튼 탭 이벤트"
+                                                        ],
+                                                        "fn": "onDiligenceIndolenceTap",
+                                                        "implHandler": [
+                                                            "var me = this,",
+                                                            "    refs = me.getReferences(),",
+                                                            "    naviView = refs.NaviView;",
+                                                            "",
+                                                            "me.PUSH_VIEW(naviView, {",
+                                                            "    menuId : 'HwmOvtAply01M',",
+                                                            "    title  : '연장근무신청'",
+                                                            "});"
+                                                        ],
+                                                        "name": "tap",
+                                                        "scope": "me"
+                                                    },
+                                                    "configAlternates": {
+                                                        "designer|commentHeader": "comment",
+                                                        "fn": "string",
+                                                        "implHandler": "code",
+                                                        "name": "string",
+                                                        "scope": "string"
+                                                    },
+                                                    "name": "onDiligenceIndolenceTap",
+                                                    "designerId": "ba91a8fb-91cf-4cb0-943b-c772fc8f6276"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Spacer",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "maxHeight": "1px"
+                                    },
+                                    "configAlternates": {
+                                        "maxHeight": "auto"
+                                    },
+                                    "name": "MySpacer9",
+                                    "designerId": "0f8886b6-2426-460c-82d0-6ae8cdf113b5"
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "2행",
+                                        "layout": "hbox",
+                                        "layout|flex": 1
+                                    },
+                                    "configAlternates": {
+                                        "flex": "string",
+                                        "layout": "string",
+                                        "designer|displayName": "string",
+                                        "layout|flex": "number"
+                                    },
+                                    "name": "MyContainer67",
+                                    "designerId": "9ca643b1-ae5e-4495-a7c2-95814dd8a23d",
+                                    "customConfigs": [
+                                        {
+                                            "group": "(Custom Properties)",
+                                            "name": "flex",
+                                            "type": "string"
+                                        }
+                                    ],
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "결재함",
+                                                "height": "37vw",
+                                                "iconAlign": "top",
+                                                "style": "background: no-repeat center/100% url(resources/images/HwmDay/btn_payroll.png); background-size : 100% 100%;",
+                                                "width": "48%"
+                                            },
+                                            "configAlternates": {
+                                                "text": "string",
+                                                "width": "auto",
+                                                "designer|uiInterfaceName": "string",
+                                                "style": "string",
+                                                "ui": "string",
+                                                "iconAlign": "string",
+                                                "iconCls": "string",
+                                                "designer|displayName": "string",
+                                                "height": "auto"
+                                            },
+                                            "name": "MyButton18",
+                                            "designerId": "5e428de4-cc58-47dc-ba15-ee683efb1ec1",
+                                            "cn": [
+                                                {
+                                                    "type": "viewcontrollereventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|commentHeader": [
+                                                            "결재함 버튼 탭 이벤트"
+                                                        ],
+                                                        "fn": "onExpNteApr01MTap",
+                                                        "implHandler": [
+                                                            "var me = this,",
+                                                            "    refs = me.getReferences(),",
+                                                            "    naviView = refs.NaviView;",
+                                                            "",
+                                                            "me.PUSH_VIEW(naviView, {",
+                                                            "    menuId : 'ExpNteApr01M',",
+                                                            "    title  : '결재함'",
+                                                            "});"
+                                                        ],
+                                                        "name": "tap",
+                                                        "scope": "me"
+                                                    },
+                                                    "configAlternates": {
+                                                        "designer|commentHeader": "comment",
+                                                        "fn": "string",
+                                                        "implHandler": "code",
+                                                        "name": "string",
+                                                        "scope": "string"
+                                                    },
+                                                    "name": "onExpNteApr01MTap",
+                                                    "designerId": "1043eb1d-cd9d-4914-ad51-3435e2191bc7"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.Spacer",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "minWidth": "4%"
+                                            },
+                                            "configAlternates": {
+                                                "minWidth": "auto"
+                                            },
+                                            "name": "MySpacer8",
+                                            "designerId": "bbe8bc2e-a85c-471c-8d4e-09ed1bbfa5e8"
+                                        },
+                                        {
+                                            "type": "Ext.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "경비신청",
+                                                "height": "37vw",
+                                                "iconAlign": "top",
+                                                "style": "background: no-repeat center/100% url(resources/images/HwmDay/btn_budget.png); background-size : 100% 100%;",
+                                                "width": "48%"
+                                            },
+                                            "configAlternates": {
+                                                "text": "string",
+                                                "width": "auto",
+                                                "designer|uiInterfaceName": "string",
+                                                "style": "string",
+                                                "ui": "string",
+                                                "iconAlign": "string",
+                                                "iconCls": "string",
+                                                "designer|displayName": "string",
+                                                "height": "auto"
+                                            },
+                                            "name": "MyButton20",
+                                            "designerId": "929c035e-f005-41b6-b1b9-c1e29ab0a066",
+                                            "cn": [
+                                                {
+                                                    "type": "viewcontrollereventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|commentHeader": [
+                                                            "경비신청 버튼 탭 이벤트"
+                                                        ],
+                                                        "fn": "onExpNteAply01MTap",
+                                                        "implHandler": [
+                                                            "var me = this,",
+                                                            "    refs = me.getReferences(),",
+                                                            "    naviView = refs.NaviView;",
+                                                            "",
+                                                            "// 20.07.01 예산오픈으로 인한 분기처리",
+                                                            "var date = Ext.Date.format(new Date(), 'Ymd'),",
+                                                            "    stdDt = 20200701,",
+                                                            "    param = {} ;",
+                                                            "",
+                                                            "if (Number(date) >= stdDt) {",
+                                                            "    param.menuId = 'BgxNfmAply01M';",
+                                                            "    param.title = '결의서 작성';",
+                                                            "} else {",
+                                                            "    param.menuId = 'ExpNteAply01M';",
+                                                            "    param.title = '법인카드';",
+                                                            "}",
+                                                            "",
+                                                            "me.PUSH_VIEW(naviView, param);",
+                                                            ""
+                                                        ],
+                                                        "name": "tap",
+                                                        "scope": "me"
+                                                    },
+                                                    "configAlternates": {
+                                                        "designer|commentHeader": "comment",
+                                                        "fn": "string",
+                                                        "implHandler": "code",
+                                                        "name": "string",
+                                                        "scope": "string"
+                                                    },
+                                                    "name": "onExpNteAply01MTap",
+                                                    "designerId": "aff2a518-ce7e-45ec-bbd1-d54c4b3bb421"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "메뉴",
+                "height": "100%",
+                "hideAnimation": "slideOut",
+                "showAnimation": "slide"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "height": "auto",
+                "hideAnimation": "string",
+                "showAnimation": "string"
+            },
+            "name": "MyPanel2",
+            "designerId": "4b5ba61f-806f-4e82-a96f-32ef138fbac0",
+            "cn": [
+                {
+                    "type": "Ext.Toolbar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "버튼컨트롤러",
+                        "docked": "top"
+                    },
+                    "configAlternates": {
+                        "docked": "string",
+                        "title": "string",
+                        "designer|displayName": "string"
+                    },
+                    "name": "MyToolbar1",
+                    "designerId": "7f8dc2f3-a67e-4dd4-b104-efb4eb6faeca",
+                    "cn": [
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer10",
+                            "designerId": "fc0d6992-4d0d-4e2e-9ff9-13ed4211fb8c"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "홈",
+                                "maxHeight": 35,
+                                "maxWidth": 35,
+                                "minHeight": 25,
+                                "minWidth": 25,
+                                "style": "background-image:url(\"resources/images/icon_home.png\"); background-repeat:no-repeat; background-size:100%, 100%, cover;"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "iconCls": "string",
+                                "hidden": "boolean",
+                                "maxHeight": "auto",
+                                "maxWidth": "auto",
+                                "minHeight": "auto",
+                                "minWidth": "auto",
+                                "style": "string"
+                            },
+                            "name": "MyButton5",
+                            "designerId": "9cea6aa2-e607-4f55-83e2-3d9af32b5854",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onBtnHomeTap",
+                                        "implHandler": [
+                                            "var me = this,",
+                                            "    refs = me.getReferences(),",
+                                            "    naviView = refs.NaviView;",
+                                            "",
+                                            "me.PUSH_VIEW(naviView, {",
+                                            "    menuId : BNK.Property.ROUTE_HOME,",
+                                            "    title  : ' '",
+                                            "});",
+                                            "this.toggleMenu(0); // 업무화면표시",
+                                            "",
+                                            "// 홈으로 이동했을 때, 기존 홈화면의 툴바 & 새로 생긴 네비게이션 바 2개가 보이기 때문에, 기존의 툴바는 hidden",
+                                            "refs.naviToolbar.setHidden(true);",
+                                            ""
+                                        ],
+                                        "name": "tap",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onBtnHomeTap",
+                                    "designerId": "bd4a37c8-9a40-4e4f-81c1-4ab24de97125"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "width": 20
+                            },
+                            "configAlternates": {
+                                "width": "number"
+                            },
+                            "name": "MySpacer1",
+                            "designerId": "c22b85bf-2361-44e0-b70c-f4ef14d914b0"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "메뉴닫기",
+                                "maxHeight": 30,
+                                "maxWidth": 30,
+                                "minHeight": 20,
+                                "minWidth": 20,
+                                "style": "background-image:url(\"resources/images/icon_close.png\"); background-repeat:no-repeat; background-size:100%, 100%, cover;"
+                            },
+                            "configAlternates": {
+                                "iconCls": "string",
+                                "designer|displayName": "string",
+                                "maxHeight": "auto",
+                                "maxWidth": "auto",
+                                "minHeight": "auto",
+                                "minWidth": "auto",
+                                "style": "string"
+                            },
+                            "name": "MyButton3",
+                            "designerId": "8c94e3b6-708f-47cf-808b-c0ebfc4f7413",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onBtnHideMenuTap",
+                                        "implHandler": [
+                                            "this.toggleMenu(0); // 업무화면표시"
+                                        ],
+                                        "name": "tap",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onBtnHideMenuTap",
+                                    "designerId": "d272abd8-0e47-4a25-8172-9c8095f8a28e"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Toolbar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "사용자정보",
+                        "docked": "top"
+                    },
+                    "configAlternates": {
+                        "docked": "string",
+                        "designer|displayName": "string"
+                    },
+                    "name": "MyToolbar8",
+                    "designerId": "33e37cff-a53d-43cd-b54c-5104e9c24ffe",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "vbox",
+                                "height": "100%",
+                                "layout": "vbox",
+                                "width": "100%"
+                            },
+                            "configAlternates": {
+                                "width": "auto",
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "layout": "string"
+                            },
+                            "name": "MyContainer13",
+                            "designerId": "447fbba1-2eca-4765-a29f-cc7d6af0d0b9",
+                            "cn": [
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "회사, 부서",
+                                        "margin": 5
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "margin": "auto"
+                                    },
+                                    "name": "MyContainer21",
+                                    "designerId": "c31d505b-5f08-40a1-aefc-473a3fa4f6cf",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "html": "<div style=\"font-size: 16px;\">회사, 부서</div>",
+                                                "reference": "lblUserInfo1",
+                                                "style": "color: #3B4650;font-size: 16px;"
+                                            },
+                                            "configAlternates": {
+                                                "reference": "string",
+                                                "style": "string",
+                                                "html": "string"
+                                            },
+                                            "name": "MyLabel17",
+                                            "designerId": "6d0e2955-7b50-4d23-946e-bd738388df57"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "이름 직위",
+                                        "layout": "vbox",
+                                        "margin": 5
+                                    },
+                                    "configAlternates": {
+                                        "container|align": "string",
+                                        "layout": "string",
+                                        "designer|displayName": "string",
+                                        "margin": "auto"
+                                    },
+                                    "name": "MyContainer16",
+                                    "designerId": "480e7ca0-cadb-491b-a291-0e04a61cdbe9",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "height": "1.5rem",
+                                                "html": "이름, 직위",
+                                                "reference": "lblUserInfo2",
+                                                "style": "color: #3B4650;"
+                                            },
+                                            "configAlternates": {
+                                                "html": "string",
+                                                "layout|flex": "number",
+                                                "reference": "string",
+                                                "style": "string",
+                                                "height": "auto"
+                                            },
+                                            "name": "MyLabel11",
+                                            "designerId": "1bea29f0-83d1-49cd-8705-12c1cfe9fb66"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "btnLogout",
+                                "docked": "right",
+                                "margin": 15,
+                                "style": "background-color: #999999; color: #fff;",
+                                "text": "LOGOUT"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "layout|flex": "number",
+                                "text": "string",
+                                "style": "string",
+                                "width": "auto",
+                                "docked": "string",
+                                "margin": "auto"
+                            },
+                            "name": "MyButton19",
+                            "designerId": "0f27353e-80db-4b6c-bd50-7e49df8fe1dc",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onBtnLogoutTap",
+                                        "implHandler": [
+                                            "var me = this;",
+                                            "",
+                                            "Ext.Msg.confirm(Property.SYSTEM_NAME, '로그아웃하시겠습니까?', function(choice) {",
+                                            "    var me = this;",
+                                            "    if (choice === 'yes') {",
+                                            "        Ext.Ajax.request({",
+                                            "            headers: {",
+                                            "                viewId: 'NewMain',",
+                                            "                serviceId: 'COMAPP0002R02M'",
+                                            "            },",
+                                            "            scope : me,",
+                                            "            success : function(res) {",
+                                            "                if (Property.IS_DEBUG) console.log('로그아웃 성공');",
+                                            "            },",
+                                            "            failure: function(response, opts) {",
+                                            "                if (Property.IS_DEBUG) console.log('로그아웃 실패');",
+                                            "            }",
+                                            "        });",
+                                            "",
+                                            "        // 토큰정보 삭제",
+                                            "        localStorage.removeItem(Property.JWT_TOKEN_NAME);",
+                                            "        WebUtils.setCookie(Property.JWT_TOKEN_NAME, null, -1);",
+                                            "",
+                                            "        // 로그인화면으로 이동",
+                                            "        me.REDIRECT('Login');",
+                                            "        ",
+                                            "        var homes = Ext.ComponentQuery.query('#' + Property.ROUTE_HOME);",
+                                            "        if (homes.length !== 0) {",
+                                            "            homes[0].destroy();",
+                                            "        }",
+                                            "    }",
+                                            "}, me);"
+                                        ],
+                                        "name": "tap",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onBtnLogoutTap",
+                                    "designerId": "650183de-2b32-4535-abd5-73c3fa98b897"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": "100%",
+                        "layout": "vbox",
+                        "scrollable": "vertical",
+                        "style": "background-color: #fff;",
+                        "width": "100%"
+                    },
+                    "configAlternates": {
+                        "layout": "string",
+                        "scrollable": "auto",
+                        "width": "auto",
+                        "height": "auto",
+                        "style": "string"
+                    },
+                    "name": "MyContainer6",
+                    "designerId": "8c76fdb6-cdd2-4248-b706-7ea2e13111b0",
+                    "cn": [
+                        {
+                            "type": "Ext.list.Tree",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "nav",
+                                "expanderOnly": false,
+                                "itemId": "mytreelist",
+                                "reference": "menuTree",
+                                "singleExpand": true,
+                                "store": "MenuStore",
+                                "ui": "nav",
+                                "width": "100%"
+                            },
+                            "configAlternates": {
+                                "designer|uiInterfaceName": "string",
+                                "expanderFirst": "boolean",
+                                "expanderOnly": "boolean",
+                                "height": "auto",
+                                "itemId": "string",
+                                "reference": "string",
+                                "singleExpand": "boolean",
+                                "store": "store",
+                                "ui": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyTreeList",
+                            "designerId": "10fb0509-d296-4887-9331-b39dc6ddfba3",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onMytreelistItemClick",
+                                        "implHandler": [
+                                            "var me = this;",
+                                            "",
+                                            "if (info.select) {",
+                                            "    // 사우회앱 스키마콜",
+                                            "    if (info.node.data.menuId == 'bfslink') {",
+                                            "        var ios_scheme = 'bfslink://action',\t\t\t\t\t\t// 사우회엡 스키마",
+                                            "            android_scheme = 'kr.co.bnksys.bfs',\t\t\t\t\t// 사우회앱 안드로이드 패키지",
+                                            "            url = 'https://bfs.bnksys.co.kr/app/distribution.html',\t// 사우회앱 다운로드 url",
+                                            "            scheme = '',",
+                                            "            jwtToken = localStorage.getItem(Property.JWT_TOKEN_NAME),",
+                                            "            principal = SecurityUtils.getPrincipal(),",
+                                            "            params = '?TOKEN=' + jwtToken + '&PARAM=';",
+                                            "        var jsonData = '{' +",
+                                            "            'cmgrp_cd : \\\"' + principal.cmgrpCd + '\\\", ' +",
+                                            "            'cmgrp_id : \\\"' + principal.cmgrpId + '\", ' +",
+                                            "            'comp_emladr : \\\"' + principal.compEmladr + '\\\", ' +",
+                                            "            'dpnm : \\\"' + principal.dpnm + '\\\", ' +",
+                                            "            'empe_psit_cd : \\\"' + principal.empePsitCd + '\\\", ' +",
+                                            "            'empe_psit_nm : \\\"' + principal.empePsitNm + '\\\", ' +",
+                                            "            'etco_dt : \\\"' + principal.etcoDt + '\\\", ' +",
+                                            "            'hr_hrpm_dept_id : \\\"' + principal.hrHrpmDeptId + '\\\", ' +",
+                                            "            'user_id : \\\"' + principal.userId + '\\\", ' +",
+                                            "            'user_nm : \\\"' + principal.userNm + '\\\"' +",
+                                            "        '}';",
+                                            "",
+                                            "        params = params + jsonData + '&SECRET=BNK_' + principal.sysCd;",
+                                            "",
+                                            "        if (Ext.os.is.Android) {",
+                                            "            scheme = android_scheme;",
+                                            "        } else {",
+                                            "            scheme = ios_scheme;",
+                                            "        }",
+                                            "",
+                                            "        appAvailability.check(",
+                                            "            scheme,",
+                                            "            function() {",
+                                            "                ios_scheme = ios_scheme + params;",
+                                            "                window.open(ios_scheme, '_system');",
+                                            "            },",
+                                            "            function() {",
+                                            "                window.open(url, '_system');",
+                                            "            }",
+                                            "        );",
+                                            "    } else {",
+                                            "        // me.toggleMenu(0);",
+                                            "        me.showView(info.node.data.menuId , info.node.data.text);",
+                                            "    }",
+                                            "}"
+                                        ],
+                                        "name": "itemclick",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onMytreelistItemClick",
+                                    "designerId": "dae1019d-bbd5-41b8-98c6-4a7838444091"
+                                },
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onMytreelistSelectionChange",
+                                        "implHandler": [
+                                            "var me = this;",
+                                            "// 로그아웃 처리시 record 에 null이 들어옴",
+                                            "if (record) {",
+                                            "    // me.showView(record.data.menuId, record.data.text);",
+                                            "}"
+                                        ],
+                                        "name": "selectionchange",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onMytreelistSelectionChange",
+                                    "designerId": "5a991e3a-6c04-4a62-a113-4a1fe7c79903"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "initialize",
+                "implHandler": [
+                    "// 메인화면 설정",
+                    "var me = this,",
+                    "    refs = me.getReferences(),",
+                    "    lblUserInfo1 = refs.lblUserInfo1,",
+                    "    lblUserInfo2 = refs.lblUserInfo2,",
+                    "    principal = SecurityUtils.getPrincipal();",
+                    "",
+                    "lblUserInfo1.setHtml(Ext.String.format('BNK시스템 | {0}', principal.dpnm)); // 부서명",
+                    "if(Constants.managerEmpeRsbCds.indexOf(principal.empeRsbCd) > -1){",
+                    "    lblUserInfo2.setHtml(Ext.String.format('{0} {1}', principal.empeNm, principal.empeRsbNm)); // 이름 직책",
+                    "} else {",
+                    "    lblUserInfo2.setHtml(Ext.String.format('{0} {1}', principal.empeNm, principal.empePsitNm)); // 이름 직급",
+                    "}",
+                    "",
+                    "// 모바일버전과 관리자사이트의 프로퍼티설정 중 모바일버전 정보가 상이할 경우, 업데이트 메시지 표시",
+                    "if (Property.MOBILE_SERVER_VERSION > Property.MOBILE_VERSION) {",
+                    "    Ext.Msg.alert('업데이트 알림', Ext.String.format('새로운 버전의 업데이트가 가능합니다.<br />메뉴: 환경설정/버전정보/버전 클릭!<br /><br />신규버전: {0}<br />현재버전: {1}', Property.MOBILE_SERVER_VERSION, Property.MOBILE_VERSION));",
+                    "}"
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "initialize",
+            "designerId": "d8c0e952-86fc-45f0-a67f-d23d38971e51"
+        }
+    ]
+}

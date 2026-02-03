@@ -1,0 +1,211 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            "모바일 시스템 결재함 :: 결재함 별 결재문서 목록 - 컨트롤러",
+            "",
+            "@author BNK시스템/차장/손승범",
+            "@since 2019.04.16",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일\t\t  수정자                수정내용",
+            "----------\t------------------   --------------------------",
+            "2019.04.16\tBNK시스템/차장/손승범   최초 생성",
+            "2020.07.09\tBNK시스템/계장/지민영   결재문서목록 전부조회, 상세팝업에서 모바일결재여부 제어",
+            "2020.09.16\tBNK시스템/계장/지민영   (웹동기화) 연장근무보고 결재팝업(HwmOvtRept71) 추가로 인한 분기삭제",
+            "2020.10.14\tBNK시스템/계장/지민영   (웹동기화) 휴일근무보고 결재팝업(HwmHodRept71) 추가로 인한 분기삭제",
+            "2020.10.16  BNK시스템/계장/지민영   bizDvcd 더이상 사용하지 않으므로 별도 분기처리"
+        ],
+        "designer|extend": "BaseViewController",
+        "designer|userAlias": "budget.exp.expnteapr02m",
+        "designer|userClassName": "Budget.exp.ExpNteApr02MViewController",
+        "viewId": "ExpNteApr02M"
+    },
+    "configAlternates": {
+        "designer|extend": "string",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "designer|commentHeader": "comment",
+        "viewId": "string"
+    },
+    "designerId": "73d12925-b26a-4070-b501-3f34331d2743",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "viewId",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onSelect",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    store = me.getStore('ApprovalBoxStore'),",
+                    "    refs = me.getReferences(),",
+                    "    command = vm.get('command'),",
+                    "    dpDvcdNm = null,",
+                    "    selectCnt = vm.get('selectCnt'),",
+                    "    tglSanMode = refs.tglSanMode;\t// 일괄결재 모드 토글",
+                    "",
+                    "// 부서완료함일 경우 부서구분명을 추가한다.",
+                    "if(command == '97'){",
+                    "    dpDvcdNm = '부서';",
+                    "}",
+                    "",
+                    "// 검색조건 설정후 1페이지부터 조회",
+                    "store.getProxy().extraParams = {",
+                    "    command \t: command,",
+                    "    searchYear \t: vm.get('searchYear'),",
+                    "    vwId    \t: vm.get('vwId'),",
+                    "    rqprId  \t: vm.get('rqprId'),",
+                    "    docNo   \t: vm.get('docNo'),",
+                    "    dpDvcdNm\t: dpDvcdNm",
+                    "};",
+                    "store.removeAll();",
+                    "store.loadPage(1);",
+                    "",
+                    "// (일괄결재)선택된 문서 개수 초기화",
+                    "vm.set('selectCnt', 0);",
+                    "",
+                    "// 미결함, 담당부서함인 경우 일괄결재 모드 툴바 활성화",
+                    "if(command == Constants.sanction.PENDING_BOX || command == Constants.sanction.RECEIPT_BOX){",
+                    "    tglSanMode.setHidden(false);",
+                    "}",
+                    "",
+                    "// 문서 제목 최대길이 동적 설정",
+                    "me.setTitleWidth();"
+                ]
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "onSelect",
+            "designerId": "d1bb8de5-c0ef-4773-b592-9788839c0ce2"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "조회버튼(기존)"
+                ],
+                "designer|params": [
+                    "button",
+                    "e",
+                    "eOpts"
+                ],
+                "fn": "oldOnBtnSearchTap",
+                "implHandler": [
+                    "var me = this,",
+                    "    searchYear = me.getViewModel().get('searchYear');",
+                    "    searchVwIdStore = me.getViewModel().storeInfo.SearchVwIdStore; // 검색조건 : 결재문서명 데이터",
+                    "// 팝업창 생성 및 데이터전달",
+                    "var win = Ext.create('BNK.view.Budget.exp.ExpNteApr03M', {",
+                    "    searchYear : searchYear,",
+                    "    searchVwIdStore : searchVwIdStore",
+                    "});",
+                    "// 팝업창에서 이벤트 호출시 실행되는 함수",
+                    "me.mon(win, 'search', function(data, popup) {",
+                    "    var me = this,",
+                    "        vm = me.getViewModel(),",
+                    "        vwNm = '전체문서';",
+                    "",
+                    "    // 팝업창 닫기",
+                    "    popup.close();",
+                    "",
+                    "    // 결재문서명",
+                    "    if (data.vwId) {",
+                    "        var items = vm.storeInfo.SearchVwIdStore.getData().items;",
+                    "        for (var i in items) {",
+                    "            var item = items[i].data;",
+                    "            if (data.vwId === item.value) {",
+                    "                vwNm = item.text;",
+                    "                break;",
+                    "            }",
+                    "        }",
+                    "    }",
+                    "",
+                    "    vm.set('searchYear', data.searchYear);\t// 기준연도",
+                    "    vm.set('vwId', data.vwId);\t   \t\t\t// 결재문서아이디",
+                    "    vm.set('vwNm', vwNm);\t\t   \t\t\t// 결재문서명",
+                    "    vm.set('rqprId', data.rqprId); \t\t\t// 사번",
+                    "",
+                    "    me.onSelect(); // 조회",
+                    "}, me);",
+                    "",
+                    "win.show(); // 팝업창표시"
+                ]
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "oldOnBtnSearchTap",
+            "designerId": "57f8813e-db58-4089-b148-9423c5688eb0"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "해상도에 맞게 툴바 문서 제목 최대길이 변경하기"
+                ],
+                "fn": "setTitleWidth",
+                "implHandler": [
+                    "var me = this,",
+                    "    refs = me.getReferences(),",
+                    "    tbrLbExpTitle = refs.tbrLbExpTitle;",
+                    "",
+                    "// 현재 화면의 해상도 가져오기",
+                    "var viewSize = Ext.getBody().getViewSize();",
+                    "var width = viewSize.width;",
+                    "var rWidth = 0;",
+                    "",
+                    "if(width != undefined && width > 0){",
+                    "    rWidth = width - 120;",
+                    "}",
+                    "",
+                    "var style = \"max-width:\" + rWidth + \"px;\";",
+                    "",
+                    "// 제목 스타일 설정",
+                    "tbrLbExpTitle.setStyle(style);"
+                ]
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "setTitleWidth",
+            "designerId": "edf6d9f8-aeee-4734-9cdc-ef1a6e89939c"
+        }
+    ]
+}

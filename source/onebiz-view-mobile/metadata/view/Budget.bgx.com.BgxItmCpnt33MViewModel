@@ -1,0 +1,51 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            "모바일 예산 : 결의서 작성 [사용자 입력폼(공통)] - 모델",
+            "",
+            "@author BNK시스템/파트너/서무성",
+            "@since 2021.05.20",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일       수정자                  수정내용",
+            "----------  ------------------     --------------------------",
+            "2020.05.18  BNK시스템/파트너/서무성   최초 생성"
+        ],
+        "designer|userAlias": "BgxItmCpnt33MViewModel",
+        "designer|userClassName": "Budget.bgx.com.BgxItmCpnt33MViewModel"
+    },
+    "configAlternates": {
+        "designer|commentHeader": "comment",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "Budget.bgx.com.BgxItmCpnt31MViewModel1",
+    "designerId": "c0f0f52c-7e84-4c43-89c4-5b231a9160d1",
+    "cn": [
+        {
+            "type": "Ext.data.Store",
+            "reference": {
+                "name": "stores",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "dgDsbStore"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyStore4",
+            "designerId": "96ee5908-d4d2-4eb1-ad45-91d8c26b4c3a"
+        }
+    ]
+}

@@ -1,0 +1,244 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "HrdScyAply02M",
+        "designer|userClassName": "HumanResource.hrd.HrdScyAply02MViewController"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "designerId": "151b9153-6cdc-4dc9-bb34-30dc0aa78d56",
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "뷰 초기화"
+                ],
+                "fn": "initView",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences();",
+                    "",
+                    "/*이전 탭 확인하여 버튼 숨김처리*/",
+                    "var preView = vm.getData('detail').detail.preView;",
+                    "",
+                    "if(preView == 'tabScyInfo'){ // 이전 탭이 사회공헌활동 내역인 경우",
+                    "    // 신청취소 버튼 숨기기",
+                    "    refs.btnScyApl.setHidden(true);",
+                    "}else{ \t\t\t\t\t\t  // 이전 탭이 사회공헌활동 신청인 경우",
+                    "",
+                    "    var now = DateUtils.encodeDate(new Date(), 'Ymd'); // 현재일자",
+                    "",
+                    "    /*신청상태를 확인하여 버튼 설정하기*/",
+                    "",
+                    "    var aplStatus = vm.getData('detail').detail.aplStatus; // 사회공헌활동 신청테이블에서 신청한 row 개수. (0:신청가능, 1 :신청완료)",
+                    "    var csrDt = vm.getData('detail').detail.csrDt; \t\t// 사회공헌 종료일자",
+                    "",
+                    "    // 과거의 데이터인 경우",
+                    "    if(Number(now) > Number(csrDt)){",
+                    "        // 신청취소 버튼 숨기기",
+                    "        refs.btnScyApl.setHidden(true);",
+                    "        return;",
+                    "    }",
+                    "",
+                    "    if(aplStatus == '0'){",
+                    "        refs.btnScyApl.setStyle('background-color:#000000;color:white;');",
+                    "        refs.btnScyApl.setHtml('사회공헌활동 신청');",
+                    "    }else{",
+                    "        refs.btnScyApl.setHtml('사회공헌활동 취소');",
+                    "    }",
+                    "}",
+                    "",
+                    ""
+                ]
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "initView",
+            "designerId": "aa2edd06-e3d3-4c95-922b-bdbdf4a06938"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "utc to date string"
+                ],
+                "designer|params": [
+                    "utc"
+                ],
+                "fn": "dateTo8Char",
+                "implHandler": [
+                    " if(utc){",
+                    "     if (utc.toString().length > 8 && typeof (utc) != 'string') {",
+                    "         var yy = utc.getFullYear().toString();",
+                    "         var mm = (utc.getMonth() + 1).toString();",
+                    "         if (mm.length < 2) {",
+                    "             mm = '0' + mm;",
+                    "         }",
+                    "         var dd = utc.getDate().toString();",
+                    "         if (dd.length < 2) {",
+                    "             dd = '0' + dd;",
+                    "         }",
+                    "         return yy + mm + dd;",
+                    "     }else if(utc.toString().length > 8){",
+                    "         return utc.replace('-', '').replace('-', '').substr(0, 8);",
+                    "     }else {",
+                    "         return utc;",
+                    "     }",
+                    " }"
+                ]
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "designer|commentHeader": "comment",
+                "designer|params": "typedarray"
+            },
+            "name": "dateTo8Char",
+            "designerId": "d43c18dd-68f1-4130-adc8-d20147a45a02"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "신청 결과 알림창 콜백함수"
+                ],
+                "designer|params": [
+                    "me"
+                ],
+                "fn": "goBack",
+                "implHandler": [
+                    "var home = this.getView().up(Property.ROUTE_HOME),",
+                    "    naviView = home.lookup('NaviView'),",
+                    "    backButton = naviView.getNavigationBar().getBackButton();",
+                    "backButton.onTap();\t// 뒤로가기"
+                ]
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "goBack",
+            "designerId": "3bdd5099-940f-4a76-a68a-b6c20ae54f13"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "신청취소 로직"
+                ],
+                "designer|params": [
+                    "btn,text"
+                ],
+                "fn": "onCancel",
+                "implHandler": [
+                    "if(btn != 'yes') return false;",
+                    "",
+                    "        var me = this;",
+                    "        var vm = me.getViewModel();",
+                    "        var refs = me.getReferences();",
+                    "        var data = vm.data.detail;",
+                    "",
+                    "        // Service 호출",
+                    "        Ext.Ajax.request({",
+                    "            headers : {",
+                    "                viewId : this.getView().xtype, \t\t\t\t// userAlias",
+                    "                serviceId : 'HrdScySvc.deleteHrdScyCtrbApl' // 신청자 row 삭제",
+                    "            },",
+                    "            jsonData : data,",
+                    "            scope : me,",
+                    "            success : function(response, opts) {",
+                    "                var result = Ext.JSON.decode(response.responseText); // 서버응답결과 JSON 변환",
+                    "",
+                    "                if(result.isApply === 0){  // 기존에 신청하지 않은 사용자는 서버단에서 UPDATE 하지 않음",
+                    "                  Ext.Msg.show({",
+                    "                      title : '미신청',",
+                    "                      message : '아직 신청하지 않으셨습니다.',",
+                    "                      buttons : Ext.MessageBox.YES,",
+                    "                      fn: function(btn){}",
+                    "                  });",
+                    "                  return false;",
+                    "                }",
+                    "",
+                    "                if(result.getPointed == 1){ // 획득한 포인트가 있는 경우 삭제 불가",
+                    "                  Ext.Msg.show({",
+                    "                      title : '취소불가',",
+                    "                      message : '포인트를 획득하여 취소할 수 없습니다.',",
+                    "                      buttons : Ext.MessageBox.YES,",
+                    "                      fn: function(btn){}",
+                    "                  });",
+                    "                  return false;",
+                    "                }",
+                    "",
+                    "                // 취소 완료 시 목록으로",
+                    "                Ext.Msg.show({",
+                    "                    title : '신청 취소',",
+                    "                    message : '신청 취소되었습니다.',",
+                    "                    buttons : Ext.MessageBox.YES,",
+                    "                    fn: function(btn){",
+                    "                        if(btn === 'yes'){",
+                    "                            me.goBack(me);",
+                    "                        }",
+                    "                    }",
+                    "                });",
+                    "            },",
+                    "            failure : function(response, opts){",
+                    "                // Service 실패 했을 경우 기능",
+                    "                Ext.Msg.show({",
+                    "                    title : '실패',",
+                    "                    message : '취소 도중 에러가 발생했습니다.',",
+                    "                    buttons : Ext.MessageBox.YES,",
+                    "                    fn: function(btn){",
+                    "                        if(btn === 'yes'){",
+                    "                            me.goBack(me);",
+                    "                        }",
+                    "                    }",
+                    "                });",
+                    "            }",
+                    "        });"
+                ]
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "onCancel",
+            "designerId": "7686995e-3376-4923-ba9e-16151ac4108b"
+        }
+    ]
+}

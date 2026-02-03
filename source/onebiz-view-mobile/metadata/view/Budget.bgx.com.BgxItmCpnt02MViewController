@@ -1,0 +1,167 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            "모바일 예산 : 결의서 작성 [현금영수증 아이템] - 컨트롤러",
+            "",
+            "@author BNK시스템/계장/지민영",
+            "@since 2020.05.22",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일       수정자                수정내용",
+            "----------  ------------------   --------------------------",
+            "2020.05.22  BNK시스템/계장/지민영   최초 생성"
+        ],
+        "designer|extend": "BaseViewController",
+        "designer|userAlias": "BgxItmCpnt02MViewController",
+        "designer|userClassName": "Budget.bgx.com.BgxItmCpnt02MViewController",
+        "viewId": "BgxItmCpnt02M"
+    },
+    "configAlternates": {
+        "designer|commentHeader": "comment",
+        "designer|extend": "string",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "viewId": "string"
+    },
+    "designerId": "03e3cea3-4f1a-45ed-8e2a-12abf0a20afb",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "viewId",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "BgxItmCpnt32M"
+                ],
+                "fn": "setExpItemInputData",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    cmm = refs.common_input_container,",
+                    "    cmmRefs = cmm.getReferences();",
+                    "",
+                    "vm.set('expItemInputData', vm.get('expItemData'));",
+                    "",
+                    "// codeList (계정과목)",
+                    "if (vm.get('codeList')) {",
+                    "    cmmRefs.xpnitKeyCd.getStore().add(vm.get('codeList.xpnitCodeList'));",
+                    "}",
+                    "cmmRefs.imgPanel.setHidden(true);\t// 사진",
+                    "",
+                    "if (vm.get('readOnlyFlag')) {",
+                    "    // 상세조회화면",
+                    "    if (vm.get('expItemData').xpnitKeyCd == Constants.xpnitKeyCd.SUPPLIES_EXPENSE) {",
+                    "        // 소모품비 - 영수증",
+                    "        refs.cardEvidImag.setHidden(false);",
+                    "    }",
+                    "    ",
+                    "    if(Ext.isEmpty(vm.get('expItemData.expItemUserInfo'))){",
+                    "        cmmRefs.btnXpnitInfo.setDisabled(true); //직접 추가인 경우, 집행대상 조회 불가하도록 설정",
+                    "    }",
+                    "",
+                    "    me.fnSetSummaryUserLabel();\t\t// 집행대상라벨",
+                    "",
+                    "    // 지급정보",
+                    "    var dgDsbInfo = vm.get('applyInfo.dgDsbInfo');",
+                    "    if (dgDsbInfo) {",
+                    "        var bcncSeq = dgDsbInfo.bcncSeq,\t\t// 사번",
+                    "            bcncDpwnm = dgDsbInfo.bcncDpwnm;\t// 이름",
+                    "        cmmRefs.dgDsbInfoGrid.setHidden(true);",
+                    "        cmmRefs.dgDsbInfoCont.setHidden(false);",
+                    "        cmmRefs.dgDsbInfoLabel.setHtml(bcncSeq + ' / ' + bcncDpwnm);",
+                    "    }",
+                    "} else {",
+                    "    // 신청서 작성",
+                    "    vm.set('applyInfo.dgDsbInfo.bcncSeq', SecurityUtils.getPrincipal().hrHrpmEmpId);\t//지급정보 초기값 (본인)",
+                    "}",
+                    "",
+                    "if(Property.PROFILE == 'L' && !vm.get('readOnlyFlag')) {",
+                    "    cmmRefs.webOnly.setHidden(false);",
+                    "}"
+                ]
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "setExpItemInputData",
+            "designerId": "4d6a130f-5cd9-42eb-ab97-d7b7c568d604"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "집행대상라벨"
+                ],
+                "fn": "fnSetSummaryUserLabel",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    expItemData = Ext.clone(vm.get('expItemData')),",
+                    "    userRecords = expItemData.expItemUserInfo,",
+                    "    trnsAmt = expItemData.trnsAmt,  //공급가액",
+                    "    innerEmpeCnt = 0,",
+                    "    outerEmpeCnt = 0,",
+                    "    rtnStr = '',",
+                    "    defaultStr = '승인금액',",
+                    "    xpnitKeyCd = expItemData.xpnitKeyCd,",
+                    "    xpnitKeyNm = expItemData.xpnitKeyNm;",
+                    "",
+                    "if (userRecords) {",
+                    "    for (var i = 0; i < userRecords.length; i++) {",
+                    "        var record = userRecords[i];",
+                    "        if (record.stfDvcd == Constants.stfDvcd.IN) {",
+                    "            innerEmpeCnt++;",
+                    "        } else {",
+                    "            outerEmpeCnt++;",
+                    "        }",
+                    "    }",
+                    "    var amtByUser = (innerEmpeCnt == 0 ? 0 : Math.round(trnsAmt / innerEmpeCnt));",
+                    "",
+                    "    rtnStr = Ext.String.format('<span style = \"line-height : 20px;\">집행대상 ( 총 <span style =\"color : red;\">{0}</span>명 ) <br>'",
+                    "                               + '[ 내부직원 {1} 명 / 외부직원 {2} 명 ] <br>'",
+                    "                               + '<span style = \"color :gray;\" >[{3} 기준 1인당 {4}원]</span></span>',",
+                    "                               userRecords.length, innerEmpeCnt, outerEmpeCnt, defaultStr ,",
+                    "                               amtByUser.toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g,\",\"));",
+                    "",
+                    "}",
+                    "vm.set('expItemData.summaryUserLabel', rtnStr);"
+                ]
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "fnSetSummaryUserLabel",
+            "designerId": "17eb7c55-9414-4e7f-b98e-1b9be034eb93"
+        }
+    ]
+}

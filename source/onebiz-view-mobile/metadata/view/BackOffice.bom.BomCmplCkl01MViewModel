@@ -1,0 +1,18 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "BomCmplCkl01MViewModel",
+        "designer|userClassName": "BackOffice.bom.BomCmplCkl01MViewModel"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "BackOffice.bom.BomCmplSic01MViewModel1",
+    "designerId": "f41d09cb-1ced-4a86-b793-bd6cb9c7db2c"
+}

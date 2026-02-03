@@ -1,0 +1,257 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            "모바일 예산 : 결의서 작성 [사용자 입력폼(공통)] - 컨트롤러",
+            "",
+            "@author BNK시스템/계장/지민영",
+            "@since 2020.05.18",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일       수정자                수정내용",
+            "----------  ------------------   --------------------------",
+            "2020.05.18  BNK시스템/계장/지민영   최초 생성",
+            "2020.06.12  BNK시스템/계장/지민영   첨부파일 기능추가"
+        ],
+        "designer|extend": "BaseViewController",
+        "designer|userAlias": "BgxItmCpnt31MViewController",
+        "designer|userClassName": "Budget.bgx.com.BgxItmCpnt31MViewController",
+        "viewId": "BgxItmCpnt31M"
+    },
+    "configAlternates": {
+        "designer|commentHeader": "comment",
+        "designer|extend": "string",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "viewId": "string"
+    },
+    "designerId": "13cee424-2db3-40ce-bb04-d6f082f90a6e",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "viewId",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "집행대상자 label 생성"
+                ],
+                "fn": "fnRefreshSummaryUserLabel",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    expItemInputData = Ext.clone(vm.get('expItemInputData')),",
+                    "    userRecords = expItemInputData.expItemUserInfo,",
+                    "    splyAmt = expItemInputData.splyAmt,  //공급가액",
+                    "    innerEmpeCnt = 0,",
+                    "    outerEmpeCnt = 0,",
+                    "    rtnStr = '',",
+                    "    defaultStr = '공급가액',",
+                    "    xpnitKeyCd = refs.xpnitKeyCd.getValue(),",
+                    "    xpnitSelectionRecord = vm.get('xpnitSelectionRecord');",
+                    "",
+                    "if(xpnitKeyCd && xpnitSelectionRecord){",
+                    "    if(xpnitSelectionRecord.stxYn == Constants.yesNo.NO ){",
+                    "        /* [요건] 선택된 계정과목이 부가세 처리여부가 '부(0)'라면 , 1인당 공급가액 계산시 , 거래금액으로 처리함.[주의! 계산시에만 사용됨.] */",
+                    "        splyAmt = expItemInputData.trnsAmt;",
+                    "        defaultStr = '승인금액';",
+                    "    }",
+                    "}",
+                    "",
+                    "if (userRecords) {",
+                    "    var flag = false,       //대표회사명 하나만 저장하기 위한 플래그",
+                    "        diffCompFlag = false,   //외부업체 다수 존재하는지 확인하기위한 플래그",
+                    "        outerCompNm = \"\";   //외부업체명",
+                    "",
+                    "    for (var i = 0; i < userRecords.length; i++) {",
+                    "        var record = userRecords[i];",
+                    "        if (record.stfDvcd == Constants.stfDvcd.IN) {",
+                    "            innerEmpeCnt++;",
+                    "        } else {",
+                    "            outerEmpeCnt++;",
+                    "",
+                    "            if(!flag) {",
+                    "                outerCompNm = record.enpnm;   //업체명",
+                    "                flag = true;",
+                    "            } else {",
+                    "                if(outerCompNm != record.enpnm) {  //업체명이 여러개인지 확인",
+                    "                  diffCompFlag = true;",
+                    "                }",
+                    "            }",
+                    "        }",
+                    "    }",
+                    "    // 집행대상라벨",
+                    "    var amtByUser = (innerEmpeCnt == 0 ? 0 : Math.floor(splyAmt / innerEmpeCnt));",
+                    "    rtnStr = Ext.String.format('<span style = \"line-height : 20px;\">집행대상 ( 총 <span style =\"color : red;\">{0}</span>명 ) <br>'",
+                    "                               + '[ 내부직원 {1} 명 / 외부직원 {2} 명 ] <br>'",
+                    "                               + '<span style = \"color :gray;\" >[{3} 기준 1인당 {4}원]</span></span>',",
+                    "                               userRecords.length, innerEmpeCnt, outerEmpeCnt, defaultStr ,",
+                    "                               amtByUser.toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g,\",\"));",
+                    "",
+                    "    // 외부직원이 한명 이상일때 (업무추진비) 적요란에 업체명 추가",
+                    "    if (outerEmpeCnt > 0) {",
+                    "        // 외부업체가 2개이상일때는 (대표업체명 외)로 저장",
+                    "        outerCompNm = (diffCompFlag) ? \"(\" + outerCompNm + \" 외)\" : \"(\" +outerCompNm + \")\";",
+                    "        vm.set('outerCompNm', outerCompNm);",
+                    "    }",
+                    "} else {",
+                    "    rtnStr = '집행대상자를 추가하여 주십시오.';",
+                    "}",
+                    "vm.set('expItemInputData.summaryUserLabel', rtnStr);",
+                    "vm.set('expItemData.summaryUserLabel', rtnStr);",
+                    "refs.txtSummaryUserLabel.setHtml(rtnStr);"
+                ]
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "fnRefreshSummaryUserLabel",
+            "designerId": "045665cc-e052-4b60-807d-35d403a3cd61"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "계좌정보조회"
+                ],
+                "designer|params": [
+                    "item"
+                ],
+                "fn": "fnSelectBcncAcnoInfo",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    D = new Ext.Deferred();",
+                    "",
+                    "Ext.Ajax.request({",
+                    "    headers : {",
+                    "        serviceId : 'BgxNfmSvc.findAllBcncAcnoInfo',",
+                    "        viewId : me.getViewId(),",
+                    "    },",
+                    "    jsonData : item ,",
+                    "    success : function(response, component) {",
+                    "        var res = Ext.JSON.decode(response.responseText);",
+                    "",
+                    "        D.resolve(res.bcncAcnoInfo); // 성공",
+                    "    },",
+                    "    failure : function(res, vm) {",
+                    "        D.reject(res.result); // 실패",
+                    "    }",
+                    "});",
+                    "",
+                    "return D.promise;"
+                ]
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "fnSelectBcncAcnoInfo",
+            "designerId": "a9557d67-1b78-494d-a49c-ffb0c236f918"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "유효성 검증"
+                ],
+                "fn": "fnApplyValid",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    valid = true,",
+                    "    errMsg = '',",
+                    "    userInfo = vm.get('expItemInputData.expItemUserInfo'),",
+                    "    dgDsbInfo = vm.get('applyInfo.dgDsbInfo'),",
+                    "    expItemData = vm.get('expItemData'),",
+                    "    expItemInputData = vm.get('expItemInputData');",
+                    "",
+                    "// 집행대상",
+                    "if (!userInfo || userInfo.length == 0) {",
+                    "    valid = false;",
+                    "    errMsg += '- 집행대상을 선택해주세요.<br>';",
+                    "}",
+                    "",
+                    "// 계정과목",
+                    "var xpnitKeyCd = refs.xpnitKeyCd.getValue();",
+                    "if (!xpnitKeyCd) {",
+                    "    valid = false;",
+                    "    errMsg += '- 계정과목을 선택해주세요.<br>';",
+                    "} else if (xpnitKeyCd == Constants.xpnitKeyCd.CONFERENCE && !expItemInputData.expItemMtgInfo) {",
+                    "    // 회의록 - 회의비",
+                    "    valid = false;",
+                    "    errMsg += '- 회의록을 입력해주세요.<br>';",
+                    "} else if (xpnitKeyCd == Constants.xpnitKeyCd.SUPPLIES_EXPENSES && !expItemInputData.imgPhoto) {",
+                    "    // 영수증 - 소모품비",
+                    "    valid = false;",
+                    "    errMsg += '- 영수증을 첨부해주세요.<br>';",
+                    "}",
+                    "",
+                    "// 영수증 - 기타영수증 (필수)",
+                    "if (expItemData.nfcmEvidKndcd == Constants.nfcmEvidKndcd.ETC_RCT && !expItemInputData.imgPhoto) {",
+                    "    valid = false;",
+                    "    errMsg += '- 영수증을 첨부해주세요.<br>';",
+                    "}",
+                    "",
+                    "// 지급정보 (법인카드 제외)",
+                    "if (expItemData.nfcmEvidKndcd == Constants.nfcmEvidKndcd.ETC_RCT || expItemData.nfcmEvidKndcd == Constants.nfcmEvidKndcd.CSH_RCT) {",
+                    "    if (refs.dgDsbInfoGrid.getStore().data.length == 0 ||!dgDsbInfo || !dgDsbInfo.bcncSeq) {",
+                    "        valid = false;",
+                    "        errMsg += '- 지급정보를 선택해주세요.<br>';",
+                    "    }",
+                    "}",
+                    "",
+                    "// 적요 (외부업체명 포함 100자이내)",
+                    "var aplRscn = refs.aplRscn;",
+                    "if (aplRscn.getValue() && aplRscn.getValue().length > 100) {",
+                    "    valid = false;",
+                    "    errMsg += '- 적요를 100자 이내로 작성해주세요.<br>';",
+                    "}",
+                    "",
+                    "return {valid : valid, errMsg : errMsg};"
+                ]
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "fnApplyValid",
+            "designerId": "d728e7dd-52a2-4abb-b6f3-a1dbb1103447"
+        }
+    ]
+}

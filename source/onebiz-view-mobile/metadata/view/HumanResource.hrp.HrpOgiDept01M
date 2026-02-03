@@ -1,0 +1,531 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "HrpOgiDept01M"
+        ],
+        "designer|userAlias": "HrpOgiDept01M",
+        "designer|userClassName": "HumanResource.hrp.HrpOgiDept01M",
+        "layout": "vbox"
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "layout": "string"
+    },
+    "name": "MyContainer5",
+    "designerId": "3751d372-b48f-4a7c-ae7d-43f5a1eb1b33",
+    "viewControllerInstanceId": "3873cd0e-d9e0-499a-9b24-fd8c1d41c311",
+    "viewModelInstanceId": "92a2604c-aa7d-4d94-9cfb-3806f933e6e4",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "center",
+                "designer|displayName": "이름 Search Form",
+                "height": 50,
+                "layout": "hbox",
+                "margin": "10 0 0 10"
+            },
+            "configAlternates": {
+                "docked": "string",
+                "height": "auto",
+                "layout": "string",
+                "container|align": "string",
+                "margin": "auto",
+                "designer|displayName": "string"
+            },
+            "name": "MyContainer2",
+            "designerId": "932e7f12-307a-46a6-89f0-ac2b9aa36d04",
+            "cn": [
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "name",
+                        "layout|flex": 1,
+                        "placeholder": "이름 검색",
+                        "reference": "nameTxt"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout|flex": "number",
+                        "placeholder": "string",
+                        "reference": "string"
+                    },
+                    "name": "MyTextField1",
+                    "designerId": "2ebfd9f8-0fa3-4ae7-a3fa-b30097305cba"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "돋보기 조회 버튼",
+                        "iconCls": "x-fa fa-search"
+                    },
+                    "configAlternates": {
+                        "iconCls": "string",
+                        "designer|displayName": "string"
+                    },
+                    "name": "MyButton1",
+                    "designerId": "52e5c764-1793-4deb-8493-a04f0a8c8d7c",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|commentHeader": [
+                                    "돋보기 조회 버튼 탭 이벤트"
+                                ],
+                                "fn": "onSearchTap",
+                                "implHandler": [
+                                    "var me = this,",
+                                    "    vm = me.getViewModel(),",
+                                    "    refs = me.getReferences();",
+                                    "",
+                                    "var hrHrpmDeptId = refs.searchDept.getSelection().data.hrHrpmDeptId,",
+                                    "    hdqDeptId = refs.searchDept.getSelection().data.hdqDeptId,",
+                                    "    upperDeptId = refs.searchDept.getSelection().data.upperDeptId;",
+                                    "",
+                                    "if(hrHrpmDeptId === hdqDeptId){",
+                                    "    vm.set('hdqDeptId', hdqDeptId);",
+                                    "    vm.set('hrHrpmDeptId', null);",
+                                    "} else {",
+                                    "    if(upperDeptId === 0){",
+                                    "        vm.set('hdqDeptId', null);",
+                                    "        vm.set('hrHrpmDeptId', null); // BNK시스템 선택 시 전체 조회",
+                                    "    } else {",
+                                    "        vm.set('hdqDeptId', hdqDeptId);",
+                                    "        vm.set('hrHrpmDeptId', hrHrpmDeptId);",
+                                    "    }",
+                                    "}",
+                                    "",
+                                    "this.onSelect();"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string",
+                                "designer|commentHeader": "comment"
+                            },
+                            "name": "onSearchTap",
+                            "designerId": "767ff276-ca5e-4cd9-a32b-4c6338a0fb93"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "부서 Search Form",
+                "height": 50
+            },
+            "configAlternates": {
+                "docked": "string",
+                "height": "auto",
+                "designer|displayName": "string"
+            },
+            "name": "MyContainer1",
+            "designerId": "4f83d6c9-c32b-4a7d-8a91-9052ddf219f3",
+            "cn": [
+                {
+                    "type": "Ext.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "editable": false,
+                        "height": "100%",
+                        "labelAlign": "right",
+                        "margin": "0 0 10 10",
+                        "queryMode": "local",
+                        "reference": "searchDept",
+                        "store": [
+                            "{DeptStore}"
+                        ],
+                        "width": "95%"
+                    },
+                    "configAlternates": {
+                        "store": "binding",
+                        "label": "string",
+                        "queryMode": "string",
+                        "reference": "string",
+                        "docked": "string",
+                        "height": "auto",
+                        "itemId": "string",
+                        "labelAlign": "string",
+                        "margin": "auto",
+                        "width": "auto",
+                        "editable": "boolean"
+                    },
+                    "name": "MyComboBox1",
+                    "designerId": "65f306a1-3385-4dc0-938e-602f87f2c28b",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "emptyText",
+                            "type": "string"
+                        }
+                    ],
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|commentHeader": [
+                                    "부서 조회"
+                                ],
+                                "fn": "onDeptSelect",
+                                "implHandler": [
+                                    "var me = this,",
+                                    "    vm = me.getViewModel(),",
+                                    "    refs = me.getReferences();",
+                                    "",
+                                    "// 선택한 부서의  ID,  본부부서ID,  상위부서ID",
+                                    "var hrHrpmDeptId = newValue.data.hrHrpmDeptId,",
+                                    "    hdqDeptId = newValue.data.hdqDeptId,",
+                                    "    upperDeptId = newValue.data.upperDeptId;",
+                                    "",
+                                    "if(hrHrpmDeptId === hdqDeptId){",
+                                    "    vm.set('hdqDeptId', hdqDeptId);",
+                                    "    vm.set('hrHrpmDeptId', null);",
+                                    "} else {",
+                                    "    if(upperDeptId === 0){",
+                                    "        vm.set('hdqDeptId', null);",
+                                    "        vm.set('hrHrpmDeptId', null); // BNK시스템 선택 시 전체 조회",
+                                    "    } else {",
+                                    "        vm.set('hdqDeptId', hdqDeptId);",
+                                    "        vm.set('hrHrpmDeptId', hrHrpmDeptId);",
+                                    "    }",
+                                    "}",
+                                    "",
+                                    "me.onSelect();",
+                                    ""
+                                ],
+                                "name": "select",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string",
+                                "designer|commentHeader": "comment"
+                            },
+                            "name": "onDeptSelect",
+                            "designerId": "d7d4d3ec-6900-412a-a63f-56cfa6a7fb32"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "그리드",
+                "layout": "fit",
+                "layout|flex": 1,
+                "scrollable": true
+            },
+            "configAlternates": {
+                "docked": "string",
+                "height": "auto",
+                "layout": "string",
+                "scrollable": "auto",
+                "designer|displayName": "string",
+                "layout|flex": "number"
+            },
+            "name": "MyContainer",
+            "designerId": "d9af4246-1d42-4dc4-84df-15ca7bdcdf77",
+            "cn": [
+                {
+                    "type": "Ext.grid.Grid",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "autoSize": false,
+                        "bufferSize": 100,
+                        "deselectOnContainerClick": false,
+                        "designer|displayName": "GRID deptEmpInfo",
+                        "groupHeader": [
+                            "{",
+                            "    xtype: 'itemheader',",
+                            "    tpl: '{html} ({count})'",
+                            "}"
+                        ],
+                        "hideHeaders": true,
+                        "hideMode": "visibility",
+                        "minHeight": "",
+                        "reference": "grdToolbar",
+                        "store": [
+                            "{EMPINFOStore}"
+                        ],
+                        "width": "100%"
+                    },
+                    "configAlternates": {
+                        "store": "binding",
+                        "autoSize": "boolean",
+                        "bufferSize": "number",
+                        "deselectOnContainerClick": "boolean",
+                        "designer|displayName": "string",
+                        "groupHeader": "object",
+                        "grouped": "boolean",
+                        "height": "auto",
+                        "hideHeaders": "boolean",
+                        "minHeight": "auto",
+                        "reference": "string",
+                        "docked": "string",
+                        "width": "auto",
+                        "hideMode": "string"
+                    },
+                    "name": "MyGrid3",
+                    "designerId": "e0b82a96-47e4-41d8-a021-bf5f07d8b190",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cell": [
+                                    "{\"xtype\":\"gridcell\", encodeHtml:false}"
+                                ],
+                                "dataIndex": "empeNo",
+                                "docked": null,
+                                "flex": "1"
+                            },
+                            "configAlternates": {
+                                "dataIndex": "datafield",
+                                "docked": "string",
+                                "text": "string",
+                                "width": "auto",
+                                "flex": "string",
+                                "hidden": "boolean",
+                                "html": "string",
+                                "height": "auto",
+                                "style": "object",
+                                "cell": "object"
+                            },
+                            "name": "MyColumn2",
+                            "designerId": "5cfa3d1e-507c-44b6-bbf1-0936d9e69012",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "flex",
+                                    "type": "string"
+                                }
+                            ],
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "value",
+                                            "record",
+                                            "dataIndex",
+                                            "cell",
+                                            "column"
+                                        ],
+                                        "fn": "renderer",
+                                        "implHandler": [
+                                            "",
+                                            "var data = record.data;",
+                                            "var infoData = '';",
+                                            "",
+                                            "// 직책 = 부장, 팀장, 부장대우 (HRP005) -> 직책으로 표시",
+                                            "if(data.empeRsbCd && data.empeRsbCd === '001' || data.empeRsbCd === '002' || data.empeRsbCd === '010'){",
+                                            "    infoData = data.empeNm + '  ' +  data.empeRsbNm;",
+                                            "} else { // 그 외 -> 직위로 표시",
+                                            "    infoData = data.empeNm + '  ' +  data.empePsitNm;",
+                                            "}",
+                                            "",
+                                            "var neson = data.neson;",
+                                            "var phone = data.phone;",
+                                            "",
+                                            "if(phone && phone.length === 11)",
+                                            "    phone = phone.substr(0, 3) + '-' + phone.substr(3, 4) + '-' + phone.substr(7, 4);",
+                                            "if(phone && phone.length === 10)",
+                                            "    phone = phone.substr(0, 3) + '-' + phone.substr(3, 3) + '-' + phone.substr(6, 4);",
+                                            "",
+                                            "if(neson && neson.length === 11)",
+                                            "    neson = neson.substr(0, 3) + '-' + neson.substr(3, 4) + '-' + neson.substr(7, 4);",
+                                            "if(neson && neson.length === 10)",
+                                            "    neson = neson.substr(0, 3) + '-' + neson.substr(3, 3) + '-' + neson.substr(6, 4);",
+                                            "",
+                                            "// E-Mail // phone",
+                                            "var dtlInfoDt = 'E-mail. ' + (data.compEmladr === null ? '-' : data.compEmladr ) + '<br>' +",
+                                            "    'T. ' +( neson === null ? '-' : neson )  + '<br>H.' + ( phone === null ? '-' : phone );",
+                                            "",
+                                            "// 사진",
+                                            "var tmpImg = data.imgSrc;",
+                                            "var getImgByHttp = '';",
+                                            "",
+                                            "if(tmpImg.indexOf('down') > -1){",
+                                            "    getImgByHttp = Property.BASE_URL + tmpImg;",
+                                            "} else {",
+                                            "    getImgByHttp = tmpImg;",
+                                            "}",
+                                            "",
+                                            "/*",
+                                            "사진",
+                                            "이름 직위(직책)",
+                                            "이메일 근무지전화 휴대폰번호",
+                                            "*/",
+                                            "",
+                                            "var result = '<div class=\"thumb\" style=\"float:left;\" ><img style=\"height : 80px; margin-right: 10px; width:70px;\" src=\"' + getImgByHttp + '\" /></div>';",
+                                            "result += '<div style=\"float:left;\"><span style=\"font-size:15px;font-weight:bold;width:100%;overflow: hidden;white-space:nowrap;text-overflow:ellipsis;display:inline-block;\">'+infoData+'</span><br>';",
+                                            "result += '<span>' +dtlInfoDt+ '</span>' +'</div>';",
+                                            "",
+                                            "result = '<div class=\"thumb-wrap\" id=\"code-{empeRsbCd}\">' + result + '</div>';",
+                                            "cell.setStyle('padding:0px;');",
+                                            "return result;"
+                                        ]
+                                    },
+                                    "configAlternates": {
+                                        "designer|params": "typedarray",
+                                        "fn": "string",
+                                        "implHandler": "code"
+                                    },
+                                    "name": "renderer",
+                                    "designerId": "be799a2f-7b13-4178-8484-40e0accb55a6"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|commentHeader": [
+                                    "사원 탭 -> 사원 상세정보 보기"
+                                ],
+                                "fn": "onGridEmpInfoClick",
+                                "implHandler": [
+                                    "var me = this;",
+                                    "var vm = me.getViewModel();",
+                                    "",
+                                    "var win = Ext.create('HrpOgiDept51M', selected[0].data);",
+                                    "// 팝업창에서 이벤트 호출시 실행되는 함수",
+                                    "me.mon(win, 'selected', function(data, popup) {",
+                                    "",
+                                    "}, this);",
+                                    "",
+                                    "win.show(); // 팝업창표시"
+                                ],
+                                "name": "select",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string",
+                                "designer|commentHeader": "comment"
+                            },
+                            "name": "onGridEmpInfoClick",
+                            "designerId": "68b64e95-bae5-46ea-bce7-3cb1605e1e3a"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "initialize",
+                "implHandler": [
+                    "var me = this,",
+                    "    refs = me.getReferences();",
+                    "",
+                    "// 부서 콤보박스 조회 // Controller 에 extend BaseViewController",
+                    "me.GET_CODELIST({",
+                    "    stcd : '01' ,",
+                    "    codeDvcd : 'DEPTLV'",
+                    "}).then(function(records) {",
+                    "    var store = me.getViewModel().get('DeptStore');",
+                    "    store.add({text : \"- 전  체 -\", value : 999});",
+                    "    store.add(records.data);",
+                    "    refs.searchDept.setValue(SecurityUtils.getPrincipal().hrHrpmDeptId);",
+                    "    me.onSelect();",
+                    "});",
+                    "",
+                    "// Hidden Grid Header",
+                    "refs.grdToolbar.el.select('.x-headercontainer').setStyle('height',\t'0px');",
+                    ""
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "initialize",
+            "designerId": "aa9d5b7f-48e9-4097-bddd-7034d85965c3"
+        }
+    ]
+}

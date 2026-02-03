@@ -1,0 +1,84 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "BomKlsMean"
+        ],
+        "designer|userAlias": "BomKlsMean",
+        "designer|userClassName": "test.BomKlsMean"
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "MyContainer14",
+    "designerId": "e63950aa-f953-49db-828b-0b2cf1030b8e",
+    "viewControllerInstanceId": "9d5d2afe-2971-474e-b263-0db3b6caff3e",
+    "viewModelInstanceId": "fa5b2b51-9b3c-4a9f-a79a-24b9d0b2ac5d",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": "100%",
+                "layout": "vbox"
+            },
+            "configAlternates": {
+                "height": "auto",
+                "layout": "string"
+            },
+            "name": "MyContainer14",
+            "designerId": "6a010622-4ce0-45d9-a67e-e00a712f5784",
+            "cn": [
+                {
+                    "type": "Ext.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "html": "메타버스",
+                        "label": "단어"
+                    },
+                    "configAlternates": {
+                        "html": "string",
+                        "label": "string"
+                    },
+                    "name": "MyDisplayField4",
+                    "designerId": "b0f55af0-5eef-43eb-a153-f7be28040611"
+                },
+                {
+                    "type": "Ext.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 345,
+                        "html": "아바타를 통해 실제 현실과 같은 사회, 경제, 문화, 과학 기술 활동을 할 수 있는 3차원 공간 플랫폼.  메타버스는 1992년 미국 닐 스티븐슨의 공상과학 소설인 스노우 크래쉬에서 처음 사용하였다. ‘가공,추상’을 뜻하는 그리스어 메타(META)와 현실 세계를 뜻하는 유니버스의 합성어이다.  메타버스에서는 현실과 가상의 결합이 현실세계가 되어 그 안에서 상호작용하고 활동할 수 있다. 실례로 2020년 미국 대통령 선거 때 조 바이든 후보자는 닌텐도 ‘동물의 숲‘ 가상 현실 게임 안에서 선거 캠페인을 했고 유권자들은 가상 현실 안경을 낀 채 유세 현장에 참여하였다. 국내에서는 아이돌 그룹 방탄",
+                        "label": "의미"
+                    },
+                    "configAlternates": {
+                        "height": "auto",
+                        "html": "string",
+                        "label": "string"
+                    },
+                    "name": "MyDisplayField5",
+                    "designerId": "5d265762-15b8-4b18-8242-bff2cc127f34"
+                }
+            ]
+        }
+    ]
+}

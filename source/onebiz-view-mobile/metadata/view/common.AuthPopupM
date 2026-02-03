@@ -1,0 +1,610 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "AuthPopupM"
+        ],
+        "autoSize": false,
+        "designer|commentHeader": [
+            "공통 / 안내사항 팝업 View",
+            "",
+            "@author BNK시스템/파트너/박주혁",
+            "@since 2025.11.20.",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "  수정일         수정자                      수정내용",
+            " ------------   ---------                 --------------------------",
+            " 2025.11.20.   BNK시스템/파트너/박주혁         최초 생성"
+        ],
+        "designer|extend": "Ext.window.Window",
+        "designer|userAlias": "common.authpopupm",
+        "designer|userClassName": "common.AuthPopupM",
+        "height": 430,
+        "layout": "vbox",
+        "modal": true,
+        "style": "background:#FFFFFF;",
+        "title": "본인 확인 2단계 인증",
+        "width": "80%"
+    },
+    "configAlternates": {
+        "designer|extend": "string",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "title": "string",
+        "width": "auto",
+        "modal": "boolean",
+        "alwaysOnTop": "auto",
+        "autoSize": "boolean",
+        "layout": "string",
+        "designer|commentHeader": "comment",
+        "alternateClassName": "typedarray",
+        "centered": "boolean",
+        "floated": "boolean",
+        "style": "string"
+    },
+    "name": "common.InfoPopupM1",
+    "designerId": "8d5fc222-4b91-48eb-a9b3-9c32ed702f5b",
+    "viewControllerInstanceId": "818766ae-d8f5-4e35-bb40-10051af7362f",
+    "viewModelInstanceId": "eddc6161-9873-474a-96f9-085a9bd06c23",
+    "cn": [
+        {
+            "type": "Ext.Label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "reference": "authLabel1",
+                "style": "color:black;"
+            },
+            "configAlternates": {
+                "reference": "string",
+                "style": "string"
+            },
+            "name": "MyLabel",
+            "designerId": "403f7e21-2b14-45a4-8720-d14266cc8f8d"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "컨테이너1",
+                "height": 45,
+                "layout": "hbox",
+                "margin": "15 0 0 0"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "height": "auto",
+                "layout": "string",
+                "margin": "auto"
+            },
+            "name": "MyContainer24",
+            "designerId": "56228f80-6c5e-4c58-bc27-4777e23aef7a",
+            "cn": [
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "휴대폰번호입력필드",
+                        "docked": null,
+                        "height": "100%",
+                        "inputType": "number",
+                        "layout|flex": 1,
+                        "name": "",
+                        "padding": "0 10 0 10",
+                        "placeholder": "원비즈에 등록된 휴대폰번호(-제외)",
+                        "reference": "phoneNumber",
+                        "style": "background:#FFFFFF; border-radius:4px; border: 1px solid #DEDEDF;",
+                        "width": ""
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "inputType": "string",
+                        "label": "string",
+                        "name": "string",
+                        "width": "auto",
+                        "reference": "string",
+                        "docked": "string",
+                        "height": "auto",
+                        "layout|flex": "number",
+                        "placeholder": "string",
+                        "style": "string",
+                        "padding": "auto"
+                    },
+                    "name": "MyTextField11",
+                    "designerId": "170ec5d3-9b4a-44ba-b35f-cb8f73cc0c7e",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onTextfieldChange",
+                                "implHandler": [
+                                    "let v = field.getValue().replace(/[^0-9]/g, '');",
+                                    "field.setValue(v);"
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onTextfieldChange",
+                            "designerId": "c5ae896b-4da8-4b73-8af9-4644b69668cd"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "컨테이너1",
+                "height": 45,
+                "layout": "hbox",
+                "margin": "5 0 0 0"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "height": "auto",
+                "layout": "string",
+                "margin": "auto"
+            },
+            "name": "MyContainer7",
+            "designerId": "4c1fd5a0-9bde-42ab-b9ab-b37a278ddfda",
+            "cn": [
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "번호입력필드",
+                        "docked": null,
+                        "height": "100%",
+                        "inputType": "number",
+                        "layout|flex": 1,
+                        "name": "",
+                        "padding": "0 10 0 10",
+                        "placeholder": "인증번호 입력",
+                        "reference": "authNumber",
+                        "style": "background:#FFFFFF; border-radius:4px; border: 1px solid #DEDEDF;",
+                        "width": ""
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "inputType": "string",
+                        "label": "string",
+                        "name": "string",
+                        "width": "auto",
+                        "reference": "string",
+                        "docked": "string",
+                        "height": "auto",
+                        "layout|flex": "number",
+                        "padding": "auto",
+                        "placeholder": "string",
+                        "style": "string"
+                    },
+                    "name": "MyTextField11",
+                    "designerId": "810a51a4-5813-4f1d-b7af-4425a3446072",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onTextfieldKeyup",
+                                "implHandler": [
+                                    "let v = textfield.getValue().replace(/[^0-9]/g, '');",
+                                    "textfield.setValue(v);"
+                                ],
+                                "name": "keyup",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onTextfieldKeyup",
+                            "designerId": "d3212b27-9182-4ee4-8766-b7b69505e5a9"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|uiInterfaceName": "action",
+                        "docked": null,
+                        "hidden": false,
+                        "layout|flex": 1,
+                        "margin": "0 0 0 10",
+                        "reference": "sendBtn",
+                        "text": "인증번호발송",
+                        "ui": "action"
+                    },
+                    "configAlternates": {
+                        "docked": "string",
+                        "text": "string",
+                        "ui": "string",
+                        "width": "auto",
+                        "reference": "string",
+                        "height": "auto",
+                        "hidden": "boolean",
+                        "designer|uiInterfaceName": "string",
+                        "layout|flex": "number",
+                        "margin": "auto"
+                    },
+                    "name": "MyButton8",
+                    "designerId": "8da82dc6-98bf-413a-aa59-096c0f3a78e0",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onSendBtnTap",
+                                "implHandler": [
+                                    "var me = this;",
+                                    "var vm = me.getViewModel();",
+                                    "var refs = me.getReferences();",
+                                    "",
+                                    "",
+                                    "var data = {};",
+                                    "if(Ext.isEmpty(refs.phoneNumber.getValue())){",
+                                    "    Ext.Msg.show({",
+                                    "            buttons :  {",
+                                    "                yes : {itemId : Ext.MessageBox.YES, text : '확인'}",
+                                    "            },",
+                                    "            title : '모바일 기기 유효성 검증',",
+                                    "            message : '휴대폰번호를 확인해주세요.',",
+                                    "            alwaysOnTop : true,",
+                                    "            fn : function(btn) {",
+                                    "                return;",
+                                    "            }",
+                                    "        });",
+                                    "    return;",
+                                    "}",
+                                    "data.phoneNumber = refs.phoneNumber.getValue().replace(/-/g,'');",
+                                    "refs.sendBtn.setDisabled(true);",
+                                    "",
+                                    "Ext.Ajax.request({",
+                                    "    headers: {",
+                                    "        viewId: me.getViewId(),",
+                                    "        serviceId: 'BizComSvc.sendAuthNumber'",
+                                    "    },",
+                                    "    jsonData : data,",
+                                    "    scope : me,",
+                                    "    success : function(res) {",
+                                    "        Ext.Viewport.setMasked(false);",
+                                    "        Ext.Msg.show({",
+                                    "            buttons :  {",
+                                    "                yes : {itemId : Ext.MessageBox.YES, text : '확인'}",
+                                    "            },",
+                                    "            title : '모바일 기기 유효성 검증',",
+                                    "            message : '인증번호가 발송되었습니다.',",
+                                    "            alwaysOnTop : true,",
+                                    "            fn : function(btn) {",
+                                    "                return;",
+                                    "            }",
+                                    "        });",
+                                    "    },",
+                                    "    failure : function(res){",
+                                    "        var responseText = Ext.decode(arguments[0].responseText);",
+                                    "        Ext.Msg.show({",
+                                    "            buttons :  {",
+                                    "                yes : {itemId : Ext.MessageBox.YES, text : '확인'}",
+                                    "            },",
+                                    "            title : '모바일기기 유효성 검증',",
+                                    "            message : responseText.errMsg,",
+                                    "            alwaysOnTop : true,",
+                                    "            fn : function(btn) {",
+                                    "                return;",
+                                    "            }",
+                                    "        });",
+                                    "        Ext.Viewport.setMasked(false);",
+                                    "        refs.sendBtn.setDisabled(false);",
+                                    "    }",
+                                    "",
+                                    "});",
+                                    ""
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onSendBtnTap",
+                            "designerId": "b385dfee-6d3b-4462-8b59-5bbcee6c39e9"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "margin": "15 0 0 0",
+                "reference": "authLabel2",
+                "style": "color:black;"
+            },
+            "configAlternates": {
+                "reference": "string",
+                "margin": "auto",
+                "style": "string"
+            },
+            "name": "MyLabel1",
+            "designerId": "98a9ad02-dfda-48ec-8dd9-68da5465fe02"
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom"
+            },
+            "configAlternates": {
+                "docked": "string"
+            },
+            "name": "MyToolbar",
+            "designerId": "bca28bd4-97a3-4127-a9f2-d53f8f30edee",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|uiInterfaceName": "decline",
+                        "docked": null,
+                        "layout|flex": 1,
+                        "text": "취소",
+                        "ui": "decline"
+                    },
+                    "configAlternates": {
+                        "layout|flex": "number",
+                        "text": "string",
+                        "designer|uiInterfaceName": "string",
+                        "docked": "string",
+                        "ui": "string"
+                    },
+                    "name": "MyButton3",
+                    "designerId": "86099364-06fc-409e-8ad2-180cfb79af7e",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBtnCloseTap",
+                                "implHandler": [
+                                    "this.getView().close();"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnCloseTap",
+                            "designerId": "6a91e2b1-983d-45d3-849e-0b483a591d93"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 1,
+                        "text": "인증확인"
+                    },
+                    "configAlternates": {
+                        "layout|flex": "number",
+                        "text": "string"
+                    },
+                    "name": "MyButton12",
+                    "designerId": "6800b1c8-250e-44f7-ba60-64e55f79723d",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBtnConfirmTap",
+                                "implHandler": [
+                                    "var me = this;",
+                                    "var vm = me.getViewModel();",
+                                    "var refs = me.getReferences();",
+                                    "",
+                                    "var data = {};",
+                                    "var deviceUuid = '';",
+                                    "if(Ext.isEmpty(window.device) && 'P'!==Property.PROFILE){",
+                                    "    deviceUuid = 'empty';",
+                                    "}",
+                                    "else{",
+                                    "    deviceUuid = device.uuid;",
+                                    "}",
+                                    "data.deviceUuid = deviceUuid;",
+                                    "data.authNumber = refs.authNumber.getValue();",
+                                    "if(Ext.isEmpty(data.authNumber)||data.authNumber.length<6){",
+                                    "    refs.authNumber.setInputValue('');",
+                                    "    Ext.Msg.show({",
+                                    "        buttons :  {",
+                                    "            yes : {itemId : Ext.MessageBox.YES, text : '확인'}",
+                                    "        },",
+                                    "        title : '인증번호 유효성 검증',",
+                                    "        message : '인증번호를 다시 입력해주세요',",
+                                    "        alwaysOnTop : true,",
+                                    "        fn : function(btn) {",
+                                    "            return;",
+                                    "        }",
+                                    "    });",
+                                    "    return;",
+                                    "}",
+                                    "",
+                                    "Ext.Ajax.request({",
+                                    "    headers: {",
+                                    "        viewId: me.getViewId(),",
+                                    "        serviceId: 'BizComSvc.checkAuthNumber'",
+                                    "    },",
+                                    "    jsonData : data,",
+                                    "    scope : me,",
+                                    "    success : function(res) {",
+                                    "        Ext.Viewport.setMasked(false);",
+                                    "        Ext.Msg.show({",
+                                    "                buttons :  {",
+                                    "                    yes : {itemId : Ext.MessageBox.YES, text : '확인'}",
+                                    "                },",
+                                    "                title : '인증번호 유효성 검증',",
+                                    "                message : '인증이 완료되었습니다.',",
+                                    "                alwaysOnTop : true,",
+                                    "                fn : function(btn) {",
+                                    "                    me.getView().fireEvent('complete');",
+                                    "                    me.getView().close();",
+                                    "                }",
+                                    "        });",
+                                    "    },",
+                                    "    failure : function(res){",
+                                    "        var responseText = Ext.decode(arguments[0].responseText);",
+                                    "        Ext.Msg.show({",
+                                    "            buttons :  {",
+                                    "                yes : {itemId : Ext.MessageBox.YES, text : '확인'}",
+                                    "            },",
+                                    "            title : '인증번호 유효성 검증',",
+                                    "            message : responseText.errMsg,",
+                                    "            alwaysOnTop : true,",
+                                    "            fn : function(btn) {",
+                                    "                return;",
+                                    "            }",
+                                    "        });",
+                                    "        Ext.Viewport.setMasked(false);",
+                                    "        refs.sendBtn.setDisabled(false);",
+                                    "    }",
+                                    "});",
+                                    "",
+                                    ""
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnConfirmTap",
+                            "designerId": "e4980147-2714-4ea6-b412-aa8f2523d463"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onAuthPopupInitialize",
+                "implHandler": [
+                    "var me = this;",
+                    "var vm = me.getViewModel();",
+                    "var refs = me.getReferences();",
+                    "",
+                    "var userId = component.userId;",
+                    "var data = {};",
+                    "data.userId = userId;",
+                    "",
+                    "refs.authLabel1.setHtml(Messages.getMessage('COM001'));",
+                    "refs.authLabel2.setHtml(Messages.getMessage('COM002'));",
+                    ""
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onAuthPopupInitialize",
+            "designerId": "eb1d57fc-014f-4a8d-9ee2-22b1c56d7edb"
+        }
+    ]
+}

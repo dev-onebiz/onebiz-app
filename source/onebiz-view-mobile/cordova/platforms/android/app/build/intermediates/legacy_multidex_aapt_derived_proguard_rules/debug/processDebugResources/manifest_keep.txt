@@ -1,0 +1,2 @@
+# Referenced at /Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:63
+-keep class android.support.multidex.MultiDexApplication { <init>(...); }

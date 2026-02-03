@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>패턴잠금</title>
+    <style media="screen">
+        * { box-sizing: border-box; }
+        html, body { padding: 0; margin: 0; height: 100vh; max-height: 100vh; overflow: hidden; }
+        body { font-family: 'Varela Round', sans-serif; }
+        .container { /* margin: auto; height: 100%; */ padding : 20px 0 0 30px; }
+        h1 { text-align: center; margin: 0; height: 15vh; line-height: 15vh; text-align: center; font-size: 6vh; }
+        #lock { width: 100%; height: calc(100% - 15vh); padding-bottom: 12vh; min-height: 120px; }
+        .stars { margin: auto; display: block; }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <svg class="patternlock" id="patternlock" viewBox="10 10 100 100" xmlns="http://www.w3.org/2000/svg">
+            <g class="lock-actives"></g>
+            <g class="lock-lines"></g>
+            <g class="lock-dots">
+                <circle cx="20" cy="20" r="2"/>
+                <circle cx="50" cy="20" r="2"/>
+                <circle cx="80" cy="20" r="2"/>
+
+                <circle cx="20" cy="50" r="2"/>
+                <circle cx="50" cy="50" r="2"/>
+                <circle cx="80" cy="50" r="2"/>
+
+                <circle cx="20" cy="80" r="2"/>
+                <circle cx="50" cy="80" r="2"/>
+                <circle cx="80" cy="80" r="2"/>
+            </g>
+        <svg>
+        <input type="hidden" id="patternlockValue">
+    </div>
+    <script src="./vendor.js"></script>
+    <script src="./patternlock.js"></script>
+    <script type="text/javascript">
+    var e = document.getElementById('patternlock')
+    var p = new PatternLock(e, {
+        onPattern: function(pattern) {
+            var value = null;
+            if (!pattern) {
+              value = null;
+            }
+            else {
+              value = pattern;
+            }
+			document.getElementById('patternlockValue').value = value;
+			this.success();
+        }
+    });
+    </script>
+</body>
+</html>

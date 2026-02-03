@@ -1,0 +1,20 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "Base",
+        "designer|userClassName": "common.Base"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "MyContainer24",
+    "designerId": "319b6bc8-f9a1-4552-8e2b-94a270ae2554",
+    "viewControllerInstanceId": "aaeb732e-ce56-4098-821a-ab62b69a2a27",
+    "viewModelInstanceId": "89fc6bb5-78ce-494b-8117-80d777e5416f"
+}

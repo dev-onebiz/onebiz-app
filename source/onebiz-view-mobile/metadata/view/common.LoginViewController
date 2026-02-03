@@ -1,0 +1,300 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            "메인 / 로그인 Controller",
+            "",
+            "@author BNK시스템/팀장/손승범",
+            "@since 2019.06.17.",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "  수정일         수정자                      수정내용",
+            " ------------   ---------                 --------------------------",
+            "  2019.06.17.   BNK시스템/팀장/손승범         최초 생성"
+        ],
+        "designer|extend": "BaseViewController",
+        "designer|userAlias": "common.login",
+        "designer|userClassName": "common.LoginViewController",
+        "viewId": "Login",
+        "viewId1": "ExpNteAply01M"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "designer|extend": "string",
+        "designer|commentHeader": "comment",
+        "viewId": "string",
+        "viewId1": "string"
+    },
+    "designerId": "5b35c0c4-37e1-4e91-bbcb-fa89aa156e18",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "viewId",
+            "type": "string"
+        },
+        {
+            "group": "(Custom Properties)",
+            "name": "viewId1",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "initApplication",
+                "implHandler": [
+                    "var D = new Ext.Deferred();",
+                    "",
+                    "var me = this,",
+                    "    principal = SecurityUtils.getPrincipal(), // 사용자정보",
+                    "    jwtToken = WebUtils.getCookie(Property.JWT_TOKEN_NAME) || sessionStorage.getItem(Property.JWT_TOKEN_NAME),",
+                    "    csrfToken = WebUtils.getCookie(Property.XSRF_TOKEN_NAME) || sessionStorage.getItem(Property.XSRF_TOKEN_NAME),",
+                    "    url = Property.API_URL;",
+                    "",
+                    "    if ('F' === Property.PROFILE) {",
+                    "        url = './testdata/COMAPP0002R03.json';",
+                    "    }",
+                    "",
+                    "// TODO 자동로그인 처리할 것!",
+                    "Ext.Ajax.request({",
+                    "    headers: {",
+                    "        viewId: 'Login',",
+                    "        serviceId: 'COMAPP0002R03M',",
+                    "        'X-Requested-With' : 'XMLHttpRequest',",
+                    "        'Authorization'    : 'Bearer ' + jwtToken,",
+                    "        'X-XSRF-TOKEN'     : csrfToken,",
+                    "        'cmgrpCd'          : Property.CMGRP_CD,",
+                    "        'sysCd'            : Property.SYS_CD,",
+                    "        'profile'          : Property.PROFILE,",
+                    "        'device'           : Property.DEVICE,",
+                    "        'protocol'         : Property.PROTOCOL,",
+                    "        'dataType'         : Property.DATA_TYPE,",
+                    "        'cmgrpId'          : principal && principal.hasOwnProperty('comCmmCmgrpId') ? principal.comCmmCmgrpId : null,",
+                    "        'sysId'            : principal && principal.hasOwnProperty('comCmmSystemId') ? principal.comCmmSystemId : null",
+                    "    },",
+                    "    url : url,",
+                    "    method : 'POST',",
+                    "    scope : me,",
+                    "    success : function(res) {",
+                    "        var me = this,",
+                    "            result = Ext.JSON.decode(res.responseText);",
+                    "",
+                    "        if (Property.IS_DEBUG) console.log('로그인결과: ', result);",
+                    "",
+                    "        // 파일처리인경우, 쿠키를 저장하는 처리 추가함",
+                    "        if ('F' === Property.PROFILE) {",
+                    "            if (result.hasOwnProperty(Property.JWT_TOKEN_NAME)) {",
+                    "                WebUtils.setCookie(Property.JWT_TOKEN_NAME, result[Property.JWT_TOKEN_NAME]);",
+                    "            }",
+                    "        }",
+                    "",
+                    "        // 어플리케이션 데이터 초기화",
+                    "        me.INIT_APPLICATION_DATA(result);",
+                    "",
+                    "        D.resolve(true);",
+                    "    },",
+                    "    failure : function(response, opts) {",
+                    "",
+                    "        if (response.status === 0) {",
+                    "            Ext.Msg.alert(Property.SYSTEM_NAME, '서버와 연결이 원활하지 않습니다.<br />인터넷 연결 상태를 확인하고 다시 시도해주시길 바랍니다.');",
+                    "        }",
+                    "",
+                    "        var me = this,",
+                    "            refs = me.getReferences(),",
+                    "            loadingView = refs.loadingView,",
+                    "            loginForm = refs.loginForm;",
+                    "",
+                    "        loadingView.setHidden(true);",
+                    "        loginForm.setHidden(false);",
+                    "",
+                    "        D.reject(false);",
+                    "    }",
+                    "});",
+                    "",
+                    "return D.promise;"
+                ]
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "initApplication",
+            "designerId": "1e80337a-87e9-47d3-999f-1b6f1b925741"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "그리드조회"
+                ],
+                "designer|params": [
+                    "params"
+                ],
+                "fn": "search1",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    params = params || {},",
+                    "    store = vm.storeInfo.ApvlStore;",
+                    "",
+                    "if(params.cdno == '99')",
+                    "{",
+                    "    params.cdno = '';",
+                    "    params.hrHrpmEmpId = SecurityUtils.getPrincipal().hrHrpmEmpId;",
+                    "}",
+                    "",
+                    "store.getProxy().extraParams = params;",
+                    "store.removeAll();",
+                    "store.loadPage(1);",
+                    "",
+                    "//debugger // 스크롤 보정 (상단으로 이동)",
+                    ""
+                ]
+            },
+            "configAlternates": {
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code",
+                "designer|commentHeader": "comment"
+            },
+            "name": "search1",
+            "designerId": "1eac88b8-89de-49de-bcf4-d4fa1a967616"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "itemId"
+                ],
+                "fn": "showView1",
+                "implHandler": [
+                    "        var me = this;",
+                    "        me.getView().setActiveItem(itemId);"
+                ]
+            },
+            "configAlternates": {
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "showView1",
+            "designerId": "87de00e5-8153-45a4-8f9a-005349f24b5a"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "setGridTotal1",
+                "implHandler": [
+                    "var me = this;",
+                    "var refs = me.getReferences();",
+                    "var grid = refs.grid;",
+                    "var lblTotalCnt = refs.lblTotalCnt;",
+                    "var records = grid.getStore().data.items;",
+                    "var totalAmt = 0;",
+                    "var totalCnt = 0;",
+                    "",
+                    "for (var i in records) {",
+                    "    var record = records[i].data;",
+                    "    if (record.selected === true) {",
+                    "        if(record.canYn === 'N'){ // 정상건",
+                    "            record.apvlAmtDom = String(record.apvlAmtDom).replace(/,/gi, '').replace(/ 원/gi, '').replace(/-/gi, '');",
+                    "            totalAmt += Number(record.apvlAmtDom);",
+                    "            totalCnt++;",
+                    "        } else { // 취소건인 경우",
+                    "            var cancelApvlAmtDom = String(record.apvlAmtDom).replace(/,/gi, '').replace(/ 원/gi, '').replace(/-/gi, '');",
+                    "            totalAmt -= Number(cancelApvlAmtDom);",
+                    "            totalCnt++;",
+                    "        }",
+                    "    }",
+                    "}",
+                    "",
+                    "var strAmt = String(totalAmt);",
+                    "var moneyAmt = strAmt.replace(/(\\d)(?=(?:\\d{3})+(?!\\d))/g, '$1,');",
+                    "lblTotalCnt.setValue('<div style=\"width:100%;font-size:14px;\"><span style=\"display:inline-block;text-align:left;width:20%\">총</span><span style=\"display:inline-block;text-align:right;width:80%\">' + totalCnt + '건</span></div><div style=\"width:100%;font-size:14px;\">합계 <span style=\"text-align:right\">' + moneyAmt + '<span>원</div>');",
+                    "",
+                    ""
+                ]
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "setGridTotal1",
+            "designerId": "19b157b0-41a6-49a5-aec8-34a6af91ed3d"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "취소건이 없는 경우 지출결의서 작성 진행"
+                ],
+                "designer|params": [
+                    "trueRecords"
+                ],
+                "fn": "onMakeProgress1",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences();",
+                    "",
+                    "if(trueRecords.length <= 0 && cancelRecords <= 0){",
+                    "    Ext.Msg.alert('알림', '법인카드 승인내역을 선택하십시오.');",
+                    "    return;",
+                    "} else {",
+                    "    var naviView = me.getView().up('navigationview');",
+                    "    me.PUSH_VIEW(naviView, {",
+                    "        menuId  : 'ExpNteAply02M',",
+                    "        title   : '지출결의서 작성',",
+                    "        isSubView : true,",
+                    "        records : trueRecords,",
+                    "    });",
+                    "}"
+                ]
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "onMakeProgress1",
+            "designerId": "26f01f17-d118-426b-bc74-68e44c653c9e"
+        }
+    ]
+}

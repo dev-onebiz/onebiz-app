@@ -1,0 +1,120 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "BomMtgBoo01MViewModel",
+        "designer|userClassName": "BackOffice.bom.BomMtgBoo01MViewModel"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "BackOffice.bom.BomMtgBoo04MViewModel1",
+    "designerId": "49a03c8a-1359-4340-8223-e690836903ee",
+    "cn": [
+        {
+            "type": "jsonstore",
+            "reference": {
+                "name": "stores",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoLoad": false,
+                "designer|displayName": "Store",
+                "name": "Store",
+                "pageSize": 10
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "pageSize": "number",
+                "autoLoad": "boolean",
+                "name": "string",
+                "fields": "binding"
+            },
+            "name": "MyJsonStore1",
+            "designerId": "468c8517-dc15-4f7e-9afc-dbe47913d82e",
+            "cn": [
+                {
+                    "type": "Ext.data.proxy.Ajax",
+                    "reference": {
+                        "name": "proxy",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "headers": [
+                            "{",
+                            "    serviceId: 'BomMtgSvc.findAllMtgmBooList',",
+                            "    viewId: 'BomMtgBoo01M'",
+                            "}"
+                        ],
+                        "url": "api"
+                    },
+                    "configAlternates": {
+                        "headers": "object",
+                        "url": "string"
+                    },
+                    "name": "MyAjaxProxy2",
+                    "designerId": "e79192f9-2aaa-4acb-a8d1-ca29206539ac",
+                    "cn": [
+                        {
+                            "type": "Ext.data.reader.Json",
+                            "reference": {
+                                "name": "reader",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "rootProperty": "page.content",
+                                "totalProperty": "page.total"
+                            },
+                            "configAlternates": {
+                                "rootProperty": "string",
+                                "totalProperty": "string"
+                            },
+                            "name": "MyJsonReader2",
+                            "designerId": "e526ac03-daf6-48cd-bf80-7dccb8e4adb1"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "boMtgcRoomId"
+                    },
+                    "configAlternates": {
+                        "name": "string"
+                    },
+                    "name": "field",
+                    "designerId": "8a7eaa29-95e2-4123-99a9-4670020f3506"
+                },
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "calendarId"
+                    },
+                    "configAlternates": {
+                        "name": "string"
+                    },
+                    "name": "field12",
+                    "designerId": "300598a1-2080-46dd-b13e-cfe1c886970a"
+                }
+            ]
+        }
+    ]
+}

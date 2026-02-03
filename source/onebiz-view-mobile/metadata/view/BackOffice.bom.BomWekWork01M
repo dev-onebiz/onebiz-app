@@ -1,0 +1,1025 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "BomWekWork01"
+        ],
+        "container|align": "center",
+        "designer|commentHeader": [
+            "    주간 업무 : 업무보고 조회 - 화면",
+            "",
+            "    @author BNK시스템/파트너/박주혁",
+            "    @since 2024.02.06",
+            "    @version 1.0",
+            "    @see",
+            "",
+            "    << 개정이력(Modification Information) >>",
+            "",
+            "    수정일       수정자                수정내용",
+            "    ----------  ------------------   --------------------------",
+            "    2024.02.06  BNK시스템/파트너/박주혁   최초 생성"
+        ],
+        "designer|userAlias": "BomWekWork01M",
+        "designer|userClassName": "BackOffice.bom.BomWekWork01M",
+        "height": "100%",
+        "layout": "vbox",
+        "style": "background:#F3F4F6;"
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "extend": "string",
+        "designer|commentHeader": "comment",
+        "designer|extend": "string",
+        "height": "auto",
+        "layout": "string",
+        "container|align": "string",
+        "style": "string",
+        "scrollable": "auto"
+    },
+    "name": "Budget.bgx.com.BgxComScrp01M1",
+    "designerId": "c6f3be7c-fb98-48b2-add5-18af00ec4484",
+    "viewControllerInstanceId": "dfd314a3-b4a3-49c5-9a1a-15605e150404",
+    "viewModelInstanceId": "cec097c2-a86d-4604-990d-54441e8e0c5e",
+    "cn": [
+        {
+            "type": "Ext.field.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyStyle": "background:#F3F4F6",
+                "container|align": "center",
+                "designer|displayName": "본문컨테이너",
+                "height": "100%",
+                "layout": "vbox",
+                "style": "background:#F3F4F6;",
+                "width": "100%"
+            },
+            "configAlternates": {
+                "container|align": "string",
+                "designer|displayName": "string",
+                "height": "auto",
+                "layout": "string",
+                "scrollable": "auto",
+                "width": "auto",
+                "bodyStyle": "string",
+                "style": "string"
+            },
+            "name": "MyFieldPanel",
+            "designerId": "9d056cf2-6173-46fa-a297-805987d3a098",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "height": 197,
+                        "layout": "vbox",
+                        "maxHeight": 197,
+                        "padding": "0 20 0 20",
+                        "reference": "weekCtn",
+                        "style": "background:url(\"resources/images/background3.jpg\") repeat-x top center #f3f4f6;",
+                        "width": "100%"
+                    },
+                    "configAlternates": {
+                        "docked": "string",
+                        "margin": "auto",
+                        "container|align": "string",
+                        "height": "auto",
+                        "layout": "string",
+                        "name": "string",
+                        "reference": "string",
+                        "style": "string",
+                        "width": "auto",
+                        "maxHeight": "auto",
+                        "padding": "auto"
+                    },
+                    "name": "MyContainer9",
+                    "designerId": "d87e8353-489d-4b98-8eb1-23760c97edf6",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "겹침컨테이너",
+                                "height": 108,
+                                "hidden": false,
+                                "style": "position:absolute;background : #1A234C;",
+                                "width": "100%"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "style": "string",
+                                "width": "auto",
+                                "hidden": "boolean"
+                            },
+                            "name": "MyContainer29",
+                            "designerId": "b66fcfdd-fdab-43a2-8039-5620b6c91cd7"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "center",
+                                "designer|displayName": "상단내용컨테이너",
+                                "height": 166,
+                                "layout": "vbox",
+                                "margin": "25 20 0 20",
+                                "maxHeight": 166,
+                                "minHeight": 166,
+                                "style": "background:white; box-shadow:0px 6px 14px rgba(9,38,95,0.16); border-radius:8px;",
+                                "width": "100%"
+                            },
+                            "configAlternates": {
+                                "container|align": "string",
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "layout": "string",
+                                "margin": "auto",
+                                "maxHeight": "auto",
+                                "minHeight": "auto",
+                                "style": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyContainer31",
+                            "designerId": "f558e01c-bd1e-48be-a8d3-6d54f42ef7af",
+                            "cn": [
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "container|align": "center",
+                                        "designer|displayName": "주차컨테이너",
+                                        "height": 108,
+                                        "layout": "hbox",
+                                        "width": "100%"
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "layout": "string",
+                                        "container|align": "string",
+                                        "height": "auto",
+                                        "width": "auto"
+                                    },
+                                    "name": "MyContainer",
+                                    "designerId": "787e2708-28c0-40bb-8ea4-764e02cfb599",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Spacer",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|flex": 1
+                                            },
+                                            "configAlternates": {
+                                                "layout|flex": "number"
+                                            },
+                                            "name": "MySpacer3",
+                                            "designerId": "a7706f4c-23ef-4f41-a57c-79a2c0fe3e18"
+                                        },
+                                        {
+                                            "type": "Ext.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "iconCls": "btn_prev",
+                                                "margin": "10 0 0 0"
+                                            },
+                                            "configAlternates": {
+                                                "iconCls": "string",
+                                                "layout|flex": "number",
+                                                "margin": "auto",
+                                                "height": "auto"
+                                            },
+                                            "name": "MyButton",
+                                            "designerId": "dc1260cd-9e3e-493b-944a-6ada121299c9",
+                                            "cn": [
+                                                {
+                                                    "type": "viewcontrollereventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onButtonTapLeft",
+                                                        "implHandler": [
+                                                            "        var me = this;",
+                                                            "        var vm = me.getViewModel();",
+                                                            "        var refs = me.getReferences();",
+                                                            "",
+                                                            "",
+                                                            "        var changeTmrdId = vm.get('tmrdInfo.lagBoWekmTmrdId');",
+                                                            "",
+                                                            "        if(changeTmrdId !== 0){",
+                                                            "            vm.set('tmrdInfo.boWekmTmrdId',changeTmrdId);",
+                                                            "            me.onSelectRept();",
+                                                            "        }",
+                                                            "        else{",
+                                                            "               Ext.Msg.alert('알림','이전 주차가 존재하지 않습니다.');",
+                                                            "        }",
+                                                            "",
+                                                            ""
+                                                        ],
+                                                        "name": "tap",
+                                                        "scope": "me"
+                                                    },
+                                                    "configAlternates": {
+                                                        "fn": "string",
+                                                        "name": "string",
+                                                        "scope": "string",
+                                                        "implHandler": "code"
+                                                    },
+                                                    "name": "onButtonTapLeft",
+                                                    "designerId": "2ccae4d5-2237-4410-a66c-6d84334b48b7"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "container|align": "center",
+                                                "layout": "vbox",
+                                                "margin": "0 34"
+                                            },
+                                            "configAlternates": {
+                                                "container|align": "string",
+                                                "layout": "string",
+                                                "margin": "auto"
+                                            },
+                                            "name": "MyContainer44",
+                                            "designerId": "8d90e0f5-4225-4f0d-9d6c-56896efe404b",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.Label",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "height": 30,
+                                                        "name": "주차라벨",
+                                                        "reference": "weekLabel",
+                                                        "style": "font: normal normal bold 24px/27px SF Compact Display;;"
+                                                    },
+                                                    "configAlternates": {
+                                                        "html": "string",
+                                                        "margin": "auto",
+                                                        "name": "string",
+                                                        "style": "string",
+                                                        "height": "auto",
+                                                        "reference": "string"
+                                                    },
+                                                    "name": "MyLabel3",
+                                                    "designerId": "be492ac7-ba2c-4da2-af01-901a07559f8a"
+                                                },
+                                                {
+                                                    "type": "Ext.Label",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "margin": "7 0 0 0",
+                                                        "name": "날짜라벨",
+                                                        "reference": "dateLabel",
+                                                        "style": "font : normal normal normal 14px/18px SF Coompact Display; color:#333333;"
+                                                    },
+                                                    "configAlternates": {
+                                                        "centered": "boolean",
+                                                        "html": "string",
+                                                        "style": "string",
+                                                        "name": "string",
+                                                        "margin": "auto",
+                                                        "reference": "string"
+                                                    },
+                                                    "name": "MyLabel6",
+                                                    "designerId": "d07008f5-f252-44ac-92bd-134f256ba297"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "iconCls": "btn_next ",
+                                                "margin": "10 0 0 0"
+                                            },
+                                            "configAlternates": {
+                                                "iconCls": "string",
+                                                "margin": "auto",
+                                                "height": "auto",
+                                                "value": "binding"
+                                            },
+                                            "name": "MyButton2",
+                                            "designerId": "a1c09d7b-045d-474b-99ce-ca9988c41c33",
+                                            "cn": [
+                                                {
+                                                    "type": "viewcontrollereventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onButtonTapRight",
+                                                        "implHandler": [
+                                                            "        var me = this;",
+                                                            "        var vm = me.getViewModel();",
+                                                            "        var refs = me.getReferences();",
+                                                            "",
+                                                            "",
+                                                            "        var changeTmrdId = vm.get('tmrdInfo.leadBoWekmTmrdId');",
+                                                            "",
+                                                            "        if(changeTmrdId !== 0){",
+                                                            "            vm.set('tmrdInfo.boWekmTmrdId',changeTmrdId);",
+                                                            "            me.onSelectRept();",
+                                                            "        }",
+                                                            "        else{",
+                                                            "               Ext.Msg.alert('알림','다음 주차가 존재하지 않습니다.');",
+                                                            "        }",
+                                                            ""
+                                                        ],
+                                                        "name": "tap",
+                                                        "scope": "me"
+                                                    },
+                                                    "configAlternates": {
+                                                        "fn": "string",
+                                                        "name": "string",
+                                                        "scope": "string",
+                                                        "implHandler": "code"
+                                                    },
+                                                    "name": "onButtonTapRight",
+                                                    "designerId": "6a676c0b-db35-4b97-98c8-427f47e95e27"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.Spacer",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|flex": 1
+                                            },
+                                            "configAlternates": {
+                                                "layout|flex": "number"
+                                            },
+                                            "name": "MySpacer4",
+                                            "designerId": "496a6e81-7382-48b6-97f4-a601310dc3c2"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "container|align": "center",
+                                        "height": 58,
+                                        "layout": "hbox",
+                                        "reference": "topCtn",
+                                        "shadow": false,
+                                        "style": "border-top:1px solid #DDDDDD;",
+                                        "width": "100%"
+                                    },
+                                    "configAlternates": {
+                                        "name": "string",
+                                        "reference": "string",
+                                        "shadow": "boolean",
+                                        "style": "string",
+                                        "width": "auto",
+                                        "margin": "auto",
+                                        "padding": "auto",
+                                        "container|align": "string",
+                                        "height": "auto",
+                                        "layout": "string"
+                                    },
+                                    "name": "MyContainer5",
+                                    "designerId": "30db0642-8397-46dc-88ce-9e60e856c2b8",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Spacer",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|flex": 1
+                                            },
+                                            "configAlternates": {
+                                                "layout|flex": "number"
+                                            },
+                                            "name": "MySpacer",
+                                            "designerId": "35567865-1945-46b4-b213-724281d6d7d1"
+                                        },
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "전체",
+                                                "html": "전체",
+                                                "margin": "0 4.75 0 0",
+                                                "style": "color:#111111; font:normal normal bold 14px/27px SF Compact Display;"
+                                            },
+                                            "configAlternates": {
+                                                "designer|displayName": "string",
+                                                "html": "string",
+                                                "margin": "auto",
+                                                "style": "string"
+                                            },
+                                            "name": "MyLabel",
+                                            "designerId": "dc792e77-e652-4f08-882a-69c46aa68202"
+                                        },
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "container|align": "center",
+                                                "height": 24,
+                                                "layout": "hbox",
+                                                "style": "background: #111111 0% 0% no-repeat padding-box; border-radius: 13px;",
+                                                "width": "40px"
+                                            },
+                                            "configAlternates": {
+                                                "container|align": "string",
+                                                "height": "auto",
+                                                "layout": "string",
+                                                "style": "string",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyContainer33",
+                                            "designerId": "0b83d9fd-4c17-436b-8009-d3944c0de516",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.Label",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "html": "0",
+                                                        "reference": "allLabel",
+                                                        "style": "text-align:center;font:normal normal bold 16px/18px SF Compact Display; color:#FFFFFF;",
+                                                        "width": "100%"
+                                                    },
+                                                    "configAlternates": {
+                                                        "html": "string",
+                                                        "reference": "string",
+                                                        "style": "string",
+                                                        "width": "auto"
+                                                    },
+                                                    "name": "MyLabel4",
+                                                    "designerId": "0c6a0f93-2127-401f-8f52-e1ca135fa570"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "완료",
+                                                "html": "완료",
+                                                "margin": "0 4.75 0 6.25",
+                                                "style": "color:#111111; font:normal normal bold 14px/27px SF Compact Display;"
+                                            },
+                                            "configAlternates": {
+                                                "designer|displayName": "string",
+                                                "html": "string",
+                                                "margin": "auto",
+                                                "style": "string"
+                                            },
+                                            "name": "MyLabel5",
+                                            "designerId": "e57c604e-d5f8-41d8-b078-9358d48c2f71"
+                                        },
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "container|align": "center",
+                                                "height": 24,
+                                                "layout": "hbox",
+                                                "style": "background: #275CB8 0% 0% no-repeat padding-box; border-radius: 13px;",
+                                                "width": "40px"
+                                            },
+                                            "configAlternates": {
+                                                "container|align": "string",
+                                                "height": "auto",
+                                                "layout": "string",
+                                                "style": "string",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyContainer38",
+                                            "designerId": "ee3ab0a4-731e-45af-9f50-3762645ab530",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.Label",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "html": "0",
+                                                        "reference": "completeLabel",
+                                                        "style": "text-align:center;font:normal normal bold 16px/18px SF Compact Display; color:#FFFFFF;",
+                                                        "width": "100%"
+                                                    },
+                                                    "configAlternates": {
+                                                        "html": "string",
+                                                        "reference": "string",
+                                                        "style": "string",
+                                                        "width": "auto"
+                                                    },
+                                                    "name": "MyLabel4",
+                                                    "designerId": "61416c74-6f77-4673-adcf-60f406d9444b"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "진행",
+                                                "html": "진행",
+                                                "margin": "0 4.75 0 6.25",
+                                                "style": "color:#111111; font:normal normal bold 14px/27px SF Compact Display;"
+                                            },
+                                            "configAlternates": {
+                                                "designer|displayName": "string",
+                                                "html": "string",
+                                                "margin": "auto",
+                                                "style": "string"
+                                            },
+                                            "name": "MyLabel1",
+                                            "designerId": "8e243c73-30d6-4c98-8c8f-0cb2bc851d29"
+                                        },
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "container|align": "center",
+                                                "height": 24,
+                                                "layout": "hbox",
+                                                "style": "background: #4B9A38 0% 0% no-repeat padding-box; border-radius: 13px;",
+                                                "width": "40px"
+                                            },
+                                            "configAlternates": {
+                                                "container|align": "string",
+                                                "height": "auto",
+                                                "layout": "string",
+                                                "style": "string",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyContainer36",
+                                            "designerId": "a0d9a505-c05b-4dd8-a8e9-8306856aac9d",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.Label",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "html": "0",
+                                                        "reference": "progressLabel",
+                                                        "style": "text-align:center;font:normal normal bold 16px/18px SF Compact Display; color:#FFFFFF;",
+                                                        "width": "100%"
+                                                    },
+                                                    "configAlternates": {
+                                                        "html": "string",
+                                                        "reference": "string",
+                                                        "style": "string",
+                                                        "width": "auto"
+                                                    },
+                                                    "name": "MyLabel4",
+                                                    "designerId": "c6a06adc-ccb3-4e9e-955a-e91f8c762d06"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "예정",
+                                                "html": "예정",
+                                                "layout|flex": null,
+                                                "margin": "0 4.75 0 6.25",
+                                                "style": "color:#111111; font:normal normal bold 14px/27px SF Compact Display;"
+                                            },
+                                            "configAlternates": {
+                                                "designer|displayName": "string",
+                                                "html": "string",
+                                                "layout|flex": "number",
+                                                "margin": "auto",
+                                                "style": "string"
+                                            },
+                                            "name": "MyLabel2",
+                                            "designerId": "8f125e9d-360f-44fa-b949-a490f20ab415"
+                                        },
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "container|align": "center",
+                                                "height": 24,
+                                                "layout": "hbox",
+                                                "style": "background: #FFB100 0% 0% no-repeat padding-box; border-radius: 13px;",
+                                                "width": "40px"
+                                            },
+                                            "configAlternates": {
+                                                "container|align": "string",
+                                                "height": "auto",
+                                                "layout": "string",
+                                                "style": "string",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyContainer41",
+                                            "designerId": "c5590fe8-269a-4818-919c-c788bddd490f",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.Label",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "html": "0",
+                                                        "reference": "expectedLabel",
+                                                        "style": "text-align:center;font:normal normal bold 16px/18px SF Compact Display; color:#FFFFFF;",
+                                                        "width": "100%"
+                                                    },
+                                                    "configAlternates": {
+                                                        "html": "string",
+                                                        "reference": "string",
+                                                        "style": "string",
+                                                        "width": "auto"
+                                                    },
+                                                    "name": "MyLabel4",
+                                                    "designerId": "197775d2-cc3c-4296-86e9-9cbb0476d40a"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.Spacer",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|flex": 1
+                                            },
+                                            "configAlternates": {
+                                                "layout|flex": "number"
+                                            },
+                                            "name": "MySpacer2",
+                                            "designerId": "99e0b140-32f8-497e-aaa0-ea68a118554d"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "hidden": false,
+                        "name": "차주(예정)",
+                        "reference": "nextCtn",
+                        "shadow": false,
+                        "style": "",
+                        "width": "100%"
+                    },
+                    "configAlternates": {
+                        "name": "string",
+                        "reference": "string",
+                        "shadow": "boolean",
+                        "style": "string",
+                        "width": "auto",
+                        "margin": "auto",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyContainer7",
+                    "designerId": "08dc05e4-6dcc-47f8-99b2-41fea8baf1c0",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onContainerResize",
+                                "implHandler": [
+                                    "element.updateLayout();",
+                                    "this.getView().updateLayout();"
+                                ],
+                                "name": "resize",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onContainerResize",
+                            "designerId": "2b51ba9e-f97a-4ab5-a705-abac1a513233"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 800,
+                        "hidden": false,
+                        "reference": "emptyCtn",
+                        "shadow": false,
+                        "style": "",
+                        "width": "100%"
+                    },
+                    "configAlternates": {
+                        "name": "string",
+                        "reference": "string",
+                        "shadow": "boolean",
+                        "style": "string",
+                        "width": "auto",
+                        "margin": "auto",
+                        "hidden": "boolean",
+                        "height": "auto"
+                    },
+                    "name": "MyContainer12",
+                    "designerId": "f62e167d-3aac-4be9-b33d-fb583f3f2905"
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "초기화"
+                ],
+                "fn": "onContainerInitialize",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences();",
+                    "",
+                    "",
+                    "vm.set('initData', component.config.data);\t// 초기데이터",
+                    "",
+                    "me.onSelectRept();",
+                    ""
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onContainerInitialize",
+            "designerId": "d0dff916-adb6-4cd4-957e-3e54d2bd734c"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bottom": 10,
+                "designer|uiInterfaceName": "round",
+                "height": 70,
+                "iconCls": "icon_work_write",
+                "reference": "writeBtn",
+                "right": "5%",
+                "style": "position : absolute; background : #D71820 0% 0% no-repeat padding-box; box-shadow:0px 6px 12px rgba(9,38,95,0.2);",
+                "ui": "round",
+                "width": 70
+            },
+            "configAlternates": {
+                "docked": "string",
+                "text": "string",
+                "width": "auto",
+                "border": "boolean",
+                "margin": "auto",
+                "bottom": "auto",
+                "designer|uiInterfaceName": "string",
+                "iconCls": "string",
+                "right": "auto",
+                "style": "string",
+                "ui": "string",
+                "height": "auto",
+                "reference": "string"
+            },
+            "name": "MyButton1",
+            "designerId": "1a558bdd-851d-400c-a0c2-691fcb11d5b8",
+            "cn": [
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onButtonTapWrite",
+                        "implHandler": [
+                            "var me = this,",
+                            "    vm = me.getViewModel(),",
+                            "    refs = me.getReferences(),",
+                            "    naviView = me.getView().up('navigationview');",
+                            "",
+                            "var maxCnt = Properties.getProperty('BOM_MAX_WEEK_WORK');",
+                            "",
+                            "if(!vm.get('tmrdInfo.empCnt')){",
+                            "    me.showAlert('주간 주요업무 작성 대상자가 아닙니다.');",
+                            "    return false;",
+                            "}",
+                            "if(vm.get('tmrdInfo.wrtrState') == 'FALSE' && (button.reference == 'writeBtn')){",
+                            "    me.showAlert('주간 주요업무 작성기간이 아닙니다.' );",
+                            "    return false;",
+                            "}",
+                            "",
+                            "if((vm.get('reptList').length>= maxCnt) && (button.reference == 'writeBtn' )){",
+                            "    me.showAlert('작성은 최대 ' + maxCnt + '개까지 가능합니다' );",
+                            "    return false;",
+                            "}",
+                            "",
+                            "var boWekmTmrdId = vm.get('tmrdInfo.boWekmTmrdId');",
+                            "var boWekdTmrdEmpId = vm.get('empInfo.boWekdTmrdEmpId');",
+                            "var tmrdInfo = vm.get('tmrdInfo');",
+                            "var empInfo = vm.get('empInfo');",
+                            "var popupData = {",
+                            "       boWekmTmrdId : boWekmTmrdId,",
+                            "       boWekdTmrdEmpId : boWekdTmrdEmpId,",
+                            "       tmrdInfo : tmrdInfo,",
+                            "       empInfo : empInfo,",
+                            "    };",
+                            "",
+                            "// onSelect 함수에서 만들어지는 reference와 itemId로 컨테이너 구분",
+                            "",
+                            "var ctnNum = button.getItemId().replace(/btn/g,'');",
+                            "if(button.reference != 'writeBtn'){",
+                            "    var reptData = vm.get('reptList')[ctnNum];",
+                            "    reptData.strdt = DateUtils.parseDate(reptData.strdt);",
+                            "    reptData.edt = DateUtils.parseDate(reptData.edt);",
+                            "    popupData.reptData = reptData;",
+                            "}",
+                            "",
+                            "Ext.Ajax.request({",
+                            "    headers: {",
+                            "        viewId : me.getViewId(),",
+                            "        serviceId : 'BomWekWorkSvc.findCodelist' // 사무분담 프로젝트 조회",
+                            "    },",
+                            "    jsonData : {",
+                            "        boWekmTmrdId : boWekmTmrdId,",
+                            "    },",
+                            "    scope : me,",
+                            "    success : function(response) {",
+                            "        var res = Ext.JSON.decode(response.responseText);",
+                            "        popupData.rolList = res.rolList;",
+                            "        popupData.prjList = res.prjList;",
+                            "        popupData.bizList = res.bizList;",
+                            "",
+                            "        me.PUSH_VIEW(naviView, {",
+                            "                    menuId  : 'BomWekWork02M',",
+                            "                    title   : '주간주요업무',",
+                            "                    isSubView : true,",
+                            "                    parentView : me.getView(),",
+                            "                    popupData : Ext.clone(popupData)",
+                            "                });",
+                            "//         var win = Ext.create('BomWekWork51M', Ext.clone(popupData));",
+                            "//         me.mon(win, 'complete', function() {",
+                            "//             me.onSelectRept();",
+                            "//         }, me);",
+                            "//         win.show();",
+                            "    }",
+                            "});",
+                            "",
+                            "",
+                            ""
+                        ],
+                        "name": "tap",
+                        "scope": "me"
+                    },
+                    "configAlternates": {
+                        "fn": "string",
+                        "implHandler": "code",
+                        "name": "string",
+                        "scope": "string"
+                    },
+                    "name": "onButtonTapWrite",
+                    "designerId": "51200d75-902a-41a3-ade1-cca1277585f5"
+                }
+            ]
+        }
+    ]
+}

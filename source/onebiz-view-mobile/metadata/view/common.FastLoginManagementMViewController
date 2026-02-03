@@ -1,0 +1,68 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|extend": "BaseViewController",
+        "designer|userAlias": "common.fastloginmanagementm",
+        "designer|userClassName": "common.FastLoginManagementMViewController",
+        "viewId": "FastLoginManagement"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "designer|extend": "string",
+        "viewId": "string"
+    },
+    "designerId": "773eb7c0-a6d1-4a0c-958a-e0a3a114e9cf",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "viewId",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "validateForm",
+                "implHandler": [
+                    "var me = this,",
+                    "    refs = me.getReferences(),",
+                    "    btnSave = refs.btnSave,",
+                    "    form = refs.form,",
+                    "    values = form.getValues(),",
+                    "    currPassword = values.currPassword,",
+                    "    fastPassword = values.fastPassword,",
+                    "    fastPasswordCheck = values.fastPasswordCheck;",
+                    "",
+                    "// 현재비밀번호 입력",
+                    "// 빠른로그인 비밀번호 입력 과 확인 비밀번호 동일",
+                    "// 빠른로그인 비밀번호 입력 숫자6자리",
+                    "// 빠른로그인 비밀번호 확인 숫자6자리",
+                    "if (currPassword && ( fastPassword === fastPasswordCheck) && /^\\d{6}$/g.test(fastPassword) && /^\\d{6}$/g.test(fastPasswordCheck)) {",
+                    "    btnSave.setDisabled(false);",
+                    "}",
+                    "else {",
+                    "    btnSave.setDisabled(true);",
+                    "}"
+                ]
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "validateForm",
+            "designerId": "619cf008-4d0d-406e-b102-fd5c03b532c1"
+        }
+    ]
+}

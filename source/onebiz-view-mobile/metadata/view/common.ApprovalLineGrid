@@ -1,0 +1,446 @@
+{
+    "type": "Ext.grid.Grid",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "ApprovalLineGrid"
+        ],
+        "designer|commentHeader": [
+            "공통 / 결재선 View",
+            "",
+            "@author BNK시스템/팀장/손승범",
+            "@since 2019.06.17.",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "  수정일         수정자                      수정내용",
+            " ------------   ---------                 --------------------------",
+            "  2019.06.17.   BNK시스템/팀장/손승범         최초 생성"
+        ],
+        "designer|userAlias": "common.approvallinegrid",
+        "designer|userClassName": "common.ApprovalLineGrid",
+        "height": "100%",
+        "itemConfig": [
+            "{",
+            "    \"xtype\":\"gridrow\",",
+            "    body : {",
+            "        tpl: '<div>' + ",
+            "                 '<span style=\"font-weight:bold;font-size:15px;padding-right:10px;\">{aprStcdNm}</span>' + ",
+            "                 '<span style=\"font-weight:bold;font-size:15px;\">{aprvr}</span>' + ",
+            "             '</div>' +",
+            "             '<tpl if=\"!(!dlvDtti && !aprDtti)\">' +",
+            "                 '<div>' +",
+            "                     '<span style=\"color: red;\">' +",
+            "                         '<tpl if=\"!!aprDtti\">결재 {aprDtti}</tpl>' +",
+            "                     '</span>' + ",
+            "                 '</div>' +",
+            "                 '<div>' +",
+            "                     '<span style=\"color: green;padding-right:10px;\">' + ",
+            "                         '<tpl if=\"!!dlvDtti\">수신 {dlvDtti}</tpl>' +",
+            "                     '</span>' + ",
+            "                 '</div>' +",
+            "             '</tpl>' +",
+            "             '<tpl if=\"!!aprComment\">' +",
+            "                 '<div>의견 {aprComment}</div>' +",
+            "             '</tpl>'",
+            "    }",
+            "}"
+        ],
+        "reference": "approvalLineGrid",
+        "title": "결재선",
+        "width": "100%"
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "width": "auto",
+        "reference": "string",
+        "itemConfig": "object",
+        "title": "string",
+        "designer|commentHeader": "comment"
+    },
+    "name": "MyGrid",
+    "designerId": "539a6522-9843-49e3-9ecb-51046086b29b",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "line1Tpl",
+            "type": "string"
+        },
+        {
+            "group": "(Custom Properties)",
+            "name": "line2Tpl",
+            "type": "string"
+        }
+    ],
+    "viewControllerInstanceId": "2f930be7-9dd4-4b53-83ff-8487ef559a02",
+    "viewModelInstanceId": "de906077-b8bf-40e1-a1a7-b600769b614a",
+    "cn": [
+        {
+            "type": "Ext.grid.column.Number",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "id",
+                "docked": null,
+                "hidden": true,
+                "text": "ID"
+            },
+            "configAlternates": {
+                "dataIndex": "datafield",
+                "docked": "string",
+                "text": "string",
+                "hidden": "boolean"
+            },
+            "name": "MyNumberColumn",
+            "designerId": "4f3af14b-44fb-4f9b-bba9-8e167ad7e72c"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "aprStcdNm",
+                "docked": null,
+                "hidden": true,
+                "menuDisabled": true,
+                "sortable": false,
+                "text": "결재상태명"
+            },
+            "configAlternates": {
+                "dataIndex": "datafield",
+                "docked": "string",
+                "text": "string",
+                "hidden": "boolean",
+                "menuDisabled": "boolean",
+                "sortable": "boolean"
+            },
+            "name": "MyColumn16",
+            "designerId": "f682a9b0-f0ae-42f6-937d-7546ebe62e61"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "aprKndcdNm",
+                "docked": null,
+                "hidden": true,
+                "menuDisabled": true,
+                "sortable": false,
+                "text": "결재종류명"
+            },
+            "configAlternates": {
+                "dataIndex": "datafield",
+                "docked": "string",
+                "text": "string",
+                "hidden": "boolean",
+                "menuDisabled": "boolean",
+                "sortable": "boolean"
+            },
+            "name": "MyColumn1",
+            "designerId": "5d20d793-19df-441f-8dfd-387a67076e84"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "aprvr",
+                "docked": null,
+                "hidden": true,
+                "menuDisabled": true,
+                "sortable": false,
+                "text": "기안자"
+            },
+            "configAlternates": {
+                "dataIndex": "datafield",
+                "docked": "string",
+                "text": "string",
+                "hidden": "boolean",
+                "menuDisabled": "boolean",
+                "sortable": "boolean"
+            },
+            "name": "MyColumn",
+            "designerId": "8ec484ad-fb88-4553-812c-e62b8d72345d"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "sno",
+                "docked": null,
+                "hidden": true,
+                "text": "순번"
+            },
+            "configAlternates": {
+                "dataIndex": "datafield",
+                "docked": "string",
+                "text": "string",
+                "hidden": "boolean"
+            },
+            "name": "MyColumn3",
+            "designerId": "db7e8b0c-b585-4fb5-9079-7d1d058e3b77"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "aprvrNm",
+                "docked": null,
+                "hidden": true,
+                "text": "성명"
+            },
+            "configAlternates": {
+                "dataIndex": "datafield",
+                "docked": "string",
+                "text": "string",
+                "hidden": "boolean"
+            },
+            "name": "MyColumn19",
+            "designerId": "1ead2ab3-bc90-411e-9899-660826222433"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "aprvrPsinm",
+                "docked": null,
+                "hidden": true,
+                "text": "직위"
+            },
+            "configAlternates": {
+                "dataIndex": "datafield",
+                "docked": "string",
+                "text": "string",
+                "hidden": "boolean"
+            },
+            "name": "MyColumn13",
+            "designerId": "ef0e0bee-15a1-4efb-afae-5d11313144dd"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "aprStcd",
+                "docked": null,
+                "hidden": true,
+                "menuDisabled": true,
+                "renderer": "gridRenderer",
+                "sortable": false,
+                "text": "결재상태"
+            },
+            "configAlternates": {
+                "dataIndex": "datafield",
+                "docked": "string",
+                "text": "string",
+                "renderer": "string",
+                "hidden": "boolean",
+                "menuDisabled": "boolean",
+                "sortable": "boolean"
+            },
+            "name": "MyColumn14",
+            "designerId": "2d0b2572-68a6-49ff-b903-48a34c9752a8"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "aprKndcd",
+                "docked": null,
+                "hidden": true,
+                "renderer": "gridRenderer",
+                "text": "결재종류"
+            },
+            "configAlternates": {
+                "dataIndex": "datafield",
+                "docked": "string",
+                "text": "string",
+                "renderer": "string",
+                "hidden": "boolean"
+            },
+            "name": "MyColumn15",
+            "designerId": "9e6b20ae-f014-4430-8098-fe15bff7d662"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "aprvrDpnm",
+                "docked": null,
+                "hidden": true,
+                "text": "부서"
+            },
+            "configAlternates": {
+                "dataIndex": "datafield",
+                "docked": "string",
+                "text": "string",
+                "hidden": "boolean"
+            },
+            "name": "MyColumn4",
+            "designerId": "13f999e2-36cb-496f-8c8d-affce2b272d6"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "dlvDtti",
+                "docked": null,
+                "hidden": true,
+                "menuDisabled": true,
+                "sortable": false,
+                "text": "받은일자"
+            },
+            "configAlternates": {
+                "dataIndex": "datafield",
+                "docked": "string",
+                "text": "string",
+                "hidden": "boolean",
+                "menuDisabled": "boolean",
+                "sortable": "boolean"
+            },
+            "name": "MyColumn18",
+            "designerId": "a8173872-f68e-4a22-9f16-2f1c325a8d1a"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "aprDtti",
+                "docked": null,
+                "hidden": true,
+                "menuDisabled": true,
+                "sortable": false,
+                "text": "결재일자"
+            },
+            "configAlternates": {
+                "dataIndex": "datafield",
+                "docked": "string",
+                "text": "string",
+                "hidden": "boolean",
+                "menuDisabled": "boolean",
+                "sortable": "boolean"
+            },
+            "name": "MyColumn17",
+            "designerId": "7b10061f-3d2a-49db-b468-85e64246368f"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "aprvrId",
+                "docked": null,
+                "hidden": true,
+                "text": "사번"
+            },
+            "configAlternates": {
+                "dataIndex": "datafield",
+                "docked": "string",
+                "text": "string",
+                "hidden": "boolean"
+            },
+            "name": "MyColumn9",
+            "designerId": "84517ade-1e4e-49fa-b778-d30fe95a4dcf"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "aprvrDeptCd",
+                "docked": null,
+                "hidden": true,
+                "text": "부서코드"
+            },
+            "configAlternates": {
+                "dataIndex": "datafield",
+                "docked": "string",
+                "text": "string",
+                "hidden": "boolean"
+            },
+            "name": "MyColumn10",
+            "designerId": "a9731290-8161-49cf-963c-6ed669ac7d05"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "aprComment",
+                "docked": null,
+                "hidden": true,
+                "text": "결재의견"
+            },
+            "configAlternates": {
+                "dataIndex": "datafield",
+                "docked": "string",
+                "text": "string",
+                "hidden": "boolean"
+            },
+            "name": "MyColumn11",
+            "designerId": "c3677f99-6a67-4210-94ad-6359eb5567bc"
+        }
+    ]
+}

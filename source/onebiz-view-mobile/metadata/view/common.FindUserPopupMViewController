@@ -1,0 +1,162 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|extend": "BaseViewController",
+        "designer|userAlias": "FindUserPopupMViewController",
+        "designer|userClassName": "common.FindUserPopupMViewController",
+        "viewId": "FindUserPopupM"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "designer|extend": "string",
+        "viewId": "string"
+    },
+    "name": "biz.PAGE006P1ViewController1",
+    "designerId": "dd6064d7-1638-4290-a1d7-5f7c07dd8f22",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "viewId",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "visibleParam"
+                ],
+                "fn": "tab2ButtonSetter",
+                "implHandler": [
+                    "var me = this;",
+                    "var refs = me.getReferences();",
+                    "refs.addBtn.setVisibility(visibleParam);",
+                    "refs.modifyBtn.setVisibility(!visibleParam);",
+                    "refs.delBtn.setVisibility(!visibleParam);",
+                    "",
+                    "if(visibleParam){",
+                    "    refs.dpnm.setValue('');",
+                    "    refs.empePsitNm.setValue('');",
+                    "    refs.empeNo.setValue('');",
+                    "    refs.empeNm.setValue('');",
+                    "    refs.id.setValue('');",
+                    "}",
+                    ""
+                ]
+            },
+            "configAlternates": {
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "tab2ButtonSetter",
+            "designerId": "e67329f3-1663-4a08-8c1f-7ce67fb8724b"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "pageReset"
+                ],
+                "fn": "onSelect",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    store = me.getStore('EMPINFOStore'),",
+                    "    command = vm.get('command'),",
+                    "    page = arguments[0] || 1; // 페이지 초기화",
+                    "",
+                    "",
+                    "//r empeNm = refs.searchName.getValue();",
+                    "var hrHrpmDeptId = refs.searchDept.getValue();",
+                    "store.getProxy().extraParams = {",
+                    "    command : command,",
+                    "    hrHrpmDeptId  : hrHrpmDeptId == 999 ? '': hrHrpmDeptId,",
+                    "    wkingDvcdList : [Constants.wkingDvcd.WORK_NORMAL,",
+                    "                     Constants.wkingDvcd.WORK_CONCURRENT,",
+                    "                     Constants.wkingDvcd.WORK_DISPATCH]",
+                    "};",
+                    "",
+                    "if(pageReset){",
+                    "     store.getProxy().extraParams.page = 1;",
+                    "     var toolbar = refs.gridUp.getPlugins()[0];",
+                    "     toolbar.setCurrentPage(1);",
+                    "}",
+                    "",
+                    "store.removeAll();",
+                    "store.loadPage(1);",
+                    ""
+                ]
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "designer|params": "typedarray"
+            },
+            "name": "onSelect",
+            "designerId": "dfcfacfc-b629-4bec-ba8d-fc97d69e10e6"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "data"
+                ],
+                "fn": "checkDuplicate",
+                "implHandler": [
+                    "var me = this,",
+                    "\tvm = me.getViewModel(),",
+                    "\trefs = me.getReferences(),",
+                    "\tstore = me.getStore('SelectEmpStore');",
+                    "",
+                    "var checkData = store.getData();",
+                    "// store.getData().items[0].data",
+                    "",
+                    "var result = 0;",
+                    "for(var i = 0 ; i < checkData.length ; i ++){",
+                    "    var tempData = checkData.items[i].data;",
+                    "    var checkVal = tempData.empeNo + tempData.empeNm;",
+                    "    if(checkVal == data){",
+                    "        result ++;",
+                    "    }",
+                    "}",
+                    "if(result !=0){",
+                    "    Ext.Msg.alert('확인', '연락처와 성명은 중복이 될 수 없습니다');",
+                    "}",
+                    "return  result >0 ? true : false;",
+                    ""
+                ]
+            },
+            "configAlternates": {
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "checkDuplicate",
+            "designerId": "f0f9a958-45b6-44b7-bf3e-83f21733be1a"
+        }
+    ]
+}

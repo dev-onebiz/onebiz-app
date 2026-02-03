@@ -1,0 +1,824 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "HwmOutAply01M"
+        ],
+        "designer|commentHeader": [
+            "모바일 :: 외근신청 - 항목",
+            "",
+            "@author BNK시스템/기타/이상근",
+            "@since 2019.06.14",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일\t\t  수정자                수정내용",
+            "----------\t------------------   --------------------------",
+            "2019.06.14\tBNK시스템/기타/이상근   최초 생성"
+        ],
+        "designer|userAlias": "HwmOutAply01M",
+        "designer|userClassName": "HumanResource.hwm.HwmOutAply01M",
+        "itemId": "budget.exp.expnteaply01m1",
+        "layout": "card"
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "layout": "string",
+        "itemId": "string",
+        "designer|commentHeader": "comment"
+    },
+    "name": "HumanResource.hwm.HwmHodAply01M1",
+    "designerId": "6868c1f9-9eb8-43e0-b6a5-f13f6c0c6c67",
+    "viewControllerInstanceId": "1194d637-e373-4376-a4e9-497a4eca6e38",
+    "viewModelInstanceId": "d0630555-8a0d-4216-b21b-aafd4cd8162f",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "date Search Form",
+                "docked": "top",
+                "height": "100%",
+                "hidden": false,
+                "layout": "hbox",
+                "margin": "0 0 0 10"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "docked": "string",
+                "height": "auto",
+                "margin": "auto",
+                "layout": "string",
+                "width": "auto",
+                "hidden": "boolean"
+            },
+            "name": "MyContainer28",
+            "designerId": "bc95ec5f-5774-48dc-b10f-8ee972f5dacc",
+            "cn": [
+                {
+                    "type": "Ext.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "안내문구",
+                        "height": "100%",
+                        "html": "<br/><br/><pre style=\"font-size:small\">출장 신청기능은 더 나은 서비스를 위하여 준비 중이오니,<br/><br/> 원비즈(웹)에서 신청하시기 바랍니다.<br/><br/> 메뉴 : 원비즈(웹) - 근태신청 - 출장품의서/보고서<br/><br/><br/> 원활한 업무진행을 위해 빠른 시일내로 서비스 하겠습니다.<br/><br/> 업무에 불편을 드려 죄송합니다.<br/><br/> </pre>",
+                        "layout|flex": 1,
+                        "width": "100%"
+                    },
+                    "configAlternates": {
+                        "html": "string",
+                        "style": "string",
+                        "width": "auto",
+                        "designer|displayName": "string",
+                        "height": "auto",
+                        "layout|flex": "number"
+                    },
+                    "name": "MyLabel20",
+                    "designerId": "53f808d9-fff3-4ea7-aa52-c7ce897db0f9"
+                },
+                {
+                    "type": "Ext.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dateFormat": "Y-m-d",
+                        "docked": "left",
+                        "hidden": true,
+                        "itemId": "mydate",
+                        "label": "",
+                        "layout|flex": 1,
+                        "reference": "startDate",
+                        "width": 130
+                    },
+                    "configAlternates": {
+                        "dateFormat": "string",
+                        "docked": "string",
+                        "height": "auto",
+                        "label": "string",
+                        "reference": "string",
+                        "width": "auto",
+                        "margin": "auto",
+                        "maxWidth": "auto",
+                        "minWidth": "auto",
+                        "itemId": "string",
+                        "layout|flex": "number",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyDate",
+                    "designerId": "2646452d-209d-4517-bc86-3a6bb86ef8d1",
+                    "cn": [
+                        {
+                            "type": "Ext.picker.Date",
+                            "reference": {
+                                "name": "picker",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dayText": "일",
+                                "header": false,
+                                "hideOnMaskTap": true,
+                                "monthText": "월",
+                                "slotOrder": [
+                                    "[\"year\",\"month\",\"day\"]"
+                                ],
+                                "title": "",
+                                "yearText": "년"
+                            },
+                            "configAlternates": {
+                                "dayText": "string",
+                                "hideOnMaskTap": "boolean",
+                                "monthText": "string",
+                                "title": "string",
+                                "yearText": "string",
+                                "header": "boolean",
+                                "slotOrder": "array"
+                            },
+                            "name": "MyDatePicker",
+                            "designerId": "6a80379b-b4f0-4a3c-80b3-5373d49ee834"
+                        },
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onMydateChange11",
+                                "implHandler": [
+                                    "// if(oldDate == null){",
+                                    "//             return;",
+                                    "//         }",
+                                    "// this.search();"
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onMydateChange11",
+                            "designerId": "c2c58664-122d-4a3d-8348-8866bca377d6"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dateFormat": "Y-m-d",
+                        "docked": "left",
+                        "hidden": true,
+                        "itemId": "mydate2",
+                        "label": "",
+                        "layout|flex": 1,
+                        "margin": "0 0 0 30",
+                        "name": "",
+                        "reference": "endDate",
+                        "width": 130
+                    },
+                    "configAlternates": {
+                        "dateFormat": "string",
+                        "docked": "string",
+                        "height": "auto",
+                        "label": "string",
+                        "reference": "string",
+                        "width": "auto",
+                        "margin": "auto",
+                        "maxWidth": "auto",
+                        "minWidth": "auto",
+                        "itemId": "string",
+                        "layout|flex": "number",
+                        "name": "string",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyDate2",
+                    "designerId": "6cbc523b-813b-42a7-b515-c7f6b8649027",
+                    "cn": [
+                        {
+                            "type": "Ext.picker.Date",
+                            "reference": {
+                                "name": "picker",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dayText": "일",
+                                "header": false,
+                                "hideOnMaskTap": true,
+                                "monthText": "월",
+                                "slotOrder": [
+                                    "[\"year\",\"month\",\"day\"]"
+                                ],
+                                "title": "",
+                                "yearText": "년"
+                            },
+                            "configAlternates": {
+                                "title": "string",
+                                "header": "boolean",
+                                "hideOnMaskTap": "boolean",
+                                "dayText": "string",
+                                "monthText": "string",
+                                "yearText": "string",
+                                "slotOrder": "array"
+                            },
+                            "name": "MyDatePicker",
+                            "designerId": "15f47e11-9a02-4c88-b2c4-748859e31d24"
+                        },
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onMydate2Change11",
+                                "implHandler": [
+                                    "// if(oldDate == null){",
+                                    "//             return;",
+                                    "//         }",
+                                    "// this.search();"
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onMydate2Change11",
+                            "designerId": "f42b6258-63fd-411f-92a6-5d6be8e8586f"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|uiInterfaceName": "action",
+                        "docked": "right",
+                        "hidden": true,
+                        "itemId": "btnSearch1",
+                        "text": "조회",
+                        "ui": "action"
+                    },
+                    "configAlternates": {
+                        "designer|uiInterfaceName": "string",
+                        "docked": "string",
+                        "itemId": "string",
+                        "margin": "auto",
+                        "text": "string",
+                        "ui": "string",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyButton",
+                    "designerId": "181b07b1-4b1e-452e-af9e-77f34b3b6885",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBtnSearchTap111",
+                                "implHandler": [
+                                    "this.defaut();",
+                                    "this.search();"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnSearchTap111",
+                            "designerId": "ffac078a-1b2b-4381-927f-d082932147c5"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.Grid",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "deselectOnContainerClick": false,
+                "designer|createAlias": "",
+                "designer|displayName": "그리드",
+                "height": "100%",
+                "hidden": true,
+                "hideHeaders": true,
+                "itemId": "mygrid1",
+                "modelValidation": false,
+                "reference": "grid",
+                "signTpl1": "<div>{value1}</div><div>{value2}</div><div>{value3}</div>",
+                "store": [
+                    "{Store}"
+                ],
+                "width": "100%"
+            },
+            "configAlternates": {
+                "height": "auto",
+                "width": "auto",
+                "store": "binding",
+                "designer|displayName": "string",
+                "hideAnimation": "string",
+                "id": "string",
+                "showAnimation": "string",
+                "title": "string",
+                "reference": "string",
+                "designer|createAlias": "string",
+                "modelValidation": "boolean",
+                "selectable": "object",
+                "hideHeaders": "boolean",
+                "itemConfig": "object",
+                "itemId": "string",
+                "signTpl1": "string",
+                "userSelectable": "object",
+                "deselectOnContainerClick": "boolean",
+                "hidden": "boolean"
+            },
+            "name": "MyGrid1",
+            "designerId": "f12b4329-6603-4a6a-a8f8-20f1c0e0df91",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "signTpl1",
+                    "type": "string"
+                }
+            ],
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cell": [
+                            "{\"xtype\":\"gridcell\", encodeHtml:false}"
+                        ],
+                        "dataIndex": "id",
+                        "defaultWidth": 0,
+                        "docked": "left",
+                        "flex": "1.7",
+                        "height": "",
+                        "hidden": false,
+                        "width": "70%"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "docked": "string",
+                        "text": "string",
+                        "width": "auto",
+                        "flex": "string",
+                        "hidden": "boolean",
+                        "html": "string",
+                        "height": "auto",
+                        "style": "object",
+                        "cell": "object",
+                        "defaultWidth": "number"
+                    },
+                    "name": "MyColumn31",
+                    "designerId": "97929f62-04d8-461a-bf75-52f4014a802b",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "flex",
+                            "type": "string"
+                        }
+                    ],
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "record",
+                                    "dataIndex",
+                                    "cell",
+                                    "column"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "var dtDataTemp = record.data.aplOutDt.replace(/-/g,\"\");",
+                                    "",
+                                    "var dateMMdd = dtDataTemp.substr(4,2) + '월 ' +dtDataTemp.substr(6,2) + '일';",
+                                    "var dateYyMMdd =dtDataTemp.substr(0,4) + '-' + dtDataTemp.substr(4,2) + '-' +dtDataTemp.substr(6,2);",
+                                    "var aplDvcdNm = record.data.aplDvcdNm;",
+                                    "var aplDvcd = record.data.aplDvcd;",
+                                    "",
+                                    "aplDvcdNm = aplDvcd == '02' ? \"<font color= 'red'>\" +aplDvcdNm+ \"</font>\":aplDvcdNm;",
+                                    "",
+                                    "var result = '<div><span style=\"font-size:15px;font-weight:bold;width:100%;overflow: hidden;white-space:nowrap;text-overflow:ellipsis;display:inline-block;\">'+dateMMdd+' 외근 '+aplDvcdNm+'</span></div>';",
+                                    "",
+                                    "var AplOutStrdt = record.data.aplOutStrdt;",
+                                    "var AplOutEdt = record.data.aplOutEdt;",
+                                    "var AplOutStrtm = record.data.aplOutStrtm;",
+                                    "var AplOutEdtm = record.data.aplOutEdtm;",
+                                    "",
+                                    "",
+                                    "if(AplOutStrdt != AplOutEdt){",
+                                    "    result += '<div style=\"font-size : 10px\">'+AplOutStrdt+' '+AplOutStrtm+' ~ '+AplOutEdt + ' '+AplOutEdtm+'</div>';",
+                                    "}else{",
+                                    "    result += '<div>'+AplOutStrdt+' | '+AplOutStrtm+'~'+AplOutEdtm+'</div>';",
+                                    "}",
+                                    "",
+                                    "",
+                                    "",
+                                    "",
+                                    "cell.setStyle('padding:0px;');",
+                                    "return result;",
+                                    ""
+                                ]
+                            },
+                            "configAlternates": {
+                                "designer|params": "typedarray",
+                                "fn": "string",
+                                "implHandler": "code"
+                            },
+                            "name": "renderer",
+                            "designerId": "0131f985-528e-49c8-bdb1-1d8a4a4c5717"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "right",
+                        "cell": [
+                            "{\"xtype\":\"gridcell\", encodeHtml:false}"
+                        ],
+                        "dataIndex": "id",
+                        "docked": "right",
+                        "flex": "1.3",
+                        "width": "30%"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "docked": "string",
+                        "text": "string",
+                        "width": "auto",
+                        "flex": "string",
+                        "align": "string",
+                        "cell": "object"
+                    },
+                    "name": "MyColumn",
+                    "designerId": "366aa5bc-ce77-4c92-8531-9318b8443bf1",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "flex",
+                            "type": "string"
+                        }
+                    ],
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "record",
+                                    "dataIndex",
+                                    "cell",
+                                    "column"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "var dtDataTemp = record.data.aplDt.replace(/-/g,\"\");",
+                                    "var result =\"\";",
+                                    "var dateYyMMdd =dtDataTemp.substr(0,4) + '-' + dtDataTemp.substr(4,2) + '-' +dtDataTemp.substr(6,2);",
+                                    "var str = String(result);",
+                                    "result = str.replace(/(\\d)(?=(?:\\d{3})+(?!\\d))/g, '$1,');",
+                                    "result = '<div style=\"font-size:15px;font-weight:bold\">'+dateYyMMdd+'</div>';",
+                                    "result += '<div>'+record.data.aplStcdNm+'</div>';",
+                                    "",
+                                    "return result;",
+                                    "",
+                                    ""
+                                ]
+                            },
+                            "configAlternates": {
+                                "designer|params": "typedarray",
+                                "fn": "string",
+                                "implHandler": "code"
+                            },
+                            "name": "renderer",
+                            "designerId": "e828e7b6-ab1d-4d4f-bee5-abd77e46a7e9"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.plugin.PagingToolbar",
+                    "reference": {
+                        "name": "plugins",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "configAlternates": {
+                        "listeners": "object",
+                        "controller": "string"
+                    },
+                    "name": "MyPagingToolbar",
+                    "designerId": "448379f4-e86e-475c-b16c-7ab03804a4b1",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "listners",
+                            "type": "string"
+                        },
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "listeners",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Toolbar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|pack": "center",
+                        "designer|displayName": "bbar",
+                        "docked": "bottom",
+                        "scrollable": true
+                    },
+                    "configAlternates": {
+                        "docked": "string",
+                        "height": "auto",
+                        "margin": "auto",
+                        "scrollable": "auto",
+                        "padding": "auto",
+                        "style": "object",
+                        "container|pack": "string",
+                        "designer|displayName": "string"
+                    },
+                    "name": "MyToolbar2",
+                    "designerId": "67e80377-6192-449a-b371-f56de158432d",
+                    "cn": [
+                        {
+                            "type": "Ext.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "docked": "left",
+                                "encodeHtml": false,
+                                "margin": "5 0 10 10",
+                                "reference": "lblTotalCnt"
+                            },
+                            "configAlternates": {
+                                "label": "string",
+                                "reference": "string",
+                                "docked": "string",
+                                "height": "auto",
+                                "width": "auto",
+                                "encodeHtml": "boolean",
+                                "layout|flex": "number",
+                                "margin": "auto",
+                                "maxWidth": "auto",
+                                "minWidth": "auto",
+                                "padding": "auto"
+                            },
+                            "name": "MyDisplayField",
+                            "designerId": "6e1fe6a7-e497-4673-aa73-829d23b94095"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "action",
+                                "docked": null,
+                                "height": "",
+                                "itemId": "btnWrite",
+                                "layout|flex": null,
+                                "margin": "5 5 10 5",
+                                "text": "외근 신청",
+                                "ui": "action",
+                                "width": "90%"
+                            },
+                            "configAlternates": {
+                                "docked": "string",
+                                "itemId": "string",
+                                "minWidth": "auto",
+                                "text": "string",
+                                "height": "auto",
+                                "ui": "string",
+                                "designer|uiInterfaceName": "string",
+                                "layout|flex": "number",
+                                "margin": "auto",
+                                "width": "auto"
+                            },
+                            "name": "MyButton2",
+                            "designerId": "0ba49776-155a-4851-8965-bb7efda53fb7",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onBtnWriteTap",
+                                        "implHandler": [
+                                            "var me = this;",
+                                            "var vm = me.getViewModel();",
+                                            "var refs = me.getReferences();",
+                                            "var grid = refs.grid;",
+                                            "var records = grid.getStore().data.items;",
+                                            "var naviView = me.getView().up('navigationview');",
+                                            "me.PUSH_VIEW(naviView, {",
+                                            "    menuId  : 'HwmOutAply02M',",
+                                            "    title   : '외근신청',",
+                                            "    records : [],",
+                                            "    isSubView : true,",
+                                            "    parentView : me.getView()",
+                                            "});",
+                                            "",
+                                            ""
+                                        ],
+                                        "name": "tap",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onBtnWriteTap",
+                                    "designerId": "1b5e21bf-d7dc-411a-b0ed-31e86aa83693"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|commentHeader": [
+                            "Grid Cell Click Event"
+                        ],
+                        "fn": "onMygridSelect",
+                        "implHandler": [
+                            "var me = this;",
+                            "var vm = me.getViewModel();",
+                            "var refs = me.getReferences();",
+                            "var grid = refs.grid;",
+                            "var records = grid.getStore().data.items;",
+                            "var trueRecords = selected; // 선택한 row 들",
+                            "",
+                            "var naviView = me.getView().up('navigationview');",
+                            "me.PUSH_VIEW(naviView, {",
+                            "    menuId  : 'HwmOutAply02M',",
+                            "    title   : '외근신청',",
+                            "    records : trueRecords,",
+                            "    isSubView : true,",
+                            "    parentView : me.getView()",
+                            "});",
+                            "",
+                            "",
+                            ""
+                        ],
+                        "name": "select",
+                        "scope": "me"
+                    },
+                    "configAlternates": {
+                        "fn": "string",
+                        "implHandler": "code",
+                        "name": "string",
+                        "scope": "string",
+                        "designer|commentHeader": "comment"
+                    },
+                    "name": "onMygridSelect",
+                    "designerId": "67c6a100-2675-4e6e-80f5-ac57828686c7"
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "화면초기화"
+                ],
+                "fn": "initialize",
+                "implHandler": [
+                    "",
+                    "",
+                    "var me = this,",
+                    "    refs = me.getReferences(),",
+                    "    grid = refs.grid,",
+                    "    stDt = refs.startDate,",
+                    "    edDt = refs.endDate,",
+                    "    cbxCardNo = refs.cbxCardNo;",
+                    "",
+                    "",
+                    "// var dateMinus1 = new Date();",
+                    "// dateMinus1.setDate(1);",
+                    "// stDt.setValue(DateUtils.parseDate(dateMinus1));",
+                    "",
+                    "// dateMinus1.setMonth(dateMinus1.getMonth()+1);",
+                    "// dateMinus1.setDate(7);",
+                    "// edDt.setValue(DateUtils.parseDate(dateMinus1));",
+                    "",
+                    "// grid.el.select('.x-headercontainer').setStyle('height',\t'0px');",
+                    "",
+                    "",
+                    "// this.search();"
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string",
+                "designer|commentHeader": "comment"
+            },
+            "name": "initialize",
+            "designerId": "14b66c97-9b28-4788-93c4-c569eb0c794a"
+        }
+    ]
+}

@@ -1,0 +1,1006 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "BomTasSend02M"
+        ],
+        "designer|userAlias": "BomTasSend02M",
+        "designer|userClassName": "BackOffice.bom.BomTasSend02M",
+        "layout": "vbox"
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "layout": "string"
+    },
+    "name": "BackOffice.bom.BomMtgBoo04M1",
+    "designerId": "dca9f7f4-f442-4779-a9a8-bee9ee6fbb4e",
+    "viewControllerInstanceId": "68ff74c7-9d91-4cb6-8fda-31619b352ad2",
+    "viewModelInstanceId": "880911e0-ee62-472f-997e-6bd585661121",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "reference": "frmDetail"
+            },
+            "configAlternates": {
+                "layout|flex": "number",
+                "reference": "string"
+            },
+            "name": "MyFormPanel",
+            "designerId": "c9eb1ba8-9934-4667-8f76-7f3119d54286",
+            "cn": [
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "전송제목",
+                        "label": "전송제목",
+                        "maxLength": 30,
+                        "reference": "title",
+                        "required": true,
+                        "value": [
+                            "{record.title}"
+                        ]
+                    },
+                    "configAlternates": {
+                        "height": "auto",
+                        "label": "string",
+                        "designer|displayName": "string",
+                        "reference": "string",
+                        "maxLength": "number",
+                        "required": "boolean",
+                        "value": "binding"
+                    },
+                    "name": "MyTextField",
+                    "designerId": "e6c52b0b-52e7-4842-bab9-30e1cd2afc29"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "요약",
+                        "label": "요약",
+                        "maxLength": 50,
+                        "reference": "body",
+                        "required": true,
+                        "value": [
+                            "{record.body}"
+                        ]
+                    },
+                    "configAlternates": {
+                        "height": "auto",
+                        "label": "string",
+                        "designer|displayName": "string",
+                        "reference": "string",
+                        "maxLength": "number",
+                        "value": "binding",
+                        "required": "boolean"
+                    },
+                    "name": "MyTextField14",
+                    "designerId": "2c70dc35-4759-4355-ada5-01260df14eee"
+                },
+                {
+                    "type": "Ext.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "중요도",
+                        "label": "중요도",
+                        "maxLength": 5,
+                        "reference": "priority",
+                        "required": true,
+                        "value": [
+                            "{record.priority}"
+                        ]
+                    },
+                    "configAlternates": {
+                        "height": "auto",
+                        "label": "string",
+                        "designer|displayName": "string",
+                        "reference": "string",
+                        "maxLength": "number",
+                        "value": "binding",
+                        "required": "boolean"
+                    },
+                    "name": "MyNumberField1",
+                    "designerId": "9652e864-6c6c-40f8-af34-c228ba1d3851"
+                },
+                {
+                    "type": "Ext.field.TextArea",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "내용",
+                        "docked": null,
+                        "height": 300,
+                        "label": "내용",
+                        "reference": "cntn",
+                        "required": true,
+                        "scrollable": "vertical",
+                        "value": [
+                            "{record.content}"
+                        ]
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "docked": "string",
+                        "height": "auto",
+                        "label": "string",
+                        "scrollable": "auto",
+                        "required": "boolean",
+                        "value": "binding",
+                        "reference": "string"
+                    },
+                    "name": "MyTextArea1",
+                    "designerId": "4dab316a-2578-4775-a4cc-3cfc851eb1b2"
+                },
+                {
+                    "type": "Ext.grid.Grid",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "columnLines": true,
+                        "designer|displayName": "사용자 및 사용부문",
+                        "hideHeaders": true,
+                        "margin": "5 0 0 0",
+                        "maxHeight": 430,
+                        "minHeight": 215,
+                        "pinHeaders": false,
+                        "reference": "hrHromJasPrjGrid",
+                        "scrollable": "vertical",
+                        "sortable": false,
+                        "store": [
+                            "{hrHromJasPrjStore}"
+                        ],
+                        "width": "100%"
+                    },
+                    "configAlternates": {
+                        "store": "binding",
+                        "designer|displayName": "string",
+                        "height": "auto",
+                        "minHeight": "auto",
+                        "reference": "string",
+                        "sortable": "boolean",
+                        "width": "auto",
+                        "listeners": "object",
+                        "columnLines": "boolean",
+                        "grouped": "boolean",
+                        "hideHeaders": "boolean",
+                        "scrollable": "auto",
+                        "margin": "auto",
+                        "pinHeaders": "boolean",
+                        "maxHeight": "auto"
+                    },
+                    "name": "MyGrid6",
+                    "designerId": "48b811dc-7a40-452b-8668-46caefa1d777",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "listeners",
+                            "type": "string"
+                        }
+                    ],
+                    "cn": [
+                        {
+                            "type": "Ext.Toolbar",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "docked": "top"
+                            },
+                            "configAlternates": {
+                                "docked": "string"
+                            },
+                            "name": "MyToolbar",
+                            "designerId": "76d7f0ac-b1b9-42d4-9d84-b3f24e06360c",
+                            "cn": [
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "html": [
+                                            "{gridTitle}"
+                                        ]
+                                    },
+                                    "configAlternates": {
+                                        "html": "binding",
+                                        "bind": "binding"
+                                    },
+                                    "name": "MyLabel",
+                                    "designerId": "03072b0f-cddb-4ebb-b79a-5ecb4486a5ed"
+                                },
+                                {
+                                    "type": "Ext.Spacer",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "name": "MySpacer",
+                                    "designerId": "c30342e9-e4c7-4cd5-bd25-eb89a986d62e"
+                                },
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "hidden": [
+                                            "{cardItem.isAply}"
+                                        ],
+                                        "iconCls": "x-fa fa-plus",
+                                        "reference": "btnFindAllUser",
+                                        "text": "전체추가"
+                                    },
+                                    "configAlternates": {
+                                        "iconCls": "string",
+                                        "text": "string",
+                                        "hidden": "binding",
+                                        "reference": "string"
+                                    },
+                                    "name": "MyButton",
+                                    "designerId": "7f88c87a-8c28-40c8-ac54-169e792969e4",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onAddAllUsers",
+                                                "implHandler": [
+                                                    "var me = this;",
+                                                    "var vm = me.getViewModel();",
+                                                    "",
+                                                    "var params = {};",
+                                                    "params.noPaging = true;",
+                                                    "",
+                                                    "Ext.Ajax.request({",
+                                                    "    headers: {",
+                                                    "        viewId : me.getViewId(),",
+                                                    "        serviceId : 'BizComSvc.findAllComCmmUserM'",
+                                                    "    },",
+                                                    "    jsonData : params,",
+                                                    "    scope : me,",
+                                                    "    success : function(response) {",
+                                                    "        var me = this;",
+                                                    "        var res = Ext.JSON.decode(response.responseText);",
+                                                    "",
+                                                    "        var gridData = res.content;",
+                                                    "        if(gridData && gridData.length > 0){",
+                                                    "            vm.set('cardItem.gridData', []);",
+                                                    "            for(var row in gridData){",
+                                                    "                vm.get('cardItem.gridData').push(gridData[row]);",
+                                                    "            }",
+                                                    "        }",
+                                                    "",
+                                                    "        var result = '';",
+                                                    "        var userInfoList = [];",
+                                                    "        var hrHromJasPrjId = null;",
+                                                    "",
+                                                    "        if(vm.get('cardItem.hrHromJasPrjId')){ // 사용부문",
+                                                    "            hrHromJasPrjId = vm.get('cardItem.hrHromJasPrjId');",
+                                                    "        }",
+                                                    "",
+                                                    "        for(var i in gridData){",
+                                                    "            userInfoList[i] = gridData[i];",
+                                                    "            userInfoList[i].hrHromJasPrjId = hrHromJasPrjId;",
+                                                    "",
+                                                    "            result += gridData[i].empeNm + '(' + gridData[i].dpnm + ')';",
+                                                    "            if(i != gridData.length - 1){",
+                                                    "                result += ', ';",
+                                                    "            }",
+                                                    "        }",
+                                                    "",
+                                                    "        vm.set('cardItem.userInfoList', userInfoList);",
+                                                    "        vm.set('cardItem.userOrUseDept', result);",
+                                                    "",
+                                                    "         // 2019-07-30 손승범 사용자별 사용부문처리를 위해 추가",
+                                                    "         var records = [];",
+                                                    "         for (i in gridData) {",
+                                                    "             data = gridData[i];",
+                                                    "             // 사용자명 포매팅 추가설정",
+                                                    "             data.formattedEmpeNm = Ext.String.format('{0}({1})', data.empeNm, data.dpnm);",
+                                                    "             data.stfDvcd = '01';",
+                                                    "             data.stfDvcdNm = '내부직원';",
+                                                    "             records.push(data);",
+                                                    "         }",
+                                                    "",
+                                                    "         vm.set('hrHromJasPrjStore', records); // 중요",
+                                                    "         vm.set('cardItem.hrHromJasPrjList', records);",
+                                                    "         vm.set('gridTitle','대상자(' + records.length + ')');",
+                                                    "",
+                                                    "        }",
+                                                    "    });"
+                                                ],
+                                                "name": "tap",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onAddAllUsers",
+                                            "designerId": "40c83292-67d9-418d-916b-3acb05b6b66d"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "hidden": [
+                                            "{cardItem.isAply}"
+                                        ],
+                                        "iconCls": "x-fa fa-search",
+                                        "reference": "btnFindUserAtnd",
+                                        "text": "조회"
+                                    },
+                                    "configAlternates": {
+                                        "iconCls": "string",
+                                        "text": "string",
+                                        "hidden": "binding",
+                                        "reference": "string"
+                                    },
+                                    "name": "MyButton11",
+                                    "designerId": "78438d82-0546-4611-82a9-55c65abe308c",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onFindUsers",
+                                                "implHandler": [
+                                                    "var me = this;",
+                                                    "var vm = me.getViewModel();",
+                                                    "",
+                                                    "// 팝업창 생성 및 데이터전달",
+                                                    "var win = Ext.create('FindUserPopupM', {",
+                                                    "    accItemCd : vm.get('cardItem.accItemCd'),",
+                                                    "    gridData : vm.get('cardItem.hrHromJasPrjList'),",
+                                                    "    extenalEmpHidden : true,",
+                                                    "});",
+                                                    "",
+                                                    "// 팝업창에서 이벤트 호출시 실행되는 함수",
+                                                    "me.mon(win, 'selected', function(data) {",
+                                                    "    var me = this;",
+                                                    "",
+                                                    "    // 사용자 팝업에서 선택한 사용자들 기억하여 다시 사용자 팝업으로 돌려주기",
+                                                    "    var gridData = data.items;",
+                                                    "    if(gridData && gridData.length > 0){",
+                                                    "        vm.set('cardItem.gridData', []);",
+                                                    "        for(var row in gridData){",
+                                                    "            vm.get('cardItem.gridData').push(gridData[row]);",
+                                                    "        }",
+                                                    "    }",
+                                                    "",
+                                                    "    var result = '';",
+                                                    "    var userInfoList = [];",
+                                                    "    var hrHromJasPrjId = null;",
+                                                    "",
+                                                    "    if(vm.get('cardItem.hrHromJasPrjId')){ // 사용부문",
+                                                    "        hrHromJasPrjId = vm.get('cardItem.hrHromJasPrjId');",
+                                                    "    }",
+                                                    "",
+                                                    "    for(var i in data.items){",
+                                                    "        userInfoList[i] = data.items[i].data;",
+                                                    "        userInfoList[i].hrHromJasPrjId = hrHromJasPrjId;",
+                                                    "",
+                                                    "        result += data.items[i].data.empeNm + '(' + data.items[i].data.dpnm + ')';",
+                                                    "        if(i != data.items.length - 1){",
+                                                    "            result += ', ';",
+                                                    "        }",
+                                                    "    }",
+                                                    "",
+                                                    "    vm.set('cardItem.userInfoList', userInfoList);",
+                                                    "    vm.set('cardItem.userOrUseDept', result);",
+                                                    "",
+                                                    "     var records = [];",
+                                                    "     for (i in gridData) {",
+                                                    "         data = gridData[i].data;",
+                                                    "         // 사용자명 포매팅 추가설정",
+                                                    "         data.formattedEmpeNm = Ext.String.format('{0}({1})', data.empeNm, data.dpnm);",
+                                                    "         records.push(data);",
+                                                    "     }",
+                                                    "",
+                                                    "//      vm.get('hrHromJasPrjStore').add(records);",
+                                                    "     vm.set('hrHromJasPrjStore', records); // 중요",
+                                                    "     vm.set('cardItem.hrHromJasPrjList', records);",
+                                                    "     vm.set('gridTitle','대상자(' + records.length + ')');",
+                                                    "",
+                                                    "}, me);",
+                                                    "",
+                                                    "win.show(); // 팝업창표시"
+                                                ],
+                                                "name": "tap",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onFindUsers",
+                                            "designerId": "1187f7d1-df75-4f29-9993-17e0ecaf84e9"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "disabled": [
+                                            "{!hrHromJasPrjGrid.selection}"
+                                        ],
+                                        "hidden": false,
+                                        "iconCls": "x-fa fa-trash",
+                                        "reference": "btnDeleteUser",
+                                        "text": "삭제"
+                                    },
+                                    "configAlternates": {
+                                        "iconCls": "string",
+                                        "text": "string",
+                                        "reference": "string",
+                                        "hidden": "boolean",
+                                        "disabled": "binding"
+                                    },
+                                    "name": "MyButton7",
+                                    "designerId": "84084093-786d-4d0e-87f7-0008a78f1761",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onDeleteUser",
+                                                "implHandler": [
+                                                    "var me = this;",
+                                                    "var vm = me.getViewModel();",
+                                                    "var refs = me.getReferences();",
+                                                    "",
+                                                    "",
+                                                    "",
+                                                    "Ext.Msg.confirm('안내', '삭제 하시겠습니까?', function(button) {",
+                                                    "",
+                                                    "        var gridData = [];",
+                                                    "",
+                                                    "        var record = refs.hrHromJasPrjGrid.getSelection().data;",
+                                                    "        record.stcd = Constants.stcd.DELETE;",
+                                                    "",
+                                                    "        gridData.push(record);",
+                                                    "",
+                                                    "        if (button == 'yes') {",
+                                                    "          var values = {",
+                                                    "            gridData : gridData,",
+                                                    "          };",
+                                                    "          Ext.Ajax.request({",
+                                                    "            headers : {",
+                                                    "              serviceId : 'BomTasSvc.saveBomTasTrsDtl',",
+                                                    "              viewId : me.getViewId(),",
+                                                    "              scope : me",
+                                                    "            },",
+                                                    "            jsonData : values, //서버에 같이 데이터 넘겨주기",
+                                                    "            scope : me,",
+                                                    "            success : function(response) {",
+                                                    "              Ext.Msg.alert('알림', Messages.getMessage('I0000'));",
+                                                    "",
+                                                    "              var params = vm.get('selectedRecord');",
+                                                    "              Ext.Ajax.request({",
+                                                    "                headers : {",
+                                                    "                  serviceId : 'BomTasSvc.findAllBomTasiTrs',",
+                                                    "                  viewId : me.getViewId(),",
+                                                    "                  scope : me",
+                                                    "                },",
+                                                    "                jsonData : params,",
+                                                    "                scope : me,",
+                                                    "                success : function(response) {",
+                                                    "                  var res = Ext.JSON.decode(response.responseText);",
+                                                    "                    var content = res.result;",
+                                                    "",
+                                                    "                    vm.set('cardItem.gridData', []);",
+                                                    "",
+                                                    "                    for(var i in content){",
+                                                    "                        vm.get('cardItem.gridData').push(content[i]);",
+                                                    "",
+                                                    "                        vm.get('cardItem.gridData')[i].formattedEmpeNm =",
+                                                    "                            Ext.String.format('{0}({1})', content[i].rcvrNm, content[i].dpnm);",
+                                                    "",
+                                                    "                        vm.get('cardItem.gridData')[i].stfDvcd = '01';",
+                                                    "                        vm.get('cardItem.gridData')[i].stfDvcdNm = '내부직원';",
+                                                    "",
+                                                    "",
+                                                    "                    }",
+                                                    "                    vm.set('hrHromJasPrjStore', vm.get('cardItem.gridData')); // 중요",
+                                                    "                    vm.set('cardItem.hrHromJasPrjList', vm.get('cardItem.gridData'));",
+                                                    "                    ",
+                                                    "                    me.getView().up().down('BomTasSend01M').controller.onSelect();",
+                                                    "                }",
+                                                    "              });",
+                                                    "            }",
+                                                    "          });",
+                                                    "        } else {",
+                                                    "          return false;",
+                                                    "        }",
+                                                    "",
+                                                    "    });",
+                                                    ""
+                                                ],
+                                                "name": "tap",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onDeleteUser",
+                                            "designerId": "2a239731-2d55-49d9-bf88-bfcb4fd02049"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "formattedEmpeNm",
+                                "docked": null,
+                                "flex": "1",
+                                "menuDisabled": true,
+                                "text": "사용자"
+                            },
+                            "configAlternates": {
+                                "renderer": "string",
+                                "dataIndex": "datafield",
+                                "docked": "string",
+                                "flex": "string",
+                                "menuDisabled": "boolean",
+                                "text": "string"
+                            },
+                            "name": "MyColumn2",
+                            "designerId": "7cf3f5c8-3e54-4d1a-8ed7-87b7453ea407",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "flex",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "버튼 영역",
+                "docked": "bottom",
+                "layout": "hbox",
+                "shadow": false
+            },
+            "configAlternates": {
+                "layout|flex": "number",
+                "designer|displayName": "string",
+                "shadow": "boolean",
+                "layout": "string",
+                "margin": "auto",
+                "docked": "string"
+            },
+            "name": "MyContainer76",
+            "designerId": "755684c4-6ff3-4455-9468-a506d1718b69",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|pack": "center",
+                        "designer|displayName": "수정 시 표시 버튼",
+                        "layout": "hbox",
+                        "layout|flex": 1,
+                        "shadow": false
+                    },
+                    "configAlternates": {
+                        "layout|flex": "number",
+                        "designer|displayName": "string",
+                        "shadow": "boolean",
+                        "layout": "string",
+                        "container|pack": "string"
+                    },
+                    "name": "MyContainer59",
+                    "designerId": "51c67539-17c0-49d2-884d-e9356e113f1d",
+                    "cn": [
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "닫기",
+                                "hidden": false,
+                                "layout|flex": 1,
+                                "padding": "5px",
+                                "reference": "btnClose",
+                                "text": "닫기"
+                            },
+                            "configAlternates": {
+                                "text": "string",
+                                "designer|displayName": "string",
+                                "layout|flex": "number",
+                                "hidden": "boolean",
+                                "reference": "string",
+                                "padding": "auto"
+                            },
+                            "name": "MyButton16",
+                            "designerId": "51dff89c-8e44-4e25-a755-f5d737caf2de",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|commentHeader": [
+                                            "취소"
+                                        ],
+                                        "fn": "onButtonTapClose",
+                                        "implHandler": [
+                                            "var me = this;",
+                                            "var refs = me.getReferences();",
+                                            "var vm = me.getViewModel();",
+                                            "",
+                                            "me.getView().up().down('BomTasSend01M').controller.onSelect();",
+                                            "vm.getView().up().pop();"
+                                        ],
+                                        "name": "tap",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "designer|commentHeader": "comment",
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onButtonTapClose",
+                                    "designerId": "93719502-0f15-4d08-ac55-172514da5cc2"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "삭제",
+                                "hidden": true,
+                                "layout|flex": 1,
+                                "padding": "5px",
+                                "reference": "btnCancel",
+                                "text": "삭제"
+                            },
+                            "configAlternates": {
+                                "text": "string",
+                                "designer|displayName": "string",
+                                "layout|flex": "number",
+                                "hidden": "boolean",
+                                "reference": "string",
+                                "padding": "auto"
+                            },
+                            "name": "MyButton16",
+                            "designerId": "20c79e84-db7e-429c-95ed-021544a06b9b",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|commentHeader": [
+                                            "예약 취소"
+                                        ],
+                                        "fn": "onButtonTapCancel",
+                                        "implHandler": [
+                                            "var me = this;",
+                                            "var refs = me.getReferences();",
+                                            "var vm = me.getViewModel();",
+                                            "var grid = refs.hrHromJasPrjGrid;",
+                                            "var frmDetail = refs.frmDetail;",
+                                            "",
+                                            "var info = vm.data.info;",
+                                            "",
+                                            "Ext.Msg.show({",
+                                            "    title:'알림전송 취소',",
+                                            "    message:'알림전송을 취소하시겠습니까?',",
+                                            "    closable:true,",
+                                            "    buttons:Ext.MessageBox.YESNO,",
+                                            "    fn:function(btn){",
+                                            "        if (btn == 'yes') {",
+                                            "",
+                                            "            var stcd = Constants.stcd.DELETE;",
+                                            "",
+                                            "            var values = vm.get('record');",
+                                            "            values.stcd = stcd;",
+                                            "",
+                                            "            var data = {",
+                                            "              deleteRecord : values,",
+                                            "              gridData : vm.get('hrHromJasPrjStore'),",
+                                            "            };",
+                                            "             Ext.Ajax.request({",
+                                            "                 headers: {",
+                                            "                     viewId : me.getViewId(),",
+                                            "                     serviceId : 'BomTasSvc.saveBomTasTrs'",
+                                            "                 },",
+                                            "                 jsonData : data,",
+                                            "                 scope : me,",
+                                            "                 success : function(response) {",
+                                            "                     var res = Ext.JSON.decode(response.responseText);",
+                                            "",
+                                            "                     Ext.Msg.alert('안내', Messages.getMessage('I0000'));",
+                                            "                     me.getView().up().down('BomTasSend01M').controller.onSelect();",
+                                            "                     vm.getView().up().pop();",
+                                            "",
+                                            "                 }",
+                                            "             });",
+                                            "",
+                                            "        }",
+                                            "    }",
+                                            "});"
+                                        ],
+                                        "name": "tap",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "designer|commentHeader": "comment",
+                                        "fn": "string",
+                                        "name": "string",
+                                        "scope": "string",
+                                        "implHandler": "code"
+                                    },
+                                    "name": "onButtonTapCancel",
+                                    "designerId": "41ea8d0c-e96d-4487-ae79-98edf10ef728"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "저장",
+                                "layout|flex": 1,
+                                "padding": "5px",
+                                "reference": "btnSave",
+                                "text": "저장"
+                            },
+                            "configAlternates": {
+                                "text": "string",
+                                "designer|displayName": "string",
+                                "layout|flex": "number",
+                                "hidden": "boolean",
+                                "reference": "string",
+                                "padding": "auto"
+                            },
+                            "name": "MyButton20",
+                            "designerId": "db353de2-5ef8-49fc-a91b-db1c2fbaea74",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|commentHeader": [
+                                            "확인"
+                                        ],
+                                        "fn": "onButtonTapSave",
+                                        "implHandler": [
+                                            "var me = this;",
+                                            "var refs = me.getReferences();",
+                                            "var vm = me.getViewModel();",
+                                            "var grid = refs.hrHromJasPrjGrid;",
+                                            "var frmDetail = refs.frmDetail;",
+                                            "",
+                                            "",
+                                            "//신규인 경우에만 아래와 같이 유효성 검증",
+                                            "if(Constants.crudState.CREATE == vm.get('crud')){ //알림기본ID가 비어있는",
+                                            "    if (Ext.isEmpty(grid.getStore())) {",
+                                            "        Ext.Msg.alert('유효성 검증', '대상자를 지정해주세요.');",
+                                            "        return false;",
+                                            "    }",
+                                            "}",
+                                            "",
+                                            "var errMsg = me.validationCheck();",
+                                            "if(!Ext.isEmpty(errMsg)){",
+                                            "    Ext.Msg.alert('유효성 검증', errMsg);",
+                                            "    return false;",
+                                            "}",
+                                            "//END 유효성 검증 AREA",
+                                            "",
+                                            "",
+                                            "var values = vm.get('record');",
+                                            "values.title = vm.get('record.title');",
+                                            "values.trsNm = vm.get('record.title');",
+                                            "values.body = vm.get('record.body');",
+                                            "values.priority = vm.get('record.priority');",
+                                            "",
+                                            "values.content = vm.get('record.content');",
+                                            "values.content = values.content.replace(/\\n/g,'<br/>');",
+                                            "",
+                                            "",
+                                            "",
+                                            "if(Constants.crudState.CREATE == vm.get('crud')){",
+                                            "    values.tasTrsDvcd = '60';  // PUSH Code",
+                                            "    values.boTasmLemeId = '1'; // 알림기본(PUSH)",
+                                            "    values.msgDvcd = '01'; // 메시지구분 - 공지",
+                                            "    values.fmtDvcd = '01'; // 서식구분 - 텍스트 + 이미지",
+                                            "    values.msgChkActDvcd = '01'; // 메시지확인 액션구분 - 일반",
+                                            "}",
+                                            "else{",
+                                            "    values.tasTrsDvcd = vm.get('selectedRecord.tasTrsDvcd');",
+                                            "}",
+                                            "",
+                                            "",
+                                            "var data = {",
+                                            "    record : values,",
+                                            "    gridData : vm.get('hrHromJasPrjStore'),",
+                                            "};",
+                                            "Ext.Ajax.request({",
+                                            "    headers: {",
+                                            "        viewId : me.getViewId(),",
+                                            "        serviceId : 'BomTasSvc.saveBomTasTrs'",
+                                            "    },",
+                                            "    jsonData : data,",
+                                            "    scope : me,",
+                                            "    success : function(response) {",
+                                            "        var res = Ext.JSON.decode(response.responseText);",
+                                            "",
+                                            "        Ext.Msg.alert('안내', Messages.getMessage('I0000'));",
+                                            "        me.getView().up().down('BomTasSend01M').controller.onSelect();",
+                                            "        vm.getView().up().pop();",
+                                            "",
+                                            "    }",
+                                            "});"
+                                        ],
+                                        "name": "tap",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "designer|commentHeader": "comment",
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onButtonTapSave",
+                                    "designerId": "48f99252-0910-46e2-82cd-08ad5d405c9b"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "Initialize",
+                "implHandler": [
+                    "var me = this;",
+                    "var refs = me.getReferences();",
+                    "var vm = me.getViewModel();",
+                    "var principal = SecurityUtils.getPrincipal();",
+                    "",
+                    "// 장소 콤보박스 설정",
+                    "// me.onSelectCodeList(refs.mtgRoomDvcd,'MTG', component.info.mtgRoomDvcd);",
+                    "",
+                    "vm.set('gridTitle','대상자');",
+                    "me.fnCardInit(component.crud, component.seletedRecord);"
+                ],
+                "name": "initialize",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "Initialize",
+            "designerId": "788b0e03-9977-457b-9e34-26d57c53251d"
+        }
+    ]
+}

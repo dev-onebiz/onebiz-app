@@ -1,0 +1,139 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "InfoPopupM"
+        ],
+        "alwaysOnTop": true,
+        "autoSize": false,
+        "designer|commentHeader": [
+            "공통 / 안내사항 팝업 View",
+            "",
+            "@author BNK시스템/계장/지민영",
+            "@since 2020.04.17.",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "  수정일         수정자                      수정내용",
+            " ------------   ---------                 --------------------------",
+            " 2020.04.17.   BNK시스템/계장/지민영         최초 생성"
+        ],
+        "designer|extend": "Ext.window.Window",
+        "designer|userAlias": "InfoPopupM",
+        "designer|userClassName": "common.InfoPopupM",
+        "height": "85%",
+        "layout": "vbox",
+        "modal": true,
+        "title": "안내사항",
+        "width": "80%"
+    },
+    "configAlternates": {
+        "designer|extend": "string",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "title": "string",
+        "width": "auto",
+        "modal": "boolean",
+        "alwaysOnTop": "auto",
+        "autoSize": "boolean",
+        "layout": "string",
+        "designer|commentHeader": "comment",
+        "alternateClassName": "typedarray"
+    },
+    "name": "common.ApprovalCommentPopUp1",
+    "designerId": "832e5acb-369d-4e2a-aa35-6b32bf4f71e6",
+    "viewControllerInstanceId": "a2411cc1-32a8-4a13-a11a-5f0d7a5ebfb7",
+    "viewModelInstanceId": "fe82bcfd-9d62-4505-affd-1196ff604531",
+    "cn": [
+        {
+            "type": "Ext.Label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": "100%",
+                "reference": "message",
+                "scrollable": true
+            },
+            "configAlternates": {
+                "height": "auto",
+                "reference": "string",
+                "scrollable": "auto"
+            },
+            "name": "MyLabel1",
+            "designerId": "06fb734d-041c-46a9-9367-6fbbf5ff7965"
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom"
+            },
+            "configAlternates": {
+                "docked": "string"
+            },
+            "name": "MyToolbar",
+            "designerId": "9824ad82-3da8-4641-bc54-04061fd2b6d5",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 1,
+                        "text": "확인"
+                    },
+                    "configAlternates": {
+                        "layout|flex": "number",
+                        "text": "string"
+                    },
+                    "name": "MyButton12",
+                    "designerId": "c5f0e74c-acf4-4f49-a359-f9f54548a506",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBtnOkTap",
+                                "implHandler": [
+                                    "this.getView().close();"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnOkTap",
+                            "designerId": "79eca34e-f5ef-4060-9575-95733ff9ac78"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

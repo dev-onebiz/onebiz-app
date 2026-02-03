@@ -1,0 +1,377 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "aprHistId": "`null`",
+        "command": "`null`",
+        "designer|commentHeader": [
+            "연장근무보고 결재함 - 컨트롤러",
+            "",
+            "@author BNK시스템/파트너/지민영",
+            "@since 2020.09.15",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일\t\t  수정자                  수정내용",
+            "----------\t--------------------   --------------------------",
+            "2020.09.15\tBNK시스템/파트너/지민영   최초 생성"
+        ],
+        "designer|extend": "BaseViewController",
+        "designer|userAlias": "HwmOvtRept71MViewController",
+        "designer|userClassName": "HumanResource.hwm.HwmOvtRept71MViewController",
+        "record": "`null`",
+        "viewId": "HwmOvtRept71M"
+    },
+    "configAlternates": {
+        "aprHistId": "string",
+        "command": "string",
+        "designer|commentHeader": "comment",
+        "designer|extend": "string",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "record": "string",
+        "viewId": "string"
+    },
+    "designerId": "7c5540e2-59b3-4a0d-96a0-b4fa1935db74",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "command",
+            "type": "string"
+        },
+        {
+            "group": "(Custom Properties)",
+            "name": "aprHistId",
+            "type": "string"
+        },
+        {
+            "group": "(Custom Properties)",
+            "name": "record",
+            "type": "string"
+        },
+        {
+            "group": "(Custom Properties)",
+            "name": "viewId",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "form"
+                ],
+                "fn": "fnInitComponentForm",
+                "implHandler": [
+                    "var me = this,",
+                    "    vm = me.getViewModel(),",
+                    "    refs = me.getReferences(),",
+                    "    fields = form.getFields();",
+                    "",
+                    "for (var i in fields) {",
+                    "    var item = fields[i];",
+                    "    if(Ext.isArray(item) || item.name == 'null') {",
+                    "        continue;",
+                    "    }",
+                    "    item.setEditable(false);",
+                    "    item.setReadOnly(true);",
+                    "    item.setDisabled(true);",
+                    "    //change 이벤트가 있는 아이템들 이벤트 삭제하기",
+                    "    if (item && item.events.change) {",
+                    "        item.suspendEvents(true);",
+                    "    }",
+                    "}"
+                ]
+            },
+            "configAlternates": {
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "fnInitComponentForm",
+            "designerId": "1bb5bf90-06e1-423e-a59f-64b2663515e3"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onClickDraft",
+                "implHandler": [
+                    "// 결재선 [기안] 처리",
+                    "var me               = this,",
+                    "    vm               = me.getViewModel(),",
+                    "    refs             = me.getReferences(),",
+                    "    approvalLineGrid = refs.approvalLineGrid,",
+                    "    // 최초기안시 null, 전자문서담당자 기안시 aprHistId 설정",
+                    "    aprHistId        = vm.get('aprHistId'),",
+                    "    // 변경전/후 데이터 - 업무화면에서 구현",
+                    "    docNm = vm.get('docNm');",
+                    "",
+                    "var bizServiceId = 'HwmOvtSvc.saveHwmOvtRept';",
+                    "",
+                    "// 결재선 [기안] 처리",
+                    "ApprovalBoxSvc.draft({",
+                    "    scope                 : me,",
+                    "    edocCd                : vm.get('docCd'),\t\t\t\t \t // 전자문서관리에서 설정된 문서코드: 화면ID를 사용함",
+                    "    docNm                 : docNm, \t\t\t\t\t\t\t // 문서명",
+                    "    bizDvcd               : 'Hwm', \t\t\t\t\t\t\t // 업무구분코드",
+                    "    bizServiceId          : bizServiceId, \t // 연관 업무서비스ID",
+                    "    aprHistId             : aprHistId,\t\t\t\t\t\t \t // 결재이력ID",
+                    "    approvalLineRecords   : approvalLineGrid.getJsonAllRecords(), // 결재선 그리드 데이터",
+                    "    record : me.getRecord(),",
+                    "    docData               : {\t\t\t\t\t\t\t\t // 결재문서 데이터",
+                    "        fieldValues       : vm.get('fieldValues'),",
+                    "        beforechange      : null,",
+                    "        afterchange       : vm.get('afterchange') \t\t\t // 결재문서 필드값",
+                    "    },",
+                    "",
+                    "});"
+                ]
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "onClickDraft",
+            "designerId": "e1579501-8ccb-4138-bed9-2cc2f6b5c172"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "[결재] 버튼"
+                ],
+                "fn": "onClickSanction",
+                "implHandler": [
+                    "//Ext.Msg.confirm('결재', '결재 처리하시겠습니까?' , this.sanction, this);",
+                    "",
+                    "this.sanction();"
+                ]
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "onClickSanction",
+            "designerId": "943d55a5-a914-49e6-bce5-ff79a5c2a754"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "[결재]"
+                ],
+                "fn": "sanction",
+                "implHandler": [
+                    "//if(btn === 'no') return false;",
+                    "",
+                    "var me               = this,",
+                    "    vm               = me.getViewModel(),",
+                    "    refs             = me.getReferences(),",
+                    "    approvalLineGrid = refs.approvalLineGrid,",
+                    "    // 최초기안시 null, 전자문서담당자 기안시 aprHistId 설정",
+                    "    aprHistId        = null,",
+                    "    docNm = vm.get('docNm');",
+                    "",
+                    "ApprovalBoxSvc.sanction({",
+                    "    aprHistId\t\t\t: vm.get('aprHistId'), // 결재이력ID",
+                    "    record\t\t\t\t: vm.get('record'), // 동시성 제어를 하기 위해 사용",
+                    "    approvalLineRecords : refs.approvalLineGrid.getJsonAllRecords(),",
+                    "    scope : me",
+                    "});"
+                ]
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "sanction",
+            "designerId": "2b6c56d3-325e-4974-a157-20a8310a2ed7"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "반송 버튼 탭 이벤트"
+                ],
+                "fn": "onClickSendBack",
+                "implHandler": [
+                    "//Ext.Msg.confirm('반송', '반송 처리하시겠습니까?' , this.sendBack, this);",
+                    "",
+                    "this.sendBack();"
+                ]
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "onClickSendBack",
+            "designerId": "1cbc7ab1-42fd-4907-bc2f-b64e434a3f42"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "btn, text"
+                ],
+                "fn": "sendBack",
+                "implHandler": [
+                    "if(btn === 'no') return false;",
+                    "",
+                    "var me               = this,",
+                    "    vm               = me.getViewModel(),",
+                    "    refs             = me.getReferences(),",
+                    "    approvalLineGrid = refs.approvalLineGrid,",
+                    "    // 최초기안시 null, 전자문서담당자 기안시 aprHistId 설정",
+                    "    aprHistId        = null,",
+                    "    // 변경전/후 데이터 - 업무화면에서 구현",
+                    "    docNm = vm.get('docNm');",
+                    "",
+                    "var bizServiceId = 'HwmOvtSvc.saveHwmOvtRept';",
+                    "",
+                    "// 결재선 [반송] 처리",
+                    "ApprovalBoxSvc.sendBack({",
+                    "    scope                 : me,",
+                    "    edocCd                : vm.get('docCd'),\t\t\t\t \t // 전자문서관리에서 설정된 문서코드: 화면ID를 사용함",
+                    "    docNm                 : docNm, \t\t\t\t\t\t\t // 문서명",
+                    "    bizDvcd               : 'Hwm', \t\t\t\t\t\t\t // 업무구분코드",
+                    "    bizServiceId          : bizServiceId, \t // 연관 업무서비스ID",
+                    "    aprHistId             : null,\t\t\t\t\t\t \t // 결재이력ID",
+                    "    approvalLineRecords   : approvalLineGrid.getJsonAllRecords(), // 결재선 그리드 데이터",
+                    "    aprHistId \t\t\t  : vm.get('aprHistId'),",
+                    "    record \t\t\t\t  : vm.get('record'),",
+                    "    docData               : {\t\t\t\t\t\t\t\t // 결재문서 데이터",
+                    "        records       \t  : vm.get('records'), \t\t\t // 결재문서 필드값",
+                    "        total\t\t\t  : vm.get('total')",
+                    "    },",
+                    "",
+                    "});"
+                ]
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "designer|params": "typedarray"
+            },
+            "name": "sendBack",
+            "designerId": "5ec379f9-f899-49a5-b79f-70d278282001"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "회수 버튼 탭 버튼"
+                ],
+                "fn": "onClickWithdrawal",
+                "implHandler": [
+                    "//Ext.Msg.confirm('회수', '회수 처리하시겠습니까?' , this.withDrawal, this);",
+                    "",
+                    "this.withDrawal();"
+                ]
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "onClickWithdrawal",
+            "designerId": "1bd15646-6512-4d75-aabc-8611c4a67ed6"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "btn, text"
+                ],
+                "fn": "withDrawal",
+                "implHandler": [
+                    "if(btn === 'no') return false;",
+                    "",
+                    "var me               = this,",
+                    "    vm               = me.getViewModel(),",
+                    "    refs             = me.getReferences(),",
+                    "    approvalLineGrid = refs.approvalLineGrid,",
+                    "    // 최초기안시 null, 전자문서담당자 기안시 aprHistId 설정",
+                    "    aprHistId        = null,",
+                    "    // 변경전/후 데이터 - 업무화면에서 구현",
+                    "    docNm = vm.get('docNm');",
+                    "",
+                    "var bizServiceId = 'HwmOvtSvc.saveHwmOvtRept';",
+                    "",
+                    "// 결재선 [회수] 처리",
+                    "ApprovalBoxSvc.withdrawal({",
+                    "    scope                 : me,",
+                    "    edocCd                : vm.get('docCd'),\t\t\t\t \t // 전자문서관리에서 설정된 문서코드: 화면ID를 사용함",
+                    "    docNm                 : docNm, \t\t\t\t\t\t\t // 문서명",
+                    "    bizDvcd               : 'Hwm', \t\t\t\t\t\t\t // 업무구분코드",
+                    "    bizServiceId          : bizServiceId, \t // 연관 업무서비스ID",
+                    "    approvalLineRecords   : approvalLineGrid.getJsonAllRecords(), // 결재선 그리드 데이터",
+                    "    aprHistId \t\t\t  : vm.get('aprHistId'),\t\t\t // 결재이력ID",
+                    "    record \t\t\t\t  : vm.get('record'),",
+                    "    docData               : {\t\t\t\t\t\t\t\t // 결재문서 데이터",
+                    "        records       \t  : vm.get('records'), \t\t\t \t // 결재문서 필드값",
+                    "        total\t\t\t  : vm.get('total')",
+                    "    },",
+                    "",
+                    "});"
+                ]
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "designer|params": "typedarray"
+            },
+            "name": "withDrawal",
+            "designerId": "d7033385-a34e-4d71-831c-0190aeb8a52e"
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+#Fri Dec 26 10:09:10 KST 2025
+base.0=/Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/build/intermediates/transforms/dexMerger/release/0
+path.0=classes.dex
+renamed.0=classes.dex

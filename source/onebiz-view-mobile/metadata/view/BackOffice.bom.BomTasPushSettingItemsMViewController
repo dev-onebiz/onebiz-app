@@ -1,0 +1,85 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            "모바일 푸시 알림설정 (item) - 컨트롤러",
+            "",
+            "@author BNK시스템/파트너/지민영",
+            "@since 2020.08.14",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일       수정자                  수정내용",
+            "----------  ------------------     --------------------------",
+            "2020.08.14  BNK시스템/파트너/지민영   최초 생성"
+        ],
+        "designer|extend": "BaseViewController",
+        "designer|userAlias": "BomTasPushSettingItemsMViewController",
+        "designer|userClassName": "BackOffice.bom.BomTasPushSettingItemsMViewController",
+        "viewId": "BomTasPushSettingItemsM"
+    },
+    "configAlternates": {
+        "designer|extend": "string",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "designer|commentHeader": "comment",
+        "viewId": "string"
+    },
+    "designerId": "1b10bb6d-3808-4dfb-a803-657bfa23fddc",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "viewId",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "getMsgDvcd",
+                "implHandler": [
+                    "return this.getReferences().msgDvcd.getValue();"
+                ]
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "getMsgDvcd",
+            "designerId": "e64836fc-2319-4d92-9884-79db7b88f8d7"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "getRecvYn",
+                "implHandler": [
+                    "return (this.getReferences().recvYn.getValue()) ? 'Y' : 'N';"
+                ]
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "getRecvYn",
+            "designerId": "b4d4c450-1b34-4e85-b227-4ef7248d5489"
+        }
+    ]
+}

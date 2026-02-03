@@ -1,0 +1,67 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "Error404"
+        ],
+        "designer|commentHeader": [
+            "메인 / 404 View",
+            "",
+            "@author BNK시스템/팀장/손승범",
+            "@since 2019.06.17.",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "  수정일         수정자                      수정내용",
+            " ------------   ---------                 --------------------------",
+            "  2019.06.17.   BNK시스템/팀장/손승범         최초 생성"
+        ],
+        "designer|userAlias": "Error404",
+        "designer|userClassName": "common.Error404",
+        "layout": "center",
+        "padding": 20,
+        "style": "background-color: #FFF;"
+    },
+    "configAlternates": {
+        "alternateClassName": "typedarray",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "layout": "string",
+        "style": "string",
+        "padding": "auto",
+        "designer|commentHeader": "comment"
+    },
+    "name": "MyContainer7",
+    "designerId": "174b29c6-0333-4c2a-8134-3079975f29f5",
+    "viewControllerInstanceId": "07f12ded-f45d-4e78-9314-a56db17c9f7e",
+    "viewModelInstanceId": "44a4d819-ba32-40b2-abce-9ca36ed3a9f0",
+    "cn": [
+        {
+            "type": "Ext.Label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "html": "페이지를 찾을 수 없습니다.<br /><br />요청하신 페이지가 제거되었거나, <br />이름이 변경되었거나,<br /> 일시적으로 사용이 중단되었습니다.<br /><br />관련 문의사항은 관리자에게<br />알려주시면 친절하게 안내해 드리겠습니다.",
+                "reference": "message",
+                "style": "font-size : 14px; font-weight: bold"
+            },
+            "configAlternates": {
+                "html": "string",
+                "reference": "string",
+                "style": "string"
+            },
+            "name": "MyLabel9",
+            "designerId": "935489fb-0820-4ee6-8bdf-b1c2138e4075"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/myji/Desktop/ONEBIZ/20251202/onebiz-view-mobile/cordova/platforms/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-or/values-or.xml",
+            "map": [
+                {
+                    "source": "/Users/myji/.gradle/caches/transforms-2/files-2.1/0a84681946e1f382343f11612ddc4602/res/values-or/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "205",
+                        "endColumns": "102",
+                        "endOffsets": "307"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "106",
+                        "endOffsets": "157"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,167 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "ExpNteAplyItemsViewModel"
+        ],
+        "data": [
+            "{",
+            "    ",
+            "    cardItem: {",
+            "    ",
+            "",
+            "        command : null,",
+            "        apvlDt : null,",
+            "        aprno\t\t\t: null,",
+            "        mcNm            : null,",
+            "        bzno            : null,",
+            "        mcAddr          : null,",
+            "        stxat           : null,",
+            "        apvlAmtDom      : null,",
+            "        hrHromJasPrjId  : null,",
+            "        accItemCd       : null,",
+            "        aplRscn         : null,",
+            "        hrHrpmDeptId    : null,",
+            "        hrHrpmEmpId     : null,",
+            "        // 사용자",
+            "        mcTaxtnTypeDvcd : null,",
+            "        //empeNm: null,",
+            "        userOrUseDept : null,",
+            "        userInfoList : [],",
+            "        stlmDvcd : '01',",
+            "        aplStcd : null, // 진행상태",
+            "        // 사진",
+            "        aplTct : null,",
+            "        aplTotSmamt : null,",
+            "        aplTotSmamtRender : null,",
+            "        ",
+            "        //atomItemIdx : null,",
+            "        //useYn : true,",
+            "        imgPhoto : null,",
+            "        mtg : {},",
+            "        conferencePopupSuccess : false,",
+            "        gridData : [] // 사용자 팝업에 다시 전달해줄 그리드 데이터",
+            "    }",
+            "        ",
+            "}",
+            "",
+            ""
+        ],
+        "designer|commentHeader": [
+            "모바일 시스템 경비노트 :: 법인카드 depth 3 - 모델",
+            "",
+            "@author BNK시스템/계장/김정균",
+            "@since 2019.04.16",
+            "@version 1.0",
+            "@see",
+            "",
+            "<< 개정이력(Modification Information) >>",
+            "",
+            "수정일\t\t  수정자                수정내용",
+            "----------\t------------------   --------------------------",
+            "2019.04.16\tBNK시스템/계장/김정균   최초 생성"
+        ],
+        "designer|userAlias": "ExpNteAplyItemsViewModel",
+        "designer|userClassName": "Budget.exp.ExpNteAplyItemsViewModel"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "data": "object",
+        "alternateClassName": "typedarray",
+        "designer|commentHeader": "comment"
+    },
+    "name": "biz.PAGE001ViewModel1",
+    "designerId": "1536f264-80c8-4646-992e-2185f7ca8325",
+    "cn": [
+        {
+            "type": "jsonstore",
+            "reference": {
+                "name": "stores",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "PAGE001deptStore"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyJsonStore3",
+            "designerId": "a033c09b-2624-4c65-a523-2ee5ea1c45d4"
+        },
+        {
+            "type": "jsonstore",
+            "reference": {
+                "name": "stores",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "prjStore"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyJsonStore5",
+            "designerId": "6bcbee58-f115-4585-823b-4e3cc4823911"
+        },
+        {
+            "type": "arraystore",
+            "reference": {
+                "name": "stores",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "groupField": "stfDvcdNm",
+                "name": "hrHromJasPrjStore"
+            },
+            "configAlternates": {
+                "name": "string",
+                "groupField": "datafield"
+            },
+            "name": "MyArrayStore",
+            "designerId": "cab4afef-5a80-4b75-93c2-c5f83330d73e",
+            "cn": [
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "jasPrj"
+                    },
+                    "configAlternates": {
+                        "name": "string"
+                    },
+                    "name": "field20",
+                    "designerId": "663f6f1d-3d1e-4491-9104-df9806d91e8e"
+                },
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "formattedEmpeNm"
+                    },
+                    "configAlternates": {
+                        "name": "string"
+                    },
+                    "name": "field19",
+                    "designerId": "ccc0ac5b-2169-471f-9aaf-4a040dded194"
+                }
+            ]
+        }
+    ]
+}
